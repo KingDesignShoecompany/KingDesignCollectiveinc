@@ -66,6 +66,17 @@ stacks/multiagent/agent_zero_usr/
 # Desktop app binaries (not part of the project)
 Comfy Desktop/
 
+# UE5 binary assets (too large for Git)
+*.uasset
+*.umap
+*.uproject
+auramaxxing/Binaries/
+auramaxxing/Intermediate/
+auramaxxing/Configs/
+auramaxxing/DerivedData/
+auramaxxing/Saved/
+auramaxxing/Plugins/
+
 # Generated reports (keep locally)
 *corporate_runtime/documents/integration/daily_reports/
 *corporate_runtime/documents/integration/reports/
