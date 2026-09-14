@@ -1,0 +1,10 @@
+{
+  "subsidiary_id": "ewaste",
+  "updated_at": "[PENDING]",
+  "token_model": "utility_settlement",
+  "backed_by": "[PENDING]",
+  "minting_authority": "finance",
+  "redemption_rules": "[PENDING]",
+  "audit_requirements": "[PENDING]",
+  "notes": "Finalize backing asset type after asset manifests for this subsidiary are confirmed."
+}

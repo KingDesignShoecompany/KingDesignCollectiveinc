@@ -1,0 +1,51 @@
+[
+  {
+    "scene_number": 1,
+    "scene_title": "Forest Clearing",
+    "image_prompt": "Children's book illustration style, Forest Clearing, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 2,
+    "scene_title": "Sparkling Stream",
+    "image_prompt": "Children's book illustration style, Sparkling Stream, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 3,
+    "scene_title": "Rainbow Hills",
+    "image_prompt": "Children's book illustration style, Rainbow Hills, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 4,
+    "scene_title": "Meadow of Dreams",
+    "image_prompt": "Children's book illustration style, Meadow of Dreams, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 5,
+    "scene_title": "Cozy Cottage",
+    "image_prompt": "Children's book illustration style, Cozy Cottage, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 6,
+    "scene_title": "Sunset Silhouette",
+    "image_prompt": "Children's book illustration style, Sunset Silhouette, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 7,
+    "scene_title": "Goodnight",
+    "image_prompt": "Children's book illustration style, Goodnight, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "description": "Motion templates for kids channel bedtime story animations",
+  "presets": [
+    {
+      "name": "gentle_pan_left",
+      "description": "Gentle left-to-right camera pan for scene exploration",
+      "motion_prompt": "gentle camera pan left, smooth horizontal movement, 2D animation style",
+      "direction": "left",
+      "speed": "slow",
+      "smoothing": "high",
+      "recommended_scenes": ["landscape", "wide_angle", "introduction"]
+    },
+    {
+      "name": "gentle_pan_right",
+      "description": "Gentle right-to-left camera pan",
+      "motion_prompt": "gentle camera pan right, smooth horizontal movement, 2D animation style",
+      "direction": "right",
+      "speed": "slow",
+      "smoothing": "high",
+      "recommended_scenes": ["landscape", "revelation", "transition"]
+    },
+    {
+      "name": "slow_zoom_in",
+      "description": "Smooth zoom-in effect to focus on character or object",
+      "motion_prompt": "slow zoom in, smooth focus pull, 2D animation style",
+      "direction": "center",
+      "speed": "slow",
+      "smoothing": "high",
+      "recommended_scenes": ["character_focus", "emotional_moment", "conclusion"]
+    },
+    {
+      "name": "slow_zoom_out",
+      "description": "Slow zoom-out to reveal wider scene",
+      "motion_prompt": "slow zoom out, smooth reveal, 2D animation style",
+      "direction": "center",
+      "speed": "slow",
+      "smoothing": "high",
+      "recommended_scenes": ["reveal", "transition", "wide_shot"]
+    },
+    {
+      "name": "bedtime_fade",
+      "description": "Gentle fade transition perfect for bedtime scenes",
+      "motion_prompt": "gentle fade transition, soft glow, dreamy effect, 2D animation style",
+      "direction": "fade",
+      "speed": "very_slow",
+      "smoothing": "maximum",
+      "recommended_scenes": ["ending", "transition", "dream_sequence"]
+    },
+    {
+      "name": "storybook_glow",
+      "description": "Soft glowing effect to animate storybook illustrations",
+      "motion_prompt": "storybook page glow, soft magical particles, gentle shimmer, 2D animation style",
+      "direction": "ambient",
+      "speed": "slow",
+      "smoothing": "medium",
+      "recommended_scenes": ["magical", "whimsical", "fantasy"]
+    },
+    {
+      "name": "floating_sparkles",
+      "description": "Add floating sparkle particles for magical scenes",
+      "motion_prompt": "floating sparkles, gentle particle animation, soft glowing dots, 2D animation style",
+      "direction": "ambient",
+      "speed": "slow",
+      "smoothing": "medium",
+      "recommended_scenes": ["magical", "celebration", "dreamy"]
+    },
+    {
+      "name": "character_walk",
+      "description": "Subtle character walking animation",
+      "motion_prompt": "character walking gently across scene, smooth 2D animation, subtle body movement",
+      "direction": "horizontal",
+      "speed": "medium",
+      "smoothing": "high",
+      "recommended_scenes": ["adventure", "journey", "character_action"]
+    },
+    {
+      "name": "water_ripple",
+      "description": "Water surface ripple effect",
+      "motion_prompt": "gentle water ripples, soft waves, reflecting light, 2D animation style",
+      "direction": "radial",
+      "speed": "slow",
+      "smoothing": "medium",
+      "recommended_scenes": ["stream", "pond", "reflections"]
+    },
+    {
+      "name": "leaf_fall",
+      "description": "Gentle falling leaves animation",
+      "motion_prompt": "falling leaves, gentle breeze, slow floating motion, 2D animation style",
+      "direction": "vertical",
+      "speed": "slow",
+      "smoothing": "high",
+      "recommended_scenes": ["autumn", "nature", "peaceful"]
+    },
+    {
+      "name": "cloud_drift",
+      "description": "Soft cloud drifting across sky",
+      "motion_prompt": "clouds drifting slowly across sky, gentle movement, soft daylight, 2D animation style",
+      "direction": "horizontal",
+      "speed": "very_slow",
+      "smoothing": "high",
+      "recommended_scenes": ["sky", "daytime", "peaceful"]
+    },
+    {
+      "name": "firefly_glow",
+      "description": "Twinkling firefly lights for evening scenes",
+      "motion_prompt": "fireflies glowing and flying, twinkling lights, warm golden glow, 2D animation style",
+      "direction": "ambient",
+      "speed": "slow",
+      "smoothing": "low",
+      "recommended_scenes": ["evening", "magical", "nature"]
+    }
+  ],
+  "scene_mappings": {
+    "forest": ["gentle_pan_left", "floating_sparkles", "storybook_glow"],
+    "stream": ["water_ripple", "gentle_pan_right", "floating_sparkles"],
+    "meadow": ["cloud_drift", "leaf_fall", "character_walk"],
+    "hill": ["slow_zoom_out", "cloud_drift", "gentle_pan_left"],
+    "grove": ["storybook_glow", "firefly_glow", "slow_zoom_in"],
+    "adventure": ["character_walk", "gentle_pan_right", "slow_zoom_in"],
+    "magical": ["storybook_glow", "floating_sparkles", "firefly_glow"],
+    "peaceful": ["cloud_drift", "water_ripple", "bedtime_fade"],
+    "celebration": ["floating_sparkles", "character_walk", "slow_zoom_out"],
+    "transition": ["bedtime_fade", "slow_zoom_out", "gentle_pan_left"]
+  },
+  "default_presets": ["gentle_pan_left", "slow_zoom_in", "storybook_glow"],
+  "frame_counts": {
+    "very_short": 9,
+    "short": 17,
+    "medium": 33,
+    "long": 65
+  }
+}

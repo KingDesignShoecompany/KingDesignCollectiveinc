@@ -1,0 +1,19 @@
+{
+  "updated_at": "[PENDING]",
+  "token": "UMB_SETTLEMENT",
+  "backing_classes": [
+    "commodity_reclaimed",
+    "ip_asset_value",
+    "subsidiary_revenue_claim"
+  ],
+  "subsidiary_backing": {
+    "vagary_index": {"primary": "ip_asset_value", "secondary": "subsidiary_revenue_claim", "minted_allocation": "[PENDING]"},
+    "shoes": {"primary": "subsidiary_revenue_claim", "secondary": "brand_ip_value", "minted_allocation": "[PENDING]"},
+    "gamedev": {"primary": "ip_asset_value", "secondary": "subscription_revenue", "minted_allocation": "[PENDING]"},
+    "kids": {"primary": "content_copyright", "secondary": "ad_revenue", "minted_allocation": "[PENDING]"},
+    "innovation": {"primary": "ip_asset_value", "secondary": "patent_royalties", "minted_allocation": "[PENDING]"},
+    "ewaste": {"primary": "commodity_reclaimed", "secondary": "processing_contracts", "minted_allocation": "[PENDING]"},
+    "quantum": {"primary": "ip_asset_value", "secondary": "hardware_assets", "minted_allocation": "[PENDING]"}
+  },
+  "notes": "Confirm valuation methodology per backing class before minting."
+}

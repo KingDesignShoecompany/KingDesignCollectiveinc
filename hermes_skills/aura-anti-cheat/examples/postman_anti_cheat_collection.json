@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "AuraChampions Anti-Cheat",
+    "_postman_id": "aura-anti-cheat-sample",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Issue Nonce",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"battleId\":\"<battle-uuid>\",\n  \"userId\":\"<user-uuid>\"\n}"
+        },
+        "url": { "raw": "http://localhost:3000/issueNonce", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["issueNonce"] }
+      }
+    },
+    {
+      "name": "Verify Action",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "x-timestamp", "value": "1680000000" },
+          { "key": "x-signature", "value": "<hmac-signature>" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"battleId\":\"<battle-uuid>\",\n  \"userId\":\"<user-uuid>\",\n  \"action\":{\"actor\":\"UID_ABC\",\"type\":\"ATTACK\",\"target\":\"UID_XYZ\"},\n  \"stateVersion\":0,\n  \"nonce\":\"<nonce>\"\n}"
+        },
+        "url": { "raw": "http://localhost:3000/verifyAction", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["verifyAction"] }
+      }
+    },
+    {
+      "name": "Verify Card For Tournament",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cardUid\":\"CARD_UID_123\",\n  \"judgeId\":\"judge-001\"\n}"
+        },
+        "url": { "raw": "http://localhost:3000/verifyCardForTournament", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["verifyCardForTournament"] }
+      }
+    }
+  ]
+}

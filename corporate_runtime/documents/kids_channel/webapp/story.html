@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Minute Story Sessions | Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="calm-theme">
+    <div class="stars-background"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">7MIN</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="stories.html">Library</a>
+                <a href="story-play.html" class="active">Player</a>
+                <a href="about.html">About</a>
+                <a href="create.html">Create</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="story-player-layout">
+                <div class="story-text-panel">
+                    <h2 id="storyTitle">The Moonbear's Lullaby</h2>
+                    <div class="story-meta">
+                        <span>📚 Animals | 7 min</span>
+                        <span>🎵 Voice: Luna (Child)</span>
+                        <span>🌧️ Ambient: Rain</span>
+                    </div>
+
+                    <div class="story-text" id="storyText">
+                        <p class="story-paragraph" data-line="1">Once upon a time, in the quiet forest of Silver Pines, there lived a gentle moonbear named Lumo.</p>
+                        <p class="story-paragraph" data-line="2">Every evening, as the sun set behind the mountains, Lumo would look up at the glowing moon and hum a soft lullaby.</p>
+                        <p class="story-paragraph" data-line="3">The lullaby was special — it carried on the silver beams and made every creature in the forest feel safe and cozy.</p>
+                        <p class="story-paragraph" data-line="4">One night, a little rabbit named Rosie couldn't sleep. She hopped out of her burrow and heard the gentle humming.</p>
+                        <p class="story-paragraph" data-line="5">"What's that sound?" Rosie whispered, her ears twitching with curiosity.</p>
+                        <p class="story-paragraph" data-line="6">She followed the sound to a clearing where Lumo the Moonbear sat beneath the stars, singing the most beautiful melody.</p>
+                        <p class="story-paragraph" data-line="7">The moonbeams danced around them like tiny silver fairies, and Rosie felt her eyelids getting heavier with each note.</p>
+                        <p class="story-paragraph" data-line="8">"Would you like to join the lullaby?" Lumo asked gently, his voice as soft as the breeze.</p>
+                        <p class="story-paragraph" data-line="9">Rosie nodded and together they sang — Lumo's deep, soothing hum and Rosie's soft, high whistle.</p>
+                        <p class="story-paragraph" data-line="10">Their combined melody made the stars twinkle brighter and the whole forest fell into peaceful slumber.</p>
+                        <p class="story-paragraph" data-line="11">From that night on, whenever children across the land felt scared or couldn't sleep, the Moonbear's Lullaby would find them.</p>
+                        <p class="story-paragraph" data-line="12">It would wrap around them like a warm, soft blanket and carry them gently into the sweetest dreams.</p>
+                    </div>
+                </div>
+
+                <div class="audio-player-panel">
+                    <div class="audio-player">
+                        <div class="audio-display">
+                            <div class="audio-wave">
+                                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                            <div class="audio-time">0:00 / 7:00</div>
+                        </div>
+
+                        <div class="audio-controls">
+                            <button class="audio-btn prev-btn">⏮</button>
+                            <button class="audio-btn play-btn">▶</button>
+                            <button class="audio-btn pause-btn">⏸</button>
+                            <button class="audio-btn next-btn">⏭</button>
+                        </div>
+
+                        <div class="audio-sliders">
+                            <input type="range" class="progress-slider" min="0" max="100" value="0">
+                            <div class="volume-control">
+                                <span>🔊</span>
+                                <input type="range" class="volume-slider" min="0" max="100" value="70">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-controls">
+                        <button class="control-btn" id="sleepTimerBtn">⏰ Sleep Timer</button>
+                        <button class="control-btn" id="ambientBtn">🌧️ Ambient Sounds</button>
+                        <button class="control-btn" id="textSizeBtn">🔤 Text Size</button>
+                        <button class="control-btn" id="nightModeBtn">🌙 Night Mode</button>
+                    </div>
+
+                    <div class="sleep-timer" id="sleepTimer">
+                        <h4>Sleep Timer</h4>
+                        <div class="timer-options">
+                            <button class="timer-btn" data-minutes="5">5 Min</button>
+                            <button class="timer-btn" data-minutes="10">10 Min</button>
+                            <button class="timer-btn" data-minutes="15">15 Min</button>
+                            <button class="timer-btn" data-minutes="30">30 Min</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Seven Minute Story Sessions</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

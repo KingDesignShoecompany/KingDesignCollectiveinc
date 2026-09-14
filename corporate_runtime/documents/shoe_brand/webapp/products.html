@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Design Collective | Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">KingDesignCollective</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="checkout.html" class="cta-button small">Checkout</a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by SKU or name...">
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">All Sneakers</h1>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Performance Running">Performance Running</button>
+                <button class="filter-btn" data-filter="Casual Lifestyle">Casual Lifestyle</button>
+                <button class="filter-btn" data-filter="Trail Hiking">Trail Hiking</button>
+                <button class="filter-btn" data-filter="Urban Commuter">Urban Commuter</button>
+                <button class="filter-btn" data-filter="Comfort Walking">Comfort Walking</button>
+                <button class="filter-btn" data-filter="Racing">Racing</button>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products dynamically rendered by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 King Design Collective | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+# TTS Narration Script
+# Title: Bedtime Story: The Magic Paintbrush Adventure
+# Age Group: 4-6
+# Voice: soft_female
+# Pace: slow
+# Generated with: gemma3:1b
+
+[Intro Music - Gentle lullaby, 5 seconds]
+
+NARRATOR (warm, soothing): "Hello little dreamer. Tonight's story is... The Magic Paintbrush Adventure."[Pause - 2 seconds]
+
+[Scene 1 Transition - Gentle music fade]
+
+NARRATOR: "Forest Clearing"
+[Brief pause - 1 second]
+
+NARRATOR: "**
+“Hello there, little ones,” says the Narrator. “Let's start our adventure with a beautiful forest clearing.  The sun is setting and gentleting the leaves in shades of orange and pink. There’s a comfy patch of moss under a big oak tree.”  A gentle voice begins: "It was a very special day, filled with sunshine and happy birds singing their songs." Suddenly, a tiny gentletbrush appears! “Look!” says the Narrator, “It sparkles like stardust!""
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**"
+[Natural pause - 0.5 seconds]
+
+[Scene 1 Outro - Soft piano, 5 seconds]
+
+[Scene 2 Transition - Gentle music fade]
+
+NARRATOR: "Sparkling Stream"
+[Brief pause - 1 second]
+
+NARRATOR: "**
+“Wow! It’s a magic gentletbrush!”  A little girl named Lily notices. The gentletbrush glows softly as she reaches out and touches it. "This brush can do amazing things," whispers the narrator. “It doesn't need water, just imagination!" A small stream flows nearby, sparkling like diamonds in the fading light." As Lily begins to gentlet a picture of a fluffy sheep on the stream, her eyes sparkle with excitement.”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**"
+[Natural pause - 0.5 seconds]
+
+[Scene 2 Outro - Soft piano, 5 seconds]
+
+[Scene 3 Transition - Gentle music fade]
+
+NARRATOR: "Rainbow Hills"
+[Brief pause - 1 second]
+
+NARRATOR: "**
+“Let’s move onto the rainbow hills!” says the Narrator. “The gentletbrush dances and swirls, creating beautiful colors everywhere!  It gentlets bright blue for the sky, sunny yellow for the flowers, and gentle purple for the mountains." Lily carefully adds a little pink to make it look like fluffy clouds.” She imagines she's gentleting a castle for her teddy bear, Barnaby.”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**"
+[Natural pause - 0.5 seconds]
+
+[Scene 3 Outro - Soft piano, 5 seconds]
+
+[Scene 4 Transition - Gentle music fade]
+
+NARRATOR: "Meadow of Dreams"
+[Brief pause - 1 second]
+
+NARRATOR: "**
+“Now, let’s gentlet a meadow filled with sleepy daisies. The gentletbrush gentlets them in shades of green and white, making them so peaceful."  The brush moves quickly across the grass, creating tiny little flowers. “It makes everything feel calm and cozy.” A gentle breeze begins to whisper through the field. "Look at all the colors!” says the Narrator."
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**"
+[Natural pause - 0.5 seconds]
+
+[Scene 4 Outro - Soft piano, 5 seconds]
+
+[Scene 5 Transition - Gentle music fade]
+
+NARRATOR: "Cozy Cottage"
+[Brief pause - 1 second]
+
+NARRATOR: "**
+“Time for a rest,” says the Narrator. “Lily’s gentleting a small, cozy cottage with a chimney puffing out gentlem smoke."  The gentletbrush gentlets a little wooden door and a bright red mailbox. "It's so peaceful here.” Lily smiles, knowing her magic brush has brought joy to everything she gentleted. “Thank you, gentletbrush,” she whispers softly."
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "Moral: [Kindness and imagination are powerful tools!]"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**"
+[Natural pause - 0.5 seconds]
+
+[Scene 5 Outro - Soft piano, 5 seconds]
+
+[Scene 6 Transition - Gentle music fade]
+
+NARRATOR: "Sunset Silhouette"
+[Brief pause - 1 second]
+
+NARRATOR: "**
+“As the sun sets behind the hills, the colors fade into soft shades of purple and blue.” The narrator says, "It's time for a little sleep now." “Close your eyes and dream sweet dreams,” the Narrator encourages."
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "Moral: [Be kind to others and always use your imagination!]"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**"
+[Natural pause - 0.5 seconds]
+
+[Scene 6 Outro - Soft piano, 5 seconds]
+
+[Scene 7 Transition - Gentle music fade]
+
+NARRATOR: "Goodnight"
+[Brief pause - 1 second]
+
+NARRATOR: "**
+“Sleep tight, my darling ones," says the narrator. "Sweet dreams filled with sunshine and happy memories.” The gentletbrush glows one last time before disappearing completely. “Remember, even small things can create big magic.""
+[Natural pause - 0.5 seconds]
+
+[Scene 7 Outro - Soft piano, 5 seconds]
+
+NARRATOR: "And remember... [Kindness and imagination are powerful tools!]"
+[Pause - 2 seconds]
+
+[Outro Music - Gentle lullaby fading, 15 seconds]
+NARRATOR: "Sweet dreams, little one. Sleep tight."
+[End - Fade to silence]

@@ -1,0 +1,43 @@
+{
+  "asset_value_payload": {
+    "schema_version": "1.0",
+    "integration_target": "crypto_treasury",
+    "operation": "e_waste_reclamation",
+    "input": {
+      "ewaste_mass_kg": 1000,
+      "recovery_rates": {
+        "gold_g_per_kg": 0.1,
+        "copper_g_per_kg": 150,
+        "palladium_g_per_kg": 0.05
+      },
+      "spot_prices": {
+        "gold_usd_per_oz": 2500,
+        "copper_usd_per_lb": 4.50,
+        "palladium_usd_per_oz": 1200
+      }
+    },
+    "output": {
+      "recovered_masses": {
+        "gold_g": 100,
+        "copper_g": 150000,
+        "palladium_g": 50
+      },
+      "recovered_masses_converted": {
+        "gold_oz": 3.5274,
+        "copper_lb": 330.693,
+        "palladium_oz": 1.7637
+      },
+      "gross_values_usd": {
+        "gold": 8818.50,
+        "copper": 1488.12,
+        "palladium": 2116.54
+      },
+      "total_gross_value_usd": 12423.16,
+      "unit_values_usd_per_kg_ewaste": 12.42
+    },
+    "meta": {
+      "timestamp": "2026-08-04T00:00:00Z",
+      "notes": "Hypothetical averages; actual yields depend on hardware profile mix and processing efficiency."
+    }
+  }
+}

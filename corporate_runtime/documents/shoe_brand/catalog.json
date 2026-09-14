@@ -1,0 +1,226 @@
+{
+  "brand": "KingDesignCollective",
+  "generated_at": "2026-08-07T18:35:38Z",
+  "source_of_truth": "images/KingDesignCollective/ (verified on disk)",
+  "products": [
+    {
+      "sku": "Dendroaspispolyles",
+      "display_name": "Dendroaspispolyles",
+      "line": "KDC Crown Series",
+      "category": "Athletic Street",
+      "tagline": "The serpent's spine, rendered in Italian calfskin.",
+      "material_hint": "Italian handcrafted leather + heritage sole construction",
+      "image_count": 7,
+      "image_files": [
+        "Dendroaspispolyles-shoes-detail.jpg",
+        "Dendroaspispolyles-shoes-double_quarter.jpg",
+        "Dendroaspispolyles-shoes-over_box.jpg",
+        "Dendroaspispolyles-shoes-shoe_box.jpg",
+        "Dendroaspispolyles-shoes-side.jpg",
+        "Dendroaspispolyles-shoes-top_bottom.jpg",
+        "Dendroaspispolyles-shoes-with_box.jpg"
+      ],
+      "has_photography": true,
+      "pricing_status": "pending_inventory",
+      "copy_status": "generated"
+    },
+    {
+      "sku": "Mota mary",
+      "display_name": "Mota mary",
+      "line": "KDC Crown Series",
+      "category": "The Hybrid",
+      "tagline": "Quiet luxury for the in-between hours.",
+      "material_hint": "Italian handcrafted leather + heritage sole construction",
+      "image_count": 8,
+      "image_files": [
+        "Mota mary-shoes-detail.jpg",
+        "Mota mary-shoes-double_quarter.jpg",
+        "Mota mary-shoes-drawing.jpg",
+        "Mota mary-shoes-shoe_box.jpg",
+        "Mota mary-shoes-side.jpg",
+        "Mota mary-shoes-tongue.jpg",
+        "Mota mary-shoes-top_bottom.jpg",
+        "Mota mary-shoes-with_box.jpg"
+      ],
+      "has_photography": true,
+      "pricing_status": "pending_inventory",
+      "copy_status": "generated"
+    },
+    {
+      "sku": "Opusto\u0161eni nepa\u017elj",
+      "display_name": "Opusto\u0161eni nepa\u017elj",
+      "line": "KDC Crown Series",
+      "category": "Occasional Formal",
+      "tagline": "Reckless precision. Hand-painted, never apologetic.",
+      "material_hint": "Italian handcrafted leather + heritage sole construction",
+      "image_count": 7,
+      "image_files": [
+        "Opusto\u0161eni nepa\u017elj-shoes-detail.jpg",
+        "Opusto\u0161eni nepa\u017elj-shoes-double_quarter.jpg",
+        "Opusto\u0161eni nepa\u017elj-shoes-over_box.jpg",
+        "Opusto\u0161eni nepa\u017elj-shoes-shoe_box.jpg",
+        "Opusto\u0161eni nepa\u017elj-shoes-side.jpg",
+        "Opusto\u0161eni nepa\u017elj-shoes-top_bottom.jpg",
+        "Opusto\u0161eni nepa\u017elj-shoes-with_box.jpg"
+      ],
+      "has_photography": true,
+      "pricing_status": "pending_inventory",
+      "copy_status": "generated"
+    },
+    {
+      "sku": "Queen_s Ace",
+      "display_name": "Queen's Ace",
+      "line": "KDC Crown Series",
+      "category": "The Hybrid",
+      "tagline": "The ace up your sleeve \u2014 structured, sovereign.",
+      "material_hint": "Italian handcrafted leather + heritage sole construction",
+      "image_count": 6,
+      "image_files": [
+        "Queen_s Ace-shoes-double_quarter.jpg",
+        "Queen_s Ace-shoes-drawing.jpg",
+        "Queen_s Ace-shoes-shoe_box.jpg",
+        "Queen_s Ace-shoes-side.jpg",
+        "Queen_s Ace-shoes-top_bottom.jpg",
+        "Queen_s Ace-shoes-with_box.jpg"
+      ],
+      "has_photography": true,
+      "pricing_status": "pending_inventory",
+      "copy_status": "generated"
+    },
+    {
+      "sku": "Ravenoustum satori",
+      "display_name": "Ravenoustum satori",
+      "line": "KDC Crown Series",
+      "category": "Athletic Street",
+      "tagline": "A sudden enlightenment, laced in obsidian.",
+      "material_hint": "Italian handcrafted leather + heritage sole construction",
+      "image_count": 6,
+      "image_files": [
+        "Ravenoustum satori-shoes-double_quarter.jpg",
+        "Ravenoustum satori-shoes-over_box.jpg",
+        "Ravenoustum satori-shoes-shoe_box.jpg",
+        "Ravenoustum satori-shoes-side.jpg",
+        "Ravenoustum satori-shoes-top_bottom.jpg",
+        "Ravenoustum satori-shoes-with_box.jpg"
+      ],
+      "has_photography": true,
+      "pricing_status": "pending_inventory",
+      "copy_status": "generated"
+    },
+    {
+      "sku": "SASSY SOL",
+      "display_name": "SASSY SOL",
+      "line": "KDC Crown Series",
+      "category": "Athletic Street",
+      "tagline": "Solar confidence. Built to be remembered.",
+      "material_hint": "Italian handcrafted leather + heritage sole construction",
+      "image_count": 6,
+      "image_files": [
+        "SASSY SOL-shoes-double_quarter.jpg",
+        "SASSY SOL-shoes-drawing.jpg",
+        "SASSY SOL-shoes-shoe_box.jpg",
+        "SASSY SOL-shoes-side.jpg",
+        "SASSY SOL-shoes-top_bottom.jpg",
+        "SASSY SOL-shoes-with_box.jpg"
+      ],
+      "has_photography": true,
+      "pricing_status": "pending_inventory",
+      "copy_status": "generated"
+    },
+    {
+      "sku": "Unique Sin",
+      "display_name": "Unique Sin",
+      "line": "KDC Crown Series",
+      "category": "Occasional Formal",
+      "tagline": "The only sin is blending in.",
+      "material_hint": "Italian handcrafted leather + heritage sole construction",
+      "image_count": 5,
+      "image_files": [
+        "Unique Sin-shoes-detail.jpg",
+        "Unique Sin-shoes-side (1).jpg",
+        "Unique Sin-shoes-side.jpg",
+        "Unique Sin-shoes-top_bottom.jpg",
+        "Unique Sin-shoes-with_box.jpg"
+      ],
+      "has_photography": true,
+      "pricing_status": "pending_inventory",
+      "copy_status": "generated"
+    },
+    {
+      "sku": "Voda \u0160eta\u010d",
+      "display_name": "Voda \u0160eta\u010d",
+      "line": "KDC Crown Series",
+      "category": "Athletic Street",
+      "tagline": "The water-walker. Engineered to defy gravity.",
+      "material_hint": "Italian handcrafted leather + heritage sole construction",
+      "image_count": 1,
+      "image_files": [
+        "Voda \u0160eta\u010d-shoes-detail.jpg"
+      ],
+      "has_photography": true,
+      "pricing_status": "pending_inventory",
+      "copy_status": "generated"
+    }
+  ],
+  "copy": {
+    "Dendroaspispolyles": {
+      "headline": "Dendroaspispolyles \u2014 Athletic Street",
+      "tagline": "The serpent's spine, rendered in Italian calfskin.",
+      "description": "Designed in California, handcrafted in Italy. The Dendroaspispolyles sits in our Athletic Street tier \u2014 The serpent's spine, rendered in Italian calfskin. Every pair carries KDC's signature obsidian-sole architecture and third-generation cordwainer finishing. 7 studio shots capture the grain, the soul, and the silhouette.",
+      "cta": "[ CLAIM YOUR PAIR ]",
+      "alt_text_seed": "KingDesignCollective Dendroaspispolyles Athletic Street sneaker, Italian leather"
+    },
+    "Mota mary": {
+      "headline": "Mota mary \u2014 The Hybrid",
+      "tagline": "Quiet luxury for the in-between hours.",
+      "description": "Designed in California, handcrafted in Italy. The Mota mary sits in our The Hybrid tier \u2014 Quiet luxury for the in-between hours. Every pair carries KDC's signature obsidian-sole architecture and third-generation cordwainer finishing. 8 studio shots capture the grain, the soul, and the silhouette.",
+      "cta": "[ CLAIM YOUR PAIR ]",
+      "alt_text_seed": "KingDesignCollective Mota mary The Hybrid sneaker, Italian leather"
+    },
+    "Opusto\u0161eni nepa\u017elj": {
+      "headline": "Opusto\u0161eni nepa\u017elj \u2014 Occasional Formal",
+      "tagline": "Reckless precision. Hand-painted, never apologetic.",
+      "description": "Designed in California, handcrafted in Italy. The Opusto\u0161eni nepa\u017elj sits in our Occasional Formal tier \u2014 Reckless precision. Hand-painted, never apologetic. Every pair carries KDC's signature obsidian-sole architecture and third-generation cordwainer finishing. 7 studio shots capture the grain, the soul, and the silhouette.",
+      "cta": "[ CLAIM YOUR PAIR ]",
+      "alt_text_seed": "KingDesignCollective Opusto\u0161eni nepa\u017elj Occasional Formal sneaker, Italian leather"
+    },
+    "Queen_s Ace": {
+      "headline": "Queen's Ace \u2014 The Hybrid",
+      "tagline": "The ace up your sleeve \u2014 structured, sovereign.",
+      "description": "Designed in California, handcrafted in Italy. The Queen's Ace sits in our The Hybrid tier \u2014 The ace up your sleeve \u2014 structured, sovereign. Every pair carries KDC's signature obsidian-sole architecture and third-generation cordwainer finishing. 6 studio shots capture the grain, the soul, and the silhouette.",
+      "cta": "[ CLAIM YOUR PAIR ]",
+      "alt_text_seed": "KingDesignCollective Queen's Ace The Hybrid sneaker, Italian leather"
+    },
+    "Ravenoustum satori": {
+      "headline": "Ravenoustum satori \u2014 Athletic Street",
+      "tagline": "A sudden enlightenment, laced in obsidian.",
+      "description": "Designed in California, handcrafted in Italy. The Ravenoustum satori sits in our Athletic Street tier \u2014 A sudden enlightenment, laced in obsidian. Every pair carries KDC's signature obsidian-sole architecture and third-generation cordwainer finishing. 6 studio shots capture the grain, the soul, and the silhouette.",
+      "cta": "[ CLAIM YOUR PAIR ]",
+      "alt_text_seed": "KingDesignCollective Ravenoustum satori Athletic Street sneaker, Italian leather"
+    },
+    "SASSY SOL": {
+      "headline": "SASSY SOL \u2014 Athletic Street",
+      "tagline": "Solar confidence. Built to be remembered.",
+      "description": "Designed in California, handcrafted in Italy. The SASSY SOL sits in our Athletic Street tier \u2014 Solar confidence. Built to be remembered. Every pair carries KDC's signature obsidian-sole architecture and third-generation cordwainer finishing. 6 studio shots capture the grain, the soul, and the silhouette.",
+      "cta": "[ CLAIM YOUR PAIR ]",
+      "alt_text_seed": "KingDesignCollective SASSY SOL Athletic Street sneaker, Italian leather"
+    },
+    "Unique Sin": {
+      "headline": "Unique Sin \u2014 Occasional Formal",
+      "tagline": "The only sin is blending in.",
+      "description": "Designed in California, handcrafted in Italy. The Unique Sin sits in our Occasional Formal tier \u2014 The only sin is blending in. Every pair carries KDC's signature obsidian-sole architecture and third-generation cordwainer finishing. 5 studio shots capture the grain, the soul, and the silhouette.",
+      "cta": "[ CLAIM YOUR PAIR ]",
+      "alt_text_seed": "KingDesignCollective Unique Sin Occasional Formal sneaker, Italian leather"
+    },
+    "Voda \u0160eta\u010d": {
+      "headline": "Voda \u0160eta\u010d \u2014 Athletic Street",
+      "tagline": "The water-walker. Engineered to defy gravity.",
+      "description": "Designed in California, handcrafted in Italy. The Voda \u0160eta\u010d sits in our Athletic Street tier \u2014 The water-walker. Engineered to defy gravity. Every pair carries KDC's signature obsidian-sole architecture and third-generation cordwainer finishing. 1 studio shots capture the grain, the soul, and the silhouette.",
+      "cta": "[ CLAIM YOUR PAIR ]",
+      "alt_text_seed": "KingDesignCollective Voda \u0160eta\u010d Athletic Street sneaker, Italian leather"
+    }
+  },
+  "logo_assets": [
+    "LOGOKDSC.png"
+  ]
+}

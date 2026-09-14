@@ -1,0 +1,120 @@
+# Hermes-native Aura Champions runtime.
+# Mounts the live Hermes skill source (absolute Windows paths) as the service runtime,
+# plus the host-installed node_modules so deps resolve inside the container.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=aura
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=aura
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aura -d aura"]
+      interval: 2s
+      timeout: 3s
+      retries: 10
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - C:/Users/young/agents/hermes_skills/aura-anti-cheat/migrations/001_anti_cheat_schema.sql:/docker-entrypoint-initdb.d/001_anti_cheat_schema.sql:ro
+      - C:/Users/young/agents/hermes_skills/aura-backend-master/migrations/001_backend_schema.sql:/docker-entrypoint-initdb.d/002_backend_schema.sql:ro
+      - C:/Users/young/agents/hermes_skills/aura-tournament-admin/migrations/001_tournament_schema.sql:/docker-entrypoint-initdb.d/003_tournament_schema.sql:ro
+
+  backend:
+    image: node:20-alpine
+    working_dir: /usr/src/app
+    volumes:
+      - C:/Users/young/agents/hermes_skills/aura-backend-master:/usr/src/app
+      - C:/Users/young/agents/hermes_skills/aura-backend-master/node_modules:/usr/src/app/node_modules
+    environment:
+      - PORT=3000
+      - DATABASE_URL=postgres://aura:${DB_PASSWORD}@db:5432/aura
+      - JWT_SECRET=${JWT_SECRET}
+      - HMAC_SECRET=${HMAC_MASTER_SECRET}
+      - HMAC_MASTER_SECRET=${HMAC_MASTER_SECRET}
+      - WRITE_TOKEN_SECRET=${WRITE_TOKEN_SECRET}
+      - NONCE_TTL_SECONDS=45
+    ports:
+      - "3100:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: sh -c "node src/app.js"
+
+  anti-cheat:
+    image: node:20-alpine
+    working_dir: /usr/src/app
+    volumes:
+      - C:/Users/young/agents/hermes_skills/aura-anti-cheat:/usr/src/app
+      - C:/Users/young/agents/hermes_skills/aura-anti-cheat/node_modules:/usr/src/app/node_modules
+    environment:
+      - PORT=3001
+      - DATABASE_URL=postgres://aura:${DB_PASSWORD}@db:5432/aura
+      - HMAC_MASTER_SECRET=${HMAC_MASTER_SECRET}
+      - JWT_SECRET=${JWT_SECRET}
+      - AUDIT_SIGNING_SECRET=${AUDIT_SIGNING_SECRET}
+      - NONCE_TTL_SECONDS=45
+    ports:
+      - "3101:3001"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: sh -c "node src/app.js"
+
+  trinity-special:
+    image: node:20-alpine
+    working_dir: /usr/src/app
+    volumes:
+      - C:/Users/young/agents/hermes_skills/aura-trinity-special:/usr/src/app
+      - C:/Users/young/agents/hermes_skills/aura-trinity-special/node_modules:/usr/src/app/node_modules
+    environment:
+      - PORT=3002
+      - DATABASE_URL=postgres://aura:${DB_PASSWORD}@db:5432/aura
+      - HMAC_MASTER_SECRET=${HMAC_MASTER_SECRET}
+      - JWT_SECRET=${JWT_SECRET}
+      - NONCE_TTL_SECONDS=45
+    ports:
+      - "3102:3002"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: sh -c "node src/app.js"
+
+  tournament-admin:
+    image: node:20-alpine
+    working_dir: /usr/src/app
+    volumes:
+      - C:/Users/young/agents/hermes_skills/aura-tournament-admin:/usr/src/app
+      - C:/Users/young/agents/hermes_skills/aura-tournament-admin/node_modules:/usr/src/app/node_modules
+    environment:
+      - PORT=3003
+      - DATABASE_URL=postgres://aura:${DB_PASSWORD}@db:5432/aura
+      - HMAC_MASTER_SECRET=${HMAC_MASTER_SECRET}
+      - JWT_SECRET=${JWT_SECRET}
+      - AUDIT_SIGNING_SECRET=${AUDIT_SIGNING_SECRET}
+      - NONCE_TTL_SECONDS=45
+    ports:
+      - "3103:3003"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: sh -c "node src/app.js"
+
+  nfc-handler:
+    image: node:20-alpine
+    working_dir: /usr/src/app
+    volumes:
+      - C:/Users/young/agents/hermes_skills/aura-nfc-handler/server:/usr/src/app
+      - C:/Users/young/agents/hermes_skills/aura-nfc-handler/server/node_modules:/usr/src/app/node_modules
+    environment:
+      - PORT=4000
+      - DATABASE_URL=postgres://aura:${DB_PASSWORD}@db:5432/aura
+      - WRITE_TOKEN_SECRET=${WRITE_TOKEN_SECRET}
+      - TOKEN_TTL_SECONDS=30
+    ports:
+      - "3104:4000"
+    command: sh -c "node write_token_service.js"
+
+volumes:
+  pgdata:

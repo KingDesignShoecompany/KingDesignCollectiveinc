@@ -1,0 +1,40 @@
+{
+  "info": {
+    "name": "Anti-Cheat Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Issue Nonce",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key":"Authorization","value":"Bearer <JWT>"},
+          {"key":"Content-Type","value":"application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"battleId\":\"<battle>\" }"
+        },
+        "url": "http://localhost:3001/issueNonce"
+      }
+    },
+    {
+      "name": "Verify Action",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key":"Content-Type","value":"application/json"},
+          {"key":"x-timestamp","value":"<ts>"},
+          {"key":"x-signature","value":"<sig>"},
+          {"key":"Authorization","value":"Bearer <JWT>"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"battleId\":\"<battle>\", \"action\": { \"actor\":\"<uid>\", \"type\":\"ATTACK\", \"target\":\"<uid2>\" }, \"nonce\":\"<nonce>\", \"stateVersion\":0 }"
+        },
+        "url": "http://localhost:3001/verifyAction"
+      }
+    }
+  ]
+}

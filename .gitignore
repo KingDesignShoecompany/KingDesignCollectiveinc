@@ -1,0 +1,71 @@
+# Umbrella Corporation — gitignore
+# This project contains CLASS-1 crypto-treasury data and skill secrets.
+# Never commit secrets, keys, or .env files.
+
+# Secrets & environment
+.env
+**/.env
+**/secrets/
+**/.env.local
+
+# Crypto treasury keys (CLASS-1 — never commit)
+corporate_runtime/documents/crypto_treasury/keys/
+corporate_runtime/documents/crypto_treasury/tokenomics_docs/
+corporate_runtime/documents/crypto_treasury/quarantine/
+**/*.ed25519.pk
+**/*.ed25519.sk
+
+# Skill secrets
+hermes_skills/_packages/.env
+stacks/multiagent/.env
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+*.zip
+dist/
+build/
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+*.db
+*.sqlite
+*.sqlite3
+
+# Cryptocurrency wallet files
+*.wallet
+*.key
+*.pem
+keystore/
+
+# Legacy Agent Zero artifacts (not Hermes-native)
+stacks/multiagent/_legacy_agentzero_aura/
+stacks/multiagent/agent_zero_usr/
+
+# Desktop app binaries (not part of the project)
+Comfy Desktop/
+
+# Generated reports (keep locally)
+*corporate_runtime/documents/integration/daily_reports/
+*corporate_runtime/documents/integration/reports/

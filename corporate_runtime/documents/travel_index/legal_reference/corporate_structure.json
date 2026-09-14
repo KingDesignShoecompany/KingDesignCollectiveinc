@@ -1,0 +1,27 @@
+{
+  "subsidiary_id": "vagary_index",
+  "entity_name": "The Vagary Index",
+  "brand_name": "The Vagary Index",
+  "jurisdiction": "[PENDING]",
+  "entity_type": "[PENDING]",
+  "registered_agent": "[PENDING]",
+  "incorporation_filing_date": "[PENDING]",
+  "capitalization": {},
+  "business_model": {
+    "product": "250-Country Travel Guide",
+    "format": "Comprehensive video + text travel documentation",
+    "audience": "Solo & couple travelers, all budgets",
+    "channels": ["TikTok","Instagram","YouTube","Direct Sales"],
+    "revenue_model": "digital_guide_sales_and_brand_partnerships"
+  },
+  "brand_identity": {
+    "positioning": "Global travel resource",
+    "value_prop": "Mapping all 250 countries so you don't have to",
+    "style": "Cinematic, curated, expansive"
+  },
+  "ownership_structure": {
+    "parent": "100%",
+    "subsidiary": "0%"
+  },
+  "dependencies": []
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Minute Story Sessions | Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="calm-theme">
+    <div class="stars-background"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">7MIN</a>
+            <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="stories.html" class="active">Library</a>
+            <a href="story-play.html">Player</a>
+            <a href="about.html">About</a>
+            <a href="create.html">Create</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Story Library</h1>
+
+            <div class="story-filters">
+                <div class="theme-tabs">
+                    <button class="theme-btn active" data-theme="all">All Stories</button>
+                    <button class="theme-btn" data-theme="Animals">🐾 Animals</button>
+                    <button class="theme-btn" data-theme="Adventure">🗺️ Adventure</button>
+                    <button class="theme-btn" data-theme="Fantasy">🦄 Fantasy</button>
+                    <button class="theme-btn" data-theme="Learning">📚 Learning</button>
+                </div>
+                <div class="tts-filter">
+                    <select id="voiceFilter">
+                        <option>All Voices</option>
+                        <option>Luna (Child)</option>
+                        <option>Orion (Male)</option>
+                        <option>Lyra (Female)</option>
+                        <option>Nova (Narrator)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="story-grid" id="storyGrid">
+                <!-- Stories rendered by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Seven Minute Story Sessions</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

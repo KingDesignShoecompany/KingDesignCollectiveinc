@@ -1,0 +1,37 @@
+[
+  {
+    "scene_number": 1,
+    "scene_title": "Forest Clearing",
+    "image_prompt": "Children's book illustration style, Forest Clearing, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 2,
+    "scene_title": "Brook\u2019s Edge",
+    "image_prompt": "Children's book illustration style, Brook\u2019s Edge, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 3,
+    "scene_title": "Bunny\u2019s Burrow",
+    "image_prompt": "Children's book illustration style, Bunny\u2019s Burrow, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 4,
+    "scene_title": "Back in Sunny Meadow",
+    "image_prompt": "Children's book illustration style, Back in Sunny Meadow, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 5,
+    "scene_title": "Sunset",
+    "image_prompt": "Children's book illustration style, Sunset, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  }
+]

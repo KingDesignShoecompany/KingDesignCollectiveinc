@@ -1,0 +1,113 @@
+# TTS Narration Script
+# Title: Bedtime Story: The Magic Painting Adventure
+# Age Group: 4-6
+# Voice: soft_female
+# Pace: slow
+# Generated with: gemma3:1b
+
+[Intro Music - Gentle lullaby, 5 seconds]
+
+NARRATOR (warm, soothing): "Hello little dreamer. Tonight's story is... The Magic Painting Adventure."[Pause - 2 seconds]
+
+[Scene 1 Transition - Gentle music fade]
+
+NARRATOR: "Forest Clearing"
+[Brief pause - 1 second]
+
+NARRATOR: "“Pip is sitting on a mossy rock, looking at a bright blue gentleting of a fluffy bunny.  He's holding a gentletbrush made of sunshine yellow.” “It’s a Magic gentleting, Poppy! Grandma says it can make anything you imagine come to life!”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "Poppy is curled up beside him, snuggling into her blanket. "I wonder what will happen?" she whispers softly."
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**Narrator:**  “Pip picks up the gentletbrush and starts swirling it around the bunny’s face. As he does, a tiny shimmer appears on the gentleting! It turns into a little robin!”"
+[Natural pause - 0.5 seconds]
+
+[Scene 1 Outro - Soft piano, 5 seconds]
+
+[Scene 2 Transition - Gentle music fade]
+
+NARRATOR: "The Ripple Effect"
+[Brief pause - 1 second]
+
+NARRATOR: ""Suddenly, a bright red butterfly flits out of the rabbit's ears!" Pip giggles. “It’s fluttering right togentleds… a sparkly puddle!”  The puddle ripples and grows bigger, forming a friendly-looking cloud.”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**Narrator:** “The puddle becomes a little waterfall! And it splashes onto a pile of colorful flowers!” Poppy smiles. "Look at all the colors!""
+[Natural pause - 0.5 seconds]
+
+[Scene 2 Outro - Soft piano, 5 seconds]
+
+[Scene 3 Transition - Gentle music fade]
+
+NARRATOR: "The Meadow"
+[Brief pause - 1 second]
+
+NARRATOR: "“They walk through a meadow filled with daisies and buttercups.  A tiny, wooden castle appears in the middle.” Pip carefully gentlets a friendly knight on the castle wall."He’s wearing his favorite blue cloak!”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**Narrator:** "The knight waves hello! He says 'Welcome!' to Pip and Poppy.""
+[Natural pause - 0.5 seconds]
+
+[Scene 3 Outro - Soft piano, 5 seconds]
+
+[Scene 4 Transition - Gentle music fade]
+
+NARRATOR: "A Helping Hand"
+[Brief pause - 1 second]
+
+NARRATOR: "“Suddenly, a little bumblebee buzzes by. It needs help carrying pollen from one flower to another.”  Pip realizes the knight is looking sad. “Let’s gentlet him a rainbow!””"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**Narrator:** "Pip gentlets a beautiful rainbow across the knight's chest. The bee lands on his shoulder and dances with him!""
+[Natural pause - 0.5 seconds]
+
+[Scene 4 Outro - Soft piano, 5 seconds]
+
+[Scene 5 Transition - Gentle music fade]
+
+NARRATOR: "Quiet Reflection"
+[Brief pause - 1 second]
+
+NARRATOR: "“The sun starts to set, gentleting the sky in shades of orange and pink.” Poppy says, “It’s almost time for bed." Pip looks at the gentleted knight smiling back at him. "We made a new friend!”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**Narrator:**  "Pip and Poppy are happy because they helped someone! It wasn't just about making things *appear* – it was about sharing kindness.”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Sound of gentle crickets chirping)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**Narrator:** “Remember, little ones, even the smallest acts of friendship can make a big difference.  Kindness is like sunshine - it makes everything brighter!”"
+[Natural pause - 0.5 seconds]
+
+[Scene 5 Outro - Soft piano, 5 seconds]
+
+[Scene 6 Transition - Gentle music fade]
+
+NARRATOR: "Sleepy Time"
+[Brief pause - 1 second]
+
+NARRATOR: "“Close your eyes now, and dream sweet dreams filled with colors and happy friends.”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Sound of soft lullaby music begins to fade in)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**Narrator:** “Sleep tight, my little explorers. Sweet dreams…”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "---"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "I hope this story fits the requirements! Let me know if you’d like any adjustments or a different theme for a future bedtime story."
+[Natural pause - 0.5 seconds]
+
+[Scene 6 Outro - Soft piano, 5 seconds]
+
+NARRATOR: "And remember... little ones, even the smallest acts of friendship can make a big difference.  Kindness is like sunshine - it makes everything brighter!”"
+[Pause - 2 seconds]
+
+[Outro Music - Gentle lullaby fading, 15 seconds]
+NARRATOR: "Sweet dreams, little one. Sleep tight."
+[End - Fade to silence]

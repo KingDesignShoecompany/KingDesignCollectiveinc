@@ -1,0 +1,17 @@
+{
+  "subsidiary": "shoe-brand",
+  "brand": "KingDesignCollective",
+  "updated_at": "2026-08-07T18:35:38Z",
+  "method": "photography-on-disk is source of truth; inventory.csv is pending mapping",
+  "products_with_photography": 8,
+  "total_image_files": 47,
+  "copy_generated": 8,
+  "pricing_mapped": 0,
+  "status": "CATALOG_BUILT_COPY_READY_PRICING_PENDING",
+  "next_actions": [
+    "Map 6 inventory.csv SKUs (Apex Runner V1 etc.) to real photo clusters OR retire them.",
+    "Set retail/cost pricing for the 8 photographed SKUs.",
+    "Bind storefront platform + payment (ecommerce_setup.json still [PENDING]).",
+    "Generate product hero images if AI renders desired (currently real photography only)."
+  ]
+}

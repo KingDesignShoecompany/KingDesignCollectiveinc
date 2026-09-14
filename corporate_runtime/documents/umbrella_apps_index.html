@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Corporation | Subsidiary Portal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a1a; color: #e0e0ff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h1 { text-align: center; font-size: 2.5rem; margin-bottom: 0.5rem; color: #00d1ff; }
+        .subtitle { text-align: center; color: #8888cc; margin-bottom: 2rem; }
+        .subsidiary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .sub-card { background: #121226; border: 1px solid #1a1aff; border-radius: 12px; padding: 1.5rem; text-decoration: none; color: inherit; transition: all 0.3s ease; }
+        .sub-card:hover { transform: translateY(-3px); border-color: #00d1ff; box-shadow: 0 0 20px rgba(0, 209, 255, 0.2); }
+        .sub-card h3 { color: #00d1ff; margin-bottom: 0.5rem; font-size: 1.3rem; }
+        .sub-card p { color: #8888cc; font-size: 0.9rem; margin-bottom: 0.75rem; }
+        .sub-files { font-size: 0.8rem; color: #666699; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+        .sub-files span { background: #0a0a1a; padding: 0.1rem 0.5rem; border-radius: 3px; }
+        .footer { text-align: center; margin-top: 3rem; color: #666699; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Umbrella Corporation</h1>
+        <p class="subtitle">7-Subsidiary Holding Company | Local-Compute Mesh | Sovereign AI Infrastructure</p>
+
+        <div class="subsidiary-grid">
+            <a href="shoe_brand/webapp/index.html" class="sub-card">
+                <h3>King Design Collective</h3>
+                <p>Premium footwear brand with AR card-battler integration</p>
+                <div class="sub-files">
+                    <span>index.html</span><span>products.html</span><span>product.html</span>
+                    <span>style.css</span><span>app.js</span>
+                </div>
+            </a>
+            <a href="travel_index/webapp/index.html" class="sub-card">
+                <h3>The Vagary Index</h3>
+                <p>250-country travel data platform with TikTok pipeline</p>
+                <div class="sub-files">
+                    <span>index.html</span><span>countries.html</span><span>country.html</span>
+                    <span>style.css</span><span>app.js</span>
+                </div>
+            </a>
+            <a href="game_design/webapp/index.html" class="sub-card">
+                <h3>Aura Champions</h3>
+                <p>AR card-battler UE5.7 game with NFC + Trinity VFX</p>
+                <div class="sub-files">
+                    <span>index.html</span><span>cards.html</span><span>card-detail.html</span>
+                    <span>events.html</span><span>style.css</span><span>app.js</span>
+                </div>
+            </a>
+            <a href="kids_channel/webapp/index.html" class="sub-card">
+                <h3>Seven Minute Story Sessions</h3>
+                <p>Children's bedtime stories with TTS and ambient sounds</p>
+                <div class="sub-files">
+                    <span>index.html</span><span>stories.html</span><span>story.html</span>
+                    <span>create.html</span><span>style.css</span><span>app.js</span>
+                </div>
+            </a>
+            <a href="innovation_hub/webapp/index.html" class="sub-card">
+                <h3>Innovation Hub</h3>
+                <p>IP architecture, patent portal, sovereign tech stack</p>
+                <div class="sub-files">
+                    <span>index.html</span><span>patents.html</span><span>whitepapers.html</span>
+                    <span>tech-stack.html</span><span>style.css</span><span>app.js</span>
+                </div>
+            </a>
+            <a href="ewaste_recycling/webapp/index.html" class="sub-card">
+                <h3>e-Waste Reclamation</h3>
+                <p>Rare-earth metal recovery with crypto treasury integration</p>
+                <div class="sub-files">
+                    <span>index.html</span><span>materials.html</span><span>logistics.html</span>
+                    <span>reports.html</span><span>style.css</span><span>app.js</span>
+                </div>
+            </a>
+            <a href="quantum_wearables/webapp/index.html" class="sub-card">
+                <h3>Quantum Wearables</h3>
+                <p>Cold fission thermal model, biometric sensor integration</p>
+                <div class="sub-files">
+                    <span>index.html</span><span>thermal.html</span><span>sensors.html</span>
+                    <span>safety.html</span><span>style.css</span><span>app.js</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Bolt.diy: localhost:5173 | Ollama: localhost:11435 | PostgreSQL: localhost:5432</p>
+            <p>Generated by Bolt.diy API + Hermes Agent Orchestration</p>
+        </div>
+    </div>
+</body>
+</html>
