@@ -80,3 +80,21 @@ auramaxxing/Plugins/
 # Generated reports (keep locally)
 *corporate_runtime/documents/integration/daily_reports/
 *corporate_runtime/documents/integration/reports/
+
+# Local runtime artifacts not part of repo
+.n8n/
+telegram_bot_token.txt
+docker-compose*.yml
+subsidiar/
+hermes_usr/
+agent_zero_usr/
+backups/
+descriptors/
+personas/
+policies/
+registry/
+spawn_controller.py
+sevenminutestorysessions/
+vagary_index/
+kingdesignshoeco_marketing_campaign_plan.md
+UMBRELLA_HERMES_ARCHITECTURE.md
