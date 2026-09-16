@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | e-Waste Reclamation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="industrial-theme">
+    <div class="matrix-bg"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">EWASTE</a>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="materials.html">Materials</a>
+                <a href="logistics.html">Logistics</a>
+                <a href="reports.html" class="active">Reports</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Asset-Value Payload Reports</h1>
+            <p class="subtitle">Integrated with Crypto Treasury settlement token engine</p>
+
+            <div class="report-actions">
+                <button class="cta-button">Generate Treasury Payload</button>
+                <button class="cta-button secondary">Export Reclamation Certificate</button>
+                <button class="cta-button secondary">Export to CSV</button>
+            </div>
+
+            <div class="treasury-payload">
+                <h2>Treasury Settlement Payload</h2>
+                <div class="payload-json">
+                    <div class="payload-item">
+                        <span class="payload-key">timestamp</span>
+                        <span class="payload-value" id="payloadTimestamp">2026-03-15T14:30:00Z</span>
+                    </div>
+                    <div class="payload-item">
+                        <span class="payload-key">batch_id</span>
+                        <span class="payload-value">EW-RCLM-2026-001</span>
+                    </div>
+                    <div class="payload-item">
+                        <span class="payload-key">input_kg</span>
+                        <span class="payload-value">1000</span>
+                    </div>
+                    <div class="payload-item">
+                        <span class="payload-key">gold_recovered_g</span>
+                        <span class="payload-value">100</span>
+                    </div>
+                    <div class="payload-item">
+                        <span class="payload-key">copper_recovered_g</span>
+                        <span class="payload-value">150000</span>
+                    </div>
+                    <div class="payload-item">
+                        <span class="payload-key">palladium_recovered_g</span>
+                        <span class="payload-value">50</span>
+                    </div>
+                    <div class="payload-item">
+                        <span class="payload-key">total_value_usd</span>
+                        <span class="payload-value">12427.00</span>
+                    </div>
+                    <div class="payload-item">
+                        <span class="payload-key">token_issuance</span>
+                        <span class="payload-value">UMBRA-SETTLE-2026-001</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificates-section">
+                <h2>Reclamation Certificates</h2>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-id">CERT-EW-2026-001</span>
+                            <span class="cert-status certified">Certified</span>
+                        </div>
+                        <p>Batch: 1000kg processing</p>
+                        <p>Gold: 100g | Copper: 150kg | Palladium: 50g</p>
+                        <p>Total Value: $12,427.00</p>
+                        <p>Certified: March 15, 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="compliance-section">
+                <h2>Compliance & Impact</h2>
+                <div class="compliance-grid">
+                    <div class="compliance-item">
+                        <h3>Environmental Impact</h3>
+                        <ul>
+                            <li>CO2 Saved: 2,850 kg (vs. virgin mining)</li>
+                            <li>Landfill Diverted: 1,000 kg</li>
+                            <li>Energy Saved: 15 MWh</li>
+                        </ul>
+                    </div>
+                    <div class="compliance-item">
+                        <h3>Regulatory Compliance</h3>
+                        <ul>
+                            <li>✓ EPA Standard 503</li>
+                            <li>✓ RoHS Directive 2011/65/EU</li>
+                            <li>✓ REACH Annex XVII</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 e-Waste Reclamation | Treasury Integration Module</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

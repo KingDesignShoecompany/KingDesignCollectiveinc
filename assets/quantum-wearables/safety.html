@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety | Quantum Wearables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="quantum-theme">
+    <div class="particle-field"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Q-WEAR</a>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="thermal.html">Thermal</a>
+                <a href="sensors.html">Sensors</a>
+                <a href="safety.html" class="active">Safety</a>
+            </div>
+            <span class="status-badge" id="safetyStatus">ALL SYSTEMS NOMINAL</span>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Safety Constraints Dashboard</h1>
+            <p class="hero-subtitle">Biomedical safety limits and radiation shielding verification</p>
+
+            <div class="safety-grid">
+                <div class="safety-card critical">
+                    <div class="safety-header">
+                        <span class="safety-icon">⚡</span>
+                        <h3>Biomedical Isolation</h3>
+                        <span class="safety-priority">CRITICAL</span>
+                    </div>
+                    <div class="safety-detail">
+                        <div class="safety-param">Isolation Resistance</div>
+                        <div class="safety-value">10MΩ Required</div>
+                        <div class="safety-current">Current: 15.2MΩ</div>
+                        <div class="safety-status status-ok">PASS</div>
+                    </div>
+                </div>
+
+                <div class="safety-card critical">
+                    <div class="safety-header">
+                        <span class="safety-icon">⚡</span>
+                        <h3>Electrical Safety</h3>
+                        <span class="safety-priority">CRITICAL</span>
+                    </div>
+                    <div class="safety-detail">
+                        <div class="safety-param">Leakage Current</div>
+                        <div class="safety-value">&lt; 100µA Required</div>
+                        <div class="safety-current">Current: 0.05µA</div>
+                        <div class="safety-status status-ok">PASS</div>
+                    </div>
+                </div>
+
+                <div class="safety-card warning">
+                    <div class="safety-header">
+                        <span class="safety-icon">☢️</span>
+                        <h3>Radiation Shielding</h3>
+                        <span class="safety-priority">PENDING</span>
+                    </div>
+                    <div class="safety-detail">
+                        <div class="safety-param">Cold Fission Radiation</div>
+                        <div class="safety-value">Shielding: 5cm Lead Equivalent</div>
+                        <div class="safety-current">Status: Certification Pending</div>
+                        <div class="safety-status status-warn">PENDING</div>
+                    </div>
+                </div>
+
+                <div class="safety-card info">
+                    <div class="safety-header">
+                        <span class="safety-icon">🛡️</span>
+                        <h3>Thermal Limits</h3>
+                        <span class="safety-priority">INFO</span>
+                    </div>
+                    <div class="safety-detail">
+                        <div class="safety-param">Max Skin Contact</div>
+                        <div class="safety-value">43°C (continuous)</div>
+                        <div class="safety-current">Current: 32.5°C</div>
+                        <div class="safety-status status-ok">PASS</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emergency-procedures">
+                <h2>Emergency Shutdown Procedures</h2>
+                <div class="emergency-flow">
+                    <div class="flow-step">
+                        <div class="flow-number">1</div>
+                        <div class="flow-title">Constraint Violation Detected</div>
+                        <p>ECG, PPG, or thermistor reads outside safe range</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">2</div>
+                        <div class="flow-title">Emergency Shutdown Triggered</div>
+                        <p>Automatic core power reduction to 0W</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">3</div>
+                        <div class="flow-title">User Notified</div>
+                        <p>Haptic alert + visual warning + audio tone</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">4</div>
+                        <div class="flow-title">Treasury Payload Frozen</div>
+                        <p>Asset-backed settlement token escrow locked</p>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="testEmergencyShutdown()">Test Emergency Shutdown</button>
+            </div>
+
+            <div class="compliance-certificates">
+                <h2>Compliance Certificates</h2>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-id">CERT-QW-001</span>
+                            <span class="cert-status certified">Certified</span>
+                        </div>
+                        <p>Biomedical Isolation Standard</p>
+                        <p>IEC 60601-1:2020</p>
+                        <p>Issued: 2026-01-15</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-id">CERT-QW-002</span>
+                            <span class="cert-status pending">Pending</span>
+                        </div>
+                        <p>Cold Fission Radiation Shielding</p>
+                        <p>NRC 10 CFR Part 30</p>
+                        <p>Expected: 2026-06-30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Quantum Wearables | Safety & Compliance Module</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

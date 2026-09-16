@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Design Collective | Premium Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">KingDesignCollective</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="checkout.html" class="cta-button small">Checkout</a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by SKU or name...">
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">KING DESIGN COLLECTIVE</h1>
+            <p class="hero-subtitle">Premium sneakers that bridge the physical and digital worlds</p>
+            <a href="products.html"><button class="cta-button large">Shop Collection</button></a>
+            <img src="images/logos/LOGOKDSC.png" alt="King Design Collective Logo" class="hero-logo">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Collection</h2>
+            <div class="product-grid" id="productGrid"></div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--deep-gray);">
+        <div class="container">
+            <h2 class="section-title">About Our AR Integration</h2>
+            <p class="hero-subtitle" style="max-width: 800px; margin: 0 auto;">
+                Every pair of King Design Collective sneakers comes with an NFC tag that unlocks
+                exclusive AR card-battler content. Tap your shoes with a compatible device to
+                summon your aura champion and battle in augmented reality.
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 King Design Collective | All Rights Reserved | UMB_SETTLEMENT Token Accepted</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Hub | Patent Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tech-theme">
+    <div class="matrix-bg"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">IP-HUB</a>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="patents.html" class="active">Patents</a>
+                <a href="whitepapers.html">White Papers</a>
+                <a href="tech-stack.html">Tech Stack</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="patent-header">
+                <h1> Patent Filing Portal</h1>
+                <p class="subtitle">Template-based patent submission with cross-subsidiary IP assignment</p>
+            </div>
+
+            <div class="patent-form-container">
+                <div class="form-section">
+                    <h2>Filing Details</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="patentTitle">Patent Title</label>
+                            <input type="text" id="patentTitle" placeholder="Enter invention title">
+                        </div>
+                        <div class="form-group">
+                            <label for="filingJurisdiction">Jurisdiction</label>
+                            <select id="filingJurisdiction">
+                                <option>USPTO</option>
+                                <option>EPO</option>
+                                <option>JPO</option>
+                                <option>CNIPA</option>
+                                <option>WO (PCT)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="assignee">Assignee Subsidiary</label>
+                            <select id="assignee">
+                                <option>Shoe Brand</option>
+                                <option>Travel Index</option>
+                                <option>Aura Champions</option>
+                                <option>Kids Channel</option>
+                                <option>e-Waste Recycling</option>
+                                <option>Quantum Wearables</option>
+                                <option>Crypto Treasury</option>
+                                <option>Innovation Hub (Master)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="priorityDate">Priority Date</label>
+                            <input type="date" id="priorityDate">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Abstract</h2>
+                    <textarea id="abstract" placeholder="Provide a concise summary of the invention (150 words max)..."></textarea>
+                </div>
+
+                <div class="form-section">
+                    <h2>Claims</h2>
+                    <div class="claims-container" id="claimsContainer">
+                        <div class="claim-item">
+                            <label>Claim 1</label>
+                            <textarea placeholder="Independent claim..."></textarea>
+                        </div>
+                    </div>
+                    <button class="cta-button secondary small" id="addClaimBtn">+ Add Claim</button>
+                </div>
+
+                <div class="form-section">
+                    <h2>Drawings</h2>
+                    <div class="file-upload">
+                        <label class="upload-area">
+                            <input type="file" id="drawings" multiple>
+                            <span>📎 Drop files or click to upload</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="cta-button">Submit Patent Application</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section tech-bg">
+        <div class="container">
+            <h2 class="section-title">Patent Status Tracker</h2>
+            <table class="patent-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Assignee</th>
+                        <th>Status</th>
+                        <th>Filed</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="patentTableBody">
+                    <tr>
+                        <td>UMB-P-023</td>
+                        <td>Cold Fission Thermal Regulation for Wearable AR</td>
+                        <td>Quantum Wearables</td>
+                        <td><span class="status-badge pending">Under Review</span></td>
+                        <td>2026-02-15</td>
+                        <td><button class="cta-button small">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>UMB-P-018</td>
+                        <td>AR Card Convergence Engine with NFT Integration</td>
+                        <td>Aura Champions</td>
+                        <td><span class="status-badge approved">Granted</span></td>
+                        <td>2025-11-03</td>
+                        <td><button class="cta-button small">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>UMB-P-015</td>
+                        <td>Dynamic Country Ranking Algorithm for Travel Index</td>
+                        <td>Travel Index</td>
+                        <td><span class="status-badge submitted">Submitted</span></td>
+                        <td>2025-09-20</td>
+                        <td><button class="cta-button small">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Innovation Hub Patent Portal</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

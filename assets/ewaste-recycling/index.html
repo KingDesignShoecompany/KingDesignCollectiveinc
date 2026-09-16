@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Waste Reclamation | Material Recovery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="industrial-theme">
+    <header class="industrial-header">
+        <div class="container">
+            <h1 class="brand-name">e-Waste Reclamation Division</h1>
+            <p class="brand-tagline">Rare-Earth Metal Recovery &amp; Asset Value Tracking</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">EWASTE</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Dashboard</a>
+                <a href="materials.html">Materials</a>
+                <a href="logistics.html">Logistics</a>
+                <a href="reports.html">Reports</a>
+            </div>
+            <div class="nav-status">
+                <span class="status-badge">1000kg Processed</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h2 class="hero-title">Material Recovery Dashboard</h2>
+            <p class="hero-subtitle">Industrial-grade e-waste processing with real-time precious metal tracking</p>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value" id="goldRecovered">100g</div>
+                    <div class="metric-label">Gold Recovered</div>
+                    <div class="metric-value-small">$8,820.00</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="copperRecovered">150kg</div>
+                    <div class="metric-label">Copper Recovered</div>
+                    <div class="metric-value-small">$1,488.00</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="palladiumRecovered">50g</div>
+                    <div class="metric-label">Palladium Recovered</div>
+                    <div class="metric-value-small">$2,119.00</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="totalValue">$12,427</div>
+                    <div class="metric-label">Total Asset Value</div>
+                    <div class="metric-value-small">Treasury Payload</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Recovery Rates (per 1kg)</h2>
+            <div class="recovery-table-container">
+                <table class="recovery-table">
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Concentration</th>
+                            <th>Recovery Rate</th>
+                            <th>Spot Price</th>
+                            <th>Yield (1000kg)</th>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recoveryTableBody">
+                        <tr>
+                            <td>Gold</td>
+                            <td>0.1 g/kg</td>
+                            <td>95%</td>
+                            <td>$2,500/oz</td>
+                            <td>100g (3.53 oz)</td>
+                            <td class="value-positive">$8,820.00</td>
+                            <td><span class="cat-badge precious">Precious</span></td>
+                        </tr>
+                        <tr>
+                            <td>Copper</td>
+                            <td>150 g/kg</td>
+                            <td>92%</td>
+                            <td>$4.50/lb</td>
+                            <td>150kg (330.69 lb)</td>
+                            <td class="value-positive">$1,488.00</td>
+                            <td><span class="cat-badge base">Base Metal</span></td>
+                        </tr>
+                        <tr>
+                            <td>Palladium</td>
+                            <td>0.05 g/kg</td>
+                            <td>88%</td>
+                            <td>$1,200/oz</td>
+                            <td>50g (1.76 oz)</td>
+                            <td class="value-positive">$2,119.00</td>
+                            <td><span class="cat-badge precious">Precious</span></td>
+                        </tr>
+                        <tr>
+                            <td>Silver</td>
+                            <td>0.3 g/kg</td>
+                            <td>90%</td>
+                            <td>$30/oz</td>
+                            <td>300g (10.58 oz)</td>
+                            <td class="value-positive">$953.00</td>
+                            <td><span class="cat-badge precious">Precious</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5"><strong>Total Asset Value</strong></td>
+                            <td class="total-value"><strong>$13,380.00</strong></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 e-Waste Reclamation Division | CLASS-1 Asset Tracking</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
