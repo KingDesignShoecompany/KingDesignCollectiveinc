@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics | e-Waste Reclamation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="industrial-theme">
+    <div class="matrix-bg"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">EWASTE</a>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="materials.html">Materials</a>
+                <a href="logistics.html" class="active">Logistics</a>
+                <a href="reports.html">Reports</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Logistics Management</h1>
+
+            <div class="logistics-layout">
+                <div class="logistics-map">
+                    <h2>Collection Points & Routes</h2>
+                    <div class="map-placeholder">
+                        <div class="map-overlay">
+                            <p>Interactive Logistics Map</p>
+                            <p>7 Collection Points | 3 Processing Centers | 2 Reclamation Plants</p>
+                        </div>
+                        <div class="route-list">
+                            <div class="route-item">
+                                <span class="route-id">RT-001</span>
+                                <span class="route-detail">Plant Alpha → Collection Point Delta</span>
+                                <span class="route-distance">120 km</span>
+                                <span class="route-status completed">Complete</span>
+                            </div>
+                            <div class="route-item">
+                                <span class="route-id">RT-002</span>
+                                <span class="route-detail">Plant Beta → Collection Point Echo</span>
+                                <span class="route-distance">85 km</span>
+                                <span class="route-status in-progress">In Transit</span>
+                            </div>
+                            <div class="route-item">
+                                <span class="route-id">RT-003</span>
+                                <span class="route-detail">Reclamation Plant Gamma → Refinery</span>
+                                <span class="route-distance">45 km</span>
+                                <span class="route-status pending">Scheduled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-panel">
+                    <h2>Batch Processing Schedule</h2>
+                    <div class="schedule-timeline">
+                        <div class="schedule-item">
+                            <div class="schedule-time">08:00</div>
+                            <div class="schedule-task">Collection RT-001</div>
+                            <div class="schedule-status">Completed</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">10:30</div>
+                            <div class="schedule-task">Collection RT-002</div>
+                            <div class="schedule-status in-progress">In Progress</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">13:00</div>
+                            <div class="schedule-task">Processing Batch #24B</div>
+                            <div class="schedule-status pending">Scheduled</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">15:30</div>
+                            <div class="schedule-task">Material Reclamation</div>
+                            <div class="schedule-status pending">Scheduled</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 e-Waste Reclamation | Logistics Mesh v3.2</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

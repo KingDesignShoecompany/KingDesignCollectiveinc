@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Champions | Card Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">AURA</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="cards.html" class="active">Cards</a>
+                <a href="events.html">Events</a>
+            </div>
+            <div class="nav-stats">
+                <span class="stat-badge" id="totalCards">0 CARDS</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Card Database</h1>
+            <div class="card-filters">
+                <input type="text" id="cardSearch" placeholder="Search by name, element, or ability...">
+                <div class="rarity-filters">
+                    <button class="rarity-btn active" data-rarity="all">All</button>
+                    <button class="rarity-btn" data-rarity="Common">Common</button>
+                    <button class="rarity-btn" data-rarity="Rare">Rare</button>
+                    <button class="rarity-btn" data-rarity="Epic">Epic</button>
+                    <button class="rarity-btn" data-rarity="Legendary">Legendary</button>
+                    <button class="rarity-btn convergence-filter" data-rarity="Convergence">Convergence</button>
+                </div>
+                <div class="element-filters">
+                    <button class="element-btn active" data-element="all">All Elements</button>
+                    <button class="element-btn" data-element="Fire">🔥 Fire</button>
+                    <button class="element-btn" data-element="Water">💧 Water</button>
+                    <button class="element-btn" data-element="Earth">🌍 Earth</button>
+                    <button class="element-btn" data-element="Air">💨 Air</button>
+                    <button class="element-btn" data-element="Light">⚡ Light</button>
+                    <button class="element-btn" data-element="Dark">🌑 Dark</button>
+                    <button class="element-btn" data-element="Cosmic">🌌 Cosmic</button>
+                </div>
+            </div>
+
+            <div class="card-grid" id="cardGrid">
+                <!-- Cards dynamically rendered by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aura Champions | UE5.7 | NFC + AR</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
