@@ -1,0 +1,21 @@
+{
+  "subsidiary_id": "shoes",
+  "updated_at": "[PENDING]",
+  "authorized_shares": 1000,
+  "issued_shares": 0,
+  "par_value": "[PENDING]",
+  "shareholder_register": [
+    {
+      "entity": "umbrella_parent",
+      "shares": 0,
+      "voting_rights_pct": 100
+    }
+  ],
+  "capital_contribution": {
+    "cash": {"amount": "[PENDING]", "currency": "USD", "purpose": "Founding capital, marketing, working capital, initial supplier relationship setup"},
+    "ip": {"description": "Design portfolio, brand name, trademarks, trade dress, packaging artwork, digital assets", "valuation": "[PENDING]"},
+    "services": {"description": "Founder design, creative direction, branding, business development, sales channel setup", "valuation": "[PENDING]"}
+  },
+  "lockup_terms": "[PENDING]",
+  "dividend_policy": "[PENDING]"
+}

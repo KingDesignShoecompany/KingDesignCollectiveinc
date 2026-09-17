@@ -1,0 +1,13 @@
+{
+  "subsidiary_id": "ewaste",
+  "form": [
+    {"step": "legal_research_jurisdiction", "done": false, "owner": "ops-global"},
+    {"step": "draft_articles_of_incorporation", "done": false, "owner": "ops-global"},
+    {"step": "file_incorporation_paperwork", "done": false, "owner": "ops-global"},
+    {"step": "assign_registered_agent", "done": false, "owner": "ops-global"},
+    {"step": "setup_capitalization_table", "done": false, "owner": "finance"},
+    {"step": "execute_ip_assignment", "done": false, "owner": "innovation-lead"},
+    {"step": "activate_bank_account", "done": false, "owner": "finance"},
+    {"step": "notify_goal_complete", "done": false, "owner": "ceo"}
+  ]
+}

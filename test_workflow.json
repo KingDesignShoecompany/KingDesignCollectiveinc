@@ -1,0 +1,49 @@
+{
+  "name": "Umbrella Content Factory - Test",
+  "nodes": [
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {
+              "mode": "everyDay"
+            }
+          ]
+        },
+        "pollTimes": {}
+      },
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "text": "=== Umbrella Corporation Daily Startup ===",
+        "options": {}
+      },
+      "name": "Startup Log",
+      "type": "n8n-nodes-base.no_operation",
+      "typeVersion": 1,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Startup Log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+}

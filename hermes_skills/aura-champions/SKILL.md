@@ -78,9 +78,13 @@ setup, schema loading, per-service launch commands, env vars, and the bridge por
 - **`matches.player1/player2` are TEXT**, not UUID (relaxed in migration `003_players_text.sql`) because user-ids across the system are opaque strings. `tournament_id` and `winner_user_id` remain UUID — pass valid UUIDs for those.
 
 ## Verification (consolidated gate + secrets)
-- SOLID E2E GATE (supersedes the older per-flow scripts): `C:/Users/young/stacks/multiagent/aura_e2e_gate.py`
+- SOLID E2E GATE (supersedes the older per-flow scripts): `C:/Users/young/stacks/multiagent/aura_e2e_gate.py` (Docker-based)
   — stdlib-only (no pytest needed), wraps battle-HMAC, tournament/judge, NFC-provisioning, and the
   UE-client HMAC contract; idempotent (unique card_uid per run); exits 0/1. Run with the live stack up.
+- LOCAL E2E GATE (no Docker): `scripts/aura_e2e_gate_local.py` — same assertions but uses direct
+  `psql` against local PostgreSQL instead of `docker exec`. Run: `python3 hermes_skills/aura-champions/scripts/aura_e2e_gate_local.py`.
+  Requires the card catalog seed loaded first (`010_card_catalog_seed.sql`) so card_id 50 has a known card_uid.
+  Expected: 26 passed, 0 failed.
 - SECRETS GENERATOR: `C:/Users/young/stacks/multiagent/aura_gen_secrets.py` writes strong
   HMAC_MASTER_SECRET / JWT_SECRET / WRITE_TOKEN_SECRET / AUDIT_SIGNING_SECRET / DB_PASSWORD into `.env`
   (gitignored); idempotent; `--show` dry-run.

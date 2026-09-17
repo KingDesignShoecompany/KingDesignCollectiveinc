@@ -1,0 +1,19 @@
+{
+  "subsidiary_id": "gamedev",
+  "updated_at": "[PENDING]",
+  "entity_type": "[PENDING]",
+  "formation_status": "[PENDING]",
+  "parent_entity": "Umbrella Enterprise",
+  "parent_ownership_pct": 100,
+  "external_ownership_pct": 0,
+  "total_authorized_shares": 1000,
+  "issued_shares": 0,
+  "initial_capital_call": {
+    "cash_usd": "[PENDING]",
+    "ip_assets_description": "[PENDING]",
+    "services_contribution_description": "[PENDING]"
+  },
+  "ownership_rationale": "[PENDING]",
+  "approvals_required": ["Board/CEO", "Legal", "Tax"],
+  "notes": "Full parent ownership initially; external equity introduction requires subsidiary board consent and central approval."
+}

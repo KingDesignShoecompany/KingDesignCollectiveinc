@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Vagary Index | 250-Country Travel Data</title>
+    <link rel="stylesheet" href="styles/KingDesignCollectiveINC-ui.css">
+    <link rel="stylesheet" href="styles/KingDesignCollectiveINC-travel-index.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="KingDesignCollectiveINC-travel-index">
     <header class="travel-header">
         <div class="container">
             <h1 class="brand-name">The Vagary Index</h1>
@@ -43,38 +45,44 @@
                 <div class="region-card" data-region="East Asia">
                     <div class="region-icon">🌏</div>
                     <h3>East Asia</h3>
-                    <p>6 Countries | 100% Complete</p>
+                    <p>6 Countries | 100%</p>
                     <span class="completion-bar"><span class="completion-fill" style="width: 100%"></span></span>
+                    <span class="completion-status status-complete">Complete</span>
                 </div>
                 <div class="region-card" data-region="MENA">
                     <div class="region-icon">🕌</div>
                     <h3>MENA</h3>
-                    <p>55 Countries | 96% Complete</p>
+                    <p>55 Countries | 96%</p>
                     <span class="completion-bar"><span class="completion-fill" style="width: 96%"></span></span>
+                    <span class="completion-status status-incomplete">In Progress</span>
                 </div>
                 <div class="region-card" data-region="SEA-ANZ">
-                    <div class="region-icon">🏝️</div>
+                    <div class="region-icon">🌴</div>
                     <h3>SEA-ANZ</h3>
-                    <p>18 Countries | 89% Complete</p>
+                    <p>18 Countries | 89%</p>
                     <span class="completion-bar"><span class="completion-fill" style="width: 89%"></span></span>
+                    <span class="completion-status status-incomplete">In Progress</span>
                 </div>
                 <div class="region-card" data-region="South Asia">
                     <div class="region-icon">🏔️</div>
                     <h3>South Asia</h3>
-                    <p>8 Countries | 92% Complete</p>
+                    <p>8 Countries | 92%</p>
                     <span class="completion-bar"><span class="completion-fill" style="width: 92%"></span></span>
+                    <span class="completion-status status-incomplete">In Progress</span>
                 </div>
                 <div class="region-card" data-region="Europe">
                     <div class="region-icon">🏰</div>
                     <h3>Europe</h3>
-                    <p>51 Countries | 94% Complete</p>
+                    <p>51 Countries | 94%</p>
                     <span class="completion-bar"><span class="completion-fill" style="width: 94%"></span></span>
+                    <span class="completion-status status-incomplete">In Progress</span>
                 </div>
                 <div class="region-card" data-region="Americas">
                     <div class="region-icon">🗺️</div>
                     <h3>Americas</h3>
-                    <p>53 Countries | 87% Complete</p>
+                    <p>53 Countries | 87%</p>
                     <span class="completion-bar"><span class="completion-fill" style="width: 87%"></span></span>
+                    <span class="completion-status status-incomplete">In Progress</span>
                 </div>
             </div>
         </div>
@@ -110,5 +118,7 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
+    <script src="scripts/KingDesignCollectiveINC-travel-index.js" defer></script>
 </body>
 </html>

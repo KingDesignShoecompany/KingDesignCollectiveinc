@@ -1,0 +1,100 @@
+{
+	"assetId": "vivvecldw",
+	"assetName": "Tundra_Mossy_Boulder_vivvecldw",
+	"assetType": "3d",
+	"assetSubType": "multipleMesh",
+	"assetTier": 0,
+	"assetRootPath": "/Game/Megascans/3D_Assets/Tundra_Mossy_Boulder_vivvecldw",
+	"meshList": [
+		{
+			"meshId": "mesh1",
+			"name": "S_Tundra_Mossy_Boulder_vivvecldw_high_Var1",
+			"path": "/Game/Megascans/3D_Assets/Tundra_Mossy_Boulder_vivvecldw/S_Tundra_Mossy_Boulder_vivvecldw_high_Var1.S_Tundra_Mossy_Boulder_vivvecldw_high_Var1",
+			"numberOfLods": 1,
+			"materialUsage": [
+				{
+					"instanceId": "mat1",
+					"materialSlot": "0"
+				}
+			]
+		}
+	],
+	"foliageAssetPaths": [],
+	"materialInstances": [
+		{
+			"instanceId": "mat1",
+			"instanceName": "MI_Tundra_Mossy_Boulder_vivvecldw_8K",
+			"instancePath": "/Game/Megascans/3D_Assets/Tundra_Mossy_Boulder_vivvecldw/MI_Tundra_Mossy_Boulder_vivvecldw_8K.MI_Tundra_Mossy_Boulder_vivvecldw_8K",
+			"instanceMaster": "master1",
+			"type": "materialInstance",
+			"params": [
+				{
+					"paramName": "albedo",
+					"usedTextureId": "tex2"
+				},
+				{
+					"paramName": "normal",
+					"usedTextureId": "tex3"
+				},
+				{
+					"paramName": "DRF",
+					"usedTextureId": "tex1"
+				}
+			]
+		}
+	],
+	"textureSets": [
+		{
+			"textureId": "tex1",
+			"type": "DRF",
+			"resolution": "8K",
+			"name": "T_TundraMossyBoulder_vivvecldw_8K_DpRF",
+			"path": "/Game/Megascans/3D_Assets/Tundra_Mossy_Boulder_vivvecldw/T_TundraMossyBoulder_vivvecldw_8K_DpRF.T_TundraMossyBoulder_vivvecldw_8K_DpRF",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "PackTexture"
+				}
+			]
+		},
+		{
+			"textureId": "tex2",
+			"type": "albedo",
+			"resolution": "8K",
+			"name": "T_Tundra_Mossy_Boulder_vivvecldw_8K_D",
+			"path": "/Game/Megascans/3D_Assets/Tundra_Mossy_Boulder_vivvecldw/T_Tundra_Mossy_Boulder_vivvecldw_8K_D.T_Tundra_Mossy_Boulder_vivvecldw_8K_D",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "albedo"
+				}
+			]
+		},
+		{
+			"textureId": "tex3",
+			"type": "normal",
+			"resolution": "8K",
+			"name": "T_Tundra_Mossy_Boulder_vivvecldw_8K_N",
+			"path": "/Game/Megascans/3D_Assets/Tundra_Mossy_Boulder_vivvecldw/T_Tundra_Mossy_Boulder_vivvecldw_8K_N.T_Tundra_Mossy_Boulder_vivvecldw_8K_N",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "normal"
+				}
+			]
+		}
+	],
+	"masterMaterials": [
+		{
+			"masterId": "master1",
+			"masterMaterialName": "M_MS_Default_Fuzz_Material",
+			"path": "/Game/MSPresets/M_MS_Default_Fuzz_Material/M_MS_Default_Fuzz_Material"
+		}
+	]
+}

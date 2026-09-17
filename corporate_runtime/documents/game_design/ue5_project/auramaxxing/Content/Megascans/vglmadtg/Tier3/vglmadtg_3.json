@@ -1,0 +1,87 @@
+{
+	"assetId": "vglmadtg",
+	"assetName": "Japanese_Wooden_Bridge_vglmadtg",
+	"assetType": "surface",
+	"assetSubType": "",
+	"assetTier": 3,
+	"assetRootPath": "/Game/Megascans/Surfaces/Japanese_Wooden_Bridge_vglmadtg",
+	"meshList": [],
+	"foliageAssetPaths": [],
+	"materialInstances": [
+		{
+			"instanceId": "mat1",
+			"instanceName": "MI_Japanese_Wooden_Bridge_vglmadtg_1K",
+			"instancePath": "/Game/Megascans/Surfaces/Japanese_Wooden_Bridge_vglmadtg/MI_Japanese_Wooden_Bridge_vglmadtg_1K.MI_Japanese_Wooden_Bridge_vglmadtg_1K",
+			"instanceMaster": "master1",
+			"type": "materialInstance",
+			"params": [
+				{
+					"paramName": "albedo",
+					"usedTextureId": "tex2"
+				},
+				{
+					"paramName": "normal",
+					"usedTextureId": "tex3"
+				},
+				{
+					"paramName": "ARD",
+					"usedTextureId": "tex1"
+				}
+			]
+		}
+	],
+	"textureSets": [
+		{
+			"textureId": "tex1",
+			"type": "ARD",
+			"resolution": "1K",
+			"name": "T_JapaneseWoodenBridge_vglmadtg_1K_ORDp",
+			"path": "/Game/Megascans/Surfaces/Japanese_Wooden_Bridge_vglmadtg/T_JapaneseWoodenBridge_vglmadtg_1K_ORDp.T_JapaneseWoodenBridge_vglmadtg_1K_ORDp",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "PackTexture"
+				}
+			]
+		},
+		{
+			"textureId": "tex2",
+			"type": "albedo",
+			"resolution": "1K",
+			"name": "T_Japanese_Wooden_Bridge_vglmadtg_1K_D",
+			"path": "/Game/Megascans/Surfaces/Japanese_Wooden_Bridge_vglmadtg/T_Japanese_Wooden_Bridge_vglmadtg_1K_D.T_Japanese_Wooden_Bridge_vglmadtg_1K_D",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "albedo"
+				}
+			]
+		},
+		{
+			"textureId": "tex3",
+			"type": "normal",
+			"resolution": "1K",
+			"name": "T_Japanese_Wooden_Bridge_vglmadtg_1K_N",
+			"path": "/Game/Megascans/Surfaces/Japanese_Wooden_Bridge_vglmadtg/T_Japanese_Wooden_Bridge_vglmadtg_1K_N.T_Japanese_Wooden_Bridge_vglmadtg_1K_N",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "normal"
+				}
+			]
+		}
+	],
+	"masterMaterials": [
+		{
+			"masterId": "master1",
+			"masterMaterialName": "M_MS_Surface_Material",
+			"path": "/Game/MSPresets/M_MS_Surface_Material/M_MS_Surface_Material"
+		}
+	]
+}

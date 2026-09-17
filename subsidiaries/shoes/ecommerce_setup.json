@@ -1,0 +1,34 @@
+{
+  "brand": "King Design Shoe Company",
+  "parent_company": "King Design Collective",
+  "supplier": "AliveShoes",
+  "jurisdiction": "California",
+  "entity_type": "S-corp",
+  "updated_at": "[PENDING]",
+  "storefront": {
+    "platform": "[PENDING]",
+    "national_sales_tax": true,
+    "accept_returns": true,
+    "status": "draft"
+  },
+  "payment_processing": {
+    "primary": "[PENDING]",
+    "backup": "[PENDING]",
+    "currency": "USD",
+    "subscriptions_supported": false,
+    "status": "pending"
+  },
+  "supplier_agreement": {
+    "type": "wholesale",
+    "vendor": "AliveShoes",
+    "minimum_order_units": "[PENDING]",
+    "lead_time_days": "[PENDING]",
+    "payment_terms": "net_30_or_prepaid",
+    "status": "pending"
+  },
+  "links": {
+    "registered_agent_address": "1034 W Temple St, San Bernardino, CA 92411",
+    "bank_account": "[PENDING]"
+  },
+  "notes": "Ecommerce setup initialized with no platform/payment binding."
+}

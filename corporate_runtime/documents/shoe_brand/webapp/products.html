@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King Design Collective | Shop</title>
+    <link rel="stylesheet" href="styles/KingDesignCollectiveINC-ui.css">
+    <link rel="stylesheet" href="styles/KingDesignCollectiveINC-shoe-brand.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="KingDesignCollectiveINC-shoe-brand">
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="nav-logo">KingDesignCollective</a>
@@ -35,6 +37,19 @@
                 <button class="filter-btn" data-filter="Comfort Walking">Comfort Walking</button>
                 <button class="filter-btn" data-filter="Racing">Racing</button>
             </div>
+
+            <!-- Product Carousel (visible on mobile/tablet) -->
+            <div class="product-carousel-wrapper">
+                <div class="product-carousel" id="productCarousel">
+                    <!-- Products dynamically rendered by app.js -->
+                </div>
+                <div class="carousel-nav">
+                    <button id="carouselPrev" aria-label="Previous products">&#8593;</button>
+                    <button id="carouselNext" aria-label="Next products">&#8594;</button>
+                </div>
+            </div>
+
+            <!-- Product Grid (visible on desktop) -->
             <div class="product-grid" id="productGrid">
                 <!-- Products dynamically rendered by app.js -->
             </div>
@@ -47,5 +62,7 @@
         </div>
     </footer>
     <script src="app.js"></script>
+    <script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
+    <script src="scripts/KingDesignCollectiveINC-shoe-brand.js" defer></script>
 </body>
 </html>

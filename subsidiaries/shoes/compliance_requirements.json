@@ -1,0 +1,13 @@
+{
+  "subsidiary_id": "shoes",
+  "state": "California",
+  "entity_type": "S-corp",
+  "franchise_tax": "$800 minimum annual tax (California)",
+  "registered_agent": "Must be California-based physical address",
+  "s_corp_election": "IRS Form 2553 within 75 days of incorporation",
+  "financial": "bank account, payment processing, sales tax nexus",
+  "ip": "trademark, design copyright, brand registration",
+  "tax": "California franchise tax, sales tax collection, federal S-corp pass-through",
+  "operational": "ecommerce platform, wholesale accounts, supplier agreements",
+  "reporting": "monthly"
+}

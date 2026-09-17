@@ -1,0 +1,100 @@
+{
+	"assetId": "wengeiuqx",
+	"assetName": "Beach_Rock_Formation_wengeiuqx",
+	"assetType": "3d",
+	"assetSubType": "multipleMesh",
+	"assetTier": 2,
+	"assetRootPath": "/Game/Megascans/3D_Assets/Beach_Rock_Formation_wengeiuqx",
+	"meshList": [
+		{
+			"meshId": "mesh1",
+			"name": "S_Beach_Rock_Formation_wengeiuqx_lod3_Var1",
+			"path": "/Game/Megascans/3D_Assets/Beach_Rock_Formation_wengeiuqx/S_Beach_Rock_Formation_wengeiuqx_lod3_Var1.S_Beach_Rock_Formation_wengeiuqx_lod3_Var1",
+			"numberOfLods": 4,
+			"materialUsage": [
+				{
+					"instanceId": "mat1",
+					"materialSlot": "0"
+				}
+			]
+		}
+	],
+	"foliageAssetPaths": [],
+	"materialInstances": [
+		{
+			"instanceId": "mat1",
+			"instanceName": "MI_Beach_Rock_Formation_wengeiuqx_2K",
+			"instancePath": "/Game/Megascans/3D_Assets/Beach_Rock_Formation_wengeiuqx/MI_Beach_Rock_Formation_wengeiuqx_2K.MI_Beach_Rock_Formation_wengeiuqx_2K",
+			"instanceMaster": "master1",
+			"type": "materialInstance",
+			"params": [
+				{
+					"paramName": "albedo",
+					"usedTextureId": "tex2"
+				},
+				{
+					"paramName": "normal",
+					"usedTextureId": "tex3"
+				},
+				{
+					"paramName": "DRF",
+					"usedTextureId": "tex1"
+				}
+			]
+		}
+	],
+	"textureSets": [
+		{
+			"textureId": "tex1",
+			"type": "DRF",
+			"resolution": "2K",
+			"name": "T_BeachRockFormation_wengeiuqx_2K_DpRF",
+			"path": "/Game/Megascans/3D_Assets/Beach_Rock_Formation_wengeiuqx/T_BeachRockFormation_wengeiuqx_2K_DpRF.T_BeachRockFormation_wengeiuqx_2K_DpRF",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "PackTexture"
+				}
+			]
+		},
+		{
+			"textureId": "tex2",
+			"type": "albedo",
+			"resolution": "2K",
+			"name": "T_Beach_Rock_Formation_wengeiuqx_2K_D",
+			"path": "/Game/Megascans/3D_Assets/Beach_Rock_Formation_wengeiuqx/T_Beach_Rock_Formation_wengeiuqx_2K_D.T_Beach_Rock_Formation_wengeiuqx_2K_D",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "albedo"
+				}
+			]
+		},
+		{
+			"textureId": "tex3",
+			"type": "normal",
+			"resolution": "2K",
+			"name": "T_Beach_Rock_Formation_wengeiuqx_2K_N",
+			"path": "/Game/Megascans/3D_Assets/Beach_Rock_Formation_wengeiuqx/T_Beach_Rock_Formation_wengeiuqx_2K_N.T_Beach_Rock_Formation_wengeiuqx_2K_N",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "normal"
+				}
+			]
+		}
+	],
+	"masterMaterials": [
+		{
+			"masterId": "master1",
+			"masterMaterialName": "M_MS_Default_Fuzz_Material",
+			"path": "/Game/MSPresets/M_MS_Default_Fuzz_Material/M_MS_Default_Fuzz_Material"
+		}
+	]
+}

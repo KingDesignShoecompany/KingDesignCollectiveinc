@@ -1,0 +1,87 @@
+{
+	"assetId": "vftkejfew",
+	"assetName": "Cast_In_Situ_Concrete_vftkejfew",
+	"assetType": "surface",
+	"assetSubType": "",
+	"assetTier": 2,
+	"assetRootPath": "/Game/Megascans/Surfaces/Cast_In_Situ_Concrete_vftkejfew",
+	"meshList": [],
+	"foliageAssetPaths": [],
+	"materialInstances": [
+		{
+			"instanceId": "mat1",
+			"instanceName": "MI_Cast_In_Situ_Concrete_vftkejfew_2K",
+			"instancePath": "/Game/Megascans/Surfaces/Cast_In_Situ_Concrete_vftkejfew/MI_Cast_In_Situ_Concrete_vftkejfew_2K.MI_Cast_In_Situ_Concrete_vftkejfew_2K",
+			"instanceMaster": "master1",
+			"type": "materialInstance",
+			"params": [
+				{
+					"paramName": "albedo",
+					"usedTextureId": "tex2"
+				},
+				{
+					"paramName": "normal",
+					"usedTextureId": "tex3"
+				},
+				{
+					"paramName": "ARD",
+					"usedTextureId": "tex1"
+				}
+			]
+		}
+	],
+	"textureSets": [
+		{
+			"textureId": "tex1",
+			"type": "ARD",
+			"resolution": "2K",
+			"name": "T_CastInSituConcrete_vftkejfew_2K_ORDp",
+			"path": "/Game/Megascans/Surfaces/Cast_In_Situ_Concrete_vftkejfew/T_CastInSituConcrete_vftkejfew_2K_ORDp.T_CastInSituConcrete_vftkejfew_2K_ORDp",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "PackTexture"
+				}
+			]
+		},
+		{
+			"textureId": "tex2",
+			"type": "albedo",
+			"resolution": "2K",
+			"name": "T_Cast_In_Situ_Concrete_vftkejfew_2K_D",
+			"path": "/Game/Megascans/Surfaces/Cast_In_Situ_Concrete_vftkejfew/T_Cast_In_Situ_Concrete_vftkejfew_2K_D.T_Cast_In_Situ_Concrete_vftkejfew_2K_D",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "albedo"
+				}
+			]
+		},
+		{
+			"textureId": "tex3",
+			"type": "normal",
+			"resolution": "2K",
+			"name": "T_Cast_In_Situ_Concrete_vftkejfew_2K_N",
+			"path": "/Game/Megascans/Surfaces/Cast_In_Situ_Concrete_vftkejfew/T_Cast_In_Situ_Concrete_vftkejfew_2K_N.T_Cast_In_Situ_Concrete_vftkejfew_2K_N",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "normal"
+				}
+			]
+		}
+	],
+	"masterMaterials": [
+		{
+			"masterId": "master1",
+			"masterMaterialName": "M_MS_Surface_Material",
+			"path": "/Game/MSPresets/M_MS_Surface_Material/M_MS_Surface_Material"
+		}
+	]
+}
