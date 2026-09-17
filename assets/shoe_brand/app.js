@@ -127,13 +127,14 @@ function initializeStore() {
 
 function renderProductGrid(products, filter = 'all') {
     const grid = document.getElementById('productGrid') || document.querySelector('.product-grid');
-    if (!grid) return;
+    const carousel = document.getElementById('productCarousel');
+    if (!grid && !carousel) return;
 
     const filtered = filter === 'all'
         ? products
         : products.filter(p => p.category === filter);
 
-    grid.innerHTML = filtered.map(p => `
+    const cards = filtered.map(p => `
         <div class="product-card" data-sku="${p.id}">
             <img src="${p.image}" alt="${p.name}" class="product-image" loading="lazy">
             <h3>${p.name}</h3>
@@ -145,6 +146,26 @@ function renderProductGrid(products, filter = 'all') {
             <a href="product.html?sku=${p.id}" class="cta-button small">View Details</a>
         </div>
     `).join('');
+
+    if (grid) grid.innerHTML = cards;
+    if (carousel) carousel.innerHTML = cards;
+
+    initCarousel();
+}
+
+function initCarousel() {
+    const carousel = document.getElementById('productCarousel');
+    if (!carousel) return;
+
+    const scrollAmount = 320; // card width + gap
+
+    document.getElementById('carouselPrev')?.addEventListener('click', function() {
+        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    document.getElementById('carouselNext')?.addEventListener('click', function() {
+        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
 }
 
 function initializeSearch() {
