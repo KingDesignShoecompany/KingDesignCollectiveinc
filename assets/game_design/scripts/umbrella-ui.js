@@ -43,7 +43,7 @@
 
   // ─── Page Transitions ─────────────────────
   function initPageTransitions() {
-    // Add ready class for fade-in (CSS handles opacity: 0 -> 1)
+    // Add ready class for fade-in (CSS handles opacity transition)
     document.body.classList.add("ui-ready");
 
     // Fade out on link click for same-site navigation

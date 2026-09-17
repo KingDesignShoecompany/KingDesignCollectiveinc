@@ -129,7 +129,6 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: transparent;
 }
-
 body {
   color: var(--color-text-primary);
   font-family: var(--font-body);
