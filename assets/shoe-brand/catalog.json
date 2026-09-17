@@ -1,0 +1,170 @@
+{
+  "store": "KingDesignCollectiveINC Shoe Brand",
+  "source": "Zendrop",
+  "integration_status": "api_configured",
+  "api_credentials": {
+    "endpoint": "https://api.zendrop.com/api/v2",
+    "auth_method": "bearer_token",
+    "scopes": [
+      "catalog:read",
+      "my_products:read",
+      "my_products:write",
+      "orders:read",
+      "orders:write",
+      "order_issues:read",
+      "order_issues:write",
+      "stores:read",
+      "stores:write",
+      "billing:read"
+    ]
+  },
+  "token": {
+    "status": "pending_creation",
+    "token_name": "KingDesignCollectiveINC - Shoe Brand & Vagary Index",
+    "expiration": "never",
+    "description": "Primary store integration token for e-commerce storefronts"
+  },
+  "products": [
+    {
+      "id": "KING-001",
+      "name": "Apex Runner V1",
+      "sku": "KING-001",
+      "price": 189.00,
+      "currency": "USD",
+      "image": "images/products/KING-001-side.jpg",
+      "thumbnail": "images/products/KING-001-box.jpg",
+      "description": "Premium athletic sneaker with responsive cushioning and breathable mesh upper. Perfect for urban running and casual wear.",
+      "category": "Athletic",
+      "tags": ["sneakers", "running", "casual"],
+      "variants": [
+        {"size": "8", "sku": "KING-001-8", "in_stock": 5},
+        {"size": "9", "sku": "KING-001-9", "in_stock": 3},
+        {"size": "10", "sku": "KING-001-10", "in_stock": 7},
+        {"size": "11", "sku": "KING-001-11", "in_stock": 2}
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "internal"
+    },
+    {
+      "id": "KING-002",
+      "name": "Daily Drift Low",
+      "sku": "KING-002",
+      "price": 149.00,
+      "currency": "USD",
+      "image": "images/products/KING-002-side.jpg",
+      "thumbnail": "images/products/KING-002-box.jpg",
+      "description": "Low-top canvas sneaker with classic silhouette and comfortable cotton lining. Versatile everyday shoe.",
+      "category": "Casual",
+      "tags": ["sneakers", "casual", "canvas"],
+      "variants": [
+        {"size": "8", "sku": "KING-002-8", "in_stock": 10},
+        {"size": "9", "sku": "KING-002-9", "in_stock": 8},
+        {"size": "10", "sku": "KING-002-10", "in_stock": 6},
+        {"size": "11", "sku": "KING-002-11", "in_stock": 4}
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 2,
+      "shipping_days_max": 5,
+      "active": true,
+      "source": "internal"
+    },
+    {
+      "id": "KING-003",
+      "name": "Summit Trail X",
+      "sku": "KING-003",
+      "price": 229.00,
+      "currency": "USD",
+      "image": "images/products/KING-003-side.jpg",
+      "thumbnail": "images/products/KING-003-box.jpg",
+      "description": "All-terrain hiking sneaker with waterproof upper, Vibram sole, and ankle support. Built for rugged adventures.",
+      "category": "Outdoor",
+      "tags": ["hiking", "trail", "waterproof"],
+      "variants": [
+        {"size": "9", "sku": "KING-003-9", "in_stock": 5},
+        {"size": "10", "sku": "KING-003-10", "in_stock": 4},
+        {"size": "11", "sku": "KING-003-11", "in_stock": 3}
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 5,
+      "shipping_days_max": 10,
+      "active": true,
+      "source": "internal"
+    },
+    {
+      "id": "KING-004",
+      "name": "Urban Flair Knit",
+      "sku": "KING-004",
+      "price": 189.00,
+      "currency": "USD",
+      "image": "images/products/KING-004-side.jpg",
+      "thumbnail": "images/products/KING-004-box.jpg",
+      "description": "Pointed-toe stiletto with knit upper and cushioned insole. Textured snakeskin pattern with gold heel cap.",
+      "category": "Formal",
+      "tags": ["stiletto", "formal", "knit"],
+      "variants": [
+        {"size": "6", "sku": "KING-004-6", "in_stock": 3},
+        {"size": "7", "sku": "KING-004-7", "in_stock": 5},
+        {"size": "8", "sku": "KING-004-8", "in_stock": 4}
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "internal"
+    },
+    {
+      "id": "KING-005",
+      "name": "Cloud Step Walker",
+      "sku": "KING-005",
+      "price": 175.00,
+      "currency": "USD",
+      "image": "images/products/KING-005-side.jpg",
+      "thumbnail": "images/products/KING-005-box.jpg",
+      "description": "Two-tone pointed-toe pump with memory foam insole and block heel. Perfect for all-day wear.",
+      "category": "Formal",
+      "tags": ["pump", "formal", "block-heel"],
+      "variants": [
+        {"size": "6", "sku": "KING-005-6", "in_stock": 4},
+        {"size": "7", "sku": "KING-005-7", "in_stock": 6},
+        {"size": "8", "sku": "KING-005-8", "in_stock": 5}
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "internal"
+    },
+    {
+      "id": "KING-006",
+      "name": "Nico Sprint Fry",
+      "sku": "KING-006",
+      "price": 259.00,
+      "currency": "USD",
+      "image": "images/products/KING-006-side.jpg",
+      "thumbnail": "images/products/KING-006-box.jpg",
+      "description": "Luxury two-tone stiletto with premium leather upper and signature gold hardware. Handcrafted Italian leather.",
+      "category": "Luxury",
+      "tags": ["stiletto", "luxury", "leather"],
+      "variants": [
+        {"size": "5", "sku": "KING-006-5", "in_stock": 2},
+        {"size": "6", "sku": "KING-006-6", "in_stock": 3},
+        {"size": "7", "sku": "KING-006-7", "in_stock": 2}
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 7,
+      "shipping_days_max": 14,
+      "active": true,
+      "source": "internal"
+    }
+  ],
+  "zendrop_import_pending": true,
+  "zendrop_import_config": {
+    "store_id": null,
+    "sync_interval_hours": 6,
+    "auto_sync": true,
+    "categories_to_import": ["sneakers", "athletic", "casual", "formal", "luxury", "outdoor"]
+  }
+}

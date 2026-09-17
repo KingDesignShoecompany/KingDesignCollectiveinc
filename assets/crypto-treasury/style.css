@@ -1,0 +1,13 @@
+body { background: #0f1420; color: #e6e9f0; margin: 0; font-family: system-ui; }
+.navbar { background: rgba(15, 20, 32, 0.95); padding: 1rem 0; border-bottom: 1px solid rgba(74, 158, 255, 0.12); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.hero-section { padding: 4rem 0; text-align: center; }
+.hero-title { color: #4a9eff; font-size: 2.5rem; margin-bottom: 1rem; }
+.hero-subtitle { color: #a3b0c8; font-size: 1.2rem; }
+.section { padding: 3rem 0; }
+.section-title { color: #4a9eff; font-size: 1.8rem; margin-bottom: 2rem; text-align: center; }
+.token-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.token-card { background: #161d2e; border: 1px solid rgba(74, 158, 255, 0.12); border-radius: 8px; padding: 1.5rem; }
+.token-card h3 { color: #4a9eff; margin-top: 0; }
+.token-card p { color: #a3b0c8; margin: 0.25rem 0; }
+.footer { background: #161d2e; border-top: 1px solid rgba(74, 158, 255, 0.12); padding: 1.5rem 0; text-align: center; color: #6b7a92; font-size: 0.85rem; }
