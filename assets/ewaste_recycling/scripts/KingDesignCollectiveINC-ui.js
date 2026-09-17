@@ -18,7 +18,7 @@
     } else {
       document.documentElement.classList.remove("dark");
     }
-    window.dispatchEvent(new CustomEvent("umbrella:themechange", { detail: { theme } }));
+    window.dispatchEvent(new CustomEvent("KingDesignCollectiveINC:themechange", { detail: { theme } }));
   }
 
   function detectOSPreference() {
@@ -215,7 +215,7 @@
 
     document.body.appendChild(toggle);
 
-    window.addEventListener("umbrella:themechange", function (e) {
+    window.addEventListener("KingDesignCollectiveINC:themechange", function (e) {
       const icon = toggle.querySelector(".icon");
       if (icon) {
         icon.textContent = e.detail.theme === THEME_DARK ? "☀️" : "🌓";
@@ -240,7 +240,7 @@
     initPageTransitions();
     initCursorEffect();
 
-    window.dispatchEvent(new CustomEvent("umbrella:loaded", {
+    window.dispatchEvent(new CustomEvent("KingDesignCollectiveINC:loaded", {
       detail: {
         theme: localStorage.getItem(THEME_KEY) || detectOSPreference(),
         subsidiary: detectSubsidiary(),
