@@ -1,0 +1,227 @@
+{
+  "name": "KingDesignCollectiveINC UI",
+  "version": "2.0.0",
+  "description": "Luxury design system and component library v2.0 \u2014 shared foundation + per-subsidiary enhanced themes for King Design Collective Inc.",
+  "repo": "KingDesignShoecompany/KingDesignCollectiveinc",
+  "license": "Apache-2.0",
+  "author": "Umbrella Corporation Design Systems Team",
+  "created": "2026-09-16",
+  "updated": "2026-09-16",
+  "cdn": "https://kingdesignshoecompany.github.io/KingDesignCollectiveinc/assets/",
+  "features": {
+    "global": [
+      "glassmorphism surfaces",
+      "luxury cursor effect",
+      "smooth page transitions",
+      "scroll-triggered animations",
+      "dark/light theme toggle",
+      "smooth scroll anchor links",
+      "responsive grid layouts",
+      "fluid typography"
+    ],
+    "subsidiary_specific": {
+      "shoe_brand": [
+        "3D product card tilt",
+        "NFC tap hint",
+        "AR badge interaction",
+        "floating hero logo",
+        "grid background animation"
+      ],
+      "travel_index": [
+        "starfield twinkle",
+        "click ripple effects",
+        "region card hover reveal",
+        "completion bar animation",
+        "country lazy loading"
+      ],
+      "game_design": [
+        "3D card frame hover",
+        "holographic glow effects",
+        "CTA button pulse",
+        "stat badge cycling",
+        "terminal typing animation"
+      ],
+      "kids_channel": [
+        "interactive starfield",
+        "click ripple effects",
+        "play button pulse",
+        "age selector interaction",
+        "story card hover"
+      ],
+      "innovation_hub": [
+        "metric count-up animation",
+        "tech stack flow",
+        "terminal typing",
+        "table row highlight",
+        "status badge pulse"
+      ],
+      "ewaste_recycling": [
+        "constraint status pulsing",
+        "compliance stagger animation",
+        "table row hover highlight",
+        "metric hover enhancement",
+        "report action stagger"
+      ],
+      "quantum_wearables": [
+        "live metric pulsing",
+        "particle field generation",
+        "thermal simulator interaction",
+        "device card status cycling",
+        "graph data streaming"
+      ],
+      "portal": [
+        "3D card hover",
+        "floating card animation",
+        "click ripple effects",
+        "staggered card reveal",
+        "gradient background"
+      ]
+    }
+  },
+  "subsidies": {
+    "shoe_brand": {
+      "theme_class": "KingDesignCollectiveINC-shoe-brand",
+      "primary_color": "#d4af37",
+      "secondary_color": "#e6c25a",
+      "accent_color": "#8b4513",
+      "css_files": [
+        "KingDesignCollectiveINC-ui.css",
+        "KingDesignCollectiveINC-shoe-brand.css"
+      ],
+      "js_files": [
+        "KingDesignCollectiveINC-ui.js",
+        "KingDesignCollectiveINC-shoe-brand.js"
+      ],
+      "focus": "luxury e-commerce with AR integration"
+    },
+    "travel_index": {
+      "theme_class": "KingDesignCollectiveINC-travel-index",
+      "primary_color": "#4a9eff",
+      "secondary_color": "#7cd67c",
+      "accent_color": "#ffd93d",
+      "css_files": [
+        "KingDesignCollectiveINC-ui.css",
+        "KingDesignCollectiveINC-travel-index.css"
+      ],
+      "js_files": [
+        "KingDesignCollectiveINC-ui.js",
+        "KingDesignCollectiveINC-travel-index.js"
+      ],
+      "focus": "luxury travel curation with data visualization"
+    },
+    "game_design": {
+      "theme_class": "KingDesignCollectiveINC-game-design",
+      "primary_color": "#bb86ff",
+      "secondary_color": "#00e5ff",
+      "accent_color": "#ff006e",
+      "css_files": [
+        "KingDesignCollectiveINC-ui.css",
+        "KingDesignCollectiveINC-game-design.css"
+      ],
+      "js_files": [
+        "KingDesignCollectiveINC-ui.js",
+        "KingDesignCollectiveINC-game-design.js"
+      ],
+      "focus": "AR card battler with sci-fi interface"
+    },
+    "kids_channel": {
+      "theme_class": "KingDesignCollectiveINC-kids-channel",
+      "primary_color": "#e08060",
+      "secondary_color": "#80b3ff",
+      "accent_color": "#ffcd4d",
+      "css_files": [
+        "KingDesignCollectiveINC-ui.css",
+        "KingDesignCollectiveINC-kids-channel.css"
+      ],
+      "js_files": [
+        "KingDesignCollectiveINC-ui.js",
+        "KingDesignCollectiveINC-kids-channel.js"
+      ],
+      "focus": "immersive bedtime storytelling"
+    },
+    "innovation_hub": {
+      "theme_class": "KingDesignCollectiveINC-innovation-hub",
+      "primary_color": "#00e676",
+      "secondary_color": "#18ffff",
+      "accent_color": "#ff00aa",
+      "css_files": [
+        "KingDesignCollectiveINC-ui.css",
+        "KingDesignCollectiveINC-innovation-hub.css"
+      ],
+      "js_files": [
+        "KingDesignCollectiveINC-ui.js",
+        "KingDesignCollectiveINC-innovation-hub.js"
+      ],
+      "focus": "tech showcase with terminal aesthetics"
+    },
+    "ewaste_recycling": {
+      "theme_class": "KingDesignCollectiveINC-ewaste-recycling",
+      "primary_color": "#ff6b35",
+      "secondary_color": "#ffd23f",
+      "accent_color": "#16a34a",
+      "css_files": [
+        "KingDesignCollectiveINC-ui.css",
+        "KingDesignCollectiveINC-ewaste-recycling.css"
+      ],
+      "js_files": [
+        "KingDesignCollectiveINC-ui.js",
+        "KingDesignCollectiveINC-ewaste-recycling.js"
+      ],
+      "focus": "industrial dashboard with compliance reporting"
+    },
+    "quantum_wearables": {
+      "theme_class": "KingDesignCollectiveINC-quantum-wearables",
+      "primary_color": "#00b4d8",
+      "secondary_color": "#72efdd",
+      "accent_color": "#ff9e00",
+      "css_files": [
+        "KingDesignCollectiveINC-ui.css",
+        "KingDesignCollectiveINC-quantum-wearables.css"
+      ],
+      "js_files": [
+        "KingDesignCollectiveINC-ui.js",
+        "KingDesignCollectiveINC-quantum-wearables.js"
+      ],
+      "focus": "sci-fi UX with particle fields and biometric dashboards"
+    },
+    "portal": {
+      "theme_class": "KingDesignCollectiveINC-portal",
+      "primary_color": "#00d1ff",
+      "secondary_color": "#a855f7",
+      "accent_color": "#ff006e",
+      "css_files": [
+        "KingDesignCollectiveINC-portal.css"
+      ],
+      "js_files": [
+        "KingDesignCollectiveINC-portal.js"
+      ],
+      "focus": "subsidiary portal with 3D card navigation"
+    }
+  },
+  "global_components": {
+    "navigation": {
+      "navbar": "sticky navbar with glassmorphism backdrop",
+      "theme_toggle": "floating button with OS preference detection"
+    },
+    "layout": {
+      "container": "responsive max-width container",
+      "grid": "auto-fit CSS grid system (2/3/4 cols)",
+      "section": "consistent vertical spacing"
+    },
+    "interactive": {
+      "cursor": "custom luxury cursor with hover states",
+      "scroll": "smooth scroll with anchor offset",
+      "animations": "IntersectionObserver scroll-triggered animations"
+    }
+  },
+  "build_integration": {
+    "bolt_deploy": {
+      "deploy_to_bolt": "copies all webapp files to /home/project/KingDesignCollectiveINC/ in Bolt container",
+      "deploy_to_gh": "pushes to gh-pages branch of KingDesignCollectiveinc repo"
+    },
+    "html_integration": {
+      "css": "<link rel=\"stylesheet\" href=\"styles/KingDesignCollectiveINC-ui.css\"> + per-subsidiary CSS",
+      "js": "<script src=\"scripts/KingDesignCollectiveINC-ui.js\" defer> + per-subsidiary JS"
+    }
+  }
+}
