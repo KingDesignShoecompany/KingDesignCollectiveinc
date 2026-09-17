@@ -93,6 +93,16 @@
   --border-radius-full: 9999px;
 
   --max-width: min(90%, 1280px);
+
+  /* Spacing scale */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
 }
 
 /* Dark mode variants */
@@ -121,7 +131,6 @@ html {
 }
 
 body {
-  background: var(--color-bg-default);
   color: var(--color-text-primary);
   font-family: var(--font-body);
   font-size: var(--font-base);
@@ -131,7 +140,14 @@ body {
   transition: background-color var(--transition-slow), color var(--transition-slow);
 }
 
-/* Text hierarchy */
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =============== TEXT HIERARCHY =============== */
 h1, .h1 { font-size: var(--fluid-h1); font-family: var(--font-display); line-height: var(--leading-tight); letter-spacing: var(--tracking-tight); }
 h2, .h2 { font-size: var(--fluid-h2); font-family: var(--font-display); line-height: var(--leading-tight); letter-spacing: var(--tracking-tight); }
 h3, .h3 { font-size: var(--fluid-h3); font-family: var(--font-display); line-height: var(--leading-snug); letter-spacing: var(--tracking-tight); }
@@ -466,7 +482,7 @@ html { -ms-overflow-style: none; scrollbar-width: none; }
 }
 
 /* Hide default cursor when luxury cursor is active */
-body:not(.cursor-disabled) {
+body:has(.luxury-cursor) {
   cursor: none;
 }
 
@@ -476,13 +492,12 @@ a, button, .ui-btn, .cta-button {
 
 /* =============== PAGE TRANSITIONS =============== */
 
-body {
+body.ui-page-transition {
   opacity: 0;
-  transform: translateY(8px);
+  transition: opacity 400ms ease, transform 400ms ease;
 }
 
-body.ui-ready {
+body.ui-page-transition.ui-ready {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 400ms ease, transform 400ms ease;
 }

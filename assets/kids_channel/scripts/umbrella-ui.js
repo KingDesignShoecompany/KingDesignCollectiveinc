@@ -43,13 +43,8 @@
 
   // ─── Page Transitions ─────────────────────
   function initPageTransitions() {
-    // Fade in on load
-    document.body.style.opacity = "0";
-    window.addEventListener("load", function () {
-      document.body.style.transition = "opacity 400ms ease, transform 400ms ease";
-      document.body.style.opacity = "1";
-      document.body.style.transform = "translateY(0)";
-    });
+    // Add ready class for fade-in (CSS handles opacity: 0 -> 1)
+    document.body.classList.add("ui-ready");
 
     // Fade out on link click for same-site navigation
     document.addEventListener("click", function (e) {
@@ -64,10 +59,8 @@
       }
 
       e.preventDefault();
-      document.body.style.opacity = "0";
-      document.body.style.transform = "translateY(8px)";
-
-      setTimeout(() => {
+      document.body.classList.remove("ui-ready");
+      setTimeout(function () {
         window.location.href = href;
       }, 300);
     });
@@ -237,7 +230,6 @@
 
   // ─── Initialization ───────────────────────
   function init() {
-    // Add ui-ready class after a brief delay for smooth fade-in
     document.body.classList.add("ui-ready");
 
     initTheme();
