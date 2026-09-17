@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Minute Story Sessions | Create Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-kids-channel.css">
+</head>
+<body class="calm-theme umbrella-kids-channel">
+    <div class="stars-background"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">7MIN</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="stories.html">Library</a>
+                <a href="story.html">Story</a>
+                <a href="create.html" class="active">Create</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Create New Story</h1>
+
+            <div class="story-wizard">
+                <div class="wizard-step active" data-step="1">
+                    <h2>Story Details</h2>
+                    <div class="form-group">
+                        <label for="themeSelect">Theme</label>
+                        <select id="themeSelect">
+                            <option>Animals</option>
+                            <option>Adventure</option>
+                            <option>Fantasy</option>
+                            <option>Learning</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mainCharacter">Main Character</label>
+                        <input type="text" id="mainCharacter" placeholder="e.g., Luna the Little Owl">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="friendCharacter">Friend Character</label>
+                        <input type="text" id="friendCharacter" placeholder="e.g., Benny the Bunny">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="targetAge">Target Age</label>
+                            <select id="targetAge">
+                                <option>2-4 Years</option>
+                                <option selected>4-6 Years</option>
+                                <option>6-8 Years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="moralLesson">Moral Lesson</label>
+                            <select id="moralLesson">
+                                <option>Friendship</option>
+                                <option>Kindness</option>
+                                <option>Courage</option>
+                                <option>Sharing</option>
+                                <option>Honesty</option>
+                                <option>Imagination</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="storyLength">Estimated Length</label>
+                        <div class="length-meter">
+                            <span class="length-label">2 min</span>
+                            <input type="range" id="storyLength" min="240" max="600" value="420">
+                            <span class="length-label">10 min</span>
+                            <span class="length-display" id="lengthDisplay">7 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-step" data-step="2">
+                    <h2>Audio Production</h2>
+                    <div class="form-group">
+                        <label for="ttsVoice">TTS Voice</label>
+                        <select id="ttsVoice">
+                            <option>Luna (Child)</option>
+                            <option>Orion (Male)</option>
+                            <option>Lyra (Female)</option>
+                            <option>Nova (Narrator)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ambientSound">Ambient Sound</label>
+                        <select id="ambientSound">
+                            <option>Rain</option>
+                            <option>Ocean Waves</option>
+                            <option>Fireplace</option>
+                            <option>Forest Sounds</option>
+                            <option>Silence</option>
+                        </select>
+                    </div>
+
+                    <div class="preview-player">
+                        <div class="audio-display">
+                            <div class="audio-wave">
+                                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                            <div class="audio-time">Preview: 0:00 / 7:00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-step" data-step="3">
+                    <h2>Production Pipeline</h2>
+                    <div class="pipeline-steps">
+                        <div class="pipeline-step completed">
+                            <div class="step-number">✓</div>
+                            <h3>Story Written</h3>
+                            <p>Your story is ready for narration</p>
+                        </div>
+                        <div class="pipeline-step pending">
+                            <div class="step-number">2</div>
+                            <h3>Audio Production</h3>
+                            <p>TTS narration + ambient sound mixing</p>
+                        </div>
+                        <div class="pipeline-step pending">
+                            <div class="step-number">3</div>
+                            <h3>YouTube Publish</h3>
+                            <p>Upload with ad revenue + memberships</p>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="cta-button">Generate Story</button>
+                        <button class="cta-button secondary">Save Draft</button>
+                    </div>
+
+                    <div class="youtube-info">
+                        <h3>YouTube Revenue Model</h3>
+                        <ul>
+                            <li>Ad revenue from 7-minute episode</li>
+                            <li>Channel memberships ($4.99/mo)</li>
+                            <li>Super Chat donations</li>
+                            <li>Asset-backed: UMB_SETTLEMENT token</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="wizard-nav">
+                    <button class="nav-btn prev" id="prevStep">Previous</button>
+                    <div class="progress-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="nav-btn next" id="nextStep">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Seven Minute Story Sessions | Production Pipeline</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-kids-channel.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Champions | AR Card Battler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-game-design.css">
+</head>
+<body class="umbrella-game-design">
+    <header class="aura-header">
+        <div class="container">
+            <h1 class="brand-name">Aura Champions</h1>
+            <p class="brand-tagline">Converge. Battle. Dominate.</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">AURA</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="cards.html">Card Database</a>
+                <a href="events.html">Events & Tournaments</a>
+                <a href="https://localhost:5173/" target="_blank">Launch in Bolt.diy</a>
+            </div>
+            <div class="nav-stats">
+                <span class="stat-badge">Season 3</span>
+                <span class="stat-badge">100+ Cards</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- AR Card Reveal Hero -->
+    <section class="hero-section">
+        <div class="container">
+            <h2 class="hero-title">AR CARD-BATTLER</h2>
+            <p class="hero-subtitle">Scan your physical cards. Summon them in Augmented Reality.</p>
+            <div class="ar-card-reveal">
+                <div class="card-frame" id="arCardFrame">
+                    <div class="card-hologram">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-rarity convergence">CONVERGENCE</div>
+                            <div class="card-name">#100 Convergence Stone</div>
+                            <div class="card-element">⚡ Cosmic</div>
+                            <div class="card-stats">
+                                <span class="stat">HP: —</span>
+                                <span class="stat">ATK: ∞</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="cta-button">DOWNLOAD NOW (UE5)</button>
+            <div class="platform-badges">
+                <span class="badge">iOS</span>
+                <span class="badge">Android</span>
+                <span class="badge">PC (UE5.7)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trinity VFX Showcase -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Trinity Special</h2>
+            <div class="trinity-grid">
+                <div class="trinity-card" data-milestone="50">
+                    <div class="trinity-number">#50</div>
+                    <h3>Trinity Awakening</h3>
+                    <div class="trinity-vfx">⚡ Energy Surge VFX</div>
+                    <p class="trinity-desc">First convergence milestone. Unleashes raw elemental power.</p>
+                </div>
+                <div class="trinity-card" data-milestone="75">
+                    <div class="trinity-number">#75</div>
+                    <h3>Trinity Ascendant</h3>
+                    <div class="trinity-vfx">🔥 Plasma Storm VFX</div>
+                    <p class="trinity-desc">Mid-tier convergence. Enhanced Trinity VFX with particle effects.</p>
+                </div>
+                <div class="trinity-card" data-milestone="100">
+                    <div class="trinity-number">#100</div>
+                    <h3>Convergence Stone</h3>
+                    <div class="trinity-vfx">🌌 Reality Fracture VFX</div>
+                    <p class="trinity-desc">Ultimate convergence. World-altering Trinity special animation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>NFC Tap to Play</h3>
+                    <p>Scan physical NTAG216 cards. Instant AR summon with haptic feedback.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔫</div>
+                    <h3>Battle Sync</h3>
+                    <p>Real-time multiplayer battles with anti-cheat protection via HMAC nonces.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Trinity VFX</h3>
+                    <p>Cinematic special effects for monsters #50, #75, #100 convergence events.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Cold Fission</h3>
+                    <p>Thermal physics model integrated into monster abilities and AR rendering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aura Champions | Built on UE5.7 | Sovereign Local Compute</p>
+            <p>Bolt.diy on :5173 | Ollama on :11435 | PostgreSQL on :5432</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-game-design.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Innovation Hub | Patent & IP Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-innovation-hub.css">
+</head>
+<body class="tech-theme umbrella-innovation-hub">
+    <div class="matrix-bg"></div>
+
+    <header class="tech-header">
+        <div class="container">
+            <h1 class="brand-name">Umbrella Innovation Hub</h1>
+            <p class="brand-tagline">Cross-Disciplinary IP Architecture</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">IP-HUB</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Dashboard</a>
+                <a href="patents.html">Patents</a>
+                <a href="whitepapers.html">White Papers</a>
+                <a href="tech-stack.html">Tech Stack</a>
+            </div>
+            <div class="nav-status">
+                <span class="status-badge online">Local-Only</span>
+                <span class="status-badge">No Cloud</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h2 class="hero-title">Innovation Hub Dashboard</h2>
+            <p class="hero-subtitle">Managing intellectual property across 7 subsidiaries using sovereign local-compute infrastructure</p>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value" id="activePatents">23</div>
+                    <div class="metric-label">Active Patents</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="whitePapers">15</div>
+                    <div class="metric-label">White Papers</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="subsidiaries">7</div>
+                    <div class="metric-label">Subsidiaries</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="ipValue">$2.4M</div>
+                    <div class="metric-label">IP Valuation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Sovereign Tech Stack</h2>
+            <div class="tech-stack-diagram">
+                <div class="stack-row">
+                    <div class="stack-item">
+                        <span class="stack-name">Ollama</span>
+                        <span class="stack-port">Port 11434 (host:11435)</span>
+                        <span class="stack-status">Online</span>
+                    </div>
+                    <div class="stack-arrow">→</div>
+                    <div class="stack-item">
+                        <span class="stack-name">Bolt.diy</span>
+                        <span class="stack-port">Port 5173</span>
+                        <span class="stack-status">Online</span>
+                    </div>
+                    <div class="stack-arrow">→</div>
+                    <div class="stack-item">
+                        <span class="stack-name">Hermes Agent</span>
+                        <span class="stack-port">Port 3100+</span>
+                        <span class="stack-status">Online</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsidiary-ip-grid">
+                <h3>IP Contributions by Subsidiary</h3>
+                <div class="ip-grid" id="ipGrid">
+                    <div class="ip-card" data-sub="shoe_brand">
+                        <h4>King Design Collective</h4>
+                        <p>Brand IP, SKU designs, supply chain automation</p>
+                        <span class="ip-count">12 patents</span>
+                    </div>
+                    <div class="ip-card" data-sub="travel_index">
+                        <h4>The Vagary Index</h4>
+                        <p>Data aggregation algorithms, travel indexing</p>
+                        <span class="ip-count">8 patents</span>
+                    </div>
+                    <div class="ip-card" data-sub="game_design">
+                        <h4>Aura Champions</h4>
+                        <p>AR card mechanics, NFC protocol, Trinity VFX</p>
+                        <span class="ip-count">15 patents</span>
+                    </div>
+                    <div class="ip-card" data-sub="kids_channel">
+                        <h4>Seven Minute Story Sessions</h4>
+                        <p>TTS pipeline, child-safe content generation</p>
+                        <span class="ip-count">6 patents</span>
+                    </div>
+                    <div class="ip-card" data-sub="ewaste_recycling">
+                        <h4>e-Waste Reclamation</h4>
+                        <p>Metal recovery algorithms, logistics optimization</p>
+                        <span class="ip-count">9 patents</span>
+                    </div>
+                    <div class="ip-card" data-sub="quantum_wearables">
+                        <h4>Quantum Wearables</h4>
+                        <p>Cold fission thermal model, biometric integration</p>
+                        <span class="ip-count">7 patents</span>
+                    </div>
+                    <div class="ip-card" data-sub="crypto_treasury">
+                        <h4>Crypto Treasury</h4>
+                        <p>Asset-backed token, ATM settlement protocol</p>
+                        <span class="ip-count">4 patents</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Umbrella Innovation Hub | CLASS-1 Data Sovereignty | No External Endpoints</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-innovation-hub.js" defer></script>
+</body>
+</html>

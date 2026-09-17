@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Design Collective | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-shoe-brand.css">
+    <style>
+        .about-section { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        .brand-story { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        @media (max-width: 768px) { .brand-story { grid-template-columns: 1fr; } }
+        .brand-logo { width: 200px; margin: 0 auto; display: block; }
+        .story-content h1 { font-size: 2rem; color: var(--gold); margin-bottom: 1rem; }
+        .story-content p { color: var(--text-dim); line-height: 1.8; margin-bottom: 1rem; }
+        .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0; }
+        @media (max-width: 768px) { .values-grid { grid-template-columns: 1fr; } }
+        .value-card { background: var(--deep-gray); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; text-align: center; }
+        .value-card .value-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .value-card h3 { color: var(--gold); margin-bottom: 0.5rem; }
+        .value-card p { color: var(--text-dim); font-size: 0.85rem; }
+        .signature { text-align: center; margin-top: 1rem; font-style: italic; color: var(--text-dim); }
+        .team-photos { margin-top: 3rem; }
+        .photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+        @media (max-width: 768px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } }
+        .photo-placeholder { background: var(--steel); border: 1px solid var(--border-color); border-radius: 10px; height: 200px; display: flex; align-items: center; justify-content: center; color: var(--text-dim); }
+    </style>
+</head>
+<body class="umbrella-shoe-brand">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">KingDesignCollective</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html" class="active">About</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="about-section">
+        <div class="brand-story">
+            <img src="images/logos/LOGOKDSC.png" alt="King Design Collective Logo" class="brand-logo">
+            <div class="story-content">
+                <h1>Our Story</h1>
+                <p>Founded in 2019, King Design Collective emerged from a vision to merge premium craftsmanship with cutting-edge AR technology. What started as a small design studio has grown into a global brand recognized for innovation in both footwear and interactive experiences.</p>
+                <p>Our flagship innovation — the AR card-battler integration — allows customers to bring their sneakers to life through augmented reality, unlocking exclusive digital collectibles and gameplay. This fusion of physical and digital has redefined what it means to own a pair of sneakers.</p>
+                <p>We believe in creating products that tell stories, and in crafting experiences that linger long after the purchase. Every pair of King Design Collective sneakers is a gateway to adventure.</p>
+                <p class="signature">— Alex Chen, Founder & Creative Director</p>
+            </div>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">🎯</div>
+                <h3>Precision Craftsmanship</h3>
+                <p>Every detail is hand-finished with meticulous attention to quality.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🌱</div>
+                <h3>Sustainable Materials</h3>
+                <p>We source eco-friendly materials and partner with ethical manufacturers.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">📱</div>
+                <h3>Digital Integration</h3>
+                <p>Bridging the physical and digital worlds through AR technology.</p>
+            </div>
+        </div>
+
+        <div class="team-photos">
+            <h2 style="text-align: center; color: var(--gold);">Our Team</h2>
+            <div class="photo-grid">
+                <div class="photo-placeholder">Alex Chen<br><span style="font-size: 0.8rem; color: var(--text-dim);">Founder & Director</span></div>
+                <div class="photo-placeholder">Maya Rodriguez<br><span style="font-size: 0.8rem; color: var(--text-dim);">Head Designer</span></div>
+                <div class="photo-placeholder">Tomoko Sato<br><span style="font-size: 0.8rem; color: var(--text-dim);">AR Lead</span></div>
+                <div class="photo-placeholder">Jamie Kowalski<br><span style="font-size: 0.8rem; color: var(--text-dim);">Production</span></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 King Design Collective | All Rights Reserved | UMB_SETTLEMENT Token Accepted</p>
+        </div>
+    </footer>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-shoe-brand.js" defer></script>
+</body>
+</html>

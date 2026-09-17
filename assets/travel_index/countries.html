@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vagary Index | Countries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-travel-index.css">
+</head>
+<body class="umbrella-travel-index">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">VAGARY</a>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="countries.html" class="active">Countries</a>
+                <a href="country.html">Country</a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="countrySearch" placeholder="Search 250 countries...">
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">250 Verified Countries</h1>
+            <div class="region-filter">
+                <button class="filter-btn active" data-region="all">All Regions</button>
+                <button class="filter-btn" data-region="East Asia">East Asia (6)</button>
+                <button class="filter-btn" data-region="MENA">MENA (55)</button>
+                <button class="filter-btn" data-region="SEA-ANZ">SEA-ANZ (18)</button>
+                <button class="filter-btn" data-region="South Asia">South Asia (8)</button>
+                <button class="filter-btn" data-region="Europe">Europe (51)</button>
+                <button class="filter-btn" data-region="Americas">Americas (53)</button>
+            </div>
+
+            <div class="country-grid" id="countryGrid">
+                <!-- Countries rendered by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 The Vagary Index. 250 Countries | Local-Compute Mesh</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-travel-index.js" defer></script>
+</body>
+</html>

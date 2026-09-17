@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal Model | Quantum Wearables</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-quantum-wearables.css">
+</head>
+<body class="quantum-theme umbrella-quantum-wearables">
+    <div class="particle-field"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Q-WEAR</a>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="thermal.html" class="active">Thermal Model</a>
+                <a href="sensors.html">Sensors</a>
+                <a href="safety.html">Safety</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Cold Fission Thermal Model</h1>
+            <p class="hero-subtitle">Real-time thermal management equations and simulation</p>
+
+            <div class="equations-panel">
+                <h2>Thermal Equations</h2>
+                <div class="equation-display">
+                    <div class="equation">
+                        <span class="equation-label">Heat Transfer:</span>
+                        <code>Q = m × c × ΔT</code>
+                        <span class="equation-desc">Where m = mass, c = specific heat, ΔT = temperature change</span>
+                    </div>
+                    <div class="equation">
+                        <span class="equation-label">Radiated Power:</span>
+                        <code>P_radiated = ε × σ × A × (T⁴ - T_ambient⁴)</code>
+                        <span class="equation-desc">Stefan-Boltzmann law for passive radiation</span>
+                    </div>
+                    <div class="equation">
+                        <span class="equation-label">Thermal Conductivity:</span>
+                        <code>Q_conduction = k × A × (T₁ - T₂) / d</code>
+                        <span class="equation-desc">Fourier's law through material layers</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thermal-simulator">
+                <h2>Real-Time Thermal Simulator</h2>
+                <div class="sim-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="massInput">Mass (g)</label>
+                            <input type="number" id="massInput" value="50" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="specificHeat">Specific Heat (J/g°C)</label>
+                            <input type="number" id="specificHeat" value="0.897" min="0.1" step="0.001">
+                        </div>
+                        <div class="form-group">
+                            <label for="deltaTemp">Temp Change (°C)</label>
+                            <input type="number" id="deltaTemp" value="15" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="ambientTemp">Ambient (°C)</label>
+                            <input type="number" id="ambientTemp" value="20" min="-50">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="emissivity">Emissivity (ε)</label>
+                            <input type="number" id="emissivity" value="0.85" min="0" max="1" step="0.01">
+                        </div>
+                        <div class="form-group">
+                            <label for="surfaceArea">Surface Area (cm²)</label>
+                            <input type="number" id="surfaceArea" value="800" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="peakTemp">Peak Temp (°C)</label>
+                            <input type="number" id="peakTemp" value="42" min="20">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Duration (min)</label>
+                            <input type="number" id="duration" value="5" min="1">
+                        </div>
+                    </div>
+
+                    <button class="cta-button" onclick="calculateThermal()">Calculate Thermal</button>
+                </div>
+
+                <div class="sim-results" id="thermalResults">
+                    <h3>Simulation Results</h3>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span>Heat Energy (Q):</span><span id="resultQ">671.55 J</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Radiated Power:</span><span id="resultP">2.15 W</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Skin Temp Delta:</span><span id="resultDelta">15.0°C</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Constraint Status:</span><span class="status-safe">PASS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="constraints-panel">
+                <h2>Safety Constraints</h2>
+                <div class="constraint-grid">
+                    <div class="constraint-item">
+                        <span class="constraint-name">Max Skin Contact</span>
+                        <span class="constraint-limit">43°C</span>
+                        <span class="constraint-status" id="constraintSkin">OK</span>
+                    </div>
+                    <div class="constraint-item">
+                        <span class="constraint-name">Peak Temp Limit</span>
+                        <span class="constraint-limit">50°C &lt; 5 min</span>
+                        <span class="constraint-status" id="constraintPeak">OK</span>
+                    </div>
+                    <div class="constraint-item">
+                        <span class="constraint-name">Active Coolant</span>
+                        <span class="constraint-limit">None &gt; 0.5W</span>
+                        <span class="constraint-status" id="constraintCoolant">OK</span>
+                    </div>
+                    <div class="constraint-item">
+                        <span class="constraint-name">Passive Dissipation</span>
+                        <span class="constraint-limit">Required</span>
+                        <span class="constraint-status" id="constraintPassive">OK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Quantum Wearables | Cold Fission Thermal Model v2.3</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-quantum-wearables.js" defer></script>
+</body>
+</html>

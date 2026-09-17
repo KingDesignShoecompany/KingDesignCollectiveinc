@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Champions | Card Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-game-design.css">
+</head>
+<body class="umbrella-game-design">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">AURA</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="cards.html">Cards</a>
+                <a href="events.html">Events</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="card-detail-layout">
+                <div class="card-detail-image">
+                    <div class="ar-preview-placeholder">
+                        <div class="ar-scan-overlay">
+                            <div class="scan-animation"></div>
+                            <span>AR PREVIEW — Tap to scan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-detail-info">
+                    <div class="rarity-badge" id="detailRarity">CONVERGENCE</div>
+                    <h1 class="card-name" id="detailCardName">#100 Convergence Stone</h1>
+                    <div class="element-badge" id="detailElement">🌌 Cosmic</div>
+                    <div class="card-stats-panel">
+                        <div class="stat-item">
+                            <span class="stat-label">HP</span>
+                            <span class="stat-value" id="detailHP">—</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">ATK</span>
+                            <span class="stat-value" id="detailATK">∞</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">DEF</span>
+                            <span class="stat-value" id="detailDEF">—</span>
+                        </div>
+                    </div>
+                    <div class="nfc-status">
+                        <span class="nfc-icon">📱</span>
+                        <span>NFC Write-Token: <strong id="nfcStatus">Ready</strong></span>
+                    </div>
+                    <div class="abilities-section">
+                        <h3>Abilities</h3>
+                        <ul class="abilities-list" id="abilitiesList">
+                            <li>Reality Fracture — Converges all element types at 100%</li>
+                            <li>Trinity VFX — Activates world-altering special effects</li>
+                            <li>Cold Fission Core — Infinite energy generation</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button full-width">SCAN CARD (NFC)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aura Champions | Convergent Protocol v3.1</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-game-design.js" defer></script>
+</body>
+</html>
