@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensors | Quantum Wearables</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-quantum-wearables.css">
+</head>
+<body class="quantum-theme umbrella-quantum-wearables">
+    <div class="particle-field"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Q-WEAR</a>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="thermal.html">Thermal</a>
+                <a href="sensors.html" class="active">Sensors</a>
+                <a href="safety.html">Safety</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Biometric Sensor Manifest</h1>
+            <p class="hero-subtitle">Real-time sensor data monitoring and calibration tracking</p>
+
+            <div class="sensor-realtime">
+                <h2>Live Data Readouts</h2>
+                <div class="sensor-readings">
+                    <div class="reading-card">
+                        <div class="reading-header">
+                            <span class="reading-icon">❤️</span>
+                            <span class="reading-name">ECG</span>
+                            <span class="reading-status synced">● SYNCED</span>
+                        </div>
+                        <div class="reading-data">
+                            <div class="reading-value" id="ecgHeartRate">72</div>
+                            <div class="reading-unit">bpm</div>
+                            <div class="reading-detail">Leads: II, V3, V5 | Accuracy: ±0.5mmHg</div>
+                        </div>
+                    </div>
+
+                    <div class="reading-card">
+                        <div class="reading-header">
+                            <span class="reading-icon">🔵</span>
+                            <span class="reading-name">PPG</span>
+                            <span class="reading-status synced">● SYNCED</span>
+                        </div>
+                        <div class="reading-data">
+                            <div class="reading-value" id="ppgSpo2">98</div>
+                            <div class="reading-unit">%</div>
+                            <div class="reading-detail">Wavelength: 660nm/940nm | Accuracy: ±2% SpO2</div>
+                        </div>
+                    </div>
+
+                    <div class="reading-card">
+                        <div class="reading-header">
+                            <span class="reading-icon">🌡️</span>
+                            <span class="reading-name">Thermistor</span>
+                            <span class="reading-status synced">● SYNCED</span>
+                        </div>
+                        <div class="reading-data">
+                            <div class="reading-value" id="tempReading">32.5</div>
+                            <div class="reading-unit">°C</div>
+                            <div class="reading-detail">Range: 25-45°C | Response: <1s</div>
+                        </div>
+                    </div>
+
+                    <div class="reading-card">
+                        <div class="reading-header">
+                            <span class="reading-icon">🧭</span>
+                            <span class="reading-name">6-axis IMU</span>
+                            <span class="reading-status syncing">● SYNCING</span>
+                        </div>
+                        <div class="reading-data">
+                            <div class="reading-value" id="imuActivity">STABLE</div>
+                            <div class="reading-unit">motion</div>
+                            <div class="reading-detail">3-axis Gyro + 3-axis Accel | ±0.1° accuracy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calibration-history">
+                <h2>Calibration History</h2>
+                <table class="calibration-table">
+                    <thead>
+                        <tr>
+                            <th>Sensor</th>
+                            <th>Last Calibration</th>
+                            <th>Next Due</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ECG</td>
+                            <td>2026-03-10</td>
+                            <td>2026-04-10</td>
+                            <td><span class="status-ok">OK</span></td>
+                            <td><button class="cta-button small">Recalibrate</button></td>
+                        </tr>
+                        <tr>
+                            <td>PPG</td>
+                            <td>2026-03-12</td>
+                            <td>2026-04-12</td>
+                            <td><span class="status-ok">OK</span></td>
+                            <td><button class="cta-button small">Recalibrate</button></td>
+                        </tr>
+                        <tr>
+                            <td>Thermistor</td>
+                            <td>2026-03-08</td>
+                            <td>2026-04-08</td>
+                            <td><span class="status-warn">DUE SOON</span></td>
+                            <td><button class="cta-button small">Recalibrate</button></td>
+                        </tr>
+                        <tr>
+                            <td>6-axis IMU</td>
+                            <td>2026-03-14</td>
+                            <td>2026-04-14</td>
+                            <td><span class="status-ok">OK</span></td>
+                            <td><button class="cta-button small">Recalibrate</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="data-export">
+                <h2>Data Export</h2>
+                <button class="cta-button">Export Sensor Data (CSV)</button>
+                <button class="cta-button secondary">Export to Health Records</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Quantum Wearables | Sensor Fusion Module v1.7</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-quantum-wearables.js" defer></script>
+</body>
+</html>

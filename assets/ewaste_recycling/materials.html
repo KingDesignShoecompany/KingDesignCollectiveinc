@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials | e-Waste Reclamation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-ewaste-recycling.css">
+</head>
+<body class="industrial-theme umbrella-ewaste-recycling">
+    <div class="matrix-bg"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">EWASTE</a>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="materials.html" class="active">Materials</a>
+                <a href="logistics.html">Logistics</a>
+                <a href="reports.html">Reports</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Metal Recovery Calculator</h1>
+            <div class="calculator">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ewasteInput">E-Waste Input (kg)</label>
+                        <input type="number" id="ewasteInput" value="1000" min="1" max="10000">
+                    </div>
+                    <div class="form-group">
+                        <label for="goldPrice">Gold Spot Price ($/oz)</label>
+                        <input type="number" id="goldPrice" value="2500" min="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="copperPrice">Copper Spot Price ($/lb)</label>
+                        <input type="number" id="copperPrice" value="4.50" min="0.1" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="palladiumPrice">Palladium Spot Price ($/oz)</label>
+                        <input type="number" id="palladiumPrice" value="1200" min="100">
+                    </div>
+                </div>
+                <button class="cta-button" onclick="calculateRecovery()">Calculate Recovery</button>
+                <div class="results" id="recoveryResults">
+                    <h3>Results for 1000kg E-Waste</h3>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span>Gold</span><span id="rGold">100g (3.53 oz)</span><span id="rGoldValue">$8,820.00</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Copper</span><span id="rCopper">150.0kg (330.69 lb)</span><span id="rCopperValue">$1,488.00</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Palladium</span><span id="rPalladium">50g (1.76 oz)</span><span id="rPalladiumValue">$2,119.00</span>
+                        </div>
+                        <div class="result-item total">
+                            <span>Total</span><span>—</span><span id="rTotal">$12,427.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 e-Waste Reclamation | Treasury Payload Calculator</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-ewaste-recycling.js" defer></script>
+</body>
+</html>

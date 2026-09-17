@@ -1,0 +1,402 @@
+/*
+ * Umbrella UI — Innovation Hub Theme
+ * Tech showcase: data visualizations, patent pipeline, terminal aesthetics
+ * Additional features: metric cards with count-up, tech stack flow, IP visualization
+ */
+
+.umbrella-innovation-hub {
+  --color-primary: #00e676;
+  --color-primary-hover: #33ff99;
+  --color-secondary: #69ff97;
+  --color-accent: #18ffff;
+  --color-bg-default: #0b0f14;
+  --color-bg-elevated: #0e131a;
+  --color-surface: #121720;
+  --color-surface-alt: #171d28;
+  --color-border: rgba(0, 230, 118, 0.12);
+  --color-border-hover: rgba(0, 230, 118, 0.35);
+  --color-text-primary: #e0f0e9;
+  --color-text-secondary: #94b494;
+  --color-text-tertiary: #5c7a73;
+  --gradient-primary: linear-gradient(135deg, #00e676 0%, #00c853 100%);
+  --gradient-accent: linear-gradient(90deg, #18ffff 0%, #00e676 100%);
+  --shadow-glow: 0 0 25px rgba(0, 230, 118, 0.2);
+  --shadow-glow-strong: 0 0 50px rgba(0, 230, 118, 0.35);
+  --font-display: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* Matrix background */
+.umbrella-innovation-hub .matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(0, 230, 118, 0.03) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(24, 224, 255, 0.03) 0%, transparent 20%);
+  overflow: hidden;
+}
+
+.umbrella-innovation-hub .matrix-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(transparent 50%, rgba(0, 0, 0, 0.85) 50%
+  );
+  background-size: 100% 6px;
+}
+
+/* Header */
+.umbrella-innovation-hub .tech-header {
+  background: linear-gradient(135deg, #0b0f14 0%, #0e131a 100%);
+  border-bottom: 2px solid var(--color-accent);
+  position: relative;
+  padding: 2rem 0;
+}
+
+.umbrella-innovation-hub .brand-name {
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 230, 118, 0.4);
+}
+
+.umbrella-innovation-hub .brand-tagline {
+  color: var(--color-accent);
+  letter-spacing: 0.3em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.umbrella-innovation-hub .navbar {
+  background: rgba(11, 15, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.umbrella-innovation-hub .navbar .nav-logo {
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.umbrella-innovation-hub .status-badge {
+  background: rgba(0, 230, 118, 0.1);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.7rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: pulse-status 2s infinite;
+}
+
+@keyframes pulse-status {
+  0% { box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(0, 230, 118, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 230, 118, 0); }
+}
+
+/* Hero section */
+.umbrella-innovation-hub .hero-section {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(165deg, #0b0f14 0%, #0e131a 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+.umbrella-innovation-hub .hero-title {
+  font-family: var(--font-display);
+  font-size: min(2.5rem, 4vw);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 25px rgba(0, 230, 118, 0.3);
+  letter-spacing: 0.15em;
+}
+
+.umbrella-innovation-hub .hero-subtitle {
+  color: var(--color-text-secondary);
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  font-family: var(--font-display);
+  line-height: 1.7;
+}
+
+/* Metrics grid with pulse animation */
+.umbrella-innovation-hub .metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.umbrella-innovation-hub .metric-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 300ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.umbrella-innovation-hub .metric-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-primary);
+}
+
+.umbrella-innovation-hub .metric-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 30px rgba(0, 230, 118, 0.15);
+}
+
+.umbrella-innovation-hub .metric-value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+  text-shadow: 0 0 10px rgba(0, 230, 118, 0.3);
+}
+
+.umbrella-innovation-hub .metric-label {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Tech stack flow diagram */
+.umbrella-innovation-hub .stack-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+}
+
+.umbrella-innovation-hub .stack-item {
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  min-width: 140px;
+  transition: all 250ms ease;
+}
+
+.umbrella-innovation-hub .stack-item:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 230, 118, 0.2);
+}
+
+.umbrella-innovation-hub .stack-item:hover .stack-name {
+  color: var(--color-bg-default);
+}
+
+.umbrella-innovation-hub .stack-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}
+
+.umbrella-innovation-hub .stack-port {
+  font-size: 0.7rem;
+  color: var(--color-text-tertiary);
+  margin: 0.125rem 0;
+}
+
+.umbrella-innovation-hub .stack-status {
+  font-size: 0.65rem;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.umbrella-innovation-hub .stack-arrow {
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* IP cards */
+.umbrella-innovation-hub .ip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.umbrella-innovation-hub .ip-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: 1.25rem;
+  transition: all 250ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.umbrella-innovation-hub .ip-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-accent);
+}
+
+.umbrella-innovation-hub .ip-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 25px rgba(0, 230, 118, 0.15);
+}
+
+.umbrella-innovation-hub .ip-count {
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+/* Patent form enhancements */
+.umbrella-innovation-hub .patent-form-container {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-xl);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.umbrella-innovation-hub .form-section {
+  margin-bottom: 2rem;
+}
+
+.umbrella-innovation-hub .form-section h2 {
+  font-family: var(--font-display);
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.umbrella-innovation-hub .form-group {
+  margin-bottom: 1rem;
+}
+
+.umbrella-innovation-hub .form-group label {
+  display: block;
+  font-family: var(--font-display);
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+  margin-bottom: 0.375rem;
+}
+
+.umbrella-innovation-hub .form-group input,
+.umbrella-innovation-hub .form-group select,
+.umbrella-innovation-hub .form-group textarea {
+  width: 100%;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  padding: 0.6rem 1rem;
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  transition: all 200ms ease;
+}
+
+.umbrella-innovation-hub .form-group input:focus,
+.umbrella-innovation-hub .form-group select:focus,
+.umbrella-innovation-hub .form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: var(--color-surface);
+  box-shadow: inset 0 0 10px rgba(0, 230, 118, 0.1);
+}
+
+/* Patent table */
+.umbrella-innovation-hub .patent-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.umbrella-innovation-hub .patent-table th {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.umbrella-innovation-hub .patent-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.umbrella-innovation-hub .patent-table tbody tr:hover {
+  background: var(--color-surface-alt);
+}
+
+.umbrella-innovation-hub .status-badge.pending { color: var(--color-accent); border-color: var(--color-accent); }
+.umbrella-innovation-hub .status-badge.approved { color: var(--color-primary); border-color: var(--color-primary); }
+.umbrella-innovation-hub .status-badge.submitted { color: var(--color-secondary); border-color: var(--color-secondary); }
+
+/* Footer */
+.umbrella-innovation-hub .footer {
+  background: var(--color-bg-default);
+  border-top: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--color-text-tertiary);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+}

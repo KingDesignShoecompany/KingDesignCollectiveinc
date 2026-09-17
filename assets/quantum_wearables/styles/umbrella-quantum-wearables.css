@@ -1,0 +1,474 @@
+/*
+ * Umbrella UI — Quantum Wearables Theme
+ * Sci-fi UX: particle fields, neon glow, biometric dashboards
+ * Additional features: live metric pulsing, device connection status, data graphs
+ */
+
+.umbrella-quantum-wearables {
+  --color-primary: #00b4d8;
+  --color-primary-hover: #00c7e6;
+  --color-secondary: #72efdd;
+  --color-accent: #ff9e00;
+  --color-bg-default: #0a0f1a;
+  --color-bg-elevated: #0e1421;
+  --color-surface: #111827;
+  --color-surface-alt: #1a2336;
+  --color-border: rgba(0, 180, 216, 0.15);
+  --color-border-hover: rgba(0, 180, 216, 0.4);
+  --color-text-primary: #e0f2ff;
+  --color-text-secondary: #94a3b8;
+  --color-text-tertiary: #5a6b82;
+  --gradient-primary: linear-gradient(135deg, #00b4d8 0%, #0096c7 100%);
+  --gradient-accent: linear-gradient(90deg, #ff9e00 0%, #00b4d8 100%);
+  --shadow-glow: 0 0 30px rgba(0, 180, 216, 0.2);
+  --shadow-glow-strong: 0 0 60px rgba(0, 180, 216, 0.35);
+  --font-display: 'Rajdhani', Arial, sans-serif;
+}
+
+/* Particle field */
+.umbrella-quantum-wearables .particle-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.umbrella-quantum-wearables .particle-field::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(white, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    radial-gradient(white, rgba(255, 255, 255, 0.02) 1px, transparent 2px);
+  background-size: 80px 80px, 40px 40px;
+  animation: particle-drift 10s infinite;
+}
+
+@keyframes particle-drift {
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 200px 200px, 100px 100px; }
+}
+
+.umbrella-quantum-wearables .particle {
+  position: absolute;
+  background: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-primary);
+  opacity: 0.4;
+  animation: particle-float 15s infinite linear;
+}
+
+@keyframes particle-float {
+  0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.4; }
+  90% { opacity: 0.3; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+/* Header */
+.umbrella-quantum-wearables .quantum-header {
+  background: linear-gradient(135deg, #0a0f1a 0%, #0e1421 100%);
+  border-bottom: 2px solid var(--color-accent);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.umbrella-quantum-wearables .quantum-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(0, 180, 216, 0.03) 50%, 
+    transparent 100%
+  );
+  animation: scan 5s infinite;
+}
+
+@keyframes scan {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.umbrella-quantum-wearables .brand-name {
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(0, 180, 216, 0.4);
+}
+
+.umbrella-quantum-wearables .brand-tagline {
+  color: var(--color-accent);
+  letter-spacing: 0.3em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.umbrella-quantum-wearables .navbar {
+  background: rgba(10, 15, 26, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.umbrella-quantum-wearables .navbar .nav-logo {
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.umbrella-quantum-wearables .status-badge {
+  background: rgba(0, 180, 216, 0.1);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.7rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: pulse-blue 2s infinite;
+}
+
+@keyframes pulse-blue {
+  0% { box-shadow: 0 0 0 0 rgba(0, 180, 216, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(0, 180, 216, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 180, 216, 0); }
+}
+
+/* Hero section */
+.umbrella-quantum-wearables .hero-section {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(165deg, #0a0f1a 0%, #0e1421 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+.umbrella-quantum-wearables .hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, transparent 49%, rgba(0, 180, 216, 0.03) 50%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, rgba(255, 158, 0, 0.02) 50%, transparent 51%);
+  background-size: 50px 50px;
+  animation: grid-shift 25s linear infinite;
+}
+
+.umbrella-quantum-wearables .hero-title {
+  font-family: var(--font-display);
+  font-size: min(2.5rem, 4vw);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 30px rgba(0, 180, 216, 0.4);
+  letter-spacing: 0.15em;
+}
+
+.umbrella-quantum-wearables .hero-subtitle {
+  color: var(--color-text-secondary);
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Metrics grid with live pulsing */
+.umbrella-quantum-wearables .metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.umbrella-quantum-wearables .metric-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 300ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.umbrella-quantum-wearables .metric-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-primary);
+}
+
+.umbrella-quantum-wearables .metric-card::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--color-primary);
+  animation: pulse-small 2s infinite;
+}
+
+@keyframes pulse-small {
+  0%, 100% { opacity: 0.5; box-shadow: 0 0 5px var(--color-primary); }
+  50% { opacity: 1; box-shadow: 0 0 15px var(--color-primary); }
+}
+
+.umbrella-quantum-wearables .metric-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 35px rgba(0, 180, 216, 0.25);
+}
+
+.umbrella-quantum-wearables .metric-value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+  text-shadow: 0 0 10px rgba(0, 180, 216, 0.3);
+}
+
+.umbrella-quantum-wearables .metric-status {
+  font-size: 0.7rem;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.umbrella-quantum-wearables .metric-status.normal { color: var(--color-primary); }
+.umbrella-quantum-wearables .metric-status.warn { color: var(--color-accent); }
+.umbrella-quantum-wearables .metric-status.critical { color: #ff4757; }
+
+.umbrella-quantum-wearables .metric-label {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}
+
+/* Device cards */
+.umbrella-quantum-wearables .device-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.umbrella-quantum-wearables .device-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-xl);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 250ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.umbrella-quantum-wearables .device-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-primary);
+}
+
+.umbrella-quantum-wearables .device-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 30px rgba(0, 180, 216, 0.2);
+}
+
+.umbrella-quantum-wearables .device-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px rgba(0, 180, 216, 0.4));
+}
+
+.umbrella-quantum-wearables .status-ok {
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.umbrella-quantum-wearables .status-warn {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Readings graph */
+.umbrella-quantum-wearables .readings-graph {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  min-height: 250px;
+}
+
+.umbrella-quantum-wearables .graph-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--color-text-tertiary);
+}
+
+.umbrella-quantum-wearables .graph-placeholder p {
+  margin-bottom: 0.5rem;
+  color: var(--color-text-secondary);
+  font-family: var(--font-display);
+}
+
+/* Thermal simulator form */
+.umbrella-quantum-wearables .sim-form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.umbrella-quantum-wearables .form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.umbrella-quantum-wearables .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.umbrella-quantum-wearables .form-group label {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  letter-spacing: 0.05em;
+}
+
+.umbrella-quantum-wearables .form-group input {
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  transition: all 200ms ease;
+}
+
+.umbrella-quantum-wearables .form-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 15px rgba(0, 180, 216, 0.2);
+}
+
+/* Results */
+.umbrella-quantum-wearables .result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.umbrella-quantum-wearables .result-item {
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 1rem;
+  text-align: center;
+}
+
+.umbrella-quantum-wearables .result-item span {
+  display: block;
+  font-family: var(--font-display);
+}
+
+/* Constraint items */
+.umbrella-quantum-wearables .constraint-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.umbrella-quantum-wearables .constraint-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 0.75rem 1rem;
+}
+
+.umbrella-quantum-wearables .constraint-name {
+  font-family: var(--font-display);
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+}
+
+.umbrella-quantum-wearables .constraint-limit {
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.umbrella-quantum-wearables .constraint-status {
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+/* Footer */
+.umbrella-quantum-wearables .footer {
+  background: var(--color-bg-default);
+  border-top: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--color-text-tertiary);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Minute Story Sessions | Play</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-kids-channel.css">
+    <style>
+        .story-player-container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        .story-header { text-align: center; margin-bottom: 2rem; }
+        .story-header h1 { font-size: 1.8rem; color: var(--lavender); }
+        .story-meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.5rem; flex-wrap: wrap; }
+        .meta-badge { font-size: 0.8rem; background: var(--twilight); padding: 0.3rem 0.75rem; border-radius: 15px; }
+        .story-content { background: var(--twilight); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; line-height: 1.8; }
+        .story-content p { margin-bottom: 1rem; font-size: 1.1rem; color: var(--soft-blue); }
+        .story-content p:last-child { font-weight: 700; text-align: center; color: var(--lavender); }
+        .audio-player-container { background: var(--twilight); border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; }
+        .audio-player { width: 100%; margin-bottom: 1rem; }
+        .audio-controls { display: flex; justify-content: center; gap: 1rem; }
+        .control-btn { background: var(--lavender); color: var(--twilight); border: none; width: 50px; height: 50px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; }
+        .sleep-timer { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem; }
+        .sleep-timer button { padding: 0.5rem 1rem; background: var(--twilight); border: 1px solid var(--border); border-radius: 20px; cursor: pointer; }
+        .sleep-timer button.active { background: var(--lavender); color: var(--twilight); }
+        .chapter-list { background: var(--twilight); border-radius: 15px; padding: 1rem; margin-top: 2rem; }
+        .chapter-list h3 { color: var(--lavender); margin-bottom: 0.5rem; }
+        .chapter-item { padding: 0.5rem; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; }
+        .chapter-item:hover { background: var(--border); }
+        .chapter-item.active { background: var(--lavender); color: var(--twilight); }
+        .chapter-item .chapter-title { font-weight: 600; }
+        .chapter-item .chapter-duration { font-size: 0.8rem; color: var(--text-dim); }
+    </style>
+</head>
+<body class="kids-theme umbrella-kids-channel">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">STORY SESSIONS</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="stories.html">Library</a>
+                <a href="create.html">Create</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="story-player-container">
+        <div class="story-header">
+            <h1 id="storyTitle">The Moonbear's Lullaby</h1>
+            <div class="story-meta">
+                <span class="meta-badge">🌙 Bedtime</span>
+                <span class="meta-badge">7:00 min</span>
+                <span class="meta-badge">Narrator: Luna (soft)</span>
+                <span class="meta-badge">Theme: Animals</span>
+            </div>
+        </div>
+
+        <div class="story-content">
+            <p>Once upon a time, in a quiet forest, there lived a little bear named Bumble. Bumble had the softest golden fur and the kindest eyes.</p>
+            <p>Every evening, as the sun painted the sky orange and pink, Bumble would hum a gentle lullaby that made all the forest animals feel safe and cozy.</p>
+            <p>Tonight, the wind whispered through the trees, and Bumble began his lullaby. "Hush now, little ones, the stars are coming out to play. Close your eyes and dream of tomorrow, when the sun will warm your face."</p>
+            <p>The little rabbits curled up in their burrows, the birds nested in their trees, and even the busy squirrels paused to listen.</p>
+            <p>Sleep now, dear forest, sleep now and rest. Tomorrow will bring new adventures and new friends to meet.</p>
+            <p>And so, under the silver moon, the entire forest slept peacefully, dreaming sweet dreams, because Bumble's lullaby had brought them comfort and warmth.</p>
+            <p>The end. Sweet dreams, little one. Time for sleep.</p>
+        </div>
+
+        <div class="audio-player-container">
+            <audio class="audio-player" id="storyAudio" controls preload="none">
+                <source src="audio/moonbear_lulluby.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="audio-controls">
+                <button class="control-btn" onclick="playAudio()">&#9654;</button>
+                <button class="control-btn" onclick="skipBackward()">⏪</button>
+                <button class="control-btn" onclick="skipForward()">⏭</button>
+                <button class="control-btn" id="ambientToggle" onclick="toggleAmbient()">🔊</button>
+            </div>
+        </div>
+
+        <div class="sleep-timer">
+            <button onclick="setSleepTimer(15)">15 min</button>
+            <button onclick="setSleepTimer(30)" class="active">30 min</button>
+            <button onclick="setSleepTimer(45)">45 min</button>
+            <button onclick="setSleepTimer(60)">60 min</button>
+        </div>
+
+        <div class="chapter-list">
+            <h3>Chapters</h3>
+            <div class="chapter-item active">
+                <div class="chapter-title">Chapter 1: The Forest Bear's Song</div>
+                <div class="chapter-duration">0:00 - 3:30</div>
+            </div>
+            <div class="chapter-item">
+                <div class="chapter-title">Chapter 2: The Starlight Lullaby</div>
+                <div class="chapter-duration">3:30 - 5:15</div>
+            </div>
+            <div class="chapter-item">
+                <div class="chapter-title">Chapter 3: Dreams of Tomorrow</div>
+                <div class="chapter-duration">5:15 - 7:00</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const storyAudio = document.getElementById('storyAudio');
+        let sleepTimer = null;
+        let ambientEnabled = true;
+
+        function playAudio() {
+            if (storyAudio.paused) {
+                storyAudio.play();
+                document.querySelector('.control-btn:nth-child(1)').textContent = '⏸';
+            } else {
+                storyAudio.pause();
+                document.querySelector('.control-btn:nth-child(1)').textContent = '▷';
+            }
+        }
+
+        function skipBackward() { storyAudio.currentTime = Math.max(0, storyAudio.currentTime - 15); }
+        function skipForward() { storyAudio.currentTime = Math.min(storyAudio.duration, storyAudio.currentTime + 15); }
+
+        function toggleAmbient() {
+            ambientEnabled = !ambientEnabled;
+            document.getElementById('ambientToggle').textContent = ambientEnabled ? '🔊' : '🔇';
+        }
+
+        function setSleepTimer(minutes) {
+            if (sleepTimer) clearTimeout(sleepTimer);
+            document.querySelectorAll('.sleep-timer button').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            sleepTimer = setTimeout(() => {
+                storyAudio.pause();
+                storyAudio.volume = 0;
+                alert(`Sleep timer set for ${minutes} minutes. Audio will resume in the morning.`);
+            }, minutes * 60 * 1000);
+        }
+
+        // Auto-play on load
+        document.addEventListener('DOMContentLoaded', function() {
+            storyAudio.volume = 0.5;
+        });
+    </script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-kids-channel.js" defer></script>
+</body>
+</html>

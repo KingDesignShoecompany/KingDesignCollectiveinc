@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Design Collective | Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-shoe-brand.css">
+    <style>
+        .product-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 2rem auto; max-width: 1200px; }
+        @media (max-width: 768px) { .product-detail { grid-template-columns: 1fr; } }
+        .product-gallery { display: grid; grid-template-columns: 80px 1fr; gap: 1rem; }
+        .thumbnail-container { display: flex; flex-direction: column; gap: 0.5rem; }
+        .thumbnail { width: 80px; height: 80px; object-fit: cover; border: 1px solid var(--border-color); border-radius: 5px; cursor: pointer; }
+        .thumbnail:hover { border-color: var(--gold); }
+        #productImage { width: 100%; height: 500px; object-fit: cover; border: 2px solid var(--border-color); border-radius: 10px; }
+        .product-badge { display: inline-block; background: var(--gold); color: var(--charcoal); padding: 0.3rem 0.75rem; border-radius: 15px; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: uppercase; }
+        #productPrice { font-size: 2rem; font-weight: 700; color: var(--gold); margin: 0.5rem 0; }
+        #productDescription, #productMaterial { color: var(--text-dim); line-height: 1.6; margin: 0.5rem 0; }
+        #stockBadge { color: var(--gold); font-weight: 700; margin-top: 0.5rem; display: block; }
+        .size-selector { margin: 1rem 0; }
+        .size-selector label { display: block; margin-bottom: 0.5rem; color: var(--text-dim); }
+        #sizeSelect { width: 100%; padding: 0.6rem; background: var(--steel-dark); border: 1px solid var(--border-color); border-radius: 5px; color: var(--text-primary); }
+        .checkout-buttons { display: flex; gap: 1rem; margin-top: 1.5rem; }
+        .checkout-buttons a, .checkout-buttons button { flex: 1; }
+    </style>
+</head>
+<body class="umbrella-shoe-brand">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">KingDesignCollective</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="checkout.html" class="cta-button small">Checkout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="product-detail" id="productDetail">
+            <div class="product-gallery">
+                <div class="thumbnail-container">
+                    <img src="" alt="Thumbnail 1" class="thumbnail" id="thumb1">
+                    <img src="" alt="Thumbnail 2" class="thumbnail" id="thumb2">
+                </div>
+                <img src="images/products/KING-001-side.jpg" alt="Product Image" id="productImage">
+            </div>
+
+            <div class="product-info">
+                <span class="product-badge" id="productCategory">Performance Running</span>
+                <h1 class="hero-title" id="productTitle" style="font-size: 1.8rem; text-align: left;">Apex Runner V1</h1>
+                <div id="productPrice">$189.00</div>
+                <p id="productDescription">Engineered for urban performance with cinematic style.</p>
+                <p id="productMaterial">Engineered Knit + TPU Sole</p>
+                <span id="stockBadge">In Stock (120 pairs)</span>
+
+                <div class="size-selector">
+                    <label for="sizeSelect">Select Size</label>
+                    <select id="sizeSelect">
+                        <option>US 7</option>
+                        <option>US 8</option>
+                        <option>US 9</option>
+                        <option>US 10</option>
+                        <option>US 11</option>
+                    </select>
+                </div>
+
+                <img src="" alt="Box detail" id="detailImage" style="width: 100%; height: 200px; object-fit: cover; border: 1px solid var(--border-color); border-radius: 5px; margin: 1rem 0;">
+
+                <div class="checkout-buttons">
+                    <a href="checkout.html" class="cta-button">Go to Checkout</a>
+                    <button class="cta-button secondary" id="checkoutBtn">Claim Your Pair</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 King Design Collective | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-shoe-brand.js" defer></script>
+</body>
+</html>

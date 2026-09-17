@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vagary Index | Country Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-travel-index.css">
+</head>
+<body class="umbrella-travel-index">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">VAGARY</a>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="countries.html">Countries</a>
+                <a href="country.html" class="active">Country</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="country-detail">
+                <div class="country-header">
+                    <h1 id="countryName">Japan</h1>
+                    <span class="country-code" id="countryCode">JP</span>
+                    <span class="region-badge" id="countryRegion">East Asia</span>
+                </div>
+
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="overview">Overview</button>
+                    <button class="tab-btn" data-tab="entry">Entry Requirements</button>
+                    <button class="tab-btn" data-tab="climate">Climate Maps</button>
+                    <button class="tab-btn" data-tab="currency">Currency</button>
+                    <button class="tab-btn" data-tab="attractions">Attractions</button>
+                    <button class="tab-btn" data-tab="tiktok">TikTok Feed</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="overview" class="tab-pane active">
+                        <h2>History & Culture</h2>
+                        <p id="countryHistory">Japan has a rich cultural heritage spanning centuries...</p>
+                        <div class="travel-guide-meta">
+                            <span>Guide Status: <strong id="guideStatus">Complete</strong></span>
+                            <span class="completion-badge" id="completionBadge">100%</span>
+                        </div>
+                    </div>
+                    <div id="entry" class="tab-pane">
+                        <h2>Entry Requirements</h2>
+                        <div id="entryRequirements"></div>
+                    </div>
+                    <div id="climate" class="tab-pane">
+                        <h2>Climate Maps</h2>
+                        <div id="climateMaps"></div>
+                    </div>
+                    <div id="currency" class="tab-pane">
+                        <h2>Currency Converter</h2>
+                        <div id="currencyConverter"></div>
+                    </div>
+                    <div id="attractions" class="tab-pane">
+                        <h2>Top 10 Attractions</h2>
+                        <div id="attractionsList"></div>
+                    </div>
+                    <div id="tiktok" class="tab-pane">
+                        <h2>TikTok Creative Content</h2>
+                        <div id="tiktokFeed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 The Vagary Index</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-travel-index.js" defer></script>
+</body>
+</html>

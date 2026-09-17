@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Wearables | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/umbrella-ui.css">
+    <link rel="stylesheet" href="styles/umbrella-quantum-wearables.css">
+</head>
+<body class="quantum-theme umbrella-quantum-wearables">
+    <div class="particle-field"></div>
+
+    <header class="quantum-header">
+        <div class="container">
+            <h1 class="brand-name">QUANTUM WEARABLES</h1>
+            <p class="brand-tagline">Cold Fission Thermal Model | Biometric Sensor Integration</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Q-WEAR</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Dashboard</a>
+                <a href="thermal.html">Thermal Model</a>
+                <a href="sensors.html">Biometric Sensors</a>
+                <a href="safety.html">Safety Constraints</a>
+            </div>
+            <span class="status-badge" id="safetyStatus">ALL SYSTEMS NOMINAL</span>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h2 class="hero-title">Wearable Health Monitoring</h2>
+            <p class="hero-subtitle">Real-time cold fission thermal management and biometric sensor fusion</p>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value"><span id="skinTemp">32.5</span>°C</div>
+                    <div class="metric-label">Skin Contact Temp</div>
+                    <div class="metric-status" id="tempStatus">NORMAL</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value"><span id="heartRate">72</span></div>
+                    <div class="metric-label">Heart Rate (ECG)</div>
+                    <div class="metric-status" id="hrStatus">STABLE</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value"><span id="spo2">98</span>%</div>
+                    <div class="metric-label">Blood Oxygen (PPG)</div>
+                    <div class="metric-status" id="spo2Status">NORMAL</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value"><span id="coreOutput">0.3</span>w</div>
+                    <div class="metric-label">Core Output</div>
+                    <div class="metric-status" id="powerStatus">PASSIVE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Connected Devices</h2>
+            <div class="device-grid">
+                <div class="device-card">
+                    <div class="device-icon">⌚</div>
+                    <h3>AuraBand Pro</h3>
+                    <p>Biometrics: ECG, PPG, Temp, IMU</p>
+                    <span class="status-ok">ONLINE</span>
+                </div>
+                <div class="device-card">
+                    <div class="device-icon">🎧</div>
+                    <h3>NexusEarbuds X</h3>
+                    <p>Audio + Ambient Monitoring</p>
+                    <span class="status-ok">ONLINE</span>
+                </div>
+                <div class="device-card">
+                    <div class="device-icon">⌚</div>
+                    <h3>AuraBand Pro (Backup)</h3>
+                    <p>Biometrics: ECG, PPG, Temp, IMU</p>
+                    <span class="status-warn">SYNCING</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Recent Readings</h2>
+            <div class="readings-graph">
+                <div class="graph-placeholder">
+                    <p>Live Data Graph: Heart Rate & Skin Temperature Over Time</p>
+                    <p style="color: var(--text-dim); font-size: 0.85rem;">Last 24 hours of continuous monitoring</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Quantum Wearables Division | Cold Fission Thermal Model v2.3</p>
+            <p>Passive dissipation only | Max skin: 43°C | No active coolant above 0.5W</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="scripts/umbrella-ui.js" defer></script>
+    <script src="scripts/umbrella-quantum-wearables.js" defer></script>
+</body>
+</html>
