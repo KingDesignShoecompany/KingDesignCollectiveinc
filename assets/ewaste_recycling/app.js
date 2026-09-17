@@ -108,7 +108,7 @@ function generateTreasuryPayload() {
         palladium_recovered_g: 50,
         total_value_usd: 12427.00,
         token_issuance: 'UMBRA-SETTLE-2026-001',
-        treasury_address: 'classified://umbrella_treasury/ledger',
+        treasury_address: 'classified://KingDesignCollectiveINC_treasury/ledger',
         settlement_token: 'UMB_SETTLEMENT'
     };
 
