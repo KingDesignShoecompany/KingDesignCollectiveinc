@@ -1,6 +1,7 @@
 /*
- * Umbrella UI — Travel Index Enhanced Interactions
+ * KingDesignCollectiveINC UI — Travel Index Enhanced Interactions
  * Luxury travel curation: region card hover reveal, interactive map, TikTok feed lazy load
+ * Product loading from Zendrop catalog integration
  */
 
 (function() {
@@ -52,7 +53,35 @@
       completionBars.forEach(bar => barObserver.observe(bar));
     }
 
-    // Search input with region filtering
+    // Product loading from Zendrop catalog
+  const vagaryGrid = document.getElementById('vagaryProductGrid');
+  if (vagaryGrid) {
+    fetch('catalog.json')
+      .then(r => r.json())
+      .then(data => {
+        const products = [];
+        const categories = data.products_by_category || {};
+        Object.values(categories).forEach(catProducts => products.push(...catProducts));
+        
+        vagaryGrid.innerHTML = products.map(p => `
+          <div class="vagary-product-card">
+            <img src="${p.image || ''}" alt="${p.name}" class="vagary-product-image" loading="lazy">
+            <div class="vagary-product-info">
+              <h3>${p.name}</h3>
+              <p class="vagary-product-price">$${p.price}</p>
+              <p class="vagary-product-desc">${p.description || ''}</p>
+              <button class="cta-button small">Shop Now</button>
+            </div>
+          </div>
+        `).join('');
+      })
+      .catch(err => {
+        console.error('Failed to load catalog:', err));
+        vagaryGrid.innerHTML = '<p style="color: var(--color-text-secondary)">Loading products...</p>';
+      });
+  }
+
+  // Search input with region filtering
     const searchInput = document.getElementById('countrySearch');
     if (searchInput) {
       searchInput.addEventListener('input', function() {

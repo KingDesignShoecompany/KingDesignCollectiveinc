@@ -1,4 +1,4 @@
-// Umbrella Innovation Hub - Patent & IP Management JS
+// KingDesignCollectiveINC Innovation Hub - Patent & IP Management JS
 
 // Patent status definitions
 const PATENT_STATUS = {

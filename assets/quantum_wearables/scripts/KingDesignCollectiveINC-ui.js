@@ -1,5 +1,5 @@
 /*
- * Umbrella UI v2.0 — Enhanced Interactive Components
+ * KingDesignCollectiveINC UI v2.0 — Enhanced Interactive Components
  * Features: Parallax, page transitions, cursor effects, scroll animations
  */
 
@@ -249,7 +249,7 @@
   }
 
   // ─── Export ───────────────────────────────
-  window.UmbrellaUI = {
+  window.KingDesignCollectiveINCUI = {
     init: init,
     theme: {
       apply: applyTheme,

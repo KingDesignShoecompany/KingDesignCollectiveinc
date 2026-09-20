@@ -3,60 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>King Design Collective | Premium Sneakers</title>
-    <link rel="stylesheet" href="style.css">
+    <title>KingDesign Studios – KingDesignCollectiveInc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-ui.css">
+    <link rel="stylesheet" href="styles/KingDesignCollectiveINC-shoe-brand.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="KingDesignCollectiveINC-shoe-brand">
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="nav-logo">KingDesignCollective</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="products.html">Shop</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="checkout.html" class="cta-button small">Checkout</a>
-            </div>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search by SKU or name...">
-            </div>
-        </div>
-    </nav>
 
-    <section class="hero-section">
-        <div class="container">
-            <h1 class="hero-title">KING DESIGN COLLECTIVE</h1>
-            <p class="hero-subtitle">Premium sneakers that bridge the physical and digital worlds</p>
-            <a href="products.html"><button class="cta-button large">Shop Collection</button></a>
-            <img src="images/logos/LOGOKDSC.png" alt="King Design Collective Logo" class="hero-logo">
-        </div>
-    </section>
+<nav>
+    <div class="logo">
+        <img src="images/logos/LOGOKDSC.png" alt="KingDesignCollectiveInc" class="nav-logo-img">
+        <strong>KingDesign Studios</strong>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="checkout.html" class="cta-button small">Checkout</a>
+    </div>
+</nav>
 
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Collection</h2>
-            <div class="product-grid" id="productGrid"></div>
-        </div>
-    </section>
+<section class="hero">
+    <div class="logo-container">
+        <img src="images/logos/LOGOKDSC.png" alt="KingDesign Studios" class="hero-logo">
+    </div>
+    <h1>Premium Kicks. Digital Edge.</h1>
+    <p>KingDesignCollectiveInc sneakers that bridge physical craftsmanship with AR-powered experiences.</p>
+    <a class="cta-btn" href="products.html">Shop Collection</a>
+</section>
 
-    <section class="section" style="background: var(--deep-gray);">
-        <div class="container">
-            <h2 class="section-title">About Our AR Integration</h2>
-            <p class="hero-subtitle" style="max-width: 800px; margin: 0 auto;">
-                Every pair of King Design Collective sneakers comes with an NFC tag that unlocks
-                exclusive AR card-battler content. Tap your shoes with a compatible device to
-                summon your aura champion and battle in augmented reality.
-            </p>
-        </div>
-    </section>
+<section id="services" class="section">
+    <h2>Our Collection</h2>
+    <div class="grid" id="productGrid">
+        <!-- Products loaded from catalog.json -->
+    </div>
+</section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 King Design Collective | All Rights Reserved | UMB_SETTLEMENT Token Accepted</p>
+<section id="about" class="section" style="background: var(--color-bg-elevated);">
+    <h2>About KingDesign Studios</h2>
+    <p>We help brands communicate visually with clarity and emotional impact. Every pair of KingDesignCollectiveInc sneakers comes with an NFC tag that unlocks exclusive AR card-battler content.</p>
+    <p style="margin-top: 1rem;">Tap your shoes with a compatible device to summon your aura champion and battle in augmented reality.</p>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: contact@kingdesigncollectiveinc.com</p>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="images/logos/LOGOKDSC.png" alt="KingDesignCollectiveInc">
         </div>
-    </footer>
-    <script src="app.js"></script>
-    <script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
+        <p>&copy; 2026 KingDesignCollectiveInc — KingDesign Studios</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
+<script src="scripts/KingDesignCollectiveINC-shoe-brand.js" defer></script>
 </body>
 </html>
