@@ -186,9 +186,9 @@
     },
     "portal": {
       "theme_class": "KingDesignCollectiveINC-portal",
-      "primary_color": "#00d1ff",
-      "secondary_color": "#a855f7",
-      "accent_color": "#ff006e",
+      "primary_color": "#D4AF37",
+      "secondary_color": "#8B4513",
+      "accent_color": "#8B4513",
       "css_files": [
         "KingDesignCollectiveINC-portal.css"
       ],
