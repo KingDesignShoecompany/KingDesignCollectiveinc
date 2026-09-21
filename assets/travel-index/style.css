@@ -1,18 +1,18 @@
 /* The Vagary Index - Travel Data Platform Stylesheet */
 
 :root {
-    --ocean-deep: #0a192f;
-    --ocean: #172a45;
-    --teal: #00b4d8;
-    --teal-light: #90e0ef;
-    --earth: #d4a373;
-    --sand: #f4a261;
-    --white: #ffffff;
+    --ocean-deep: #0A0A0A;
+    --ocean: #121212;
+    --teal: #D4AF37;
+    --teal-light: #E6C25A;
+    --earth: #8B4513;
+    --sand: #d4af37;
+    --white: #FFFFFF;
     --off-white: #f8f9fa;
-    --text-dark: #0a192f;
+    --text-dark: #0A0A0A;
     --text-light: #e6edf3;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    --shadow-hover: 0 8px 30px rgba(0, 180, 217, 0.15);
+    --shadow-hover: 0 8px 30px rgba(212, 175, 55, 0.15);
 }
 
 * {
@@ -65,7 +65,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid rgba(0, 180, 217, 0.2);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .nav-logo {
@@ -119,8 +119,8 @@ body {
 
 /* Hero */
 .hero-section {
-    background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path fill="%230a192f" d="M0,0 L200,0 L200,200 L0,200 Z"/><path fill="%2300b4d8" opacity="0.1" d="M50,50 Q100,30 150,50 T250,50"/></svg>');
+    background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path fill="%230a0a0a" d="M0,0 L200,0 L200,200 L0,200 Z"/><path fill="%23D4AF37" opacity="0.1" d="M50,50 Q100,30 150,50 T250,50"/></svg>');
     background-size: cover;
     color: var(--white);
     text-align: center;
@@ -177,7 +177,7 @@ body {
     text-align: center;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
-    border: 1px solid rgba(0, 180, 217, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.1);
 }
 
 .alt-bg .region-card {

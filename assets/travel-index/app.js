@@ -123,7 +123,7 @@ function loadCountryData() {
     document.getElementById('currencyConverter').innerHTML = `
         <div class="currency-converter">
             <input type="number" id="amount" placeholder="Amount in USD" style="padding:0.5rem; width:150px;">
-            <button onclick="convertCurrency()" style="padding:0.5rem 1rem; background:#00b4d8; color:white; border:none; border-radius:5px;">Convert</button>
+            <button onclick="convertCurrency()" style="padding:0.5rem 1rem; background:#D4AF37; color:#0A0A0A; border:none; border-radius:5px; font-weight:700;">Convert</button>
             <p id="convertedResult" style="margin-top:0.5rem;"></p>
         </div>
     `;
