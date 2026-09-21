@@ -1,7 +1,7 @@
 {
   "store": "KingDesignCollectiveINC Shoe Brand",
   "source": "Zendrop",
-  "integration_status": "api_configured",
+  "integration_status": "active",
   "api_credentials": {
     "endpoint": "https://api.zendrop.com/api/v2",
     "auth_method": "bearer_token",
@@ -19,7 +19,7 @@
     ]
   },
   "token": {
-    "status": "pending_creation",
+    "status": "created",
     "token_name": "KingDesignCollectiveINC - Shoe Brand & Vagary Index",
     "expiration": "never",
     "description": "Primary store integration token for e-commerce storefronts"
@@ -29,18 +29,38 @@
       "id": "KING-001",
       "name": "Apex Runner V1",
       "sku": "KING-001",
-      "price": 189.00,
+      "price": 189.0,
       "currency": "USD",
       "image": "images/products/KING-001-side.jpg",
       "thumbnail": "images/products/KING-001-box.jpg",
       "description": "Premium athletic sneaker with responsive cushioning and breathable mesh upper. Perfect for urban running and casual wear.",
       "category": "Athletic",
-      "tags": ["sneakers", "running", "casual"],
+      "tags": [
+        "sneakers",
+        "running",
+        "casual"
+      ],
       "variants": [
-        {"size": "8", "sku": "KING-001-8", "in_stock": 5},
-        {"size": "9", "sku": "KING-001-9", "in_stock": 3},
-        {"size": "10", "sku": "KING-001-10", "in_stock": 7},
-        {"size": "11", "sku": "KING-001-11", "in_stock": 2}
+        {
+          "size": "8",
+          "sku": "KING-001-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-001-9",
+          "in_stock": 3
+        },
+        {
+          "size": "10",
+          "sku": "KING-001-10",
+          "in_stock": 7
+        },
+        {
+          "size": "11",
+          "sku": "KING-001-11",
+          "in_stock": 2
+        }
       ],
       "supplier": "KingDesign Shoe Company",
       "shipping_days_min": 3,
@@ -52,18 +72,38 @@
       "id": "KING-002",
       "name": "Daily Drift Low",
       "sku": "KING-002",
-      "price": 149.00,
+      "price": 149.0,
       "currency": "USD",
       "image": "images/products/KING-002-side.jpg",
       "thumbnail": "images/products/KING-002-box.jpg",
       "description": "Low-top canvas sneaker with classic silhouette and comfortable cotton lining. Versatile everyday shoe.",
       "category": "Casual",
-      "tags": ["sneakers", "casual", "canvas"],
+      "tags": [
+        "sneakers",
+        "casual",
+        "canvas"
+      ],
       "variants": [
-        {"size": "8", "sku": "KING-002-8", "in_stock": 10},
-        {"size": "9", "sku": "KING-002-9", "in_stock": 8},
-        {"size": "10", "sku": "KING-002-10", "in_stock": 6},
-        {"size": "11", "sku": "KING-002-11", "in_stock": 4}
+        {
+          "size": "8",
+          "sku": "KING-002-8",
+          "in_stock": 10
+        },
+        {
+          "size": "9",
+          "sku": "KING-002-9",
+          "in_stock": 8
+        },
+        {
+          "size": "10",
+          "sku": "KING-002-10",
+          "in_stock": 6
+        },
+        {
+          "size": "11",
+          "sku": "KING-002-11",
+          "in_stock": 4
+        }
       ],
       "supplier": "KingDesign Shoe Company",
       "shipping_days_min": 2,
@@ -75,17 +115,33 @@
       "id": "KING-003",
       "name": "Summit Trail X",
       "sku": "KING-003",
-      "price": 229.00,
+      "price": 229.0,
       "currency": "USD",
       "image": "images/products/KING-003-side.jpg",
       "thumbnail": "images/products/KING-003-box.jpg",
       "description": "All-terrain hiking sneaker with waterproof upper, Vibram sole, and ankle support. Built for rugged adventures.",
       "category": "Outdoor",
-      "tags": ["hiking", "trail", "waterproof"],
+      "tags": [
+        "hiking",
+        "trail",
+        "waterproof"
+      ],
       "variants": [
-        {"size": "9", "sku": "KING-003-9", "in_stock": 5},
-        {"size": "10", "sku": "KING-003-10", "in_stock": 4},
-        {"size": "11", "sku": "KING-003-11", "in_stock": 3}
+        {
+          "size": "9",
+          "sku": "KING-003-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-003-10",
+          "in_stock": 4
+        },
+        {
+          "size": "11",
+          "sku": "KING-003-11",
+          "in_stock": 3
+        }
       ],
       "supplier": "KingDesign Shoe Company",
       "shipping_days_min": 5,
@@ -97,17 +153,33 @@
       "id": "KING-004",
       "name": "Urban Flair Knit",
       "sku": "KING-004",
-      "price": 189.00,
+      "price": 189.0,
       "currency": "USD",
       "image": "images/products/KING-004-side.jpg",
       "thumbnail": "images/products/KING-004-box.jpg",
       "description": "Pointed-toe stiletto with knit upper and cushioned insole. Textured snakeskin pattern with gold heel cap.",
       "category": "Formal",
-      "tags": ["stiletto", "formal", "knit"],
+      "tags": [
+        "stiletto",
+        "formal",
+        "knit"
+      ],
       "variants": [
-        {"size": "6", "sku": "KING-004-6", "in_stock": 3},
-        {"size": "7", "sku": "KING-004-7", "in_stock": 5},
-        {"size": "8", "sku": "KING-004-8", "in_stock": 4}
+        {
+          "size": "6",
+          "sku": "KING-004-6",
+          "in_stock": 3
+        },
+        {
+          "size": "7",
+          "sku": "KING-004-7",
+          "in_stock": 5
+        },
+        {
+          "size": "8",
+          "sku": "KING-004-8",
+          "in_stock": 4
+        }
       ],
       "supplier": "KingDesign Shoe Company",
       "shipping_days_min": 3,
@@ -119,17 +191,33 @@
       "id": "KING-005",
       "name": "Cloud Step Walker",
       "sku": "KING-005",
-      "price": 175.00,
+      "price": 175.0,
       "currency": "USD",
       "image": "images/products/KING-005-side.jpg",
       "thumbnail": "images/products/KING-005-box.jpg",
       "description": "Two-tone pointed-toe pump with memory foam insole and block heel. Perfect for all-day wear.",
       "category": "Formal",
-      "tags": ["pump", "formal", "block-heel"],
+      "tags": [
+        "pump",
+        "formal",
+        "block-heel"
+      ],
       "variants": [
-        {"size": "6", "sku": "KING-005-6", "in_stock": 4},
-        {"size": "7", "sku": "KING-005-7", "in_stock": 6},
-        {"size": "8", "sku": "KING-005-8", "in_stock": 5}
+        {
+          "size": "6",
+          "sku": "KING-005-6",
+          "in_stock": 4
+        },
+        {
+          "size": "7",
+          "sku": "KING-005-7",
+          "in_stock": 6
+        },
+        {
+          "size": "8",
+          "sku": "KING-005-8",
+          "in_stock": 5
+        }
       ],
       "supplier": "KingDesign Shoe Company",
       "shipping_days_min": 3,
@@ -141,30 +229,928 @@
       "id": "KING-006",
       "name": "Nico Sprint Fry",
       "sku": "KING-006",
-      "price": 259.00,
+      "price": 259.0,
       "currency": "USD",
       "image": "images/products/KING-006-side.jpg",
       "thumbnail": "images/products/KING-006-box.jpg",
       "description": "Luxury two-tone stiletto with premium leather upper and signature gold hardware. Handcrafted Italian leather.",
       "category": "Luxury",
-      "tags": ["stiletto", "luxury", "leather"],
+      "tags": [
+        "stiletto",
+        "luxury",
+        "leather"
+      ],
       "variants": [
-        {"size": "5", "sku": "KING-006-5", "in_stock": 2},
-        {"size": "6", "sku": "KING-006-6", "in_stock": 3},
-        {"size": "7", "sku": "KING-006-7", "in_stock": 2}
+        {
+          "size": "5",
+          "sku": "KING-006-5",
+          "in_stock": 2
+        },
+        {
+          "size": "6",
+          "sku": "KING-006-6",
+          "in_stock": 3
+        },
+        {
+          "size": "7",
+          "sku": "KING-006-7",
+          "in_stock": 2
+        }
       ],
       "supplier": "KingDesign Shoe Company",
       "shipping_days_min": 7,
       "shipping_days_max": 14,
       "active": true,
       "source": "internal"
+    },
+    {
+      "id": "KING-007",
+      "name": "Apex Runner V2",
+      "sku": "KING-007",
+      "price": 249.0,
+      "currency": "USD",
+      "image": "images/products/KING-007-side.jpg",
+      "thumbnail": "images/products/KING-007-side.jpg",
+      "description": "Black and gold high-top athletic sneaker with responsive midsole",
+      "category": "Athletic",
+      "tags": [
+        "sneakers",
+        "athletic",
+        "high-top",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "9",
+          "sku": "KING-007-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-007-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-007-11",
+          "in_stock": 5
+        },
+        {
+          "size": "12",
+          "sku": "KING-007-12",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Black/ Gold",
+      "in_stock": true
+    },
+    {
+      "id": "KING-008",
+      "name": "Velocity Blue",
+      "sku": "KING-008",
+      "price": 179.0,
+      "currency": "USD",
+      "image": "images/products/KING-008-side.jpg",
+      "thumbnail": "images/products/KING-008-side.jpg",
+      "description": "Blue and white running sneaker with breathable mesh upper",
+      "category": "Athletic",
+      "tags": [
+        "sneakers",
+        "running",
+        "athletic",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "9",
+          "sku": "KING-008-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-008-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-008-11",
+          "in_stock": 5
+        },
+        {
+          "size": "12",
+          "sku": "KING-008-12",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Navy/ White",
+      "in_stock": true
+    },
+    {
+      "id": "KING-009",
+      "name": "Daily Drift V2",
+      "sku": "KING-009",
+      "price": 139.0,
+      "currency": "USD",
+      "image": "images/products/KING-009-side.jpg",
+      "thumbnail": "images/products/KING-009-side.jpg",
+      "description": "Tan suede chukka sneaker with crepe sole",
+      "category": "Casual",
+      "tags": [
+        "sneakers",
+        "casual",
+        "chukka",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-009-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-009-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-009-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-009-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Tan/ Cream",
+      "in_stock": true
+    },
+    {
+      "id": "KING-010",
+      "name": "Nitro Edge",
+      "sku": "KING-010",
+      "price": 199.0,
+      "currency": "USD",
+      "image": "images/products/KING-010-side.jpg",
+      "thumbnail": "images/products/KING-010-side.jpg",
+      "description": "Black and silver athletic sneaker with reflective details",
+      "category": "Athletic",
+      "tags": [
+        "sneakers",
+        "athletic",
+        "training",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-010-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-010-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-010-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-010-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Black/ Silver",
+      "in_stock": true
+    },
+    {
+      "id": "KING-011",
+      "name": "Green Light Runner",
+      "sku": "KING-011",
+      "price": 169.0,
+      "currency": "USD",
+      "image": "images/products/KING-011-side.jpg",
+      "thumbnail": "images/products/KING-011-side.jpg",
+      "description": "Grey and lime green running sneaker with cushioned midsole",
+      "category": "Athletic",
+      "tags": [
+        "sneakers",
+        "running",
+        "athletic",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "9",
+          "sku": "KING-011-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-011-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-011-11",
+          "in_stock": 5
+        },
+        {
+          "size": "12",
+          "sku": "KING-011-12",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Grey/ Lime",
+      "in_stock": true
+    },
+    {
+      "id": "KING-012",
+      "name": "Desert Trek",
+      "sku": "KING-012",
+      "price": 159.0,
+      "currency": "USD",
+      "image": "images/products/KING-012-side.jpg",
+      "thumbnail": "images/products/KING-012-side.jpg",
+      "description": "Brown leather desert sneaker with rubber sole",
+      "category": "Outdoor",
+      "tags": [
+        "sneakers",
+        "outdoor",
+        "desert",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-012-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-012-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-012-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-012-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Brown/ Tan",
+      "in_stock": true
+    },
+    {
+      "id": "KING-013",
+      "name": "Street Champion",
+      "sku": "KING-013",
+      "price": 219.0,
+      "currency": "USD",
+      "image": "images/products/KING-013-side.jpg",
+      "thumbnail": "images/products/KING-013-side.jpg",
+      "description": "Red and black high-top basketball sneaker",
+      "category": "Athletic",
+      "tags": [
+        "sneakers",
+        "basketball",
+        "high-top",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "9",
+          "sku": "KING-013-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-013-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-013-11",
+          "in_stock": 5
+        },
+        {
+          "size": "12",
+          "sku": "KING-013-12",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Red/ Black",
+      "in_stock": true
+    },
+    {
+      "id": "KING-014",
+      "name": "Cloud Walker",
+      "sku": "KING-014",
+      "price": 129.0,
+      "currency": "USD",
+      "image": "images/products/KING-014-side.jpg",
+      "thumbnail": "images/products/KING-014-side.jpg",
+      "description": "Beige and cream slip-on sneaker with elastic panels",
+      "category": "Casual",
+      "tags": [
+        "sneakers",
+        "casual",
+        "slip-on",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-014-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-014-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-014-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-014-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Beige/ Cream",
+      "in_stock": true
+    },
+    {
+      "id": "KING-015",
+      "name": "Trail Blazer",
+      "sku": "KING-015",
+      "price": 239.0,
+      "currency": "USD",
+      "image": "images/products/KING-015-side.jpg",
+      "thumbnail": "images/products/KING-015-side.jpg",
+      "description": "Black hiking sneaker with gum sole and waterproof upper",
+      "category": "Outdoor",
+      "tags": [
+        "sneakers",
+        "hiking",
+        "outdoor",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "9",
+          "sku": "KING-015-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-015-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-015-11",
+          "in_stock": 5
+        },
+        {
+          "size": "12",
+          "sku": "KING-015-12",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Black/ Gum",
+      "in_stock": true
+    },
+    {
+      "id": "KING-016",
+      "name": "Minimalist Luxe",
+      "sku": "KING-016",
+      "price": 189.0,
+      "currency": "USD",
+      "image": "images/products/KING-016-side.jpg",
+      "thumbnail": "images/products/KING-016-side.jpg",
+      "description": "White leather low-top sneaker with rose gold accents",
+      "category": "Formal",
+      "tags": [
+        "sneakers",
+        "formal",
+        "luxury",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "7",
+          "sku": "KING-016-7",
+          "in_stock": 5
+        },
+        {
+          "size": "8",
+          "sku": "KING-016-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-016-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-016-10",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "White/ Rose Gold",
+      "in_stock": true
+    },
+    {
+      "id": "KING-017",
+      "name": "Volt Rush",
+      "sku": "KING-017",
+      "price": 189.0,
+      "currency": "USD",
+      "image": "images/products/KING-017-side.jpg",
+      "thumbnail": "images/products/KING-017-side.jpg",
+      "description": "Orange and black trail running sneaker with aggressive tread",
+      "category": "Athletic",
+      "tags": [
+        "sneakers",
+        "trail",
+        "running",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "9",
+          "sku": "KING-017-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-017-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-017-11",
+          "in_stock": 5
+        },
+        {
+          "size": "12",
+          "sku": "KING-017-12",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Orange/ Black",
+      "in_stock": true
+    },
+    {
+      "id": "KING-018",
+      "name": "Skate King",
+      "sku": "KING-018",
+      "price": 179.0,
+      "currency": "USD",
+      "image": "images/products/KING-018-side.jpg",
+      "thumbnail": "images/products/KING-018-side.jpg",
+      "description": "Purple and black high-top skate sneaker with reinforced toe",
+      "category": "Casual",
+      "tags": [
+        "sneakers",
+        "skate",
+        "casual",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-018-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-018-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-018-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-018-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Purple/ Black",
+      "in_stock": true
+    },
+    {
+      "id": "KING-019",
+      "name": "Urban Essentials",
+      "sku": "KING-019",
+      "price": 149.0,
+      "currency": "USD",
+      "image": "images/products/KING-019-side.jpg",
+      "thumbnail": "images/products/KING-019-side.jpg",
+      "description": "Grey wool blend low-top sneaker with white sole",
+      "category": "Casual",
+      "tags": [
+        "sneakers",
+        "casual",
+        "minimalist",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-019-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-019-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-019-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-019-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Grey/ White",
+      "in_stock": true
+    },
+    {
+      "id": "KING-020",
+      "name": "Wine Country",
+      "sku": "KING-020",
+      "price": 199.0,
+      "currency": "USD",
+      "image": "images/products/KING-020-side.jpg",
+      "thumbnail": "images/products/KING-020-side.jpg",
+      "description": "Burgundy and black high-top casual sneaker with leather upper",
+      "category": "Casual",
+      "tags": [
+        "sneakers",
+        "casual",
+        "luxury",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-020-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-020-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-020-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-020-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Burgundy/ Black",
+      "in_stock": true
+    },
+    {
+      "id": "KING-021",
+      "name": "Solar Flare",
+      "sku": "KING-021",
+      "price": 169.0,
+      "currency": "USD",
+      "image": "images/products/KING-021-side.jpg",
+      "thumbnail": "images/products/KING-021-side.jpg",
+      "description": "Yellow and white athletic sneaker with bold colorblock",
+      "category": "Athletic",
+      "tags": [
+        "sneakers",
+        "athletic",
+        "running",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "9",
+          "sku": "KING-021-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-021-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-021-11",
+          "in_stock": 5
+        },
+        {
+          "size": "12",
+          "sku": "KING-021-12",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Yellow/ White",
+      "in_stock": true
+    },
+    {
+      "id": "KING-022",
+      "name": "Classic Revival",
+      "sku": "KING-022",
+      "price": 119.0,
+      "currency": "USD",
+      "image": "images/products/KING-022-side.jpg",
+      "thumbnail": "images/products/KING-022-side.jpg",
+      "description": "Black and white low-top canvas sneaker with vintage style",
+      "category": "Casual",
+      "tags": [
+        "sneakers",
+        "casual",
+        "canvas",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-022-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-022-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-022-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-022-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Black/ White",
+      "in_stock": true
+    },
+    {
+      "id": "KING-023",
+      "name": "Cosmic Shift",
+      "sku": "KING-023",
+      "price": 279.0,
+      "currency": "USD",
+      "image": "images/products/KING-023-side.jpg",
+      "thumbnail": "images/products/KING-023-side.jpg",
+      "description": "Silver metallic sneaker with iridescent details",
+      "category": "Athletic",
+      "tags": [
+        "sneakers",
+        "athletic",
+        "tech",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-023-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-023-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-023-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-023-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Silver/ Holographic",
+      "in_stock": true
+    },
+    {
+      "id": "KING-024",
+      "name": "Mountain Peak",
+      "sku": "KING-024",
+      "price": 229.0,
+      "currency": "USD",
+      "image": "images/products/KING-024-side.jpg",
+      "thumbnail": "images/products/KING-024-side.jpg",
+      "description": "Forest green and khaki waterproof hiking sneaker",
+      "category": "Outdoor",
+      "tags": [
+        "sneakers",
+        "hiking",
+        "outdoor",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "9",
+          "sku": "KING-024-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-024-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-024-11",
+          "in_stock": 5
+        },
+        {
+          "size": "12",
+          "sku": "KING-024-12",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Forest Green/ Khaki",
+      "in_stock": true
+    },
+    {
+      "id": "KING-025",
+      "name": "Desert Sage",
+      "sku": "KING-025",
+      "price": 169.0,
+      "currency": "USD",
+      "image": "images/products/KING-025-side.jpg",
+      "thumbnail": "images/products/KING-025-side.jpg",
+      "description": "Brown and tan desert boots style sneaker",
+      "category": "Outdoor",
+      "tags": [
+        "sneakers",
+        "outdoor",
+        "casual",
+        "sneakers"
+      ],
+      "variants": [
+        {
+          "size": "8",
+          "sku": "KING-025-8",
+          "in_stock": 5
+        },
+        {
+          "size": "9",
+          "sku": "KING-025-9",
+          "in_stock": 5
+        },
+        {
+          "size": "10",
+          "sku": "KING-025-10",
+          "in_stock": 5
+        },
+        {
+          "size": "11",
+          "sku": "KING-025-11",
+          "in_stock": 5
+        }
+      ],
+      "supplier": "KingDesign Shoe Company",
+      "shipping_days_min": 3,
+      "shipping_days_max": 7,
+      "active": true,
+      "source": "Zendrop",
+      "color": "Brown/ Tan",
+      "in_stock": true
     }
   ],
-  "zendrop_import_pending": true,
+  "zendrop_import_pending": false,
   "zendrop_import_config": {
     "store_id": null,
     "sync_interval_hours": 6,
     "auto_sync": true,
-    "categories_to_import": ["sneakers", "athletic", "casual", "formal", "luxury", "outdoor"]
-  }
+    "categories_to_import": [
+      "sneakers",
+      "athletic",
+      "casual",
+      "formal",
+      "luxury",
+      "outdoor"
+    ]
+  },
+  "total_products": 25
 }
