@@ -251,6 +251,20 @@ var globeState = {
     selectedRegion: null
 };
 
+// Animation loop for globe idle rotation
+var globeAnimId = null;
+function startGlobeAnimation() {
+    if (globeAnimId) cancelAnimationFrame(globeAnimId);
+    var bundles = globeState.bundles || [];
+    function animate() {
+        // Subtle idle rotation: nudge offsetX slightly for a panning effect
+        globeState.offsetX = (globeState.offsetX + 0.15) % 10;
+        drawGlobe(globeState._ctx, bundles);
+        globeAnimId = requestAnimationFrame(animate);
+    }
+    animate();
+}
+
 function renderGlobe(bundles) {
     var canvas = document.getElementById("globe-canvas");
     if (!canvas) return;
@@ -260,8 +274,11 @@ function renderGlobe(bundles) {
 
     globeState.centerX = canvas.width / 2;
     globeState.centerY = canvas.height / 2;
+    globeState.bundles = bundles;
+    globeState._ctx = ctx;
 
     drawGlobe(ctx, bundles);
+    startGlobeAnimation();
 
     // Click handler for region selection
     canvas.addEventListener("click", function(e) {
