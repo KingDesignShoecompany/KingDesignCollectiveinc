@@ -3,155 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Vagary Index – KingDesignCollectiveInc</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>King Design Collective Inc - Travel Index</title>
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-ui.css">
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-travel-index.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homepage.css">
 </head>
 <body class="KingDesignCollectiveINC-travel-index">
+    <header class="travel-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/valgary-index-logo.png" alt="The Vagary Index" class="vagary-logo">
+            </div>
+            <h1 class="brand-name">The Vagary Index</h1>
+            <p class="brand-tagline">250 Countries | Travel Intelligence Platform</p>
+        </div>
+    </header>
 
-<nav>
-  <div class="logo">
-    <img src="images/valgary-index-logo.png" alt="The Vagary Index" class="nav-logo-img">
-    <strong>Vagary Index</strong>
-  </div>
-  <div class="nav-links">
-    <a href="index.html" class="active">Dashboard</a>
-    <a href="shop.html">Shop</a>
-    <a href="countries.html">Countries</a>
-    <a href="country.html">Country</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">VAGARY</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Dashboard</a>
+                <a href="countries.html">Countries</a>
+                <a href="country.html">Country</a>
+                <a href="shop.html">Shop</a>
+            </div>
+        </div>
+    </nav>
 
-<section class="hero fade-in">
-  <div class="logo-container">
-    <img src="images/valgary-index-logo.png" alt="The Vagary Index Logo" class="hero-logo">
-  </div>
-  <h1>Travel Smarter. Explore Deeper.</h1>
-  <p>Data-driven travel guides for 250 countries.</p>
-  <a class="cta-btn" href="shop.html">Shop Vacation Items</a>
-</section>
+    <section class="hero-section">
+        <div class="container">
+            <div id="hero-content">
+                <h2 class="hero-title">Travel-Ready Wear</h2>
+                <p class="hero-subtitle">Curated for movement</p>
+            </div>
+            <div class="hero-image">
+                <img id="hero-image" src="" alt="Hero product" loading="lazy">
+            </div>
+        </div>
+    </section>
 
-<!-- Digital Guides -->
-<section class="section fade-in">
-  <h2>Digital Guides</h2>
-  <div class="grid">
-    <div class="product-card">
-      <h3>Global Travel Index Guide</h3>
-      <span class="product-tag">Recommended</span>
-      <span class="product-tag">Core Asset</span>
-      <p>Your essential global travel intelligence module.</p>
-    </div>
-    <div class="product-card">
-      <h3>Tokyo Neon Region Guide</h3>
-      <span class="product-tag">Region Specific</span>
-      <p>Hyper-focused insights for navigating Tokyo's neon districts.</p>
-    </div>
-    <div class="product-card">
-      <h3>Digital Nomad Guide (EN)</h3>
-      <span class="product-tag">Remote Work</span>
-      <p>Everything you need to deploy as a digital nomad.</p>
-    </div>
-  </div>
-</section>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Global Travel Bundles</h2>
+            <div class="globe-container">
+                <canvas id="globe-canvas" width="500" height="280"></canvas>
+                <div id="bundle-list" class="bundle-list"></div>
+            </div>
+        </div>
+    </section>
 
-<!-- Travel Hardware -->
-<section class="section fade-in">
-  <h2>Travel Hardware</h2>
-  <div class="grid">
-    <div class="product-card">
-      <h3>Neo Tech Organizer</h3>
-      <span class="product-tag">Core Hardware</span>
-      <p class="stock-level">Stock: 137 units</p>
-    </div>
-    <div class="product-card">
-      <h3>Universal Power Matrix</h3>
-      <span class="product-tag">Power</span>
-      <p class="stock-level">Stock: 84 units</p>
-    </div>
-    <div class="product-card">
-      <h3>Adaptive Plug System</h3>
-      <span class="product-tag">Power</span>
-      <span class="product-tag">Compliance</span>
-      <p class="stock-level">Stock: 221 units</p>
-    </div>
-    <div class="product-card">
-      <h3>Handlebar Biometric Lock</h3>
-      <span class="product-tag">Last Minute</span>
-      <span class="product-tag">Urgent</span>
-      <p class="stock-level">Stock: 19 units</p>
-    </div>
-    <div class="product-card">
-      <h3>Compressed Gear Pod</h3>
-      <span class="product-tag">Last Minute</span>
-      <span class="product-tag">Space Saver</span>
-      <p class="stock-level">Stock: 42 units</p>
-    </div>
-  </div>
-</section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 The Vagary Index | 250 Countries | Local-Compute Mesh | No Cloud APIs</p>
+            <p>Bolt.diy: localhost:5173 | Ollama: localhost:11435 | PostgreSQL: localhost:5432</p>
+        </div>
+    </footer>
 
-<!-- Bundles -->
-<section class="section fade-in">
-  <h2>Bundles</h2>
-  <div class="bundle-box">
-    <h2>Tokyo Deploy Kit</h2>
-    <div class="bundle-items">
-      • Tokyo Neon Region Guide<br>
-      • Neo Tech Organizer<br>
-      • Universal Power Matrix
-    </div>
-  </div>
-  <div class="bundle-box">
-    <h2>Last-Minute Travel Bundle</h2>
-    <div class="bundle-items">
-      • Handlebar Biometric Lock<br>
-      • Compressed Gear Pod
-    </div>
-  </div>
-</section>
-
-<!-- Zendrop Catalog Products -->
-<section class="section" id="services" style="background: var(--color-bg-elevated);">
-  <h2>Vacation Shop</h2>
-  <div class="product-grid fade-in" id="vagaryProductGrid">
-    <!-- Products loaded from catalog.json -->
-  </div>
-  <div style="text-align: center; margin-top: 2rem;">
-    <a class="cta-btn" href="shop.html">View All Vacation Items</a>
-  </div>
-</section>
-
-<!-- About -->
-<section class="section">
-  <h2>About Us</h2>
-  <p>We turn global data into practical travel intelligence for explorers and nomads. Every country guide is curated from verified sources and updated regularly.</p>
-</section>
-
-<!-- Contact -->
-<section class="section" id="contact">
-  <h2>Contact</h2>
-  <p>Email: contact@kingdesigncollectiveinc.com</p>
-</section>
-
-<footer>
-  <div class="footer-content">
-    <div class="footer-logo">
-      <img src="images/valgary-index-logo.png" alt="Vagary Index">
-    </div>
-    <p>&copy; 2026 KingDesignCollectiveInc — The Vagary Index</p>
-    <div class="footer-links">
-      <a href="index.html">Dashboard</a>
-      <a href="shop.html">Shop</a>
-      <a href="countries.html">Countries</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</footer>
-
-<script src="app.js"></script>
-<script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
-<script src="scripts/KingDesignCollectiveINC-travel-index.js" defer></script>
+    <script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
+    <script src="scripts/KingDesignCollectiveINC-travel-index.js" defer></script>
+    <script src="homepage.js"></script>
 </body>
 </html>

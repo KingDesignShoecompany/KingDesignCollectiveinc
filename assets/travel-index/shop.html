@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-ui.css">
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-travel-index.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
 </head>
 <body class="KingDesignCollectiveINC-travel-index">
     <header class="travel-header">
@@ -28,8 +29,10 @@
                 <a href="country.html">Country</a>
                 <a href="shop.html" class="active">Shop</a>
             </div>
-            <div class="search-container">
-                <input type="text" id="shopSearch" placeholder="Search vacation items...">
+            <div class="cart-summary">
+                <span id="cart-count">0</span> items - $
+                <span id="cart-total">0.00</span>
+                <button id="view-cart" class="small">View Cart</button>
             </div>
         </div>
     </nav>
@@ -43,10 +46,39 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title">All Vacation Items</h2>
-            <div class="product-grid-vagary" id="shopProductGrid">
-                <!-- Products loaded from catalog.json -->
+            <div class="filters">
+                <input type="text" id="search" placeholder="Search products..." class="search-input">
+                <select id="tag-filter" class="tag-select">
+                    <option value="">All tags</option>
+                </select>
             </div>
+            <div id="product-grid" class="product-grid"></div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <section id="cart-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-modal-total">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </section>
+
+    <!-- Checkout Modal -->
+    <section id="checkout-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="address" placeholder="Shipping Address" required>
+                <button type="submit">Place Order</button>
+                <button type="button" id="close-checkout">Cancel</button>
+            </form>
+            <p class="note">This is a demo checkout. Payment processing must be integrated separately.</p>
         </div>
     </section>
 
@@ -59,63 +91,6 @@
     <script src="app.js"></script>
     <script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
     <script src="scripts/KingDesignCollectiveINC-travel-index.js" defer></script>
-    <script>
-        // Load all products from catalog.json
-        document.addEventListener('DOMContentLoaded', function() {
-            const grid = document.getElementById('shopProductGrid');
-            if (!grid) return;
-
-            fetch('catalog.json')
-                .then(r => r.json())
-                .then(data => {
-                    const allProducts = [];
-                    const categories = data.products_by_category || {};
-                    Object.entries(categories).forEach(([cat, products]) => {
-                        products.forEach(p => {
-                            p._category = cat;
-                            allProducts.push(p);
-                        });
-                    });
-
-                    renderProducts(allProducts);
-
-                    // Search filter
-                    const searchInput = document.getElementById('shopSearch');
-                    if (searchInput) {
-                        searchInput.addEventListener('input', function() {
-                            const term = this.value.toLowerCase();
-                            const filtered = allProducts.filter(p =>
-                                p.name.toLowerCase().includes(term) ||
-                                (p.tags || []).some(t => t.toLowerCase().includes(term)) ||
-                                p.category.toLowerCase().includes(term)
-                            );
-                            renderProducts(filtered);
-                        });
-                    }
-                })
-                .catch(err => {
-                    grid.innerHTML = '<p style="color: var(--color-text-secondary)">Failed to load products. Please try again.</p>';
-                });
-
-            function renderProducts(products) {
-                grid.innerHTML = products.map(p => `
-                    <div class="vagary-product-card">
-                        <img src="${p.image || ''}" alt="${p.name}" class="vagary-product-image" loading="lazy">
-                        <div class="vagary-product-info">
-                            <span class="vagary-badge">${p._category || p.category}</span>
-                            <h3>${p.name}</h3>
-                            <p class="vagary-product-price">$${p.price} <span class="vagary-compare">${p.compare_at_price ? '$' + p.compare_at_price : ''}</span></p>
-                            <p class="vagary-product-desc">${p.description || ''}</p>
-                            <div class="vagary-product-meta">
-                                <span>⭐ ${p.rating || '-'} (${p.reviews_count || 0})</span>
-                                <span>🚚 ${p.shipping_days || '5-10'} days</span>
-                            </div>
-                            <button class="cta-button small">Add to Cart</button>
-                        </div>
-                    </div>
-                `).join('');
-            }
-        });
-    </script>
+    <script src="shop.js"></script>
 </body>
 </html>
