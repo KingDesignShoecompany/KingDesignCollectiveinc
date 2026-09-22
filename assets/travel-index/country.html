@@ -7,8 +7,19 @@
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-ui.css">
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-travel-index.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop-responsive.css">
 </head>
 <body class="KingDesignCollectiveINC-travel-index">
+    <header class="travel-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/valgary-index-logo.png" alt="The Vagary Index" class="vagary-logo">
+            </div>
+            <h1 class="brand-name">The Vagary Index</h1>
+            <p class="brand-tagline">250 Countries | Travel Intelligence Platform</p>
+        </div>
+    </header>
+
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="nav-logo">VAGARY</a>
@@ -16,32 +27,45 @@
                 <a href="index.html">Dashboard</a>
                 <a href="countries.html">Countries</a>
                 <a href="country.html" class="active">Country</a>
+                <a href="shop.html">Shop</a>
             </div>
+            <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
+    <!-- Country Detail -->
     <section class="section">
         <div class="container">
             <div class="country-detail">
-                <div class="country-header">
-                    <h1 id="countryName">Japan</h1>
-                    <span class="country-code" id="countryCode">JP</span>
-                    <span class="region-badge" id="countryRegion">East Asia</span>
+                <div class="country-header" id="country-header">
+                    <div>
+                        <h1 id="countryName">Loading...</h1>
+                        <span class="country-code" id="countryCode">--</span>
+                        <span class="region-badge" id="countryRegion">East Asia</span>
+                    </div>
+                    <div class="completion-status">
+                        <span>Guide Status: <strong id="guideStatus">Loading</strong></span>
+                        <span class="completion-badge" id="completionBadge">--%</span>
+                    </div>
                 </div>
 
                 <div class="tab-navigation">
-                    <button class="tab-btn active" data-tab="overview">Overview</button>
-                    <button class="tab-btn" data-tab="entry">Entry Requirements</button>
-                    <button class="tab-btn" data-tab="climate">Climate Maps</button>
-                    <button class="tab-btn" data-tab="currency">Currency</button>
-                    <button class="tab-btn" data-tab="attractions">Attractions</button>
-                    <button class="tab-btn" data-tab="tiktok">TikTok Feed</button>
+                    <button class="tab-btn active" data-tab="overview" onclick="switchTab('overview')">Overview</button>
+                    <button class="tab-btn" data-tab="entry" onclick="switchTab('entry')">Entry Requirements</button>
+                    <button class="tab-btn" data-tab="climate" onclick="switchTab('climate')">Climate Maps</button>
+                    <button class="tab-btn" data-tab="currency" onclick="switchTab('currency')">Currency & Language</button>
+                    <button class="tab-btn" data-tab="attractions" onclick="switchTab('attractions')">Attractions</button>
+                    <button class="tab-btn" data-tab="itinerary" onclick="switchTab('itinerary')">Solo Itinerary</button>
+                    <button class="tab-btn" data-tab="phrases" onclick="switchTab('phrases')">Phrase Cards</button>
+                    <button class="tab-btn" data-tab="facts" onclick="switchTab('facts')">Fun Facts</button>
                 </div>
 
                 <div class="tab-content">
                     <div id="overview" class="tab-pane active">
                         <h2>History & Culture</h2>
-                        <p id="countryHistory">Japan has a rich cultural heritage spanning centuries...</p>
+                        <p id="countryHistory">Loading country data...</p>
                         <div class="travel-guide-meta">
                             <span>Guide Status: <strong id="guideStatus">Complete</strong></span>
                             <span class="completion-badge" id="completionBadge">100%</span>
@@ -49,23 +73,94 @@
                     </div>
                     <div id="entry" class="tab-pane">
                         <h2>Entry Requirements</h2>
-                        <div id="entryRequirements"></div>
+                        <div class="entry-grid">
+                            <div class="entry-item">
+                                <label>Visa Required</label>
+                                <p id="visaRequired">Check with embassy</p>
+                            </div>
+                            <div class="entry-item">
+                                <label>Passport Validity</label>
+                                <p id="passportValidity">Minimum 6 months</p>
+                            </div>
+                            <div class="entry-item">
+                                <label>Notes</label>
+                                <ul id="entryNotes">
+                                    <li>Verify requirements before travel</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div id="climate" class="tab-pane">
-                        <h2>Climate Maps</h2>
-                        <div id="climateMaps"></div>
+                        <h2>Climate & Best Travel Times</h2>
+                        <div class="climate-grid">
+                            <div class="climate-item">
+                                <label>Best Travel Months</label>
+                                <p id="bestTravelMonths">N/A</p>
+                            </div>
+                            <div class="climate-item">
+                                <label>Beach Season</label>
+                                <p id="beachSeason">N/A</p>
+                            </div>
+                            <div class="climate-item">
+                                <label>Mountain Season</label>
+                                <p id="mountainSeason">N/A</p>
+                            </div>
+                            <div class="climate-item">
+                                <label>Avoid</label>
+                                <p id="avoid">N/A</p>
+                            </div>
+                        </div>
                     </div>
                     <div id="currency" class="tab-pane">
-                        <h2>Currency Converter</h2>
-                        <div id="currencyConverter"></div>
+                        <h2>Currency & Language</h2>
+                        <div class="currency-grid">
+                            <div class="currency-item">
+                                <label>Currency Code</label>
+                                <p id="currencyCode">N/A</p>
+                            </div>
+                            <div class="currency-item">
+                                <label>Language</label>
+                                <p id="language">N/A</p>
+                            </div>
+                            <div class="currency-item">
+                                <label>Capital</label>
+                                <p id="capitalCity">N/A</p>
+                            </div>
+                            <div class="currency-item">
+                                <label>Population</label>
+                                <p id="population">N/A</p>
+                            </div>
+                        </div>
                     </div>
                     <div id="attractions" class="tab-pane">
-                        <h2>Top 10 Attractions</h2>
-                        <div id="attractionsList"></div>
+                        <h2>Notable Attractions</h2>
+                        <ul id="attractionsList" class="attractions-list">
+                            <li>Loading attractions...</li>
+                        </ul>
                     </div>
-                    <div id="tiktok" class="tab-pane">
-                        <h2>TikTok Creative Content</h2>
-                        <div id="tiktokFeed"></div>
+                    <div id="itinerary" class="tab-pane">
+                        <h2>Solo Itinerary (14 days)</h2>
+                        <ol id="itineraryDays">
+                            <li>Loading itinerary...</li>
+                        </ol>
+                    </div>
+                    <div id="phrases" class="tab-pane">
+                        <h2>Essential Phrase Cards</h2>
+                        <ul id="phraseCards" class="phrases-list">
+                            <li>Loading phrases...</li>
+                        </ul>
+                    </div>
+                    <div id="facts" class="tab-pane">
+                        <h2>Fun Facts</h2>
+                        <ul id="funFacts">
+                            <li>Loading facts...</li>
+                        </ul>
+                        <div class="sources-section">
+                            <h3>Sources</h3>
+                            <ul id="sourcesList">
+                                <li>Loading sources...</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,11 +169,13 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 The Vagary Index</p>
+            <p>&copy; 2026 The Vagary Index | 250 Countries | Local-Compute Mesh | No Cloud APIs</p>
         </div>
     </footer>
-    <script src="app.js"></script>
+
     <script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
     <script src="scripts/KingDesignCollectiveINC-travel-index.js" defer></script>
+    <script src="responsive.js"></script>
+    <script src="country.js"></script>
 </body>
 </html>

@@ -1,0 +1,125 @@
+{
+  "country_code": "FRA",
+  "country_name": "France",
+  "region": "",
+  "attractions": [
+    "Paris \u2013 Eiffel Tower, Louvre, Notre-Dame",
+    "Nice \u2013 Promenade des Anglais",
+    "Lyon \u2013 historic Old Town and gastronomy",
+    "Strasbourg \u2013 Grande \u00cele and cathedral",
+    "Mont-Saint-Michel \u2013 Normandy abbey",
+    "Bordeaux \u2013 wine region capital",
+    "Lavender fields \u2013 Provence",
+    "French Riviera \u2013 St. Tropez, Cannes",
+    "Chamonix \u2013 Mont Blanc",
+    "Carcassonne \u2013 medieval walled city"
+  ],
+  "entry_requirements": {
+    "country_code": "FRA",
+    "country_name": "France",
+    "region": "Europe",
+    "visa_required": false,
+    "visa_free_duration_days": 90,
+    "passport_validity": "6 months beyond stay",
+    "covid_requirements": "None",
+    "notes": [
+      "US, EU, UK, Canada, Australia enter visa-free",
+      "Digital nomads can use long-stay visitor visa",
+      "Schengen area rules apply"
+    ]
+  },
+  "fun_facts": [
+    "France is the most visited country in the world.",
+    "The Eiffel Tower grows taller in summer due to thermal expansion.",
+    "French has about 300 million speakers worldwide.",
+    "The tinfoil hat was invented in France.",
+    "Louis XIV reigned for 72 years.",
+    "France has 12 time zones.",
+    "The Statue of Liberty was a gift from France to the USA.",
+    "French gastronomy is UNESCO intangible heritage.",
+    "Calvados is aged in oak barrels for minimum of 2 years.",
+    "The Tour de France is over 100 years old."
+  ],
+  "itineraries_couples": {
+    "days": [
+      "Day 1: Paris \u2013 Seine cruise at sunset",
+      "Day 2: Louvre + Montmartre dinner",
+      "Day 3: Versailles day trip",
+      "Day 4: Train to Bordeaux",
+      "Day 5: M\u00e9doc wine tour",
+      "Day 6: Saint-\u00c9milion village",
+      "Day 7: Dordogne castles",
+      "Day 8: Fly to Nice",
+      "Day 9: \u00c8ze village and gardens",
+      "Day 10: St. Tropez by boat",
+      "Day 11: Avignon and Luberon",
+      "Day 12: Aix-en-Provence",
+      "Day 13: Return to Paris",
+      "Day 14: Le Marais farewell brunch"
+    ]
+  },
+  "itineraries_solo": {
+    "days": [
+      "Day 1: Paris hostels + Seine banks walk",
+      "Day 2: Street art in Belleville + canal tour",
+      "Day 3: Budget Louvre + picnic in Tuileries",
+      "Day 4: Versailles self-guided",
+      "Day 5: Train to Lyon",
+      "Day 6: Lyon traboules + bouchon dinner",
+      "Day 7: Alps day bus to Annecy",
+      "Day 8: Grenoble + Bastille cable car",
+      "Day 9: Night train to Nice",
+      "Day 10: Nice free beaches + Vieux Nice",
+      "Day 11: Antibes + Juan-les-Pins",
+      "Day 12: Marseille Calanques hike",
+      "Day 13: Avignon + Pont d'Avignon",
+      "Day 14: Paris Oberkampf nightlife"
+    ]
+  },
+  "phrase_cards": {
+    "hello": "Bonjour",
+    "thank_you": "Merci",
+    "please": "S'il vous pla\u00eet",
+    "yes": "Oui",
+    "no": "Non",
+    "how_much": "Combien \u00e7a co\u00fbte?",
+    "where_is": "O\u00f9 est\u2026?",
+    "help": "Au secours!",
+    "water": "Eau",
+    "food": "Nourriture",
+    "bathroom": "Toilettes",
+    "good_morning": "Bonjour",
+    "good_night": "Bonne nuit",
+    "excuse_me": "Excusez-moi",
+    "i_need_a_taxi": "J'ai besoin d'un taxi",
+    "do_you_speak_english": "Parlez-vous anglais?",
+    "beautiful": "Magnifique",
+    "delicious": "D\u00e9licieux",
+    "cheers": "Sant\u00e9!"
+  },
+  "sources": {
+    "primary": [
+      "UNESCO World Heritage Centre",
+      "Atout France \u2013 French Tourism Development Agency",
+      "INSEE Climate Data",
+      "Lonely Planet France",
+      "European Travel Commission"
+    ]
+  },
+  "top10_experiences": [
+    "Sunset at Eiffel Tower from Trocad\u00e9ro",
+    "Louvre night tour with skip-the-line ticket",
+    "Wine tasting in Bordeaux ch\u00e2teaux",
+    "Lavender drive through Valensole Plateau",
+    "Hot-air balloon over Loire Valley castles",
+    "Seafood platter on a Nice harbor terrace",
+    "Bicycle tour through Provence villages",
+    "Calanques kayak near Marseille",
+    "Mont-Saint-Michel at high tide",
+    "Canal du Midi barge cruise"
+  ],
+  "history_culture": "# France \u2014 History & Culture Overview\n\nFrance shaped modern Europe through revolution, enlightenment, and empire. Paris set the pace for art, fashion, gastronomy, and political thought for centuries.\n\nOutside Paris, France divides into culturally distinct regions: Alsace and Lorraine with Germanic influence, Provence with Mediterranean warmth, Brittany with Celtic roots, and the southwest with Roman heritage. The French value heritage, terroir, and intellectual debate as national virtues.\n",
+  "complete": true,
+  "status": "complete",
+  "completion_verified": "2026-09-22T18:41:04.941738+00:00"
+}

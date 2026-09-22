@@ -253,12 +253,17 @@ var globeState = {
 
 // Animation loop for globe idle rotation
 var globeAnimId = null;
+var globeRotAngle = 0;
 function startGlobeAnimation() {
     if (globeAnimId) cancelAnimationFrame(globeAnimId);
     var bundles = globeState.bundles || [];
     function animate() {
-        // Subtle idle rotation: nudge offsetX slightly for a panning effect
-        globeState.offsetX = (globeState.offsetX + 0.15) % 10;
+        // Subtle idle rotation: increment angle smoothly, wrap at 2π
+        globeRotAngle += 0.001; // Very slow rotation (~1 deg per frame at 60fps)
+        if (globeRotAngle > Math.PI * 2) globeRotAngle = 0;
+        // Use sin/cos for smooth, continuous rotation without jumps
+        globeState.offsetX = Math.sin(globeRotAngle) * 2;
+        globeState.offsetY = Math.cos(globeRotAngle) * 0.5;
         drawGlobe(globeState._ctx, bundles);
         globeAnimId = requestAnimationFrame(animate);
     }
