@@ -1,32 +1,134 @@
 {
   "bundles": [
     {
-      "id": "bundle-japan",
-      "region": "Japan",
-      "lat": 36.2048,
-      "lng": 138.2529,
-      "items": [{"id": "KING-007", "title": "Apex Runner V2", "price": 249}]
+      "id": "bundle-abw",
+      "region": "ABW",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "ABW",
+          "title": "ABW Bundle",
+          "price": 99
+        }
+      ]
     },
     {
-      "id": "bundle-mediterranean",
-      "region": "Mediterranean",
-      "lat": 36.7602,
-      "lng": 24.0833,
-      "items": [{"id": "KING-008", "title": "Velocity Blue", "price": 179}]
+      "id": "bundle-afg",
+      "region": "AFG",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "AFG",
+          "title": "AFG Bundle",
+          "price": 99
+        }
+      ]
     },
     {
-      "id": "bundle-balkans",
-      "region": "Balkans",
-      "lat": 44.0,
-      "lng": 21.0,
-      "items": [{"id": "KING-009", "title": "Daily Drift V2", "price": 139}]
+      "id": "bundle-ago",
+      "region": "AGO",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "AGO",
+          "title": "AGO Bundle",
+          "price": 99
+        }
+      ]
     },
     {
-      "id": "bundle-north-america",
-      "region": "North America",
-      "lat": 44.0682,
-      "lng": -104.9847,
-      "items": [{"id": "KING-004", "title": "Urban Flair Knit", "price": 189}]
+      "id": "bundle-aia",
+      "region": "AIA",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "AIA",
+          "title": "AIA Bundle",
+          "price": 99
+        }
+      ]
+    },
+    {
+      "id": "bundle-alb",
+      "region": "ALB",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "ALB",
+          "title": "ALB Bundle",
+          "price": 99
+        }
+      ]
+    },
+    {
+      "id": "bundle-and",
+      "region": "AND",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "AND",
+          "title": "AND Bundle",
+          "price": 99
+        }
+      ]
+    },
+    {
+      "id": "bundle-are",
+      "region": "ARE",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "ARE",
+          "title": "ARE Bundle",
+          "price": 99
+        }
+      ]
+    },
+    {
+      "id": "bundle-arg",
+      "region": "ARG",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "ARG",
+          "title": "ARG Bundle",
+          "price": 99
+        }
+      ]
+    },
+    {
+      "id": "bundle-arm",
+      "region": "ARM",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "ARM",
+          "title": "ARM Bundle",
+          "price": 99
+        }
+      ]
+    },
+    {
+      "id": "bundle-asm",
+      "region": "ASM",
+      "lat": 0,
+      "lng": 0,
+      "items": [
+        {
+          "id": "ASM",
+          "title": "ASM Bundle",
+          "price": 99
+        }
+      ]
     }
   ]
 }

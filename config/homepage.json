@@ -1,10 +1,12 @@
 {
   "hero": {
-    "id": "KING-007",
+    "id": "bundle-japan",
     "title": "Travel-Ready Wear",
-    "subtitle": "Curated for movement",
+    "subtitle": "255 Countries Complete | Travel Intelligence Platform",
     "image": "images/products/KING-007-side.jpg",
-    "price": 249.0,
-    "url": "shop.html"
+    "price": 249,
+    "url": "shop.html",
+    "complete_count": 250,
+    "total_count": 12
   }
 }
