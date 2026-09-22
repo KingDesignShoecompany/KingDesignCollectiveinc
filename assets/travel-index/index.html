@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-travel-index.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="shop-responsive.css">
 </head>
 <body class="KingDesignCollectiveINC-travel-index">
     <header class="travel-header">
@@ -29,26 +30,31 @@
                 <a href="country.html">Country</a>
                 <a href="shop.html">Shop</a>
             </div>
+            <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <section class="hero-section">
-        <div class="container">
-            <div id="hero-content">
-                <h2 class="hero-title">Travel-Ready Wear</h2>
-                <p class="hero-subtitle">Curated for movement</p>
+    <!-- Hero Carousel -->
+    <section class="hero-carousel-container">
+        <div class="hero-carousel">
+            <div class="carousel-slides" id="hero-slides">
+                <!-- Slides loaded by homepage.js -->
             </div>
-            <div class="hero-image">
-                <img id="hero-image" src="" alt="Hero product" loading="lazy">
-            </div>
+            <button class="carousel-btn prev" id="carousel-prev" aria-label="Previous">‹</button>
+            <button class="carousel-btn next" id="carousel-next" aria-label="Next">›</button>
+            <div class="carousel-dots" id="carousel-dots"></div>
         </div>
     </section>
 
+    <!-- Globe + Bundles -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Global Travel Bundles</h2>
             <div class="globe-container">
                 <canvas id="globe-canvas" width="500" height="280"></canvas>
+                <div id="globe-tooltip" class="globe-tooltip"></div>
                 <div id="bundle-list" class="bundle-list"></div>
             </div>
         </div>

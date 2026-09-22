@@ -60,3 +60,166 @@
     padding: 0.25rem 0;
     color: var(--color-text-secondary, #b8b8b8);
 }
+
+/* Globe tooltip */
+.globe-tooltip {
+    position: absolute;
+    background: rgba(212, 175, 55, 0.9);
+    color: #000;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+.globe-tooltip.visible {
+    opacity: 1;
+}
+
+/* Carousel styles */
+.hero-carousel-container {
+    margin: 1.5rem 0;
+}
+
+.hero-carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+    will-change: transform;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    background: linear-gradient(135deg, #0A0A0A 0%, #121212 100%);
+    border-radius: var(--border-radius-xl, 16px);
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), transparent);
+    pointer-events: none;
+}
+
+.carousel-hero-text h2 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #D4AF37 0%, #8B4513 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-hero-text p {
+    color: var(--color-text-secondary, #b8b8b8);
+    margin-bottom: 1rem;
+}
+
+.carousel-hero-image img {
+    max-width: 280px;
+    border-radius: var(--border-radius-xl, 16px);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.carousel-hero-image img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.carousel-btn:hover {
+    background: rgba(212, 175, 55, 0.3);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev { left: 1rem; }
+.carousel-btn.next { right: 1rem; }
+
+.carousel-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 2;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.carousel-dot.active,
+.carousel-dot:hover {
+    background: #D4AF37;
+    transform: scale(1.2);
+}
+
+/* Mobile menu */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    gap: 3px;
+}
+
+.mobile-menu-btn span {
+    width: 25px;
+    height: 3px;
+    background: #D4AF37;
+    transition: all 0.2s ease;
+}
+
+/* Hamburger animation when open */
+.mobile-menu-btn.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-btn.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}

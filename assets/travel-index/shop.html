@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-travel-index.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="shop-responsive.css">
 </head>
 <body class="KingDesignCollectiveINC-travel-index">
     <header class="travel-header">
@@ -29,7 +30,15 @@
                 <a href="country.html">Country</a>
                 <a href="shop.html" class="active">Shop</a>
             </div>
+            <!-- Mobile menu toggle -->
+            <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
             <div class="cart-summary">
+                <span id="cart-icon" class="cart-icon-wrapper">
+                    <span id="cart-count-badge" class="cart-badge hidden">0</span>
+                    🛒
+                </span>
                 <span id="cart-count">0</span> items - $
                 <span id="cart-total">0.00</span>
                 <button id="view-cart" class="small">View Cart</button>
@@ -37,17 +46,15 @@
         </div>
     </nav>
 
-    <!-- Hero Section (loads from homepage.json) -->
-    <section class="shop-hero section">
-        <div class="container">
-            <div class="hero-copy">
-                <h1 id="shop-hero-title">Travel-Ready Wear</h1>
-                <p id="shop-hero-subtitle">Curated for movement</p>
-                <button id="shop-hero-cta" onclick="window.location.href='shop.html'">Shop All</button>
+    <!-- Hero Carousel Section -->
+    <section class="hero-carousel-container">
+        <div class="hero-carousel">
+            <div class="carousel-slides" id="hero-slides">
+                <!-- Slides loaded dynamically from homepage.json -->
             </div>
-            <div class="hero-image">
-                <img id="shop-hero-image" src="images/products/KING-007-side.jpg" alt="Hero product" loading="lazy">
-            </div>
+            <button class="carousel-btn prev" id="carousel-prev" aria-label="Previous">‹</button>
+            <button class="carousel-btn next" id="carousel-next" aria-label="Next">›</button>
+            <div class="carousel-dots" id="carousel-dots"></div>
         </div>
     </section>
 
@@ -63,36 +70,69 @@
     <section class="section">
         <div class="container">
             <div class="filters">
-                <input type="text" id="search" placeholder="Search products..." class="search-input">
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Search products..." class="search-input" autocomplete="off">
+                    <div id="search-spinner" class="spinner hidden">🔍</div>
+                    <div id="autocomplete-dropdown" class="autocomplete-dropdown"></div>
+                </div>
                 <select id="tag-filter" class="tag-select"></select>
+                <div id="results-count" class="results-count hidden"></div>
             </div>
             <div id="product-grid" class="product-grid"></div>
+            <div id="empty-state" class="empty-state hidden">
+                <div class="empty-icon">🔍</div>
+                <p>No products found. Try a different search term or clear filters.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <section id="quickview-modal" class="modal hidden">
+        <div class="modal-content quickview-content">
+            <button id="close-quickview" class="modal-close" aria-label="Close">×</button>
+            <div class="quickview-grid">
+                <div class="quickview-image">
+                    <img id="qv-image" src="" alt="Product image" loading="lazy">
+                </div>
+                <div class="quickview-info">
+                    <span id="qv-badge" class="badge"></span>
+                    <h2 id="qv-title"></h2>
+                    <p class="product-price" id="qv-price"></p>
+                    <p id="qv-desc"></p>
+                    <div class="qv-actions">
+                        <button id="qv-add-cart" class="cta-button">Add to Cart</button>
+                        <button id="qv-wishlist" class="wishlist-btn">♡ Add to Wishlist</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Cart Modal -->
     <section id="cart-modal" class="modal hidden">
         <div class="modal-content">
+            <button class="modal-close" onclick="closeCart()" aria-label="Close">×</button>
             <h2>Your Cart</h2>
             <div id="cart-items"></div>
             <p>Total: $<span id="cart-modal-total">0.00</span></p>
-            <button id="checkout-btn">Checkout</button>
-            <button id="close-cart">Close</button>
+            <button id="checkout-btn" class="cta-button">Checkout</button>
+            <button id="close-cart" class="small">Close</button>
         </div>
     </section>
 
     <!-- Checkout Modal -->
     <section id="checkout-modal" class="modal hidden">
         <div class="modal-content">
+            <button class="modal-close" onclick="closeCheckout()" aria-label="Close">×</button>
             <h2>Checkout</h2>
             <form id="checkout-form">
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="text" name="address" placeholder="Shipping Address" required>
-                <button type="submit">Place Order</button>
-                <button type="button" id="close-checkout">Cancel</button>
+                <button type="submit" class="cta-button">Place Order</button>
+                <button type="button" id="close-checkout" class="small">Cancel</button>
             </form>
-            <p class="note">This is a demo checkout. Payment processing must be integrated separately.</p>
+            <p class="note">This is a demo checkout. Integrate payment + fulfillment next.</p>
         </div>
     </section>
 
