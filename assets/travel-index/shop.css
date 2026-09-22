@@ -193,8 +193,26 @@
 }
 
 /* Image zoom on card hover - hardware accelerated */
+/* Spec: scale 1.05 with opacity overlay tint */
+.product-card:hover .product-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background: rgba(212, 175, 55, 0.12);
+  opacity: 0;
+  transition: opacity 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
 .product-card:hover .product-image {
-  transform: translate3d(0, 0, 0) scale(1.15);
+  transform: translate3d(0, 0, 0) scale(1.05);
+}
+
+/* Fade in the gold overlay alongside the zoom */
+.product-card:hover .product-image-wrap::after {
+  opacity: 1;
 }
 
 /* Prevent image zoom when modal/quick-view is active */

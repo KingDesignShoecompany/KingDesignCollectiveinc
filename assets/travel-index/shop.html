@@ -71,9 +71,9 @@
         <div class="container">
             <div class="filters">
                 <div class="search-container">
-                    <input type="text" id="search" placeholder="Search products..." class="search-input" autocomplete="off">
-                    <div id="search-spinner" class="spinner hidden">🔍</div>
-                    <div id="autocomplete-dropdown" class="autocomplete-dropdown"></div>
+                    <input type="text" id="search" placeholder="Search products..." class="search-input" autocomplete="off" aria-autocomplete="list" aria-expanded="false" aria-haspopup="listbox">
+                    <div id="search-spinner" class="spinner hidden" aria-hidden="true"></div>
+                    <div id="autocomplete-dropdown" class="autocomplete-dropdown" role="listbox"></div>
                 </div>
                 <select id="tag-filter" class="tag-select"></select>
                 <div id="results-count" class="results-count hidden"></div>
@@ -81,28 +81,40 @@
             <div id="product-grid" class="product-grid"></div>
             <div id="empty-state" class="empty-state hidden">
                 <div class="empty-icon">🔍</div>
-                <p>No products found. Try a different search term or clear filters.</p>
+                <p id="empty-message">No products found. Try a different search term or clear filters.</p>
+                <button id="clear-search" class="cta-button small" onclick="clearSearch()">Clear search</button>
             </div>
         </div>
     </section>
 
     <!-- Quick View Modal -->
-    <section id="quickview-modal" class="modal hidden">
-        <div class="modal-content quickview-content">
-            <button id="close-quickview" class="modal-close" aria-label="Close">×</button>
-            <div class="quickview-grid">
-                <div class="quickview-image">
-                    <img id="qv-image" src="" alt="Product image" loading="lazy">
+    <section id="quick-view-modal" class="modal hidden" aria-hidden="true">
+        <div class="qv-backdrop" onclick="closeQuickView()"></div>
+        <div class="qv-content" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+            <button id="close-quickview" class="qv-close" aria-label="Close">×</button>
+            <div class="qv-image-wrap">
+                <img id="qv-image" src="" alt="Product image" loading="lazy">
+            </div>
+            <div class="qv-info">
+                <span id="qv-badge" class="qv-badge badge"></span>
+                <h2 id="qv-title" class="qv-title"></h2>
+                <p class="qv-price product-price" id="qv-price"></p>
+                <div id="qv-rating" class="qv-rating">★★★★★ <span id="qv-rating-num"></span></div>
+                <p id="qv-desc" class="qv-desc"></p>
+
+                <div class="qv-variants" id="qv-variants-container">
+                    <!-- Variant dropdowns injected by openQuickView -->
                 </div>
-                <div class="quickview-info">
-                    <span id="qv-badge" class="badge"></span>
-                    <h2 id="qv-title"></h2>
-                    <p class="product-price" id="qv-price"></p>
-                    <p id="qv-desc"></p>
-                    <div class="qv-actions">
-                        <button id="qv-add-cart" class="cta-button">Add to Cart</button>
-                        <button id="qv-wishlist" class="wishlist-btn">♡ Add to Wishlist</button>
-                    </div>
+
+                <div class="qv-qty">
+                    <button id="qv-dec-qty" type="button" aria-label="Decrease quantity">−</button>
+                    <input id="qv-qty-input" type="number" min="1" value="1" aria-label="Quantity">
+                    <button id="qv-inc-qty" type="button" aria-label="Increase quantity">+</button>
+                </div>
+
+                <div class="qv-actions">
+                    <button id="qv-add-cart" class="qv-add-cart cta-button" data-action="quickview-add">Add to Cart</button>
+                    <button id="qv-wishlist" class="qv-wishlist wishlist-btn" data-action="quickview-wishlist">♡ Add to Wishlist</button>
                 </div>
             </div>
         </div>
@@ -146,5 +158,6 @@
     <script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
     <script src="scripts/KingDesignCollectiveINC-travel-index.js" defer></script>
     <script src="shop.js"></script>
+    <script src="responsive.js"></script>
 </body>
 </html>

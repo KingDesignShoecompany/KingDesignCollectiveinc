@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     loadHomepageConfig();
     loadBundles();
     initCarousel();
-    initMobileMenu();
+    // Mobile menu toggle is handled by responsive.js
+    // initMobileMenu();
 });
 
 // — Carousel — //

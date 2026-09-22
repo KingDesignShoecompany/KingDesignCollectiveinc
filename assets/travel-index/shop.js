@@ -19,6 +19,7 @@ let currentSearchTerm = "";
 let filteredProducts = [];
 let activeSuggestion = -1;
 let isLoadingSearch = false;
+let processTimer = null;
 
 // DOM references (cached after DOMContentLoaded)
 let el = {};
@@ -316,13 +317,17 @@ function onSearchInput() {
 }
 
 // Core search: highlight matches, populate autocomplete dropdown, filter grid
+// Works with both catalog.json and TTS API products (both are unified in `products`).
 function performSearch(term) {
     const trimmed = term.trim();
-    showSpinner(false);
-    isLoadingSearch = false;
+
+    // Cancel any in-flight simulated "API" processing if a newer search began
+    if (processTimer) clearTimeout(processTimer);
 
     if (trimmed.length === 0) {
         currentSearchTerm = "";
+        isLoadingSearch = false;
+        showSpinner(false);
         hideAutocomplete();
         filteredProducts = [];
         renderProductGrid(products);
@@ -331,13 +336,13 @@ function performSearch(term) {
         return;
     }
 
-    // Debounce the "API call" — products may come from catalog.json or TTS API,
-    // both are in the unified `products` array already loaded.
-    showSpinner(true);
     isLoadingSearch = true;
+    showSpinner(true);
 
-    // Simulate async processing (works for both catalog.json and TTS API products)
-    const processTimer = setTimeout(function() {
+    // Simulate async processing (works for both catalog.json and TTS API products).
+    // The spinner reflects this processing window plus the 300ms debounce from
+    // onSearchInput that already elapsed before we got here.
+    processTimer = setTimeout(function() {
         isLoadingSearch = false;
         showSpinner(false);
 
@@ -350,12 +355,6 @@ function performSearch(term) {
         updateResultsCount(results.length);
         showEmptyState(results.length === 0);
     }, 150);
-
-    // If the user types another character during the debounce window, the
-    // input handler clears this timer via the clearTimeout above.
-    // Store for potential cancellation
-    if (window._lastProcessTimer) clearTimeout(window._lastProcessTimer);
-    window._lastProcessTimer = processTimer;
 }
 
 // Unified search across both catalog.json and TTS API products
