@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Vagary Index Shop | Vacation Wear & Travel Accessories</title>
+    <title>The Vagary Index Shop | Travel Wear & Accessories</title>
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-ui.css">
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-travel-index.css">
     <link rel="stylesheet" href="style.css">
@@ -37,20 +37,34 @@
         </div>
     </nav>
 
-    <section class="hero-section">
+    <!-- Hero Section (loads from homepage.json) -->
+    <section class="shop-hero section">
         <div class="container">
-            <h2 class="hero-title">Vagary Index Shop</h2>
-            <p class="hero-subtitle">Essential vacation wear and travel accessories curated for every journey</p>
+            <div class="hero-copy">
+                <h1 id="shop-hero-title">Travel-Ready Wear</h1>
+                <p id="shop-hero-subtitle">Curated for movement</p>
+                <button id="shop-hero-cta" onclick="window.location.href='shop.html'">Shop All</button>
+            </div>
+            <div class="hero-image">
+                <img id="shop-hero-image" src="images/products/KING-007-side.jpg" alt="Hero product" loading="lazy">
+            </div>
         </div>
     </section>
 
+    <!-- Region Groups -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Shop by Region</h2>
+            <div id="region-groups" class="region-groups"></div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
     <section class="section">
         <div class="container">
             <div class="filters">
                 <input type="text" id="search" placeholder="Search products..." class="search-input">
-                <select id="tag-filter" class="tag-select">
-                    <option value="">All tags</option>
-                </select>
+                <select id="tag-filter" class="tag-select"></select>
             </div>
             <div id="product-grid" class="product-grid"></div>
         </div>
