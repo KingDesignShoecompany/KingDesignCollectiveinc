@@ -76,7 +76,7 @@
         `).join('');
       })
       .catch(err => {
-        console.error('Failed to load catalog:', err));
+        console.error('Failed to load catalog:', err);
         vagaryGrid.innerHTML = '<p style="color: var(--color-text-secondary)">Loading products...</p>';
       });
   }
