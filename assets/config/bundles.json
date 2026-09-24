@@ -1,15 +1,14 @@
 {
   "bundles": [
-    {"id": "bundle-japan", "region": "Japan", "lat": 36.2048, "lng": 138.2529, "items": [{"id": "KING-007", "title": "Apex Runner V2", "price": 249}]},
-    {"id": "bundle-mediterranean", "region": "Mediterranean", "lat": 36.7602, "lng": 24.0833, "items": [{"id": "KING-008", "title": "Velocity Blue", "price": 179}]},
-    {"id": "bundle-balkans", "region": "Balkans", "lat": 44.0, "lng": 21.0, "items": [{"id": "KING-009", "title": "Daily Drift V2", "price": 139}]},
-    {"id": "bundle-north-america", "region": "North America", "lat": 44.0682, "lng": -104.9847, "items": [{"id": "KING-004", "title": "Urban Flair Knit", "price": 189}]},
-    {"id": "bundle-east-asia", "region": "East Asia", "lat": 35.0, "lng": 110.0, "items": [{"id": "KING-005", "title": "Velocity Blue", "price": 179}]},
-    {"id": "bundle-sea-anz", "region": "SEA-ANZ", "lat": -25.0, "lng": 135.0, "items": [{"id": "KING-006", "title": "Daily Drift V2", "price": 139}]},
-    {"id": "bundle-south-asia", "region": "South Asia", "lat": 25.0, "lng": 78.0, "items": [{"id": "KING-003", "title": "Urban Flair Knit", "price": 189}]},
-    {"id": "bundle-europe", "region": "Europe", "lat": 54.0, "lng": 15.0, "items": [{"id": "KING-002", "title": "Apex Runner V2", "price": 249}]},
-    {"id": "bundle-americas", "region": "Americas", "lat": 38.0, "lng": -97.0, "items": [{"id": "KING-001", "title": "Apex Runner V2", "price": 249}]},
-    {"id": "bundle-mena", "region": "MENA", "lat": 28.0, "lng": 30.0, "items": [{"id": "KING-007", "title": "Travel-Ready Wear", "price": 249}]}
+    {"id": "bundle-japan", "region": "Japan", "lat": 36.2048, "lng": 138.2529, "items": [{"id": "KING-007", "title": "Apex Runner V2", "price": 249, "image": "images/vacation/premium-hawaiian-shirt.jpg"}]},
+    {"id": "bundle-mediterranean", "region": "Mediterranean", "lat": 36.7602, "lng": 24.0833, "items": [{"id": "KING-008", "title": "Velocity Blue", "price": 179, "image": "images/accessories/travel-adapter.jpg"}]},
+    {"id": "bundle-balkans", "region": "Balkans", "lat": 44.0, "lng": 21.0, "items": [{"id": "KING-009", "title": "Daily Drift V2", "price": 139, "image": "images/accessories/crossbody-bag.jpg"}]},
+    {"id": "bundle-north-america", "region": "North America", "lat": 44.0682, "lng": -104.9847, "items": [{"id": "KING-004", "title": "Urban Flair Knit", "price": 189, "image": "images/vacation/travel-hat.jpg"}]},
+    {"id": "bundle-east-asia", "region": "East Asia", "lat": 35.0, "lng": 110.0, "items": [{"id": "KING-005", "title": "Velocity Blue", "price": 179, "image": "images/accessories/luggage-scale.jpg"}]},
+    {"id": "bundle-sea-anz", "region": "SEA-ANZ", "lat": -25.0, "lng": 135.0, "items": [{"id": "KING-006", "title": "Daily Drift V2", "price": 139, "image": "images/vacation/beach-sarong.jpg"}]},
+    {"id": "bundle-south-asia", "region": "South Asia", "lat": 25.0, "lng": 78.0, "items": [{"id": "KING-003", "title": "Urban Flair Knit", "price": 189, "image": "images/accessories/travel-towel.jpg"}]},
+    {"id": "bundle-europe", "region": "Europe", "lat": 54.0, "lng": 15.0, "items": [{"id": "KING-002", "title": "Apex Runner V2", "price": 249, "image": "images/vacation/premium-hawaiian-shirt.jpg"}]},
+    {"id": "bundle-americas", "region": "Americas", "lat": 38.0, "lng": -97.0, "items": [{"id": "KING-001", "title": "Apex Runner V2", "price": 249, "image": "images/accessories/travel-adapter.jpg"}]},
+    {"id": "bundle-mena", "region": "MENA", "lat": 28.0, "lng": 30.0, "items": [{"id": "KING-007", "title": "Travel-Ready Wear", "price": 249, "image": "images/vacation/travel-hat.jpg"}]}
   ]
 }
-

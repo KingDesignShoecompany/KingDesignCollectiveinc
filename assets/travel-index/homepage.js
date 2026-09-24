@@ -73,7 +73,7 @@ async function initCarousel() {
             carouselState.slides = [{
                 title: "Travel-Ready Wear",
                 subtitle: "Curated for movement",
-                image: "../images/products/KING-007-side.jpg",
+                image: "../images/vacation/premium-hawaiian-shirt.jpg",
                 price: 249,
                 url: "shop.html"
             }];
