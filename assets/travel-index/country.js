@@ -256,3 +256,34 @@ function switchTab(tabId) {
         btn.classList.toggle("active", btn.getAttribute("data-tab") === tabId);
     });
 }
+
+function switchCountry() {
+    var selector = document.getElementById("countrySwitcher");
+    if (selector && selector.value) {
+        window.location.href = "country.html?country=" + encodeURIComponent(selector.value);
+    }
+}
+
+// Populate country switcher on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", function() {
+    var selector = document.getElementById("countrySwitcher");
+    if (selector) {
+        var countries = [
+            "Algeria", "Argentina", "Australia", "Austria", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belgium", "Brazil", "Bulgaria", "Burkina Faso", "Cambodia", "Cameroon", "Canada", "Chile", "China", "Colombia", "Croatia", "Cuba", "Cyprus", "Czech", "Denmark", "Egypt", "Finland", "France", "Germany", "Greece", "Hungary", "Iceland", "India", "Indonesia", "Ireland", "Israel", "Italy", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kuwait", "Latvia", "Lebanon", "Lithuania", "Luxembourg", "Malaysia", "Malta", "Mexico", "Morocco", "Netherlands", "New Zealand", "Norway", "Pakistan", "Panama", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Republic of Korea", "Romania", "Russia", "Saudi Arabia", "Serbia", "Singapore", "Slovakia", "Slovenia", "South Africa", "Spain", "Sri Lanka", "Sweden", "Switzerland", "Syria", "Taiwan", "Tanzania", "Thailand", "Turkey", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Venezuela", "Vietnam", "Yemen"
+        ];
+        // Add options for each available country
+        var existingOptions = selector.innerHTML;
+        countries.forEach(function(c) {
+            if (!existingOptions.includes('value="' + c + '"')) {
+                var opt = document.createElement("option");
+                opt.value = c;
+                opt.textContent = c;
+                selector.appendChild(opt);
+            }
+        });
+        // Set current country as selected
+        var params = new URLSearchParams(window.location.search);
+        var current = params.get("country") || "Japan";
+        selector.value = current;
+    }
+});

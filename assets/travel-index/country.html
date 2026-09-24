@@ -29,6 +29,16 @@
                 <a href="country.html" class="active">Country</a>
                 <a href="shop.html">Shop</a>
             </div>
+            <div class="country-switcher" style="display: flex; align-items: center; gap: 8px;">
+                <select id="countrySwitcher" onchange="switchCountry()" style="background: rgba(13,15,17,0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 4px 12px; color: var(--text); cursor: pointer;">
+                    <option value="Japan">Japan</option>
+                    <option value="France">France</option>
+                    <option value="India">India</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Morocco">Morocco</option>
+                    <!-- Full list populated by country.js -->
+                </select>
+            </div>
             <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
