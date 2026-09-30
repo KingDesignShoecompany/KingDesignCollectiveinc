@@ -59,7 +59,7 @@ Run the entire KingDesignCollectiveINC Corporation stack through **Hermes Agent*
 C:/Users/young/agents/
 ├── subsidiaries/                  ← Legal & corporate foundation
 │   ├── shoes/
-│   ├── vagary_index/
+│   ├── kingdesigncollectiveinc/
 │   ├── gamedev/
 │   ├── kids/
 │   ├── innovation/

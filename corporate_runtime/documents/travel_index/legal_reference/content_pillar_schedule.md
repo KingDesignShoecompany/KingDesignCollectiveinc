@@ -1,4 +1,4 @@
-# The Vagary Index — Content Pillar Schedule
+# The KingDesignCollectiveINC — Content Pillar Schedule
 
 ## Overview
 Three rotating pillars keep the channel balanced between growth, authority, and revenue. Each pillar maps to a specific agent duty and output format.

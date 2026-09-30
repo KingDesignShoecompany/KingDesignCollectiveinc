@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import docx2pdf
 from pypdf import PdfReader, PdfWriter
 
-base = Path("C:/Users/young/agents/vagary_index")
+base = Path("C:/Users/young/agents/kingdesigncollectiveinc")
 roster_path = base / "country_roster_master.json"
 batch_output = base / "batch_output"
 
@@ -123,7 +123,7 @@ for region, members in regions.items():
     src = batch_output / f"{region}_docx"
     if not src.exists():
         continue
-    zip_path = zip_root / f"{region}_vagary_index.zip"
+    zip_path = zip_root / f"{region}_kingdesigncollectiveinc.zip"
     if zip_path.exists():
         zip_path.unlink()
     shutil.make_archive(str(zip_path.with_suffix("")), "zip", str(src))

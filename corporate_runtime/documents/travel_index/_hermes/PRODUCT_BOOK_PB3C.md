@@ -1,4 +1,4 @@
-# VAGARY INDEX PRODUCT BOOK
+# KingDesignCollectiveINC PRODUCT BOOK
 ## PB-3C Edition — Premium Formatting
 
 > The complete architecture for the world's first Travel Intelligence Layer
@@ -11,7 +11,7 @@
 
 **PART I — Philosophy & Vision**
 - Chapter 1: Founder's Manifesto
-- Chapter 2: The Vagary Thesis
+- Chapter 2: The KingDesignCollectiveINC Thesis
 
 **PART II — Product Architecture**
 - Chapter 3: Product Requirements Document (PRD)
@@ -50,7 +50,7 @@ They tell you what to see, not why it matters.
 They treat travelers as segments, not individuals.
 They assume identity is fixed, not evolving.
 
-**Vagary Index rejects this.**
+**KingDesignCollectiveINC rejects this.**
 
 We believe that:
 - **Travelers are amplitudes** — living vectors of pace, curiosity, comfort, openness, and exploration style
@@ -65,17 +65,17 @@ It should understand who you are, how you move, what you seek, and how you evolv
 
 This manifesto is the philosophical spine of the entire system. Everything that follows — amplitude modeling, cultural modules, persona evolution, forecasting — emerges from this belief.
 
-### Chapter 2 — The Vagary Thesis
+### Chapter 2 — The KingDesignCollectiveINC Thesis
 
 **Travel as Intelligence, Not Information**
 
-The Vagary Thesis reframes travel from logistics to intelligence:
+The KingDesignCollectiveINC Thesis reframes travel from logistics to intelligence:
 
 1. **The Traveler as a Living System** — Not a static profile, but a dynamic amplitude that shifts with experience
 2. **Culture as a Gravitational Field** — Shapes meaning, behavior, rhythm, emotional tone
 3. **Guidance as Adaptive Intelligence** — Responds to traveler amplitude, journey phase, cultural environment, seasonal context, persona evolution
 4. **Evolution as Core Product Behavior** — Travel changes people; the system captures and learns from that change
-5. **Intelligence as the Product** — Vagary Index is the intelligence layer between traveler and world
+5. **Intelligence as the Product** — KingDesignCollectiveINC is the intelligence layer between traveler and world
 
 ---
 

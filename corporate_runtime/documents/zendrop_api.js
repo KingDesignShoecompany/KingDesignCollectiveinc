@@ -2,13 +2,13 @@
 /**
  * KingDesignCollectiveINC - Zendrop API Integration
  * Handles API token management, product catalog imports, and order management
- * For: Shoe Brand storefront and Vagary Index travel accessories
+ * For: Shoe Brand storefront and KingDesignCollectiveINC travel accessories
  *
  * Usage:
  *   node zendrop_api.js create-token "Token Name" "description" "never"
  *   node zendrop_api.js catalog --limit 50 --category "sneakers"
  *   node zendrop_api.js import-shoe-brand     # Import products for shoe store
- *   node zendrop_api.js import-vagary         # Import vacation items for Vagary Index
+ *   node zendrop_api.js import-KingDesignCollectiveINC         # Import vacation items for KingDesignCollectiveINC
  *   node zendrop_api.js orders --limit 20
  *   node zendrop_api.js stores
  *   node zendrop_api.js billing
@@ -304,10 +304,10 @@ class ProductImporter {
   }
 
   /**
-   * Import vacation items and accessories for Vagary Index
+   * Import vacation items and accessories for KingDesignCollectiveINC
    */
-  async importVagary() {
-    console.log('=== Importing Vagary Index Vacation Items ===\n');
+  async importKingDesignCollectiveINC() {
+    console.log('=== Importing KingDesignCollectiveINC Vacation Items ===\n');
 
     const categories = ['travel', 'accessories', 'luggage', 'outdoor', 'beach', 'summer'];
     const allProducts = [];
@@ -331,14 +331,14 @@ class ProductImporter {
           shipping_days: `${p.shipping_days_min}-${p.shipping_days_max}`,
           active: true,
           source: 'zendrop',
-          vagary_category: cat
+          KingDesignCollectiveINC_category: cat
         }));
         allProducts.push(...filtered);
       }
     }
 
     const output = {
-      store: 'The Vagary Index',
+      store: 'The KingDesignCollectiveINC',
       source: 'Zendrop Catalog API',
       imported_at: new Date().toISOString(),
       total_products: allProducts.length,
@@ -348,12 +348,12 @@ class ProductImporter {
 
     // Group by category
     for (const p of allProducts) {
-      const cat = p.vagary_category;
+      const cat = p.KingDesignCollectiveINC_category;
       if (!output.products_by_category[cat]) output.products_by_category[cat] = [];
       output.products_by_category[cat].push(p);
     }
 
-    const outputPath = path.join(process.cwd(), 'catalog', 'vagary_products.json');
+    const outputPath = path.join(process.cwd(), 'catalog', 'KingDesignCollectiveINC_products.json');
     fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
     console.log(`Imported ${allProducts.length} vacation items to ${outputPath}`);
@@ -371,7 +371,7 @@ async function main() {
   switch (command) {
     case 'create-token':
       const name = args[1] || 'KingDesignCollectiveINC - Primary Store';
-      const desc = args[2] || 'Token for shoe brand and Vagary Index storefronts';
+      const desc = args[2] || 'Token for shoe brand and KingDesignCollectiveINC storefronts';
       const exp = args[3] || 'never';
       console.log('Creating token with scopes:');
       console.log(SCOPES.join(', '));
@@ -391,8 +391,8 @@ async function main() {
       await importer.importShoeBrand();
       break;
 
-    case 'import-vagary':
-      await importer.importVagary();
+    case 'import-KingDesignCollectiveINC':
+      await importer.importKingDesignCollectiveINC();
       break;
 
     case 'orders':
@@ -424,7 +424,7 @@ Commands:
   create-token [name] [description] [expiration]  Create API token with all scopes
   catalog [--limit N] [--search term] [--category cat]  Fetch catalog products
   import-shoe-brand   Import products for shoe store
-  import-vagary       Import vacation items for Vagary Index
+  import-KingDesignCollectiveINC       Import vacation items for KingDesignCollectiveINC
   orders [--limit N]  Fetch orders
   stores              Fetch store info
   billing             Fetch billing info
