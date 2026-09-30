@@ -1,5 +1,5 @@
 /*
- * Umbrella UI — Game Design Enhanced Interactions
+ * KingDesignCollectiveINC UI — Game Design Enhanced Interactions
  * AR card battler: card hover reveal, 3D flip, NFT rarity animation
  */
 

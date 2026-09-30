@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Umbrella Backup Snapshot — creates timestamped archive of critical project data.
+KingDesignCollectiveINC Backup Snapshot — creates timestamped archive of critical project data.
 Designed to run unattended via Hermes cron.
 """
 import os
@@ -54,14 +54,14 @@ def main():
 
     # 2. Hermes skills
     skills_dir = Path("C:/Users/young/AppData/Local/hermes/skills")
-    umbrella_skills = [s.name for s in skills_dir.iterdir() if s.is_dir() and s.name in [
+    KingDesignCollectiveINC_skills = [s.name for s in skills_dir.iterdir() if s.is_dir() and s.name in [
         "shoe-brand", "travel-index", "game-design", "kids-channel",
         "innovation-hub", "ewaste-recycling", "quantum-wearables", "crypto-treasury"
     ]]
     manifest["components"]["hermes_skills"] = {
         "path": str(skills_dir),
-        "umbrella_skills_count": len(umbrella_skills),
-        "umbrella_skills": umbrella_skills
+        "KingDesignCollectiveINC_skills_count": len(KingDesignCollectiveINC_skills),
+        "KingDesignCollectiveINC_skills": KingDesignCollectiveINC_skills
     }
 
     # 3. Corporate runtime
@@ -79,7 +79,7 @@ def main():
     key_files = [
         PROJECT_ROOT / "subsidiaries/backing_asset_registry.json",
         PROJECT_ROOT / "subsidiaries/settlement_token_whitepaper.md",
-        PROJECT_ROOT / "UMBRELLA_HERMES_ARCHITECTURE.md",
+        PROJECT_ROOT / "KingDesignCollectiveINC_HERMES_ARCHITECTURE.md",
         PROJECT_ROOT / "docker-compose.yml"
     ]
     manifest["components"]["key_files"] = [snapshot_json(p) for p in key_files if p.exists()]
@@ -91,7 +91,7 @@ def main():
 
     print(f"[OK] Snapshot created: {BACKUP_DIR}")
     print(f"[OK] Manifest: {manifest_path}")
-    print(f"[INFO] Umbrella skills: {len(umbrella_skills)}")
+    print(f"[INFO] KingDesignCollectiveINC skills: {len(KingDesignCollectiveINC_skills)}")
     print(f"[INFO] Ledger status: {manifest['components']['treasury_ledger']}")
     return 0
 

@@ -1,5 +1,5 @@
 /*
- * Umbrella UI — Kids Channel Enhanced Interactions
+ * KingDesignCollectiveINC UI — Kids Channel Enhanced Interactions
  * Immersive storytelling: star click effects, play button pulse, reading progress
  */
 

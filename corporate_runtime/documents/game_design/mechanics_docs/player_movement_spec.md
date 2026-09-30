@@ -1,7 +1,7 @@
 # Player Movement Mechanics Spec
 
 ## Overview
-This document defines the player movement mechanics for Umbrella Corporation game projects.
+This document defines the player movement mechanics for KingDesignCollectiveINC Corporation game projects.
 
 ## Movement Types
 - Walking/Running

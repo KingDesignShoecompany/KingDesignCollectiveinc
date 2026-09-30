@@ -1,19 +1,19 @@
 ---
 name: umbrel
-description: Umbrella Corporation Integration Bridge — connects OpenClaw gateway, Hermes skills, Ollama, Bolt.DIY, Agent Zero, n8n, and Aura Champions services into a unified orchestration layer
+description: KingDesignCollectiveINC Corporation Integration Bridge — connects OpenClaw gateway, Hermes skills, Ollama, Bolt.DIY, Agent Zero, n8n, and Aura Champions services into a unified orchestration layer
 version: 1.0.0
-author: Umbrella Corporation
+author: KingDesignCollectiveINC Corporation
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [umbrella, integration, orchestration, multi-tool]
+    tags: [KingDesignCollectiveINC, integration, orchestration, multi-tool]
     related_skills: [hermes-agent, openclaw-migration, shoe-brand, travel-index, game-design, kids-channel, innovation-hub, ewaste-recycling, quantum-wearables, crypto-treasury, aura-champions]
 ---
 
-# Umbrella Integration Bridge
+# KingDesignCollectiveINC Integration Bridge
 
-This skill connects OpenClaw to the full Umbrella stack. When OpenClaw receives a task, it can route through Hermes skills, delegate to Agent Zero, trigger n8n workflows, generate content via Bolt.DIY, and manage Aura Champions game state.
+This skill connects OpenClaw to the full KingDesignCollectiveINC stack. When OpenClaw receives a task, it can route through Hermes skills, delegate to Agent Zero, trigger n8n workflows, generate content via Bolt.DIY, and manage Aura Champions game state.
 
 ## Architecture
 
@@ -83,7 +83,7 @@ openclaw gateway http://localhost:18789/api/hermes/run
 | Ollama Proxy | 8002 | OpenAI-compatible proxy (qwen3:8b) |
 | Agent Zero API | 8001 | Multiagent workforce API |
 | Bolt.DIY | 5173 | Web app generation factory |
-| Umbrella Web | 3000 | Dashboard host |
+| KingDesignCollectiveINC Web | 3000 | Dashboard host |
 | n8n | 5678 | Automation pipelines |
 | Aura Backend | 3100 | Game backend REST API |
 | Aura Anti-Cheat | 3101 | HMAC verification |
@@ -99,7 +99,7 @@ openclaw gateway http://localhost:18789/api/hermes/run
 python3 scripts/check_all_services.py
 
 # Start the full stack
-docker compose -f docker-compose.umbrella.yml up -d
+docker compose -f docker-compose.KingDesignCollectiveINC.yml up -d
 
 # Reload n8n workflows
 n8n import --separate --input=./workflows/

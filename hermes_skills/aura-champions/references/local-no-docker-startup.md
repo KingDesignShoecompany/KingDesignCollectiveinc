@@ -105,7 +105,7 @@ with code 1, check stderr for the actual error (often a port conflict or missing
 
 ## Bridge service (port 8090)
 
-The integration bridge that provides `/api/umbrella/status` health checks also
+The integration bridge that provides `/api/KingDesignCollectiveINC/status` health checks also
 needs the Ollama URL corrected: Ollama's default port is **11434** (not 11435).
 The bridge config `OLLAMA_URL` defaults to the wrong port — override via env:
 ```
@@ -118,5 +118,5 @@ python3 hermes_skills/integration/umbrel/scripts/bridge.py
 After all 5 services + bridge are started:
 ```
 curl -s http://127.0.0.1:3100/health        # {"status":"ok"}
-curl -s http://127.0.0.1:8090/api/umbrella/status  # full stack health
+curl -s http://127.0.0.1:8090/api/KingDesignCollectiveINC/status  # full stack health
 ```

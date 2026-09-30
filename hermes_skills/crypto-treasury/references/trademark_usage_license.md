@@ -4,7 +4,7 @@
 Draft — pending legal review.
 
 ## PARTIES
-- Assignor: Umbrella Enterprise (parent)
+- Assignor: KingDesignCollectiveINC Enterprise (parent)
 - Assignee: Relevant subsidiary
 
 ## SCOPE

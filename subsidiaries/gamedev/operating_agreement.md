@@ -1,14 +1,14 @@
 # OPERATING AGREEMENT — GAMEDEV
 
 ## PARTIES
-- Parent/Managing Member: Umbrella Enterprise (100% ownership)
+- Parent/Managing Member: KingDesignCollectiveINC Enterprise (100% ownership)
 - Subsidiary: GAMEDEV
 
 ## SECTION 1 — PURPOSE AND BUSINESS
 [SECTOR_SPECIFIC_BUSINESS_PURPOSE_PENDING]
 
 ## SECTION 2 — MEMBERSHIP INTERESTS
-- Umbrella Enterprise holds 100% membership interest
+- KingDesignCollectiveINC Enterprise holds 100% membership interest
 - No additional members to be admitted without written consent
 
 ## SECTION 3 — CAPITAL CONTRIBUTIONS
@@ -23,13 +23,13 @@ Table: [PENDING]
 [PENDING]
 
 ## SECTION 6 — DISSOLUTION AND WINDING UP
-Assets revert to Umbrella parent per corporate charter.
+Assets revert to KingDesignCollectiveINC parent per corporate charter.
 
 ## SECTION 7 — INDEMNIFICATION
 Agents/leaders indemnified within scope of duties.
 
 ## SIGNATURES
-- Umbrella Enterprise representative: [PENDING]
+- KingDesignCollectiveINC Enterprise representative: [PENDING]
 - Date: [PENDING]
 
 ---

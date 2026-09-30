@@ -1,4 +1,4 @@
-/* Umbrella UI — Portal Interactions
+/* KingDesignCollectiveINC UI — Portal Interactions
  * 3D card hover, floating animations, connection lines
  */
 (function() {

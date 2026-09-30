@@ -1,5 +1,5 @@
 {
-  "name": "Umbrella Content Factory - Test",
+  "name": "KingDesignCollectiveINC Content Factory - Test",
   "nodes": [
     {
       "parameters": {
@@ -19,7 +19,7 @@
     },
     {
       "parameters": {
-        "text": "=== Umbrella Corporation Daily Startup ===",
+        "text": "=== KingDesignCollectiveINC Corporation Daily Startup ===",
         "options": {}
       },
       "name": "Startup Log",

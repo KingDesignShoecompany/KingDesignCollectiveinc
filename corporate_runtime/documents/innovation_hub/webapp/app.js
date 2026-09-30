@@ -1,4 +1,4 @@
-// Umbrella Innovation Hub - Patent & IP Management JS
+// KingDesignCollectiveINC Innovation Hub - Patent & IP Management JS
 
 // Patent status definitions
 const PATENT_STATUS = {
@@ -13,7 +13,7 @@ const PATENT_STATUS = {
 // Subsidiary IP data
 const SUBSIDIARY_IP = [
     { name: 'King Design Collective', file: 'shoe_brand', patents: 12, value: '$420K', status: 'active' },
-    { name: 'The Vagary Index', file: 'travel_index', patents: 8, value: '$380K', status: 'active' },
+    { name: 'The KingDesignCollectiveINC', file: 'travel_index', patents: 8, value: '$380K', status: 'active' },
     { name: 'Aura Champions', file: 'game_design', patents: 15, value: '$850K', status: 'active' },
     { name: 'Seven Minute Story Sessions', file: 'kids_channel', patents: 6, value: '$180K', status: 'active' },
     { name: 'e-Waste Reclamation', file: 'ewaste_recycling', patents: 9, value: '$310K', status: 'active' },

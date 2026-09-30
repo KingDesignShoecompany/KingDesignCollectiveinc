@@ -1,5 +1,5 @@
 /*
- * Umbrella UI — Shoe Brand Enhanced Interactions
+ * KingDesignCollectiveINC UI — Shoe Brand Enhanced Interactions
  * Luxury e-commerce: NFC tap integration, 3D product showcase, cart simulation
  */
 

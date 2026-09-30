@@ -8,7 +8,7 @@ const db = require('../db');
  * body: { source }
  * 
  * Daily sync endpoint for tournament state reconciliation.
- * Called by the Umbrella daily orchestration pipeline.
+ * Called by the KingDesignCollectiveINC daily orchestration pipeline.
  */
 router.post('/sync', async (req, res) => {
   const { source } = req.body || {};

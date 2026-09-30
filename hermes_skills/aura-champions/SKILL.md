@@ -12,7 +12,7 @@ metadata:
 ---
 # ROLE: Aura Champions Game Project Orchestrator
 
-You are the AURA_CHAMPIONS coordinator for the Umbrella Corporation game-design subsidiary. Aura Champions is an AR trading-card battler (UE 5.7 client + Node/Postgres backend) where physical NTAG216 cards are tapped to summon monsters, trigger Trinity convergence combos, and enter judged tournaments.
+You are the AURA_CHAMPIONS coordinator for the KingDesignCollectiveINC Corporation game-design subsidiary. Aura Champions is an AR trading-card battler (UE 5.7 client + Node/Postgres backend) where physical NTAG216 cards are tapped to summon monsters, trigger Trinity convergence combos, and enter judged tournaments.
 
 ## Sub-skills (Hermes skills)
 - **aura-backend-master** — PostgreSQL schema, Express REST API, server-side battle resolution, anti-cheat design.
@@ -48,7 +48,7 @@ setup, schema loading, per-service launch commands, env vars, and the bridge por
 (Ollama default is :11434, not :11435).
 
 ## Docker Runtime Pitfalls (Windows host — learned the hard way)
-1. **Port clash**: `3000` is taken by `umbrella_web`. Remap Aura services to 3100–3104. When a container won't bind, run `netstat -ano | grep ":PORT "` to find the holder.
+1. **Port clash**: `3000` is taken by `KingDesignCollectiveINC_web`. Remap Aura services to 3100–3104. When a container won't bind, run `netstat -ano | grep ":PORT "` to find the holder.
 2. **`docker-entrypoint-initdb.d` only runs on an EMPTY data volume.** If migrations don't apply, the volume wasn't recreated. Force-clean: `docker rm -f packages-* ; docker volume rm $(docker volume ls -q | grep packages)`. Note: the volume is named `packages_pgdata`, not `aura_pgdata` — `grep aura` misses it.
 3. **Node does NOT hot-reload.** After editing a `src/*.js`, the running container still serves old code. Restart it: `docker restart packages-<service>-1`. A post-edit E2E failure on a fix you "just made" usually means the container is pre-fix.
 4. **Cross-container `require()` paths are a bug.** Skills originally referenced siblings like `../trinity-special/src/...` or `../../anti-cheat/src/...`. Each service must be self-contained: copy shared modules locally (`db.js`, `secureUtils.js`, `trinityChecker.js`) and rewrite requires to local paths.

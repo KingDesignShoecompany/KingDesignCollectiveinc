@@ -1,5 +1,5 @@
 /*
- * Umbrella UI — e-Waste Recycling Enhanced Interactions
+ * KingDesignCollectiveINC UI — e-Waste Recycling Enhanced Interactions
  * Industrial dashboard: live metric pulsing, constraint status updates, table animations
  */
 

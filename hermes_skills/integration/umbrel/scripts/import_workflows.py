@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Import n8n workflows into the Umbrella stack.
+Import n8n workflows into the KingDesignCollectiveINC stack.
 Usage: python3 import_workflows.py
 """
 import json

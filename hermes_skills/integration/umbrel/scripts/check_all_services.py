@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Check health of all Umbrella Corporation integrated services.
+Check health of all KingDesignCollectiveINC Corporation integrated services.
 Usage: python3 check_all_services.py
 """
 import urllib.request
@@ -16,7 +16,7 @@ SERVICES = [
     {"name": "Ollama Proxy", "url": "http://127.0.0.1:8002/health", "port": 8002},
     {"name": "Agent Zero API", "url": "http://127.0.0.1:8001/health", "port": 8001},
     {"name": "Bolt.DIY", "url": "http://127.0.0.1:5173", "port": 5173},
-    {"name": "Umbrella Web", "url": "http://127.0.0.1:3000", "port": 3000},
+    {"name": "KingDesignCollectiveINC Web", "url": "http://127.0.0.1:3000", "port": 3000},
     {"name": "n8n", "url": "http://127.0.0.1:5678/healthz", "port": 5678},
     {"name": "Aura Backend", "url": "http://127.0.0.1:3100/health", "port": 3100},
     {"name": "Aura Anti-Cheat", "url": "http://127.0.0.1:3101/health", "port": 3101},
@@ -42,7 +42,7 @@ def check_service(svc):
     
     try:
         req = urllib.request.Request(svc["url"], method="GET")
-        req.add_header("User-Agent", "Umbrella-Corp-Health/1.0")
+        req.add_header("User-Agent", "KingDesignCollectiveINC-Corp-Health/1.0")
         resp = urllib.request.urlopen(req, timeout=5)
         return True, f"HTTP {resp.status}"
     except urllib.error.HTTPError as e:
@@ -55,7 +55,7 @@ def check_service(svc):
 
 def main():
     print(f"\n{'='*60}")
-    print(f"  Umbrella Corporation - Service Health Check")
+    print(f"  KingDesignCollectiveINC Corporation - Service Health Check")
     print(f"  Timestamp: {datetime.now().isoformat()}")
     print(f"{'='*60}\n")
     

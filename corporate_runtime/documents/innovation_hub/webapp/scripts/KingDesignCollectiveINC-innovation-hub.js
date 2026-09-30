@@ -1,5 +1,5 @@
 /*
- * Umbrella UI — Innovation Hub Enhanced Interactions
+ * KingDesignCollectiveINC UI — Innovation Hub Enhanced Interactions
  * Tech showcase: metric count-up, tech stack flow animation, terminal typing
  */
 

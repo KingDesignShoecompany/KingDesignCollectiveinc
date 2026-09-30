@@ -6,7 +6,7 @@ Entity type: [PENDING]
 Filing reference: [PENDING]
 
 ## OBJECTIVE
-Form a legally distinct subsidiary under Umbrella parent entity.
+Form a legally distinct subsidiary under KingDesignCollectiveINC parent entity.
 
 ## REQUIRED ARTIFACTS
 - Articles of incorporation

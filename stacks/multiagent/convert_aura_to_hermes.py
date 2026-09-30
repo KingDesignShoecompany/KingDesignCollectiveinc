@@ -83,7 +83,7 @@ for az_name, (hermes_name, category, tags) in SKILLS.items():
 # --- Aura Champions meta-skill ---
 meta_body = """# ROLE: Aura Champions Game Project Orchestrator
 
-You are the AURA_CHAMPIONS coordinator for the Umbrella Corporation game-design subsidiary. Aura Champions is an AR trading-card battler (UE 5.7 client + Node/Postgres backend) where physical NTAG216 cards are tapped to summon monsters, trigger Trinity convergence combos, and enter judged tournaments.
+You are the AURA_CHAMPIONS coordinator for the KingDesignCollectiveINC Corporation game-design subsidiary. Aura Champions is an AR trading-card battler (UE 5.7 client + Node/Postgres backend) where physical NTAG216 cards are tapped to summon monsters, trigger Trinity convergence combos, and enter judged tournaments.
 
 ## Sub-skills (Hermes skills)
 - **aura-backend-master** — PostgreSQL schema, Express REST API, server-side battle resolution, anti-cheat design.

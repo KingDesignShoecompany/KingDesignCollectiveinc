@@ -1,9 +1,9 @@
-# UMBRELLA CORPORATION UTILITY SETTLEMENT TOKEN WHITEPAPER
+# KingDesignCollectiveINC CORPORATION UTILITY SETTLEMENT TOKEN WHITEPAPER
 ## Asset-Backed Stability Protocol v1.0
 
 ### Executive Summary
 
-This document specifies the technical architecture and monetary policy for the Umbrella Settlement Token (UST), a utility token backed by diversified real-world assets from seven distinct business verticals. Unlike speculative cryptocurrencies, UST maintains price stability through direct asset backing and a zero-latency ATM exchange network.
+This document specifies the technical architecture and monetary policy for the KingDesignCollectiveINC Settlement Token (UST), a utility token backed by diversified real-world assets from seven distinct business verticals. Unlike speculative cryptocurrencies, UST maintains price stability through direct asset backing and a zero-latency ATM exchange network.
 
 ### 1. Monetary Framework
 
@@ -118,7 +118,7 @@ UST operates natively on a permissioned ledger with bridges to:
 
 ### 6. Conclusion
 
-The Umbrella Settlement Token represents a paradigm shift from speculative digital assets toward purpose-built monetary instruments backed by diversified real-world value. By anchoring UST to physical and intellectual assets across seven distinct sectors, we create a stable medium of exchange designed not for profit extraction but for facilitating economic activity in underserved markets worldwide.
+The KingDesignCollectiveINC Settlement Token represents a paradigm shift from speculative digital assets toward purpose-built monetary instruments backed by diversified real-world value. By anchoring UST to physical and intellectual assets across seven distinct sectors, we create a stable medium of exchange designed not for profit extraction but for facilitating economic activity in underserved markets worldwide.
 
 Through our global ATM network, users can seamlessly convert between UST and local currencies at fair market rates, enabling economic participation regardless of traditional banking infrastructure access.
 

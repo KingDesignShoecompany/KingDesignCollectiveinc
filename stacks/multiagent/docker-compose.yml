@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.ollama
-    container_name: umbrella_ollama
+    container_name: KingDesignCollectiveINC_ollama
     restart: unless-stopped
     ports:
       - "127.0.0.1:11435:11434"
@@ -24,7 +24,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.proxy
-    container_name: umbrella_proxy
+    container_name: KingDesignCollectiveINC_proxy
     restart: unless-stopped
     depends_on:
       - ollama
@@ -45,7 +45,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.agent
-    container_name: umbrella_api
+    container_name: KingDesignCollectiveINC_api
     restart: unless-stopped
     depends_on:
       - proxy
@@ -67,7 +67,7 @@ services:
 
   web:
     image: node:20-alpine
-    container_name: umbrella_web
+    container_name: KingDesignCollectiveINC_web
     restart: unless-stopped
     ports:
       - "127.0.0.1:3000:3000"
@@ -79,7 +79,7 @@ services:
       sh -c "npm install -g http-server && http-server /app --cors -a 0.0.0.0 -p 3000"
 
 networks:
-  umbrella_net:
+  KingDesignCollectiveINC_net:
     driver: bridge
 
 volumes:

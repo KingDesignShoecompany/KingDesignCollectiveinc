@@ -1,5 +1,5 @@
 /*
- * Umbrella UI — Travel Index Enhanced Interactions
+ * KingDesignCollectiveINC UI — Travel Index Enhanced Interactions
  * Luxury travel curation: region card hover reveal, interactive map, TikTok feed lazy load
  */
 

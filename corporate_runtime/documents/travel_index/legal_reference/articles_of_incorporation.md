@@ -1,6 +1,6 @@
 # ARTICLES OF INCORPORATION
 
-## SUBSIDIARY ID: VAGARY_INDEX
+## SUBSIDIARY ID: kingdesigncollectiveinc
 
 ## ARTICLE I — NAME
 The name of the corporation shall be: [CORPORATE_NAME_PENDING]
@@ -21,12 +21,12 @@ Authorized Shares: 1000
 Par Value: [PENDING]
 
 ## ARTICLE VI — INCORPORATOR
-Incorporator: Umbrella Enterprise
+Incorporator: KingDesignCollectiveINC Enterprise
 Signature: [PENDING]
 Date: [PENDING]
 
 ## ARTICLE VII — SHAREHOLDER PROVISIONS
-- Umbrella Enterprise shall hold 100% of issued shares upon formation
+- KingDesignCollectiveINC Enterprise shall hold 100% of issued shares upon formation
 - Transfer of shares requires Board approval
 - Dividend policy: [PENDING]
 
