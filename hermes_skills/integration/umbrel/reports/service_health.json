@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-09-14T11:04:33.172139",
+  "total_services": 13,
+  "all_healthy": false,
+  "services": [
+    {
+      "name": "OpenClaw Gateway",
+      "port": 18789,
+      "status": "up",
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Ollama (Direct)",
+      "port": 11434,
+      "status": "up",
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Ollama Proxy",
+      "port": 8002,
+      "status": "down",
+      "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+      "name": "Agent Zero API",
+      "port": 8001,
+      "status": "down",
+      "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+      "name": "Bolt.DIY",
+      "port": 5173,
+      "status": "down",
+      "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+      "name": "Umbrella Web",
+      "port": 3000,
+      "status": "up",
+      "detail": "HTTP 404"
+    },
+    {
+      "name": "n8n",
+      "port": 5678,
+      "status": "down",
+      "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+      "name": "Aura Backend",
+      "port": 3100,
+      "status": "up",
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Aura Anti-Cheat",
+      "port": 3101,
+      "status": "up",
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Aura Trinity",
+      "port": 3102,
+      "status": "up",
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Aura Tournament",
+      "port": 3103,
+      "status": "up",
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Aura NFC Handler",
+      "port": 3104,
+      "status": "up",
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "PostgreSQL (Aura DB)",
+      "port": 5432,
+      "status": "up",
+      "detail": "reachable"
+    }
+  ]
+}

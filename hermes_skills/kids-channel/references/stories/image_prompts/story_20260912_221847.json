@@ -1,0 +1,37 @@
+[
+  {
+    "scene_number": 1,
+    "scene_title": "Forest Clearing",
+    "image_prompt": "Children's book illustration style, Forest Clearing, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 2,
+    "scene_title": "Sparkling Stream",
+    "image_prompt": "Children's book illustration style, Sparkling Stream, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 3,
+    "scene_title": "Rolling Meadow",
+    "image_prompt": "Children's book illustration style, Rolling Meadow, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 4,
+    "scene_title": "Misty Hill",
+    "image_prompt": "Children's book illustration style, Misty Hill, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  },
+  {
+    "scene_number": 5,
+    "scene_title": "Quiet Grove",
+    "image_prompt": "Children's book illustration style, Quiet Grove, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+    "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+    "safety_checked": true
+  }
+]

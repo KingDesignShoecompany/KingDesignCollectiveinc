@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "Aura Backend Master",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register Card",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"userId\":\"<user>\", \"cardUid\":\"<uid>\", \"checksum\":\"<checksum>\" }"
+        },
+        "url": "http://localhost:3000/registerCard"
+      }
+    },
+    {
+      "name": "BattleSync Action",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key":"Content-Type","value":"application/json"},
+          {"key":"x-timestamp","value":"<ts>"},
+          {"key":"x-signature","value":"<sig>"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"battleId\":\"<battle>\", \"userId\":\"<user>\", \"action\": { \"actor\":\"<uid>\", \"type\":\"ATTACK\", \"target\":\"<uid2>\" }, \"nonce\":\"<nonce>\", \"stateVersion\":0 }"
+        },
+        "url": "http://localhost:3000/battleSync"
+      }
+    }
+  ]
+}

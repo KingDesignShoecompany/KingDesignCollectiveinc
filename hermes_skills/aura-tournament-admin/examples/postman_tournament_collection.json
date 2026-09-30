@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Aura Tournament Admin",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Verify Card",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{ \"cardUid\":\"CARD_UID_123\" }" },
+        "url": { "raw": "http://localhost:3003/tournament/verifyCard", "host": ["localhost"], "port": "3003", "path": ["tournament", "verifyCard"] }
+      }
+    },
+    {
+      "name": "Create Match",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{ \"tournamentId\":\"<uuid>\", \"players\":[\"<uuid>\",\"<uuid>\"], \"format\":\"swiss\" }" },
+        "url": { "raw": "http://localhost:3003/tournament/createMatch", "host": ["localhost"], "port": "3003", "path": ["tournament", "createMatch"] }
+      }
+    },
+    {
+      "name": "Export Logs",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{ \"matchId\":\"<uuid>\", \"format\":\"json\" }" },
+        "url": { "raw": "http://localhost:3003/tournament/exportLogs", "host": ["localhost"], "port": "3003", "path": ["tournament", "exportLogs"] }
+      }
+    }
+  ]
+}

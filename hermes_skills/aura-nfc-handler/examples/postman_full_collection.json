@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "NFC Handler Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Issue Write Token",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"userId\":\"<user>\", \"cardUid\":\"<uid>\", \"operation\":\"register\" }"
+        },
+        "url": "http://localhost:4000/issueWriteToken"
+      }
+    },
+    {
+      "name": "Validate Write Token",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"token\":\"<token>\", \"cardUid\":\"<uid>\", \"fields\":[\"owner_signature\"] }"
+        },
+        "url": "http://localhost:4000/validateWriteToken"
+      }
+    }
+  ]
+}

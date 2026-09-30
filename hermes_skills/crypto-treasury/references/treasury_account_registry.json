@@ -1,0 +1,16 @@
+{
+  "updated_at": "[PENDING]",
+  "hub_account": {
+    "entity": "Umbrella Enterprise",
+    "status": "template_only"
+  },
+  "subsidiary_accounts": {
+    "vagary_index": {"status": "template_only", "bank": "[PENDING]", "account_id": "[PENDING]"},
+    "shoes": {"status": "template_only", "bank": "[PENDING]", "account_id": "[PENDING]"},
+    "gamedev": {"status": "template_only", "bank": "[PENDING]", "account_id": "[PENDING]"},
+    "kids": {"status": "template_only", "bank": "[PENDING]", "account_id": "[PENDING]"},
+    "innovation": {"status": "template_only", "bank": "[PENDING]", "account_id": "[PENDING]"},
+    "ewaste": {"status": "template_only", "bank": "[PENDING]", "account_id": "[PENDING]"},
+    "quantum": {"status": "template_only", "bank": "[PENDING]", "account_id": "[PENDING]"}
+  }
+}

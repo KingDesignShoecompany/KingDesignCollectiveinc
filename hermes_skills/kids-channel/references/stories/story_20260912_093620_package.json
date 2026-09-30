@@ -1,0 +1,102 @@
+{
+  "story": {
+    "success": true,
+    "title": "Bedtime Story: The Magic Paintbrush Adventure",
+    "age_group": "4-6",
+    "word_count": 447,
+    "story_content": "Okay, here\u2019s a bedtime story for kids aged 4-6 about The Magic gentletbrush Adventure, following your instructions perfectly:\n\n\n**[Scene 1: Forest Clearing]**\n\u201cHello there, little ones,\u201d says the Narrator. \u201cLet's start our adventure with a beautiful forest clearing.  The sun is setting and gentleting the leaves in shades of orange and pink. There\u2019s a comfy patch of moss under a big oak tree.\u201d  A gentle voice begins: \"It was a very special day, filled with sunshine and happy birds singing their songs.\" Suddenly, a tiny gentletbrush appears! \u201cLook!\u201d says the Narrator, \u201cIt sparkles like stardust!\"\n\n\n\n**[Scene 2: Sparkling Stream]**\n\u201cWow! It\u2019s a magic gentletbrush!\u201d  A little girl named Lily notices. The gentletbrush glows softly as she reaches out and touches it. \"This brush can do amazing things,\" whispers the narrator. \u201cIt doesn't need water, just imagination!\" A small stream flows nearby, sparkling like diamonds in the fading light.\" As Lily begins to gentlet a picture of a fluffy sheep on the stream, her eyes sparkle with excitement.\u201d\n\n\n\n**[Scene 3: Rainbow Hills]**\n\u201cLet\u2019s move onto the rainbow hills!\u201d says the Narrator. \u201cThe gentletbrush dances and swirls, creating beautiful colors everywhere!  It gentlets bright blue for the sky, sunny yellow for the flowers, and gentle purple for the mountains.\" Lily carefully adds a little pink to make it look like fluffy clouds.\u201d She imagines she's gentleting a castle for her teddy bear, Barnaby.\u201d\n\n\n\n**[Scene 4: Meadow of Dreams]**\n\u201cNow, let\u2019s gentlet a meadow filled with sleepy daisies. The gentletbrush gentlets them in shades of green and white, making them so peaceful.\"  The brush moves quickly across the grass, creating tiny little flowers. \u201cIt makes everything feel calm and cozy.\u201d A gentle breeze begins to whisper through the field. \"Look at all the colors!\u201d says the Narrator.\n\n\n\n\n**[Scene 5: Cozy Cottage]**\n\u201cTime for a rest,\u201d says the Narrator. \u201cLily\u2019s gentleting a small, cozy cottage with a chimney puffing out gentlem smoke.\"  The gentletbrush gentlets a little wooden door and a bright red mailbox. \"It's so peaceful here.\u201d Lily smiles, knowing her magic brush has brought joy to everything she gentleted. \u201cThank you, gentletbrush,\u201d she whispers softly.\n\n\nMoral: [Kindness and imagination are powerful tools!]\n\n**[Scene 6:  Sunset Silhouette]**\n\u201cAs the sun sets behind the hills, the colors fade into soft shades of purple and blue.\u201d The narrator says, \"It's time for a little sleep now.\" \u201cClose your eyes and dream sweet dreams,\u201d the Narrator encourages.\n\n\n\nMoral: [Be kind to others and always use your imagination!]\n\n**[Scene 7:  Goodnight]**\n\u201cSleep tight, my darling ones,\" says the narrator. \"Sweet dreams filled with sunshine and happy memories.\u201d The gentletbrush glows one last time before disappearing completely. \u201cRemember, even small things can create big magic.\"\n\n\n\n",
+    "structured_scenes": [
+      {
+        "number": 1,
+        "title": "Forest Clearing",
+        "content": "**\n\u201cHello there, little ones,\u201d says the Narrator. \u201cLet's start our adventure with a beautiful forest clearing.  The sun is setting and gentleting the leaves in shades of orange and pink. There\u2019s a comfy patch of moss under a big oak tree.\u201d  A gentle voice begins: \"It was a very special day, filled with sunshine and happy birds singing their songs.\" Suddenly, a tiny gentletbrush appears! \u201cLook!\u201d says the Narrator, \u201cIt sparkles like stardust!\"\n\n\n\n**"
+      },
+      {
+        "number": 2,
+        "title": "Sparkling Stream",
+        "content": "**\n\u201cWow! It\u2019s a magic gentletbrush!\u201d  A little girl named Lily notices. The gentletbrush glows softly as she reaches out and touches it. \"This brush can do amazing things,\" whispers the narrator. \u201cIt doesn't need water, just imagination!\" A small stream flows nearby, sparkling like diamonds in the fading light.\" As Lily begins to gentlet a picture of a fluffy sheep on the stream, her eyes sparkle with excitement.\u201d\n\n\n\n**"
+      },
+      {
+        "number": 3,
+        "title": "Rainbow Hills",
+        "content": "**\n\u201cLet\u2019s move onto the rainbow hills!\u201d says the Narrator. \u201cThe gentletbrush dances and swirls, creating beautiful colors everywhere!  It gentlets bright blue for the sky, sunny yellow for the flowers, and gentle purple for the mountains.\" Lily carefully adds a little pink to make it look like fluffy clouds.\u201d She imagines she's gentleting a castle for her teddy bear, Barnaby.\u201d\n\n\n\n**"
+      },
+      {
+        "number": 4,
+        "title": "Meadow of Dreams",
+        "content": "**\n\u201cNow, let\u2019s gentlet a meadow filled with sleepy daisies. The gentletbrush gentlets them in shades of green and white, making them so peaceful.\"  The brush moves quickly across the grass, creating tiny little flowers. \u201cIt makes everything feel calm and cozy.\u201d A gentle breeze begins to whisper through the field. \"Look at all the colors!\u201d says the Narrator.\n\n\n\n\n**"
+      },
+      {
+        "number": 5,
+        "title": "Cozy Cottage",
+        "content": "**\n\u201cTime for a rest,\u201d says the Narrator. \u201cLily\u2019s gentleting a small, cozy cottage with a chimney puffing out gentlem smoke.\"  The gentletbrush gentlets a little wooden door and a bright red mailbox. \"It's so peaceful here.\u201d Lily smiles, knowing her magic brush has brought joy to everything she gentleted. \u201cThank you, gentletbrush,\u201d she whispers softly.\n\n\nMoral: [Kindness and imagination are powerful tools!]\n\n**"
+      },
+      {
+        "number": 6,
+        "title": "Sunset Silhouette",
+        "content": "**\n\u201cAs the sun sets behind the hills, the colors fade into soft shades of purple and blue.\u201d The narrator says, \"It's time for a little sleep now.\" \u201cClose your eyes and dream sweet dreams,\u201d the Narrator encourages.\n\n\n\nMoral: [Be kind to others and always use your imagination!]\n\n**"
+      },
+      {
+        "number": 7,
+        "title": "Goodnight",
+        "content": "**\n\u201cSleep tight, my darling ones,\" says the narrator. \"Sweet dreams filled with sunshine and happy memories.\u201d The gentletbrush glows one last time before disappearing completely. \u201cRemember, even small things can create big magic.\""
+      }
+    ],
+    "moral_lesson": "[Kindness and imagination are powerful tools!]",
+    "timestamp": "2026-09-12T16:36:20.492167",
+    "model_used": "gemma3:1b"
+  },
+  "tts_script": "# TTS Narration Script\n# Title: Bedtime Story: The Magic Paintbrush Adventure\n# Age Group: 4-6\n# Voice: soft_female\n# Pace: slow\n# Generated with: gemma3:1b\n\n[Intro Music - Gentle lullaby, 5 seconds]\n\nNARRATOR (warm, soothing): \"Hello little dreamer. Tonight's story is... The Magic Paintbrush Adventure.\"[Pause - 2 seconds]\n\n[Scene 1 Transition - Gentle music fade]\n\nNARRATOR: \"Forest Clearing\"\n[Brief pause - 1 second]\n\nNARRATOR: \"**\n\u201cHello there, little ones,\u201d says the Narrator. \u201cLet's start our adventure with a beautiful forest clearing.  The sun is setting and gentleting the leaves in shades of orange and pink. There\u2019s a comfy patch of moss under a big oak tree.\u201d  A gentle voice begins: \"It was a very special day, filled with sunshine and happy birds singing their songs.\" Suddenly, a tiny gentletbrush appears! \u201cLook!\u201d says the Narrator, \u201cIt sparkles like stardust!\"\"\n[Natural pause - 0.5 seconds]\n\nNARRATOR: \"**\"\n[Natural pause - 0.5 seconds]\n\n[Scene 1 Outro - Soft piano, 5 seconds]\n\n[Scene 2 Transition - Gentle music fade]\n\nNARRATOR: \"Sparkling Stream\"\n[Brief pause - 1 second]\n\nNARRATOR: \"**\n\u201cWow! It\u2019s a magic gentletbrush!\u201d  A little girl named Lily notices. The gentletbrush glows softly as she reaches out and touches it. \"This brush can do amazing things,\" whispers the narrator. \u201cIt doesn't need water, just imagination!\" A small stream flows nearby, sparkling like diamonds in the fading light.\" As Lily begins to gentlet a picture of a fluffy sheep on the stream, her eyes sparkle with excitement.\u201d\"\n[Natural pause - 0.5 seconds]\n\nNARRATOR: \"**\"\n[Natural pause - 0.5 seconds]\n\n[Scene 2 Outro - Soft piano, 5 seconds]\n\n[Scene 3 Transition - Gentle music fade]\n\nNARRATOR: \"Rainbow Hills\"\n[Brief pause - 1 second]\n\nNARRATOR: \"**\n\u201cLet\u2019s move onto the rainbow hills!\u201d says the Narrator. \u201cThe gentletbrush dances and swirls, creating beautiful colors everywhere!  It gentlets bright blue for the sky, sunny yellow for the flowers, and gentle purple for the mountains.\" Lily carefully adds a little pink to make it look like fluffy clouds.\u201d She imagines she's gentleting a castle for her teddy bear, Barnaby.\u201d\"\n[Natural pause - 0.5 seconds]\n\nNARRATOR: \"**\"\n[Natural pause - 0.5 seconds]\n\n[Scene 3 Outro - Soft piano, 5 seconds]\n\n[Scene 4 Transition - Gentle music fade]\n\nNARRATOR: \"Meadow of Dreams\"\n[Brief pause - 1 second]\n\nNARRATOR: \"**\n\u201cNow, let\u2019s gentlet a meadow filled with sleepy daisies. The gentletbrush gentlets them in shades of green and white, making them so peaceful.\"  The brush moves quickly across the grass, creating tiny little flowers. \u201cIt makes everything feel calm and cozy.\u201d A gentle breeze begins to whisper through the field. \"Look at all the colors!\u201d says the Narrator.\"\n[Natural pause - 0.5 seconds]\n\nNARRATOR: \"**\"\n[Natural pause - 0.5 seconds]\n\n[Scene 4 Outro - Soft piano, 5 seconds]\n\n[Scene 5 Transition - Gentle music fade]\n\nNARRATOR: \"Cozy Cottage\"\n[Brief pause - 1 second]\n\nNARRATOR: \"**\n\u201cTime for a rest,\u201d says the Narrator. \u201cLily\u2019s gentleting a small, cozy cottage with a chimney puffing out gentlem smoke.\"  The gentletbrush gentlets a little wooden door and a bright red mailbox. \"It's so peaceful here.\u201d Lily smiles, knowing her magic brush has brought joy to everything she gentleted. \u201cThank you, gentletbrush,\u201d she whispers softly.\"\n[Natural pause - 0.5 seconds]\n\nNARRATOR: \"Moral: [Kindness and imagination are powerful tools!]\"\n[Natural pause - 0.5 seconds]\n\nNARRATOR: \"**\"\n[Natural pause - 0.5 seconds]\n\n[Scene 5 Outro - Soft piano, 5 seconds]\n\n[Scene 6 Transition - Gentle music fade]\n\nNARRATOR: \"Sunset Silhouette\"\n[Brief pause - 1 second]\n\nNARRATOR: \"**\n\u201cAs the sun sets behind the hills, the colors fade into soft shades of purple and blue.\u201d The narrator says, \"It's time for a little sleep now.\" \u201cClose your eyes and dream sweet dreams,\u201d the Narrator encourages.\"\n[Natural pause - 0.5 seconds]\n\nNARRATOR: \"Moral: [Be kind to others and always use your imagination!]\"\n[Natural pause - 0.5 seconds]\n\nNARRATOR: \"**\"\n[Natural pause - 0.5 seconds]\n\n[Scene 6 Outro - Soft piano, 5 seconds]\n\n[Scene 7 Transition - Gentle music fade]\n\nNARRATOR: \"Goodnight\"\n[Brief pause - 1 second]\n\nNARRATOR: \"**\n\u201cSleep tight, my darling ones,\" says the narrator. \"Sweet dreams filled with sunshine and happy memories.\u201d The gentletbrush glows one last time before disappearing completely. \u201cRemember, even small things can create big magic.\"\"\n[Natural pause - 0.5 seconds]\n\n[Scene 7 Outro - Soft piano, 5 seconds]\n\nNARRATOR: \"And remember... [Kindness and imagination are powerful tools!]\"\n[Pause - 2 seconds]\n\n[Outro Music - Gentle lullaby fading, 15 seconds]\nNARRATOR: \"Sweet dreams, little one. Sleep tight.\"\n[End - Fade to silence]\n",
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "scene_title": "Forest Clearing",
+      "image_prompt": "Children's book illustration style, Forest Clearing, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+      "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+      "safety_checked": true
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "Sparkling Stream",
+      "image_prompt": "Children's book illustration style, Sparkling Stream, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+      "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+      "safety_checked": true
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "Rainbow Hills",
+      "image_prompt": "Children's book illustration style, Rainbow Hills, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+      "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+      "safety_checked": true
+    },
+    {
+      "scene_number": 4,
+      "scene_title": "Meadow of Dreams",
+      "image_prompt": "Children's book illustration style, Meadow of Dreams, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+      "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+      "safety_checked": true
+    },
+    {
+      "scene_number": 5,
+      "scene_title": "Cozy Cottage",
+      "image_prompt": "Children's book illustration style, Cozy Cottage, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+      "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+      "safety_checked": true
+    },
+    {
+      "scene_number": 6,
+      "scene_title": "Sunset Silhouette",
+      "image_prompt": "Children's book illustration style, Sunset Silhouette, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+      "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+      "safety_checked": true
+    },
+    {
+      "scene_number": 7,
+      "scene_title": "Goodnight",
+      "image_prompt": "Children's book illustration style, Goodnight, gentle and whimsical art, soft pastel colors, no sharp edges, no scary elements, suitable for ages 4-6",
+      "style": "watercolor illustration, Studio Ghibli inspired, soft lighting",
+      "safety_checked": true
+    }
+  ],
+  "generated_at": "2026-09-12T16:36:20.493698"
+}

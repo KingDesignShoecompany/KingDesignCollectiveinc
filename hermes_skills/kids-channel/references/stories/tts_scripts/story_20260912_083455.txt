@@ -1,0 +1,102 @@
+# TTS Narration Script
+# Title: Bedtime Story: The Friendly Dragon's Cupcake Adventure
+# Age Group: 4-6
+# Voice: soft_female
+# Pace: slow
+
+[Intro Music - Gentle lullaby, 5 seconds]
+
+NARRATOR (warm, soothing): "Hello little dreamer. Tonight's story is... The Friendly Dragon's Cupcake Adventure."[Pause - 2 seconds]
+
+[Scene 1 Transition - Gentle music fade]
+
+NARRATOR: "Forest Clearing"
+[Brief pause - 1 second]
+
+NARRATOR: "“Sparky loved to explore,” said the narrator gently. “He spent his days fluttering through the trees, collecting colorful wildflowers.”  The sound of rustling leaves is added in here. Sparky was humming a little tune – it sounded like a happy bumblebee!"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "One sunny morning, while nibbling on a sweet berry, Sparky spotted something sparkly near a babbling brook. It was a tiny, wooden cup filled with the most delicious-looking cupcake!  It shimmered and sparkled in the sunlight. “Wow!” exclaimed Sparky, his eyes wide like little pools of water."
+[Natural pause - 0.5 seconds]
+
+[Scene 1 Outro - Soft piano, 5 seconds]
+
+[Scene 2 Transition - Gentle music fade]
+
+NARRATOR: "Brook’s Edge"
+[Brief pause - 1 second]
+
+NARRATOR: "“He carefully climbed down to the brook,” the narrator whispered. "The water was so clear, you could see tiny pebbles on its bottom."  Sparky reached out a small claw and gently picked up the cupcake. It smelled like gentlem chocolate and sunshine! “It smells amazing!” Sparky giggled softly."
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "Suddenly, a little bunny named Pip hopped by. “Hello Mr. Dragon,” said Pip shyly. "What's that beautiful cupcake?""
+[Natural pause - 0.5 seconds]
+
+[Scene 2 Outro - Soft piano, 5 seconds]
+
+[Scene 3 Transition - Gentle music fade]
+
+NARRATOR: "Bunny’s Burrow"
+[Brief pause - 1 second]
+
+NARRATOR: "Sparky smiled – it was so nice to have someone to share with! He offered Pip the cupcake and they shared it together, munching happily on the sweet frosting. “Thank you for visiting!” Sparky said. "It's delicious!""
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "As Pip munched, Sparky realized he wanted to help more than just eat the cupcake.  “I wish I could make a new friend,” he thought. He started collecting colorful pebbles and flowers from around the brook."
+[Natural pause - 0.5 seconds]
+
+[Scene 3 Outro - Soft piano, 5 seconds]
+
+[Scene 4 Transition - Gentle music fade]
+
+NARRATOR: "Back in Sunny Meadow"
+[Brief pause - 1 second]
+
+NARRATOR: "Soon, Sparky was building a little garden with his pebbles and flowers! Pip smiled too – it felt good to help. “You’re very kind, Sparky!” said Pip."
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "Sparky realized that making new friends made him feel even happier than eating the cupcake! He spent the rest of the afternoon playing games with Pip and collecting more beautiful things."
+[Natural pause - 0.5 seconds]
+
+[Scene 4 Outro - Soft piano, 5 seconds]
+
+[Scene 5 Transition - Gentle music fade]
+
+NARRATOR: "Sunset"
+[Brief pause - 1 second]
+
+NARRATOR: "The sun began to set, gentleting the sky in shades of pink and orange. Sparky looked at his garden, full of happy flowers and sparkling pebbles. “Being a friend makes everything better,” he whispered."
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "[Moral Lesson – Gentle & Sweet] "Friendship is like sharing a sweet cupcake - it brings joy and gentlemth to everyone around you.""
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "Now close your eyes, little one. Think about how Sparky helped Pip, and remember that kindness and friendship are the sweetest treats of all! Sleep tight.”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Sound of gentle lullaby begins)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "---"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**Notes for TTS Narration:**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "*   Use a gentlem, slightly playful voice.
+*   Emphasize on key words like "sparkly," “sweet,” and “happy”.
+*   Pause briefly between sentences to allow the listener to absorb each idea.
+*  Add a slight breathy quality to the narration - something like '…very softly...'"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "Would you like me to tweak this story or create another one with a different focus?"
+[Natural pause - 0.5 seconds]
+
+[Scene 5 Outro - Soft piano, 5 seconds]
+
+NARRATOR: "And remember... Lesson – Gentle & Sweet] "Friendship is like sharing a sweet cupcake - it brings joy and gentlemth to everyone around you.""
+[Pause - 2 seconds]
+
+[Outro Music - Gentle lullaby fading, 15 seconds]
+NARRATOR: "Sweet dreams, little one. Sleep tight."
+[End - Fade to silence]

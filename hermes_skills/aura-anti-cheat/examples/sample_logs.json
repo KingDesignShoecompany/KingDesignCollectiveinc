@@ -1,0 +1,18 @@
+{
+  "sample_audit_events": [
+    {
+      "event_type": "action_ok",
+      "userId": "user-uuid-sample",
+      "battleId": "battle-uuid-sample",
+      "payload": { "action": { "actor": "UID_ABC", "type": "ATTACK", "target": "UID_XYZ" } },
+      "server_decision": "accepted"
+    },
+    {
+      "event_type": "action_rejected",
+      "userId": "user-uuid-sample",
+      "battleId": "battle-uuid-sample",
+      "payload": { "action": { "actor": "UID_ABC", "type": "ATTACK", "target": "UID_XYZ" } },
+      "server_decision": "stale_stateVersion"
+    }
+  ]
+}

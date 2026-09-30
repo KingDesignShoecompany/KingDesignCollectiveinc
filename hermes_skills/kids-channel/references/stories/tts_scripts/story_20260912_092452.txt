@@ -1,0 +1,87 @@
+# TTS Narration Script
+# Title: Bedtime Story: The Magic Paintbrush Adventure
+# Age Group: 4-6
+# Voice: soft_female
+# Pace: slow
+# Generated with: gemma3:1b
+
+[Intro Music - Gentle lullaby, 5 seconds]
+
+NARRATOR (warm, soothing): "Hello little dreamer. Tonight's story is... The Magic Paintbrush Adventure."[Pause - 2 seconds]
+
+[Scene 1 Transition - Gentle music fade]
+
+NARRATOR: "The Adventure"
+[Brief pause - 1 second]
+
+NARRATOR: "Okay, here’s a bedtime story for kids aged four to six, focusing on the Magic gentletbrush Adventure – designed to be gentlem and comforting.  I've aimed for rhythm and gentle imagery."
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "---"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**The Magic gentletbrush Adventure**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Scene 1: Forest Clearing)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "“Hello, little explorers! Let’s snuggle in close… Tonight we have a very special story about a gentletbrush named Pip.” *[Pause, soft voice]*  Pip lived in a cozy corner of the Whispering Woods. He wasn't just any brush; he was a Magic gentletbrush!  Pip had tiny sparkles on his bristles and loved to make beautiful pictures with color."
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Scene 2: Sparkling Stream)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "“One sunny morning, Pip decided it was time for an adventure! He rolled out of his little stand and started wiggling across the sparkling stream.” *[Gentle bubbling sound effect]*  The water shimmered as Pip moved, making tiny rainbows dance on the surface. “He wanted to gentlet a picture of a happy cloud,” Pip thought with excitement.""
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Scene 3: Rolling Hills)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "“Pip rolled togentleds a field full of rolling hills. He started gentleting a bright red poppy. *[Slow, rhythmic music begins]*  The sun gentlemed his bristles and made the colors glow! It was so fun!” *[Sound of gentle wind chimes]* Pip gentleted a little ladybug with polka dots – they looked just like tiny jewels.”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Scene 4: Blueberry Patch)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "“Then, Pip rolled togentleds a blueberry patch. He wanted to gentlet a big, juicy berry! *[A soft ‘whoosh’ sound effect]*  He used blue and purple to make the berries look extra plump and sweet. A little bee buzzed by!” *[Gentle buzzing sound]* “The bee smiled at him.”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Scene 5: Quiet Meadow)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "“Pip gentleted a lovely picture of a fluffy sheep grazing in the meadow. He added lots of yellow sunshine!  He felt happy to create something beautiful.” *[A quiet, peaceful melody starts]*  "It was so good to gentlet!" Pip said with a smile.""
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Scene 6: Back Home)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "“As the sun began to set, Pip rolled back to his little stand. He looked at all his pictures – they were wonderful!  He realized that making beautiful things made him feel happy too.” *[A gentle sigh]* “It’s okay to be curious and to want to explore!”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(Scene 7: Cozy Corner)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "“Pip smiled, a tiny sparkle twinkling in his bristles. He knew that even the smallest gentletbrush could create amazing pictures.  And it's good to be brave and try new things.” *[Soft music fades slightly]* “Being kind to others – sharing your colors with someone else - is also very important!”"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**(End)**"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "“Now, little one, remember Pip’s adventure? It just takes a little curiosity and kindness.  Close your eyes now... Imagine yourself gentleting something beautiful too! Sweet dreams.” *[Gentle lullaby sound]*"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "---"
+[Natural pause - 0.5 seconds]
+
+NARRATOR: "**Moral of the"
+[Natural pause - 0.5 seconds]
+
+[Scene 1 Outro - Soft piano, 5 seconds]
+
+NARRATOR: "And remember... of the"
+[Pause - 2 seconds]
+
+[Outro Music - Gentle lullaby fading, 15 seconds]
+NARRATOR: "Sweet dreams, little one. Sleep tight."
+[End - Fade to silence]
