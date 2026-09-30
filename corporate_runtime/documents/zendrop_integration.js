@@ -2,7 +2,7 @@
 /**
  * KingDesignCollectiveINC - Zendrop API Integration
  * Handles API token management, product imports, and order synchronization
- * For: Shoe Brand store and Vagary Index travel accessories/vacation items
+ * For: Shoe Brand store and KingDesignCollectiveINC travel accessories/vacation items
  */
 
 import https from 'https';
@@ -211,7 +211,7 @@ class ZendropAPI {
   }
 
   /**
-   * Fetch vacation items and accessories (for Vagary Index)
+   * Fetch vacation items and accessories (for KingDesignCollectiveINC)
    * @returns {Promise<object>}
    */
   async getVacationItems() {
