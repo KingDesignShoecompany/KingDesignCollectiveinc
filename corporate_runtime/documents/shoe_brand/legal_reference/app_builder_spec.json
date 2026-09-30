@@ -1,0 +1,35 @@
+{
+  "app_name": "KingDesign Shoe Company App Builder Project",
+  "subsidiary_id": "shoes",
+  "brand_identity": {
+    "company_name": "KingDesign Shoe Company",
+    "parent_entity": "KingDesignCollective",
+    "core_products": ["High-end sneakers", "Limited edition footwear", "Luxury leather goods", "Premium accessories"],
+    "aesthetic_vibe": "Cinematic Street-King (Luxury Streetwear / Modern Royalty)",
+    "design_keywords": ["Glassmorphism", "Brutalism", "Minimalist", "Cinematic"],
+    "hero_visual": "Gold crown icon with K-D1 obsidian sneaker silhouette"
+  },
+  "prompts": {
+    "master_app_builder_prompt": "Build a high-end e-commerce app for KingDesign Shoe Company...",
+    "app_publishing_final_prompt": "Prepare the KingDesign app for final deployment..."
+  },
+  "copywriting": {
+    "about_us_manifesto": { "title": "THE REIGN OF CRAFT", "subtitle": "NO PERMISSION GRANTED.", "body": "..." },
+    "product_drop": { "name": "THE K-D1 \"OBSIDIAN CROWN\"", "cta_button_text": "[ CLAIM YOUR PAIR ]" }
+  },
+  "loyalty_program": {
+    "name": "The Blacklist",
+    "currency": "Weight",
+    "tiers": [ {"level": "ENTRY"}, {"level": "PROMOTED"}, {"level": "INNER CIRCLE"}, {"level": "THE SYNDICATE"} ]
+  },
+  "new_feature": {
+    "five_second_splash_intro_script": {
+      "visual_timeline": {
+        "0_2_seconds": "Pitch-black background. A raw, structural concrete floor catches a dim downlight. A heavy mechanical thud echoes as a giant shadow of a geometric crown falls over the scene.",
+        "2_4_seconds": "A gold pulse ripple travels across the screen. From the dark, the sharp, glassmorphic structure of the K-D1 sneaker silhouette glints in the light for a microsecond.",
+        "4_5_seconds": "The sneaker vanishes into a crisp, pure-gold vector crown icon that snaps to the center of the screen, followed by the text 'KINGDESIGN' fading in below it using ultra-bold brutalist typography. The interface instantly slides up seamlessly into the Home feed."
+      },
+      "audio_profile": "A sub-bass boom that vibrates the phone (haptic trigger), shifting into a mechanical latch sound, ending with a clean, luxury ambient shimmer."
+    }
+  }
+}

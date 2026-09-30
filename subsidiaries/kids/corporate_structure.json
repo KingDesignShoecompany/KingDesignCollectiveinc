@@ -1,0 +1,28 @@
+{
+  "subsidiary_id": "kids",
+  "entity_name": "Seven Minute Story Sessions",
+  "brand_name": "Seven Minute Story Sessions",
+  "jurisdiction": "[PENDING]",
+  "entity_type": "[PENDING]",
+  "registered_agent": "[PENDING]",
+  "incorporation_filing_date": "[PENDING]",
+  "capitalization": {},
+  "business_model": {
+    "platform": "YouTube",
+    "content_type": "audio_stories_with_ambient_sounds",
+    "audience": "children",
+    "use_case": "bedtime_sleep_aid",
+    "story_duration_target_minutes": 7,
+    "revenue_model": "youtube_ad_revenue_and_channel_memberships",
+    "production_pipeline": [
+      "story_writer",
+      "audio_producer",
+      "youtube_publisher"
+    ]
+  },
+  "ownership_structure": {
+    "parent": "100%",
+    "subsidiary": "0%"
+  },
+  "dependencies": []
+}

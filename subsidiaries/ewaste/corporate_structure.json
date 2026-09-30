@@ -1,0 +1,14 @@
+{
+  "subsidiary_id": "ewaste",
+  "entity_name": "[PENDING]",
+  "jurisdiction": "[PENDING]",
+  "entity_type": "[PENDING]",
+  "registered_agent": "[PENDING]",
+  "incorporation_filing_date": "[PENDING]",
+  "capitalization": {},
+  "ownership_structure": {
+    "parent": "100%",
+    "subsidiary": "0%"
+  },
+  "dependencies": []
+}

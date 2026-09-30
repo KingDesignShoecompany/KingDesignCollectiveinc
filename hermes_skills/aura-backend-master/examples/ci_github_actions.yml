@@ -1,0 +1,17 @@
+name: Backend CI
+on: [push, pull_request]
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install
+        run: npm ci
+      - name: Run lint
+        run: npm run lint || true
+      - name: Run tests
+        run: npm test

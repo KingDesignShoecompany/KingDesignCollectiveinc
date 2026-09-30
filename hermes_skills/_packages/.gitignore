@@ -1,0 +1,5 @@
+# Aura Champions — ignore generated secrets and local env
+.env
+**/.env
+node_modules/
+.DS_Store

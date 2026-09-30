@@ -1,0 +1,39 @@
+{
+  "network": "UMB_SETTLEMENT_ATM",
+  "updated_at": "2026-08-04",
+  "nodes": [
+    {
+      "node_id": "ATM-NA-001",
+      "region": "North America",
+      "city": "New York",
+      "status": "planned",
+      "fiat_pair": "USD",
+      "liquidity_reserve_usd": "[PENDING]",
+      "coordinates": "[REDACTED]",
+      "operator": "[PENDING]",
+      "settlement_protocol": "Time-Locked Proof-of-Trade"
+    },
+    {
+      "node_id": "ATM-EU-001",
+      "region": "Europe",
+      "city": "Frankfurt",
+      "status": "planned",
+      "fiat_pair": "EUR",
+      "liquidity_reserve_usd": "[PENDING]",
+      "coordinates": "[REDACTED]",
+      "operator": "[PENDING]",
+      "settlement_protocol": "Time-Locked Proof-of-Trade"
+    },
+    {
+      "node_id": "ATM-ASIA-001",
+      "region": "Asia-Pacific",
+      "city": "Singapore",
+      "status": "planned",
+      "fiat_pair": "SGD",
+      "liquidity_reserve_usd": "[PENDING]",
+      "coordinates": "[REDACTED]",
+      "operator": "[PENDING]",
+      "settlement_protocol": "Time-Locked Proof-of-Trade"
+    }
+  ]
+}

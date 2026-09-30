@@ -1,0 +1,204 @@
+{
+  "store": "The Vagary Index",
+  "source": "Zendrop",
+  "integration_status": "api_configured",
+  "logo": "images/valgary-index-logo.png",
+  "logo_alt": "The Vagary Index - 250-Country Travel Platform",
+  "api_credentials": {
+    "endpoint": "https://api.zendrop.com/api/v2",
+    "auth_method": "bearer_token",
+    "scopes": [
+      "catalog:read",
+      "my_products:read",
+      "my_products:write",
+      "orders:read",
+      "orders:write",
+      "order_issues:read",
+      "order_issues:write",
+      "stores:read",
+      "stores:write",
+      "billing:read"
+    ]
+  },
+  "token": {
+    "status": "pending_creation",
+    "token_name": "KingDesignCollectiveINC - Shoe Brand & Vagary Index",
+    "expiration": "never",
+    "description": "Primary store integration token for e-commerce storefronts"
+  },
+  "products_by_category": {
+    "vacation_wear": [
+      {
+        "id": "VAC-001",
+        "name": "Premium Hawaiian Shirt",
+        "sku": "VAC-001",
+        "price": 89.99,
+        "currency": "USD",
+        "image": "images/vacation/premium-hawaiian-shirt.jpg",
+        "thumbnail": "images/vacation/premium-hawaiian-shirt-thumb.jpg",
+        "description": "100% rayon premium Hawaiian shirt with vibrant tropical print. Perfect for island getaways and summer adventures.",
+        "category": "Vacation Wear",
+        "tags": ["shirt", "tropical", "summer", "hawaiian"],
+        "variants": [
+          {"size": "M", "sku": "VAC-001-M", "in_stock": 20},
+          {"size": "L", "sku": "VAC-001-L", "in_stock": 15},
+          {"size": "XL", "sku": "VAC-001-XL", "in_stock": 10}
+        ],
+        "supplier": "Zendrop",
+        "shipping_days_min": 5,
+        "shipping_days_max": 12,
+        "active": true,
+        "source": "zendrop_catalog",
+        "country_origin": "US",
+        "rating": 4.5
+      },
+      {
+        "id": "VAC-002",
+        "name": "Beach Sunset Sarong",
+        "sku": "VAC-002",
+        "price": 42.99,
+        "currency": "USD",
+        "image": "images/vacation/beach-sarong.jpg",
+        "thumbnail": "images/vacation/beach-sarong-thumb.jpg",
+        "description": "Lightweight sarong with hand-printed sunset gradient. Versatile beach cover-up or home decor accent.",
+        "category": "Vacation Wear",
+        "tags": ["sarong", "beach", "cover-up", "summer"],
+        "variants": [
+          {"color": "Sunset Orange", "sku": "VAC-002-SO", "in_stock": 25},
+          {"color": "Ocean Blue", "sku": "VAC-002-OB", "in_stock": 25},
+          {"color": "Tropical Pink", "sku": "VAC-002-TP", "in_stock": 20}
+        ],
+        "supplier": "Zendrop",
+        "shipping_days_min": 3,
+        "shipping_days_max": 10,
+        "active": true,
+        "source": "zendrop_catalog",
+        "country_origin": "TH",
+        "rating": 4.3
+      },
+      {
+        "id": "VAC-003",
+        "name": "Adventure Travel Hat",
+        "sku": "VAC-003",
+        "price": 34.99,
+        "currency": "USD",
+        "image": "images/vacation/travel-hat.jpg",
+        "thumbnail": "images/vacation/travel-hat-thumb.jpg",
+        "description": "Wide-brimmed adventure hat with UPF 50+ protection, adjustable chin strap, and hidden zip pocket.",
+        "category": "Vacation Wear",
+        "tags": ["hat", "sun-protection", "adventure", "travel"],
+        "variants": [
+          {"size": "One Size", "sku": "VAC-003-OS", "in_stock": 30}
+        ],
+        "supplier": "Zendrop",
+        "shipping_days_min": 2,
+        "shipping_days_max": 8,
+        "active": true,
+        "source": "zendrop_catalog",
+        "country_origin": "VN",
+        "rating": 4.7
+      }
+    ],
+    "travel_accessories": [
+      {
+        "id": "ACC-001",
+        "name": "Compact Travel Adapter Pro",
+        "sku": "ACC-001",
+        "price": 49.99,
+        "currency": "USD",
+        "image": "images/accessories/travel-adapter.jpg",
+        "thumbnail": "images/accessories/travel-adapter-thumb.jpg",
+        "description": "Universal travel adapter with 4 USB ports, GaN fast charging, built-in safety fuse. Works in 150+ countries.",
+        "category": "Accessories",
+        "tags": ["adapter", "electronics", "usb", "travel"],
+        "variants": [
+          {"color": "Black", "sku": "ACC-001-BK", "in_stock": 100},
+          {"color": "White", "sku": "ACC-001-WT", "in_stock": 75}
+        ],
+        "supplier": "Zendrop",
+        "shipping_days_min": 1,
+        "shipping_days_max": 5,
+        "active": true,
+        "source": "zendrop_catalog",
+        "country_origin": "CN",
+        "rating": 4.6
+      },
+      {
+        "id": "ACC-002",
+        "name": "Anti-Theft Crossbody Bag",
+        "sku": "ACC-002",
+        "price": 59.99,
+        "currency": "USD",
+        "image": "images/accessories/crossbody-bag.jpg",
+        "thumbnail": "images/accessories/crossbody-bag-thumb.jpg",
+        "description": "RFID-blocking anti-theft crossbody bag with cutproof straps, hidden zip pockets, and water-resistant material.",
+        "category": "Accessories",
+        "tags": ["bag", "anti-theft", "crossbody", "travel"],
+        "variants": [
+          {"color": "Charcoal Black", "sku": "ACC-002-CB", "in_stock": 50},
+          {"color": "Sage Green", "sku": "ACC-002-SG", "in_stock": 35}
+        ],
+        "supplier": "Zendrop",
+        "shipping_days_min": 3,
+        "shipping_days_max": 10,
+        "active": true,
+        "source": "zendrop_catalog",
+        "country_origin": "IN",
+        "rating": 4.4
+      },
+      {
+        "id": "ACC-003",
+        "name": "Digital Luggage Scale",
+        "sku": "ACC-003",
+        "price": 19.99,
+        "currency": "USD",
+        "image": "images/accessories/luggage-scale.jpg",
+        "thumbnail": "images/accessories/luggage-scale-thumb.jpg",
+        "description": "Digital luggage scale with LCD display, 110lb/50kg capacity, auto-calibration, and data hold function.",
+        "category": "Accessories",
+        "tags": ["scale", "luggage", "digital", "travel"],
+        "variants": [
+          {"color": "Silver", "sku": "ACC-003-SL", "in_stock": 200},
+          {"color": "Black", "sku": "ACC-003-BK", "in_stock": 150}
+        ],
+        "supplier": "Zendrop",
+        "shipping_days_min": 1,
+        "shipping_days_max": 7,
+        "active": true,
+        "source": "zendrop_catalog",
+        "country_origin": "CN",
+        "rating": 4.1
+      },
+      {
+        "id": "ACC-004",
+        "name": "Packable Microfiber Towel",
+        "sku": "ACC-004",
+        "price": 29.99,
+        "currency": "USD",
+        "image": "images/accessories/travel-towel.jpg",
+        "thumbnail": "images/accessories/travel-towel-thumb.jpg",
+        "description": "Ultra-lightweight microfiber travel towel that packs into its own pouch. Absorbs 10x its weight in water.",
+        "category": "Accessories",
+        "tags": ["towel", "microfiber", "travel", "beach"],
+        "variants": [
+          {"size": "Small", "sku": "ACC-004-S", "in_stock": 40},
+          {"size": "Medium", "sku": "ACC-004-M", "in_stock": 35},
+          {"size": "Large", "sku": "ACC-004-L", "in_stock": 30}
+        ],
+        "supplier": "Zendrop",
+        "shipping_days_min": 2,
+        "shipping_days_max": 9,
+        "active": true,
+        "source": "zendrop_catalog",
+        "country_origin": "TR",
+        "rating": 4.8
+      }
+    ]
+  },
+  "zendrop_import_config": {
+    "store_id": null,
+    "sync_interval_hours": 12,
+    "auto_sync": true,
+    "categories_to_import": ["vacation", "accessories", "luggage", "outdoor", "beach", "summer", "travel"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "auramaxxing",
+			"Path": "..\\Source\\auramaxxing\\auramaxxing.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "auramaxxingEditor",
+			"Path": "..\\Source\\auramaxxing\\auramaxxingEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

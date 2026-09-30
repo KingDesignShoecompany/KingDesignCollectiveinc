@@ -1,0 +1,40 @@
+{
+  "name": "zendrop_products",
+  "description": "Manage Zendrop products and travel bundles for KingDesignCollectiveINC.",
+  "actions": [
+    {
+      "name": "list_products",
+      "description": "List all Zendrop products available via proxy.",
+      "parameters": {}
+    },
+    {
+      "name": "get_product",
+      "description": "Get details for a single product by ID.",
+      "parameters": {
+        "id": { "type": "number", "description": "Zendrop product ID" }
+      }
+    },
+    {
+      "name": "search_products",
+      "description": "Search products by keyword or region.",
+      "parameters": {
+        "query": { "type": "string", "description": "Search term" }
+      }
+    },
+    {
+      "name": "create_travel_bundle",
+      "description": "Create a curated travel bundle for a region.",
+      "parameters": {
+        "region": { "type": "string", "description": "Region name" },
+        "max_items": { "type": "number", "description": "Maximum items", "default": 6 }
+      }
+    },
+    {
+      "name": "update_homepage_hero",
+      "description": "Select a hero product and write homepage config JSON.",
+      "parameters": {
+        "region": { "type": "string", "description": "Optional region focus", "default": "" }
+      }
+    }
+  ]
+}
