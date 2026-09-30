@@ -1,0 +1,53 @@
+{
+  "info": {
+    "name": "Tournament Admin Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Verify Card",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key":"Content-Type","value":"application/json"},
+          {"key":"Authorization","value":"Bearer <JWT>"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"cardUid\":\"CARD_UID_123\" }"
+        },
+        "url": "http://localhost:3003/tournament/verifyCard"
+      }
+    },
+    {
+      "name": "Create Match",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key":"Content-Type","value":"application/json"},
+          {"key":"Authorization","value":"Bearer <JWT>"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"tournamentId\":\"<uuid>\", \"players\":[\"<uuid>\",\"<uuid>\"], \"format\":\"swiss\" }"
+        },
+        "url": "http://localhost:3003/tournament/createMatch"
+      }
+    },
+    {
+      "name": "Export Logs",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key":"Content-Type","value":"application/json"},
+          {"key":"Authorization","value":"Bearer <JWT>"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"matchId\":\"<uuid>\", \"format\":\"json\" }"
+        },
+        "url": "http://localhost:3003/tournament/exportLogs"
+      }
+    }
+  ]
+}

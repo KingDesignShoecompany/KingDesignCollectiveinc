@@ -1,0 +1,262 @@
+/*
+ * Umbrella UI — Portal Theme
+ * Central hub with subsidiary navigation
+ * Additional features: 3D card hover, floating animation, connection lines
+ */
+
+.KingDesignCollectiveINC-portal {
+  --color-primary: #00d1ff;
+  --color-primary-hover: #33ddff;
+  --color-secondary: #a855f7;
+  --color-accent: #ff006e;
+  --color-bg-default: #05050a;
+  --color-bg-elevated: #0a0a12;
+  --color-surface: #0f0f1a;
+  --color-surface-alt: #121226;
+  --color-border: rgba(0, 209, 255, 0.12);
+  --color-border-hover: rgba(0, 209, 255, 0.3);
+  --color-text-primary: #f0f0ff;
+  --color-text-secondary: #a0a0c8;
+  --color-text-tertiary: #666680;
+  --gradient-primary: linear-gradient(135deg, #00d1ff 0%, #7c6ff0 100%);
+  --gradient-accent: linear-gradient(90deg, #ff006e 0%, #00d1ff 100%);
+  --shadow-glow: 0 0 30px rgba(0, 209, 255, 0.2);
+  --shadow-glow-strong: 0 0 60px rgba(0, 209, 255, 0.35);
+  --font-display: 'SpaceGrotesk', system-ui, sans-serif;
+}
+
+.KingDesignCollectiveINC-portal {
+  background: linear-gradient(135deg, #05050a 0%, #0a0a12 50%, #05050a 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.KingDesignCollectiveINC-portal::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(0, 209, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(187, 134, 255, 0.05) 0%, transparent 50%);
+  z-index: -1;
+}
+
+/* Animated gradient shift */
+.KingDesignCollectiveINC-portal {
+  animation: gradient-shift 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Container */
+.KingDesignCollectiveINC-portal .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header */
+.KingDesignCollectiveINC-portal h1 {
+  font-family: var(--font-display);
+  font-size: min(3rem, 5vw);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(0, 209, 255, 0.3);
+  letter-spacing: 0.2em;
+}
+
+.KingDesignCollectiveINC-portal .subtitle {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+
+/* Subsidiary grid */
+.KingDesignCollectiveINC-portal .subsidiary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Subsidiary card with 3D hover */
+.KingDesignCollectiveINC-portal .sub-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-xl);
+  padding: 1.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.KingDesignCollectiveINC-portal .sub-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(0, 209, 255, 0.05) 0%, 
+    rgba(187, 134, 255, 0.03) 100%
+  );
+  opacity: 0;
+  transition: opacity 400ms ease;
+  z-index: 1;
+}
+
+.KingDesignCollectiveINC-portal .sub-card:hover::before {
+  opacity: 1;
+}
+
+.KingDesignCollectiveINC-portal .sub-card:hover {
+  transform: translateY(-12px) rotateX(8deg);
+  border-color: var(--color-primary);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.KingDesignCollectiveINC-portal .sub-card:hover .sub-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px var(--color-primary));
+}
+
+.KingDesignCollectiveINC-portal .sub-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 2;
+}
+
+.KingDesignCollectiveINC-portal .sub-card:hover h3 {
+  color: var(--color-primary-hover);
+}
+
+.KingDesignCollectiveINC-portal .sub-card p {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+/* Subsidiary files */
+.KingDesignCollectiveINC-portal .sub-files {
+  font-size: 0.8rem;
+  color: var(--color-text-tertiary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.KingDesignCollectiveINC-portal .sub-files span {
+  background: var(--color-bg-elevated);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid var(--color-border);
+  transition: all 200ms ease;
+}
+
+.KingDesignCollectiveINC-portal .sub-card:hover .sub-files span {
+  background: var(--color-surface-alt);
+  color: var(--color-text-secondary);
+}
+
+/* Sub-icon */
+.KingDesignCollectiveINC-portal .sub-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  transition: all 300ms ease;
+  filter: drop-shadow(0 0 8px rgba(0, 209, 255, 0.3));
+}
+
+/* Floating animation */
+.KingDesignCollectiveINC-portal .sub-card:nth-child(1) { animation-delay: 0ms; }
+.KingDesignCollectiveINC-portal .sub-card:nth-child(2) { animation-delay: 50ms; }
+.KingDesignCollectiveINC-portal .sub-card:nth-child(3) { animation-delay: 100ms; }
+.KingDesignCollectiveINC-portal .sub-card:nth-child(4) { animation-delay: 150ms; }
+.KingDesignCollectiveINC-portal .sub-card:nth-child(5) { animation-delay: 200ms; }
+.KingDesignCollectiveINC-portal .sub-card:nth-child(6) { animation-delay: 250ms; }
+.KingDesignCollectiveINC-portal .sub-card:nth-child(7) { animation-delay: 300ms; }
+
+.KingDesignCollectiveINC-portal .sub-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.6s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+/* Footer */
+.KingDesignCollectiveINC-portal .footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  color: var(--color-text-tertiary);
+  font-size: 0.85rem;
+  font-family: var(--font-display);
+  border-top: 1px solid var(--color-border);
+}
+
+.KingDesignCollectiveINC-portal .footer p {
+  margin: 0.25rem 0;
+}
+
+/* Connection lines between cards */
+.KingDesignCollectiveINC-portal .subsidiary-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .KingDesignCollectiveINC-portal .sub-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .KingDesignCollectiveINC-portal h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
+
+  .KingDesignCollectiveINC-portal .subsidiary-grid {
+    grid-template-columns: 1fr;
+  }
+}

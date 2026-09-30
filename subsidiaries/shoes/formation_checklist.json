@@ -1,0 +1,15 @@
+{
+  "subsidiary_id": "shoes",
+  "form": [
+    {"step": "legal_research_jurisdiction", "done": false, "owner": "ops-global", "notes": "California S-corp: confirm shareholder eligibility, CA franchise tax ($800 min), registered agent must be CA-based"},
+  {"step": "draft_articles_of_incorporation", "done": false, "owner": "ops-global"},
+  {"step": "file_incorporation_paperwork", "done": false, "owner": "ops-global"},
+  {"step": "assign_registered_agent", "done": false, "owner": "ops-global", "notes": "Designate registered agent at 1034 W Temple St, San Bernardino, CA 92411; obtain acceptance confirmation"},
+  {"step": "setup_capitalization_table", "done": false, "owner": "finance"},
+  {"step": "execute_ip_assignment", "done": false, "owner": "innovation-lead", "notes": "Transfer brand/design IP from founder to subsidiary"},
+  {"step": "activate_bank_account", "done": false, "owner": "finance"},
+  {"step": "establish_supplier_relationship_aliveshoes", "done": false, "owner": "ops-global", "notes": "Wholesale/purchase order agreement with AliveShoes for production and fulfillment"},
+  {"step": "open_payment_processing_ecommerce", "done": false, "owner": "ops-global"},
+  {"step": "notify_goal_complete", "done": false, "owner": "ceo"}
+  ]
+}

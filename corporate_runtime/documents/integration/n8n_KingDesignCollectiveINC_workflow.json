@@ -1,0 +1,317 @@
+{
+  "name": "Umbrella Corporation - Cross-Tool Orchestration",
+  "nodes": [
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {
+              "hour": 8,
+              "minute": 0
+            }
+          ]
+        },
+        "options": {
+          "timezone": "America/Los_Angeles"
+        }
+      },
+      "id": "daily-orchestration-trigger",
+      "name": "Daily Orchestration Trigger",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://host.docker.internal:18789/api/status"
+      },
+      "id": "openclaw-health-check",
+      "name": "OpenClaw Health Check",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://host.docker.internal:11435/api/tags"
+      },
+      "id": "ollama-models-check",
+      "name": "Ollama Models Check",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 400]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://host.docker.internal:3000/api/projects"
+      },
+      "id": "bolt-projects-list",
+      "name": "Bolt.DIY Projects List",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 600]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://host.docker.internal:5678/api/v1/workflows"
+      },
+      "id": "n8n-workflows-list",
+      "name": "n8n Workflows Check",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 800]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://host.docker.internal:8001/api/agents"
+      },
+      "id": "agent-zero-agents-list",
+      "name": "Agent Zero Agents Check",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 1000]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://host.docker.internal:3100/health"
+      },
+      "id": "aura-backend-health",
+      "name": "Aura Backend Health",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 1200]
+    },
+    {
+      "parameters": {
+        "inputs": [
+          "openclaw-health-check",
+          "ollama-models-check",
+          "bolt-projects-list",
+          "n8n-workflows-list",
+          "agent-zero-agents-list",
+          "aura-backend-health"
+        ]
+      },
+      "id": "merge-health",
+      "name": "Merge All Health Data",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2,
+      "position": [650, 600]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "report": "={{$json}}",
+          "timestamp": "={{new Date().toISOString()}}",
+          "stack": "Umbrella Corporation"
+        }
+      },
+      "id": "build-report",
+      "name": "Build Status Report",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.2,
+      "position": [850, 600]
+    },
+    {
+      "parameters": {
+        "fileName": "/data/health_report_{{$now}}.json"
+      },
+      "id": "write-health-report",
+      "name": "Write Health Report File",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 0.4,
+      "position": [1050, 400]
+    },
+    {
+      "parameters": {
+        "chatId": "telegram:-1001234567890",
+        "text": "Umbrella Stack Status Report\\nTimestamp: {{$now}}\\n\\nStatus: All systems nominal\\nDashboard: http://localhost:3000"
+      },
+      "id": "telegram-notify",
+      "name": "Telegram Status Notification",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 2,
+      "position": [1050, 600]
+    },
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {
+              "hour": 9,
+              "minute": 0
+            }
+          ]
+        }
+      },
+      "id": "content-pipeline-trigger",
+      "name": "Content Pipeline Trigger (9AM daily)",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [250, 1400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:5173/api/chat",
+        "body": {
+          "messages": [
+            {
+              "role": "user",
+              "content": "Generate a TikTok script for the shoe_brand subsidiary (King Design Collective). Focus on the Cinematic Street-King collection. Make it 60 seconds, high energy, with trending audio references. Include specific product callout for SASSY SOL sneaker."
+            }
+          ],
+          "model": "glm-4.7-flash",
+          "provider": "Ollama"
+        }
+      },
+      "id": "bolt-content-gen",
+      "name": "Bolt.DIY Content Gen",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 1400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8001/api/agent/task",
+        "body": {
+          "agent_class": "creative",
+          "task": "Write a 30-second TikTok script for King Design Collective shoes",
+          "model": "qwen3:8b"
+        }
+      },
+      "id": "agent-zero-refinement",
+      "name": "Agent Zero Content Refinement",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [650, 1400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:18789/api/hermes/run",
+        "body": {
+          "skill": "kids-channel",
+          "task": "Generate bedtime story about a shoe that wants to dance",
+          "context": {
+            "collection": "Cinematic Street-King",
+            "product": "SASSY SOL"
+          }
+        }
+      },
+      "id": "openclaw-story-dispatch",
+      "name": "Dispatch Story to OpenClaw -> Hermes",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [850, 1400]
+    },
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {
+              "minute": "*/5"
+            }
+          ]
+        }
+      },
+      "id": "aura-monitor-trigger",
+      "name": "Aura Tournament Monitor (every 5 min)",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [250, 2000]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://host.docker.internal:3103/api/tournaments/active"
+      },
+      "id": "aura-tournament-check",
+      "name": "Check Active Tournaments",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 2000]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:3100/api/battles/sync",
+        "body": {
+          "source": "tournament-monitor",
+          "action": "reconcile_matches"
+        }
+      },
+      "id": "aura-battle-sync",
+      "name": "Battle Sync Trigger",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [650, 2000]
+    }
+  ],
+  "connections": {
+    "Daily Orchestration Trigger": {
+      "main": [
+        ["OpenClaw Health Check"],
+        ["Ollama Models Check"],
+        ["Bolt.DIY Projects List"],
+        ["n8n Workflows Check"],
+        ["Agent Zero Agents Check"],
+        ["Aura Backend Health"]
+      ]
+    },
+    "Merge All Health Data": [
+      {
+        "main": [
+          "Build Status Report"
+        ]
+      }
+    ],
+    "Build Status Report": [
+      {
+        "main": [
+          "Write Health Report File"
+        ]
+      },
+      {
+        "main": [
+          "Telegram Status Notification"
+        ]
+      }
+    ],
+    "Content Pipeline Trigger (9AM daily)": [
+      {
+        "main": [
+          "Bolt.DIY Content Gen"
+        ]
+      }
+    ],
+    "Bolt.DIY Content Gen": [
+      {
+        "main": [
+          "Agent Zero Content Refinement"
+        ]
+      }
+    ],
+    "Agent Zero Content Refinement": [
+      {
+        "main": [
+          "Dispatch Story to OpenClaw -> Hermes"
+        ]
+      }
+    ]
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetup": true
+  }
+}

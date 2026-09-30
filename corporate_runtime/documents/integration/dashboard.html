@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Umbrella Corp — Integration Dashboard</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #151520;
+      --border: #2a2a3e;
+      --text: #e0e0e0;
+      --muted: #888;
+      --accent: #6366f1;
+      --green: #10b981;
+      --red: #ef4444;
+      --yellow: #f59e0b;
+      --blue: #3b82f6;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .header h1 { font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
+    .header h1 .logo { color: var(--accent); }
+    .subtitle { color: var(--muted); font-size: 0.9rem; margin-top: 0.25rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { border-color: var(--accent); box-shadow: 0 0 20px rgba(99,102,241,0.1); }
+    .svc-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .svc-icon { font-size: 1.5rem; }
+    .status-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      display: inline-block; margin-left: 0.5rem;
+    }
+    .status-dot.green { background: var(--green); }
+    .status-dot.red { background: var(--red); }
+    .status-dot.yellow { background: var(--yellow); }
+    .port { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.5rem; }
+    .description { color: var(--muted); font-size: 0.8rem; margin-bottom: 1rem; line-height: 1.4; }
+    .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .btn {
+      background: var(--accent); color: white; border: none;
+      padding: 0.4rem 0.8rem; border-radius: 6px;
+      font-size: 0.85rem; cursor: pointer; text-decoration: none;
+      display: inline-block; transition: background 0.2s;
+    }
+    .btn:hover { background: #4f46e5; }
+    .btn.secondary { background: transparent; border: 1px solid var(--border); }
+    .btn.secondary:hover { border-color: var(--accent); }
+    .info { color: var(--muted); font-size: 0.8rem; margin-top: 0.75rem; }
+    .layer-badge {
+      display: inline-block;
+      background: rgba(99,102,241,0.2);
+      color: var(--accent);
+      font-size: 0.7rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+    }
+    .pipeline {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .pipeline h3 { margin-bottom: 1rem; color: var(--blue); }
+    .pipeline .flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .flow-node {
+      background: rgba(99,102,241,0.1);
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+    }
+    .flow-arrow { color: var(--muted); font-size: 1.2rem; }
+    .footer {
+      margin-top: 3rem; padding-top: 1rem;
+      border-top: 1px solid var(--border); color: var(--muted);
+      font-size: 0.8rem; line-height: 1.6;
+    }
+    .refresh-btn {
+      background: var(--blue);
+    }
+    .refresh-btn:hover { background: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1><span class="logo">⚡</span> Umbrella Corporation</h1>
+      <div class="subtitle">Integrated Tooling Dashboard — OpenClaw ↔ Hermes ↔ Ollama ↔ Bolt.DIY ↔ Agent Zero ↔ n8n ↔ Aura Champions</div>
+    </div>
+    <button class="btn refresh-btn" onclick="refreshAll()">Refresh Status</button>
+  </div>
+
+  <div class="pipeline">
+    <h3>Architecture Flow</h3>
+    <div class="flow">
+      <span class="flow-node">👤 Human Operator</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-node">OpenClaw :18789</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-node">Hermes Skills</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-node">Ollama :11435 / Proxy :8002</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-node">Bolt.DIY :5173</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-node">Agent Zero :8001</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-node">n8n :5678</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-node">Aura :3100-3104</span>
+    </div>
+  </div>
+
+  <div class="grid" id="services-grid"></div>
+
+  <div class="footer">
+    <strong>Orchestration:</strong> This dashboard connects 7 tools across 4 layers. Each subsidiary (shoe-brand, travel-index, game-design, kids-channel, innovation-hub, ewaste-recycling, quantum-wearables, crypto-treasury, aura-champions) has dedicated Hermes skills routed through OpenClaw. Daily pipelines run via n8n, content is generated via Bolt.DIY, and game operations are managed by Aura Champions services.
+  </div>
+
+  <script>
+    const SERVICES = [
+      {
+        name: "OpenClaw Gateway",
+        port: 18789,
+        layer: "orchestration",
+        description: "CEO desktop agent — routes tasks to Hermes skills, handles human interaction",
+        icon: "🦀",
+        color: "var(--accent)"
+      },
+      {
+        name: "Ollama (Direct)",
+        port: 11435,
+        layer: "model",
+        description: "Local LLM inference (gemma3:1b running)",
+        icon: "🦙",
+        color: "var(--green)"
+      },
+      {
+        name: "Ollama Proxy",
+        port: 8002,
+        layer: "model",
+        description: "OpenAI-compatible proxy → qwen3:8b",
+        icon: "🔌",
+        color: "var(--green)"
+      },
+      {
+        name: "Agent Zero API",
+        port: 8001,
+        layer: "execution",
+        description: "Multiagent workforce API for long-running tasks",
+        icon: "🤖",
+        color: "var(--blue)"
+      },
+      {
+        name: "Bolt.DIY",
+        port: 5173,
+        layer: "execution",
+        description: "Web app generation factory for subsidiary webapps",
+        icon: "⚡",
+        color: "var(--yellow)"
+      },
+      {
+        name: "Umbrella Web",
+        port: 3000,
+        layer: "web",
+        description: "Dashboard host & static assets",
+        icon: "🌐",
+        color: "var(--blue)"
+      },
+      {
+        name: "n8n Automation",
+        port: 5678,
+        layer: "automation",
+        description: "Cross-tool automation pipelines & workflows",
+        icon: "🔄",
+        color: "var(--accent)"
+      },
+      {
+        name: "Aura Backend",
+        port: 3100,
+        layer: "game",
+        description: "Aura Champions REST API + battle sync",
+        icon: "🎮",
+        color: "var(--yellow)"
+      },
+      {
+        name: "Aura Anti-Cheat",
+        port: 3101,
+        layer: "game",
+        description: "HMAC verification & audit logging",
+        icon: "🛡️",
+        color: "var(--green)"
+      },
+      {
+        name: "Aura Trinity",
+        port: 3102,
+        layer: "game",
+        description: "Trinity convergence & special monster events",
+        icon: "💎",
+        color: "var(--yellow)"
+      },
+      {
+        name: "Aura Tournament",
+        port: 3103,
+        layer: "game",
+        description: "Tournament management & judge tools",
+        icon: "🏆",
+        color: "var(--blue)"
+      },
+      {
+        name: "Aura NFC Handler",
+        port: 3104,
+        layer: "game",
+        description: "NTAG216 card registration & write tokens",
+        icon: "💳",
+        color: "var(--green)"
+      },
+      {
+        name: "PostgreSQL (Aura DB)",
+        port: 5433,
+        layer: "game",
+        description: "Shared database for Aura Champions",
+        icon: "🗄️",
+        color: "var(--blue)"
+      },
+      {
+        name: "Integration Bridge",
+        port: 8090,
+        layer: "orchestration",
+        description: "HTTP bridge: OpenClaw ↔ Hermes ↔ all services",
+        icon: "🌉",
+        color: "var(--accent)"
+      }
+    ];
+
+    async function checkService(svc) {
+      try {
+        const res = await fetch(`http://127.0.0.1:${svc.port}/health`, { mode: 'no-cors' });
+        return { ok: true, status: 'live' };
+      } catch(e) {
+        // Try root URL for services without /health
+        try {
+          const res2 = await fetch(`http://127.0.0.1:${svc.port}`, { mode: 'no-cors' });
+          return { ok: true, status: 'live' };
+        } catch(e2) {
+          return { ok: false, status: 'down' };
+        }
+      }
+    }
+
+    async function refreshAll() {
+      const grid = document.getElementById('services-grid');
+      grid.innerHTML = '';
+
+      for (const svc of SERVICES) {
+        const health = await checkService(svc);
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <div class="svc-name">
+            <span>${svc.icon}</span>
+            ${svc.name}
+            <span class="status-dot ${health.ok ? 'green' : 'red'}"></span>
+          </div>
+          <div class="port">Port ${svc.port} · <span class="layer-badge">${svc.layer}</span> · ${health.status}</div>
+          <div class="description">${svc.description}</div>
+          <div class="actions">
+            <a href="http://127.0.0.1:${svc.port}" class="btn" target="_blank">Open</a>
+          </div>
+        `;
+        grid.appendChild(card);
+      }
+    }
+
+    refreshAll();
+    setInterval(refreshAll, 30000);
+  </script>
+</body>
+</html>

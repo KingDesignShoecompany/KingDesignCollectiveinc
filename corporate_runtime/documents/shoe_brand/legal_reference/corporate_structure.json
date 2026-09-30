@@ -1,0 +1,21 @@
+{
+  "subsidiary_id": "shoes",
+  "entity_name": "King Design Shoe Company",
+  "brand_name": "King Design Shoe Company",
+  "jurisdiction": "California",
+  "entity_type": "S-corp",
+  "registered_agent": "[PENDING — must be CA-based]",
+  "incorporation_filing_date": "[PENDING]",
+  "capitalization": {},
+  "business_model": {
+    "role": "brand_owner_and_designer",
+    "supplier": "AliveShoes",
+    "supplier_role": "wholesale_production_fulfillment",
+    "channels": ["ecommerce", "wholesale", "direct_to_consumer"]
+  },
+  "ownership_structure": {
+    "parent": "100%",
+    "subsidiary": "0%"
+  },
+  "dependencies": []
+}

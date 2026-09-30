@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "UE Client Snippets",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Simulate Summon",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"cardId\":\"UID_ABC\",\"action\":\"SUMMON\",\"position\":{\"x\":2,\"y\":1},\"nonce\":\"n-123\",\"stateVersion\":0 }"
+        },
+        "url": "http://localhost:3000/battleSync"
+      }
+    },
+    {
+      "name": "Simulate Fusion Validate",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"userId\":\"<user>\", \"cardA\":\"UID_A\",\"cardB\":\"UID_B\" }"
+        },
+        "url": "http://localhost:3000/fusionRequest"
+      }
+    }
+  ]
+}

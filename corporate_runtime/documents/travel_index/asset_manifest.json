@@ -1,0 +1,193 @@
+{
+  "asset_manifest_version": "1.6",
+  "project": "vagary_index",
+  "active_asset_set": "core_plus_thermal_plus_phrases_plus_attractions_plus_top10_plus_packaging_plus_index",
+  "notes": "User-selected minimum viable deliverables per country including thermal raster maps, printable phrase cards, attractions, regional top 10 experiences, pocketbook packaging assets, and project master index.",
+  "per_country_required_assets": [
+    {
+      "id": "history_culture_overview",
+      "type": "markdown",
+      "filename_pattern": "{country_code}_history_culture.md",
+      "min_length_words": 800,
+      "required_elements": [
+        "formation_or_origin",
+        "major_historical_periods",
+        "cultural_identity",
+        "modern_political_system",
+        "UNESCO_or_heritage_notes"
+      ]
+    },
+    {
+      "id": "entry_requirements",
+      "type": "json",
+      "filename_pattern": "{country_code}_entry_requirements.json",
+      "required_fields": [
+        "passport_validity",
+        "visa_requirement_summary",
+        "digital_arrival_forms",
+        "health_vaccinations",
+        "customs_notes",
+        "official_sources"
+      ]
+    },
+    {
+      "id": "thermal_map_bio1",
+      "type": "image",
+      "format": "png",
+      "filename_pattern": "{country_code}_thermal_bio1.png",
+      "description": "Annual mean temperature (WorldClim BIO1)"
+    },
+    {
+      "id": "thermal_map_bio5",
+      "type": "image",
+      "format": "png",
+      "filename_pattern": "{country_code}_thermal_bio5.png",
+      "description": "Mean temperature of warmest month (WorldClim BIO5)"
+    },
+    {
+      "id": "thermal_map_bio6",
+      "type": "image",
+      "format": "png",
+      "filename_pattern": "{country_code}_thermal_bio6.png",
+      "description": "Mean temperature of coldest month (WorldClim BIO6)"
+    },
+    {
+      "id": "fun_facts",
+      "type": "json",
+      "filename_pattern": "{country_code}_fun_facts.json",
+      "count_exact": 100,
+      "schema": {
+        "facts": [
+          {
+            "id": "int",
+            "text": "string",
+            "category": "string"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phrase_cards",
+      "type": "json",
+      "filename_pattern": "{country_code}_phrase_cards.json",
+      "min_phrases": 20,
+      "required_fields_per_phrase": [
+        "phrase_number",
+        "local_language",
+        "romanized",
+        "english_equivalent",
+        "context",
+        "pronunciation_tip"
+      ]
+    },
+    {
+      "id": "attractions_local_hotspots",
+      "type": "json",
+      "filename_pattern": "{country_code}_attractions.json",
+      "required_fields": [
+        "top_attractions",
+        "local_hotspots",
+        "hidden_gems",
+        "family_friendly",
+        "nightlife_districts"
+      ]
+    },
+    {
+      "id": "regional_top10_experiences",
+      "type": "json",
+      "filename_pattern": "{country_code}_top10_experiences.json",
+      "min_items": 10,
+      "required_fields_per_experience": [
+        "rank",
+        "title",
+        "region",
+        "season",
+        "difficulty",
+        "booking_tier",
+        "description",
+        "price_range",
+        "duration"
+      ]
+    },
+    {
+      "id": "pocketbook_covers_spines_slipcases",
+      "type": "image",
+      "format": "png",
+      "filename_pattern": "{country_code}_pocketbook_packaging.{variant}.png",
+      "required_variants": [
+        "cover_front",
+        "cover_spine",
+        "slipcase_front",
+        "slipcase_spine"
+      ],
+      "notes": "Cyberpunk-themed packaging aligned with Vagary Index brand identity."
+    },
+    {
+      "id": "couples_itinerary",
+      "type": "json",
+      "filename_pattern": "{country_code}_itinerary_couples.json",
+      "days": 14,
+      "required_fields_per_day": [
+        "day_number",
+        "theme",
+        "morning",
+        "afternoon",
+        "evening",
+        "booking_notes",
+        "logistics"
+      ]
+    },
+    {
+      "id": "solo_itinerary",
+      "type": "json",
+      "filename_pattern": "{country_code}_itinerary_solo.json",
+      "days": 14,
+      "required_fields_per_day": [
+        "day_number",
+        "theme",
+        "morning",
+        "afternoon",
+        "evening",
+        "booking_notes",
+        "logistics",
+        "solo_safety_tip"
+      ]
+    },
+    {
+      "id": "source_citations",
+      "type": "json",
+      "filename_pattern": "{country_code}_sources.json",
+      "required_fields": [
+        "entry_visa",
+        "health_advisories",
+        "climate_data",
+        "attractions",
+        "operators"
+      ]
+    },
+    {
+      "id": "master_index",
+      "type": "json",
+      "filename_pattern": "vagary_index_master_index.json",
+      "update_frequency": "per_country_asset_generation",
+      "required_fields": {
+        "project": "string",
+        "total_countries": "int",
+        "countries_completed": "int",
+        "last_updated": "ISO8601",
+        "country_registry": [
+          {
+            "country_code": "ISO3166-1-alpha-3",
+            "country_name": "string",
+            "region": "string",
+            "status": "pending|in_progress|completed|error",
+            "assets_generated": "string[]",
+            "assets_missing": "string[]",
+            "validation_status": "pass|fail|pending",
+            "last_modified": "ISO8601"
+          }
+        ]
+      }
+    }
+  ]
+}

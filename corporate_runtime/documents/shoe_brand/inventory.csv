@@ -1,0 +1,7 @@
+SKU,Product_Name,Material,Cost_Price,Retail_Price,Stock_Level,Category,Size_Range,Color,Status,Image_File
+KING-001,Apex Runner V1,Engineered Knit + TPU Sole,45.00,189.00,120,Performance Running,7-13,Obsidian Black,Active,shoe1.png
+KING-002,Daily Drift Low,Suede + Natural Rubber,38.50,149.00,85,Casual Lifestyle,6-12,Desert Sand,Active,shoe2.png
+KING-003,Summit Trail X,Thermo-Molded Upper + Vibram,52.00,229.00,60,Trail Hiking,8-14,Forest Green,Active,shoe3.png
+KING-004,Urban Flux Knit,Seamless Flyknit + PU Foam,29.00,119.00,200,Urban Commuter,6-12,Midnight Navy,Active,shoe4.png
+KING-005,Cloud Step Walker,Memory Foam + Gel Insert,41.00,175.00,95,Comfort Walking,5-12,Cloud White,Active,shoe5.png
+KING-006,Nitro Sprint Pro,Carbon Plate + Mesh Upper,65.00,289.00,45,Racing,7-13,Neon Volt,Active,shoe6.png

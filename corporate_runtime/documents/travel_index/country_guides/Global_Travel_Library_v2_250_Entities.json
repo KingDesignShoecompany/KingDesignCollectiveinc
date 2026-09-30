@@ -1,0 +1,6007 @@
+{
+  "project": "Global Travel Library",
+  "version": "2.0",
+  "entity_count": 250,
+  "entities": [
+    {
+      "id": "AFR-001",
+      "name": "Algeria",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-002",
+      "name": "Angola",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-003",
+      "name": "Benin",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-004",
+      "name": "Botswana",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-005",
+      "name": "Burkina Faso",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-006",
+      "name": "Burundi",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-007",
+      "name": "Cabo Verde",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-008",
+      "name": "Cameroon",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-009",
+      "name": "Central African Republic",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-010",
+      "name": "Chad",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-011",
+      "name": "Comoros",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-012",
+      "name": "Democratic Republic of the Congo",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-013",
+      "name": "Republic of the Congo",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-014",
+      "name": "Cote d'Ivoire",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-015",
+      "name": "Djibouti",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-016",
+      "name": "Egypt",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-017",
+      "name": "Equatorial Guinea",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-018",
+      "name": "Eritrea",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-019",
+      "name": "Eswatini",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-020",
+      "name": "Ethiopia",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-021",
+      "name": "Gabon",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-022",
+      "name": "Gambia",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-023",
+      "name": "Ghana",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-024",
+      "name": "Guinea",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-025",
+      "name": "Guinea-Bissau",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-026",
+      "name": "Kenya",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-027",
+      "name": "Lesotho",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-028",
+      "name": "Liberia",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-029",
+      "name": "Libya",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-030",
+      "name": "Madagascar",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-031",
+      "name": "Malawi",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-032",
+      "name": "Mali",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-033",
+      "name": "Mauritania",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-034",
+      "name": "Mauritius",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-035",
+      "name": "Morocco",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-036",
+      "name": "Mozambique",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-037",
+      "name": "Namibia",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-038",
+      "name": "Niger",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-039",
+      "name": "Nigeria",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-040",
+      "name": "Rwanda",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-041",
+      "name": "Sao Tome and Principe",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-042",
+      "name": "Senegal",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-043",
+      "name": "Seychelles",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-044",
+      "name": "Sierra Leone",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-045",
+      "name": "Somalia",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-046",
+      "name": "South Africa",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-047",
+      "name": "South Sudan",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-048",
+      "name": "Sudan",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-049",
+      "name": "Tanzania",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-050",
+      "name": "Togo",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-051",
+      "name": "Tunisia",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-052",
+      "name": "Uganda",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-053",
+      "name": "Zambia",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "AFR-054",
+      "name": "Zimbabwe",
+      "region": "Africa",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-001",
+      "name": "Afghanistan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-002",
+      "name": "Armenia",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-003",
+      "name": "Azerbaijan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-004",
+      "name": "Bahrain",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-005",
+      "name": "Bangladesh",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-006",
+      "name": "Bhutan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-007",
+      "name": "Brunei",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-008",
+      "name": "Cambodia",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-009",
+      "name": "China",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-010",
+      "name": "Cyprus",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-011",
+      "name": "Georgia",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-012",
+      "name": "India",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-013",
+      "name": "Indonesia",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-014",
+      "name": "Iran",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-015",
+      "name": "Iraq",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-016",
+      "name": "Israel",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-017",
+      "name": "Japan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-018",
+      "name": "Jordan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-019",
+      "name": "Kazakhstan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-020",
+      "name": "Kuwait",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-021",
+      "name": "Kyrgyzstan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-022",
+      "name": "Laos",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-023",
+      "name": "Lebanon",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-024",
+      "name": "Malaysia",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-025",
+      "name": "Maldives",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-026",
+      "name": "Mongolia",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-027",
+      "name": "Myanmar",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-028",
+      "name": "Nepal",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-029",
+      "name": "North Korea",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-030",
+      "name": "Oman",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-031",
+      "name": "Pakistan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-032",
+      "name": "Palestine",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-033",
+      "name": "Philippines",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-034",
+      "name": "Qatar",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-035",
+      "name": "Saudi Arabia",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-036",
+      "name": "Singapore",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-037",
+      "name": "South Korea",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-038",
+      "name": "Sri Lanka",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-039",
+      "name": "Syria",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-040",
+      "name": "Taiwan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-041",
+      "name": "Tajikistan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-042",
+      "name": "Thailand",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-043",
+      "name": "Timor-Leste",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-044",
+      "name": "Turkey",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-045",
+      "name": "Turkmenistan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-046",
+      "name": "United Arab Emirates",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-047",
+      "name": "Uzbekistan",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-048",
+      "name": "Vietnam",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "ASI-049",
+      "name": "Yemen",
+      "region": "Asia",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-001",
+      "name": "Albania",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-002",
+      "name": "Andorra",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-003",
+      "name": "Austria",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-004",
+      "name": "Belarus",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-005",
+      "name": "Belgium",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-006",
+      "name": "Bosnia and Herzegovina",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-007",
+      "name": "Bulgaria",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-008",
+      "name": "Croatia",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-009",
+      "name": "Czech Republic",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-010",
+      "name": "Denmark",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-011",
+      "name": "Estonia",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-012",
+      "name": "Finland",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-013",
+      "name": "France",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-014",
+      "name": "Germany",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-015",
+      "name": "Greece",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-016",
+      "name": "Hungary",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-017",
+      "name": "Iceland",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-018",
+      "name": "Ireland",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-019",
+      "name": "Italy",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-020",
+      "name": "Kosovo",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-021",
+      "name": "Latvia",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-022",
+      "name": "Liechtenstein",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-023",
+      "name": "Lithuania",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-024",
+      "name": "Luxembourg",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-025",
+      "name": "Malta",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-026",
+      "name": "Moldova",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-027",
+      "name": "Monaco",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-028",
+      "name": "Montenegro",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-029",
+      "name": "Netherlands",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-030",
+      "name": "North Macedonia",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-031",
+      "name": "Norway",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-032",
+      "name": "Poland",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-033",
+      "name": "Portugal",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-034",
+      "name": "Romania",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-035",
+      "name": "Russia",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-036",
+      "name": "San Marino",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-037",
+      "name": "Serbia",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-038",
+      "name": "Slovakia",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-039",
+      "name": "Slovenia",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-040",
+      "name": "Spain",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-041",
+      "name": "Sweden",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-042",
+      "name": "Switzerland",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-043",
+      "name": "Ukraine",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-044",
+      "name": "United Kingdom",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "EUR-045",
+      "name": "Vatican City",
+      "region": "Europe",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-001",
+      "name": "Antigua and Barbuda",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-002",
+      "name": "Bahamas",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-003",
+      "name": "Barbados",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-004",
+      "name": "Belize",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-005",
+      "name": "Canada",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-006",
+      "name": "Costa Rica",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-007",
+      "name": "Cuba",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-008",
+      "name": "Dominica",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-009",
+      "name": "Dominican Republic",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-010",
+      "name": "El Salvador",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-011",
+      "name": "Grenada",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-012",
+      "name": "Guatemala",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-013",
+      "name": "Haiti",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-014",
+      "name": "Honduras",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-015",
+      "name": "Jamaica",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-016",
+      "name": "Mexico",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-017",
+      "name": "Nicaragua",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-018",
+      "name": "Panama",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-019",
+      "name": "Saint Kitts and Nevis",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-020",
+      "name": "Saint Lucia",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-021",
+      "name": "Saint Vincent and the Grenadines",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-022",
+      "name": "Trinidad and Tobago",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "NAM-023",
+      "name": "United States",
+      "region": "North America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-001",
+      "name": "Argentina",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-002",
+      "name": "Bolivia",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-003",
+      "name": "Brazil",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-004",
+      "name": "Chile",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-005",
+      "name": "Colombia",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-006",
+      "name": "Ecuador",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-007",
+      "name": "Guyana",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-008",
+      "name": "Paraguay",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-009",
+      "name": "Peru",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-010",
+      "name": "Suriname",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-011",
+      "name": "Uruguay",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "SAM-012",
+      "name": "Venezuela",
+      "region": "South America",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-001",
+      "name": "Australia",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-002",
+      "name": "Fiji",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-003",
+      "name": "Kiribati",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-004",
+      "name": "Marshall Islands",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-005",
+      "name": "Micronesia",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-006",
+      "name": "Nauru",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-007",
+      "name": "New Zealand",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-008",
+      "name": "Palau",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-009",
+      "name": "Papua New Guinea",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-010",
+      "name": "Samoa",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-011",
+      "name": "Solomon Islands",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-012",
+      "name": "Tonga",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-013",
+      "name": "Tuvalu",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "OCE-014",
+      "name": "Vanuatu",
+      "region": "Oceania",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-001",
+      "name": "American Samoa",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-002",
+      "name": "Anguilla",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-003",
+      "name": "Aruba",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-004",
+      "name": "Bermuda",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-005",
+      "name": "British Virgin Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-006",
+      "name": "Cayman Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-007",
+      "name": "Cook Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-008",
+      "name": "Curacao",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-009",
+      "name": "Faroe Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-010",
+      "name": "French Guiana",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-011",
+      "name": "French Polynesia",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-012",
+      "name": "Gibraltar",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-013",
+      "name": "Greenland",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-014",
+      "name": "Guadeloupe",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-015",
+      "name": "Guam",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-016",
+      "name": "Hong Kong",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-017",
+      "name": "Isle of Man",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-018",
+      "name": "Jersey",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-019",
+      "name": "Macau",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-020",
+      "name": "Martinique",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-021",
+      "name": "Mayotte",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-022",
+      "name": "New Caledonia",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-023",
+      "name": "Northern Mariana Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-024",
+      "name": "Puerto Rico",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-025",
+      "name": "Reunion",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-026",
+      "name": "Sint Maarten",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-027",
+      "name": "Turks and Caicos Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-028",
+      "name": "U.S. Virgin Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-029",
+      "name": "Wallis and Futuna",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-030",
+      "name": "Akrotiri and Dhekelia",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-031",
+      "name": "Falkland Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-032",
+      "name": "Montserrat",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-033",
+      "name": "Niue",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-034",
+      "name": "Norfolk Island",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-035",
+      "name": "Pitcairn Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-036",
+      "name": "Saint Helena",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-037",
+      "name": "Saint Pierre and Miquelon",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-038",
+      "name": "South Georgia and South Sandwich Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-039",
+      "name": "Tokelau",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-040",
+      "name": "Western Sahara",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-041",
+      "name": "Christmas Island",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-042",
+      "name": "Cocos Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-043",
+      "name": "Guernsey",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-044",
+      "name": "Ascension Island",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-045",
+      "name": "Tristan da Cunha",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-046",
+      "name": "Svalbard",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-047",
+      "name": "Bouvet Island",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-048",
+      "name": "Heard Island and McDonald Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-049",
+      "name": "British Indian Ocean Territory",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-050",
+      "name": "Tokelau Dependency",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-051",
+      "name": "Aland Islands",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-052",
+      "name": "Bonaire",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    },
+    {
+      "id": "TER-053",
+      "name": "Saba",
+      "region": "Territories",
+      "block_number": null,
+      "completion_status": {
+        "content": false,
+        "pocketbook": false,
+        "docx": false,
+        "pdf": false,
+        "rasters": false
+      },
+      "files": {
+        "master_docx": "",
+        "full_pdf": "",
+        "pocketbook_pdf": ""
+      },
+      "rasters": {
+        "annual_mean": "",
+        "peak_heat": "",
+        "cool_season": "",
+        "seasonal_variation": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "Aura UE Client Flows",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register Card",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{ \"userId\":\"<user-uuid>\", \"cardUid\":\"<uid>\", \"checksum\":\"<checksum>\" }" },
+        "url": { "raw": "http://localhost:3000/registerCard", "host": ["localhost"], "port": "3000", "path": ["registerCard"] }
+      }
+    }
+  ]
+}

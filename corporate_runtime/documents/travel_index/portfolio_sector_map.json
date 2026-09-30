@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-06-16",
+  "source_blueprint": "C:\\Users\\young\\agents\\vagary_index\\workspace_umbrella_blueprint.pdf",
+  "registry_path": "C:\\Users\\young\\agents\\descriptors",
+  "sectors": [
+    {
+      "sector_id": "shoes",
+      "sector_name": "Shoe Brand",
+      "blueprint_summary": "Premium consumer footwear; high-velocity cash generation; creates baseline consumer-facing market presence",
+      "lead_agents": [
+        "agent-shoes-lead"
+      ],
+      "ops_agents": [
+        "agent-shoes-ops-1",
+        "agent-shoes-ops-2"
+      ],
+      "role_summary": "1 lead, 2 ops",
+      "agent_counts": {
+        "lead": 1,
+        "ops": 2,
+        "total": 3
+      }
+    },
+    {
+      "sector_id": "travel",
+      "sector_name": "Travel Index",
+      "blueprint_summary": "High-margin content generation; parses global logistics and geographical trends",
+      "lead_agents": [
+        "agent-travel-lead"
+      ],
+      "ops_agents": [
+        "agent-travel-ops-1",
+        "agent-travel-ops-2",
+        "agent-travel-ops-3"
+      ],
+      "role_summary": "1 lead, 3 ops",
+      "agent_counts": {
+        "lead": 1,
+        "ops": 3,
+        "total": 4
+      }
+    },
+    {
+      "sector_id": "gamedev",
+      "sector_name": "Game Design",
+      "blueprint_summary": "Virtual engine environments; creates high-fidelity simulation environments to model system logic and AI agent frameworks",
+      "lead_agents": [
+        "agent-gamedev-lead"
+      ],
+      "ops_agents": [
+        "agent-gamedev-ops-1",
+        "agent-gamedev-ops-2"
+      ],
+      "role_summary": "1 lead, 2 ops",
+      "agent_counts": {
+        "lead": 1,
+        "ops": 2,
+        "total": 3
+      }
+    },
+    {
+      "sector_id": "kids",
+      "sector_name": "Kids Channel",
+      "blueprint_summary": "Automated storytelling media; scalable, passive digital revenue; establishes positive foundational programming for future generations",
+      "lead_agents": [
+        "agent-kids-lead"
+      ],
+      "ops_agents": [
+        "agent-kids-ops-1",
+        "agent-kids-ops-2",
+        "agent-kids-ops-3"
+      ],
+      "role_summary": "1 lead, 3 ops",
+      "agent_counts": {
+        "lead": 1,
+        "ops": 3,
+        "total": 4
+      }
+    },
+    {
+      "sector_id": "innovation",
+      "sector_name": "Innovation Hub",
+      "blueprint_summary": "IP foundry & patent development; synthesizes technological frameworks and manages the core intellectual property catalog",
+      "lead_agents": [
+        "agent-innovation-lead"
+      ],
+      "ops_agents": [
+        "agent-innovation-ops-1",
+        "agent-innovation-ops-2",
+        "agent-innovation-ops-3"
+      ],
+      "role_summary": "1 lead, 3 ops",
+      "agent_counts": {
+        "lead": 1,
+        "ops": 3,
+        "total": 4
+      }
+    },
+    {
+      "sector_id": "ewaste",
+      "sector_name": "E-Waste Recycling",
+      "blueprint_summary": "Industrial mineral reclamation; secures supply-chain independence by reclaiming rare metals to back the token treasury",
+      "lead_agents": [
+        "agent-ewaste-lead"
+      ],
+      "ops_agents": [
+        "agent-ewaste-ops-1",
+        "agent-ewaste-ops-2"
+      ],
+      "role_summary": "1 lead, 2 ops",
+      "agent_counts": {
+        "lead": 1,
+        "ops": 2,
+        "total": 3
+      }
+    },
+    {
+      "sector_id": "quantum",
+      "sector_name": "Quantum Wearables",
+      "blueprint_summary": "Cold fission bio-hardware; the pinnacle breakthrough; shifts human hardware dependency away from fossil and grid infrastructure",
+      "lead_agents": [
+        "agent-quantum-lead"
+      ],
+      "ops_agents": [
+        "agent-quantum-ops-1",
+        "agent-quantum-ops-2",
+        "agent-quantum-ops-3"
+      ],
+      "role_summary": "1 lead, 3 ops",
+      "agent_counts": {
+        "lead": 1,
+        "ops": 3,
+        "total": 4
+      }
+    }
+  ],
+  "auxiliary_agents": [
+    {
+      "agent_id": "ceo",
+      "name": "Chief Executive Officer",
+      "function": "Umbrella executive oversight; primary reporting target for sector leads"
+    },
+    {
+      "agent_id": "finance",
+      "name": "Finance",
+      "function": "Treasury, token economics, and asset-backed settlement oversight"
+    },
+    {
+      "agent_id": "security",
+      "name": "Security",
+      "function": "Adversarial defense, context isolation, and system immunization"
+    },
+    {
+      "agent_id": "ops-global",
+      "name": "Global Operations",
+      "function": "Cross-sector operations coordination and delivery governance"
+    },
+    {
+      "agent_id": "agent-vagary-index-lead",
+      "name": "Vagary Index Lead",
+      "function": "Travel index portfolio execution outside the seven-sector canonical set"
+    },
+    {
+      "agent_id": "agent-vagary-index-ops-1",
+      "name": "Vagary Index Ops 1",
+      "function": "Vagary Index operations support"
+    },
+    {
+      "agent_id": "agent-vagary-index-ops-2",
+      "name": "Vagary Index Ops 2",
+      "function": "Vagary Index operations support"
+    }
+  ],
+  "summary": {
+    "sector_count": 7,
+    "sector_alignment": "Covered",
+    "total_registered_agents": 32,
+    "sector_agents": {
+      "lead": 7,
+      "ops": 18,
+      "total": 25
+    },
+    "auxiliary_agents": 7,
+    "notes": "Seven sectors mapped from blueprint exactly. Role distribution is non-uniform: travel, kids, innovation, and quantum use 3 ops agents; shoes, gamedev, and e-waste use 2 ops agents. Auxiliary layer supports CEO, finance, security, global operations, and vagary-index delivery."
+  }
+}

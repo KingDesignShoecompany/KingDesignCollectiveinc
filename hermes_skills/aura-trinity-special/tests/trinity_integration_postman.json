@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "Aura Trinity Integration",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Check Trinity",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"battleId\":\"battle-uuid\", \"state\":{ \"stateVersion\":1, \"teams\":[ { \"monsters\":[ { \"card_id\":50, \"hp\":100 }, { \"card_id\":75, \"hp\":100 }, { \"card_id\":100, \"hp\":100 } ], \"equipment\":[ { \"item_card_id\":50 } ] } ] } }"
+        },
+        "url": { "raw": "http://localhost:3002/trinity/check", "host": ["localhost"], "port": "3002", "path": ["trinity", "check"] }
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "project": "vagary_index",
+  "template_id": "parallel_content_generation_v1",
+  "description": "Parallelizable per-country asset generation template for workforce agent execution.",
+  "execution_model": {
+    "strategy": "per_country_parallel",
+    "max_parallel_countries": 5,
+    "per_country_parallel_assets": true,
+    "dependency_rules": {
+      "attractions_local_hotspots": [],
+      "fun_facts": [],
+      "phrase_cards": [],
+      "regional_top10_experiences": [],
+      "entry_requirements": [],
+      "history_culture_overview": [],
+      "couples_itinerary": [],
+      "solo_itinerary": [],
+      "source_citations": []
+    }
+  },
+  "prompt_templates": {
+    "history_culture_overview": "Write an 800+ word history and culture overview for {country}. Required sections: formation/origin, major historical periods, cultural identity, modern political system, UNESCO/heritage notes. Tone: factual, concise, travel-guide ready. Output format: Markdown.",
+    "entry_requirements": "Compile entry requirements for {country} for a generic Western/EU/US passport holder. Required fields: passport_validity, visa_requirement_summary, digital_arrival_forms, health_vaccinations, customs_notes, official_sources (URLs). Output format: JSON.",
+    "fun_facts": "Generate 100 unique, verifiable fun facts about {country}. Categories: history, nature, food, culture, geography, sports, technology, architecture, traditions, pop culture. Output format: JSON with array of objects [{id, text, category}].",
+    "phrase_cards": "Create 20 essential travel phrases for {country}. Required fields per phrase: phrase_number, local_language, romanized, english_equivalent, context, pronunciation_tip. Scope: greetings, directions, food, transport, hotel, emergency. Output format: JSON.",
+    "attractions_local_hotspots": "List curated attractions for {country}. Required arrays: top_attractions (8-12), local_hotspots (6-10), hidden_gems (4-8), family_friendly (5-8), nightlife_districts (3-6). Output format: JSON.",
+    "regional_top10_experiences": "Rank top 10 travel experiences in {country}. Required fields per item: rank, title, region, season, difficulty, booking_tier, description, price_range, duration. Output format: JSON.",
+    "couples_itinerary": "Draft a 14-day couples itinerary for {country}. Required fields per day: day_number, theme, morning, afternoon, evening, booking_notes, logistics. Output format: JSON.",
+    "solo_itinerary": "Draft a 14-day solo itinerary for {country}. Required fields per day: day_number, theme, morning, afternoon, evening, booking_notes, logistics, solo_safety_tip. Output format: JSON.",
+    "source_citations": "Provide citations JSON for {country} with keys: entry_visa, health_advisories, climate_data, attractions, operators. Prefer official government/tourism board URLs. Output format: JSON."
+  },
+  "batches": {
+    "SEA-2": {
+      "countries": [
+        "Cambodia",
+        "Laos",
+        "Myanmar",
+        "Brunei",
+        "Philippines"
+      ],
+      "assets": [
+        "history_culture_overview",
+        "entry_requirements",
+        "fun_facts",
+        "phrase_cards",
+        "attractions_local_hotspots",
+        "regional_top10_experiences",
+        "couples_itinerary",
+        "solo_itinerary",
+        "source_citations"
+      ],
+      "filename_map": "{country_code}_{asset_id}.json",
+      "output_dir": "C:/Users/young/agents/vagary_index/batch_output/sea2_textual/{country_code}"
+    }
+  }
+}

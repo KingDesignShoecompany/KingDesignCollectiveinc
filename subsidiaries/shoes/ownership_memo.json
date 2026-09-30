@@ -1,0 +1,23 @@
+{
+  "subsidiary_id": "shoes",
+  "updated_at": "[PENDING]",
+  "entity_type": "S-corp",
+  "formation_status": "[PENDING]",
+  "parent_entity": "King Design Collective",
+  "brand": "King Design Shoe Company",
+  "business_model": "brand_owner_with_wholesale_supplier",
+  "supplier": "AliveShoes",
+  "supplier_role": "production_fulfillment",
+  "parent_ownership_pct": 100,
+  "external_ownership_pct": 0,
+  "total_authorized_shares": 1000,
+  "issued_shares": 0,
+  "initial_capital_call": {
+    "cash_usd": "[PENDING]",
+    "ip_assets_description": "Brand name, design library, trademarks, trade dress, packaging designs, digital assets",
+    "services_contribution_description": "Founder design, branding, and business development services"
+  },
+  "ownership_rationale": "Brand IP and operations owned 100% by parent; external equity introduction requires subsidiary board consent and central approval.",
+  "approvals_required": ["Board/CEO", "Legal", "Tax"],
+  "notes": "AliveShoes is a wholesale vendor, not owner. Revenue is generated through brand sales margins."
+}

@@ -1,0 +1,9 @@
+name: UE Client CI
+on: [push, pull_request]
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run static checks
+        run: echo "Run platform-specific build checks locally for UE 5.7"

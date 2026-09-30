@@ -1,0 +1,19 @@
+{
+  "updated_at": "[PENDING]",
+  "token": "UMB_SETTLEMENT",
+  "total_issued": 0,
+  "circulation": 0,
+  "collateralization_ratio": "[PENDING]",
+  "issuance_events": [],
+  "fields_per_event": [
+    "event_id",
+    "timestamp",
+    "subsidiary",
+    "type",
+    "amount",
+    "backing_asset",
+    "collateral_id",
+    "approved_by",
+    "status"
+  ]
+}

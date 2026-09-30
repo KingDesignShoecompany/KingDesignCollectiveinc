@@ -1,0 +1,21 @@
+{
+  "subsidiary_id": "gamedev",
+  "updated_at": "[PENDING]",
+  "authorized_shares": 1000,
+  "issued_shares": 0,
+  "par_value": "[PENDING]",
+  "shareholder_register": [
+    {
+      "entity": "umbrella_parent",
+      "shares": 0,
+      "voting_rights_pct": 100
+    }
+  ],
+  "capital_contribution": {
+    "cash": {"amount": "[PENDING]", "currency": "USD"},
+    "ip": {"description": "[PENDING]", "valuation": "[PENDING]"},
+    "services": {"description": "[PENDING]", "valuation": "[PENDING]"}
+  },
+  "lockup_terms": "[PENDING]",
+  "dividend_policy": "[PENDING]"
+}

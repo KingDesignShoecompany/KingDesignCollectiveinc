@@ -1,0 +1,19 @@
+{
+  "updated_at": "[PENDING]",
+  "global_compliance_status": "stubbed",
+  "required_reports": [
+    "financial_review",
+    "ip_audit",
+    "tax_filing_readiness",
+    "operational_audit"
+  ],
+  "subsidiary_compliance": {
+    "vagary_index": {"status": "pending", "last_review": null, "next_review": null},
+    "shoes": {"status": "pending", "last_review": null, "next_review": null},
+    "gamedev": {"status": "pending", "last_review": null, "next_review": null},
+    "kids": {"status": "pending", "last_review": null, "next_review": null},
+    "innovation": {"status": "pending", "last_review": null, "next_review": null},
+    "ewaste": {"status": "pending", "last_review": null, "next_review": null},
+    "quantum": {"status": "pending", "last_review": null, "next_review": null}
+  }
+}
