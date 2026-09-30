@@ -155,7 +155,7 @@ def list_hermes_skills():
 
 
 def get_full_stack_status():
-    """Get comprehensive status of all Umbrella stack services."""
+    """Get comprehensive status of all KingDesignCollectiveINC stack services."""
     return {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "openclaw": get_openclaw_status(),
@@ -177,13 +177,13 @@ def get_full_stack_status():
 
 def handle_request(method, path, body=None):
     """Simple request router."""
-    if method == "GET" and path == "/api/umbrella/status":
+    if method == "GET" and path == "/api/KingDesignCollectiveINC/status":
         return 200, get_full_stack_status()
 
-    elif method == "GET" and path == "/api/umbrella/skills":
+    elif method == "GET" and path == "/api/KingDesignCollectiveINC/skills":
         return 200, {"skills": list_hermes_skills()}
 
-    elif method == "POST" and path == "/api/umbrella/route":
+    elif method == "POST" and path == "/api/KingDesignCollectiveINC/route":
         task = body.get("task", "")
         skill, info = route_to_subsidiary(task)
         return 200, {
@@ -193,13 +193,13 @@ def handle_request(method, path, body=None):
             "matched_keywords": [k for k in info["keywords"] if k in task.lower()],
         }
 
-    elif method == "POST" and path == "/api/umbrella/execute":
+    elif method == "POST" and path == "/api/KingDesignCollectiveINC/execute":
         task = body.get("task", "")
         skill, info = route_to_subsidiary(task)
         result = dispatch_to_hermes(skill, task, body.get("context"))
         return 200, {"routed_to": skill, "result": result}
 
-    elif method == "POST" and path == "/api/umbrella/n8n-trigger":
+    elif method == "POST" and path == "/api/KingDesignCollectiveINC/n8n-trigger":
         # Trigger an n8n workflow via webhook
         workflow = body.get("workflow", "")
         webhook_url = f"{N8N_URL}/webhook/{workflow}"
@@ -216,7 +216,7 @@ def handle_request(method, path, body=None):
         except Exception as e:
             return 502, {"error": str(e), "workflow": workflow}
 
-    elif method == "GET" and path == "/api/umbrella/dashboard":
+    elif method == "GET" and path == "/api/KingDesignCollectiveINC/dashboard":
         # Return the dashboard HTML
         dashboard_path = os.path.join(
             os.path.dirname(__file__), "..", "dashboard.html"
@@ -233,8 +233,8 @@ def handle_request(method, path, body=None):
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 
-class UmbrellaBridgeHandler(BaseHTTPRequestHandler):
-    """HTTP handler for the Umbrella integration bridge."""
+class KingDesignCollectiveINCBridgeHandler(BaseHTTPRequestHandler):
+    """HTTP handler for the KingDesignCollectiveINC integration bridge."""
 
     def do_GET(self):
         self.handle_request("GET")
@@ -287,8 +287,8 @@ class UmbrellaBridgeHandler(BaseHTTPRequestHandler):
 
 def main():
     port = int(os.environ.get("BRIDGE_PORT", "8090"))
-    server = HTTPServer(("127.0.0.1", port), UmbrellaBridgeHandler)
-    print(f"Umbrella Integration Bridge listening on http://127.0.0.1:{port}")
+    server = HTTPServer(("127.0.0.1", port), KingDesignCollectiveINCBridgeHandler)
+    print(f"KingDesignCollectiveINC Integration Bridge listening on http://127.0.0.1:{port}")
     print(f"OpenClaw Gateway: {HERMES_ENDPOINT}")
     print(f"Ollama: {OLLAMA_URL}")
     print(f"Agent Zero API: {AGENT_ZERO_API}")
@@ -296,12 +296,12 @@ def main():
     print(f"n8n: {N8N_URL}")
     print(f"Aura Backend: {AURA_BACKEND}")
     print(f"\nEndpoints:")
-    print(f"  GET  /api/umbrella/status     - Full stack health check")
-    print(f"  GET  /api/umbrella/skills     - List Hermes skills")
-    print(f"  POST /api/umbrella/route       - Route a task to a subsidiary")
-    print(f"  POST /api/umbrella/execute     - Execute a task via Hermes")
-    print(f"  POST /api/umbrella/n8n-trigger - Trigger an n8n workflow")
-    print(f"  GET  /api/umbrella/dashboard   - Integration dashboard HTML")
+    print(f"  GET  /api/KingDesignCollectiveINC/status     - Full stack health check")
+    print(f"  GET  /api/KingDesignCollectiveINC/skills     - List Hermes skills")
+    print(f"  POST /api/KingDesignCollectiveINC/route       - Route a task to a subsidiary")
+    print(f"  POST /api/KingDesignCollectiveINC/execute     - Execute a task via Hermes")
+    print(f"  POST /api/KingDesignCollectiveINC/n8n-trigger - Trigger an n8n workflow")
+    print(f"  GET  /api/KingDesignCollectiveINC/dashboard   - Integration dashboard HTML")
     server.serve_forever()
 
 

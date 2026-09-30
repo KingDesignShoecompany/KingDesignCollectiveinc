@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Deploy Umbrella Corporation subsidiary webapps to GitHub Pages (KingDesignCollectiveinc repo).
+Deploy KingDesignCollectiveINC Corporation subsidiary webapps to GitHub Pages (KingDesignCollectiveinc repo).
 Syncs all corporate_runtime/documents/<subsidiary>/webapp/ files into the
 KingDesignCollectiveinc repo's assets/<subsidiary>/ directory structure.
 """
@@ -90,7 +90,7 @@ def update_portal_index():
     for key, assets_name in SUBSIDIARIES.items():
         display_names = {
             "shoe_brand": "King Design Collective",
-            "travel_index": "The Vagary Index",
+            "travel_index": "The KingDesignCollectiveINC",
             "game_design": "Aura Champions",
             "kids_channel": "Seven Minute Story Sessions",
             "innovation_hub": "Innovation Hub",

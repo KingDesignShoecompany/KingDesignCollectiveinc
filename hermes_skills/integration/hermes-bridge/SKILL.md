@@ -2,7 +2,7 @@
 name: hermes-bridge
 description: OpenClaw skill that bridges to Hermes Agent — routes OpenClaw tasks to the correct Hermes subsidiary skill, dispatches via the integration bridge, and reports results back through OpenClaw's Telegram/CLI channel.
 version: 1.0.0
-author: Umbrella Corporation
+author: KingDesignCollectiveINC Corporation
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
@@ -13,7 +13,7 @@ metadata:
 
 # OpenClaw <-> Hermes Bridge Skill
 
-This skill enables OpenClaw to act as the human-facing orchestrator for the entire Umbrella stack. When a user sends a command to OpenClaw (via Telegram, CLI, or API), this skill:
+This skill enables OpenClaw to act as the human-facing orchestrator for the entire KingDesignCollectiveINC stack. When a user sends a command to OpenClaw (via Telegram, CLI, or API), this skill:
 
 1. Routes the task to the correct Hermes subsidiary skill
 2. Dispatches it through the integration bridge (port 8090)
@@ -85,10 +85,10 @@ The skill uses keyword matching to route tasks to the correct Hermes subsidiary:
 
 The skill calls the integration bridge at `http://127.0.0.1:8090`:
 
-- `POST /api/umbrella/route` — Route a task to determine the subsidiary
-- `POST /api/umbrella/execute` — Execute a task via Hermes
-- `GET /api/umbrella/status` — Get full stack health
-- `POST /api/umbrella/n8n-trigger` — Trigger an n8n workflow
+- `POST /api/KingDesignCollectiveINC/route` — Route a task to determine the subsidiary
+- `POST /api/KingDesignCollectiveINC/execute` — Execute a task via Hermes
+- `GET /api/KingDesignCollectiveINC/status` — Get full stack health
+- `POST /api/KingDesignCollectiveINC/n8n-trigger` — Trigger an n8n workflow
 
 ## Example Task Flow
 

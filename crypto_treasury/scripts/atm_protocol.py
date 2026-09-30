@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Umbrella ATM Network Exchange Protocol
+KingDesignCollectiveINC ATM Network Exchange Protocol
 Implements zero-latency settlement and Time-Locked Proof-of-Trade for offline resilience
 """
 
@@ -293,7 +293,7 @@ class ATMExchangeProtocol:
 
 # Example usage
 if __name__ == "__main__":
-    print("=== Umbrella ATM Exchange Protocol ===")
+    print("=== KingDesignCollectiveINC ATM Exchange Protocol ===")
     print("Initializing ATM network...")
     
     protocol = ATMExchangeProtocol()

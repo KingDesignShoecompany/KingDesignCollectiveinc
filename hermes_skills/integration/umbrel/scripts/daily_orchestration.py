@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Umbrella Daily Orchestration — runs at 8:30AM daily.
+KingDesignCollectiveINC Daily Orchestration — runs at 8:30AM daily.
 
 This cron job demonstrates the full integration of all 6 tools + Hermes:
 
@@ -72,21 +72,21 @@ def http_post(url, data, timeout=30):
 
 
 def run_pipeline():
-    """Execute the full Umbrella orchestration pipeline."""
+    """Execute the full KingDesignCollectiveINC orchestration pipeline."""
     timestamp = datetime.now(timezone.utc).isoformat()
     report = {
         "timestamp": timestamp,
-        "pipeline": "umbrella-daily-orchestration",
+        "pipeline": "KingDesignCollectiveINC-daily-orchestration",
         "steps": [],
     }
 
     print(f"\n{'='*60}")
-    print(f"  Umbrella Daily Orchestration — {timestamp}")
+    print(f"  KingDesignCollectiveINC Daily Orchestration — {timestamp}")
     print(f"{'='*60}\n")
 
     # ─── Step 1: Health Check via Integration Bridge ───────────
     print("[Step 1] Checking all service health via integration bridge...")
-    health_ok, status = http_get(f"{INTEGRATION_BRIDGE}/api/umbrella/status")
+    health_ok, status = http_get(f"{INTEGRATION_BRIDGE}/api/KingDesignCollectiveINC/status")
     if health_ok:
         down = [k for k, v in status.get("aura_services", {}).items() if v != "up"]
         all_ok = status.get("openclaw", {}).get("ok", False)
@@ -122,7 +122,7 @@ def run_pipeline():
             "date": timestamp,
         }
     }
-    ok, route_result = http_post(f"{INTEGRATION_BRIDGE}/api/umbrella/route", task_payload)
+    ok, route_result = http_post(f"{INTEGRATION_BRIDGE}/api/KingDesignCollectiveINC/route", task_payload)
     report["steps"].append({
         "step": "task_routing",
         "status": "ok" if ok else "failed",
@@ -135,7 +135,7 @@ def run_pipeline():
 
     # ─── Step 3: Execute via Hermes skill dispatch ─────────────
     print("\\n[Step 3] Dispatching to Hermes skills...")
-    exec_ok, exec_data = http_post(f"{INTEGRATION_BRIDGE}/api/umbrella/execute", task_payload)
+    exec_ok, exec_data = http_post(f"{INTEGRATION_BRIDGE}/api/KingDesignCollectiveINC/execute", task_payload)
     report["steps"].append({
         "step": "hermes_dispatch",
         "status": "ok" if exec_ok else "failed",
@@ -162,7 +162,7 @@ def run_pipeline():
     # ─── Step 5: Trigger n8n workflow ───────────────────────────
     print("\\n[Step 5] Triggering n8n automation pipeline...")
     ok, n8n_result = http_post(
-        f"{N8N_URL}/webhook/umbrella-daily",
+        f"{N8N_URL}/webhook/KingDesignCollectiveINC-daily",
         {"action": "daily_orchestration", "timestamp": timestamp}
     )
     report["steps"].append({
@@ -196,7 +196,7 @@ def run_pipeline():
 
 if __name__ == "__main__":
     # Check if the integration bridge is running; if not, start it
-    ok, _ = http_get(f"{INTEGRATION_BRIDGE}/api/umbrella/status", timeout=30)
+    ok, _ = http_get(f"{INTEGRATION_BRIDGE}/api/KingDesignCollectiveINC/status", timeout=30)
     if not ok:
         print("Integration bridge not running. Starting it...")
         bridge_path = r"C:\Users\young\agents\hermes_skills\integration\umbrel\scripts\bridge.py"

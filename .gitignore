@@ -1,4 +1,4 @@
-# Umbrella Corporation — gitignore
+# KingDesignCollectiveINC Corporation — gitignore
 # This project contains CLASS-1 crypto-treasury data and skill secrets.
 # Never commit secrets, keys, or .env files.
 
@@ -95,6 +95,6 @@ policies/
 registry/
 spawn_controller.py
 sevenminutestorysessions/
-vagary_index/
+kingdesigncollectiveinc/
 kingdesignshoeco_marketing_campaign_plan.md
-UMBRELLA_HERMES_ARCHITECTURE.md
+KingDesignCollectiveINC_HERMES_ARCHITECTURE.md

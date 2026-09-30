@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Ed25519 Signature Verification System for Umbrella Corporation
+Ed25519 Signature Verification System for KingDesignCollectiveINC Corporation
 Implements cryptographic payload signing and verification between subsidiary agents
 """
 
@@ -176,7 +176,7 @@ def process_asset_payload(signed_payload: dict) -> dict:
 
 if __name__ == "__main__":
     # Demo usage
-    print("=== Umbrella Treasury Signature Verification System ===")
+    print("=== KingDesignCollectiveINC Treasury Signature Verification System ===")
     print(f"Trusted subsidiaries: {list(TRUSTED_PUBLIC_KEYS.keys())}")
     print("\nUsage:")
     print("  from verify_payload import sign_payload, verify_payload, process_asset_payload")

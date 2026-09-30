@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Umbrella Treasury Engine
+KingDesignCollectiveINC Treasury Engine
 Core cryptocurrency valuation and ATM exchange protocol logic
 """
 
@@ -219,7 +219,7 @@ class SecurityError(Exception):
 
 # Example usage
 if __name__ == "__main__":
-    print("=== Umbrella Treasury Engine ===")
+    print("=== KingDesignCollectiveINC Treasury Engine ===")
     print("Initializing treasury system...")
     
     treasury = TreasuryEngine()

@@ -1,5 +1,5 @@
 {
-  "name": "Umbrella Corporation - Cross-Tool Orchestration",
+  "name": "KingDesignCollectiveINC Corporation - Cross-Tool Orchestration",
   "nodes": [
     {
       "parameters": {
@@ -109,7 +109,7 @@
         "assignments": {
           "report": "={{$json}}",
           "timestamp": "={{new Date().toISOString()}}",
-          "stack": "Umbrella Corporation"
+          "stack": "KingDesignCollectiveINC Corporation"
         }
       },
       "id": "build-report",
@@ -131,7 +131,7 @@
     {
       "parameters": {
         "chatId": "telegram:-1001234567890",
-        "text": "Umbrella Stack Status Report\\nTimestamp: {{$now}}\\n\\nStatus: All systems nominal\\nDashboard: http://localhost:3000"
+        "text": "KingDesignCollectiveINC Stack Status Report\\nTimestamp: {{$now}}\\n\\nStatus: All systems nominal\\nDashboard: http://localhost:3000"
       },
       "id": "telegram-notify",
       "name": "Telegram Status Notification",

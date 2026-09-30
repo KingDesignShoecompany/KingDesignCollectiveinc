@@ -34,7 +34,7 @@
       "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
     },
     {
-      "name": "Umbrella Web",
+      "name": "KingDesignCollectiveINC Web",
       "port": 3000,
       "status": "up",
       "detail": "HTTP 404"

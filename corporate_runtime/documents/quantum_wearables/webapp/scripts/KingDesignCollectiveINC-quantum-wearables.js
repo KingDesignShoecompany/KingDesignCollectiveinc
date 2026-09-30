@@ -1,5 +1,5 @@
 /*
- * Umbrella UI — Quantum Wearables Enhanced Interactions
+ * KingDesignCollectiveINC UI — Quantum Wearables Enhanced Interactions
  * Sci-fi UX: live metric pulsing, device status indicators, thermal simulation
  */
 

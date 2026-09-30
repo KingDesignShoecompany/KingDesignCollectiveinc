@@ -1,5 +1,5 @@
 {
-  "name": "Umbrella Daily Health Report",
+  "name": "KingDesignCollectiveINC Daily Health Report",
   "active": true,
   "nodes": [
     {
@@ -39,7 +39,7 @@
       "type": "n8n-nodes-base.telegram",
       "parameters": {
         "chatId": "telegram:-1001234567890",
-        "text": "Umbrella Daily Report\\nTimestamp: {{$now}}\\nStatus: {{$json.openclaw.status || 'unknown'}}"
+        "text": "KingDesignCollectiveINC Daily Report\\nTimestamp: {{$now}}\\nStatus: {{$json.openclaw.status || 'unknown'}}"
       },
       "typeVersion": 2,
       "position": [

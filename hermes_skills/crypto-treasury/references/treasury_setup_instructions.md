@@ -4,7 +4,7 @@
 This is the dispatch procedure for opening and seeding each subsidiary treasury.
 
 ## GLOBAL RULES
-- Hub account: Umbrella Enterprise
+- Hub account: KingDesignCollectiveINC Enterprise
 - Subsidiary accounts: segregation required
 - Currency default: USD unless jurisdiction requires otherwise
 - Backup approver: CEO / Finance lead

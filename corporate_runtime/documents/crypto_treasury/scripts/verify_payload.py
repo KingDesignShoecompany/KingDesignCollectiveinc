@@ -2,7 +2,7 @@
 """
 Ed25519 Payload Verification System
 =====================================
-Crypto Treasury Agent - Umbrella Corporation
+Crypto Treasury Agent - KingDesignCollectiveINC Corporation
 
 Verifies cross-agent JSON payloads using Ed25519 signatures.
 Each subsidiary has a persistent key pair stored in the keys/ directory.
@@ -16,7 +16,7 @@ Workflow:
   4. Log all verification attempts to keys/../logs/verification.log
 
 Known subsidiaries (from subsidiaries/backing_asset_registry.json):
-    vagary_index, shoes, gamedev, kids, innovation, ewaste, quantum
+    kingdesigncollectiveinc, shoes, gamedev, kids, innovation, ewaste, quantum
 
 Usage:
     python verify_payload.py --payload sample_payload.json
@@ -61,7 +61,7 @@ LOG_FILE = PROJECT_ROOT / "logs" / "verification.log"
 
 # Canonical list of subsidiaries recognised by the treasury.
 KNOWN_SUBSIDIARIES = [
-    "vagary_index",
+    "kingdesigncollectiveinc",
     "shoes",
     "gamedev",
     "kids",

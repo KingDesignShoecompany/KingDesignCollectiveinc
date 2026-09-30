@@ -1,4 +1,4 @@
-# OPERATIONS/GOVERNANCE SETUP — UMBRELLA SUBSIDIARIES
+# OPERATIONS/GOVERNANCE SETUP — KingDesignCollectiveINC SUBSIDIARIES
 
 ## OBJECTIVE
 Stand up operating frameworks, compliance structures, and governance cadences for all 7 subsidiaries.

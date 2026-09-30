@@ -1,11 +1,11 @@
-# SETTLEMENT TOKEN — UMBRELLA ECOSYSTEM
+# SETTLEMENT TOKEN — KingDesignCollectiveINC ECOSYSTEM
 
 ## PURPOSE
 Settlement token for intra-subsidiary transactions, capital movement, and interchange with partner currencies.
 
 ## DESIGN CHOICES
 - Model: Asset-backed utility settlement token
-- Mint authority: Umbrella Finance agent
+- Mint authority: KingDesignCollectiveINC Finance agent
 - Primary backing classes:
   1. Physical commodities reclaimed via E-Waste subsidiary
   2. IP assets registered via Innovation Hub
