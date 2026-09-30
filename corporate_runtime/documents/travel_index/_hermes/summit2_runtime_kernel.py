@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Vagary Index Runtime Kernel (CI-Kernel)."""
+"""KingDesignCollectiveINC Runtime Kernel (CI-Kernel)."""
 
 CI_KERNEL = {
     "name": "CI-Kernel",

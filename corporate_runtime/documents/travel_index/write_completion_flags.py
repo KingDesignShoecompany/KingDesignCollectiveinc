@@ -8,13 +8,13 @@ import json, os, glob
 from datetime import datetime, timezone
 
 TRAVEL_INDEX = "C:/Users/young/agents/corporate_runtime/documents/travel_index"
-VAGARY_INDEX = "C:/Users/young/agents/vagary_index"
+kingdesigncollectiveinc = "C:/Users/young/agents/kingdesigncollectiveinc"
 OUTPUT_DIR = os.path.join(TRAVEL_INDEX, "_hermes")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def get_complete_countries():
     """Get the 255 complete countries from the population completeness report."""
-    pop_file = os.path.join(VAGARY_INDEX, "population_completeness_report.json")
+    pop_file = os.path.join(kingdesigncollectiveinc, "population_completeness_report.json")
     complete_codes = set()
     if os.path.exists(pop_file):
         with open(pop_file) as f:
@@ -31,7 +31,7 @@ def get_complete_countries():
 
 def get_all_country_codes():
     """Get all country codes from the 250-country list."""
-    countries_file = os.path.join(VAGARY_INDEX, "250 countries list n contents..txt")
+    countries_file = os.path.join(kingdesigncollectiveinc, "250 countries list n contents..txt")
     codes = set()
     if os.path.exists(countries_file):
         with open(countries_file) as f:

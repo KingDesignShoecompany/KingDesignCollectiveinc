@@ -1,9 +1,9 @@
 {
-  "store": "The Vagary Index",
+  "store": "The KingDesignCollectiveINC",
   "source": "Zendrop",
   "integration_status": "api_configured",
   "logo": "images/valgary-index-logo.png",
-  "logo_alt": "The Vagary Index - 250-Country Travel Platform",
+  "logo_alt": "The KingDesignCollectiveINC - 250-Country Travel Platform",
   "api_credentials": {
     "endpoint": "https://api.zendrop.com/api/v2",
     "auth_method": "bearer_token",
@@ -22,7 +22,7 @@
   },
   "token": {
     "status": "pending_creation",
-    "token_name": "KingDesignCollectiveINC - Shoe Brand & Vagary Index",
+    "token_name": "KingDesignCollectiveINC - Shoe Brand & KingDesignCollectiveINC",
     "expiration": "never",
     "description": "Primary store integration token for e-commerce storefronts"
   },

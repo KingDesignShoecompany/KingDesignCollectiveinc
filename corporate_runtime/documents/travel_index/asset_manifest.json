@@ -1,6 +1,6 @@
 {
   "asset_manifest_version": "1.6",
-  "project": "vagary_index",
+  "project": "kingdesigncollectiveinc",
   "active_asset_set": "core_plus_thermal_plus_phrases_plus_attractions_plus_top10_plus_packaging_plus_index",
   "notes": "User-selected minimum viable deliverables per country including thermal raster maps, printable phrase cards, attractions, regional top 10 experiences, pocketbook packaging assets, and project master index.",
   "per_country_required_assets": [
@@ -120,7 +120,7 @@
         "slipcase_front",
         "slipcase_spine"
       ],
-      "notes": "Cyberpunk-themed packaging aligned with Vagary Index brand identity."
+      "notes": "Cyberpunk-themed packaging aligned with KingDesignCollectiveINC brand identity."
     },
     {
       "id": "couples_itinerary",
@@ -168,7 +168,7 @@
     {
       "id": "master_index",
       "type": "json",
-      "filename_pattern": "vagary_index_master_index.json",
+      "filename_pattern": "kingdesigncollectiveinc_master_index.json",
       "update_frequency": "per_country_asset_generation",
       "required_fields": {
         "project": "string",

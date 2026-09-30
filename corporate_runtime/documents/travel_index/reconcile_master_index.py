@@ -7,14 +7,14 @@ writes reconciled_master_index.json, and updates the master index tracker.
 import json, os
 from datetime import datetime, timezone
 
-VAGARY_DIR = "C:/Users/young/agents/vagary_index"
+KingDesignCollectiveINC_DIR = "C:/Users/young/agents/kingdesigncollectiveinc"
 TRAVEL_DIR = "C:/Users/young/agents/corporate_runtime/documents/travel_index"
 HERMES_DIR = os.path.join(TRAVEL_DIR, "_hermes")
 os.makedirs(HERMES_DIR, exist_ok=True)
 
 def get_population_truth():
     """Read the 255-country truth from population_completeness_report.json."""
-    pop_file = os.path.join(VAGARY_DIR, "population_completeness_report.json")
+    pop_file = os.path.join(KingDesignCollectiveINC_DIR, "population_completeness_report.json")
     complete_codes = set()
     incomplete_codes = set()
 
@@ -38,7 +38,7 @@ def get_population_truth():
 
 def read_existing_master():
     """Read the existing master_index.json if it exists."""
-    master_file = os.path.join(VAGARY_DIR, "master_index.json")
+    master_file = os.path.join(KingDesignCollectiveINC_DIR, "master_index.json")
     if os.path.exists(master_file):
         with open(master_file) as f:
             return json.load(f)
@@ -123,7 +123,7 @@ def main():
     print(f"Reconciled master index written: {master_file}")
 
     # Also update the canonical master_index.json (or create if missing)
-    canonical_file = os.path.join(VAGARY_DIR, "master_index.json")
+    canonical_file = os.path.join(KingDesignCollectiveINC_DIR, "master_index.json")
     with open(canonical_file, "w") as f:
         json.dump(master, f, indent=2)
     print(f"Canonical master_index.json written: {canonical_file}")
@@ -155,7 +155,7 @@ def main():
         print(f"  {region}: {data['complete']}/{data['total']} ({data['percent']}%)")
 
     # Write a resolution marker to exit interrupted_override_mode
-    resolution_file = os.path.join(VAGARY_DIR, "_override_resolved.json")
+    resolution_file = os.path.join(KingDesignCollectiveINC_DIR, "_override_resolved.json")
     resolution = {
         "resolved_at": datetime.now(timezone.utc).isoformat(),
         "reason": "Master index reconciled from population_completeness_report",

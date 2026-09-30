@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Vagary Index Shop | Vacation Wear & Travel Accessories</title>
+    <title>The KingDesignCollectiveINC Shop | Vacation Wear & Travel Accessories</title>
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-ui.css">
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-travel-index.css">
     <link rel="stylesheet" href="style.css">
@@ -12,16 +12,16 @@
     <header class="travel-header">
         <div class="container">
             <div class="logo-container">
-                <img src="images/valgary-index-logo.png" alt="The Vagary Index Logo" class="vagary-logo">
+                <img src="images/valgary-index-logo.png" alt="The KingDesignCollectiveINC Logo" class="KingDesignCollectiveINC-logo">
             </div>
-            <h1 class="brand-name">The Vagary Index</h1>
+            <h1 class="brand-name">The KingDesignCollectiveINC</h1>
             <p class="brand-tagline">250 Countries | Travel Intelligence Platform</p>
         </div>
     </header>
 
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-logo">VAGARY</a>
+            <a href="index.html" class="nav-logo">KingDesignCollectiveINC</a>
             <div class="nav-links">
                 <a href="index.html">Dashboard</a>
                 <a href="countries.html">Countries</a>
@@ -36,7 +36,7 @@
 
     <section class="hero-section">
         <div class="container">
-            <h2 class="hero-title">Vagary Index Shop</h2>
+            <h2 class="hero-title">KingDesignCollectiveINC Shop</h2>
             <p class="hero-subtitle">Essential vacation wear and travel accessories curated for every journey</p>
         </div>
     </section>
@@ -44,7 +44,7 @@
     <section class="section">
         <div class="container">
             <h2 class="section-title">All Vacation Items</h2>
-            <div class="product-grid-vagary" id="shopProductGrid">
+            <div class="product-grid-KingDesignCollectiveINC" id="shopProductGrid">
                 <!-- Products loaded from catalog.json -->
             </div>
         </div>
@@ -52,7 +52,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 The Vagary Index | 250 Countries | Local-Compute Mesh | No Cloud APIs</p>
+            <p>&copy; 2026 The KingDesignCollectiveINC | 250 Countries | Local-Compute Mesh | No Cloud APIs</p>
         </div>
     </footer>
 
@@ -99,14 +99,14 @@
 
             function renderProducts(products) {
                 grid.innerHTML = products.map(p => `
-                    <div class="vagary-product-card">
-                        <img src="${p.image || ''}" alt="${p.name}" class="vagary-product-image" loading="lazy">
-                        <div class="vagary-product-info">
-                            <span class="vagary-badge">${p._category || p.category}</span>
+                    <div class="KingDesignCollectiveINC-product-card">
+                        <img src="${p.image || ''}" alt="${p.name}" class="KingDesignCollectiveINC-product-image" loading="lazy">
+                        <div class="KingDesignCollectiveINC-product-info">
+                            <span class="KingDesignCollectiveINC-badge">${p._category || p.category}</span>
                             <h3>${p.name}</h3>
-                            <p class="vagary-product-price">$${p.price} <span class="vagary-compare">${p.compare_at_price ? '$' + p.compare_at_price : ''}</span></p>
-                            <p class="vagary-product-desc">${p.description || ''}</p>
-                            <div class="vagary-product-meta">
+                            <p class="KingDesignCollectiveINC-product-price">$${p.price} <span class="KingDesignCollectiveINC-compare">${p.compare_at_price ? '$' + p.compare_at_price : ''}</span></p>
+                            <p class="KingDesignCollectiveINC-product-desc">${p.description || ''}</p>
+                            <div class="KingDesignCollectiveINC-product-meta">
                                 <span>⭐ ${p.rating || '-'} (${p.reviews_count || 0})</span>
                                 <span>🚚 ${p.shipping_days || '5-10'} days</span>
                             </div>
