@@ -1,4 +1,4 @@
-# The KingDesignCollectiveINC — 250-Country Guide Production Pipeline
+# The Vagary Index — 250-Country Guide Production Pipeline
 
 ## Objective
 Produce a comprehensive, consistent travel guide for all 250 countries as both markdown and video assets.
@@ -69,7 +69,7 @@ Output:
 Rules:
   - Title format: "[Country] Travel Guide 2026 | solo & couples | best time to visit"
   - Description includes: timestamps, entry requirements summary, Guide CTA
-  - Tags: country + "solo travel", "couples travel", "travel guide", "The KingDesignCollectiveINC"
+  - Tags: country + "solo travel", "couples travel", "travel guide", "The Vagary Index"
 
 ## Per-Country Directory Layout
 batch_output/{country_code}/

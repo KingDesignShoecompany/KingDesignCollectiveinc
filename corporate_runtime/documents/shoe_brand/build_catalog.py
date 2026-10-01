@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""KingDesignCollective canonical catalog + e-commerce copy (KingDesignCollectiveINC-style).
+"""KingDesignCollective canonical catalog + e-commerce copy (Vagary-style).
 Source of truth = photographed SKUs actually on disk (8 clusters, 56 images).
 Generates: catalog.json, product copy, updated tracker. No external deps.
 """

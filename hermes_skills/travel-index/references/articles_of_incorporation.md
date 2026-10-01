@@ -1,6 +1,6 @@
 # ARTICLES OF INCORPORATION
 
-## SUBSIDIARY ID: KingDesignCollectiveINC
+## SUBSIDIARY ID: VAGARY_INDEX
 
 ## ARTICLE I — NAME
 The name of the corporation shall be: [CORPORATE_NAME_PENDING]

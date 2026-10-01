@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-06-16",
-  "source_blueprint": "C:\\Users\\young\\agents\\KingDesignCollectiveINC\\workspace_KingDesignCollectiveINC_blueprint.pdf",
+  "source_blueprint": "C:\\Users\\young\\agents\\vagary_index\\workspace_KingDesignCollectiveINC_blueprint.pdf",
   "registry_path": "C:\\Users\\young\\agents\\descriptors",
   "sectors": [
     {
@@ -156,19 +156,19 @@
       "function": "Cross-sector operations coordination and delivery governance"
     },
     {
-      "agent_id": "agent-kingdesigncollectiveinc-lead",
-      "name": "KingDesignCollectiveINC Lead",
+      "agent_id": "agent-vagary-index-lead",
+      "name": "Vagary Index Lead",
       "function": "Travel index portfolio execution outside the seven-sector canonical set"
     },
     {
-      "agent_id": "agent-kingdesigncollectiveinc-ops-1",
-      "name": "KingDesignCollectiveINC Ops 1",
-      "function": "KingDesignCollectiveINC operations support"
+      "agent_id": "agent-vagary-index-ops-1",
+      "name": "Vagary Index Ops 1",
+      "function": "Vagary Index operations support"
     },
     {
-      "agent_id": "agent-kingdesigncollectiveinc-ops-2",
-      "name": "KingDesignCollectiveINC Ops 2",
-      "function": "KingDesignCollectiveINC operations support"
+      "agent_id": "agent-vagary-index-ops-2",
+      "name": "Vagary Index Ops 2",
+      "function": "Vagary Index operations support"
     }
   ],
   "summary": {
@@ -181,6 +181,6 @@
       "total": 25
     },
     "auxiliary_agents": 7,
-    "notes": "Seven sectors mapped from blueprint exactly. Role distribution is non-uniform: travel, kids, innovation, and quantum use 3 ops agents; shoes, gamedev, and e-waste use 2 ops agents. Auxiliary layer supports CEO, finance, security, global operations, and kingdesigncollectiveinc delivery."
+    "notes": "Seven sectors mapped from blueprint exactly. Role distribution is non-uniform: travel, kids, innovation, and quantum use 3 ops agents; shoes, gamedev, and e-waste use 2 ops agents. Auxiliary layer supports CEO, finance, security, global operations, and vagary-index delivery."
   }
 }

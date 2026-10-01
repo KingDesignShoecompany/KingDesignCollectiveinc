@@ -35,7 +35,7 @@ DEFENSIBILITY = [
 ]
 
 PRODUCTIZATION = [
-    "KingDesignCollectiveINC Country Guides",
+    "Vagary Index Country Guides",
     "Persona Trajectory Engine",
     "Amplitude Engine (Doc 16)",
     "Cultural Intelligence Dashboard",

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""KingDesignCollectiveINC Closure Protocol (VICP)."""
+"""Vagary Index Closure Protocol (VICP)."""
 
 CLOSURE_PROTOCOL = {
-    "name": "KingDesignCollectiveINCIndexClosureProtocol",
+    "name": "VagaryIndexClosureProtocol",
     "purpose": "Formal end-of-execution: shut down, stabilize, compress, finalize, seal",
     "phases": [
         "stabilization — freeze all dynamic systems",

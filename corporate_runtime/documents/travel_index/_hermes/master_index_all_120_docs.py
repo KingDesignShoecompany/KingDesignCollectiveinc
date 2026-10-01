@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Master Index: Complete 120-document KingDesignCollectiveINC Cultural Intelligence Architecture"""
+"""Master Index: Complete 120-document Vagary Index Cultural Intelligence Architecture"""
 
 MASTER_INDEX = {
     "total_documents": 120,

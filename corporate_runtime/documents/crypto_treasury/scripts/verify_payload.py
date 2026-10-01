@@ -16,7 +16,7 @@ Workflow:
   4. Log all verification attempts to keys/../logs/verification.log
 
 Known subsidiaries (from subsidiaries/backing_asset_registry.json):
-    KingDesignCollectiveINC, shoes, gamedev, kids, innovation, ewaste, quantum
+    vagary_index, shoes, gamedev, kids, innovation, ewaste, quantum
 
 Usage:
     python verify_payload.py --payload sample_payload.json
@@ -61,7 +61,7 @@ LOG_FILE = PROJECT_ROOT / "logs" / "verification.log"
 
 # Canonical list of subsidiaries recognised by the treasury.
 KNOWN_SUBSIDIARIES = [
-    "KingDesignCollectiveINC",
+    "vagary_index",
     "shoes",
     "gamedev",
     "kids",

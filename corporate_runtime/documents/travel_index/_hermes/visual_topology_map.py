@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""KingDesignCollectiveINC Cultural Intelligence System — Visual Topology Map (text-based)"""
+"""Vagary Index Cultural Intelligence System — Visual Topology Map (text-based)"""
 
 TOPOLOGY_MAP = """
 ┌──────────────────────────────────────────────────────┐

@@ -1,5 +1,5 @@
 {
-  "state_seal": "kingdesigncollectiveinc_reconciliation_complete",
+  "state_seal": "vagary_index_reconciliation_complete",
   "version": "1.0",
   "sealed_at": "2026-09-22T18:45:00Z",
   "status": "RECONCILED_OVERRIDE_FREE_CONSISTENT",
@@ -40,18 +40,18 @@
   },
 
   "files": {
-    "master_index": "kingdesigncollectiveinc/master_index.json",
+    "master_index": "vagary_index/master_index.json",
     "reconciled_index": "corporate_runtime/documents/travel_index/_hermes/reconciled_master_index.json",
     "completion_flags": "corporate_runtime/documents/travel_index/_hermes/completion_flags.json",
-    "override_resolution": "kingdesigncollectiveinc/_override_resolved.json",
-    "canonical_250_list": "kingdesigncollectiveinc/250 countries list n contents..txt"
+    "override_resolution": "vagary_index/_override_resolved.json",
+    "canonical_250_list": "vagary_index/250 countries list n contents..txt"
   },
 
   "override_status": {
     "mode": "EXITED",
     "previous_state": "interrupted_override_mode",
     "resolved_at": "2026-09-22T18:41:30Z",
-    "resolution_file": "kingdesigncollectiveinc/_override_resolved.json",
+    "resolution_file": "vagary_index/_override_resolved.json",
     "actions_frozen": false,
     "writes_enabled": true
   },

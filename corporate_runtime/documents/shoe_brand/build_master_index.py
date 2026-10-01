@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""KingDesignCollective — Product Master Index builder (KingDesignCollectiveINC-style).
+"""KingDesignCollective — Product Master Index builder (Vagary-style).
 Reconciles inventory.csv (6 generic SKUs) against manifest.json (8 photo SKUs on disk)
 and emits a single verified master index + build tracker. Zero external deps.
 """
