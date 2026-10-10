@@ -14,9 +14,10 @@ Run before/after any deploy that touches index.html. Exit 1 on any failure.
 Usage:  python verify_gh_pages.py [branch]
         branch defaults to gh-pages (the live Pages source).
 """
-import subprocess, sys, re
+import subprocess, sys, re, os
 
-REPO = r"C:\Users\young\agents"
+# Portable repo root: the dir containing this script (works on local Windows and CI runners alike).
+REPO = os.path.dirname(os.path.abspath(__file__))
 PREFIX = "KingDesignCollectiveinc"                          # subdir, no leading slash
 BAD = b'assetPrefix\\":\\"\\"urlParts'          # missing-comma flight bug
 ROOT_REF = rb'(?:href|src)="/_next/'            # bug 1: unprefixed root-relative
