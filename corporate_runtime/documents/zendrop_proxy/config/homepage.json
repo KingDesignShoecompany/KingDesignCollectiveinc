@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "id": "KING-007",
+    "title": "Travel-Ready Wear",
+    "subtitle": "Curated for movement",
+    "image": "images/products/KING-007-side.jpg",
+    "price": 249.0,
+    "url": "shop.html"
+  }
+}

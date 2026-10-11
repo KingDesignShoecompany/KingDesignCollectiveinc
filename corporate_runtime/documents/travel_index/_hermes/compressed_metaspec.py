@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Compressed Meta-Spec: The Vagary Index Architecture in 15 Lines"""
+"""Compressed Meta-Spec: The KingDesignCollectiveINC Architecture in 15 Lines"""
 
 META_SPEC = """
-The Vagary Index Cultural Intelligence System is a 120-document,
+The KingDesignCollectiveINC Cultural Intelligence System is a 120-document,
 12-layer architecture modeling cultural resonance, cultural drift,
 seasonal modulation, global cultural networks, and traveler
 identity evolution.

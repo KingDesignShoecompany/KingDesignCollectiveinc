@@ -1,8 +1,8 @@
-# OPERATING AGREEMENT — VAGARY_INDEX
+# OPERATING AGREEMENT — kingdesigncollectiveinc
 
 ## PARTIES
 - Parent/Managing Member: KingDesignCollectiveINC Enterprise (100% ownership)
-- Subsidiary: VAGARY_INDEX
+- Subsidiary: kingdesigncollectiveinc
 
 ## SECTION 1 — PURPOSE AND BUSINESS
 [SECTOR_SPECIFIC_BUSINESS_PURPOSE_PENDING]

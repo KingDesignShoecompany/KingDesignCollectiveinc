@@ -1,0 +1,32 @@
+{
+  "bundles": [
+    {
+      "id": "bundle-japan",
+      "region": "Japan",
+      "lat": 36.2048,
+      "lng": 138.2529,
+      "items": [{"id": "KING-007", "title": "Apex Runner V2", "price": 249}]
+    },
+    {
+      "id": "bundle-mediterranean",
+      "region": "Mediterranean",
+      "lat": 36.7602,
+      "lng": 24.0833,
+      "items": [{"id": "KING-008", "title": "Velocity Blue", "price": 179}]
+    },
+    {
+      "id": "bundle-balkans",
+      "region": "Balkans",
+      "lat": 44.0,
+      "lng": 21.0,
+      "items": [{"id": "KING-009", "title": "Daily Drift V2", "price": 139}]
+    },
+    {
+      "id": "bundle-north-america",
+      "region": "North America",
+      "lat": 44.0682,
+      "lng": -104.9847,
+      "items": [{"id": "KING-004", "title": "Urban Flair Knit", "price": 189}]
+    }
+  ]
+}

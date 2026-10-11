@@ -1,4 +1,4 @@
-"""Vagary Index — Master PDF Stitcher
+"""KingDesignCollectiveINC — Master PDF Stitcher
 Combines per-country A6 PDFs into a SEA-ALL regional booklet.
 """
 from __future__ import annotations
@@ -42,7 +42,7 @@ def stitch_selection(input_dir: Path, output_path: Path, countries: list[str]) -
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Vagary Index master PDF stitcher")
+    parser = argparse.ArgumentParser(description="KingDesignCollectiveINC master PDF stitcher")
     parser.add_argument("--input-dir", type=Path, default=Path("batch_output/pdf"))
     parser.add_argument("--output", type=Path, default=Path("batch_output/sea_all_booklet.pdf"))
     parser.add_argument("--countries", type=str, default="", help="comma-separated country slugs")

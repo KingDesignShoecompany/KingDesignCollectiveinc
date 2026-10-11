@@ -35,14 +35,14 @@ SUBSIDIARIES = {
         },
     },
     "travel_index": {
-        "name": "The Vagary Index",
+        "name": "The KingDesignCollectiveINC",
         "output_dir": "travel_index/webapp",
         "files": {
-            "index.html": "Create a travel dashboard homepage for The Vagary Index. Hero with 'The Vagary Index' title and world map background. Search bar by country. Regional cards showing East Asia (6 countries), MENA (55 countries), SEA-ANZ, South Asia, Europe, Americas. Featured destinations carousel. TikTok feed integration.",
-            "countries.html": "Create a country listing page for The Vagary Index. 250 countries organized by 6 regions in a filterable grid. Search/filter by region and country name. Each card shows: ISO code, country name, region badge, completion status, and TikTok content count. Sort options.",
-            "country.html": "Create a country detail page for The Vagary Index. Sections: History & Culture overview, Entry Requirements (visa, passport, health, customs), Climate Maps (thermal BIO1/BIO5/BIO6 images), Currency converter with regional exchange rates, Top 10 Attractions list, TikTok video gallery. Tabbed interface.",
-            "style.css": "Create travel-themed CSS for The Vagary Index. World map color palette (deep blues, teals, earth tones). Responsive grid, card elevation, map-inspired styling, dark/light mode toggle, tab navigation, smooth transitions. Clean, professional travel brand aesthetic.",
-            "app.js": "Create JS for The Vagary Index. Country search with autosuggest, region filter, currency conversion calculator, TikTok video embed loader, thermal map tooltip, interactive region selector, data pagination.",
+            "index.html": "Create a travel dashboard homepage for The KingDesignCollectiveINC. Hero with 'The KingDesignCollectiveINC' title and world map background. Search bar by country. Regional cards showing East Asia (6 countries), MENA (55 countries), SEA-ANZ, South Asia, Europe, Americas. Featured destinations carousel. TikTok feed integration.",
+            "countries.html": "Create a country listing page for The KingDesignCollectiveINC. 250 countries organized by 6 regions in a filterable grid. Search/filter by region and country name. Each card shows: ISO code, country name, region badge, completion status, and TikTok content count. Sort options.",
+            "country.html": "Create a country detail page for The KingDesignCollectiveINC. Sections: History & Culture overview, Entry Requirements (visa, passport, health, customs), Climate Maps (thermal BIO1/BIO5/BIO6 images), Currency converter with regional exchange rates, Top 10 Attractions list, TikTok video gallery. Tabbed interface.",
+            "style.css": "Create travel-themed CSS for The KingDesignCollectiveINC. World map color palette (deep blues, teals, earth tones). Responsive grid, card elevation, map-inspired styling, dark/light mode toggle, tab navigation, smooth transitions. Clean, professional travel brand aesthetic.",
+            "app.js": "Create JS for The KingDesignCollectiveINC. Country search with autosuggest, region filter, currency conversion calculator, TikTok video embed loader, thermal map tooltip, interactive region selector, data pagination.",
         },
     },
     "game_design": {

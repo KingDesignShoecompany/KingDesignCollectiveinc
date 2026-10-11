@@ -1,4 +1,4 @@
-// The Vagary Index - Travel Data Platform JS
+// The KingDesignCollectiveINC - Travel Data Platform JS
 
 // Country data: 250 verified countries across 6 regions
 const REGIONS = {

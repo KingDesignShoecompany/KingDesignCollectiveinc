@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # 16. ENGINEERING BUILD PLAN — Implementation Specification
 # Front-end, back-end, data, intelligence, amplitude, and delivery architecture
-# for the Vagary Index Travel Intelligence Engine.
+# for the KingDesignCollectiveINC Travel Intelligence Engine.
 
 ENGINEERING_BUILD_PLAN = {
     "doc": "16. ENGINEERING BUILD PLAN",
-    "purpose": "Real engineering blueprint to build the Vagary Index Travel Intelligence Engine",
+    "purpose": "Real engineering blueprint to build the KingDesignCollectiveINC Travel Intelligence Engine",
     "layers": [
         {
             "name": "LAYER 1 — FRONT-END ARCHITECTURE",

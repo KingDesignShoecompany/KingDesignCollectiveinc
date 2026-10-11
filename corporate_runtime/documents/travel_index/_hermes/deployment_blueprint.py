@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deployment Blueprint: Vagary Index Cultural Intelligence System"""
+"""Deployment Blueprint: KingDesignCollectiveINC Cultural Intelligence System"""
 
 DEPLOYMENT_BLUEPRINT = {
     "core_modules": [
@@ -54,7 +54,7 @@ DEPLOYMENT_BLUEPRINT = {
         "Master Topology Tensor"
     ],
     "deployment_targets": [
-        "Vagary Index Country Guides",
+        "KingDesignCollectiveINC Country Guides",
         "Persona Trajectory Engine",
         "Amplitude Engine",
         "Cultural Intelligence API",

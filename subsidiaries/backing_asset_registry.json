@@ -7,7 +7,7 @@
     "subsidiary_revenue_claim"
   ],
   "subsidiary_backing": {
-    "vagary_index": {"primary": "ip_asset_value", "secondary": "subsidiary_revenue_claim", "minted_allocation": "[PENDING]"},
+    "kingdesigncollectiveinc": {"primary": "ip_asset_value", "secondary": "subsidiary_revenue_claim", "minted_allocation": "[PENDING]"},
     "shoes": {"primary": "subsidiary_revenue_claim", "secondary": "brand_ip_value", "minted_allocation": "[PENDING]"},
     "gamedev": {"primary": "ip_asset_value", "secondary": "subscription_revenue", "minted_allocation": "[PENDING]"},
     "kids": {"primary": "content_copyright", "secondary": "ad_revenue", "minted_allocation": "[PENDING]"},
