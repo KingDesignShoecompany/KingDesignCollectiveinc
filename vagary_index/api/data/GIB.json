@@ -1,0 +1,20 @@
+{
+  "country_code": "GIB",
+  "country_name": "Gibraltar",
+  "region": "Europe & Central Asia",
+  "capitalCity": "Gibraltar",
+  "latitude": 36.1408,
+  "longitude": -5.3536,
+  "entry_requirements": null,
+  "climate": null,
+  "attractions": null,
+  "top10_experiences": null,
+  "phrase_cards": null,
+  "fun_facts": null,
+  "itineraries_couples": null,
+  "itineraries_solo": null,
+  "sources": null,
+  "history_culture": null,
+  "_ingested_at": "2026-10-11T18:59:57Z",
+  "_source": "manual-latlng-b2"
+}

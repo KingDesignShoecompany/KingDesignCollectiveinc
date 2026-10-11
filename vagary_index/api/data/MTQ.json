@@ -1,0 +1,20 @@
+{
+  "country_code": "MTQ",
+  "country_name": "Martinique",
+  "region": "Latin America & Caribbean",
+  "capitalCity": "Fort-de-France",
+  "latitude": 14.6415,
+  "longitude": -61.0242,
+  "entry_requirements": null,
+  "climate": null,
+  "attractions": null,
+  "top10_experiences": null,
+  "phrase_cards": null,
+  "fun_facts": null,
+  "itineraries_couples": null,
+  "itineraries_solo": null,
+  "sources": null,
+  "history_culture": null,
+  "_ingested_at": "2026-10-11T19:00:21Z",
+  "_source": "manual-latlng-b2"
+}

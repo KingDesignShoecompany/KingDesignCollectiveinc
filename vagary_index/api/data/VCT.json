@@ -1,0 +1,20 @@
+{
+  "country_code": "VCT",
+  "country_name": "St. Vincent and the Grenadines",
+  "region": "Latin America & Caribbean ",
+  "capitalCity": "Kingstown",
+  "latitude": 13.2035,
+  "longitude": -61.2653,
+  "entry_requirements": null,
+  "climate": null,
+  "attractions": null,
+  "top10_experiences": null,
+  "phrase_cards": null,
+  "fun_facts": null,
+  "itineraries_couples": null,
+  "itineraries_solo": null,
+  "sources": null,
+  "history_culture": null,
+  "_ingested_at": "2026-10-11T18:59:57Z",
+  "_source": "worldbank-latlng-b2"
+}

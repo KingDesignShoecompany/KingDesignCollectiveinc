@@ -1,0 +1,20 @@
+{
+  "country_code": "SRB",
+  "country_name": "Serbia",
+  "region": "Europe & Central Asia",
+  "capitalCity": "Belgrade",
+  "latitude": 44.8024,
+  "longitude": 20.4656,
+  "entry_requirements": null,
+  "climate": null,
+  "attractions": null,
+  "top10_experiences": null,
+  "phrase_cards": null,
+  "fun_facts": null,
+  "itineraries_couples": null,
+  "itineraries_solo": null,
+  "sources": null,
+  "history_culture": null,
+  "_ingested_at": "2026-10-11T18:59:57Z",
+  "_source": "worldbank-latlng-b2"
+}

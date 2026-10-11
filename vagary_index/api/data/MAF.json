@@ -1,0 +1,20 @@
+{
+  "country_code": "MAF",
+  "country_name": "St. Martin (French part)",
+  "region": "Latin America & Caribbean ",
+  "capitalCity": "Marigot",
+  "latitude": 18.0708,
+  "longitude": -63.0501,
+  "entry_requirements": null,
+  "climate": null,
+  "attractions": null,
+  "top10_experiences": null,
+  "phrase_cards": null,
+  "fun_facts": null,
+  "itineraries_couples": null,
+  "itineraries_solo": null,
+  "sources": null,
+  "history_culture": null,
+  "_ingested_at": "2026-10-11T18:59:57Z",
+  "_source": "manual-latlng-b2"
+}

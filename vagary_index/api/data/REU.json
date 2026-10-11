@@ -1,0 +1,20 @@
+{
+  "country_code": "REU",
+  "country_name": "Reunion",
+  "region": "Sub-Saharan Africa",
+  "capitalCity": "Saint-Denis",
+  "latitude": -21.1151,
+  "longitude": 55.5364,
+  "entry_requirements": null,
+  "climate": null,
+  "attractions": null,
+  "top10_experiences": null,
+  "phrase_cards": null,
+  "fun_facts": null,
+  "itineraries_couples": null,
+  "itineraries_solo": null,
+  "sources": null,
+  "history_culture": null,
+  "_ingested_at": "2026-10-11T19:00:21Z",
+  "_source": "manual-latlng-b2"
+}

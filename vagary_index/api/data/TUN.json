@@ -1,0 +1,20 @@
+{
+  "country_code": "TUN",
+  "country_name": "Tunisia",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan",
+  "capitalCity": "Tunis",
+  "latitude": 36.7899,
+  "longitude": 10.21,
+  "entry_requirements": null,
+  "climate": null,
+  "attractions": null,
+  "top10_experiences": null,
+  "phrase_cards": null,
+  "fun_facts": null,
+  "itineraries_couples": null,
+  "itineraries_solo": null,
+  "sources": null,
+  "history_culture": null,
+  "_ingested_at": "2026-10-11T18:59:57Z",
+  "_source": "worldbank-latlng-b2"
+}

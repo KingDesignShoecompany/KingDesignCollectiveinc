@@ -1,0 +1,20 @@
+{
+  "country_code": "SYR",
+  "country_name": "Syrian Arab Republic",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan",
+  "capitalCity": "Damascus",
+  "latitude": 33.5146,
+  "longitude": 36.3119,
+  "entry_requirements": null,
+  "climate": null,
+  "attractions": null,
+  "top10_experiences": null,
+  "phrase_cards": null,
+  "fun_facts": null,
+  "itineraries_couples": null,
+  "itineraries_solo": null,
+  "sources": null,
+  "history_culture": null,
+  "_ingested_at": "2026-10-11T18:59:57Z",
+  "_source": "worldbank-latlng-b2"
+}

@@ -1,0 +1,20 @@
+{
+  "country_code": "SPM",
+  "country_name": "Saint Pierre and Miquelon",
+  "region": "Latin America & Caribbean",
+  "capitalCity": "Saint-Pierre",
+  "latitude": 46.8852,
+  "longitude": -56.3159,
+  "entry_requirements": null,
+  "climate": null,
+  "attractions": null,
+  "top10_experiences": null,
+  "phrase_cards": null,
+  "fun_facts": null,
+  "itineraries_couples": null,
+  "itineraries_solo": null,
+  "sources": null,
+  "history_culture": null,
+  "_ingested_at": "2026-10-11T19:00:21Z",
+  "_source": "manual-latlng-b2"
+}
