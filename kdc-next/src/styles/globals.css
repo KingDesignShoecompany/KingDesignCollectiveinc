@@ -305,3 +305,56 @@ a { color: var(--gold); }
   .app-sidebar { position: relative; height: auto; }
   .page-frame { padding: 20px 18px 0; }
 }
+
+/* ---- Country grid (travel sub-pages) ---- */
+.country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.country-card { position: relative; background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+  border: 1px solid var(--border); border-radius: 12px; padding: 16px 12px; text-align: center;
+  transition: transform .18s, border-color .18s; cursor: pointer; }
+.country-card:hover { transform: translateY(-3px); border-color: rgba(212,175,55,0.45); }
+.country-card .globe-ico { font-size: 1.8rem; }
+.country-card .cname { font-family: Fraunces, Georgia, serif; font-size: .92rem; color: #f2e9c9; margin-top: 8px; }
+.country-card .cregion { font-size: .68rem; color: var(--muted); margin-top: 3px; text-transform: uppercase; letter-spacing: .06em; }
+.country-card .ccode { display: inline-block; margin-top: 8px; font-size: .66rem; color: #050505;
+  background: linear-gradient(90deg, var(--gold), var(--gold-bright)); padding: 2px 8px; border-radius: 999px; font-weight: 800; }
+.country-card .cprice { display: block; margin-top: 8px; font-size: .78rem; color: var(--gold); font-weight: 700; }
+.filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.filter-btn { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: #d6d6d6;
+  padding: 6px 14px; border-radius: 999px; font-size: .78rem; cursor: pointer; transition: all .15s; }
+.filter-btn:hover { border-color: rgba(212,175,55,0.4); }
+.filter-btn.active { background: var(--gold-soft); color: #fde68a; border-color: rgba(212,175,55,0.4); }
+.search-input { width: 100%; max-width: 360px; background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+  border-radius: 10px; padding: 9px 14px; color: #e0e0e0; font-size: .85rem; margin-bottom: 20px; }
+.search-input:focus { outline: none; border-color: rgba(212,175,55,0.5); }
+
+/* ---- Country detail ---- */
+.tab-nav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; border-bottom: 1px solid var(--border); padding-bottom: 0; }
+.tab-btn { background: none; border: none; color: var(--muted); padding: 10px 16px; font-size: .82rem;
+  cursor: pointer; border-bottom: 2px solid transparent; transition: all .15s; }
+.tab-btn:hover { color: #e0e0e0; }
+.tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+.tab-btn.locked { opacity: .4; }
+.tab-pane { animation: fadeIn .2s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.guide-list { list-style: none; padding: 0; margin: 0; }
+.guide-list li { padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: .88rem; color: #d6d6d6; }
+.guide-list li strong { color: var(--gold); font-weight: 600; }
+.paywall { text-align: center; padding: 40px 20px; }
+.paywall .lock-ico { font-size: 2.4rem; }
+.paywall h3 { font-family: Fraunces, Georgia, serif; color: #f2e9c9; margin: 14px 0 6px; }
+.paywall p { color: var(--muted); font-size: .85rem; max-width: 440px; margin: 0 auto 20px; }
+.paywall-features { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 18px 0; }
+.paywall-features span { font-size: .72rem; color: var(--gold); background: var(--gold-soft);
+  border: 1px solid rgba(212,175,55,0.2); padding: 4px 12px; border-radius: 999px; }
+.btn-gold { display: inline-block; background: linear-gradient(90deg, var(--gold), var(--gold-bright)); color: #050505;
+  font-weight: 700; padding: 10px 22px; border-radius: 10px; border: none; cursor: pointer; font-size: .88rem;
+  margin: 4px 6px; transition: transform .15s, box-shadow .15s; text-decoration: none; }
+.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,175,55,0.3); }
+.btn-outline { display: inline-block; background: transparent; color: var(--gold); border: 1px solid rgba(212,175,55,0.4);
+  font-weight: 600; padding: 10px 22px; border-radius: 10px; cursor: pointer; font-size: .88rem; margin: 4px 6px; text-decoration: none; }
+.btn-outline:hover { background: var(--gold-soft); }
+.detail-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.detail-header .flag-globe { font-size: 2.6rem; }
+.detail-header h2 { font-family: Fraunces, Georgia, serif; font-size: 1.5rem; color: #f2e9c9; margin: 0; }
+.detail-header .code-badge { font-size: .7rem; color: #050505; background: linear-gradient(90deg, var(--gold), var(--gold-bright));
+  padding: 3px 10px; border-radius: 999px; font-weight: 800; }
