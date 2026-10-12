@@ -26,10 +26,8 @@ export default function DashboardPage() {
       <div className="page-frame">
         <div className="hero-grid">
           {PANELS.map((p) => (
-            <a key={p.href} href={p.href} className="hero-panel">
+            <a key={p.href} href={p.href} className="hero-panel" aria-label={`${p.title} — ${p.sub}`}>
               <div className="hero-art"><HeroArt kind={p.kind} /></div>
-              <div className="hero-title">{p.title}</div>
-              <div className="hero-sub">{p.sub}</div>
             </a>
           ))}
         </div>
