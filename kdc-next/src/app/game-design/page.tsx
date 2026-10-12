@@ -1,21 +1,20 @@
+import Link from 'next/link';
 import PageFrame from '../../components/PageFrame';
 import GlassCard from '../../components/GlassCard';
-
-const CARDS = [
-  ['Apex Dragon', '🔥 Fire', '500'],
-  ['Tide Serpent', '💧 Water', '450'],
-  ['Stone Golem', '🌍 Earth', '480'],
-  ['Zephyr Sprite', '💨 Air', '420'],
-];
+import { CARDS } from '../../data/cards';
 
 export default function GameDesignPage() {
   return (
     <PageFrame title="Aura Champions" subtitle="Elemental deck UI in holographic frames" badge="12.5K Players">
       <div className="card-grid">
-        {CARDS.map(([name, el, hp]) => (
-          <GlassCard key={name} corner="KDCI" hero="🎮" title={name} meta={el + ' · HP ' + hp}
-            stats={[['ATK', '99'], ['DEF', '88'], ['SPD', '77']]} thumbs={['Character', 'Controller', 'Racing']} progress={78} />
-        ))}
+        <Link href="/KingDesignCollectiveinc/cards" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <GlassCard corner="KDCI" hero="🎴" title="Card Database" meta={`${CARDS.length} cards across 5 rarities`}
+            stats={[['Cards', String(CARDS.length)], ['Rarities', '5'], ['Elements', '7']]} thumbs={['Convergence', 'Legendary', 'Epic']} progress={88} />
+        </Link>
+        <GlassCard corner="KDCI" hero="📱" title="NFC Tap" meta="Scan physical cards to summon"
+          stats={[['NFC', 'Live'], ['Trinity', '3'], ['Fusion', 'ON']]} thumbs={['Scan', 'Fuse', 'Summon']} progress={76} />
+        <GlassCard corner="KDCI" hero="🏆" title="Tournaments" meta="Competitive play and events"
+          stats={[['Players', '12.5K'], ['Releases', '8'], ['Tournaments', '3']]} thumbs={['Ranked', 'Casual', 'Events']} progress={64} />
       </div>
     </PageFrame>
   );
