@@ -1,13 +1,16 @@
 import Link from 'next/link';
 import PageFrame from '../../components/PageFrame';
 import GlassCard from '../../components/GlassCard';
+import HeroBanner from '../../components/HeroBanner';
 import { PRODUCTS } from '../../data/shoes';
 
 const totalStock = PRODUCTS.reduce((n, p) => n + p.stock, 0);
 
 export default function ShoeBrandPage() {
   return (
-    <PageFrame title="KingDesignShoe Co. Catalog" subtitle="Premium footwear in black & gold" badge={`${totalStock.toLocaleString()} In Stock`}>
+    <>
+      <HeroBanner kind="shoe" title="KingDesignShoe Co." subtitle="Premium footwear in black & gold" badge={`${totalStock.toLocaleString()} In Stock`} />
+      <PageFrame title="Catalog" subtitle="Premium footwear in black & gold">
       <div className="card-grid">
         <Link href="/KingDesignCollectiveinc/products" style={{ textDecoration: 'none', color: 'inherit' }}>
           <GlassCard corner="KDCI" hero="👟" title="Browse Catalog" meta={`${PRODUCTS.length} premium silhouettes`}
@@ -18,6 +21,7 @@ export default function ShoeBrandPage() {
         <GlassCard corner="KDCI" hero="🛒" title="Checkout" meta="Demo cart — add items and review"
           stats={[['Shipping', '24h'], ['Returns', '30d'], ['Warranty', '1yr']]} thumbs={['Cart', 'Address', 'Pay']} progress={78} />
       </div>
-    </PageFrame>
+      </PageFrame>
+    </>
   );
 }

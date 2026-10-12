@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import PageFrame from '../../components/PageFrame';
 import GlassCard from '../../components/GlassCard';
+import HeroBanner from '../../components/HeroBanner';
 import { CARDS } from '../../data/cards';
 
 export default function GameDesignPage() {
   return (
-    <PageFrame title="Aura Champions" subtitle="Elemental deck UI in holographic frames" badge="12.5K Players">
+    <>
+      <HeroBanner kind="controller" title="Aura Champions" subtitle="Elemental deck UI in holographic frames" badge="12.5K Players" />
+      <PageFrame title="Arena" subtitle="Elemental deck UI in holographic frames">
       <div className="card-grid">
         <Link href="/KingDesignCollectiveinc/cards" style={{ textDecoration: 'none', color: 'inherit' }}>
           <GlassCard corner="KDCI" hero="🎴" title="Card Database" meta={`${CARDS.length} cards across 5 rarities`}
@@ -16,6 +19,7 @@ export default function GameDesignPage() {
         <GlassCard corner="KDCI" hero="🏆" title="Tournaments" meta="Competitive play and events"
           stats={[['Players', '12.5K'], ['Releases', '8'], ['Tournaments', '3']]} thumbs={['Ranked', 'Casual', 'Events']} progress={64} />
       </div>
-    </PageFrame>
+      </PageFrame>
+    </>
   );
 }

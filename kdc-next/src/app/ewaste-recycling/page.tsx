@@ -2,9 +2,13 @@ import Link from 'next/link';
 import PageFrame from '../../components/PageFrame';
 import GlassCard from '../../components/GlassCard';
 
+import HeroBanner from '../../components/HeroBanner';
+
 export default function EWasteRecyclingPage() {
   return (
-    <PageFrame title="E-Waste Recycling" subtitle="Streams, recovery rates, and metrics" badge="15,620 Reclaimed">
+    <>
+      <HeroBanner kind="recycle" title="E-Waste Recycling" subtitle="Streams, recovery rates & metrics" badge="15,620 Reclaimed" />
+      <PageFrame title="Operations" subtitle="Streams, recovery rates, and metrics">
       <div className="card-grid">
         <Link href="/KingDesignCollectiveinc/materials" style={{ textDecoration: 'none', color: 'inherit' }}>
           <GlassCard corner="KDCI" hero="♻️" title="Materials" meta="Recovery calculator and rates"
@@ -19,6 +23,7 @@ export default function EWasteRecyclingPage() {
             stats={[['CO₂ Saved', '48t'], ['Diverted', '125t'], ['Compliance', 'PASS']]} thumbs={['Impact', 'Certs', 'Settle']} progress={87} />
         </Link>
       </div>
-    </PageFrame>
+      </PageFrame>
+    </>
   );
 }
