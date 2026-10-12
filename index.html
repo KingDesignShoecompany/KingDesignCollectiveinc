@@ -90,7 +90,121 @@
   }
   setTimeout(mount,300);setTimeout(mount,1000);setTimeout(mount,2500);
 })();
+</script><script id="kdc-travel-deeplink">
+(function(){
+  // B5: the Travel node/card href is baked into the Next.js SSR chunk, so we
+  // intercept clicks and rewrite them to the auto-opening map deep-link.
+  var T="/KingDesignCollectiveinc/travel-index/?map=1";
+  function isTravel(a){
+    var h=a.getAttribute("href")||"";
+    return h==="/KingDesignCollectiveinc/travel-index/"||h==="/KingDesignCollectiveinc/travel-index"
+      ||h==="/travel-index/"||h==="/travel-index"
+      ||a.getAttribute("data-card-id")==="travel-index"
+      ||/travel-index/.test(a.getAttribute("aria-label")||"");
+  }
+  function sweep(){
+    document.querySelectorAll("a[href]").forEach(function(a){
+      if(isTravel(a)&&a.getAttribute("href")!==T)a.setAttribute("href",T);
+    });
+    document.querySelectorAll("[data-card-id='travel-index']").forEach(function(c){
+      if(c.tagName==="A")return; c.style.cursor="pointer"; c.dataset.kdcTravelLink="1";
+    });
+  }
+  sweep();setTimeout(sweep,300);setTimeout(sweep,1000);
+  document.addEventListener("click",function(e){
+    var a=e.target.closest&&e.target.closest("a[href]");
+    if(a&&isTravel(a)){e.preventDefault();location.href=T;return;}
+    var c=e.target.closest&&e.target.closest("[data-card-id='travel-index']");
+    if(c){e.preventDefault();location.href=T;}
+  },true);
+})();
+</script><script id="kdc-travel-deeplink">
+(function(){
+  // B5: the Travel node/card href is baked into the Next.js SSR chunk, so we
+  // intercept clicks and rewrite them to the auto-opening map deep-link.
+  var T="/KingDesignCollectiveinc/travel-index/?map=1";
+  function isTravel(a){
+    var h=a.getAttribute("href")||"";
+    return h==="/KingDesignCollectiveinc/travel-index/"||h==="/KingDesignCollectiveinc/travel-index"
+      ||h==="/travel-index/"||h==="/travel-index"
+      ||a.getAttribute("data-card-id")==="travel-index"
+      ||/travel-index/.test(a.getAttribute("aria-label")||"");
+  }
+  function sweep(){
+    document.querySelectorAll("a[href]").forEach(function(a){
+      if(isTravel(a)&&a.getAttribute("href")!==T)a.setAttribute("href",T);
+    });
+    document.querySelectorAll("[data-card-id='travel-index']").forEach(function(c){
+      if(c.tagName==="A")return; c.style.cursor="pointer"; c.dataset.kdcTravelLink="1";
+    });
+  }
+  sweep();setTimeout(sweep,300);setTimeout(sweep,1000);
+  document.addEventListener("click",function(e){
+    var a=e.target.closest&&e.target.closest("a[href]");
+    if(a&&isTravel(a)){e.preventDefault();location.href=T;return;}
+    var c=e.target.closest&&e.target.closest("[data-card-id='travel-index']");
+    if(c){e.preventDefault();location.href=T;}
+  },true);
+})();
+</script><script id="kdc-travel-deeplink">
+(function(){
+  // B5: the Travel node/card href is baked into the Next.js SSR chunk, so we
+  // intercept clicks and rewrite them to the auto-opening map deep-link.
+  var T="/KingDesignCollectiveinc/travel-index/?map=1";
+  function isTravel(a){
+    var h=a.getAttribute("href")||"";
+    return h==="/KingDesignCollectiveinc/travel-index/"||h==="/KingDesignCollectiveinc/travel-index"
+      ||h==="/travel-index/"||h==="/travel-index"
+      ||a.getAttribute("data-card-id")==="travel-index"
+      ||/travel-index/.test(a.getAttribute("aria-label")||"");
+  }
+  function sweep(){
+    document.querySelectorAll("a[href]").forEach(function(a){
+      if(isTravel(a)&&a.getAttribute("href")!==T)a.setAttribute("href",T);
+    });
+    document.querySelectorAll("[data-card-id='travel-index']").forEach(function(c){
+      if(c.tagName==="A")return; c.style.cursor="pointer"; c.dataset.kdcTravelLink="1";
+    });
+  }
+  sweep();setTimeout(sweep,300);setTimeout(sweep,1000);
+  document.addEventListener("click",function(e){
+    var a=e.target.closest&&e.target.closest("a[href]");
+    if(a&&isTravel(a)){e.preventDefault();location.href=T;return;}
+    var c=e.target.closest&&e.target.closest("[data-card-id='travel-index']");
+    if(c){e.preventDefault();location.href=T;}
+  },true);
+})();
+</script><script id="kdc-travel-deeplink">
+(function(){
+  // B5: the Travel node/card href is baked into the Next.js SSR chunk, so we
+  // intercept clicks and rewrite them to the auto-opening map deep-link.
+  var T="/KingDesignCollectiveinc/travel-index/?map=1";
+  function isTravel(a){
+    var h=a.getAttribute("href")||"";
+    return h==="/KingDesignCollectiveinc/travel-index/"||h==="/KingDesignCollectiveinc/travel-index"
+      ||h==="/travel-index/"||h==="/travel-index"
+      ||a.getAttribute("data-card-id")==="travel-index"
+      ||/travel-index/.test(a.getAttribute("aria-label")||"");
+  }
+  function sweep(){
+    document.querySelectorAll("a[href]").forEach(function(a){
+      if(isTravel(a)&&a.getAttribute("href")!==T)a.setAttribute("href",T);
+    });
+    document.querySelectorAll("[data-card-id='travel-index']").forEach(function(c){
+      if(c.tagName==="A")return; c.style.cursor="pointer"; c.dataset.kdcTravelLink="1";
+    });
+  }
+  sweep();setTimeout(sweep,300);setTimeout(sweep,1000);
+  document.addEventListener("click",function(e){
+    var a=e.target.closest&&e.target.closest("a[href]");
+    if(a&&isTravel(a)){e.preventDefault();location.href=T;return;}
+    var c=e.target.closest&&e.target.closest("[data-card-id='travel-index']");
+    if(c){e.preventDefault();location.href=T;}
+  },true);
+})();
 </script><style id="kdc-globe">
+/* Diamond cursor — gold diamond on black, site-wide. Falls back to pointer. */
+html, body, a, button, [role="button"], input, select, textarea, label { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 1 L23 12 L12 23 L1 12 Z' fill='%23d4af37' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") 12 12, pointer; }
 #kdc-globe-canvas{position:fixed;inset:0;width:100vw;height:100vh;display:block;z-index:0;pointer-events:none}
 .canvas-background{display:none!important}
 .canvas-root{position:relative;z-index:1}
@@ -117,7 +231,7 @@
   // document.body as a fixed full-screen layer. resize()/frame() always re-fetch
   // the live canvas via liveCanvas(), so a hydration wipe self-heals.
   var cv=null,ctx=null;
-  var COLORS={"travel-index":"#d4af37","shoe-brand":"#01963d","game-design":"#4361ee","kids-channel":"#f72585","innovation-hub":"#4cc9f0","ewaste-recycling":"#2a9d8f","quantum-wearables":"#9b5de5"};
+  var COLORS={"travel-index":"#d4af37","shoe-brand":"#d4af37","game-design":"#d4af37","kids-channel":"#d4af37","innovation-hub":"#d4af37","ewaste-recycling":"#d4af37","quantum-wearables":"#d4af37"};
   var BRAND="KingDesignCollectiveINC";
   var DPR=Math.min(window.devicePixelRatio||1,2);
   var W=0,H=0,cx=0,cy=0,R=0;
@@ -149,7 +263,7 @@
     document.querySelectorAll('.hybrid-card[data-card-id]').forEach(function(c){
       var id=c.getAttribute('data-card-id');
       var b=c.getBoundingClientRect();
-      out.push({id:id,color:COLORS[id]||'#d4af37',x:b.left+b.width/2,y:b.top+b.height/2});
+      out.push({id:id,color:COLORS[id]||'#d4af37',x:b.left+b.width/2,y:b.top+b.height/2,w:b.width,h:b.height});
     });
     return out;
   }
@@ -164,7 +278,7 @@
     ctx.globalAlpha=1;
     // atmospheric rim
     var g=ctx.createRadialGradient(cx,cy,R*0.9,cx,cy,R*1.35);
-    g.addColorStop(0,'rgba(30,80,160,0.0)');g.addColorStop(0.7,'rgba(30,90,180,0.24)');g.addColorStop(1,'rgba(30,90,180,0)');
+    g.addColorStop(0,'rgba(60,50,20,0.0)');g.addColorStop(0.7,'rgba(212,175,55,0.20)');g.addColorStop(1,'rgba(212,175,55,0)');
     ctx.fillStyle=g;ctx.beginPath();ctx.arc(cx,cy,R*1.35,0,7);ctx.fill();
     // night earth base
     var eg=ctx.createRadialGradient(cx-R*0.3,cy-R*0.3,R*0.1,cx,cy,R);
@@ -180,7 +294,7 @@
     });
     ctx.globalAlpha=1;ctx.restore();
     // sphere outline
-    ctx.strokeStyle='rgba(120,170,255,0.25)';ctx.lineWidth=1;ctx.beginPath();ctx.arc(cx,cy,R,0,7);ctx.stroke();
+    ctx.strokeStyle='rgba(212,175,55,0.25)';ctx.lineWidth=1;ctx.beginPath();ctx.arc(cx,cy,R,0,7);ctx.stroke();
     // golden equatorial band (ellipse) + brand text
     ctx.save();
     ctx.translate(cx,cy);
@@ -201,15 +315,23 @@
       var dx=n.x-cx,dy=n.y-cy,len=Math.hypot(dx,dy);
       var ux=dx/len,uy=dy/len;
       var sx=cx+ux*R*1.05,sy=cy+uy*R*1.05;
+      // Pull the endpoint back to where the line EXITS the card's bounding box
+      // (ray-box intersection), so lines/rings never sit on the card text.
+      // Globe is a background layer; endpoints land just outside the card edge.
+      var hw=(n.w/2)+8, hh=(n.h/2)+8;
+      var tx=Math.abs(ux)>1e-6?hw/Math.abs(ux):1e9;
+      var ty=Math.abs(uy)>1e-6?hh/Math.abs(uy):1e9;
+      var clear=Math.min(tx,ty);
+      var ex=n.x-ux*clear, ey=n.y-uy*clear;
       // line
       ctx.strokeStyle=n.color;ctx.globalAlpha=0.55;ctx.lineWidth=1.4;
-      ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(n.x,n.y);ctx.stroke();
-      // node ring
+      ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();
+      // node ring (offset from card, not on top of it)
       ctx.globalAlpha=0.9;ctx.strokeStyle=n.color;ctx.lineWidth=1.6;
-      ctx.beginPath();ctx.arc(n.x,n.y,5,0,7);ctx.stroke();
+      ctx.beginPath();ctx.arc(ex,ey,5,0,7);ctx.stroke();
       // traveling pulse dot + faint radar halo ring
       var phase=(t*0.5+ (n.id.length%7)/7)%1;
-      var px=sx+(n.x-sx)*phase,py=sy+(n.y-sy)*phase;
+      var px=sx+(ex-sx)*phase,py=sy+(ey-sy)*phase;
       ctx.globalAlpha=0.18;ctx.strokeStyle=n.color;ctx.lineWidth=1;
       ctx.beginPath();ctx.arc(px,py,5,0,7);ctx.stroke();
       ctx.globalAlpha=0.95;ctx.fillStyle=n.color;
@@ -275,5 +397,131 @@
     var c=e.target.closest&&e.target.closest("[data-card-id='travel-index']");
     if(c){e.preventDefault();location.href=T;}
   },true);
+})();
+</script><style id="kdc-dash-grid">
+/* Hide the globe entirely — the grid is now the hero */
+#kdc-globe-canvas, .canvas-background, .canvas-overlay { display:none !important; }
+/* Turn the absolute overlay into a responsive grid */
+.canvas-root { height:auto !important; overflow:visible !important; }
+.content-overlay-layer { position:static !important; inset:auto !important; pointer-events:auto !important;
+  display:grid !important; grid-template-columns:repeat(4,1fr); gap:18px; padding:20px 24px 40px;
+  align-items:stretch; max-width:1500px; margin:0 auto; }
+/* Kill the scattered absolute ring; make cards grid cells */
+.hybrid-card { position:relative !important; left:auto !important; top:auto !important;
+  width:100% !important; min-height:300px !important; transform:none !important;
+  display:flex !important; flex-direction:column; border-radius:14px; overflow:hidden;
+  background:rgba(255,255,255,0.03); border:1px solid rgba(212,175,55,0.18);
+  box-shadow:0 8px 30px rgba(0,0,0,0.5); transition:transform .18s ease, box-shadow .18s ease, border-color .18s; }
+.hybrid-card:hover { transform:translateY(-4px); border-color:rgba(212,175,55,0.5);
+  box-shadow:0 14px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(212,175,55,0.25); }
+/* Panel internals (injected) */
+.kdc-hero { height:120px; display:flex; align-items:center; justify-content:center; font-size:2.6rem;
+  background:linear-gradient(135deg, rgba(212,175,55,0.22), rgba(212,175,55,0.04) 60%, transparent);
+  border-bottom:1px solid rgba(212,175,55,0.15); }
+.kdc-panel-body { padding:16px 18px; display:flex; flex-direction:column; gap:12px; flex:1; }
+.kdc-panel-title { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:1.15rem; color:#f0e6c8; }
+.kdc-stats { display:flex; gap:10px; }
+.kdc-stat { flex:1; text-align:center; }
+.kdc-stat b { display:block; font-size:1.35rem; color:#d4af37; font-family:Fraunces,serif; }
+.kdc-stat span { font-size:.68rem; color:#9a927f; text-transform:uppercase; letter-spacing:.5px; }
+.kdc-thumbs { display:flex; gap:8px; margin-top:auto; }
+.kdc-thumb { flex:1; height:44px; border-radius:8px; display:flex; align-items:flex-end; justify-content:center;
+  font-size:.6rem; color:#e8e0c8; padding-bottom:4px;
+  background:linear-gradient(160deg, rgba(212,175,55,0.18), rgba(255,255,255,0.02));
+  border:1px solid rgba(212,175,55,0.12); }
+.kdc-panel-cta { display:inline-block; margin-top:6px; color:#d4af37; font-weight:700; font-size:.82rem; text-decoration:none; }
+.kdc-panel-cta:hover { text-decoration:underline; }
+.kdc-corner { position:absolute; top:10px; left:12px; font-size:.6rem; font-weight:800; letter-spacing:1px;
+  color:#d4af37; opacity:.8; }
+/* Header + footer branding */
+.kdc-grid-header { text-align:center; padding:26px 20px 6px; }
+.kdc-grid-header h1 { font-family:Fraunces,Georgia,serif; color:#d4af37; font-size:1.9rem; letter-spacing:.04em; margin:0; }
+.kdc-grid-header p { color:#9a927f; font-size:.72rem; letter-spacing:.22em; margin:.4rem 0 0; text-transform:uppercase; }
+.kdc-grid-header .kdc-badge { display:inline-block; margin-top:.6rem; font-size:.65rem; color:#0a0a0a;
+  background:#fff; padding:3px 10px; border-radius:20px; font-weight:700; }
+.kdc-grid-footer { text-align:center; padding:18px; color:#d4af37; }
+.kdc-grid-footer .kdc-flogo { font-family:Fraunces,Georgia,serif; font-size:1.1rem; letter-spacing:.05em; }
+.kdc-grid-footer .kdc-ftag { font-size:.62rem; letter-spacing:.24em; color:#9a927f; margin-top:.3rem; text-transform:uppercase; }
+.kdc-grid-footer .kdc-crown { font-size:1.3rem; margin-top:.4rem; }
+@media (max-width:1100px){ .content-overlay-layer{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:640px){ .content-overlay-layer{grid-template-columns:1fr} }
+</style>
+<script id="kdc-dash-panels">
+(function(){
+  var PANELS = {"dashboard": {"tag": "WELCOME BACK", "stats": [["Users", "12.8M"], ["Projects", "86"], ["Satisfaction", "9.8"]], "thumbs": ["Overview", "Analytics", "Activity"]}, "travel-index": {"stats": [["Itineraries", "12"], ["Destinations", "45"], ["Bookings", "89"]], "thumbs": ["Skyline", "Mountains", "Hiker"]}, "shoe-brand": {"stats": [["In Stock", "1,240"], ["New Arrivals", "85"], ["Sold", "3,450"]], "thumbs": ["Side View", "Box", "On Foot"]}, "game-design": {"stats": [["Players", "12.5K"], ["Releases", "8"], ["Tournaments", "3"]], "thumbs": ["Character", "Controller", "Racing"]}, "kids-channel": {"stats": [["Paths", "50+"], ["Safe Mode", "ON"], ["Rating", "9.7/10"]], "thumbs": ["Learning", "Stories", "Create"]}, "innovation-hub": {"stats": [["Ideas", "1,240"], ["Patents", "45"], ["R&D", "12"]], "thumbs": ["Lightbulb", "Prototype", "Lab"]}, "ewaste-recycling": {"stats": [["Collected", "12,540"], ["Processed", "8,875"], ["Reclaimed", "15,620"]], "thumbs": ["Collection", "Sorting", "Output"]}, "quantum-wearables": {"stats": [["Sensors", "1.2M"], ["Readings", "8,450"], ["Uptime", "99.99%"]], "thumbs": ["Sensor", "Thermal", "Status"]}};
+  var ORDER = ["dashboard", "travel-index", "shoe-brand", "game-design", "kids-channel", "innovation-hub", "ewaste-recycling", "quantum-wearables"];
+  var GOLD = "#d4af37";
+  var SUB = "/KingDesignCollectiveinc";
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+
+  function buildHeader(){
+    if(document.querySelector(".kdc-grid-header")) return;
+    var h=document.createElement("div"); h.className="kdc-grid-header";
+    h.innerHTML='<h1>KINGDESIGNCOLLECTIVEINC</h1><p>Eight Pillars. One Intelligence. Infinite Impact.</p><span class="kdc-badge">Made with AI</span>';
+    var layer=document.querySelector(".content-overlay-layer");
+    if(layer) layer.parentNode.insertBefore(h, layer);
+  }
+  function buildFooter(){
+    if(document.querySelector(".kdc-grid-footer")) return;
+    var f=document.createElement("div"); f.className="kdc-grid-footer";
+    f.innerHTML='<div class="kdc-flogo">KINGDESIGNCOLLECTIVEINC</div><div class="kdc-ftag">Intelligence &bull; Innovation &bull; Impact</div><div class="kdc-crown">&#128081;</div>';
+    var layer=document.querySelector(".content-overlay-layer");
+    if(layer) layer.parentNode.insertBefore(f, layer.nextSibling);
+  }
+
+  // Dashboard panel (cell 1) — injected before the subsidiary cards
+  function buildDashboard(){
+    if(document.getElementById("kdc-dash-panel")) return;
+    var layer=document.querySelector(".content-overlay-layer"); if(!layer) return;
+    var d=PANELS["dashboard"];
+    var el=document.createElement("div");
+    el.className="hybrid-card"; el.id="kdc-dash-panel"; el.setAttribute("data-card-id","dashboard");
+    var stats=d.stats.map(function(s){return '<div class="kdc-stat"><b>'+esc(s[1])+'</b><span>'+esc(s[0])+'</span></div>';}).join("");
+    var thumbs=d.thumbs.map(function(t){return '<div class="kdc-thumb">'+esc(t)+'</div>';}).join("");
+    el.innerHTML='<div class="kdc-corner">KDCI</div>'
+      +'<div class="kdc-hero">&#128200;</div>'
+      +'<div class="kdc-panel-body">'
+      +'<div class="kdc-panel-title">Dashboard</div>'
+      +'<div class="kdc-stats">'+stats+'</div>'
+      +'<div class="kdc-thumbs">'+thumbs+'</div>'
+      +'<a class="kdc-panel-cta" href="'+location.pathname+'">Real-time intelligence &rarr;</a>'
+      +'</div>';
+    layer.insertBefore(el, layer.firstChild);
+  }
+
+  // Enrich each existing subsidiary card with hero/stats/thumbs
+  function enrich(){
+    document.querySelectorAll(".hybrid-card[data-card-id]").forEach(function(card){
+      var id=card.getAttribute("data-card-id");
+      if(id==="dashboard"||card.getAttribute("data-kdc-enriched")) return;
+      var d=PANELS[id]; if(!d) return;
+      card.setAttribute("data-kdc-enriched","1");
+      // capture existing link + title before we rebuild inner content
+      var link=card.querySelector("a[href]");
+      var href=link?link.getAttribute("href"):(SUB+"/"+id+"/");
+      var title=(card.querySelector("h1,h2,h3")||{}).textContent||id;
+      var icon=card.querySelector("svg,img,.icon")?card.querySelector("svg,img,.icon").outerHTML:"&#127758;";
+      var stats=d.stats.map(function(s){return '<div class="kdc-stat"><b>'+esc(s[1])+'</b><span>'+esc(s[0])+'</span></div>';}).join("");
+      var thumbs=d.thumbs.map(function(t){return '<div class="kdc-thumb">'+esc(t)+'</div>';}).join("");
+      card.innerHTML='<div class="kdc-corner">KDCI</div>'
+        +'<div class="kdc-hero">'+icon+'</div>'
+        +'<div class="kdc-panel-body">'
+        +'<div class="kdc-panel-title">'+esc(title)+'</div>'
+        +'<div class="kdc-stats">'+stats+'</div>'
+        +'<div class="kdc-thumbs">'+thumbs+'</div>'
+        +'<a class="kdc-panel-cta" href="'+esc(href)+'">Explore &rarr;</a>'
+        +'</div>';
+    });
+  }
+
+  function init(){
+    if(!document.querySelector(".hybrid-card")) return false;
+    buildHeader(); buildDashboard(); enrich(); buildFooter();
+    return true;
+  }
+  if(init())return;
+  var mo=new MutationObserver(function(){ if(init()) mo.disconnect(); });
+  mo.observe(document.body,{childList:true,subtree:true});
+  setTimeout(init,200); setTimeout(init,600); setTimeout(init,1500);
 })();
 </script></body></html>

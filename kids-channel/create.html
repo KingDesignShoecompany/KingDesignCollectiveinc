@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-kids-channel.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="calm-theme KingDesignCollectiveINC-kids-channel">
+<body class="calm-theme KingDesignCollectiveINC-kids-channel"><div id="kdc-header"><div class="kdc-brand">KingDesignCollectiveINC<span class="kdc-badge">250</span></div><button id="kdc-menu-btn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button><nav id="kdc-nav"></nav></div><button id="kdc-menu-btn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button><nav id="kdc-nav"></nav></div><button id="kdc-menu-btn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button><nav id="kdc-nav"></nav></div>
     <div class="stars-background"></div>
 
     <nav class="navbar">
@@ -173,17 +173,100 @@
     <script src="app.js"></script>
     <script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
     <script src="scripts/KingDesignCollectiveINC-kids-channel.js" defer></script>
-<style id="kdc-subpage">
-:root{--accent:#f72585}
-.nav-logo,.active,.nav-links a:hover{color:var(--accent)!important}
+<style id="kdc-subpage-chrome">
+:root{--accent:#d4af37}
+/* Diamond cursor — gold diamond on black, site-wide. Falls back to pointer. */
+html, body, a, button, [role="button"], input, select, textarea, label { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 1 L23 12 L12 23 L1 12 Z' fill='%23d4af37' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") 12 12, pointer; }
+/* hide the old standalone navbar; dashboard chrome replaces it */
+.navbar{display:none!important}
+/* prepended dashboard header */
+#kdc-header{position:sticky;top:0;z-index:300;background:rgba(13,15,17,.9);backdrop-filter:blur(10px);
+  border-bottom:1px solid hsla(0,0%,100%,.06);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative}
+#kdc-header .kdc-brand{font-family:Fraunces,serif;font-weight:700;color:#f0f0f0;display:flex;align-items:center;gap:8px}
+#kdc-header .kdc-badge{background:var(--accent);color:#050709;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:4px}
+#kdc-menu-btn{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:10px;
+  background:rgba(255,255,255,.05);border:1px solid hsla(0,0%,100%,.06);border-radius:8px;cursor:pointer}
+#kdc-menu-btn span{display:block;height:2px;width:100%;background:var(--accent);border-radius:2px;transition:transform .25s,opacity .25s}
+#kdc-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+#kdc-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+#kdc-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+#kdc-nav{position:absolute;top:100%;right:0;flex-direction:column;gap:0;margin:0;min-width:210px;padding:8px;
+  background:rgba(13,15,17,.97);backdrop-filter:blur(12px);border:1px solid hsla(0,0%,100%,.06);border-radius:10px;
+  box-shadow:0 6px 24px rgba(0,0,0,.45);opacity:0;visibility:hidden;transform:translateY(-8px);
+  transition:opacity .2s,transform .2s,visibility .2s;z-index:400}
+#kdc-header.kdc-open #kdc-nav{opacity:1;visibility:visible;transform:translateY(4px)}
+#kdc-nav a{display:block;padding:10px 14px;border-radius:6px;font-size:.8rem;color:#a0a0a0;text-decoration:none}
+#kdc-nav a:hover{background:#d4af371f;color:var(--accent)}
+#kdc-nav a.kdc-active{background:#d4af3726;color:var(--accent)}
+#kdc-nav .kdc-sub-label{padding:8px 14px 4px;font-size:.62rem;letter-spacing:1.5px;text-transform:uppercase;color:#a0a0a0;opacity:.7}
+#kdc-nav a.kdc-sub{padding-left:24px;font-size:.78rem}
+/* Kids Channel — kid-friendly cosmetic polish (larger type/spacing + gold #d4af37 accent on hover/active). Content & layout structure unchanged. */
+
+/* larger, friendlier spacing */
+.section { padding: 3.3rem 1.1rem; }
+.section-title { font-size: 2rem; margin-bottom: 2.2rem; }
+.story-grid { gap: 1.7rem; }
+.story-card { padding: 1.15rem; }
+.story-wizard { padding: 1.7rem; }
+.story-player-container { padding: 1.7rem; }
+.story-content { padding: 1.5rem; font-size: 1.08rem; line-height: 1.75; }
+.story-header { padding: 1.3rem; }
+.story-meta { padding: 0.9rem 0; font-size: 1rem; }
+.hero-title { font-size: 2.1rem; }
+.about-content { padding: 1.3rem; }
+.episode-card { padding: 1.1rem; }
+/* consistent gold accent on interactive states */
+.story-card:hover, .theme-card:hover, .episode-card:hover { border-color: #d4af37; }
+.nav-btn:hover, .cta-button:hover, .age-btn:hover, .theme-btn:hover,
+.audio-btn:hover, .control-btn:hover, .timer-btn:hover { border-color: #d4af37; color: #d4af37; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: #d4af37; }
+#kdc-nav a:hover, #kdc-nav a.kdc-active { color: #d4af37; }
+
+
+/* E-Waste Recycling — industrial-tuned polish (spacing/heading + gold #d4af37 accent on hover/active). Content & layout structure unchanged. */
+
+/* Travel/Vagary — polish (spacing/heading + gold #d4af37 hover/active/filter harmony). Content & layout structure unchanged. */
+
 </style>
-<script id="kdc-subpage-js">
+<script id="kdc-subpage-chrome-js">
 (function(){
-  // keep in-subdir absolute links safe (rewrite bare /<slug>/ to prefixed)
+  var SUB="/KingDesignCollectiveinc";var SELF="kids-channel";
+  var header=document.getElementById('kdc-header'),nav=document.getElementById('kdc-nav'),btn=document.getElementById('kdc-menu-btn');
+  if(!header||!nav||!btn)return;
+  // id-guard: never let a re-mount create a second Menu button / header
+  if(document.querySelectorAll('#kdc-menu-btn').length>1){
+    var extras=document.querySelectorAll('#kdc-menu-btn');
+    for(var i=1;i<extras.length;i++)extras[i].remove();
+    btn=document.getElementById('kdc-menu-btn');
+  }
+  var MAIN=[["/","Dashboard"],["/travel-index/","Travel"],["/shoe-brand/","Shoes"],["/game-design/","Games"],["/kids-channel/","Kids"],["/innovation-hub/","Innovation"],["/ewaste-recycling/","E-Waste"],["/quantum-wearables/","Quantum"]],SUBS=[["stories.html","Library"],["story-play.html","Player"],["create.html","Create"],["about.html","About"]];
+  function build(){
+    nav.innerHTML='';
+    MAIN.forEach(function(p){
+      var a=document.createElement('a');a.href=SUB+p[0];a.textContent=p[1];
+      if(p[0]==='/'+SELF+'/')a.classList.add('kdc-active');
+      nav.appendChild(a);
+    });
+    if(SUBS.length){
+      var lab=document.createElement('div');lab.className='kdc-sub-label';lab.textContent='kids-channel';nav.appendChild(lab);
+      SUBS.forEach(function(p){
+        var a=document.createElement('a');a.className='kdc-sub';a.href=SUB+'/'+SELF+'/'+p[0];a.textContent=p[1];
+        if(location.pathname.endsWith('/'+p[0]))a.classList.add('kdc-active');
+        nav.appendChild(a);
+      });
+    }
+  }
+  build();
+  function close(){header.classList.remove('kdc-open');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',function(e){e.stopPropagation();var o=header.classList.toggle('kdc-open');btn.setAttribute('aria-expanded',o?'true':'false');});
+  document.addEventListener('click',function(e){if(header.classList.contains('kdc-open')&&!header.contains(e.target))close();});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A')close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  // keep bare /<slug>/ links in-subdir
   document.addEventListener('click',function(e){
     var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;
     var h=a.getAttribute('href')||'';
-    if(/^\/([a-z-]+)\/$/.test(h)){e.preventDefault();location.href="/KingDesignCollectiveinc"+h;}
+    if(/^\/[a-z-]+\/$/.test(h)){e.preventDefault();location.href=SUB+h;}
   },true);
 })();
 </script></body>
