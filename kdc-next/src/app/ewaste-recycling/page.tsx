@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import PageFrame from '../../components/PageFrame';
 import GlassCard from '../../components/GlassCard';
 
@@ -5,12 +6,18 @@ export default function EWasteRecyclingPage() {
   return (
     <PageFrame title="E-Waste Recycling" subtitle="Streams, recovery rates, and metrics" badge="15,620 Reclaimed">
       <div className="card-grid">
-        <GlassCard corner="KDCI" hero="♻️" title="Input Streams" meta="Collection channels and volume"
-          stats={[['Collected', '12,540'], ['Sources', '48'], ['Daily', '320']]} thumbs={['Collect', 'Intake', 'Sort']} progress={82} />
-        <GlassCard corner="KDCI" hero="⚙️" title="Recovery Rate" meta="Precious-metal reclamation efficiency"
-          stats={[['Processed', '8,875'], ['Gold', '99.2%'], ['Copper', '97%']]} thumbs={['Smelt', 'Refine', 'Output']} progress={91} />
-        <GlassCard corner="KDCI" hero="📊" title="Material Breakdown" meta="Recovered commodities by mass"
-          stats={[['Reclaimed', '15,620'], ['Types', '12'], ['Value', '$2.1M']]} thumbs={['Gold', 'Copper', 'Palladium']} progress={87} />
+        <Link href="/KingDesignCollectiveinc/materials" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <GlassCard corner="KDCI" hero="♻️" title="Materials" meta="Recovery calculator and rates"
+            stats={[['Materials', '4'], ['Gold', '95%'], ['Copper', '92%']]} thumbs={['Gold', 'Copper', 'Palladium']} progress={91} />
+        </Link>
+        <Link href="/KingDesignCollectiveinc/logistics" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <GlassCard corner="KDCI" hero="🚚" title="Logistics" meta="Collection points, routes, and batches"
+            stats={[['Routes', '4'], ['Stops', '41'], ['Load', '14.7t']]} thumbs={['Pickup', 'Transit', 'Dropoff']} progress={82} />
+        </Link>
+        <Link href="/KingDesignCollectiveinc/reports" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <GlassCard corner="KDCI" hero="📊" title="Reports" meta="Treasury settlement, certificates, and impact"
+            stats={[['CO₂ Saved', '48t'], ['Diverted', '125t'], ['Compliance', 'PASS']]} thumbs={['Impact', 'Certs', 'Settle']} progress={87} />
+        </Link>
       </div>
     </PageFrame>
   );
