@@ -1,16 +1,24 @@
+import Link from 'next/link';
 import PageFrame from '../../components/PageFrame';
 import GlassCard from '../../components/GlassCard';
+import { TOTAL_PATENTS } from '../../data/innovation';
 
 export default function InnovationHubPage() {
   return (
-    <PageFrame title="Innovation Hub" subtitle="Concepts, prototypes, and signals" badge="45 Patents">
+    <PageFrame title="Innovation Hub" subtitle="Concepts, prototypes, and signals" badge={`${TOTAL_PATENTS} Patents`}>
       <div className="card-grid">
-        <GlassCard corner="KDCI" hero="💡" title="Concept Lab" meta="AI-powered idea generation"
-          stats={[['Ideas', '1,240'], ['Patents', '45'], ['R&D', '12']]} thumbs={['Lightbulb', 'Prototype', 'Lab']} progress={88} />
-        <GlassCard corner="KDCI" hero="🧪" title="Prototype Gallery" meta="Working builds and demos"
-          stats={[['Active', '12'], ['Shipped', '34'], ['Success', '98%']]} thumbs={['Hardware', 'Software', 'Hybrid']} progress={74} />
-        <GlassCard corner="KDCI" hero="📡" title="Signal Board" meta="Cross-subsidiary intelligence feed"
-          stats={[['Signals', '52K'], ['24/7', 'ON'], ['Latency', '12ms']]} thumbs={['Realtime', 'Trends', 'Alerts']} progress={96} />
+        <Link href="/KingDesignCollectiveinc/patents" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <GlassCard corner="KDCI" hero="📜" title="Patent Portfolio" meta="IP across all 7 subsidiaries"
+            stats={[['Patents', String(TOTAL_PATENTS)], ['Families', '7'], ['Value', '$2.4M']]} thumbs={['Filed', 'Pending', 'Granted']} progress={88} />
+        </Link>
+        <Link href="/KingDesignCollectiveinc/whitepapers" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <GlassCard corner="KDCI" hero="📄" title="White Papers" meta="Templates and IP disclosures"
+            stats={[['Papers', '15'], ['Templates', '4'], ['Drafts', '3']]} thumbs={['Technical', 'Business', 'IP']} progress={74} />
+        </Link>
+        <Link href="/KingDesignCollectiveinc/tech-stack" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <GlassCard corner="KDCI" hero="🧩" title="Tech Stack" meta="Local compute mesh and services"
+            stats={[['Nodes', '9'], ['Ports', '7'], ['Uptime', '99%']]} thumbs={['Services', 'Security', 'Mesh']} progress={96} />
+        </Link>
       </div>
     </PageFrame>
   );
