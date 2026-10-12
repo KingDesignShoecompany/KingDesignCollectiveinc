@@ -114,7 +114,26 @@ const ART: Record<string, React.ReactNode> = {
   ),
 };
 
+// Kinds backed by a real AI-generated hero image in public/heroes/.
+const IMG_KINDS = new Set(['globe', 'shoe', 'controller', 'cards', 'bulb', 'recycle', 'atom', 'crown']);
+
+// Map dashboard/subsidiary kinds -> image filenames.
+const IMG_NAME: Record<string, string> = {
+  globe: 'travel', shoe: 'shoes', controller: 'games', cards: 'kids',
+  bulb: 'innovation', recycle: 'ewaste', atom: 'quantum', crown: 'dashboard',
+};
+
 export default function HeroArt({ kind }: { kind: keyof typeof ART | string }) {
+  // Use the real AI-generated hero image if one exists for this kind.
+  if (IMG_KINDS.has(kind)) {
+    return (
+      <img
+        src={`/KingDesignCollectiveinc/heroes/${IMG_NAME[kind]}.png`}
+        alt={`${kind} hero`}
+        style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
+      />
+    );
+  }
   return (
     <svg viewBox="0 0 120 100" width="100%" height="100%" style={{ display: 'block' }} aria-hidden="true">
       <defs>
