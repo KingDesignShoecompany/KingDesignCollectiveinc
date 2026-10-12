@@ -1,0 +1,49 @@
+name: deploy-kdc-app
+
+# Build the Next.js app (kdc-next/) and deploy its static export to gh-pages,
+# replacing the legacy injected HTML site.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'kdc-next/**'
+      - '.github/workflows/deploy-kdc-app.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: kdc-next/package-lock.json
+
+      - name: Install deps
+        working-directory: kdc-next
+        run: npm ci || npm install
+
+      - name: Build static export
+        working-directory: kdc-next
+        run: npm run build
+
+      - name: Deploy out/ to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: kdc-next/out
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'KingDesign Shoe Company'
+          user_email: 'king@kingdesigncompany.com'
