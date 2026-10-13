@@ -23,7 +23,7 @@ export default function LogisticsPage() {
       </div>
 
       <div style={{ textAlign: 'center', marginTop: 24 }}>
-        <Link href="/KingDesignCollectiveinc/ewaste-recycling" className="btn-outline">← Back to E-Waste</Link>
+        <Link href="/KingDesignCollectiveinc/ewaste-recycling/" className="btn-outline">← Back to E-Waste</Link>
       </div>
     </PageFrame>
   );

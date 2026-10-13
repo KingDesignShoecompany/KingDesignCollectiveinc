@@ -15,7 +15,7 @@ export default function SafetyPage() {
       </div>
 
       <div style={{ textAlign: 'center', marginTop: 24 }}>
-        <Link href="/KingDesignCollectiveinc/quantum-wearables" className="btn-outline">← Back to Quantum</Link>
+        <Link href="/KingDesignCollectiveinc/quantum-wearables/" className="btn-outline">← Back to Quantum</Link>
       </div>
     </PageFrame>
   );

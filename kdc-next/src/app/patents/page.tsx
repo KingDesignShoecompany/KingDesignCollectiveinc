@@ -13,7 +13,7 @@ export default function PatentsPage() {
         ))}
       </div>
       <div style={{ textAlign: 'center', marginTop: 24 }}>
-        <Link href="/KingDesignCollectiveinc/innovation-hub" className="btn-outline">← Back to Innovation Hub</Link>
+        <Link href="/KingDesignCollectiveinc/innovation-hub/" className="btn-outline">← Back to Innovation Hub</Link>
       </div>
     </PageFrame>
   );

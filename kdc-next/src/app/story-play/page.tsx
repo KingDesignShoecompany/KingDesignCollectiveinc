@@ -144,7 +144,7 @@ function StoryPlayer() {
       </div>
 
       <div style={{ textAlign: 'center', marginTop: 20 }}>
-        <Link href="/KingDesignCollectiveinc/stories" className="btn-outline">← Back to Library</Link>
+        <Link href="/KingDesignCollectiveinc/stories/" className="btn-outline">← Back to Library</Link>
       </div>
     </div>
   );

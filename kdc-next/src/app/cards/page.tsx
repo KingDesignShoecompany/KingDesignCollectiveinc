@@ -42,7 +42,7 @@ export default function CardsPage() {
 
       <div className="card-grid">
         {filtered.map((c) => (
-          <Link key={c.id} href={`/KingDesignCollectiveinc/card-detail?card=${c.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link key={c.id} href={`/KingDesignCollectiveinc/card-detail/?card=${c.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="card-slot">
               <div className="card-image" style={{ background: `linear-gradient(160deg, ${ELEMENT_COLORS[c.element]}44, rgba(0,0,0,0.3))` }}>
                 <span className="rarity-badge" style={{ background: RARITY_COLORS[c.rarity] }}>{c.rarity}</span>

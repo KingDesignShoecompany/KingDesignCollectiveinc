@@ -12,7 +12,7 @@ export default function KidsChannelPage() {
       <HeroBanner kind="cards" title="Kids Channel" subtitle="Seven Minute Story Sessions" badge="Safe Mode: ON" />
       <PageFrame title="Library" subtitle="Seven Minute Story Sessions in a unified theme">
       <div className="card-grid">
-        <Link href="/KingDesignCollectiveinc/stories" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link href="/KingDesignCollectiveinc/stories/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <GlassCard corner="KDCI" hero="📚" title="Story Library" meta={`${STORIES.length} bedtime stories with read-along`}
             stats={[['Stories', String(STORIES.length)], ['Views', totalViews + 'K'], ['Rating', '9.7']]} thumbs={['Animals', 'Fantasy', 'Adventure']} progress={100} />
         </Link>

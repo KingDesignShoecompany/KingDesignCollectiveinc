@@ -10,15 +10,15 @@ export default function InnovationHubPage() {
       <HeroBanner kind="bulb" title="Innovation Hub" subtitle="Concepts, prototypes & signals" badge={`${TOTAL_PATENTS} Patents`} />
       <PageFrame title="Lab" subtitle="Concepts, prototypes, and signals">
       <div className="card-grid">
-        <Link href="/KingDesignCollectiveinc/patents" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link href="/KingDesignCollectiveinc/patents/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <GlassCard corner="KDCI" hero="📜" title="Patent Portfolio" meta="IP across all 7 subsidiaries"
             stats={[['Patents', String(TOTAL_PATENTS)], ['Families', '7'], ['Value', '$2.4M']]} thumbs={['Filed', 'Pending', 'Granted']} progress={88} />
         </Link>
-        <Link href="/KingDesignCollectiveinc/whitepapers" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link href="/KingDesignCollectiveinc/whitepapers/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <GlassCard corner="KDCI" hero="📄" title="White Papers" meta="Templates and IP disclosures"
             stats={[['Papers', '15'], ['Templates', '4'], ['Drafts', '3']]} thumbs={['Technical', 'Business', 'IP']} progress={74} />
         </Link>
-        <Link href="/KingDesignCollectiveinc/tech-stack" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link href="/KingDesignCollectiveinc/tech-stack/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <GlassCard corner="KDCI" hero="🧩" title="Tech Stack" meta="Local compute mesh and services"
             stats={[['Nodes', '9'], ['Ports', '7'], ['Uptime', '99%']]} thumbs={['Services', 'Security', 'Mesh']} progress={96} />
         </Link>

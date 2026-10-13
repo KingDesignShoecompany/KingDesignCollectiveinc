@@ -12,7 +12,7 @@ export default function ShoeBrandPage() {
       <HeroBanner kind="shoe" title="KingDesignShoe Co." subtitle="Premium footwear in black & gold" badge={`${totalStock.toLocaleString()} In Stock`} />
       <PageFrame title="Catalog" subtitle="Premium footwear in black & gold">
       <div className="card-grid">
-        <Link href="/KingDesignCollectiveinc/products" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link href="/KingDesignCollectiveinc/products/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <GlassCard corner="KDCI" hero="👟" title="Browse Catalog" meta={`${PRODUCTS.length} premium silhouettes`}
             stats={[['In Stock', totalStock.toLocaleString()], ['Models', String(PRODUCTS.length)], ['From', '$119']]} thumbs={['Running', 'Lifestyle', 'Trail']} progress={92} />
         </Link>

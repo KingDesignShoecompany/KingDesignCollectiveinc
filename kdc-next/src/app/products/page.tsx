@@ -35,7 +35,7 @@ export default function ProductsPage() {
 
       <div className="card-grid">
         {filtered.map((p) => (
-          <Link key={p.id} href={`/KingDesignCollectiveinc/product-detail?sku=${p.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link key={p.id} href={`/KingDesignCollectiveinc/product-detail/?sku=${p.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="glass-card">
               <div className="glass-card-corner">KDCI</div>
               <div className="glass-card-hero">👟</div>

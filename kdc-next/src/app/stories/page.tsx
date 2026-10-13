@@ -38,7 +38,7 @@ export default function StoriesPage() {
 
       <div className="card-grid">
         {filtered.map((s) => (
-          <Link key={s.id} href={`/KingDesignCollectiveinc/story-play?sid=${s.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link key={s.id} href={`/KingDesignCollectiveinc/story-play/?sid=${s.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="story-card">
               <div className="story-hero">{s.emoji}</div>
               <div className="story-body">
