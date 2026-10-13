@@ -30,13 +30,41 @@ function StoryPlayer() {
   const [elapsed, setElapsed] = useState(0);
   const [view, setView] = useState<'read' | 'chapters'>('read');
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  // audioFailed flips true if a real file errors out — we then fall back to the
+  // simulated clock and re-show the honest "audio coming soon" badge.
+  const [audioFailed, setAudioFailed] = useState(false);
+  const hasRealAudio = !!story.audio && !audioFailed;
 
-  // Simulated playback clock (no audio files bundled; real audio would drive this via timeupdate)
+  // Real audio drives the clock when a file is present and loadable.
   useEffect(() => {
-    if (!playing) return;
+    if (!hasRealAudio) return;
+    const el = audioRef.current;
+    if (!el) return;
+    const onTime = () => setElapsed(Math.floor(el.currentTime));
+    const onErr = () => setAudioFailed(true);
+    el.addEventListener('timeupdate', onTime);
+    el.addEventListener('error', onErr);
+    return () => {
+      el.removeEventListener('timeupdate', onTime);
+      el.removeEventListener('error', onErr);
+    };
+  }, [hasRealAudio]);
+
+  // Simulated playback clock — used when no real audio (all stories currently),
+  // or as the honest fallback when a file fails to load.
+  useEffect(() => {
+    if (!playing || hasRealAudio) return;
     const t = setInterval(() => setElapsed((e) => Math.min(e + 1, TOTAL)), 1000);
     return () => clearInterval(t);
-  }, [playing]);
+  }, [playing, hasRealAudio]);
+
+  // Keep the <audio> element in sync with the play/pause button.
+  useEffect(() => {
+    const el = audioRef.current;
+    if (!el || !hasRealAudio) return;
+    if (playing) el.play().catch(() => setAudioFailed(true));
+    else el.pause();
+  }, [playing, hasRealAudio]);
 
   // read-along: split text into 3 chapters, highlight active paragraph by progress
   const chapters = useMemo(() => {
@@ -82,6 +110,15 @@ function StoryPlayer() {
         </div>
 
         {story.audio && <audio ref={audioRef} src={story.audio} preload="none" />}
+
+        {!hasRealAudio && (
+          <div className="audio-honest-note">
+            <span className="audio-badge">Story Timer — audio coming soon</span>
+            <span className="audio-note-sub">
+              Works fully offline; narration will be added when available.
+            </span>
+          </div>
+        )}
 
         <div className="filter-row" style={{ marginBottom: 16 }}>
           <button className={'filter-btn' + (view === 'read' ? ' active' : '')} onClick={() => setView('read')}>Read Along</button>
