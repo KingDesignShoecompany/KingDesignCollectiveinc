@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, Suspense } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import PageFrame from '../../components/PageFrame';
 import { usePurchases } from '../../hooks/usePurchases';
@@ -23,7 +23,24 @@ function CountryDetailInner() {
   const [tab, setTab] = useState('Overview');
   const { isUnlocked, buyCountry, buyBundle } = usePurchases();
   const unlocked = isUnlocked(country);
-  const capital = CAPITALS[country] || '—';
+  // Prefer the snapshot's own capital (208/255 rows) over the 49-entry
+  // hardcoded name→capital map, which shows '—' for most countries.
+  const [snapCapital, setSnapCapital] = useState<string | null>(null);
+  const capital = snapCapital || CAPITALS[country] || '—';
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/KingDesignCollectiveinc/data/countries.json')
+      .then((r) => r.json())
+      .then((d: { items: Array<{ name: string; capital?: string | null }> }) => {
+        if (cancelled) return;
+        setSnapCapital(d.items.find((i) => i.name === country)?.capital || null);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [country]);
 
   return (
     <PageFrame title={country} subtitle={`Capital: ${capital}`} badge="Vagary Guide">

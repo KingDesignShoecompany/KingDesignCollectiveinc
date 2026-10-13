@@ -95,22 +95,16 @@ const REGION_MAP: Record<string, string> = {
   south_asia_1: 'South Asia',
   polar_micro: 'Unclassified',
   unclassified: 'Unclassified',
-  // Identity: canonical values must map to themselves (idempotence).
-  'east asia': 'East Asia',
-  'southeast asia': 'Southeast Asia',
-  'south asia': 'South Asia',
-  'middle east': 'Middle East',
-  europe: 'Europe',
-  africa: 'Africa',
-  'north america': 'North America',
-  'south america': 'South America',
-  oceania: 'Oceania',
 };
 
 export function normalizeRegion(raw: unknown): string {
   const key = String(raw ?? '').trim().toLowerCase();
   if (!key) return 'Unclassified';
-  return REGION_MAP[key] ?? 'Unclassified';
+  const mapped = REGION_MAP[key];
+  // Idempotence by construction: a canonical name lowercased maps to itself.
+  if (mapped) return mapped;
+  const canonical = REGION_ORDER.find((r) => r.toLowerCase() === key);
+  return canonical ?? 'Unclassified';
 }
 
 export type Country = { name: string; region: string; code: string };

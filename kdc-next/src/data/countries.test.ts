@@ -70,6 +70,26 @@ describe('loadCountries — never-blank fallbacks', () => {
     const { rows } = await loadCountries();
     expect(rows[0].region).toBe('Unclassified');
   });
+
+  it('preserves the snapshot capital (richer than the hardcoded name map)', async () => {
+    vi.stubGlobal(
+      'fetch',
+      offlineFetch({
+        items: [
+          { code: 'JPN', name: 'Japan', region: 'East Asia', lat: 35.67, lon: 139.77, capital: 'Tokyo' },
+          { code: 'ALA', name: 'Aland', region: 'Europe', lat: 60.17, lon: 19.93, capital: 'Mariehamn' },
+          { code: 'NOC', name: 'No Capital', region: 'Europe', lat: 1, lon: 1 },
+        ],
+      })
+    );
+    const { rows } = await loadCountries();
+    const byName = new Map(rows.map((r) => [r.name, r]));
+    expect(byName.get('Japan')?.capital).toBe('Tokyo');
+    // 'Aland' is absent from the hardcoded CAPITALS map in travel.ts — the
+    // snapshot's own capital is what makes the detail page show a real value.
+    expect(byName.get('Aland')?.capital).toBe('Mariehamn');
+    expect(byName.get('No Capital')?.capital).toBeNull();
+  });
 });
 
 describe('visit state — localStorage fallback', () => {
