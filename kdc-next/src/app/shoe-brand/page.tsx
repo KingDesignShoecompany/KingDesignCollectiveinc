@@ -22,7 +22,7 @@ export default function ShoeBrandPage() {
             <GlassCard corner="KDCI" hero="📦" title="Product Detail" meta="Sizes, materials, and add-to-cart"
               stats={[['Sizes', '5–14'], ['Colors', '6'], ['Materials', '6']]} thumbs={['Side', 'Detail', 'Box']} progress={85} />
           </Link>
-          <Link href="/products/" style={cardStyle}>
+          <Link href="/cart/" style={cardStyle}>
             <GlassCard corner="KDCI" hero="🛒" title="Checkout" meta="Demo cart — add items and review"
               stats={[['Shipping', '24h'], ['Returns', '30d'], ['Warranty', '1yr']]} thumbs={['Cart', 'Address', 'Pay']} progress={78} />
           </Link>
