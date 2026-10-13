@@ -90,6 +90,33 @@ describe('loadCountries — never-blank fallbacks', () => {
     expect(byName.get('Aland')?.capital).toBe('Mariehamn');
     expect(byName.get('No Capital')?.capital).toBeNull();
   });
+
+  it('normalizes the LIVE API branch regions to canonical names too', async () => {
+    // The live API returns raw slugified labels; the loader must normalize them
+    // so live and offline branches show the same taxonomy.
+    const fetchMock = vi.fn((url: string) => {
+      if (String(url).startsWith(API)) {
+        return Promise.resolve({
+          ok: true,
+          json: async () => ({
+            items: [
+              { code: 'DEU', name: 'Germany', region: 'mena' },
+              { code: 'JPN', name: 'Japan', region: 'East Asia' },
+              { code: 'FJI', name: 'Fiji', region: 'oceania' },
+            ],
+          }),
+        });
+      }
+      return Promise.resolve({ ok: true, json: async () => ({ items: [] }) });
+    });
+    vi.stubGlobal('fetch', fetchMock);
+    const { rows, mode } = await loadCountries();
+    expect(mode).toBe('live');
+    const byName = new Map(rows.map((r) => [r.name, r]));
+    expect(byName.get('Germany')?.region).toBe('Middle East');
+    expect(byName.get('Japan')?.region).toBe('East Asia');
+    expect(byName.get('Fiji')?.region).toBe('Oceania');
+  });
 });
 
 describe('visit state — localStorage fallback', () => {

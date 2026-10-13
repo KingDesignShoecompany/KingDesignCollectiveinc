@@ -3,6 +3,7 @@
 // Always returns rows and the mode; never throws.
 
 import { api, type Country, type Mode, type VisitState } from '../lib/vagary';
+import { normalizeRegion } from './travel';
 export type { Country, Mode, VisitState };
 
 type Snapshot = {
@@ -29,7 +30,9 @@ function normalize(raw: any): Country {
   return {
     code: raw.code,
     name: raw.name,
-    region: String(raw.region || 'Unclassified').trim() || 'Unclassified',
+    // Normalize BOTH the live API's raw labels and the snapshot's, so the UI
+    // shows one canonical taxonomy regardless of which branch served the data.
+    region: normalizeRegion(raw.region),
     lat: num(raw.lat),
     lon: num(raw.lon),
     capital: raw.capital ?? null,
