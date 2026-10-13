@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useCart } from '../hooks/useCart';
 
 const PAGES = [
   { href: '/', label: 'Dashboard', ico: '◈' },
@@ -16,12 +17,19 @@ const PAGES = [
 
 export default function Sidebar() {
   const pathname = usePathname() || '';
+  const { count } = useCart();
 
   return (
     <aside className="app-sidebar">
       <div className="brand-row">
         <div className="brand-title">KingDesignCollectiveINC</div>
-        <span className="brand-badge">250</span>
+        {count > 0 ? (
+          <Link href="/cart/" className="brand-badge" title={`${count} item${count === 1 ? '' : 's'} in cart`}>
+            {count}
+          </Link>
+        ) : (
+          <span className="brand-badge">250</span>
+        )}
       </div>
 
       <div className="nav-section-title">Navigation</div>
