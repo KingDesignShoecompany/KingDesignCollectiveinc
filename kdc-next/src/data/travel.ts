@@ -52,6 +52,67 @@ export function getCountryCode(name: string): string {
   return CODE_MAP[name] || "XX";
 }
 
+// Canonical region taxonomy. The committed snapshot mixes WorldBank labels
+// ("Europe & Central Asia") with slugified internal labels ("mena",
+// "south_asia_1", "east_asia_block2"); normalizeRegion collapses both onto one
+// human-readable set so the country list shows 10 filter buckets, not 23.
+export const REGION_ORDER = [
+  'East Asia',
+  'Southeast Asia',
+  'South Asia',
+  'Middle East',
+  'Europe',
+  'Africa',
+  'North America',
+  'South America',
+  'Oceania',
+  'Unclassified',
+] as const;
+
+const REGION_MAP: Record<string, string> = {
+  // WorldBank human-readable labels
+  'europe & central asia': 'Europe',
+  'latin america & caribbean': 'South America',
+  'sub-saharan africa': 'Africa',
+  'east asia & pacific': 'East Asia',
+  'middle east, north africa, afghanistan & pakistan': 'Middle East',
+  'north america': 'North America',
+  'south asia': 'South Asia',
+  // Slugified internal labels
+  mena: 'Middle East',
+  middle_east: 'Middle East',
+  ssa: 'Africa',
+  africa: 'Africa',
+  north_america: 'North America',
+  oceania: 'Oceania',
+  south_america: 'South America',
+  americas: 'South America',
+  sea2: 'Southeast Asia',
+  east_asia: 'East Asia',
+  east_asia_block2: 'East Asia',
+  europe: 'Europe',
+  central_asia: 'South Asia',
+  south_asia_1: 'South Asia',
+  polar_micro: 'Unclassified',
+  unclassified: 'Unclassified',
+  // Identity: canonical values must map to themselves (idempotence).
+  'east asia': 'East Asia',
+  'southeast asia': 'Southeast Asia',
+  'south asia': 'South Asia',
+  'middle east': 'Middle East',
+  europe: 'Europe',
+  africa: 'Africa',
+  'north america': 'North America',
+  'south america': 'South America',
+  oceania: 'Oceania',
+};
+
+export function normalizeRegion(raw: unknown): string {
+  const key = String(raw ?? '').trim().toLowerCase();
+  if (!key) return 'Unclassified';
+  return REGION_MAP[key] ?? 'Unclassified';
+}
+
 export type Country = { name: string; region: string; code: string };
 
 export const ALL_COUNTRIES: Country[] = [];
