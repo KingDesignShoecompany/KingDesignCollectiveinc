@@ -37,7 +37,7 @@ function TravelContent() {
       <HeroBanner kind="globe" title="Travel Index" subtitle="Regions, bundles & voyage map" badge={`${count} Countries`} />
       <PageFrame title="Explore" subtitle="Vagary engine — regions, bundles, and world map">
         <div className="card-grid">
-          <Link href="/KingDesignCollectiveinc/country/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link href="/country/" style={{ textDecoration: 'none', color: 'inherit' }}>
             <GlassCard corner="KDCI" hero="🌐" title="Browse Countries" meta={`All ${count} verified country guides`}
               stats={[['Visited', '29'], ['Planning', '0'], ['Unvisited', '221']]} thumbs={['Search', 'Filter', 'Buy']} progress={12} />
           </Link>

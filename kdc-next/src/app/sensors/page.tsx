@@ -23,7 +23,7 @@ export default function SensorsPage() {
       </div>
 
       <div style={{ textAlign: 'center', marginTop: 24 }}>
-        <Link href="/KingDesignCollectiveinc/quantum-wearables/" className="btn-outline">← Back to Quantum</Link>
+        <Link href="/quantum-wearables/" className="btn-outline">← Back to Quantum</Link>
       </div>
     </PageFrame>
   );

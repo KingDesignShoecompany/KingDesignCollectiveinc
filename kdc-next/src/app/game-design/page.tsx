@@ -10,7 +10,7 @@ export default function GameDesignPage() {
       <HeroBanner kind="controller" title="Aura Champions" subtitle="Elemental deck UI in holographic frames" badge="12.5K Players" />
       <PageFrame title="Arena" subtitle="Elemental deck UI in holographic frames">
       <div className="card-grid">
-        <Link href="/KingDesignCollectiveinc/cards/" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link href="/cards/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <GlassCard corner="KDCI" hero="🎴" title="Card Database" meta={`${CARDS.length} cards across 5 rarities`}
             stats={[['Cards', String(CARDS.length)], ['Rarities', '5'], ['Elements', '7']]} thumbs={['Convergence', 'Legendary', 'Epic']} progress={88} />
         </Link>

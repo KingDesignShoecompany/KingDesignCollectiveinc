@@ -122,7 +122,7 @@ export default function CountriesPage() {
         {filtered.map((c) => (
           <Link
             key={c.name + c.code}
-            href={`/KingDesignCollectiveinc/country-detail/?country=${encodeURIComponent(c.name)}`}
+            href={`/country-detail/?country=${encodeURIComponent(c.name)}`}
             style={{ textDecoration: 'none' }}
           >
             <div className="country-card">
