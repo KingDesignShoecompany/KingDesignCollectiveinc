@@ -1,5 +1,5 @@
 {
-  "project": "kingdesigncollectiveinc",
+  "project": "vagary_index",
   "template_id": "parallel_content_generation_v1",
   "description": "Parallelizable per-country asset generation template for workforce agent execution.",
   "execution_model": {
@@ -50,7 +50,7 @@
         "source_citations"
       ],
       "filename_map": "{country_code}_{asset_id}.json",
-      "output_dir": "C:/Users/young/agents/kingdesigncollectiveinc/batch_output/sea2_textual/{country_code}"
+      "output_dir": "C:/Users/young/agents/vagary_index/batch_output/sea2_textual/{country_code}"
     }
   }
 }

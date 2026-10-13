@@ -4,7 +4,7 @@
 
 AMPLITUDE_INTELLIGENCE_SPEC = {
     "doc": "18. AMPLITUDE INTELLIGENCE SPEC",
-    "purpose": "Mathematical backbone for the KingDesignCollectiveINC Travel Intelligence Engine",
+    "purpose": "Mathematical backbone for the Vagary Index Travel Intelligence Engine",
 
     "A": {
         "title": "AMPLITUDE VECTOR STRUCTURE",

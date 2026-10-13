@@ -1,5 +1,5 @@
 # TikTok Content Pillar Rotation Plan
-## TheKingDesignCollectiveINCIndex
+## TheVagaryIndex
 ### Channels: Solo travel tips, Couple travel content, Guide promotions
 Objective: convert top-of-funnel viewers into guide buyers and email subscribers.
 
@@ -21,8 +21,8 @@ Day 7 - Solo / Couples mixed preview
 - Hook: 0-3s benefit/stakes
 - Body: 8-22s proof or tip
 - CTA: 1s closing
-- Branding: watermark @TheKingDesignCollectiveINCIndex
-- CTA: Link in Bio = The KingDesignCollectiveINC Shop
+- Branding: watermark @TheVagaryIndex
+- CTA: Link in Bio = The Vagary Index Shop
 
 ## Solo travel tips
 Hook: "One country, one wrong turn, one unforgettable night."

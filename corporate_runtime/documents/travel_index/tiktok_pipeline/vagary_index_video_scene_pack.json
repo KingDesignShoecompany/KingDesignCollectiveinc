@@ -1,0 +1,469 @@
+{
+  "scenes": [
+    {
+      "scene_id": "scene_day1_brand_reveal",
+      "day": 1,
+      "goal": "Establish Vagary Index as a guide-plus-hardware travel system.",
+      "style": "cyberpunk_futuristic",
+      "palette": [
+        "cyan",
+        "purple",
+        "electric_blue"
+      ],
+      "video_clips": [
+        {
+          "order": 1,
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "cyberpunk city night",
+            "digital interface reveal",
+            "dark tech UI overlay"
+          ],
+          "duration_sec": 4
+        },
+        {
+          "order": 2,
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "travel route map abstract",
+            "grid of destinations",
+            "data flow travel map"
+          ],
+          "duration_sec": 4
+        },
+        {
+          "order": 3,
+          "asset_type": "product_overlay",
+          "reference": "vagary_index_storefront",
+          "duration_sec": 6
+        }
+      ],
+      "text_overlays": [
+        {
+          "phase": "hook",
+          "copy": "Travel is changing forever..."
+        },
+        {
+          "phase": "body",
+          "copy": "Digital Guides + Travel Hardware"
+        },
+        {
+          "phase": "cta",
+          "copy": "Hit the link to browse the index."
+        }
+      ],
+      "voiceover": {
+        "profile_tags": [
+          "deep tech",
+          "cinematic trailer",
+          "authoritative corporate"
+        ],
+        "script": "The old way of traveling is dead. Welcome to Vagary Index. We don't just find destinations—we optimize your entire deployment. Get the ultimate digital pocket guide and gear up with region-specific essentials at our online command center. Lock in.",
+        "music": "trending electronic or phonk beat"
+      },
+      "audio_effects": [
+        "glitch_transition",
+        "ui_blip",
+        "swish_transition"
+      ]
+    },
+    {
+      "scene_id": "scene_day2_tokyo_deploy",
+      "day": 2,
+      "goal": "Convert the Tokyo destination into a guide-plus-hardware purchase.",
+      "style": "cyberpunk_futuristic",
+      "palette": [
+        "cyan",
+        "purple",
+        "electric_blue",
+        "neon pink"
+      ],
+      "video_clips": [
+        {
+          "order": 1,
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "tokyo streets neon",
+            "tokyo nightlife",
+            "shibuya crossing"
+          ],
+          "duration_sec": 5
+        },
+        {
+          "order": 2,
+          "asset_type": "product_shot",
+          "reference": "gear-tech-organizer",
+          "generator_keywords": [
+            "minimalist tech organizer",
+            "premium travel pouch"
+          ],
+          "duration_sec": 4
+        },
+        {
+          "order": 3,
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "digital pocket guide ipad display",
+            "futuristic travel app UI"
+          ],
+          "duration_sec": 4
+        }
+      ],
+      "text_overlays": [
+        {
+          "phase": "hook",
+          "copy": "Tokyo requires a different setup."
+        },
+        {
+          "phase": "body",
+          "copy": "Tokyo Pocket Guide & Tech Gear Active"
+        },
+        {
+          "phase": "cta",
+          "copy": "Get your region loadout at the link."
+        }
+      ],
+      "voiceover": {
+        "profile_tags": [
+          "deep tech",
+          "cinematic trailer"
+        ],
+        "script": "Data upload complete. Destination: Tokyo, Japan. To navigate the neon capital, you need the right data and the right loadout. Download the Tokyo Pocket Guide and grab our ultra-packable tech organizers directly from the storefront before you fly.",
+        "music": "trending electronic or phonk beat"
+      },
+      "audio_effects": [
+        "data_upload_hum",
+        "ui_blip",
+        "scanning_city_ambient"
+      ]
+    },
+    {
+      "scene_id": "scene_day3_checklist_panic",
+      "day": 3,
+      "goal": "Capture last-minute travel panic and resolve it into checklist items or bundles.",
+      "style": "cyberpunk_futuristic",
+      "palette": [
+        "red_alert_tint",
+        "electric_blue",
+        "cyan"
+      ],
+      "video_clips": [
+        {
+          "order": 1,
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "packing suitcase urgently",
+            "airport anxiety",
+            "terminal movement"
+          ],
+          "duration_sec": 5
+        },
+        {
+          "order": 2,
+          "asset_type": "product_overlay",
+          "reference": "vagary_index_checkout_checklist",
+          "duration_sec": 5
+        }
+      ],
+      "text_overlays": [
+        {
+          "phase": "hook",
+          "copy": "Forgetting something?"
+        },
+        {
+          "phase": "body",
+          "copy": "Last-Minute Checklist Items Available"
+        },
+        {
+          "phase": "cta",
+          "copy": "Clear your checklist. Link in bio."
+        }
+      ],
+      "voiceover": {
+        "profile_tags": [
+          "deep tech",
+          "authoritative corporate",
+          "slightly urgent"
+        ],
+        "script": "Flight leaves in 12 hours and you're spinning. Stop guessing. The Vagary Index store has your automated last-minute checklist ready. From biometric locks to compressed gear pods, we ship what you forgot.",
+        "music": "trending electronic or phonk beat"
+      },
+      "audio_effects": [
+        "alert_sweep",
+        "packing_room_tambien",
+        "system_ping"
+      ]
+    },
+    {
+      "scene_id": "scene_day4_unboxing_demo",
+      "day": 4,
+      "goal": "Demonstrate the guide and hardware workflow as one combined system.",
+      "style": "cyberpunk_futuristic",
+      "palette": [
+        "cyan",
+        "purple",
+        "neon_blue"
+      ],
+      "framing": "split_screen",
+      "video_clips": [
+        {
+          "order": 1,
+          "side": "left",
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "tablet travel guide app demo",
+            "cyberpunk pocket guide UI",
+            "augmented map view"
+          ],
+          "duration_sec": 6
+        },
+        {
+          "order": 2,
+          "side": "right",
+          "asset_type": "product_video",
+          "reference": "bundle-tokyo-deploy",
+          "duration_sec": 6
+        }
+      ],
+      "text_overlays": [
+        {
+          "phase": "hook",
+          "copy": "Upgrade your travel asset file."
+        },
+        {
+          "phase": "body",
+          "copy": "Interactive Guides + Curated Travel Essentials"
+        },
+        {
+          "phase": "cta",
+          "copy": "Build your bundle online today."
+        }
+      ],
+      "voiceover": {
+        "profile_tags": [
+          "deep tech",
+          "cinematic trailer"
+        ],
+        "script": "This isn't a travel agency; it's an upgrade package. Secure the interactive pocket guide for your next destination, and unlock access to curated, region-specific travel gear tailored precisely to your itinerary.",
+        "music": "trending electronic or phonk beat"
+      },
+      "audio_effects": [
+        "packaging_unbox",
+        "ui_tap",
+        "system_ping",
+        "hardware_lock_click"
+      ]
+    },
+    {
+      "scene_id": "scene_day5_pov_flirt",
+      "day": 5,
+      "goal": "Create emotional FOMO via destination POV and minimal narration.",
+      "style": "cyberpunk_futuristic",
+      "palette": [
+        "cyan",
+        "purple",
+        "warm_sunset_tint"
+      ],
+      "video_clips": [
+        {
+          "order": 1,
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "infinity pool cliffside",
+            "first person swim view",
+            "hidden luxury resort"
+          ],
+          "duration_sec": 8
+        },
+        {
+          "order": 2,
+          "asset_type": "cta_still",
+          "reference": "vagary_index_storefront",
+          "duration_sec": 4
+        }
+      ],
+      "text_overlays": [
+        {
+          "phase": "hook",
+          "copy": "POV: You downloaded the Vagary Index guide, checked off the ultimate gear list, and arrived flawlessly."
+        },
+        {
+          "phase": "cta",
+          "copy": "Stop dreaming. Start indexing. Store link in bio."
+        }
+      ],
+      "voiceover": null,
+      "audio_strategy": "Moody electronic or synth-wave track with clean audio drop at CTA.",
+      "audio_effects": [
+        "sub_bass",
+        "water_splash_filtered",
+        "drop_tone"
+      ]
+    },
+    {
+      "scene_id": "scene_day6_smart_traveler",
+      "day": 6,
+      "goal": "Appeal to business travelers, nomads, and minimal packers.",
+      "style": "cyberpunk_futuristic",
+      "palette": [
+        "cyan",
+        "electric_blue",
+        "neutral_shadow"
+      ],
+      "video_clips": [
+        {
+          "order": 1,
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "airport security minimalist luggage",
+            "frictionless travel",
+            "airport walk & roll"
+          ],
+          "duration_sec": 5
+        },
+        {
+          "order": 2,
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "beach remote workspace laptop",
+            "digital nomad workspace",
+            "minimal office travel"
+          ],
+          "duration_sec": 5
+        }
+      ],
+      "text_overlays": [
+        {
+          "phase": "hook",
+          "copy": "How smart travelers pack light."
+        },
+        {
+          "phase": "body",
+          "copy": "Digital Nomad Guides & Remote Gear"
+        },
+        {
+          "phase": "cta",
+          "copy": "Shop the essential loadout now."
+        }
+      ],
+      "voiceover": {
+        "profile_tags": [
+          "deep tech",
+          "authoritative corporate"
+        ],
+        "script": "Elite travel requires frictionless movement. We indexed the world's best remote hotspots and paired them with the exact hardware you need to stay online anywhere on earth. One site. Total preparation.",
+        "music": "trending electronic or phonk beat"
+      },
+      "audio_effects": [
+        "airport_announce_muffled",
+        "typing_work_key",
+        "transport_woosh"
+      ]
+    },
+    {
+      "scene_id": "scene_day7_inventory_push",
+      "day": 7,
+      "goal": "Use scarcity, restock proof, and shipping cutoff to convert.",
+      "style": "cyberpunk_futuristic",
+      "palette": [
+        "cyan",
+        "purple",
+        "electric_blue",
+        "green_ready_tint"
+      ],
+      "video_clips": [
+        {
+          "order": 1,
+          "asset_type": "b_roll",
+          "generator_keywords": [
+            "fast cut montage",
+            "multiple destinations compilation",
+            "week recap visual"
+          ],
+          "duration_sec": 6
+        },
+        {
+          "order": 2,
+          "asset_type": "product_overlay",
+          "reference": "vagary_index_storefront",
+          "duration_sec": 5
+        },
+        {
+          "order": 3,
+          "asset_type": "motion_graphic",
+          "generator_keywords": [
+            "cyberpunk cargo container",
+            "READY FOR DEPLOYMENT",
+            "holographic package status"
+          ],
+          "duration_sec": 4
+        }
+      ],
+      "text_overlays": [
+        {
+          "phase": "hook",
+          "copy": "Your next trip is counting down."
+        },
+        {
+          "phase": "body",
+          "copy": "Guides & Gear Inventory: LIVE"
+        },
+        {
+          "phase": "cta",
+          "copy": "Complete your checklist at the link."
+        }
+      ],
+      "voiceover": {
+        "profile_tags": [
+          "deep tech",
+          "cinematic trailer",
+          "authoritative corporate"
+        ],
+        "script": "Data drop complete. 5 new regions indexed. If you are flying out next week, your countdown has begun. Secure your pocket guide and clear your last-minute gear checklist before the weekend shipping cutoff.",
+        "music": "trending electronic or phonk beat"
+      },
+      "audio_effects": [
+        "countdown_tick",
+        "swish_transition",
+        "shipping_alert",
+        "system_ready_chime"
+      ]
+    }
+  ],
+  "voice": {
+    "target": "deep tech cinematic authoritative corporate",
+    "notes": "Use TTS or clone provider with this profile for all spoken lines unless a scene is explicitly silence."
+  },
+  "audio": {
+    "ambient": "trending electronic or phonk",
+    "synthwave_drop": true,
+    "sfx_palette": [
+      "glitch",
+      "swish",
+      "ui_blip",
+      "system_ping",
+      "alert_sweep",
+      "countdown_tick",
+      "system_ready_chime"
+    ]
+  },
+  "script_vocabulary": {
+    "replace_phrases": {
+      "buy clothes": "secure your loadout",
+      "travel store": "hardware deployment interface",
+      "travel agency": "deployment system",
+      "create a trip": "index your route",
+      "packing list": "system checklist",
+      "shop deals": "sync your capital stack",
+      "order gear": "initiate restock",
+      "final checkout": "deploy order"
+    },
+    "cta_style": [
+      "Lock in.",
+      "Deploy.",
+      "Sync your checklist.",
+      "System restock.",
+      "Index the grid."
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""KingDesignCollectiveINC Omega Codex (Sealed Edition)."""
+"""Vagary Index Omega Codex (Sealed Edition)."""
 
 OMEGA_CODEX = {
-    "name": "KingDesignCollectiveINCIndexOmegaCodex",
+    "name": "VagaryIndexOmegaCodex",
     "type": "Sealed, immutable, unalterable final codex",
     "seal": "OmegaSeal — prevents further evolution",
     "sealed": True,

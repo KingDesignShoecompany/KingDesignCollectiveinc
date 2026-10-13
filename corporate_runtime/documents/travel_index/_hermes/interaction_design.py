@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # 15. INTERACTION DESIGN SYSTEM
 # Micro-interactions, motion rules, amplitude-adaptive behaviors,
-# and the emotional choreography of KingDesignCollectiveINC.
+# and the emotional choreography of Vagary Index.
 
 INTERACTION_DESIGN_SYSTEM = {
     "doc": "15. INTERACTION DESIGN SYSTEM",
