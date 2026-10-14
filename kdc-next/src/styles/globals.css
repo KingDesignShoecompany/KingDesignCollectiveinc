@@ -429,6 +429,14 @@ a { color: var(--gold); }
   background: rgba(212,175,55,0.06); font-size: 1.05rem; color: #e8ecf5; }
 .cart-total strong { color: var(--gold); font-size: 1.25rem; }
 .btn-gold:disabled { opacity: .45; cursor: not-allowed; }
+.bundle-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 12px; }
+.bundle-card { padding: 16px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.2);
+  background: rgba(255,255,255,0.03); display: flex; flex-direction: column; gap: 8px; }
+.bundle-region { font-size: 1.05rem; font-weight: 700; color: #f0e6c8; }
+.bundle-count { font-size: .78rem; color: var(--gold); text-transform: uppercase; letter-spacing: .6px; }
+.bundle-sample { font-size: .8rem; color: var(--muted); line-height: 1.5; flex: 1; }
+.bundle-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 6px; }
+.bundle-price { font-size: 1.15rem; font-weight: 700; color: var(--gold); }
 .audio-honest-note { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 14px; }
 .audio-badge { font-size: 11px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase;
   padding: 4px 10px; border-radius: 999px; border: 1px solid rgba(212,175,55,0.45); color: var(--gold);

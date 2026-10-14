@@ -41,7 +41,7 @@ function TravelContent() {
             <GlassCard corner="KDCI" hero="🌐" title="Browse Countries" meta={`All ${count} verified country guides`}
               stats={[['Visited', '29'], ['Planning', '0'], ['Unvisited', '221']]} thumbs={['Search', 'Filter', 'Buy']} progress={12} />
           </Link>
-          <Link href="/country/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link href="/bundles/" style={{ textDecoration: 'none', color: 'inherit' }}>
             <GlassCard corner="KDCI" hero="🌏" title="Region Bundles" meta="Curated multi-city itineraries with pricing"
               stats={[['Bundles', '18'], ['Cities', '240'], ['From', '$49']]} thumbs={['East Asia', 'MENA', 'SEA-ANZ']} progress={64} />
           </Link>
