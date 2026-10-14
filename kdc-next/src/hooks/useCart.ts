@@ -37,9 +37,28 @@ export function useCart() {
     });
   }, []);
 
+  // Set an absolute quantity; qty <= 0 removes the line.
+  const setQty = useCallback((sku: string, size: number, qty: number) => {
+    setItems((prev) => {
+      const next = qty <= 0
+        ? prev.filter((i) => !(i.sku === sku && i.size === size))
+        : prev.map((i) => (i.sku === sku && i.size === size ? { ...i, qty } : i));
+      save(next);
+      return next;
+    });
+  }, []);
+
+  const remove = useCallback((sku: string, size: number) => {
+    setItems((prev) => {
+      const next = prev.filter((i) => !(i.sku === sku && i.size === size));
+      save(next);
+      return next;
+    });
+  }, []);
+
   const clear = useCallback(() => { setItems([]); save([]); }, []);
 
   const count = items.reduce((n, i) => n + i.qty, 0);
 
-  return { items, add, clear, count };
+  return { items, add, setQty, remove, clear, count };
 }

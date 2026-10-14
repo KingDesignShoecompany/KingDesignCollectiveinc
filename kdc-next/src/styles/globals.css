@@ -438,6 +438,14 @@ a { color: var(--gold); }
 .cart-name { flex: 1; min-width: 160px; font-weight: 600; color: #f0e6c8; }
 .cart-meta { font-size: .78rem; color: var(--muted); }
 .cart-price { font-weight: 700; color: var(--gold); font-variant-numeric: tabular-nums; }
+.qty-stepper { display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 999px; padding: 2px 10px; }
+.qty-stepper button { background: none; border: none; color: var(--gold); font-size: 1.1rem; font-weight: 700;
+  cursor: pointer; width: 20px; line-height: 1; }
+.qty-stepper button:hover { color: var(--gold-bright); }
+.qty-stepper span { min-width: 18px; text-align: center; color: #e8ecf5; font-variant-numeric: tabular-nums; }
+.cart-remove { background: none; border: none; color: #8a8a8a; cursor: pointer; font-size: .9rem; padding: 2px 6px; }
+.cart-remove:hover { color: #e63946; }
 .cart-total { display: flex; justify-content: space-between; align-items: center; margin-top: 16px;
   padding: 14px 16px; border-radius: 10px; border: 1px solid var(--gold);
   background: rgba(212,175,55,0.06); font-size: 1.05rem; color: #e8ecf5; }

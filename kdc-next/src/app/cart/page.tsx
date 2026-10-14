@@ -7,7 +7,7 @@ import { useCart } from '../../hooks/useCart';
 import { PRODUCTS, type Product } from '../../data/shoes';
 
 export default function CartPage() {
-  const { items, clear, count } = useCart();
+  const { items, clear, count, setQty, remove } = useCart();
   const byId = new Map<string, Product>(PRODUCTS.map((p) => [p.id, p]));
   const total = items.reduce((sum, i) => sum + (byId.get(i.sku)?.price ?? 0) * i.qty, 0);
 
@@ -30,8 +30,14 @@ export default function CartPage() {
                 return (
                   <div key={`${i.sku}-${i.size}`} className="cart-row">
                     <div className="cart-name">{p?.name ?? i.sku}</div>
-                    <div className="cart-meta">Size {i.size} · Qty {i.qty}</div>
+                    <div className="cart-meta">Size {i.size}</div>
+                    <div className="qty-stepper">
+                      <button onClick={() => setQty(i.sku, i.size, i.qty - 1)} aria-label="Decrease quantity">−</button>
+                      <span>{i.qty}</span>
+                      <button onClick={() => setQty(i.sku, i.size, i.qty + 1)} aria-label="Increase quantity">+</button>
+                    </div>
                     <div className="cart-price">${((p?.price ?? 0) * i.qty).toFixed(2)}</div>
+                    <button className="cart-remove" onClick={() => remove(i.sku, i.size)} aria-label={`Remove ${p?.name ?? i.sku}`}>✕</button>
                   </div>
                 );
               })}
