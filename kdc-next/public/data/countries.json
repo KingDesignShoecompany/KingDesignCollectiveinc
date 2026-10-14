@@ -933,7 +933,7 @@
     {
       "code": "KAZ",
       "name": "Kazakhstan",
-      "region": "South Asia",
+      "region": "Central Asia",
       "lat": 51.1879,
       "lon": 71.4382,
       "capital": "Astana"
@@ -949,7 +949,7 @@
     {
       "code": "KGZ",
       "name": "Kyrgyzstan",
-      "region": "South Asia",
+      "region": "Central Asia",
       "lat": 42.8851,
       "lon": 74.6057,
       "capital": "Bishkek"
@@ -1797,7 +1797,7 @@
     {
       "code": "TJK",
       "name": "Tajikistan",
-      "region": "South Asia",
+      "region": "Central Asia",
       "lat": 38.5878,
       "lon": 68.7864,
       "capital": "Dushanbe"
@@ -1813,7 +1813,7 @@
     {
       "code": "TKM",
       "name": "Turkmenistan",
-      "region": "South Asia",
+      "region": "Central Asia",
       "lat": 37.9509,
       "lon": 58.3794,
       "capital": "Ashgabat"
@@ -1917,7 +1917,7 @@
     {
       "code": "UZB",
       "name": "Uzbekistan",
-      "region": "South Asia",
+      "region": "Central Asia",
       "lat": 41.3052,
       "lon": 69.269,
       "capital": "Tashkent"

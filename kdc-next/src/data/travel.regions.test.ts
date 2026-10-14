@@ -18,6 +18,7 @@ describe('normalizeRegion', () => {
     expect(normalizeRegion('east_asia')).toBe('East Asia');
     expect(normalizeRegion('east_asia_block2')).toBe('East Asia');
     expect(normalizeRegion('south_asia_1')).toBe('South Asia');
+    expect(normalizeRegion('central_asia')).toBe('Central Asia');
     expect(normalizeRegion('americas')).toBe('South America');
     expect(normalizeRegion('africa')).toBe('Africa');
   });
