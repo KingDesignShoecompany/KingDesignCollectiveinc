@@ -23,12 +23,11 @@ export default function Sidebar() {
     <aside className="app-sidebar">
       <div className="brand-row">
         <div className="brand-title">KingDesignCollectiveINC</div>
-        {count > 0 ? (
-          <Link href="/cart/" className="brand-badge" title={`${count} item${count === 1 ? '' : 's'} in cart`}>
-            {count}
+        <span className="brand-badge">250</span>
+        {count > 0 && (
+          <Link href="/cart/" className="cart-pill" title={`${count} item${count === 1 ? '' : 's'} in cart`}>
+            🛒 {count}
           </Link>
-        ) : (
-          <span className="brand-badge">250</span>
         )}
       </div>
 
