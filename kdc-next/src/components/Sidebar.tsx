@@ -6,13 +6,13 @@ import { useCart } from '../hooks/useCart';
 
 const PAGES = [
   { href: '/', label: 'Dashboard', ico: '◈' },
-  { href: '/travel-index', label: 'Travel', ico: '🌍' },
-  { href: '/shoe-brand', label: 'Shoes', ico: '👟' },
-  { href: '/game-design', label: 'Games', ico: '🎮' },
-  { href: '/kids-channel', label: 'Kids', ico: '📚' },
-  { href: '/innovation-hub', label: 'Innovation', ico: '💡' },
-  { href: '/ewaste-recycling', label: 'E-Waste', ico: '♻️' },
-  { href: '/quantum-wearables', label: 'Quantum', ico: '⚛️' },
+  { href: '/travel-index', label: 'Vagary Index', ico: '🌍' },
+  { href: '/shoe-brand', label: 'KingDesignShoeCompany', ico: '👟' },
+  { href: '/game-design', label: 'Aura Champions', ico: '🎮' },
+  { href: '/kids-channel', label: 'Seven Minute Story Sessions', ico: '📚' },
+  { href: '/innovation-hub', label: 'King Design Collective Briheight Box', ico: '💡' },
+  { href: '/ewaste-recycling', label: 'KingDesign E-Collective', ico: '♻️' },
+  { href: '/quantum-wearables', label: 'Quantum Mode', ico: '⚛️' },
 ];
 
 export default function Sidebar() {

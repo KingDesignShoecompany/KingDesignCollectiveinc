@@ -115,7 +115,7 @@ a { color: var(--gold); }
   color: #fde68a;
   border-color: rgba(212, 175, 55, 0.28);
 }
-.nav-link .nav-ico { font-size: 1rem; width: 20px; text-align: center; }
+.nav-link .nav-ico { font-size: 1rem; width: 20px; text-align: center; flex-shrink: 0; }
 
 /* ---- Page frame ---- */
 .page-frame { max-width: 1240px; margin: 0 auto; padding: 26px 32px 0; }
