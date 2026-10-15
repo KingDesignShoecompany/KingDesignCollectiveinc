@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import type { Country, Mode, VisitState } from '../lib/vagary';
 import { loadVisited, saveVisitedLocal } from '../data/countries';
+import { ringPoints, continentLabelPoints, type LandFeature } from '../lib/geo';
 import './WorldMap.css';
 
 // Brand palette
@@ -26,6 +27,32 @@ export default function WorldMap({
   const [selected, setSelected] = useState<Country | null>(null);
   const pointsRef = useRef<Map<string, Point>>(new Map());
   const selectedRef = useRef<string | null>(null);
+
+  // Continent landmass outlines + labels (non-fatal on failure: dots still draw).
+  const [land, setLand] = useState<LandFeature[]>([]);
+  useEffect(() => {
+    let cancelled = false;
+    // Match the snapshot loader's basePath pattern (see src/data/countries.ts).
+    fetch('/KingDesignCollectiveinc/data/world-land.geojson')
+      .then((r) => r.json())
+      .then((g: any) => {
+        if (cancelled) return;
+        const feats: LandFeature[] = (g.features ?? [])
+          .filter((f: any) => f?.geometry?.type === 'Polygon')
+          .map((f: any) => ({
+            name: String(f.properties?.name ?? ''),
+            ring: f.geometry.coordinates[0] as [number, number][],
+          }))
+          .filter((f: LandFeature) => f.name && f.ring.length >= 3);
+        setLand(feats);
+      })
+      .catch(() => {
+        /* non-fatal: dots still render without land overlay */
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   // Deep-link support: ?map=1 or #map opens the map. Read via useSearchParams
   // (this component is wrapped in Suspense by the page).
@@ -102,6 +129,29 @@ export default function WorldMap({
         ctx.stroke();
       }
 
+      // land masses
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'rgba(212, 175, 55, 0.35)';
+      ctx.fillStyle = 'rgba(212, 175, 55, 0.06)';
+      for (const f of land) {
+        const pts = ringPoints(f.ring, W, H);
+        ctx.beginPath();
+        ctx.moveTo(pts[0].x, pts[0].y);
+        for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+      }
+
+      // continent labels
+      ctx.font = '600 10px system-ui, sans-serif';
+      ctx.fillStyle = 'rgba(212, 175, 55, 0.55)';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      for (const l of continentLabelPoints(land, W, H)) {
+        ctx.fillText(l.name.toUpperCase(), l.x, l.y);
+      }
+
       const pts = new Map<string, Point>();
       plotted.forEach((c) => {
         const p = proj(c);
@@ -134,7 +184,7 @@ export default function WorldMap({
       window.removeEventListener('resize', schedule);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [open, plotted, selected, visits]);
+  }, [open, plotted, selected, visits, land]);
 
   const findDot = (ev: React.MouseEvent<HTMLCanvasElement>): Country | null => {
     const rect = ev.currentTarget.getBoundingClientRect();
