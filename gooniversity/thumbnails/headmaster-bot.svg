@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Platform -->
+  <ellipse cx="128" cy="210" rx="80" ry="18" fill="url(#platGrad)" />
+  <ellipse cx="128" cy="206" rx="80" ry="18" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.6" />
+  <ellipse cx="128" cy="202" rx="60" ry="14" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.4" />
+  <ellipse cx="128" cy="200" rx="40" ry="8" fill="none" stroke="#d4af37" stroke-width="0.7" opacity="0.3" />
+  <ellipse cx="128" cy="212" rx="90" ry="20" fill="#d4af37" opacity="0.08" />
+  <!-- Glow -->
+  <ellipse cx="128" cy="208" rx="70" ry="14" fill="#f5d67b" opacity="0.18" />
+  <!-- Main emoji object -->
+  <text x="128" y="90" text-anchor="middle" font-size="80" font-family="Segoe UI Emoji, Arial, sans-serif" fill="url(#objGrad)">🤖</text>
+  <!-- Tag badge -->
+  <rect x="98" y="180" width="60" height="16" rx="8" fill="#8a6d1f" stroke="#d4af37" stroke-width="0.5" />
+  <text x="128" y="192" text-anchor="middle" font-size="9" font-family="Inter, Arial, sans-serif" fill="#f5d67b">#Tech</text>
+  <!-- Title -->
+  <text x="128" y="240" text-anchor="middle" font-size="11" font-family="Inter, Arial, sans-serif" fill="#f5d67b">Headmaster Bot</text>
+  <defs>
+    <linearGradient id="platGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5d67b" />
+      <stop offset="55%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#8a6d1f" />
+    </linearGradient>
+    <linearGradient id="objGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5d67b" />
+      <stop offset="55%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#8a6d1f" />
+    </linearGradient>
+  </defs>
+</svg>

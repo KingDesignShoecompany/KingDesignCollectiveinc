@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gooniversity — Learn with the Gooners</title>
+  <meta name="description" content="Bite-sized courses for the Gooner community. Gaming, tech, sports, finance, and more." />
+  <style>
+    :root {
+      --gold: #d4af37;
+      --gold2: #f5d67b;
+      --gold3: #8a6d1f;
+      --bg: #0a0a12;
+      --card-bg: rgba(11, 11, 18, 0.75);
+      --card-border: rgba(212, 175, 55, 0.25);
+      --text-primary: #f5f0e1;
+      --text-muted: #b8b096;
+      --glass: rgba(212, 175, 55, 0.1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(ellipse at top, #1a1a2e 0%, var(--bg) 100%);
+      color: var(--text-primary);
+      min-height: 100vh;
+      padding: 24px;
+      line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 32px 0;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--gold2) 0%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    header p { color: var(--text-muted); font-size: 1.1rem; }
+    .subtitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 12px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .subtitle span { color: var(--gold2); }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .course-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+    .course-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+    }
+    .course-emoji {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+    .course-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--gold2);
+    }
+    .course-tagline {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .course-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .course-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .lesson-count {
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .course-tag {
+      background: var(--glass);
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      color: var(--gold2);
+    }
+    .corner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--gold3);
+      color: var(--bg);
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-bottom-left: 2px solid var(--gold);
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+    @media (max-width: 600px) {
+      .course-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎓 Gooniversity</h1>
+      <p>Bite-sized courses for the Gooner community</p>
+      <div class="subtitle">
+        <span>⚡</span>
+        <span>6 courses • 18 lessons • 5-min reads</span>
+        <span>⚡</span>
+      </div>
+    </header>
+
+    <div class="course-grid" id="course-grid">
+      <!-- Populated by catalog.js -->
+    </div>
+
+    <footer>
+      <p>Powered by @HeadMasterGooner_Bot · Chat ID: -1004207093953</p>
+    </footer>
+  </div>
+
+  <script>
+    // Inline course data — generated from catalog.json
+    const COURSES = [
+      { id: "aura-trinity-mastery", title: "Aura Trinity Mastery", tagline: "Master the art of Trinity, Fusion, and Convergence", description: "Deep-dive into the three pillars of high-level aura play: Trinity Theory for board control, Fusion Flow for resource efficiency, and Convergence-50 for endgame dominance.", tag: "Gaming", emoji: "✨", lessons: ["Trinity Theory", "Fusion Flow", "Convergence-50"] },
+      { id: "stream-setup-academy", title: "Stream Setup Academy", tagline: "Turn your rig into a broadcasting studio", description: "From budget hardware to OBS configuration and audience growth strategies.", tag: "Tech", emoji: "🎮", lessons: ["Budget Rig", "OBS Config", "Audience Growth"] },
+      { id: "football-iq-essentials", title: "Football IQ Essentials", tagline: "Read formations, counters, and meta knowledge", description: "Understand tactical formations, counter-strategies, and squad meta knowledge.", tag: "Sports", emoji: "⚽", lessons: ["Formations 101", "Counter Play", "Squad Meta"] },
+      { id: "headmaster-bot", title: "Headmaster Bot", tagline: "Master @HeadMasterGooner_Bot commands", description: "Learn every command: leaderboards, stats, TMA deep-links, and start_param navigation.", tag: "Tech", emoji: "🤖", lessons: ["Bot Basics", "Leaderboards", "TMA Deep Links"] },
+      { id: "community-mod-playbook", title: "Community Mod Playbook", tagline: "Moderation, engagement, and event running", description: "Run a tight ship: enforce rules, schedule events, and keep the chat active.", tag: "Social", emoji: "🛡️", lessons: ["Mod Tools", "Event Scheduling", "Engagement Loops"] },
+      { id: "gooner-finance-101", title: "Gooner Finance 101", tagline: "Crypto basics, wallet safety, NFT drops", description: "Safe intro to wallets, token safety, NFT drops, and the KDC treasury model.", tag: "Finance", emoji: "💰", lessons: ["Wallet Setup", "Token Safety", "NFT Drops"] }
+    ];
+
+    // Also accept ?cid=<course-id> to deep-link a specific course
+    function getQueryParam(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+
+    function renderCourse(course) {
+      return `
+        <a href="?cid=${course.id}" class="course-card" data-cid="${course.id}">
+          <div class="corner">KDCI</div>
+          <div class="course-emoji">${course.emoji}</div>
+          <div class="course-title">${course.title}</div>
+          <div class="course-tagline">${course.tagline}</div>
+          <div class="course-desc">${course.description}</div>
+          <div class="course-meta">
+            <span class="lesson-count">${course.lessons.length} lessons</span>
+            <span class="course-tag">${course.tag}</span>
+          </div>
+        </a>
+      `;
+    }
+
+    function renderSingleCourse(course) {
+      const lessonsHtml = course.lessons.map(l => `
+        <div class="course-card" style="margin-bottom: 12px;">
+          <div class="course-emoji">📖</div>
+          <div class="course-title">${l}</div>
+          <div class="course-meta">
+            <span class="lesson-count">~5 min read</span>
+          </div>
+        </div>
+      `).join('');
+      return `
+        <header>
+          <h1>${course.emoji} ${course.title}</h1>
+          <p>${course.tagline}</p>
+          <div class="subtitle"><span>${course.description}</span></div>
+        </header>
+        <div class="course-grid">
+          ${lessonsHtml}
+        </div>
+      `;
+    }
+
+    const cid = getQueryParam('cid');
+    const container = document.getElementById('course-grid');
+    if (cid) {
+      const course = COURSES.find(c => c.id === cid);
+      if (course) {
+        container.innerHTML = '';
+        document.querySelector('header').outerHTML = renderSingleCourse(course);
+      }
+    } else {
+      container.innerHTML = COURSES.map(renderCourse).join('');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+🤖 *Headmaster Bot*
+_Automate your server like a pro_
+
+Learn to build, deploy, and maintain the Headmaster bot for leaderboards, TMA deep-links, and automated moderation that runs on autopilot.
+
+*Course contents:*
+1. *Bot Basics* — 5 min
+2. *Leaderboards* — 5 min
+3. *TMA Deep Links* — 5 min
+
+#Tech #Gooniversity
