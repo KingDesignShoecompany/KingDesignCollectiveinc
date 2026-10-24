@@ -1,0 +1,170 @@
+[
+  {
+    "id": "aura-trinity-mastery",
+    "title": "Aura Trinity Mastery",
+    "tagline": "Master the art of Trinity, Fusion, and Convergence",
+    "description": "Deep-dive into the three pillars of high-level aura play: Trinity Theory for board control, Fusion Flow for resource efficiency, and Convergence-50 for endgame dominance.",
+    "tag": "Gaming",
+    "emoji": "✨",
+    "lessons": [
+      {
+        "id": "trinity-theory",
+        "title": "Trinity Theory",
+        "duration": "5 min",
+        "slug": "trinity-theory"
+      },
+      {
+        "id": "fusion-flow",
+        "title": "Fusion Flow",
+        "duration": "5 min",
+        "slug": "fusion-flow"
+      },
+      {
+        "id": "convergence-50",
+        "title": "Convergence-50",
+        "duration": "5 min",
+        "slug": "convergence-50"
+      }
+    ]
+  },
+  {
+    "id": "stream-setup-academy",
+    "title": "Stream Setup Academy",
+    "tagline": "Turn your rig into a broadcasting studio",
+    "description": "From budget hardware to OBS configuration and audience growth strategies — learn how to build a stream setup that converts viewers into subscribers.",
+    "tag": "Tech",
+    "emoji": "🎮",
+    "lessons": [
+      {
+        "id": "budget-rig",
+        "title": "Budget Rig",
+        "duration": "5 min",
+        "slug": "budget-rig"
+      },
+      {
+        "id": "obs-config",
+        "title": "OBS Config",
+        "duration": "5 min",
+        "slug": "obs-config"
+      },
+      {
+        "id": "audience-growth",
+        "title": "Audience Growth",
+        "duration": "5 min",
+        "slug": "audience-growth"
+      }
+    ]
+  },
+  {
+    "id": "football-iq-essentials",
+    "title": "Football IQ Essentials",
+    "tagline": "Think the game before you play the game",
+    "description": "Sharpen your tactical awareness: formations, counter-play principles, and reading the squad meta to make split-second decisions under pressure.",
+    "tag": "Sports",
+    "emoji": "⚽",
+    "lessons": [
+      {
+        "id": "formations-101",
+        "title": "Formations 101",
+        "duration": "5 min",
+        "slug": "formations-101"
+      },
+      {
+        "id": "counter-play",
+        "title": "Counter-Play",
+        "duration": "5 min",
+        "slug": "counter-play"
+      },
+      {
+        "id": "squad-meta",
+        "title": "Squad Meta",
+        "duration": "5 min",
+        "slug": "squad-meta"
+      }
+    ]
+  },
+  {
+    "id": "headmaster-bot",
+    "title": "Headmaster Bot",
+    "tagline": "Automate your server like a pro",
+    "description": "Learn to build, deploy, and maintain the Headmaster bot for leaderboards, TMA deep-links, and automated moderation that runs on autopilot.",
+    "tag": "Tech",
+    "emoji": "🤖",
+    "lessons": [
+      {
+        "id": "bot-basics",
+        "title": "Bot Basics",
+        "duration": "5 min",
+        "slug": "bot-basics"
+      },
+      {
+        "id": "leaderboards",
+        "title": "Leaderboards",
+        "duration": "5 min",
+        "slug": "leaderboards"
+      },
+      {
+        "id": "tma-deep-links",
+        "title": "TMA Deep Links",
+        "duration": "5 min",
+        "slug": "tma-deep-links"
+      }
+    ]
+  },
+  {
+    "id": "community-mod-playbook",
+    "title": "Community Mod Playbook",
+    "tagline": "Moderate, engage, and grow your community",
+    "description": "Master moderation tools, event scheduling, and engagement loops that keep your community active and your server thriving.",
+    "tag": "Social",
+    "emoji": "🛡️",
+    "lessons": [
+      {
+        "id": "mod-tools",
+        "title": "Mod Tools",
+        "duration": "5 min",
+        "slug": "mod-tools"
+      },
+      {
+        "id": "event-scheduling",
+        "title": "Event Scheduling",
+        "duration": "5 min",
+        "slug": "event-scheduling"
+      },
+      {
+        "id": "engagement-loops",
+        "title": "Engagement Loops",
+        "duration": "5 min",
+        "slug": "engagement-loops"
+      }
+    ]
+  },
+  {
+    "id": "gooner-finance-101",
+    "title": "Gooner Finance 101",
+    "tagline": "Crypto for gooners, simplified",
+    "description": "Navigate the crypto wilds safely: wallet setup, token safety, and NFT drops — all explained in gooner-friendly terms.",
+    "tag": "Finance",
+    "emoji": "💰",
+    "lessons": [
+      {
+        "id": "wallet-setup",
+        "title": "Wallet Setup",
+        "duration": "5 min",
+        "slug": "wallet-setup"
+      },
+      {
+        "id": "token-safety",
+        "title": "Token Safety",
+        "duration": "5 min",
+        "slug": "token-safety"
+      },
+      {
+        "id": "nft-drops",
+        "title": "NFT Drops",
+        "duration": "5 min",
+        "slug": "nft-drops"
+      }
+    ]
+  }
+]
