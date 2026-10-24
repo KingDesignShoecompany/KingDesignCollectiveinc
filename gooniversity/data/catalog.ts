@@ -1,5 +1,5 @@
 // Gooniversity course catalog — types and accessors
-import catalogData from './catalog.json' with { type: 'json' };
+import catalogData from './catalog.json';
 
 export interface Lesson {
   id: string;
