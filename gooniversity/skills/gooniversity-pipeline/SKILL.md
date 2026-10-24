@@ -29,8 +29,8 @@ mkdir -p ~/agents/gooniversity/{data,metadata/channel_posts,thumbnails,webapp,sc
 cd ~/agents/gooniversity && npx vitest run
 ```
 
-The local `vitest.config.ts` (environment: jsdom, globals: true) makes the
-test suite self-contained — no dependency on the `~/agents` monorepo root.
+Tests run self-contained from the project dir via npx (no vitest.config.ts needed —
+vitest 5 handles JSON imports and TS transforms by default).
 
 ### 3. Generate Lesson Markdown
 
@@ -40,8 +40,10 @@ python gooniversity/scripts/gen_lessons.py
 
 ### 4. Generate Thumbnails
 
+Thumbnails are SVG files matching the kdc-next HeroArt gold-platform aesthetic (no external API needed):
+
 ```bash
-python gooniversity/scripts/gen_thumbnail.py
+cd ~/agents/gooniversity && python3 scripts/gen_thumbnail.py
 ```
 
 ### 5. Format & Post to Telegram
