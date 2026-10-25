@@ -1,0 +1,16 @@
+{
+  "name": "KingDesign OS",
+  "short_name": "KDOS",
+  "description": "KingDesign Collective executive operating system",
+  "start_url": "/KingDesignCollectiveinc/tma/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "icons": [
+    {
+      "src": "/KingDesignCollectiveinc/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

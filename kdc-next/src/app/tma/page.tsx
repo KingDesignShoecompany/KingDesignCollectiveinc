@@ -19,6 +19,7 @@ interface InitResponse {
 export default function TmaApp() {
   const [ready, setReady] = useState(false)
   const [initData, setInitData] = useState<InitResponse | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const wa = getWebApp()
@@ -43,7 +44,24 @@ export default function TmaApp() {
           setInitData(d)
           setReady(true)
         })
-        .catch(() => setReady(true))
+        .catch((err) => {
+          setError('Failed to initialize. Retrying…')
+          setReady(true)
+          // Retry after 5 seconds
+          setTimeout(() => {
+            fetch('/api/tma/init', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ initData: wa.initData }),
+            })
+              .then(r => r.json())
+              .then(d => {
+                setError(null)
+                setInitData(d)
+              })
+              .catch(() => setError('Unable to load data.'))
+          }, 5000)
+        })
     } else {
       setReady(true)
     }
@@ -68,6 +86,22 @@ export default function TmaApp() {
     )
   }
 
+  if (error) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <div className="text-center p-4">
+          <p className="text-red-400 mb-4">{error}</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="px-4 py-2 bg-white/10 rounded-lg border border-white/20 hover:bg-white/20"
+          >
+            Retry
+          </button>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="pb-24">
       {initData?.user && (
@@ -76,7 +110,7 @@ export default function TmaApp() {
           {initData.user.is_premium && ' 🌟 Premium'}
         </div>
       )}
-      <TMADashboard />
+      <TMADashboard company={initData?.company as any} user={initData?.user as any} />
       <TMATaskForm />
     </div>
   )

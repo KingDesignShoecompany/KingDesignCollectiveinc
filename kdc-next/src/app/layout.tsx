@@ -2,8 +2,11 @@ import '../styles/globals.css';
 import AppShell from '../components/AppShell';
 
 export const metadata = {
-  title: 'KingDesignCollectiveINC',
-  description: 'Black & gold intelligence platform — eight pillars, one intelligence.',
+  title: 'KingDesign OS',
+  description: 'KingDesign Collective — executive OS dashboard in Telegram',
+  themeColor: '#0a0a0b',
+  viewport: 'width=device-width, initial-scale=1.0, viewport-fit=coverage',
+  manifest: '/tma-manifest.json',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

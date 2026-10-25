@@ -13,6 +13,7 @@ import WorldMap from '../components/WorldMap';
 import { KPIS, MODULES, ACTIVITY, INSIGHTS, searchModules } from '../data/dashboard';
 import { loadCountries } from '../data/countries';
 import type { Country, Mode } from '../lib/vagary';
+import { fetchDashboard, type OSDashboardSummary } from '../lib/os-api';
 
 const FEATURES = [
   { ico: '⚡', title: 'Adaptive Layouts', sub: 'UI adapts to your behavior.' },
@@ -25,6 +26,7 @@ function DashboardContent() {
   const [query, setQuery] = useState('');
   const [countries, setCountries] = useState<Country[]>([]);
   const [mode, setMode] = useState<Mode>('offline');
+  const [osData, setOsData] = useState<OSDashboardSummary | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -37,6 +39,17 @@ function DashboardContent() {
       .catch(() => {
         /* keep empty; map panel shows loading line */
       });
+
+    // Fetch live OS data
+    fetchDashboard()
+      .then((data) => {
+        if (cancelled) return;
+        if (data) setOsData(data);
+      })
+      .catch(() => {
+        /* keep empty; fallback to static KPIS */
+      });
+
     return () => {
       cancelled = true;
     };
@@ -72,6 +85,33 @@ function DashboardContent() {
       </div>
 
       <div className="page-frame">
+        {osData && (
+          <div className="mb-6 p-4 bg-white/5 rounded-lg border border-white/10">
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="text-sm font-semibold opacity-70">Live OS Status</h2>
+              <span className="text-xs opacity-50">{new Date(osData.timestamp).toLocaleTimeString()}</span>
+            </div>
+            <div className="grid grid-cols-4 gap-3 text-center">
+              <div>
+                <div className="text-2xl font-bold text-green-400">{osData.organizations.active}</div>
+                <div className="text-xs opacity-60">Orgs Active</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-blue-400">{osData.agents.total}</div>
+                <div className="text-xs opacity-60">Agents</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-yellow-400">{osData.tasks.in_progress}</div>
+                <div className="text-xs opacity-60">In Progress</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-purple-400">{osData.projects.active}</div>
+                <div className="text-xs opacity-60">Projects</div>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div className="kpi-grid">
           {KPIS.map((k) => (
             <GlassCard key={k.label} title={k.label} hero={k.icon}>
