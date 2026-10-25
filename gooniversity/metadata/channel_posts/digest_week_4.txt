@@ -1,0 +1,12 @@
+📅 *Gooniversity Weekly Digest — Week 4*
+
+This week's lessons:
+
+• 🤖 *Bot Basics* — _Lesson 1 · Headmaster Bot_
+  👉 t.me/HeadMasterGooner_Bot/app?start_param=learn_headmaster-bot_bot-basics
+• 🤖 *Leaderboards* — _Lesson 2 · Headmaster Bot_
+  👉 t.me/HeadMasterGooner_Bot/app?start_param=learn_headmaster-bot_leaderboards
+• 🤖 *TMA Deep Links* — _Lesson 3 · Headmaster Bot_
+  👉 t.me/HeadMasterGooner_Bot/app?start_param=learn_headmaster-bot_tma-deep-links
+
+#Gooniversity #Digest
