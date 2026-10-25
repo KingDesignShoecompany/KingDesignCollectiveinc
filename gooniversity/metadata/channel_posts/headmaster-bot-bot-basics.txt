@@ -1,7 +1,10 @@
-📖 *Bot Basics*
+🤖 *Bot Basics*
 _Lesson 1 of 3 · Headmaster Bot_
 
-*5 min read* — tap to open in @HeadMasterGooner_Bot:
+*5 min read* · Headmaster Bot
+
 👉 t.me/HeadMasterGooner_Bot/app?start_param=learn_headmaster-bot_bot-basics
+
+→ Next: t.me/HeadMasterGooner_Bot/app?start_param=learn_headmaster-bot_leaderboards
 
 #Tech #Gooniversity #Lesson1

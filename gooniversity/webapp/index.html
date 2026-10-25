@@ -27,113 +27,42 @@
       line-height: 1.6;
     }
     .container { max-width: 900px; margin: 0 auto; }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-      padding: 32px 0;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--gold2) 0%, var(--gold) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 8px;
-    }
+    header { text-align: center; margin-bottom: 32px; padding: 24px 0; }
+    header h1 { font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, var(--gold2) 0%, var(--gold) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
     header p { color: var(--text-muted); font-size: 1.1rem; }
-    .subtitle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 12px;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
+    .subtitle { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 12px; color: var(--text-muted); font-size: 0.9rem; }
     .subtitle span { color: var(--gold2); }
-    .course-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-    }
-    .course-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 16px;
-      padding: 24px;
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.2s ease;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      position: relative;
-      overflow: hidden;
-    }
-    .course-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--gold);
-      box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
-    }
-    .course-emoji {
-      font-size: 3rem;
-      margin-bottom: 12px;
-    }
-    .course-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-      color: var(--gold2);
-    }
-    .course-tagline {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-    }
-    .course-desc {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 16px;
-    }
-    .course-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-    .lesson-count {
-      color: var(--gold);
-      font-weight: 600;
-    }
-    .course-tag {
-      background: var(--glass);
-      padding: 2px 10px;
-      border-radius: 20px;
-      font-size: 0.75rem;
-      color: var(--gold2);
-    }
-    .corner {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: var(--gold3);
-      color: var(--bg);
-      font-size: 0.6rem;
-      font-weight: 700;
-      padding: 4px 8px;
-      border-bottom-left: 2px solid var(--gold);
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      color: var(--text-muted);
-      font-size: 0.8rem;
-    }
-    @media (max-width: 600px) {
-      .course-grid { grid-template-columns: 1fr; }
-      header h1 { font-size: 2rem; }
-    }
+    .search-bar { max-width: 560px; margin: 0 auto 32px; text-align: center; }
+    .search-bar input { width: 100%; padding: 12px 16px; border-radius: 12px; border: 1px solid var(--card-border); background: var(--card-bg); color: var(--text-primary); font-size: 0.9rem; }
+    .course-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+    .course-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 24px; text-decoration: none; color: inherit; transition: all 0.2s ease; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: relative; overflow: hidden; }
+    .course-card:hover { transform: translateY(-4px); border-color: var(--gold); box-shadow: 0 0 30px rgba(212, 175, 55, 0.2); }
+    .course-emoji { font-size: 3rem; margin-bottom: 12px; }
+    .course-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 6px; color: var(--gold2); }
+    .course-tagline { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; }
+    .course-desc { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px; }
+    .course-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-muted); }
+    .lesson-count { color: var(--gold); font-weight: 600; }
+    .course-tag { background: var(--glass); padding: 2px 10px; border-radius: 20px; font-size: 0.75rem; color: var(--gold2); }
+    .corner { position: absolute; top: 0; right: 0; background: var(--gold3); color: var(--bg); font-size: 0.6rem; font-weight: 700; padding: 4px 8px; border-bottom-left: 2px solid var(--gold); }
+    .back-btn { background: var(--glass); border: 1px solid var(--card-border); color: var(--gold2); padding: 6px 14px; border-radius: 8px; cursor: pointer; font-size: 0.85rem; margin-bottom: 20px; display: inline-flex; align-items: center; gap: 6px; }
+    .back-btn:hover { background: var(--gold3); color: var(--bg); }
+    .course-view { display: grid; grid-template-columns: 240px 1fr; gap: 24px; }
+    .lesson-sidebar { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 16px; height: fit-content; }
+    .sidebar-title { font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; letter-spacing: 1px; }
+    .lesson-link { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.2s ease; font-size: 0.9rem; }
+    .lesson-link:hover { background: var(--glass); color: var(--gold2); }
+    .lesson-link.active { background: var(--gold3); color: var(--bg); font-weight: 600; }
+    .lesson-num { font-size: 0.7rem; width: 20px; height: 20px; background: var(--glass); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .lesson-name { flex: 1; }
+    .lesson-dur { font-size: 0.7rem; color: var(--text-muted); }
+    .next-btn { display: block; margin-top: 12px; padding: 8px 12px; background: var(--gold); color: var(--bg); text-decoration: none; border-radius: 8px; font-size: 0.8rem; font-weight: 600; text-align: center; }
+    .next-btn:hover { background: var(--gold2); }
+    .lesson-content { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 32px; }
+    .lesson-content h2 { color: var(--gold2); margin-bottom: 16px; font-size: 1.4rem; }
+    .lesson-content p { color: var(--text-muted); line-height: 1.8; }
+    footer { text-align: center; margin-top: 40px; color: var(--text-muted); font-size: 0.8rem; }
+    @media (max-width: 600px) { .course-grid { grid-template-columns: 1fr; } .course-view { grid-template-columns: 1fr; } header h1 { font-size: 2rem; } }
   </style>
 </head>
 <body>
@@ -141,16 +70,14 @@
     <header>
       <h1>🎓 Gooniversity</h1>
       <p>Bite-sized courses for the Gooner community</p>
-      <div class="subtitle">
-        <span>⚡</span>
-        <span>6 courses • 18 lessons • 5-min reads</span>
-        <span>⚡</span>
-      </div>
+      <div class="subtitle"><span>⚡</span><span>6 courses • 18 lessons • 5-min reads</span><span>⚡</span></div>
     </header>
 
-    <div class="course-grid" id="course-grid">
-      <!-- Populated by catalog.js -->
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search courses... (e.g. 'finance', 'bot', 'football')">
     </div>
+
+    <div class="course-grid" id="course-grid"></div>
 
     <footer>
       <p>Powered by @HeadMasterGooner_Bot · Chat ID: -1004207093953</p>
@@ -158,25 +85,27 @@
   </div>
 
   <script>
-    // Inline course data — generated from catalog.json
     const COURSES = [
-      { id: "aura-trinity-mastery", title: "Aura Trinity Mastery", tagline: "Master the art of Trinity, Fusion, and Convergence", description: "Deep-dive into the three pillars of high-level aura play: Trinity Theory for board control, Fusion Flow for resource efficiency, and Convergence-50 for endgame dominance.", tag: "Gaming", emoji: "✨", lessons: ["Trinity Theory", "Fusion Flow", "Convergence-50"] },
-      { id: "stream-setup-academy", title: "Stream Setup Academy", tagline: "Turn your rig into a broadcasting studio", description: "From budget hardware to OBS configuration and audience growth strategies.", tag: "Tech", emoji: "🎮", lessons: ["Budget Rig", "OBS Config", "Audience Growth"] },
-      { id: "football-iq-essentials", title: "Football IQ Essentials", tagline: "Read formations, counters, and meta knowledge", description: "Understand tactical formations, counter-strategies, and squad meta knowledge.", tag: "Sports", emoji: "⚽", lessons: ["Formations 101", "Counter Play", "Squad Meta"] },
-      { id: "headmaster-bot", title: "Headmaster Bot", tagline: "Master @HeadMasterGooner_Bot commands", description: "Learn every command: leaderboards, stats, TMA deep-links, and start_param navigation.", tag: "Tech", emoji: "🤖", lessons: ["Bot Basics", "Leaderboards", "TMA Deep Links"] },
-      { id: "community-mod-playbook", title: "Community Mod Playbook", tagline: "Moderation, engagement, and event running", description: "Run a tight ship: enforce rules, schedule events, and keep the chat active.", tag: "Social", emoji: "🛡️", lessons: ["Mod Tools", "Event Scheduling", "Engagement Loops"] },
-      { id: "gooner-finance-101", title: "Gooner Finance 101", tagline: "Crypto basics, wallet safety, NFT drops", description: "Safe intro to wallets, token safety, NFT drops, and the KDC treasury model.", tag: "Finance", emoji: "💰", lessons: ["Wallet Setup", "Token Safety", "NFT Drops"] }
+      { id: "aura-trinity-mastery", title: "Aura Trinity Mastery", tagline: "Master the art of Trinity, Fusion, and Convergence", description: "Deep-dive into the three pillars of high-level aura play: Trinity Theory for board control, Fusion Flow for resource efficiency, and Convergence-50 for endgame dominance.", tag: "Gaming", emoji: "✨", lessons: [{id:"trinity-theory",title:"Trinity Theory",duration:"5 min"},{id:"fusion-flow",title:"Fusion Flow",duration:"5 min"},{id:"convergence-50",title:"Convergence-50",duration:"12 min"}] },
+      { id: "stream-setup-academy", title: "Stream Setup Academy", tagline: "Turn your rig into a broadcasting studio", description: "From budget hardware to OBS configuration and audience growth strategies.", tag: "Tech", emoji: "🎮", lessons: [{id:"budget-rig",title:"Budget Rig",duration:"5 min"},{id:"obs-config",title:"OBS Config",duration:"6 min"},{id:"audience-growth",title:"Audience Growth",duration:"7 min"}] },
+      { id: "football-iq-essentials", title: "Football IQ Essentials", tagline: "Read formations, counters, and meta knowledge", description: "Understand tactical formations, counter-strategies, and how to spot mismatches in the 23-man squad.", tag: "Sports", emoji: "⚽", lessons: [{id:"formations-101",title:"Formations 101",duration:"4 min"},{id:"counter-play",title:"Counter Play",duration:"6 min"},{id:"squad-meta",title:"Squad Meta",duration:"5 min"}] },
+      { id: "headmaster-bot", title: "Headmaster Bot", tagline: "Master @HeadMasterGooner_Bot commands", description: "Learn every command: leaderboards, stats, TMA deep-links, and start_param navigation.", tag: "Tech", emoji: "🤖", lessons: [{id:"bot-basics",title:"Bot Basics",duration:"3 min"},{id:"leaderboards",title:"Leaderboards",duration:"4 min"},{id:"tma-deep-links",title:"TMA Deep Links",duration:"5 min"}] },
+      { id: "community-mod-playbook", title: "Community Mod Playbook", tagline: "Moderation, engagement, and event running", description: "Run a tight ship: enforce rules, schedule events, and keep the chat active without burning out.", tag: "Social", emoji: "🛡️", lessons: [{id:"mod-tools",title:"Mod Tools",duration:"3 min"},{id:"event-scheduling",title:"Event Scheduling",duration:"5 min"},{id:"engagement-loops",title:"Engagement Loops",duration:"4 min"}] },
+      { id: "gooner-finance-101", title: "Gooner Finance 101", tagline: "Crypto basics, wallet safety, NFT drops", description: "Safe intro to wallets, token safety, NFT drops, and the KDC treasury model.", tag: "Finance", emoji: "💰", lessons: [{id:"wallet-setup",title:"Wallet Setup",duration:"5 min"},{id:"token-safety",title:"Token Safety",duration:"6 min"},{id:"nft-drops",title:"NFT Drops",duration:"7 min"}] }
     ];
 
-    // Also accept ?cid=<course-id> to deep-link a specific course
     function getQueryParam(name) {
       const params = new URLSearchParams(window.location.search);
       return params.get(name);
     }
 
+    function lessonSlug(lesson) {
+      return lesson.slug || lesson.id;
+    }
+
     function renderCourse(course) {
       return `
-        <a href="?cid=${course.id}" class="course-card" data-cid="${course.id}">
+        <a href="?cid=${course.id}" class="course-card" data-cid="${course.id}" data-tag="${course.tag}" data-title="${course.title.toLowerCase()}">
           <div class="corner">KDCI</div>
           <div class="course-emoji">${course.emoji}</div>
           <div class="course-title">${course.title}</div>
@@ -190,36 +119,82 @@
       `;
     }
 
-    function renderSingleCourse(course) {
-      const lessonsHtml = course.lessons.map(l => `
-        <div class="course-card" style="margin-bottom: 12px;">
-          <div class="course-emoji">📖</div>
-          <div class="course-title">${l}</div>
-          <div class="course-meta">
-            <span class="lesson-count">~5 min read</span>
-          </div>
-        </div>
-      `).join('');
+    function renderCourseView(course, activeLessonSlug) {
+      const lessonsList = course.lessons.map((l, i) => {
+        const slug = lessonSlug(l);
+        const isActive = slug === activeLessonSlug;
+        const prev = i > 0 ? course.lessons[i - 1] : null;
+        const next = i < course.lessons.length - 1 ? course.lessons[i + 1] : null;
+        let navHtml = '';
+        if (prev) {
+          navHtml = `<a href="?cid=${course.id}&lesson=${lessonSlug(prev)}" class="lesson-link" style="font-size:0.7rem;color:var(--text-muted)">← ${lessonSlug(prev)}</a>`;
+        }
+        if (next) {
+          navHtml = `${navHtml}<a href="?cid=${course.id}&lesson=${lessonSlug(next)}" class="lesson-link" style="font-size:0.7rem;color:var(--text-muted)">→ ${lessonSlug(next)}</a>`;
+        }
+        return `<a href="?cid=${course.id}&lesson=${slug}" class="lesson-link ${isActive ? 'active' : ''}">
+          <span class="lesson-num">${i + 1}</span>
+          <span class="lesson-name">${l.title}</span>
+          <span class="lesson-dur">${l.duration}</span>
+        </a>${navHtml}`;
+      }).join('');
+
+      const nextLesson = activeLessonSlug
+        ? course.lessons[course.lessons.findIndex(l => lessonSlug(l) === activeLessonSlug) + 1]
+        : null;
+
+      const nextBtn = nextLesson
+        ? `<a href="?cid=${course.id}&lesson=${lessonSlug(nextLesson)}" class="next-btn">Next: ${nextLesson.title} →</a>`
+        : '';
+
+      let content = '';
+      if (activeLessonSlug) {
+        const lesson = course.lessons.find(l => lessonSlug(l) === activeLessonSlug);
+        if (lesson) {
+          content = `<div class="lesson-content">
+            <h2>${lesson.emoji || '📖'} ${lesson.title}</h2>
+            <p class="lesson-desc">Lesson content for ${lesson.title}. ${lesson.duration} read. Full content TBA.</p>
+          </div>`;
+        }
+      } else {
+        content = `<div class="lesson-content">
+          <h2>${course.emoji} ${course.title}</h2>
+          <p>${course.description}</p>
+        </div>`;
+      }
+
       return `
-        <header>
-          <h1>${course.emoji} ${course.title}</h1>
-          <p>${course.tagline}</p>
-          <div class="subtitle"><span>${course.description}</span></div>
-        </header>
-        <div class="course-grid">
-          ${lessonsHtml}
+        <button onclick="location.search=''" class="back-btn">← Back to Courses</button>
+        <div class="course-view">
+          <div class="lesson-sidebar">
+            <div class="sidebar-title">Lessons</div>
+            ${lessonsList}
+            ${nextBtn}
+          </div>
+          ${content}
         </div>
       `;
     }
 
+    // Search filter
+    document.getElementById('search').addEventListener('input', function(e) {
+      const q = e.target.value.toLowerCase();
+      document.querySelectorAll('.course-card').forEach(card => {
+        const text = card.dataset.title + ' ' + card.dataset.tag;
+        card.style.display = text.includes(q) ? '' : 'none';
+      });
+    });
+
+    // URL routing
     const cid = getQueryParam('cid');
+    const lesson = getQueryParam('lesson');
     const container = document.getElementById('course-grid');
-    if (cid) {
+    if (cid && !lesson) {
       const course = COURSES.find(c => c.id === cid);
-      if (course) {
-        container.innerHTML = '';
-        document.querySelector('header').outerHTML = renderSingleCourse(course);
-      }
+      if (course) container.innerHTML = renderCourseView(course, null);
+    } else if (cid && lesson) {
+      const course = COURSES.find(c => c.id === cid);
+      if (course) container.innerHTML = renderCourseView(course, lesson);
     } else {
       container.innerHTML = COURSES.map(renderCourse).join('');
     }

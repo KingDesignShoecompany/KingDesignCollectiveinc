@@ -1,7 +1,10 @@
-📖 *TMA Deep Links*
+🤖 *TMA Deep Links*
 _Lesson 3 of 3 · Headmaster Bot_
 
-*5 min read* — tap to open in @HeadMasterGooner_Bot:
+*5 min read* · Headmaster Bot
+
 👉 t.me/HeadMasterGooner_Bot/app?start_param=learn_headmaster-bot_tma-deep-links
+
+← Previous: t.me/HeadMasterGooner_Bot/app?start_param=learn_headmaster-bot_leaderboards
 
 #Tech #Gooniversity #Lesson3

@@ -1,0 +1,20 @@
+🎓 *Gooniversity — Course Index*
+
+All courses for the Gooner community:
+
+1. ✨ *Aura Trinity Mastery* — _Master the art of Trinity, Fusion, and Convergence_ (3 lessons)
+2. 🎮 *Stream Setup Academy* — _Turn your rig into a broadcasting studio_ (3 lessons)
+3. ⚽ *Football IQ Essentials* — _Think the game before you play the game_ (3 lessons)
+4. 🤖 *Headmaster Bot* — _Automate your server like a pro_ (3 lessons)
+5. 🛡️ *Community Mod Playbook* — _Moderate, engage, and grow your community_ (3 lessons)
+6. 💰 *Gooner Finance 101* — _Crypto for gooners, simplified_ (3 lessons)
+
+💡 Tap any course below to open in @HeadMasterGooner_Bot:
+👉 t.me/HeadMasterGooner_Bot/app?start_param=catalog_aura-trinity-mastery
+👉 t.me/HeadMasterGooner_Bot/app?start_param=catalog_stream-setup-academy
+👉 t.me/HeadMasterGooner_Bot/app?start_param=catalog_football-iq-essentials
+👉 t.me/HeadMasterGooner_Bot/app?start_param=catalog_headmaster-bot
+👉 t.me/HeadMasterGooner_Bot/app?start_param=catalog_community-mod-playbook
+👉 t.me/HeadMasterGooner_Bot/app?start_param=catalog_gooner-finance-101
+
+#Gooniversity #Index
