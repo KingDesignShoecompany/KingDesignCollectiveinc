@@ -112,6 +112,16 @@ const ART: Record<string, React.ReactNode> = {
       <circle cx="54" cy="26" r="1.5" fill={G2} /><circle cx="66" cy="22" r="1.5" fill={G2} /><circle cx="74" cy="26" r="1.5" fill={G2} />
     </>
   ),
+  // 9. Gooniversity — gold graduation cap
+  graduation: (
+    <>
+      <path d="M42 58 h36 l-4-8 h-28 z" fill="url(#shoeGrad)" stroke={G} strokeWidth="1" />
+      <path d="M66 50 l0 16 M60 54 l6 4 M60 54 l-6 4" stroke={G} strokeWidth="0.9" />
+      <circle cx="66" cy="46" r="2.2" fill={G2} stroke={G} strokeWidth="0.7" />
+      <path d="M60 72 q0 4 4 4 q4 0 4-4" fill="none" stroke={G} strokeWidth="1.2" />
+      <path d="M38 78 q12-6 44 0" fill="none" stroke={G2} strokeWidth="1" opacity="0.6" />
+    </>
+  ),
 };
 
 // Kinds backed by a real AI-generated hero image in public/heroes/.

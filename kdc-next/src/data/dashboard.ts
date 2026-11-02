@@ -26,6 +26,7 @@ export const MODULES: Module[] = [
   { href: '/KingDesignCollectiveinc/innovation-hub/', kind: 'bulb', title: 'King Design Collective Briheight Box', tagline: 'Build the future.' },
   { href: '/KingDesignCollectiveinc/ewaste-recycling/', kind: 'recycle', title: 'KingDesign E-Collective', tagline: 'Recycle. Recover. Reuse.' },
   { href: '/KingDesignCollectiveinc/quantum-wearables/', kind: 'atom', title: 'Quantum Mode', tagline: 'Signals, nodes, waveforms.' },
+  { href: '/gooniversity/', kind: 'graduation', title: 'Gooniversity', tagline: 'Learn with Gooner.' },
 ];
 
 export const ACTIVITY: ActivityItem[] = [

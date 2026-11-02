@@ -13,6 +13,7 @@ const PAGES = [
   { href: '/innovation-hub', label: 'King Design Collective Briheight Box', ico: '💡' },
   { href: '/ewaste-recycling', label: 'KingDesign E-Collective', ico: '♻️' },
   { href: '/quantum-wearables', label: 'Quantum Mode', ico: '⚛️' },
+  { href: '/gooniversity', label: 'Gooniversity', ico: '🎓' },
 ];
 
 export default function Sidebar() {

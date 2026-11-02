@@ -7,6 +7,7 @@ describe('gooniversity data', () => {
     const ids = COURSES.map((c) => c.id);
     expect(new Set(ids).size).toBe(ids.length);
   });
+
   it('every course has title, description, lessons, and a tag', () => {
     for (const c of COURSES) {
       expect(c.title).toBeTruthy();
@@ -15,6 +16,7 @@ describe('gooniversity data', () => {
       expect(c.tag).toBeTruthy();
     }
   });
+
   it('getCourse returns null for unknown id', () => {
     expect(getCourse('nope')).toBeNull();
   });

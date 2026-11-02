@@ -17,12 +17,12 @@ describe('dashboard data', () => {
     expect(INSIGHTS.every((i) => i.tag)).toBe(true);
   });
 
-  it('has 7 subsidiary modules (dashboard itself excluded)', () => {
-    expect(MODULES).toHaveLength(7);
+  it('has 8 subsidiary modules (dashboard itself excluded)', () => {
+    expect(MODULES).toHaveLength(8);
     expect(MODULES.map((m) => m.title)).toEqual([
       'Vagary Index', 'KingDesignShoeCompany', 'Aura Champions',
       'Seven Minute Story Sessions', 'King Design Collective Briheight Box',
-      'KingDesign E-Collective', 'Quantum Mode',
+      'KingDesign E-Collective', 'Quantum Mode', 'Gooniversity',
     ]);
   });
 
@@ -30,6 +30,7 @@ describe('dashboard data', () => {
     expect(searchModules('aura').map((m) => m.title)).toEqual(['Aura Champions']);
     expect(searchModules('shoes').length).toBe(0); // title is KingDesignShoeCompany
     expect(searchModules('SHOE').map((m) => m.title)).toContain('KingDesignShoeCompany');
-    expect(searchModules('').length).toBe(7);
+    expect(searchModules('gooner').map((m) => m.title)).toEqual(['Gooniversity']);
+    expect(searchModules('').length).toBe(8);
   });
 });
