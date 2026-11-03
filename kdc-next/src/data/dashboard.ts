@@ -7,6 +7,7 @@ export type Module = {
   kind: string;          // HeroArt kind
   title: string;         // full subsidiary name
   tagline: string;
+  badge?: string;
 };
 export type ActivityItem = { title: string; detail: string; time: string; icon: string };
 export type Insight = { title: string; detail: string; tag: 'Recommended' | 'Trending' };
@@ -22,7 +23,7 @@ export const MODULES: Module[] = [
   { href: '/KingDesignCollectiveinc/travel-index/', kind: 'globe', title: 'Vagary Index', tagline: 'Explore the world.' },
   { href: '/KingDesignCollectiveinc/shoe-brand/', kind: 'shoe', title: 'KingDesignShoeCompany', tagline: 'Step into impact.' },
   { href: '/KingDesignCollectiveinc/game-design/', kind: 'controller', title: 'Aura Champions', tagline: 'Compete & earn.' },
-  { href: '/KingDesignCollectiveinc/kids-channel/', kind: 'cards', title: 'Seven Minute Story Sessions', tagline: 'Stories that shape.' },
+  { href: '/KingDesignCollectiveinc/kids-channel/', kind: 'cards', title: 'Seven Minute Story Sessions', tagline: 'Bedtime videos', badge: 'Now Playing' },
   { href: '/KingDesignCollectiveinc/innovation-hub/', kind: 'bulb', title: 'King Design Collective Briheight Box', tagline: 'Build the future.' },
   { href: '/KingDesignCollectiveinc/ewaste-recycling/', kind: 'recycle', title: 'KingDesign E-Collective', tagline: 'Recycle. Recover. Reuse.' },
   { href: '/KingDesignCollectiveinc/quantum-wearables/', kind: 'atom', title: 'Quantum Mode', tagline: 'Signals, nodes, waveforms.' },

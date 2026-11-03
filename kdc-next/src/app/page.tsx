@@ -126,6 +126,7 @@ function DashboardContent() {
             <a key={m.href} href={m.href} className="hero-panel" aria-label={`${m.title} — ${m.tagline}`}>
               <div className="hero-art"><HeroArt kind={m.kind} /></div>
               <div className="hp-text">
+                {m.badge && <div className="module-badge">{m.badge}</div>}
                 <div className="hp-title">{m.title}</div>
                 <div className="hp-tag">{m.tagline}</div>
               </div>

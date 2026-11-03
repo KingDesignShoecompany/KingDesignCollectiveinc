@@ -23,6 +23,23 @@ const popular = [...STORIES].sort((a, b) => parseFloat(b.views) - parseFloat(a.v
 
 const cardStyle = { textDecoration: 'none', color: 'inherit' };
 
+function FeaturedVideo() {
+  const s = STORIES[0];
+  if (!s.video) return null;
+  return (
+    <a className="featured-video-wrap" href={`/KingDesignCollectiveinc/story-play/?sid=${s.id}`} style={{ display: 'block', textDecoration: 'none', color: 'inherit', marginBottom: 18 }}>
+      <video src={s.video} preload="metadata" muted playsInline style={{ width: '100%', borderRadius: 16, border: '1px solid rgba(212,175,55,0.18)' }} />
+      <div className="featured-video-overlay">
+        <div className="featured-play">▶</div>
+        <div>
+          <div className="sp-title">{s.title}</div>
+          <div className="sp-meta">{s.theme} · {s.duration} · age {s.age}</div>
+        </div>
+      </div>
+    </a>
+  );
+}
+
 export default function KidsChannelPage() {
   const [q, setQ] = useState('');
 
@@ -37,8 +54,9 @@ export default function KidsChannelPage() {
 
   return (
     <>
-      <HeroBanner kind="cards" title="Kids Channel" subtitle="Seven Minute Story Sessions" badge="Safe Mode: ON" />
+      <HeroBanner kind="cards" title="Seven Minute Story Sessions" subtitle="Bedtime videos for little dreamers" badge="Safe Mode: ON" />
       <PageFrame title="Library" subtitle="Seven Minute Story Sessions in a unified theme">
+        <FeaturedVideo />
         <PageKpis items={KPIS} />
 
         <SectionHeader
@@ -61,7 +79,15 @@ export default function KidsChannelPage() {
               <a key={s.id} href={`/KingDesignCollectiveinc/story-play/?sid=${s.id}`} style={cardStyle}>
                 <GlassCard
                   corner="KDCI"
-                  hero={s.emoji}
+                  hero={
+                    <div className="story-media">
+                      {s.video ? (
+                        <video src={s.video} preload="metadata" muted playsInline />
+                      ) : (
+                        <div className="story-emoji">{s.emoji}</div>
+                      )}
+                    </div>
+                  }
                   title={s.title}
                   meta={`${s.theme} · ${s.duration} · age ${s.age}`}
                   stats={[['Theme', s.theme], ['Length', s.duration], ['Views', s.views]]}

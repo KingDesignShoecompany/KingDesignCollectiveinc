@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { STORIES } from '../../data/stories';
 
-const TOTAL = 420; // 7:00 in seconds (stories are 7 min)
+const TOTAL = 420; // 7:00 in seconds
 
 function fmt(sec: number) {
   const m = Math.floor(sec / 60);
@@ -30,14 +30,35 @@ function StoryPlayer() {
   const [elapsed, setElapsed] = useState(0);
   const [view, setView] = useState<'read' | 'chapters'>('read');
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  // audioFailed flips true if a real file errors out — we then fall back to the
-  // simulated clock and re-show the honest "audio coming soon" badge.
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [audioFailed, setAudioFailed] = useState(false);
-  const hasRealAudio = !!story.audio && !audioFailed;
+  const [videoFailed, setVideoFailed] = useState(false);
 
-  // Real audio drives the clock when a file is present and loadable.
+  const hasVideo = !!story.video && !videoFailed;
+  const hasAudio = !!story.audio && !audioFailed;
+  const hasRealMedia = hasVideo || hasAudio;
+
+  // Real video drives the clock when present and loadable.
   useEffect(() => {
-    if (!hasRealAudio) return;
+    if (!hasVideo) return;
+    const el = videoRef.current;
+    if (!el) return;
+    const onTime = () => setElapsed(Math.floor(el.currentTime));
+    const onErr = () => setVideoFailed(true);
+    const onEnd = () => setPlaying(false);
+    el.addEventListener('timeupdate', onTime);
+    el.addEventListener('error', onErr);
+    el.addEventListener('ended', onEnd);
+    return () => {
+      el.removeEventListener('timeupdate', onTime);
+      el.removeEventListener('error', onErr);
+      el.removeEventListener('ended', onEnd);
+    };
+  }, [hasVideo]);
+
+  // Real audio drives the clock when present and loadable (and no video).
+  useEffect(() => {
+    if (!hasAudio || hasVideo) return;
     const el = audioRef.current;
     if (!el) return;
     const onTime = () => setElapsed(Math.floor(el.currentTime));
@@ -48,23 +69,29 @@ function StoryPlayer() {
       el.removeEventListener('timeupdate', onTime);
       el.removeEventListener('error', onErr);
     };
-  }, [hasRealAudio]);
+  }, [hasAudio, hasVideo]);
 
-  // Simulated playback clock — used when no real audio (all stories currently),
-  // or as the honest fallback when a file fails to load.
+  // Simulated playback clock — used when no real media, or as honest fallback.
   useEffect(() => {
-    if (!playing || hasRealAudio) return;
+    if (!playing || hasRealMedia) return;
     const t = setInterval(() => setElapsed((e) => Math.min(e + 1, TOTAL)), 1000);
     return () => clearInterval(t);
-  }, [playing, hasRealAudio]);
+  }, [playing, hasRealMedia]);
 
-  // Keep the <audio> element in sync with the play/pause button.
+  // Keep media elements in sync with play/pause.
   useEffect(() => {
-    const el = audioRef.current;
-    if (!el || !hasRealAudio) return;
-    if (playing) el.play().catch(() => setAudioFailed(true));
-    else el.pause();
-  }, [playing, hasRealAudio]);
+    if (hasVideo) {
+      const el = videoRef.current;
+      if (!el) return;
+      if (playing) el.play().catch(() => setVideoFailed(true));
+      else el.pause();
+    } else if (hasAudio) {
+      const el = audioRef.current;
+      if (!el) return;
+      if (playing) el.play().catch(() => setAudioFailed(true));
+      else el.pause();
+    }
+  }, [playing, hasVideo, hasAudio]);
 
   // read-along: split text into 3 chapters, highlight active paragraph by progress
   const chapters = useMemo(() => {
@@ -109,18 +136,30 @@ function StoryPlayer() {
           <span className="time-label">{fmt(elapsed)}</span>
         </div>
 
-        {story.audio && <audio ref={audioRef} src={story.audio} preload="none" />}
+        {hasVideo && (
+          <video
+            ref={videoRef}
+            src={story.video}
+            controls
+            playsInline
+            preload="metadata"
+            style={{ width: '100%', borderRadius: 12, marginTop: 12 }}
+          />
+        )}
+        {!hasVideo && hasAudio && (
+          <audio ref={audioRef} src={story.audio} preload="none" />
+        )}
 
-        {!hasRealAudio && (
+        {!hasRealMedia && (
           <div className="audio-honest-note">
-            <span className="audio-badge">Story Timer — audio coming soon</span>
+            <span className="audio-badge">Story Timer — audio/video coming soon</span>
             <span className="audio-note-sub">
-              Works fully offline; narration will be added when available.
+              Works fully offline; media will be added when available.
             </span>
           </div>
         )}
 
-        <div className="filter-row" style={{ marginBottom: 16 }}>
+        <div className="filter-row" style={{ marginBottom: 16, marginTop: 16 }}>
           <button className={'filter-btn' + (view === 'read' ? ' active' : '')} onClick={() => setView('read')}>Read Along</button>
           <button className={'filter-btn' + (view === 'chapters' ? ' active' : '')} onClick={() => setView('chapters')}>Chapters</button>
         </div>
@@ -144,7 +183,7 @@ function StoryPlayer() {
       </div>
 
       <div style={{ textAlign: 'center', marginTop: 20 }}>
-        <Link href="/stories/" className="btn-outline">← Back to Library</Link>
+        <Link href="/KingDesignCollectiveinc/kids-channel/" className="btn-outline">← Back to Library</Link>
       </div>
     </div>
   );

@@ -9,13 +9,14 @@ export type Story = {
   views: string;
   age: string;
   audio: string | null;
+  video: string | null;
   emoji: string;
   text: string[];
 };
 
 export const STORIES: Story[] = [
   {
-    id: 'moonbear', title: "The Moonbear's Lullaby", theme: 'Animals', duration: '7:00', voice: 'Luna (Child)', ambient: 'Rain', views: '12.4K', age: '4-6', audio: null, emoji: '🌙',
+    id: 'moonbear', title: "The Moonbear's Lullaby", theme: 'Animals', duration: '7:00', voice: 'Luna (Child)', ambient: 'Rain', views: '12.4K', age: '4-6', audio: null, video: '/KingDesignCollectiveinc/videos/smss01.mp4', emoji: '🌙',
     text: [
       "Once upon a time, in a quiet forest, there lived a little bear named Bumble. Bumble had the softest golden fur and the kindest eyes.",
       "Every evening, as the sun painted the sky orange and pink, Bumble would hum a gentle lullaby that made all the forest animals feel safe and cozy.",
@@ -27,7 +28,7 @@ export const STORIES: Story[] = [
     ],
   },
   {
-    id: 'starlight', title: 'The Starlight Adventure', theme: 'Adventure', duration: '7:00', voice: 'Luna (Child)', ambient: 'Ocean', views: '8.9K', age: '4-6', audio: null, emoji: '⭐',
+    id: 'starlight', title: 'The Starlight Adventure', theme: 'Adventure', duration: '7:00', voice: 'Luna (Child)', ambient: 'Ocean', views: '8.9K', age: '4-6', audio: null, video: null, emoji: '⭐',
     text: [
       "High above the sleeping town, a tiny star named Pip woke up with a big dream — to touch the Earth and see what it felt like.",
       "\"But stars belong in the sky,\" whispered the old moon. Pip didn't listen. With a wiggle and a wobble, off Pip floated, down through the soft night clouds.",
@@ -39,7 +40,7 @@ export const STORIES: Story[] = [
     ],
   },
   {
-    id: 'cloud', title: 'Cloud Knight Dreamer', theme: 'Fantasy', duration: '7:00', voice: 'Luna (Child)', ambient: 'Forest', views: '6.7K', age: '2-4', audio: null, emoji: '☁️',
+    id: 'cloud', title: 'Cloud Knight Dreamer', theme: 'Fantasy', duration: '7:00', voice: 'Luna (Child)', ambient: 'Forest', views: '6.7K', age: '2-4', audio: null, video: null, emoji: '☁️',
     text: [
       "In a kingdom made entirely of fluffy white clouds, there lived a small knight named Sir Puff. Sir Puff was the smallest knight in all the sky, but he had the biggest heart.",
       "One night, Sir Puff set off on his trusty cloud-horse to guard the dreams of every sleeping child below.",
@@ -50,7 +51,7 @@ export const STORIES: Story[] = [
     ],
   },
   {
-    id: 'mermaid', title: 'The Mermaid Lagoon', theme: 'Fantasy', duration: '7:00', voice: 'Nova (Narrator)', ambient: 'Ocean', views: '9.3K', age: '4-6', audio: null, emoji: '🧜‍♀️',
+    id: 'mermaid', title: 'The Mermaid Lagoon', theme: 'Fantasy', duration: '7:00', voice: 'Nova (Narrator)', ambient: 'Ocean', views: '9.3K', age: '4-6', audio: null, video: null, emoji: '🧜‍♀️',
     text: [
       "Deep beneath the sparkling blue waves, in a hidden lagoon, lived a curious little mermaid named Coral. Coral had hair like seaweed and a laugh like bubbling water.",
       "One morning, Coral found something shimmering in the sand — a pearl unlike any she had ever seen, glowing with a soft pink light.",
@@ -62,7 +63,7 @@ export const STORIES: Story[] = [
     ],
   },
   {
-    id: 'dragonfriend', title: 'The Dragon Who Liked Cupcakes', theme: 'Fantasy', duration: '7:00', voice: 'Orion (Male)', ambient: 'Fireplace', views: '15.6K', age: '4-6', audio: null, emoji: '🐉',
+    id: 'dragonfriend', title: 'The Dragon Who Liked Cupcakes', theme: 'Fantasy', duration: '7:00', voice: 'Orion (Male)', ambient: 'Fireplace', views: '15.6K', age: '4-6', audio: null, video: null, emoji: '🐉',
     text: [
       "In a cozy cave at the edge of a sleepy village lived a dragon named Ember. Now, most dragons liked gold and treasure, but Ember had a different favorite thing — cupcakes!",
       "Every morning, the sweet smell of baking floated up from the village, and Ember's tummy would rumble like gentle thunder.",
@@ -73,7 +74,7 @@ export const STORIES: Story[] = [
     ],
   },
   {
-    id: 'spaceship', title: "Timmy's Spaceship Adventure", theme: 'Adventure', duration: '7:00', voice: 'Nova (Narrator)', ambient: 'Ocean', views: '4.2K', age: '6-8', audio: null, emoji: '🚀',
+    id: 'spaceship', title: "Timmy's Spaceship Adventure", theme: 'Adventure', duration: '7:00', voice: 'Nova (Narrator)', ambient: 'Ocean', views: '4.2K', age: '6-8', audio: null, video: null, emoji: '🚀',
     text: [
       "Timmy had always dreamed of flying to the stars, and tonight, his wish came true — a little silver spaceship landed softly in his backyard!",
       "\"Come aboard!\" beeped a friendly robot at the door. Timmy climbed in, and with a gentle whoosh, they were off among the twinkling stars.",
@@ -84,7 +85,7 @@ export const STORIES: Story[] = [
     ],
   },
   {
-    id: 'counting', title: 'Counting with Benny the Bunny', theme: 'Learning', duration: '7:00', voice: 'Lyra (Female)', ambient: 'Silence', views: '7.5K', age: '2-4', audio: null, emoji: '🐰',
+    id: 'counting', title: 'Counting with Benny the Bunny', theme: 'Learning', duration: '7:00', voice: 'Lyra (Female)', ambient: 'Silence', views: '7.5K', age: '2-4', audio: null, video: null, emoji: '🐰',
     text: [
       "Benny the Bunny loved to count. \"One!\" he'd say, hopping once. \"Two!\" he'd hop twice, his soft white tail bouncing along.",
       "One sunny morning, Benny decided to count everything in the meadow. One fluffy cloud floated by. \"One!\" cheered Benny.",
@@ -96,7 +97,7 @@ export const STORIES: Story[] = [
     ],
   },
   {
-    id: 'underwater', title: "The Mermaid's Pearl", theme: 'Fantasy', duration: '7:00', voice: 'Luna (Child)', ambient: 'Ocean', views: '11.8K', age: '4-6', audio: null, emoji: '🐚',
+    id: 'underwater', title: "The Mermaid's Pearl", theme: 'Fantasy', duration: '7:00', voice: 'Luna (Child)', ambient: 'Ocean', views: '11.8K', age: '4-6', audio: null, video: null, emoji: '🐚',
     text: [
       "Far down in the deepest blue, where the sunlight turned to silver, a young mermaid named Pearl searched for the most beautiful thing in the ocean.",
       "She swam through fields of swaying seaweed and gardens of glowing coral, but nothing seemed quite right.",
