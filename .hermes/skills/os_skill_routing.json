@@ -1,0 +1,74 @@
+{
+  "vagary_index": {
+    "skill": "travel-index",
+    "category": "travel-index",
+    "toolsets": ["terminal", "file", "web", "search"],
+    "lead_agent": "agent-vagary-index-lead",
+    "workers": ["agent-vagary-index-ops-1", "agent-vagary-index-ops-2"],
+    "data_root": "corporate_runtime/documents/travel_index"
+  },
+  "shoes": {
+    "skill": "shoe-brand",
+    "category": "shoe-brand",
+    "toolsets": ["terminal", "file", "web", "search"],
+    "lead_agent": "agent-shoes-lead",
+    "workers": ["agent-shoes-ops-1", "agent-shoes-ops-2"],
+    "data_root": "corporate_runtime/documents/shoe_brand"
+  },
+  "gamedev": {
+    "skill": "aura-champions",
+    "category": "game-design",
+    "sub_skills": [
+      "aura-backend-master",
+      "aura-ue-client",
+      "aura-nfc-handler",
+      "aura-anti-cheat",
+      "aura-trinity-special",
+      "aura-tournament-admin"
+    ],
+    "toolsets": ["terminal", "file", "search"],
+    "lead_agent": "agent-gamedev-lead",
+    "workers": ["agent-gamedev-ops-1", "agent-gamedev-ops-2"],
+    "data_root": "corporate_runtime/documents/game_design",
+    "ports": {
+      "backend": 3100,
+      "anti-cheat": 3101,
+      "trinity": 3102,
+      "tournament": 3103,
+      "nfc": 3104,
+      "db": 5432
+    }
+  },
+  "kids": {
+    "skill": "kids-channel",
+    "category": "kids-channel",
+    "toolsets": ["terminal", "file"],
+    "lead_agent": "agent-kids-lead",
+    "workers": ["agent-kids-ops-1", "agent-kids-ops-2", "agent-kids-ops-3"],
+    "data_root": "corporate_runtime/documents/kids_channel"
+  },
+  "innovation": {
+    "skill": "innovation-hub",
+    "category": "innovation-hub",
+    "toolsets": ["terminal", "file", "web", "search"],
+    "lead_agent": "agent-innovation-lead",
+    "workers": ["agent-innovation-ops-1", "agent-innovation-ops-2", "agent-innovation-ops-3"],
+    "data_root": "corporate_runtime/documents/innovation_hub"
+  },
+  "ewaste": {
+    "skill": "ewaste-recycling",
+    "category": "ewaste-recycling",
+    "toolsets": ["terminal", "file", "web"],
+    "lead_agent": "agent-ewaste-lead",
+    "workers": ["agent-ewaste-ops-1", "agent-ewaste-ops-2"],
+    "data_root": "corporate_runtime/documents/ewaste_recycling"
+  },
+  "quantum": {
+    "skill": "quantum-wearables",
+    "category": "quantum-wearables",
+    "toolsets": ["terminal", "file", "web", "search"],
+    "lead_agent": "agent-quantum-lead",
+    "workers": ["agent-quantum-ops-1", "agent-quantum-ops-2", "agent-quantum-ops-3"],
+    "data_root": "corporate_runtime/documents/quantum_wearables"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "card_id": 1,
+    "error": "submit_failed"
+  },
+  {
+    "card_id": 2,
+    "error": "submit_failed"
+  },
+  {
+    "card_id": 3,
+    "error": "submit_failed"
+  }
+]

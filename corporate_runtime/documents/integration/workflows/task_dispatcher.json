@@ -1,0 +1,57 @@
+{
+  "name": "KingDesign Task Dispatcher Webhook",
+  "nodes": [
+    {
+      "id": "webhook-node",
+      "name": "Webhook: New Task",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 300],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kdos/task"
+      }
+    },
+    {
+      "id": "create-task",
+      "name": "Create Task in OS API",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 300],
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8090/api/v1/tasks",
+        "responseFormat": "json",
+        "body": "={{ JSON.stringify({title: $json.title, description: $json.description, company_id: $json.company_id, priority: $json.priority || 'normal', assigned_agent_id: $json.assigned_agent_id, project_id: $json.project_id}) }}",
+        "headers": {"Content-Type": "application/json"}
+      }
+    },
+    {
+      "id": "parse-dispatch",
+      "name": "Parse & Determine Target",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [650, 300],
+      "parameters": {
+        "functionCode": "const task = items[0]?.json || {};\nconst desc = (task.description || '').toLowerCase();\nconst routing = {\n  vagary_index: ['travel', 'country', 'guide', 'tiktok', 'currency'],\n  shoes: ['shoe', 'inventory', 'ad copy', 'ecommerce'],\n  gamedev: ['aura', 'card', 'trinity', 'nfc', 'ue5', 'unreal', 'c++'],\n  kids: ['bedtime', 'story', 'tts', 'narration', 'child-safe'],\n  innovation: ['patent', 'white paper', 'ip', 'tech'],\n  ewaste: ['recycling', 'gold', 'copper', 'palladium'],\n  quantum: ['thermal', 'biometric', 'wearable', 'physics']\n};\nlet targetSector = null;\nfor (const [sector, keywords] of Object.entries(routing)) {\n  if (keywords.some(kw => desc.includes(kw))) {\n    targetSector = sector;\n    break;\n  }\n}\nreturn [{json: {task_id: task.id, target_sector: targetSector, dispatched: true, title: task.title}}];"
+      }
+    },
+    {
+      "id": "log-result",
+      "name": "Log Result",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [850, 300],
+      "parameters": {
+        "functionCode": "console.log(`Task dispatched: ${items[0].json.title} -> ${items[0].json.target_sector || 'hermes-ceo'}`);\nreturn items;"
+      }
+    }
+  ],
+  "connections": {
+    "Webhook: New Task": {"main": [[{"node": "Create Task in OS API", "type": "main", "index": 0}]]},
+    "Create Task in OS API": {"main": [[{"node": "Parse & Determine Target", "type": "main", "index": 0}]]},
+    "Parse & Determine Target": {"main": [[{"node": "Log Result", "type": "main", "index": 0}]]}
+  },
+  "active": false,
+  "settings": {}
+}

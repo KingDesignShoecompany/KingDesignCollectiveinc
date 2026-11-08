@@ -1,0 +1,59 @@
+{
+  "name": "KingDesign CEO Daily Report",
+  "nodes": [
+    {
+      "id": "daily-trigger",
+      "name": "Daily Trigger (9 AM LA)",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "parameters": {
+        "triggerTimes": {"item": [{"hour": 9, "minute": 0}]},
+        "options": {"timezone": "America/Los_Angeles"}
+      }
+    },
+    {
+      "id": "fetch-dashboard",
+      "name": "Fetch Dashboard Summary",
+      "type": "n8n-nodes-base.http-request",
+      "typeVersion": 4.1,
+      "position": [450, 300],
+      "parameters": {
+        "method": "GET",
+        "url": "http://host.docker.internal:8090/api/v1/dashboard",
+        "responseFormat": "json",
+        "options": {"timeout": 10000}
+      },
+      "onError": "continueError"
+    },
+    {
+      "id": "format-report",
+      "name": "Format Executive Report",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [650, 300],
+      "parameters": {
+        "functionCode": "const d = items[0]?.json || {};\nconst orgs = d.organizations || {};\nconst projects = d.projects || {};\nconst tasks = d.tasks || {};\nconst pipeline = d.pipeline || [];\nconst lines = [\n  'KingDesign Collective — Daily Executive Report',\n  '—'.repeat(40),\n  `Organizations: ${orgs.total || 'N/A'} total (${orgs.subsidiaries || 0} subsidiaries, ${orgs.active || 0} active)`,\n  `Projects: ${projects.active || 0} active, ${projects.blocked || 0} blocked`,\n  `Tasks: ${tasks.in_progress || 0} in_progress, ${tasks.blocked || 0} blocked`,\n  '',\n  'Pipeline (active + blocked):'\n];\npipeline.slice(0, 10).forEach(p => {\n  lines.push(`  [${p.priority || 'N/A'}] ${p.name} — ${p.company_id} (${p.status})`);\n});\nif (pipeline.length === 0) lines.push('  (empty)');\nlines.push('', 'Run `kd ask \"<question>\"` for details.');\nreturn [{json: {report: lines.join('\\n')}}];"
+      }
+    },
+    {
+      "id": "send-telegram",
+      "name": "Send to Telegram",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 2,
+      "position": [850, 300],
+      "parameters": {
+        "chatId": "8866994677",
+        "text": "={{ $json.report }}",
+        "options": {"parseMode": "Markdown"}
+      }
+    }
+  ],
+  "connections": {
+    "Daily Trigger (9 AM LA)": {"main": [[{"node": "Fetch Dashboard Summary", "type": "main", "index": 0}]]},
+    "Fetch Dashboard Summary": {"main": [[{"node": "Format Executive Report", "type": "main", "index": 0}]]},
+    "Format Executive Report": {"main": [[{"node": "Send to Telegram", "type": "main", "index": 0}]]}
+  },
+  "active": false,
+  "settings": {"timezone": "America/Los_Angeles"}
+}

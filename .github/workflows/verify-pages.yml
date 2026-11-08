@@ -1,0 +1,26 @@
+name: verify-pages
+
+# Guards the GitHub Pages HTML against the two bugs that shipped a blank page:
+# root-relative asset refs and a malformed flight payload. Runs on every push to
+# gh-pages (the live Pages source) and on manual dispatch, so a bad deploy that
+# regenerates the HTML fails here instead of going blank in production.
+on:
+  push:
+    branches: [gh-pages]
+  pull_request:
+    branches: [gh-pages]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Verify gh-pages HTML
+        run: python verify_gh_pages.py "${{ github.ref_name }}"

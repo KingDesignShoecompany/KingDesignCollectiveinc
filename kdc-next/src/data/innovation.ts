@@ -6,7 +6,7 @@ export type SubsidiaryIP = { name: string; file: string; patents: number; value:
 export const SUBSIDIARY_IP: SubsidiaryIP[] = [
   { name: 'King Design Collective', file: 'shoe_brand', patents: 12, value: '$420K', status: 'active' },
   { name: 'The Vagary Index', file: 'travel_index', patents: 8, value: '$380K', status: 'active' },
-  { name: 'Aura Champions', file: 'game_design', patents: 15, value: '$850K', status: 'active' },
+  { name: 'KDCI Gaming', file: 'game_design', patents: 15, value: '$850K', status: 'active' },
   { name: 'Seven Minute Story Sessions', file: 'kids_channel', patents: 6, value: '$180K', status: 'active' },
   { name: 'e-Waste Reclamation', file: 'ewaste_recycling', patents: 9, value: '$310K', status: 'active' },
   { name: 'Quantum Wearables', file: 'quantum_wearables', patents: 7, value: '$310K', status: 'active' },

@@ -1,14 +1,14 @@
-# kingdesigncollectiveinc — Incorporation Brief
+# VAGARY_INDEX — Incorporation Brief
 
-Business unit: kingdesigncollectiveinc
-Brand: The KingDesignCollectiveINC
+Business unit: vagary_index
+Brand: The Vagary Index
 Product: 250-Country Travel Guide
 Jurisdiction: [PENDING]
 Entity type: [PENDING]
 Filing reference: [PENDING]
 
 ## OBJECTIVE
-Form a legally distinct subsidiary under King Design Collective parent entity to own, produce, and distribute "The KingDesignCollectiveINC" — a comprehensive 250-country travel guide.
+Form a legally distinct subsidiary under King Design Collective parent entity to own, produce, and distribute "The Vagary Index" — a comprehensive 250-country travel guide.
 
 ## BUSINESS MODEL
 - Product: Comprehensive video + text travel documentation covering every country

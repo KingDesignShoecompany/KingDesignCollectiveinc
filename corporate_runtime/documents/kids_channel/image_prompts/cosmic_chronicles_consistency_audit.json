@@ -1,0 +1,1209 @@
+{
+  "metadata": {
+    "project": "Cosmic Chronicles Coloring Book",
+    "version": "1.0",
+    "generated_by": "Hermes Agent Vision Audit",
+    "total_images_analyzed": 47,
+    "canonical_reference_sheet_url": "https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png",
+    "canonical_group_reference_url": "https://v3b.fal.media/files/b/0aabeb2e/A2VjQPI1tJevNzbUHdpdC_HtF0aecU.png"
+  },
+  "canonical_characters": {
+    "elara": {
+      "species": "Human girl",
+      "hair": "Long, wavy, shoulder-length, blonde/light brown, side part, bangs",
+      "hat": "Wide-brimmed space helmet/safari hat with band and front light",
+      "clothing": "White/light grey spacesuit with high collar, breast pocket, belt with large rectangular buckle",
+      "star_emblem": "Five-pointed star patch on LEFT chest (viewer's left)",
+      "accessories": "Star-shaped medallion (held in hand, not worn), star-shaped patch on left chest",
+      "distinguishing_features": "Gentle smile, large oval eyes, star emblem on chest"
+    },
+    "ziva": {
+      "species": "Caticorn (cat body + unicorn horn)",
+      "fur": "Pink on back/head/outer ears, WHITE on chest/muzzle/front paws/tail tip",
+      "horn": "Single spiraled golden-yellow unicorn horn on forehead",
+      "ears": "Triangular cat ears, pink interior",
+      "eyes": "Large, anime-style, star-shaped highlights, dark pink/magenta irises",
+      "tail": "Fluffy, curls upward, white tip",
+      "pose": "Sitting upright, paws tucked in front"
+    },
+    "teddy_bot": {
+      "species": "Anthropomorphic robot wolf",
+      "body": "Metallic/silver plating, smooth surfaces, rectangular chest plate with inset",
+      "ears": "Pointed triangular robotic ears, small antenna between them",
+      "eyes": "Large circular visor eyes (dark circles with white highlights)",
+      "snout": "Wolf-like snout with black nose, smiling mouth with teeth",
+      "arms": "Large bulky arms, segmented joints, claw-like mechanical grips",
+      "shoulders": "Large rounded pauldrons with visible bolts",
+      "tail": "None (no organic tail)"
+    },
+    "star_medallion": {
+      "shape": "Five-pointed star",
+      "style": "Glowing, surrounded by sparkles/radiating lines",
+      "placement_canonical": "Star PATCH on LEFT CHEST of clothing (not a necklace)",
+      "placement_group_ref": "STAR MEDALLION as separate necklace (conflicting reference)"
+    }
+  },
+  "canonical_group_reference_inconsistencies": {
+    "teddy_bot_design_conflict": "Canonical sheet shows robot WOLF; group reference shows robotic BEAR (teddy bear face, rounded ears, paws)",
+    "star_placement_conflict": "Canonical: star PATCH on chest; Group ref: star MEDALLION as separate glowing necklace",
+    "clothing_conflict": "Canonical: spacesuit; Group ref: dress/tunic with high collar"
+  },
+  "image_audit": {
+    "reference_sheets": [
+      {
+        "image_id": "00_characters.png",
+        "url": "https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png",
+        "issue": "CANONICAL - no issues",
+        "severity": "none"
+      },
+      {
+        "image_id": "01_characters_reference_new.png",
+        "url": "https://v3b.fal.media/files/b/0aabead6/VJ6QLiD5rKLeFg74AQIqt_uLTBW49o.png",
+        "issue": "NEEDS ANALYSIS - not yet visually inspected",
+        "severity": "info"
+      },
+      {
+        "image_id": "01_characters_reference_v2.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb0c/WvMONmUGp3zSQrLCE0SeZ_4XHxazWw.png",
+        "issue": "CONFLICTING with canonical - Elara in astronaut suit but holding star (not wearing on chest), Ziva is colored pink caticorn, Teddy Bot as robot dog not wolf",
+        "severity": "critical"
+      },
+      {
+        "image_id": "00_characters_group.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb2e/A2VjQPI1tJevNzbUHdpdC_HtF0aecU.png",
+        "issue": "CONFLICTING with canonical - Teddy Bot is BEAR not wolf, star Medallions as necklaces not chest patches, different clothing styles",
+        "severity": "critical"
+      }
+    ],
+    "ep1_episodes": [
+      {
+        "image_id": "ep1_elara_first_space_adventure_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb0c/WvMONmUGp3zSQrLCE0SeZ_4XHxazWw.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent",
+          "Elara: hat present, star emblem on chest - CORRECT"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep1_elara_first_space_adventure_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb33/9-6wueWdS64MsvVwhHJ80_S8cbv4l1.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent",
+          "Elara: no hat in this scene, star medallion in HAND not on chest"
+        ],
+        "severity": "major"
+      }
+    ],
+    "ep2_episodes": [
+      {
+        "image_id": "ep2_planet_of_pancakes_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaef/jzxkktiwqXynhJZ8nX-1L_wCjSP3Sq.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - no characters"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep2_planet_of_pancakes_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaf0/NXinvjE9qRrqgXG4089PY_FyQ9r49f.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - no characters"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep2_planet_of_pancakes_03.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaf1/H3SpOMAXA0o95-H6FRqEa_yRzMJW76.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - no characters"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep2_planet_of_pancakes_04.png",
+        "url": "None (empty file, 170 bytes - CORRUPTED)",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "CORRUPTED FILE - needs regeneration"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep2_planet_of_pancakes_05.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb32/TQZRdgn-wNGTQYVoj6R9S_J1vuzCcn.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "MAJOR: Shows two IDENTICAL girls (no visual distinction between Elara and Ziva)",
+          "MAJOR: Teddy Bot shown as RETRO ROBOT (not wolf, no canine features)",
+          "MAJOR: Teddy Bot has NO star emblem",
+          "MINOR: Star emblem present on girls' chests as medallions (acceptable)"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep2_planet_of_pancakes_06.png",
+        "url": "https://v3b.fal.media/files/b/0aabecf6/MHvi_xetSNT0ZqFbW-2zU_frU5e0Nt.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "MAJOR: Shows two IDENTICAL girls (no distinction between Elara and Ziva)",
+          "MAJOR: Teddy Bot as RETRO ROBOT (square head, screen face, NOT wolf)",
+          "MINOR: No star emblems visible on any character"
+        ],
+        "severity": "critical"
+      }
+    ],
+    "ep3_episodes": [
+      {
+        "image_id": "ep3_library_of_lost_sounds_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaf5/5Gz-tb9JR_3Md2Hpswnz-_1GcbOMII.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - empty library"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep3_library_of_lost_sounds_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaf7/VthP4caKPCbczuEyKjCez_CQvtd0pF.png",
+        "characters_present": [
+          "mumble"
+        ],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Shadowy being Mumble present but no heroes"
+        ],
+        "severity": "info"
+      },
+      {
+        "image_id": "ep3_library_of_lost_sounds_03.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb11/QcZPoytfSRNLG8XAbrfUh_t3BokpMb.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING ALL CHARACTERS - image shows empty library with globe and crystals, no characters"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep3_library_of_lost_sounds_04.png",
+        "url": "None (empty - file exists but appears blank)",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "CORRUPTED/EMPTY FILE - needs regeneration"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep3_library_of_lost_sounds_05.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb14/0M1rBk39ModfpKU5ViBt__B6d0IX7C.png",
+        "characters_present": [
+          "mumble"
+        ],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Only Mumble present, no heroes"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep3_library_of_lost_sounds_06.png",
+        "url": "https://v3b.fal.media/files/b/0aabeac7/aeHTrDNQBgGd1EbHS10al_2XRvUXkY.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "404 NOT FOUND - file missing from CDN"
+        ],
+        "severity": "critical"
+      }
+    ],
+    "ep4_episodes": [
+      {
+        "image_id": "ep4_clockwork_garden_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaf4/jnLc6ZuLIN9XsMuEFuuNq_HEmfHwug.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - clockwork mechanism, no characters"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep4_clockwork_garden_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaf9/eh2qwbPBoNzuCgTQ52I27_qe2nd8se.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Elara present but no star emblem visible"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep4_clockwork_garden_03.png",
+        "url": "https://v3b.fal.media/files/b/0aabeafb/SwyHFYvuR2JoM05zk5nZl_nEiMCFm8.png",
+        "characters_present": [
+          "cogsworth"
+        ],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "New character Cogsworth present, no heroes"
+        ],
+        "severity": "info"
+      },
+      {
+        "image_id": "ep4_clockwork_garden_04.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb01/7S-FrLwJziykLyzXj__Va_DT0hbDIZ.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Elara present with hat and overalls, star emblem NOT visible"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep4_clockwork_garden_05.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb0f/YbXXsCjyUP9gPmKq1kxrn_u1uo4WjG.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "MAJOR: All three 'heroes' are elderly humans (no Ziva caticorn, no Teddy Bot robot wolf)",
+          "MAJOR: Teddy Bot shown as clockwork humanoid robot with NO wolf features",
+          "MAJOR: Ziva absent - replaced by elderly human"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep4_clockwork_garden_06.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb28/EsBaMObupwLgzZJG8EhhY_NqnGPgpZ.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Elara has hat and dress but star emblem not visible"
+        ],
+        "severity": "major"
+      }
+    ],
+    "ep5_episodes": [
+      {
+        "image_id": "ep5_starlight_market_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeafc/wSVDF8jXYQyLe7WvP9e0G_9piR8KUp.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - market scene with generic merchant beings"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep5_starlight_market_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb02/ONJ5L74UB928-mNkDyY8o_vAB8jo31.png",
+        "characters_present": [
+          "comet_tail_trader"
+        ],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "New character: Comet Tail Trader (elderly elf-like being) present, no heroes"
+        ],
+        "severity": "info"
+      },
+      {
+        "image_id": "ep5_starlight_market_03.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb1e/9yVxcY3ZvAcyx6EA4hl8z_5OQuUcVo.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Elara present with hat, star emblem NOT visible"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep5_starlight_market_04.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb25/NvtcRFi80b3Vst6tP4G4M_ftpDeyWk.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Same as ep5_03"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep5_starlight_market_05.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb45/6egUsX0HX9VppIf5hZmJ-_cxlVzy7i.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Same as ep5_03"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep5_starlight_market_06.png",
+        "url": "https://v3b.fal.media/files/b/0aabec75/QkaB1sSaJxPIWc2m3FDcC_600xpf82.png",
+        "characters_present": [
+          "elara",
+          "comet_tail_trader"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Comet Tail Trader shown as elderly elf, not matching canonical characters"
+        ],
+        "severity": "major"
+      }
+    ],
+    "ep6_episodes": [
+      {
+        "image_id": "ep6_planet_that_forgot_its_color_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb03/NBaXJjWdIU1FGDhB63GYT_SMD90HRy.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "MAJOR: Ziva shown as HORSE/UNICORN (not caticorn - no cat features)",
+          "MAJOR: Teddy Bot shown with 'TAD 15' chest label (not canonical wolf design)",
+          "MINOR: Elara present with star emblem on chest"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep6_planet_that_forgot_its_color_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb06/LDvZNYr9N2ftahULeUbg9_CaTRDLgB.png",
+        "characters_present": [
+          "ziva"
+        ],
+        "characters_missing": [
+          "elara",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Elara and Teddy Bot absent. Ziva shown as UNICORN PONY (horse, not caticorn)",
+          "CRITICAL: Ziva is horse/pony, NOT caticorn (no cat ears, cat face, cat tail)"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep6_planet_that_forgot_its_color_03.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb09/K_o0ocIZZ2UwSALCJQr_Q_h2an0Pqi.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Elara present"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep6_planet_that_forgot_its_color_04.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb0a/VbWluMprCwFAk8d1qGisi_ECoBejSA.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - color bloom explosion, no characters"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep6_planet_that_forgot_its_color_05.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb2f/mVY5xLMfszjesW9LHqSln_GbzMN9NY.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - celebration crowd of 8 generic human characters, no heroes"
+        ],
+        "severity": "info"
+      }
+    ],
+    "ep7_episodes": [
+      {
+        "image_id": "ep7_moon_of_a_thousand_doors_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaa2/WGLluoM9CZ985iagw8BoS_pVMQkhUj.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - moon with door hallway"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep7_moon_of_a_thousand_doors_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaa4/59I61TSVmrNtBQPjcwBxz_p5Jhwi3l.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Elara present with star emblem on LEFT CHEST - CORRECT"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep7_moon_of_a_thousand_doors_03.png",
+        "url": "https://v3b.fal.media/files/b/0aabeab2/T6HLjum1RFRbdxHAqjjh4_i58IG2FL.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Elara present with star emblem on LEFT CHEST - CORRECT",
+          "Elara has animal TAIL (hybrid) - inconsistent with canonical human"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep7_moon_of_a_thousand_doors_04.png",
+        "url": "https://v3b.fal.media/files/b/0aabeab5/asJZ0zdv4_l8K-Dk6k1nm_oee45vf8.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "MAJOR: Ziva shown as GOAT (pointed ears, goat-like face, not caticorn)",
+          "MAJOR: Teddy Bot is WOLF but design differs from canonical (no armor pauldrons, different snout)",
+          "MAJOR: Elara shown with FLUFFY TAIL (hybrid, not pure human)",
+          "MINOR: No star emblems visible on any character"
+        ],
+        "severity": "critical"
+      }
+    ],
+    "ep8_episodes": [
+      {
+        "image_id": "ep8_bubble_sea_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaa8/0T0HE7vuTZoUAETrl9HEx_43oJy9ha.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - bubble sea surface"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep8_bubble_sea_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeab6/CZDTPgNCq9Ecg9zrUg5Gq_4ovWFEnl.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "MAJOR: All 3 shown as IDENTICAL HUMAN DIVERS in deep-sea suits (helmets obscure faces)",
+          "CRITICAL: Ziva is human (no caticorn features)",
+          "CRITICAL: Teddy Bot is human (no robot wolf features)",
+          "MINOR: Star emblems NOT visible under helmets"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep8_bubble_sea_03.png",
+        "url": "https://v3b.fal.media/files/b/0aabeab6/CZDTPgNCq9Ecg9zrUg5Gq_4ovWFEnl.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "SAME AS ep8_02: All 3 are identical human divers, no caticorn or robot wolf features"
+        ],
+        "severity": "critical",
+        "note": "Same URL as ep8_02 - likely duplicate or mislabeled"
+      },
+      {
+        "image_id": "ep8_bubble_sea_04.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb29/9f74g_H4iW04CAjrEBPk6_ETn6wYj1.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "CORRUPTED/EMPTY FILE - solid black square, needs regeneration",
+          "MISSING ALL CHARACTERS"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep8_bubble_sea_05.png",
+        "url": "https://v3b.fal.media/files/b/0aabec87/orAHJkpc5JJEDle57KAIA_FPhK8Wd9.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - bubble sea landscape with whales, no characters"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep8_bubble_sea_06.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb38/nBkzxK6bhV_zYhMNRGZ34_b1X2uLe9.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "MINOR: Shows 4 figures (girl, unicorn, dog, robot) not 3 heroes",
+          "MINOR: Teddy Bot has star emblem but Elara and Ziva do not",
+          "MINOR: Ziva shown as unicorn not caticorn",
+          "MINOR: Only robot has star emblem"
+        ],
+        "severity": "major"
+      }
+    ],
+    "ep9_episodes": [
+      {
+        "image_id": "ep9_festival_of_falling_stars_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaa9/0bHqpcMWxq0Xzk8Hq4pGY_PfkHXlxq.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Multiple children present but none are Ziva/Teddy Bot",
+          "MINOR: Elara present with hat, star emblem on chest - CORRECT"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep9_festival_of_falling_stars_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaba/7GlMJRNLBYLPrQpWX6mY1_exCcTtjY.png",
+        "characters_present": [
+          "elara",
+          "dog"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent",
+          "MINOR: Shows 'grandmother' in JSON but image shows young girl with dog",
+          "STAR SPOTS: Dog has star-patterned spots"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep9_festival_of_falling_stars_03.png",
+        "url": "404 NOT FOUND - image missing from CDN",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "CORRUPTED/MISSING - 404 from CDN, needs regeneration"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep9_festival_of_falling_stars_04.png",
+        "url": "https://v3b.fal.media/files/b/0aabeabd/teML7WNQAcG_BUHxVAbg7_FS8pV150.png",
+        "characters_present": [
+          "baker"
+        ],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment-only character (baker), no heroes"
+        ],
+        "severity": "info"
+      },
+      {
+        "image_id": "ep9_festival_of_falling_stars_05.png",
+        "url": "https://v3b.fal.media/files/b/0aaaeb05/PGvjK_arV4B5P4Mtpeez0_0OFQqMh1.png",
+        "characters_present": [
+          "elara",
+          "constellation_dog"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent",
+          "MINOR: Elara present with star-catching scene"
+        ],
+        "severity": "major"
+      }
+    ],
+    "ep10_episodes": [
+      {
+        "image_id": "ep10_train_to_edge_of_night_01.png",
+        "url": "https://v3b.fal.media/files/b/0aabeaad/5mriHUyzHYHf09OO9_Iuq_YnghmMLv.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - train and tracks, no heroes"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep10_train_to_edge_of_night_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeac0/0fOqlDzdSziKEvxuNh9K-_m1AGUtyR.png",
+        "characters_present": [
+          "night_beast"
+        ],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Night Beast present but no heroes"
+        ],
+        "severity": "info"
+      },
+      {
+        "image_id": "ep10_train_to_edge_of_night_03.png",
+        "url": "https://v3b.fal.media/files/b/0aabeac1/XneB9QxlQ627NamRE62nW_tUZbAwfi.png",
+        "characters_present": [
+          "twilight_choir"
+        ],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Twilight Choir (4 identical beings, not heroes) present instead of 3 heroes"
+        ],
+        "severity": "info"
+      },
+      {
+        "image_id": "ep10_train_to_edge_of_night_04.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb19/K8bqw7NRdIq0aOEcTiav5_DN2fqhtz.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - night beast sleeping, no heroes"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep10_train_to_edge_of_night_05.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb1b/44VHlkjpbOTtkartFUrmS_CfSNPewy.png",
+        "characters_present": [
+          "elara",
+          "night_beast"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Elara present but with TAIL (hybrid, not pure human)"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep10_train_to_edge_of_night_06.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb2b/NSHJd04o8wMzWv1D5Se0j_aCw0xFOM.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - night beast + stars, no heroes"
+        ],
+        "severity": "none"
+      }
+    ],
+    "ep11_episodes": [
+      {
+        "image_id": "ep11_last_stop_before_home_01.png",
+        "url": "https://v3b.fal.media/files/b/0cac8d6f/k_CssVmSucy-hfFLK3-pr_nRLHa78Z.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "404 NOT FOUND - image missing from CDN"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep11_last_stop_before_home_02.png",
+        "url": "https://v3b.fal.media/files/b/0aabeac4/niEcOiwmwl2YXllduq15s_wgZPHDrF.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - golden flower close-up, no characters"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep11_last_stop_before_home_03.png",
+        "url": "https://v3b.fal.media/files/b/0aabeac2/3M5HUwadlzHnj14hACRg1_RqQw0dqE.png",
+        "characters_present": [
+          "keeper",
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Keeper present (elderly woman). Elara not clearly distinguishable from other human characters",
+          "UNICORN present but not identified as Ziva"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep11_last_stop_before_home_04.png",
+        "url": "https://v3b.fal.media/files/b/0aabead3/Ymj0XvWQtq5YIkdXY0BAJ_f9viM3aF.png",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - first shoot map, no characters"
+        ],
+        "severity": "none"
+      },
+      {
+        "image_id": "ep11_last_stop_before_home_05.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb16/XFnyp1bSsE5piVM6QPPVU_RNCfKTzN.png",
+        "characters_present": [
+          "keeper",
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Keeper + Elara present but Elara's star emblem only barely visible as tiny star button",
+          "STAR EMBLEM: Star emblem is tiny star button on dress, not canonical chest patch"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep11_last_stop_before_home_06.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb18/0gi9MysLF6YGzPVyKJfZj_08QlzmZJ.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "MAJOR: Elara shown as HUMAN GIRL in long dress (not astronaut), Ziva shown as HUMAN GIRL (not caticorn!), Teddy Bot as ROBOT DOG (bear-like, not wolf)",
+          "CRITICAL: Ziva is human in this scene",
+          "CRITICAL: Teddy Bot is dog not wolf",
+          "CRITICAL: Elara is not astronaut"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep11_last_stop_before_home_07.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb33/Ep0wSjZOnF-68DZdhgJu1_GPadyYfr.png",
+        "characters_present": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_missing": [],
+        "issues": [
+          "MAJOR: Ziva shown as HUMAN GIRL (not caticorn - no horn, no cat features)",
+          "MAJOR: Teddy Bot shown as ROBOT DOG (not wolf - fuzzy texture, dog snout, no wolf features)",
+          "MAJOR: Elara shown in long dress (not astronaut suit)",
+          "MINOR: No star emblems visible on any character"
+        ],
+        "severity": "critical"
+      },
+      {
+        "image_id": "ep11_last_stop_before_home_08.png",
+        "url": "https://v3b.fal.media/files/b/0aabeb3b/bFpAOAzjqZ5kTGO1WPABe_I152oiTM.png",
+        "characters_present": [
+          "elara"
+        ],
+        "characters_missing": [
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "MISSING CHARACTERS: Ziva and Teddy Bot absent. Elara present with star medallions in hand (correct action)",
+          "STAR EMBLEM: Star medallions held in hand, not worn on chest"
+        ],
+        "severity": "major"
+      },
+      {
+        "image_id": "ep11_last_stop_before_home_09.png",
+        "url": "None (not yet retrieved)",
+        "characters_present": [],
+        "characters_missing": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "issues": [
+          "Environment only - glowing seed close-up, no characters"
+        ],
+        "severity": "none"
+      }
+    ],
+    "regenerated_images": [
+      {
+        "image_id": "ep02_spaceship_bridge_pancake_planet.png",
+        "characters_expected": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata - needs visual analysis"
+        ]
+      },
+      {
+        "image_id": "ep02_spaceship_landed_pancake_surface.png",
+        "characters_expected": [
+          "elara",
+          "ziva",
+          "teddy_bot"
+        ],
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata - needs visual analysis"
+        ]
+      },
+      {
+        "image_id": "ep02_spun_sugar_spire.png",
+        "characters_expected": [],
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata, likely environment only"
+        ]
+      },
+      {
+        "image_id": "ep02_ziva_paw_glowing_horn.png",
+        "characters_expected": [
+          "ziva"
+        ],
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata, likely Ziva close-up - needs analysis"
+        ]
+      },
+      {
+        "image_id": "ep05_elara_confrontation.png",
+        "characters_expected": [
+          "elara"
+        ],
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata - needs visual analysis"
+        ]
+      },
+      {
+        "image_id": "ep05_market_restored.png",
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata - needs visual analysis"
+        ]
+      },
+      {
+        "image_id": "ep05_shadow_figure.png",
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata - needs visual analysis"
+        ]
+      },
+      {
+        "image_id": "ep05_stall_moonlight.png",
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata - needs visual analysis"
+        ]
+      },
+      {
+        "image_id": "ep05_star_weaver_weaving.png",
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata - needs visual analysis"
+        ]
+      },
+      {
+        "image_id": "ep05_starlight_market.png",
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata - needs visual analysis"
+        ]
+      },
+      {
+        "image_id": "ep06_color_keeper.png",
+        "characters_expected": [
+          "keeper"
+        ],
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata, likely new character - needs analysis"
+        ]
+      },
+      {
+        "image_id": "ep06_gray_planet.png",
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata - needs visual analysis"
+        ]
+      },
+      {
+        "image_id": "ep06_keeper_explaining.png",
+        "characters_expected": [
+          "keeper"
+        ],
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata, likely new character - needs analysis"
+        ]
+      },
+      {
+        "image_id": "ep06_ziva_horn_glow.png",
+        "characters_expected": [
+          "ziva"
+        ],
+        "characters_present": [],
+        "issues": [
+          "No JSON metadata, likely Ziva close-up - needs analysis"
+        ]
+      }
+    ]
+  },
+  "summary_by_severity": {
+    "critical": [
+      "00_characters_group.png (conflicting Teddy Bot = bear)",
+      "01_characters_reference_v2.png (conflicting star placement)",
+      "ep2_planet_of_pancakes_04 (corrupted file)",
+      "ep2_planet_of_pancakes_05/06 (Teddy Bot = retro robot, duplicate Elara)",
+      "ep4_clockwork_garden_05 (teddy bot = human clockwork, ziva absent)",
+      "ep6_planet_01 (ziva = horse, teddy bot = TAD-15)",
+      "ep6_planet_02 (ziva = horse not caticorn)",
+      "ep7_moon_04 (ziva = goat, teddy bot = wolf but wrong design, elara = tail)",
+      "ep8_bubble_sea_02/03 (all humans in diving suits)",
+      "ep8_bubble_sea_04 (corrupted - black square)",
+      "ep11_06 (ziva = human, teddy bot = dog, elara = dress not astronaut)",
+      "ep11_07 (ziva = human, teddy bot = dog, elara = dress)"
+    ],
+    "major": [
+      "ep1_01/02 (missing 2/3 characters)",
+      "ep3_03 (missing all characters)",
+      "ep3_04 (corrupted/empty)",
+      "ep3_06 (404 CDN)",
+      "ep4_02/04/06 (missing ziva and teddy bot)",
+      "ep5_03/04/05/06 (missing ziva and teddy bot)",
+      "ep6_03 (missing ziva and teddy bot)",
+      "ep7_02/03 (missing ziva and teddy bot, elara has tail)",
+      "ep9_01/02/05 (missing ziva and teddy bot)",
+      "ep10_02 (ep10_05 - missing ziva and teddy bot, elara has tail)",
+      "ep11_01 (404 CDN)",
+      "ep11_03/05 (missing ziva and teddy bot)",
+      "ep11_08 (missing ziva and teddy bot)"
+    ],
+    "404_missing": [
+      "ep3_library_of_lost_sounds_06 (404 from CDN)",
+      "ep9_festival_of_falling_stars_03 (404 from CDN)",
+      "ep11_last_stop_before_home_01 (404 from CDN)"
+    ],
+    "corrupted_files": [
+      "ep2_planet_of_pancakes_04 (JSON 170 bytes, PNG empty)",
+      "ep8_bubble_sea_04 (solid black square)",
+      "ep3_library_of_lost_sounds_04 (empty/blank)"
+    ]
+  },
+  "root_causes": [
+    "Conflicting reference sheets (group ref shows teddy bear robot, canonical shows wolf)",
+    "AI generation drift - each scene generated independently without character consistency enforcement",
+    "Ziva species instability: caticorn (canonical) vs unicorn/horse (ep6) vs goat (ep7) vs human (ep11)",
+    "Teddy Bot species instability: robot wolf (canonical) vs robot bear (group ref) vs retro robot (ep2) vs robot dog (ep11) vs human diver (ep8)",
+    "Elara costume instability: astronaut (canonical) vs civilian clothes (ep11) vs human hybrid with tail (ep7, ep10)",
+    "Star emblem inconsistency: chest patch vs necklace medallion vs no emblem vs tiny star button",
+    "Missing characters in scenes that JSON says should have all 3 heroes",
+    "CDN URL expiration causing 404s for some images"
+  ]
+}

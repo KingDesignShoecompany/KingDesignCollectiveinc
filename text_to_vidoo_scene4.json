@@ -1,0 +1,92 @@
+{
+  "3": {
+    "inputs": {
+      "seed": 1567890123456792,
+      "steps": 30,
+      "cfg": 7.0,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 1.0,
+      "model": ["48", 0],
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "latent_image": ["40", 0]
+    },
+    "class_type": "KSampler"
+  },
+  "6": {
+    "inputs": {
+      "text": "the giggling slime transforms their crystal spot into a bouncing spaceship that goes BOING! into space, dog's metal tail becomes a spring, kitten chases her own glowing tail, simple fun shapes, primary colors, preschool cartoon style, 832x480",
+      "clip": ["38", 0]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "7": {
+    "inputs": {
+      "text": "blur, low quality, deformed, extra limbs, bad anatomy, jpeg artifacts, text, signature, watermark, nsfw, worst quality, normal quality, cropped, out of frame",
+      "clip": ["38", 0]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "8": {
+    "inputs": {
+      "samples": ["3", 0],
+      "vae": ["39", 0]
+    },
+    "class_type": "VAEDecode"
+  },
+  "37": {
+    "inputs": {
+      "unet_name": "wan2.1_t2v_1.3B_fp16.safetensors",
+      "weight_dtype": "fp8_e4m3fn"
+    },
+    "class_type": "UNETLoader"
+  },
+  "38": {
+    "inputs": {
+      "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "type": "wan",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader"
+  },
+  "39": {
+    "inputs": {
+      "vae_name": "wan_2.1_vae.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "40": {
+    "inputs": {
+      "width": 832,
+      "height": 480,
+      "length": 33,
+      "batch_size": 1
+    },
+    "class_type": "EmptyHunyuanLatentVideo"
+  },
+  "48": {
+    "inputs": {
+      "shift": 8,
+      "model": ["37", 0]
+    },
+    "class_type": "ModelSamplingSD3"
+  },
+  "49": {
+    "inputs": {
+      "fps": 16,
+      "bit_depth": 8,
+      "images": ["8", 0]
+    },
+    "class_type": "CreateVideo"
+  },
+  "50": {
+    "inputs": {
+      "filename_prefix": "video/spaceadventure_scene4_elara_ziva_cyborgdog",
+      "format": "auto",
+      "video": ["49", 0],
+      "codec": "auto"
+    },
+    "class_type": "SaveVideo"
+  }
+}

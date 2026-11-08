@@ -1,0 +1,902 @@
+[
+  {
+    "card_id": 1,
+    "art_url": "/aura-champions/art/001.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_001.png",
+    "art_path": null
+  },
+  {
+    "card_id": 2,
+    "art_url": "/aura-champions/art/002.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_002.png",
+    "art_path": null
+  },
+  {
+    "card_id": 3,
+    "art_url": "/aura-champions/art/003.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_003.png",
+    "art_path": null
+  },
+  {
+    "card_id": 4,
+    "art_url": "/aura-champions/art/004.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_004.png",
+    "art_path": null
+  },
+  {
+    "card_id": 5,
+    "art_url": "/aura-champions/art/005.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_005.png",
+    "art_path": null
+  },
+  {
+    "card_id": 6,
+    "art_url": "/aura-champions/art/006.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_006.png",
+    "art_path": null
+  },
+  {
+    "card_id": 7,
+    "art_url": "/aura-champions/art/007.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_007.png",
+    "art_path": null
+  },
+  {
+    "card_id": 8,
+    "art_url": "/aura-champions/art/008.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_008.png",
+    "art_path": null
+  },
+  {
+    "card_id": 9,
+    "art_url": "/aura-champions/art/009.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_009.png",
+    "art_path": null
+  },
+  {
+    "card_id": 10,
+    "art_url": "/aura-champions/art/010.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_010.png",
+    "art_path": null
+  },
+  {
+    "card_id": 11,
+    "art_url": "/aura-champions/art/011.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_011.png",
+    "art_path": null
+  },
+  {
+    "card_id": 12,
+    "art_url": "/aura-champions/art/012.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_012.png",
+    "art_path": null
+  },
+  {
+    "card_id": 13,
+    "art_url": "/aura-champions/art/013.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_013.png",
+    "art_path": null
+  },
+  {
+    "card_id": 14,
+    "art_url": "/aura-champions/art/014.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_014.png",
+    "art_path": null
+  },
+  {
+    "card_id": 15,
+    "art_url": "/aura-champions/art/015.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_015.png",
+    "art_path": null
+  },
+  {
+    "card_id": 16,
+    "art_url": "/aura-champions/art/016.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_016.png",
+    "art_path": null
+  },
+  {
+    "card_id": 17,
+    "art_url": "/aura-champions/art/017.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_017.png",
+    "art_path": null
+  },
+  {
+    "card_id": 18,
+    "art_url": "/aura-champions/art/018.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_018.png",
+    "art_path": null
+  },
+  {
+    "card_id": 19,
+    "art_url": "/aura-champions/art/019.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_019.png",
+    "art_path": null
+  },
+  {
+    "card_id": 20,
+    "art_url": "/aura-champions/art/020.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_020.png",
+    "art_path": null
+  },
+  {
+    "card_id": 21,
+    "art_url": "/aura-champions/art/021.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_021.png",
+    "art_path": null
+  },
+  {
+    "card_id": 22,
+    "art_url": "/aura-champions/art/022.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_022.png",
+    "art_path": null
+  },
+  {
+    "card_id": 23,
+    "art_url": "/aura-champions/art/023.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_023.png",
+    "art_path": null
+  },
+  {
+    "card_id": 24,
+    "art_url": "/aura-champions/art/024.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_024.png",
+    "art_path": null
+  },
+  {
+    "card_id": 25,
+    "art_url": "/aura-champions/art/025.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_025.png",
+    "art_path": null
+  },
+  {
+    "card_id": 26,
+    "art_url": "/aura-champions/art/026.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_026.png",
+    "art_path": null
+  },
+  {
+    "card_id": 27,
+    "art_url": "/aura-champions/art/027.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_027.png",
+    "art_path": null
+  },
+  {
+    "card_id": 28,
+    "art_url": "/aura-champions/art/028.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_028.png",
+    "art_path": null
+  },
+  {
+    "card_id": 29,
+    "art_url": "/aura-champions/art/029.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_029.png",
+    "art_path": null
+  },
+  {
+    "card_id": 30,
+    "art_url": "/aura-champions/art/030.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_030.png",
+    "art_path": null
+  },
+  {
+    "card_id": 31,
+    "art_url": "/aura-champions/art/031.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_031.png",
+    "art_path": null
+  },
+  {
+    "card_id": 32,
+    "art_url": "/aura-champions/art/032.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_032.png",
+    "art_path": null
+  },
+  {
+    "card_id": 33,
+    "art_url": "/aura-champions/art/033.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_033.png",
+    "art_path": null
+  },
+  {
+    "card_id": 34,
+    "art_url": "/aura-champions/art/034.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_034.png",
+    "art_path": null
+  },
+  {
+    "card_id": 35,
+    "art_url": "/aura-champions/art/035.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_035.png",
+    "art_path": null
+  },
+  {
+    "card_id": 36,
+    "art_url": "/aura-champions/art/036.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_036.png",
+    "art_path": null
+  },
+  {
+    "card_id": 37,
+    "art_url": "/aura-champions/art/037.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_037.png",
+    "art_path": null
+  },
+  {
+    "card_id": 38,
+    "art_url": "/aura-champions/art/038.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_038.png",
+    "art_path": null
+  },
+  {
+    "card_id": 39,
+    "art_url": "/aura-champions/art/039.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_039.png",
+    "art_path": null
+  },
+  {
+    "card_id": 40,
+    "art_url": "/aura-champions/art/040.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_040.png",
+    "art_path": null
+  },
+  {
+    "card_id": 41,
+    "art_url": "/aura-champions/art/041.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_041.png",
+    "art_path": null
+  },
+  {
+    "card_id": 42,
+    "art_url": "/aura-champions/art/042.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_042.png",
+    "art_path": null
+  },
+  {
+    "card_id": 43,
+    "art_url": "/aura-champions/art/043.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_043.png",
+    "art_path": null
+  },
+  {
+    "card_id": 44,
+    "art_url": "/aura-champions/art/044.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_044.png",
+    "art_path": null
+  },
+  {
+    "card_id": 45,
+    "art_url": "/aura-champions/art/045.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_045.png",
+    "art_path": null
+  },
+  {
+    "card_id": 46,
+    "art_url": "/aura-champions/art/046.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_046.png",
+    "art_path": null
+  },
+  {
+    "card_id": 47,
+    "art_url": "/aura-champions/art/047.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_047.png",
+    "art_path": null
+  },
+  {
+    "card_id": 48,
+    "art_url": "/aura-champions/art/048.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_048.png",
+    "art_path": null
+  },
+  {
+    "card_id": 49,
+    "art_url": "/aura-champions/art/049.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_049.png",
+    "art_path": null
+  },
+  {
+    "card_id": 50,
+    "art_url": "/aura-champions/art/050.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_050.png",
+    "art_path": null
+  },
+  {
+    "card_id": 51,
+    "art_url": "/aura-champions/art/051.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_051.png",
+    "art_path": null
+  },
+  {
+    "card_id": 52,
+    "art_url": "/aura-champions/art/052.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_052.png",
+    "art_path": null
+  },
+  {
+    "card_id": 53,
+    "art_url": "/aura-champions/art/053.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_053.png",
+    "art_path": null
+  },
+  {
+    "card_id": 54,
+    "art_url": "/aura-champions/art/054.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_054.png",
+    "art_path": null
+  },
+  {
+    "card_id": 55,
+    "art_url": "/aura-champions/art/055.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_055.png",
+    "art_path": null
+  },
+  {
+    "card_id": 56,
+    "art_url": "/aura-champions/art/056.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_056.png",
+    "art_path": null
+  },
+  {
+    "card_id": 57,
+    "art_url": "/aura-champions/art/057.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_057.png",
+    "art_path": null
+  },
+  {
+    "card_id": 58,
+    "art_url": "/aura-champions/art/058.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_058.png",
+    "art_path": null
+  },
+  {
+    "card_id": 59,
+    "art_url": "/aura-champions/art/059.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_059.png",
+    "art_path": null
+  },
+  {
+    "card_id": 60,
+    "art_url": "/aura-champions/art/060.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_060.png",
+    "art_path": null
+  },
+  {
+    "card_id": 61,
+    "art_url": "/aura-champions/art/061.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_061.png",
+    "art_path": null
+  },
+  {
+    "card_id": 62,
+    "art_url": "/aura-champions/art/062.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_062.png",
+    "art_path": null
+  },
+  {
+    "card_id": 63,
+    "art_url": "/aura-champions/art/063.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_063.png",
+    "art_path": null
+  },
+  {
+    "card_id": 64,
+    "art_url": "/aura-champions/art/064.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_064.png",
+    "art_path": null
+  },
+  {
+    "card_id": 65,
+    "art_url": "/aura-champions/art/065.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_065.png",
+    "art_path": null
+  },
+  {
+    "card_id": 66,
+    "art_url": "/aura-champions/art/066.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_066.png",
+    "art_path": null
+  },
+  {
+    "card_id": 67,
+    "art_url": "/aura-champions/art/067.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_067.png",
+    "art_path": null
+  },
+  {
+    "card_id": 68,
+    "art_url": "/aura-champions/art/068.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_068.png",
+    "art_path": null
+  },
+  {
+    "card_id": 69,
+    "art_url": "/aura-champions/art/069.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_069.png",
+    "art_path": null
+  },
+  {
+    "card_id": 70,
+    "art_url": "/aura-champions/art/070.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_070.png",
+    "art_path": null
+  },
+  {
+    "card_id": 71,
+    "art_url": "/aura-champions/art/071.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_071.png",
+    "art_path": null
+  },
+  {
+    "card_id": 72,
+    "art_url": "/aura-champions/art/072.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_072.png",
+    "art_path": null
+  },
+  {
+    "card_id": 73,
+    "art_url": "/aura-champions/art/073.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_073.png",
+    "art_path": null
+  },
+  {
+    "card_id": 74,
+    "art_url": "/aura-champions/art/074.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_074.png",
+    "art_path": null
+  },
+  {
+    "card_id": 75,
+    "art_url": "/aura-champions/art/075.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_075.png",
+    "art_path": null
+  },
+  {
+    "card_id": 76,
+    "art_url": "/aura-champions/art/076.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_076.png",
+    "art_path": null
+  },
+  {
+    "card_id": 77,
+    "art_url": "/aura-champions/art/077.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_077.png",
+    "art_path": null
+  },
+  {
+    "card_id": 78,
+    "art_url": "/aura-champions/art/078.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_078.png",
+    "art_path": null
+  },
+  {
+    "card_id": 79,
+    "art_url": "/aura-champions/art/079.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_079.png",
+    "art_path": null
+  },
+  {
+    "card_id": 80,
+    "art_url": "/aura-champions/art/080.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_080.png",
+    "art_path": null
+  },
+  {
+    "card_id": 81,
+    "art_url": "/aura-champions/art/081.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_081.png",
+    "art_path": null
+  },
+  {
+    "card_id": 82,
+    "art_url": "/aura-champions/art/082.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_082.png",
+    "art_path": null
+  },
+  {
+    "card_id": 83,
+    "art_url": "/aura-champions/art/083.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_083.png",
+    "art_path": null
+  },
+  {
+    "card_id": 84,
+    "art_url": "/aura-champions/art/084.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_084.png",
+    "art_path": null
+  },
+  {
+    "card_id": 85,
+    "art_url": "/aura-champions/art/085.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_085.png",
+    "art_path": null
+  },
+  {
+    "card_id": 86,
+    "art_url": "/aura-champions/art/086.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_086.png",
+    "art_path": null
+  },
+  {
+    "card_id": 87,
+    "art_url": "/aura-champions/art/087.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_087.png",
+    "art_path": null
+  },
+  {
+    "card_id": 88,
+    "art_url": "/aura-champions/art/088.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_088.png",
+    "art_path": null
+  },
+  {
+    "card_id": 89,
+    "art_url": "/aura-champions/art/089.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_089.png",
+    "art_path": null
+  },
+  {
+    "card_id": 90,
+    "art_url": "/aura-champions/art/090.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_090.png",
+    "art_path": null
+  },
+  {
+    "card_id": 91,
+    "art_url": "/aura-champions/art/091.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_091.png",
+    "art_path": null
+  },
+  {
+    "card_id": 92,
+    "art_url": "/aura-champions/art/092.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_092.png",
+    "art_path": null
+  },
+  {
+    "card_id": 93,
+    "art_url": "/aura-champions/art/093.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_093.png",
+    "art_path": null
+  },
+  {
+    "card_id": 94,
+    "art_url": "/aura-champions/art/094.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_094.png",
+    "art_path": null
+  },
+  {
+    "card_id": 95,
+    "art_url": "/aura-champions/art/095.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_095.png",
+    "art_path": null
+  },
+  {
+    "card_id": 96,
+    "art_url": "/aura-champions/art/096.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_096.png",
+    "art_path": null
+  },
+  {
+    "card_id": 97,
+    "art_url": "/aura-champions/art/097.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_097.png",
+    "art_path": null
+  },
+  {
+    "card_id": 98,
+    "art_url": "/aura-champions/art/098.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_098.png",
+    "art_path": null
+  },
+  {
+    "card_id": 99,
+    "art_url": "/aura-champions/art/099.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_099.png",
+    "art_path": null
+  },
+  {
+    "card_id": 100,
+    "art_url": "/aura-champions/art/100.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_100.png",
+    "art_path": null
+  },
+  {
+    "card_id": 101,
+    "art_url": "/aura-champions/art/101.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_101.png",
+    "art_path": null
+  },
+  {
+    "card_id": 102,
+    "art_url": "/aura-champions/art/102.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_102.png",
+    "art_path": null
+  },
+  {
+    "card_id": 103,
+    "art_url": "/aura-champions/art/103.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_103.png",
+    "art_path": null
+  },
+  {
+    "card_id": 104,
+    "art_url": "/aura-champions/art/104.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_104.png",
+    "art_path": null
+  },
+  {
+    "card_id": 105,
+    "art_url": "/aura-champions/art/105.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_105.png",
+    "art_path": null
+  },
+  {
+    "card_id": 106,
+    "art_url": "/aura-champions/art/106.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_106.png",
+    "art_path": null
+  },
+  {
+    "card_id": 107,
+    "art_url": "/aura-champions/art/107.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_107.png",
+    "art_path": null
+  },
+  {
+    "card_id": 108,
+    "art_url": "/aura-champions/art/108.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_108.png",
+    "art_path": null
+  },
+  {
+    "card_id": 109,
+    "art_url": "/aura-champions/art/109.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_109.png",
+    "art_path": null
+  },
+  {
+    "card_id": 110,
+    "art_url": "/aura-champions/art/110.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_110.png",
+    "art_path": null
+  },
+  {
+    "card_id": 111,
+    "art_url": "/aura-champions/art/111.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_111.png",
+    "art_path": null
+  },
+  {
+    "card_id": 112,
+    "art_url": "/aura-champions/art/112.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_112.png",
+    "art_path": null
+  },
+  {
+    "card_id": 113,
+    "art_url": "/aura-champions/art/113.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_113.png",
+    "art_path": null
+  },
+  {
+    "card_id": 114,
+    "art_url": "/aura-champions/art/114.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_114.png",
+    "art_path": null
+  },
+  {
+    "card_id": 115,
+    "art_url": "/aura-champions/art/115.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_115.png",
+    "art_path": null
+  },
+  {
+    "card_id": 116,
+    "art_url": "/aura-champions/art/116.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_116.png",
+    "art_path": null
+  },
+  {
+    "card_id": 117,
+    "art_url": "/aura-champions/art/117.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_117.png",
+    "art_path": null
+  },
+  {
+    "card_id": 118,
+    "art_url": "/aura-champions/art/118.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_118.png",
+    "art_path": null
+  },
+  {
+    "card_id": 119,
+    "art_url": "/aura-champions/art/119.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_119.png",
+    "art_path": null
+  },
+  {
+    "card_id": 120,
+    "art_url": "/aura-champions/art/120.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_120.png",
+    "art_path": null
+  },
+  {
+    "card_id": 121,
+    "art_url": "/aura-champions/art/121.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_121.png",
+    "art_path": null
+  },
+  {
+    "card_id": 122,
+    "art_url": "/aura-champions/art/122.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_122.png",
+    "art_path": null
+  },
+  {
+    "card_id": 123,
+    "art_url": "/aura-champions/art/123.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_123.png",
+    "art_path": null
+  },
+  {
+    "card_id": 124,
+    "art_url": "/aura-champions/art/124.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_124.png",
+    "art_path": null
+  },
+  {
+    "card_id": 125,
+    "art_url": "/aura-champions/art/125.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_125.png",
+    "art_path": null
+  },
+  {
+    "card_id": 126,
+    "art_url": "/aura-champions/art/126.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_126.png",
+    "art_path": null
+  },
+  {
+    "card_id": 127,
+    "art_url": "/aura-champions/art/127.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_127.png",
+    "art_path": null
+  },
+  {
+    "card_id": 128,
+    "art_url": "/aura-champions/art/128.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_128.png",
+    "art_path": null
+  },
+  {
+    "card_id": 129,
+    "art_url": "/aura-champions/art/129.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_129.png",
+    "art_path": null
+  },
+  {
+    "card_id": 130,
+    "art_url": "/aura-champions/art/130.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_130.png",
+    "art_path": null
+  },
+  {
+    "card_id": 131,
+    "art_url": "/aura-champions/art/131.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_131.png",
+    "art_path": null
+  },
+  {
+    "card_id": 132,
+    "art_url": "/aura-champions/art/132.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_132.png",
+    "art_path": null
+  },
+  {
+    "card_id": 133,
+    "art_url": "/aura-champions/art/133.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_133.png",
+    "art_path": null
+  },
+  {
+    "card_id": 134,
+    "art_url": "/aura-champions/art/134.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_134.png",
+    "art_path": null
+  },
+  {
+    "card_id": 135,
+    "art_url": "/aura-champions/art/135.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_135.png",
+    "art_path": null
+  },
+  {
+    "card_id": 136,
+    "art_url": "/aura-champions/art/136.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_136.png",
+    "art_path": null
+  },
+  {
+    "card_id": 137,
+    "art_url": "/aura-champions/art/137.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_137.png",
+    "art_path": null
+  },
+  {
+    "card_id": 138,
+    "art_url": "/aura-champions/art/138.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_138.png",
+    "art_path": null
+  },
+  {
+    "card_id": 139,
+    "art_url": "/aura-champions/art/139.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_139.png",
+    "art_path": null
+  },
+  {
+    "card_id": 140,
+    "art_url": "/aura-champions/art/140.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_140.png",
+    "art_path": null
+  },
+  {
+    "card_id": 141,
+    "art_url": "/aura-champions/art/141.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_141.png",
+    "art_path": null
+  },
+  {
+    "card_id": 142,
+    "art_url": "/aura-champions/art/142.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_142.png",
+    "art_path": null
+  },
+  {
+    "card_id": 143,
+    "art_url": "/aura-champions/art/143.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_143.png",
+    "art_path": null
+  },
+  {
+    "card_id": 144,
+    "art_url": "/aura-champions/art/144.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_144.png",
+    "art_path": null
+  },
+  {
+    "card_id": 145,
+    "art_url": "/aura-champions/art/145.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_145.png",
+    "art_path": null
+  },
+  {
+    "card_id": 146,
+    "art_url": "/aura-champions/art/146.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_146.png",
+    "art_path": null
+  },
+  {
+    "card_id": 147,
+    "art_url": "/aura-champions/art/147.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_147.png",
+    "art_path": null
+  },
+  {
+    "card_id": 148,
+    "art_url": "/aura-champions/art/148.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_148.png",
+    "art_path": null
+  },
+  {
+    "card_id": 149,
+    "art_url": "/aura-champions/art/149.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_149.png",
+    "art_path": null
+  },
+  {
+    "card_id": 150,
+    "art_url": "/aura-champions/art/150.png",
+    "frame_path": "C:\\Users\\young\\agents\\aura_champions_card_art\\card_frames\\card_150.png",
+    "art_path": null
+  }
+]

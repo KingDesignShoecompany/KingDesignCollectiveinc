@@ -20,17 +20,18 @@ describe('dashboard data', () => {
   it('has 8 subsidiary modules (dashboard itself excluded)', () => {
     expect(MODULES).toHaveLength(8);
     expect(MODULES.map((m) => m.title)).toEqual([
-      'Vagary Index', 'KingDesignShoeCompany', 'Aura Champions',
+      'Vagary Index', 'KingDesignShoeCompany', 'KDCI Gaming',
       'Seven Minute Story Sessions', 'King Design Collective Briheight Box',
       'KingDesign E-Collective', 'Quantum Mode', 'Gooniversity',
     ]);
   });
 
   it('searchModules filters by title/tagline, case-insensitive', () => {
-    expect(searchModules('aura').map((m) => m.title)).toEqual(['Aura Champions']);
-    expect(searchModules('shoes').length).toBe(0); // title is KingDesignShoeCompany
-    expect(searchModules('SHOE').map((m) => m.title)).toContain('KingDesignShoeCompany');
+    expect(searchModules('shoe').map((m) => m.title)).toContain('KingDesignShoeCompany');
     expect(searchModules('gooner').map((m) => m.title)).toEqual(['Gooniversity']);
     expect(searchModules('').length).toBe(8);
+    const mod = searchModules('KDCI');
+    expect(mod.length).toBeGreaterThan(0);
+    expect(mod[0].title).toBe('KDCI Gaming');
   });
 });

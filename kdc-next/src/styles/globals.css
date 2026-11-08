@@ -622,3 +622,108 @@ a { color: var(--gold); }
   background: linear-gradient(transparent, rgba(5,5,5,0.85)); border-radius: 0 0 16px 16px; }
 .featured-play { width: 44px; height: 44px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
   background: linear-gradient(90deg, var(--gold), var(--gold-bright)); color: #050505; font-size: 1rem; flex-shrink: 0; }
+
+/* ---- Quantum Wearables: immersive product showcase ---- */
+.quantum-device {
+  position: relative;
+  width: 200px;
+  height: 240px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  animation: quantum-pulse 6s ease-in-out infinite;
+}
+.quantum-device .qd-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  border: 1.5px solid rgba(212,175,55,0.25);
+  border-radius: 50%;
+  transform-origin: center center;
+  animation: orbit 14s linear infinite;
+}
+.quantum-device .qd-ring.r2 { animation-duration: 18s; opacity: 0.5; }
+.quantum-device .qd-ring.r3 { animation-duration: 24s; opacity: 0.3; }
+.quantum-device .qd-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 52px;
+  height: 52px;
+  margin: -26px 0 0 -26px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f5d67b, #d4af37 50%, #8a6d1f);
+  box-shadow: 0 0 26px rgba(212,175,55,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.quantum-device .qd-core-inner {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #0a0a0f;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.8);
+}
+.quantum-device .qd-spark {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #d4af37;
+  transform: translate(-50%, -50%);
+  animation: spark 3s ease-in-out infinite;
+}
+.quantum-device .qd-spark:nth-child(1) { left: 100%; animation-delay: 0.5s; }
+.quantum-device .qd-spark:nth-child(2) { left: 100%; top: 50%; animation-delay: 1s; }
+.quantum-device .qd-spark:nth-child(3) { left: 100%; top: 100%; animation-delay: 1.5s; }
+.quantum-device .qd-spark:nth-child(4) { top: 100%; animation-delay: 2s; }
+.quantum-device .qd-node {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f5d67b, #d4af37);
+  border: 1.5px solid #f5d67b;
+  box-shadow: 0 0 8px rgba(212,175,55,0.4);
+}
+.quantum-device .qd-node.n1 { top: 60px; left: 50%; transform: translateX(-50%); }
+.quantum-device .qd-node.n2 { bottom: 80px; left: 50%; transform: translateX(-50%); }
+.quantum-device .qd-node.n3 { top: 80px; right: 20px; }
+.quantum-device .qd-node.n4 { bottom: 40px; right: 30px; }
+.quantum-device .qd-legend {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 14px;
+  background: rgba(10,10,15,0.8);
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(212,175,55,0.2);
+}
+.quantum-device .qd-core-txt {
+  font-size: 0.62rem;
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@keyframes orbit {
+  from { transform: rotateX(70deg) rotateZ(0deg); }
+  to { transform: rotateX(70deg) rotateZ(360deg); }
+}
+@keyframes spark {
+  0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(0.8); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.3); }
+}
+@keyframes quantum-pulse {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(212,175,55,0.3)); }
+  50% { filter: drop-shadow(0 0 12px rgba(212,175,55,0.6)); }
+}
+
+

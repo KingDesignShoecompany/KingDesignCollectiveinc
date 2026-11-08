@@ -8,12 +8,11 @@ const PAGES = [
   { href: '/', label: 'Dashboard', ico: '◈' },
   { href: '/travel-index', label: 'Vagary Index', ico: '🌍' },
   { href: '/shoe-brand', label: 'KingDesignShoeCompany', ico: '👟' },
-  { href: '/game-design', label: 'Aura Champions', ico: '🎮' },
+  { href: '/gaming', label: 'KDCI Gaming', ico: '🎮' },
   { href: '/kids-channel', label: 'Seven Minute Story Sessions', ico: '📚' },
   { href: '/innovation-hub', label: 'King Design Collective Briheight Box', ico: '💡' },
   { href: '/ewaste-recycling', label: 'KingDesign E-Collective', ico: '♻️' },
   { href: '/quantum-wearables', label: 'Quantum Mode', ico: '⚛️' },
-  { href: '/gooniversity', label: 'Gooniversity', ico: '🎓' },
 ];
 
 export default function Sidebar() {

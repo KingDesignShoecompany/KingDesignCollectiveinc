@@ -38,7 +38,7 @@ CORPORATE_DOCS = os.environ.get(
 # Subsidiary routing table
 SUBSIDIARIES = {
     "shoe-brand": {"sector": "Consumer", "keywords": ["inventory", "ad copy", "product", "ecommerce", "shoe", "sneaker", "footwear", "collection", "SKUs", "product images", "marketing", "brand"]},
-    "travel-index": {"sector": "Digital Media", "keywords": ["travel", "country", "TikTok", "currency", "guide", "geospatial", "destination", "itinerary", "KingDesignCollectiveINC"]},
+    "travel-index": {"sector": "Digital Media", "keywords": ["travel", "country", "TikTok", "currency", "guide", "geospatial", "destination", "itinerary", "vagary"]},
     "game-design": {"sector": "Virtual", "keywords": ["Unreal", "mechanics", "C++", "level", "UE5", "Unity", "blueprint", "Trinity VFX", "card-battler", "battler", "game design", "game-design", "content pipeline", "pipeline"]},
     "kids-channel": {"sector": "Media", "keywords": ["bedtime", "story", "TTS", "narration", "child", "bedtime story", "sleep", "kids"]},
     "innovation-hub": {"sector": "Deep Tech", "keywords": ["patent", "white paper", "tech stack", "IP", "intellectual property", "research", "innovation"]},

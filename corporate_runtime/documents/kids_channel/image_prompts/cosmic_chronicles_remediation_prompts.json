@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "project": "Cosmic Chronicles Coloring Book",
+    "version": "1.0",
+    "description": "Corrected FAL image generation prompts for inconsistent/regenerated images. Each prompt enforces canonical character consistency.",
+    "canonical_reference_url": "https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png",
+    "character_consistency_enforcement": "All prompts MUST reference the canonical character sheet and specify exact character descriptions. No deviations in species, clothing, or star emblem placement."
+  },
+  "canonical_character_spec": {
+    "elara": "Elara - a HUMAN GIRL explorer/astronaut. Long, wavy shoulder-length blonde/light-brown hair with side part and bangs. Wears a wide-brimmed SPACE HELMET/safari hat with band and small front light. White/light-grey BULKY SPACESUIT with high collar. STAR EMBLEM: five-pointed star PATCH on the LEFT CHEST (viewer's left). Belt with large rectangular silver buckle. Holding star-shaped medallion in hand when relevant. NO animal tails, NO civilian dresses - always astronaut/safari uniform.",
+    "ziva": "Ziva - a CATICORN (cat body + unicorn horn). Furry feline body with pointed triangular CAT EARS (pink interior). Single SPIRAL GOLDEN-YELLOW unicorn horn on forehead. Pink fur on back/head/outer ears, WHITE fur on chest/muzzle/front paws/tail tip. Large anime-style eyes with star highlights. Long FLUFFY tail curling upward. Sitting upright, paws tucked in front. NEVER a horse/pony, NEVER a goat, NEVER human.",
+    "teddy_bot": "Teddy Bot - an ANTHROPOMORPHIC ROBOT WOLF. Metallic/silver plating body. WOLF-LIKE snout with black nose and toothy smile. Pointed TRIANGULAR ROBOTIC EARS. Large CIRCULAR VISOR eyes. Rectangular chest plate with small inset. Large rounded SHOULDER PAULDRONS with bolts. Segmented mechanical ARMS with CLAW-LIKE grips. NO teddy bear face, NO retro robot screen face, NO dog snout - must be wolf-like.",
+    "star_emblem": "STAR EMBLEM: Five-pointed star, always on LEFT CHEST as a PATCH (not necklace medallion). Glowing with radial sparkles. Present on Elara's spacesuit.",
+    "star_medallion_action": "When characters HOLD star-shaped medallions (scene-specific action), they are separate glowing five-pointed stars, NOT replacements for the chest patch."
+  },
+  "remediation_prompts": [
+    {
+      "image_id": "ep1_elara_first_space_adventure_01.png",
+      "original_issue": "Ziva and Teddy Bot missing - only Elara present",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 1: Elara on Lunaria spaceship cockpit. ELARA: human girl astronaut in white spacesuit with star emblem patch on LEFT CHEST, wearing wide-brimmed space helmet with front light, holding glowing star-shaped medallion, looking at navigation screen showing ringed planet. ZIVA: pink caticorn (cat body with golden spiraled unicorn horn on forehead, white chest/muzzle/paws, fluffy curled tail, sitting on console), TedDY BOT: robot wolf (metallic silver wolf snout with black nose, circular visor eyes, pointed robotic ears, rectangular chest plate, large shoulder pauldrons with bolts, claw hands, no organic tail). All three characters visible. Spaceship cockpit interior with control panels, starry space window background. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style, clean black lines, white background, no shading."
+    },
+    {
+      "image_id": "ep1_elara_first_space_adventure_02.png",
+      "original_issue": "Ziva and Teddy Bot missing - only Elara present",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 1 Scene 2: Elara pressing glowing star medallion into Lunaria navigation console. ELARA: human girl astronaut in white spacesuit with star emblem patch on LEFT CHEST, wide-brimmed space helmet with front light, holding glowing star medallion with both hands, inserting into console. ZIVA: pink caticorn (cat body, golden spiraled horn, white chest/muzzle, fluffy curled tail, sitting on console), TEDDY BOT: robot wolf (silver metallic wolf snout, visor eyes, pointed robotic ears, rectangular chest plate, shoulder pauldrons, claw hands, no tail). All three heroes present. Navigation console with screen showing ringed planet, spaceship interior. Reference canonical character sheet. Coloring book style, bold lines, white background."
+    },
+    {
+      "image_id": "ep2_planet_of_pancakes_04.png",
+      "original_issue": "CORRUPTED FILE - 170 bytes, blank/empty",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 2 Scene 4: Wide shot of Planet of Pancakes from space. Giant planet covered in golden fluffy pancake continents, flowing syrup rivers (wavy lines), berry-jam craters (red circular marks with berries), butter-cloud swirls (fluffy white masses) in the sky. No characters needed - environment only. Stars in background. Reference canonical character sheet for style consistency. Coloring book style, clean outlines, white background."
+    },
+    {
+      "image_id": "ep2_planet_of_pancakes_05.png",
+      "original_issue": "Two identical girls instead of Elara/Ziva, Teddy Bot as retro robot",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 2 Scene 5: Pan Crew cheering with spatula-like applause, pancakes rising and syrup flowing, heroes surrounded by happy crumb beings. ELARA: human girl with long wavy blonde hair, wide-brimmed safari hat, white spacesuit with star emblem patch on LEFT CHEST, belt with rectangular buckle, holding two glowing star medallions. ZIVA: pink caticorn (cat ears, golden spiraled unicorn horn, white chest/muzzle/paws, fluffy curled tail, paws tucked). TEDDY BOT: robot WOLF (silver metallic wolf snout, black nose, circular visor eyes, pointed robotic ears, rectangular chest plate, large shoulder pauldrons with bolts, segmented claw arms, NO teddy bear features). Crumb beings: tiny round marshmallow-like creatures with dot eyes, holding tiny spatulas. Pancake stacks with syrup rivers around. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep2_planet_of_pancakes_06.png",
+      "original_issue": "Same as 05 - duplicate issue (regenerated v2)",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 2 Scene 5 (REGENERATED): Pan Crew final celebration. ELARA: human girl, long wavy blonde hair, wide-brimmed safari hat, white SPACESUIT with star emblem patch on LEFT CHEST, belt, holding glowing star medallion. ZIVA: pink CATACORN (cat body, golden spiraled horn, white chest/muzzle/paws, fluffy curled tail). TEDDY BOT: robot WOLF (silver wolf snout, black nose, visor eyes, robotic ears, chest plate, shoulder pauldrons with bolts, claw hands, NO teddy bear features). Happy crumb beings (round marshmallow creatures with dot eyes) celebrating with spatulas, pancakes and syrup flowing. Golden warm celebration atmosphere. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep3_library_of_lost_sounds_03.png",
+      "original_issue": "All characters missing - image shows empty library with globe",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 3 Scene 3: Elara telling story to shadowy Mumble while Ziva and Teddy bot listen. ELARA: human girl in white spacesuit with star emblem patch on LEFT CHEST, wide-brimmed helmet, sitting on library floor telling story, holding star medallion. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail, sitting attentively). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands). MUMBLE: shadowy round being with dark sack, peeking out. Library setting with tall bookshelves, glowing crystal discs floating like fireflies, globe and planets visible. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep3_library_of_lost_sounds_04.png",
+      "original_issue": "CORRUPTED/EMPTY FILE - needs regeneration",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 3 Scene 4: Glowing crystal discs floating like fireflies around library planet, each holding the color of a feeling. Floating crystal orbs in various geometric shapes (hexagons, octagons) with radiating lines to indicate glow. Library shelf background with books. No characters needed - environment only. Colors could be indicated with different patterns/shading for each emotion (warm = curved lines, cool = straight lines). Reference canonical style. Coloring book style, clean lines."
+    },
+    {
+      "image_id": "ep3_library_of_lost_sounds_06.png",
+      "original_issue": "404 NOT FOUND - image missing from CDN",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 3 Scene 6 (REGENERATED): Elara on library floor creating new sound with Ziva humming and Teddy bot adding electronic ping, Mumble listening with eyes filling with light. ELARA: human girl in white spacesuit with star emblem patch on LEFT CHEST, sitting cross-legged, gesturing with one hand, holding star medallion. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail, head tilted, humming). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands, one hand making electronic gesture). MUMBLE: shadowy being with dark sack, eyes wide with wonder. Library background with bookshelves, crystal discs, musical notes floating. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep4_clockwork_garden_02.png",
+      "original_issue": "Ziva and Teddy Bot missing, no star emblem visible",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 4 Scene 2: Spiral maze of tall delicate twisting stems from Clockwork Garden, brass and copper colored, young girl explorer at entrance with caticorn and robot wolf. ELARA: human girl with shoulder-length wavy blonde hair, wide-brimmed explorer hat, BEIGE/BROWN EXPLORER JACKET (NOT astronaut suit for this casual scene) with star emblem patch on LEFT CHEST, belt, shorts, lace-up boots, backpack. ZIVA: pink caticorn (cat ears with pink interior, golden spiraled unicorn horn, white chest/muzzle/paws, fluffy curled tail, walking beside Elara). TEDDY BOT: robot wolf (silver metallic wolf snout with black nose, circular visor eyes, pointed robotic ears, rectangular chest plate, large shoulder pauldrons with bolts, segmented claw arms, no organic tail). Maze of brass/copper colored twisting stems. Reference canonical character sheet. Coloring book style, bold outlines."
+    },
+    {
+      "image_id": "ep4_clockwork_garden_04.png",
+      "original_issue": "Ziva and Teddy Bot missing, no star emblem visible",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 4 Scene 4: Balance Scale with dew drops on one side and glowing key piece on other. ELARA: human girl explorer, shoulder-length wavy blonde hair, wide-brimmed safari hat with band, button-up explorer jacket with star emblem patch on LEFT CHEST, blue overalls with front pocket, lace-up boots, satchel bag. Placing glowing key onto scale. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest/paws, fluffy tail, sitting attentively nearby). TEDDY BOT: robot wolf (silver wolf snout, black nose, visor eyes, robotic ears, rectangular chest plate, shoulder pauldrons with bolts, claw hands, no tail). Ornate balance scale with dew drops (teardrop shapes) in left bowl, glowing skeleton key in right. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep4_clockwork_garden_05.png",
+      "original_issue": "All 3 heroes are elderly humans, no caticorn or robot wolf",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 4 Scene 5: Cogsworth bowing before three heroes with ticking flowers and gear-wing butterflies. COGSMOUTH: tall bronze clockwork gardener, safari pith helmet with goggles pushed up, vest with large clock face on chest, bolted mechanical joints, friendly smile. ELARA: human girl in white spacesuit with star emblem patch on LEFT CHEST, wide-brimmed space helmet under arm, belt with rectangular buckle. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail, sitting gracefully). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, rectangular chest plate, large shoulder pauldrons, claw hands). Gears floating in air, butterflies with gear wings, ticking flowers with musical note labels. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep4_clockwork_garden_06.png",
+      "original_issue": "Ziva and Teddy Bot missing, no star emblem",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 4 Scene 6: Flower Chorus from Clockwork Garden, girl explorer walking between flowers stepping in rhythm. ELARA: human girl explorer, shoulder-length wavy blonde hair, wide-brimmed sun hat with ribbon bow, long-sleeved dress/jumper with star emblem patch on LEFT CHEST, sash belt at waist, lace-up ankle boots, crossbody bag. Walking between rows of large daisy-like flowers. Each flower holds a musical note (eighth notes, quarter notes). ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail, walking beside Elara). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands, mechanical feet). Musical notes floating in air. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep5_starlight_market_03.png",
+      "original_issue": "Ziva and Teddy Bot missing",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 5 Scene 3: Elara sitting on crystalline asteroid holding vial of swirling silver and blue comet-light, Starlight Market in distance. ELARA: human girl with shoulder-length wavy blonde hair, wide-brimmed explorer hat, short-sleeved button-down shirt with star emblem patch on LEFT CHEST, shorts, lace-up hiking boots, backpack. Sitting on crystalline asteroid, holding glass vial with swirling silver-blue liquid. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest/paws, fluffy tail, sitting on another asteroid). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, rectangular chest plate, shoulder pauldrons, claw hands, mechanical tail). Floating ice stalls with aurora canopies in background, stars everywhere. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep5_starlight_market_04.png",
+      "original_issue": "Ziva and Teddy Bot missing (duplicate of 03)",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 5 Scene 4: Elara holding vial of swirling comet-light on crystalline asteroid. ELARA: human girl, shoulder-length wavy blonde hair, wide-brimmed explorer hat, short-sleeved shirt with star emblem patch on LEFT CHEST, pants, boots, backpack. Holding glass vial with swirling silver-blue comet-light. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands). Starlight Market stalls with aurora canopies in distance, comet tail behind. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep5_starlight_market_05.png",
+      "original_issue": "Ziva and Teddy Bot missing (duplicate of 03)",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 5 Scene 5: Elara receiving starlight currency on crystalline asteroid. ELARA: human girl, shoulder-length wavy blonde hair, wide-brimmed explorer hat, short-sleeved shirt with star emblem patch on LEFT CHEST, pants, boots, backpack. Holding vial of swirling silver-blue comet-light, receiving star-shaped silver coins. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest/paws, fluffy tail). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands, mechanical tail). Starlight Market in background, constellation patterns in sky. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep5_starlight_market_06.png",
+      "original_issue": "Ziva and Teddy Bot missing, Comet Tail Trader as elderly elf instead of heroes",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 5 Scene 6: Elara telling story to Comet Tail Trader at floating ice stall. ELARA: human girl, shoulder-length wavy blonde hair, wide-brimmed explorer hat, short-sleeved shirt with star emblem patch on LEFT CHEST, pants, boots, backpack, holding star medallion. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail, sitting nearby). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands). COMET TAIL TRADER: elderly figure with long white beard, tall pointed hat with crescent moon symbol, flowing robe with star patterns, star-tipped staff, round spectacles. Floating ice stall with aurora canopy, starry night sky. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep6_planet_that_forgot_its_color_01.png",
+      "original_issue": "Ziva shown as horse (not caticorn), Teddy Bot with TAD-15 label (not canonical wolf)",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 6 Scene 1: Gray planet with Shades approaching, heroes standing out with color. ELARA: human girl in white spacesuit with star emblem patch on LEFT CHEST, wide-brimmed space helmet, belt with rectangular buckle, holding glowing star medallion. ZIVA: pink CATACORN (cat ears with pink interior, golden spiraled unicorn horn on forehead, white chest/muzzle/front paws, fluffy curled tail, paws tucked, NOT a horse/pony). TEDDY BOT: robot WOLF (silver metallic wolf snout with black nose, circular visor eyes, pointed triangular robotic ears, rectangular chest plate, large rounded shoulder pauldrons with bolts, segmented claw arms, NO TAD label). Gray desolate planet background, shadowy blob-like Shades creatures in background. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep6_planet_that_forgot_its_color_02.png",
+      "original_issue": "Ziva shown as horse/pony (not caticorn), no Elara or Teddy Bot",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 6 Scene 2: Ziva touching gray grass with glowing horn, revealing hidden green. ZIVA: pink CATACORN (cat ears, golden spiraled horn, white chest/muzzle/paws, fluffy curled tail, front paw touching grass). Horn glowing with radiating lines, flash of green color revealed. Gray grass transforming to green. Barren gray landscape. NO horses/ponies. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep6_planet_that_forgot_its_color_03.png",
+      "original_issue": "Ziva and Teddy Bot missing",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 6 Scene 3: Elara putting hand on cloud-covered crystal on Prism Peak. ELARA: human girl in white spacesuit with star emblem patch on LEFT CHEST, wide-brimmed space helmet, belt, holding star medallion. Reaching up to touch cloud-covered crystal formation. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail, watching from behind). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands). Prism Peak with crystal formations, gray planet landscape. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep6_planet_that_forgot_its_color_05.png",
+      "original_issue": "8 generic human characters instead of heroes",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 6 Scene 5: Color bloom across gray planet, Shades laughing and crying. ELARA: human girl with star emblem patch on LEFT CHEST, pointing joyfully. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands). COLOR BLOOM: magical explosion of colors - green streams to grass, blue to sky, gold to fields, red to flowers. Shades (round shadow creatures) in background laughing and crying. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep7_moon_of_a_thousand_doors_02.png",
+      "original_issue": "Ziva and Teddy Bot missing, star emblem present but check consistency",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 7 Scene 2: Elara opening a glowing freestanding door on moon surface. ELARA: human girl with shoulder-length wavy blonde hair, wide-brimmed explorer hat with band, button-up jacket with star emblem patch on LEFT CHEST, belt, boots, backpack. Reaching to open tall arched door with glowing golden light and floating stars. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest/paws, fluffy tail, sitting alert). TEDDY BOT: robot wolf (silver wolf snout, black nose, visor eyes, robotic ears, rectangular chest plate, large shoulder pauldrons with bolts, claw hands, mechanical tail). Cratered moon surface, stars in background. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep7_moon_of_a_thousand_doors_03.png",
+      "original_issue": "Ziva and Teddy Bot missing, Elara in regular clothes (not astronaut), Elara has tail",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 7 Scene 3: Elara stepping through glowing door on moon into beach scene. ELARA: human girl (NO animal tail), shoulder-length wavy blonde hair, wide-brimmed explorer hat, collared jacket/hoodie with star emblem patch on LEFT CHEST, pants, boots. Walking through arched door onto sandy beach. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest/paws, fluffy tail). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands). Beach with ocean waves, people waving in background. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style, NO animal tails on Elara."
+    },
+    {
+      "image_id": "ep7_moon_of_a_thousand_doors_04.png",
+      "original_issue": "Ziva as goat, Teddy Bot wolf but wrong design, Elara with tail",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 7 Scene 4: Emotional reunion - Elara hugging Ziva and Teddy bot in moon hallway. ELARA: HUMAN GIRL (no animal tail), shoulder-length wavy blonde hair, wide-brimmed space helmet off, white spacesuit with star emblem patch on LEFT CHEST, belt with rectangular buckle, backpack. Hugging friends. ZIVA: CATACORN (NOT goat - cat ears with pink interior, golden spiraled unicorn horn, white chest/muzzle/paws, fluffy curled tail, small cat nose, whisker marks). TEDDY BOT: robot WOLF (silver metallic wolf snout with black nose, circular visor eyes, pointed triangular robotic ears, rectangular chest plate, large rounded shoulder pauldrons with bolts, segmented claw arms, NO teddy bear features, NO organic tail). Moon corridor with glowing doors, starry background. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep8_bubble_sea_03.png",
+      "original_issue": "All 3 shown as identical human divers, no caticorn or robot wolf",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 8 Scene 3: Old bubble whale calf greeting the three explorers at Bubble Sea surface. ELARA: human girl in white spacesuit with star emblem patch on LEFT CHEST, wide-brimmed space helmet, belt with rectangular buckle, boots. Standing on bubble surface, waving. ZIVA: pink CATACORN (cat ears, golden spiraled horn, white chest/muzzle/front paws, fluffy curled tail, sitting on bubble). TEDDY BOT: robot WOLF (silver wolf snout, black nose, circular visor eyes, pointed robotic ears, rectangular chest plate, large shoulder pauldrons with bolts, claw hands, mechanical tail). Bubble whale calf (beluga-like with star patterns). Standing on iridescent bubble surface with stars. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep8_bubble_sea_04.png",
+      "original_issue": "CORRUPTED - solid black square, needs regeneration",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 8 Scene 4: Elara singing to pulsing crystal in underwater cave, crystal shuddering and releasing echo, bubble whales in background. ELARA: human girl in white SPACESUIT with star emblem patch on LEFT CHEST (NOT swimming suit - maintain astronaut identity), wide-brimmed HELMET (worn as diving helmet), belt, boots. Standing in underwater cave, singing (mouth open, arms raised). ZIVA: pink CATACORN (cat ears, golden spiraled horn, white chest, fluffy tail, listening). TEDDY BOT: robot WOLF (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands). Large pulsing crystal with radiating lines, bubble whales silhouetted in background, underwater cave with stalactites. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep8_bubble_sea_06.png",
+      "original_issue": "4 figures instead of 3, only robot has star emblem, Ziva as unicorn",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 8 Scene 6: Celebration after stillness sickness cured - Elara, Ziva, Teddy bot looking up at sky with rising bubbles. ELARA: human girl with star emblem patch on LEFT CHEST, wide-brimmed hat, explorer jacket, boots, holding star medallion up in joy. ZIVA: pink CATACORN (cat ears, golden spiraled horn, white chest/paws, fluffy tail, ears perked with joy). TEDDY BOT: robot WOLF (silver wolf snout, visor eyes, robotic ears, chest plate with star emblem patch on LEFT CHEST, shoulder pauldrons, claw hands). Irregular blue text 'STILLENESS SITHES' at top. Bubbles with iridescent rainbow edges, two whales in sky. NO unicorn, NO extra dog - exactly 3 heroes. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep9_festival_of_falling_stars_01.png",
+      "original_issue": "Ziva and Teddy Bot missing, crowd of generic children",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 9 Scene 1: Young girl explorer catching a falling star with butterfly net at the festival. ELARA: human girl with shoulder-length wavy blonde hair, wide-brimmed safari hat with band, short-sleeved shirt with star emblem patch on LEFT CHEST, skirt/shorts, boots, satchel. Catching glowing 5-pointed star with net. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest/paws, fluffy tail, hiding behind Elara). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate with star patch, shoulder pauldrons, claw hands, mechanical tail). Other children in similar explorer outfits holding nets, cheering. Festival bunting flags, stars falling from sky. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep9_festival_of_falling_stars_02.png",
+      "original_issue": "Shows young girl not grandmother, Ziva and Teddy Bot missing",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 9 Scene 2: Grandmother catching a star with starry-dog companion. GRANDMOTHER: elderly woman, short silver hair in bun, star-patterned shawl, floral dress, wide-brimmed hat with flower. Catching glowing star with butterfly net. STAR-DOG: small dog with star-shaped spots, wagging tail, looking up. ELARA: human girl in distance with star emblem patch on LEFT CHEST, hat, explorer jacket. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands). Festival atmosphere with bunting flags, grass, falling stars. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep9_festival_of_falling_stars_03.png",
+      "original_issue": "404 NOT FOUND - image missing from CDN",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 9 Scene 3: Child with glowing star-shaped dog made of connected constellations. CHILD: young girl, shoulder-length wavy hair, nightgown or pajamas, holding net. CONSTELLATION DOG: dog-shaped being made of connected star dots and constellation lines, glowing, with star-shaped spots. ELARA: in distance with star emblem patch on LEFT CHEST. ZIVA: pink caticorn (cat ears, golden spiraled horn). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons). Night sky background with constellation patterns, falling stars, bunting flags. Reference canonical character sheet. Coloring book style, celestial theme."
+    },
+    {
+      "image_id": "ep9_festival_of_falling_stars_05.png",
+      "original_issue": "Ziva and Teddy Bot missing",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 9 Scene 5: Child catching star with net, constellation dog trotting to her feet. CHILD (Elara): human girl, shoulder-length wavy blonde hair, wide-brimmed hat, short-sleeved shirt with star emblem patch on LEFT CHEST, skirt, boots. Catching glowing 5-pointed star with net. CONSTELLATION DOG: star-dust dog materializing from caught star, tail wagging. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail, watching). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate with star patch, shoulder pauldrons, claw hands). Festival bunting, night sky with stars. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep11_last_stop_before_home_01.png",
+      "original_issue": "404 NOT FOUND - image missing from CDN",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 11 Scene 1: Memory Garden planet - small soft world entirely a garden. Paths of soft earth, flowers, trees with rounded canopies. ELARA: human girl in white spacesuit with star emblem patch on LEFT CHEST, wide-brimmed space helmet, belt, boots. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest/paws, fluffy tail, looking in wonder). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, rectangular chest plate with star patch, shoulder pauldrons, claw hands, mechanical tail). Memory Keeper: kind old figure in robes of woven petals, shepherd's crook staff. Garden entrance with flowers of every color, rounded tree canopies. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep11_last_stop_before_home_03.png",
+      "original_issue": "Ziva and Teddy Bot missing, unicorn present but not Ziva",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 11 Scene 3: Memory garden keeper pointing out flowers. MEMORY KEEPER: kind old figure in robes of woven petals, flower crown, shepherd's crook staff. ELARA: human girl in white SPACESUIT with star emblem patch on LEFT CHEST, wide-brimmed space helmet, belt. ZIVA: pink CATACORN (cat ears, golden spiraled horn, white chest/muzzle/paws, fluffy curled tail, looking at flowers). TEDDY BOT: robot WOLF (silver wolf snout, black nose, visor eyes, robotic ears, rectangular chest plate, shoulder pauldrons, claw hands, mechanical tail). NO horse/pony unicorn - Ziva is specifically a CATACORN. Garden paths, flowers of every color, trees with rounded canopies. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep11_last_stop_before_home_05.png",
+      "original_issue": "Ziva and Teddy Bot missing, star emblem is tiny button not patch",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 11 Scene 5: Keeper pointing out golden flower to Elara. MEMORY KEEPER: elderly figure in woven petal robes, flower wreath crown, shepherd's crook. ELARA: human girl in white spacesuit with LARGE star emblem patch on LEFT CHEST (five-pointed star, clearly visible), wide-brimmed space helmet, belt with rectangular buckle. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail, watching). TEDDY BOT: robot wolf (silver wolf snout, black nose, visor eyes, robotic ears, rectangular chest plate with star patch, shoulder pauldrons, claw hands, mechanical tail). Golden glowing flower on stem with continent-like patterns inside petals. Garden background with colored flowers. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep11_last_stop_before_home_06.png",
+      "original_issue": "Ziva as human girl, Teddy Bot as robot dog, Elara in dress not astronaut",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 11 Scene 6: Walking Memory Garden path. ELARA: HUMAN GIRL in WHITE SPACESUIT with star emblem patch on LEFT CHEST, wide-brimmed space helmet, belt, boots, backpack. Walking on soft earth path. ZIVA: pink CATACORN (cat ears with pink interior, golden spiraled unicorn horn on forehead, white chest/muzzle/front paws, fluffy curled tail, walking naturally on four cat-like paws, NOT human legs). TEDDY BOT: robot WOLF (silver metallic wolf snout with black nose, circular visor eyes, pointed triangular robotic ears, rectangular chest plate with star patch, large rounded shoulder pauldrons with bolts, segmented claw arms, mechanical tail). Garden path with flowers of every color, trees with rounded canopies, house with curved roof in background. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep11_last_stop_before_home_07.png",
+      "original_issue": "Ziva as human girl, Teddy Bot as robot dog, Elara in dress",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 11 Scene 7: Elara planting warm glowing seed in garden. ELARA: HUMAN GIRL in white SPACESUIT with star emblem patch on LEFT CHEST, wide-brimmed space helmet, belt, boots. Kneeling, planting glowing seed with star medallion. ZIVA: pink CATACORN (cat ears, golden spiraled horn, white chest/muzzle/paws, fluffy curled tail). TEDDY BOT: robot WOLF (silver wolf snout, black nose, visor eyes, robotic ears, chest plate with star patch, shoulder pauldrons, claw hands, mechanical tail). Ziva watering with starlight, Teddy Bot standing guard. Garden behind house on Lunor, flowers of every color. Reference canonical character sheet. Coloring book style."
+    },
+    {
+      "image_id": "ep11_last_stop_before_home_08.png",
+      "original_issue": "Ziva and Teddy Bot missing, star medallions held in hand",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 11 Scene 8: Elara holding three glowing star-shaped medallions pointing toward home. ELARA: human girl in white spacesuit with visible star emblem patch on LEFT CHEST, wide-brimmed space helmet, belt, boots, backpack. Holding three glowing 5-pointed star medallions in left hand, pointing toward home. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest/paws, fluffy tail, standing beside Elara). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, rectangular chest plate, shoulder pauldrons, claw hands, mechanical tail). Lunor (green planet) in distance, winding path, house with curved roof, trees. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style."
+    },
+    {
+      "image_id": "ep10_train_to_edge_of_night_05.png",
+      "original_issue": "Ziva and Teddy Bot missing, Elara with animal tail (hybrid)",
+      "corrected_prompt": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles Episode 10 Scene 5: Night beast curled around stars, Elara telling story beside it. ELARA: HUMAN GIRL (NO animal tail), shoulder-length wavy blonde hair, wide-brimmed explorer hat, long-sleeved shirt with star emblem patch on LEFT CHEST, jacket, pants, boots, backpack. Sitting beside giant sleeping Night Beast, telling story with star medallion in hand. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands, mechanical tail). NIGHT BEAST: massive sleeping creature made of star-speckled darkness, curled around sleeping stars. Five star-spirit beings in background. Reference canonical character sheet. Coloring book style."
+    }
+  ],
+  "priority_order": [
+    "1. Fix corrupted files (ep2_04, ep8_04, ep11_01, ep3_06)",
+    "2. Fix species violations (Ziva must be caticorn, Teddy Bot must be wolf)",
+    "3. Fix missing characters (add all 3 heroes where only 1-2 appear)",
+    "4. Fix star emblem consistency (chest patch, clearly visible)",
+    "5. Fix Elara costume consistency (spacesuit with star patch)"
+  ],
+  "prompt_template": "Coloring book page for children, black-and-white line art style with bold outlines. Cosmic Chronicles [EPISODE] [SCENE]: [scene description]. ELARA: human girl in white spacesuit with star emblem patch on LEFT CHEST, wide-brimmed space helmet, belt with rectangular buckle. ZIVA: pink caticorn (cat ears, golden spiraled horn, white chest, fluffy tail). TEDDY BOT: robot wolf (silver wolf snout, visor eyes, robotic ears, chest plate, shoulder pauldrons, claw hands). [Scene-specific details]. Reference canonical character sheet at https://v3b.fal.media/files/b/0aabead4/YtMMLAIzHkn8lbWixo6F3_hfasyk2J.png. Coloring book style, clean bold outlines, white background."
+}

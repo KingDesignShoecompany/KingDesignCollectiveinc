@@ -1,0 +1,62 @@
+{
+  "name": "KingDesign Corporate Docs Ingestion",
+  "nodes": [
+    {
+      "id": "cron-trigger",
+      "name": "Cron: Every 6 Hours",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "parameters": {
+        "triggerTimes": {"item": [{"hour": 0, "minute": 0}, {"hour": 6, "minute": 0}, {"hour": 12, "minute": 0}, {"hour": 18, "minute": 0}]}
+      }
+    },
+    {
+      "id": "http-trigger",
+      "name": "Manual Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 450],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kdos/ingest"
+      }
+    },
+    {
+      "id": "merge-triggers",
+      "name": "Merge Triggers",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2,
+      "position": [450, 375],
+      "parameters": {"mode": "wait"}
+    },
+    {
+      "id": "run-ingest",
+      "name": "Run Ingest Script",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [650, 375],
+      "parameters": {
+        "functionCode": "const { execSync } = require('child_process');\nconst output = execSync('python /home/young/agents/.hermes/scripts/kdos.py ingest', {encoding: 'utf8'});\nreturn [{json: {output: output, timestamp: new Date().toISOString()}}];"
+      }
+    },
+    {
+      "id": "log-ingest",
+      "name": "Log Ingestion Result",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [850, 375],
+      "parameters": {
+        "functionCode": "console.log(`[Ingest] ${items[0].json.timestamp}: ${items[0].json.output}`);\nreturn items;"
+      }
+    }
+  ],
+  "connections": {
+    "Cron: Every 6 Hours": {"main": [[{"node": "Merge Triggers", "type": "main", "index": 0}]]},
+    "Manual Webhook Trigger": {"main": [[{"node": "Merge Triggers", "type": "main", "index": 1}]]},
+    "Merge Triggers": {"main": [[{"node": "Run Ingest Script", "type": "main", "index": 0}]]},
+    "Run Ingest Script": {"main": [[{"node": "Log Ingestion Result", "type": "main", "index": 0}]]}
+  },
+  "active": false,
+  "settings": {}
+}

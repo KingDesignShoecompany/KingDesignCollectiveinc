@@ -1,0 +1,130 @@
+{
+  "episode": {
+    "title": "Entangled in Time",
+    "book": 3,
+    "episode": 1,
+    "duration_target_seconds": 120,
+    "style": "soft pastel storybook, kid-friendly sci-fi, round shapes, big expressive eyes",
+    "characters": [
+      {
+        "name": "Elara",
+        "role": "Protagonist",
+        "visual": "Young explorer with braided hair, star-patterned jacket, big expressive eyes, soft pastel colors"
+      },
+      {
+        "name": "Ziva",
+        "role": "Robot companion",
+        "visual": "Sleek silver robot, friendly face, rounded edges, soft glowing lights"
+      },
+      {
+        "name": "Teddybot",
+        "role": "Plush robot bear",
+        "visual": "Cute teddy bear robot, plush texture, button eyes, gentle smile"
+      },
+      {
+        "name": "Pranza",
+        "role": "Alien creature",
+        "visual": "Small glowing alien, fluffy antenna, pastel colors, curious expression"
+      },
+      {
+        "name": "Lunaria",
+        "role": "Spaceship",
+        "visual": "Round, friendly spaceship, pastel rainbow lights, large window cockpit"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "title": "The Shimmering Portal",
+      "duration": 15,
+      "voiceover": "High above the stars, Elara and her friends soared through space in the Lunaria. But today... something extraordinary appeared. A shimmering portal, glowing with rainbow light! Without hesitation, they flew inside.",
+      "shots": [
+        "Wide starry space, Lunaria flying forward",
+        "Lunaria cockpit, Elara and friends looking amazed",
+        "Shimmering rainbow portal ahead",
+        "Lunaria entering the portal"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Lost in the Time Vortex",
+      "duration": 15,
+      "voiceover": "In an instant, they found themselves lost in a swirling time vortex. Rainbow spirals danced around them as ancient landscapes flashed by.",
+      "shots": [
+        "Team floating inside swirling rainbow vortex",
+        "Ancient landscapes flashing past window",
+        "Weightless expressions of wonder"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Exploring the Ancient World",
+      "duration": 15,
+      "voiceover": "They landed in a world from long, long ago... filled with ancient jungles and forgotten secrets.",
+      "shots": [
+        "Ancient jungle with oversized friendly plants",
+        "Giant gentle creatures in the distance",
+        "Ruins visible through the trees",
+        "Team walking toward the jungle"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Hieroglyphic Riddle",
+      "duration": 15,
+      "voiceover": "In a mysterious ruin, they discovered a glowing riddle. It spoke of a sacred temple atop a distant mountain... and the Key hidden within.",
+      "shots": [
+        "Inside ancient ruin, stone walls covered in glowing hieroglyphics",
+        "Stone tablet with magical riddle",
+        "Team looking at the tablet"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Journey to the Mountain Temple",
+      "duration": 20,
+      "voiceover": "The journey was tough. Together, they climbed cliffs, crossed rope bridges, and outsmarted creatures guarding the temple.",
+      "shots": [
+        "Team climbing steep cliffs",
+        "Crossing a wobbly rope bridge",
+        "Cute creatures watching from rocks",
+        "Temple entrance revealed in the clouds"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Inside the Temple",
+      "duration": 20,
+      "voiceover": "At last, they reached the ancient temple. Inside, futuristic technology glowed alongside mysterious ancient symbols.",
+      "shots": [
+        "Temple interior with glowing symbols",
+        "Advanced tech embedded in stone walls",
+        "Central pedestal with glowing Key of Quantum Entanglement"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "The Quantum Entanglement Burst",
+      "duration": 15,
+      "voiceover": "When Elara touched the Key, a burst of rainbow energy engulfed them. In a flash, they were back in their own time — wiser, braver, and ready for more.",
+      "shots": [
+        "Elara touching the glowing Key",
+        "Huge soft rainbow energy explosion",
+        "Team engulfed in warm light",
+        "Back in Lunaria, holding the glowing Key"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Adventure Continues",
+      "duration": 10,
+      "voiceover": "The universe is full of mysteries... and Elara’s team is just getting started. Their adventures continue.",
+      "shots": [
+        "Lunaria flying forward through starlight",
+        "Key glowing in Elara’s hands",
+        "Team smiling together"
+      ]
+    }
+  ]
+}

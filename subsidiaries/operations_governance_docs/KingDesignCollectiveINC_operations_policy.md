@@ -1,4 +1,4 @@
-# KINGDESIGNCOLLECTIVEINC OPERATIONS POLICY
+# KingDesignCollectiveINC OPERATIONS POLICY
 
 ## MODE
 Local-first, sovereign, multi-agent operation under Hermes.

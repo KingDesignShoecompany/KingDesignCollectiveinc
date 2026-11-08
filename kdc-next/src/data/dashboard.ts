@@ -22,7 +22,7 @@ export const KPIS: Kpi[] = [
 export const MODULES: Module[] = [
   { href: '/KingDesignCollectiveinc/travel-index/', kind: 'globe', title: 'Vagary Index', tagline: 'Explore the world.' },
   { href: '/KingDesignCollectiveinc/shoe-brand/', kind: 'shoe', title: 'KingDesignShoeCompany', tagline: 'Step into impact.' },
-  { href: '/KingDesignCollectiveinc/game-design/', kind: 'controller', title: 'Aura Champions', tagline: 'Compete & earn.' },
+  { href: '/KingDesignCollectiveinc/gaming', kind: 'controller', title: 'KDCI Gaming', tagline: 'Compete & earn.' },
   { href: '/KingDesignCollectiveinc/kids-channel/', kind: 'cards', title: 'Seven Minute Story Sessions', tagline: 'Bedtime videos', badge: 'Now Playing' },
   { href: '/KingDesignCollectiveinc/innovation-hub/', kind: 'bulb', title: 'King Design Collective Briheight Box', tagline: 'Build the future.' },
   { href: '/KingDesignCollectiveinc/ewaste-recycling/', kind: 'recycle', title: 'KingDesign E-Collective', tagline: 'Recycle. Recover. Reuse.' },
