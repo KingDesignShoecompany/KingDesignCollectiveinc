@@ -1,5 +1,5 @@
 /* ==========================================================================
-   KingDesignCollectiveINC Quantum Wearables — Frontmatter Loader
+   KingDesignCollectiveINC Quantum Wearables — Product-Loader Frontmatter
    Product-experience entry. The hero 3D device is rendered by
-   scripts/KingDesignCollectiveINC-quantum-wearables.js. No telemetry dashboards.
+   scripts/KingDesignCollectiveINC-quantum-wearables.js. Pure product UI.
    ========================================================================== */
