@@ -21,12 +21,18 @@ stacks/multiagent/.env
 
 # Node
 node_modules/
+**/_next/
+**/out/
+**/next/server/
+**/next/static/
+**/next/types/
+*.tsbuildinfo
 
 # Python
 __pycache__/
 *.pyc
 *.pyo
-*.egg-info/
+*.egg-info
 .venv/
 
 # OS
@@ -94,7 +100,7 @@ personas/
 policies/
 registry/
 spawn_controller.py
-sevenminutestorysessions/
-kingdesigncollectiveinc/
+sevenminustorysessions/
+vagary_index/
 kingdesignshoeco_marketing_campaign_plan.md
 KingDesignCollectiveINC_HERMES_ARCHITECTURE.md
