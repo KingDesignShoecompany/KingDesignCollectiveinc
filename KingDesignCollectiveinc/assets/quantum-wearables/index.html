@@ -3,81 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quantum Wearables — Human Intelligence Amplified. A King Design Collective subsidiary flagship product experience.">
     <title>Quantum Wearables | Human Intelligence Amplified</title>
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-ui.css">
     <link rel="stylesheet" href="styles/KingDesignCollectiveINC-quantum-wearables.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body class="quantum-theme KingDesignCollectiveINC-quantum-wearables">
 
-<!----- PARTICLE FIELD (background) ----->
-<div class="particle-field"></div>
+<!----- BACKGROUND LAYER (heavy fog / energy field) ----->
+<div class="qc-bg-layer"></div>
 
 <!----- HEADER ----->
-<header class="quantum-header">
-    <div class="quantum-header-inner">
-        <div class="header-brand">
-            <span class="brand-mark">Q</span>
-            <div class="brand-text">
-                <span class="brand-name">QUANTUM WEARABLES</span>
-                <span class="brand-division">Quantum Division &nbsp;&bull;&nbsp; King Design Collective Inc.</span>
+<header class="qc-header">
+    <div class="qc-header-inner">
+        <div class="qc-header-brand">
+            <span class="qc-crown">◆</span>
+            <div class="qc-brand-text">
+                <span class="qc-division">Quantum Division</span>
+                <span class="qc-org">King Design Collective Inc.</span>
             </div>
         </div>
-        <nav class="quantum-nav">
+        <nav class="qc-nav">
             <a href="#hero">Home</a>
             <a href="#ecosystem">Ecosystem</a>
             <a href="#technology">Technology</a>
-            <a href="#intelligence">Intelligence</a>
+            <a href="#mesh">Sensor Mesh</a>
             <a href="#constellation">Division</a>
         </nav>
     </div>
 </header>
 
-<!----- HERO DEVICE SECTION (full-screen, cinematic) ----->
+<!----- HERO SECTION — full-height, 3D immersive ----->
 <section id="hero" class="qc-hero">
-    <div class="qc-hero-backdrop">
-        <div class="qc-particle-ring"></div>
-        <div class="qc-orbiting-nodes">
-            <span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="qc-energy-particles"></div>
+    <div class="qc-hero-canvas-wrap">
+        <!-- Three.js renders the hero 3D scene here -->
+        <div id="qc-hero-canvas-container"></div>
     </div>
 
-    <div class="qc-hero-inner">
+    <div class="qc-hero-content">
         <div class="qc-hero-bookend">
             <span class="qc-bookend-side">Q</span>
-            <div class="qc-device-stand">
-                <div class="qc-device-frame">
-                    <div class="qc-device-ring"></div>
-                    <div class="qc-device-body">
-                        <div class="qc-device-inner glow-ring"></div>
-                        <div class="qc-device-core">
-                            <div class="qc-core-dot"></div>
-                            <div class="qc-core-label">AI CORE</div>
-                        </div>
-                    </div>
-                    <div class="qc-device-curved"></div>
-                </div>
-            </div>
-            <span class="qc-bookend-side">K</span>
         </div>
 
-        <div class="qc-hero-content">
-            <span class="qc-hero-eyebrow">Cinematic Product Experience</span>
+        <div class="qc-hero-inner">
+            <span class="qc-hero-eyebrow">A King Design Collective Subsidiary</span>
             <h1 class="qc-hero-title">Human Intelligence Amplified</h1>
             <p class="qc-hero-subtitle">
-                The Quantum Band X1 is not a badge on your wrist. It is the interface between your
-                biology and the intelligence layer that powers the King Design Collective.
+                Advanced biosensing. Quantum signal processing.
+                A more intelligent you — built for a higher human future.
             </p>
             <div class="qc-hero-cta">
                 <a href="#ecosystem" class="ui-btn ui-btn-primary ui-btn-lg">Explore Ecosystem</a>
                 <a href="#technology" class="ui-btn ui-btn-ghost ui-btn-lg">Pre-Order X1</a>
             </div>
             <div class="qc-hero-spec-list">
-                <span class="qc-spec-chip">ECG Array</span>
-                <span class="qc-spec-chip">Neural Sync</span>
-                <span class="qc-spec-chip">Environmental Sensors</span>
-                <span class="qc-spec-chip">512Hz Precision</span>
+                <span class="qc-spec-chip">ECG</span>
+                <span class="qc-spec-chip">512Hz</span>
+                <span class="qc-spec-chip">SpO2</span>
+                <span class="qc-spec-chip">Motion</span>
             </div>
+        </div>
+
+        <div class="qc-hero-bookend-right">
+            <span class="qc-bookend-side">K</span>
         </div>
     </div>
 
@@ -87,380 +77,258 @@
     </div>
 </section>
 
-<!----- PRODUCT ECOSYSTEM SECTION (scroll) ----->
+<!----- PRODUCT ECOSYSTEM SECTION ----->
 <section id="ecosystem" class="qc-section">
     <div class="ui-container">
         <div class="qc-section-head">
             <span class="qc-section-eyebrow">Product Ecosystem</span>
-            <h2 class="qc-section-title">Three devices. One intelligence layer.</h2>
+            <h2 class="qc-section-title">Intelligence wears many forms.</h2>
             <p class="qc-section-desc">
-                Every Quantum product connects to the same Signal Mesh, so the moment you
-                wear one, your entire division flows into a single intelligence pipeline.
+                A connected family of devices. One signal mesh. A more intelligent tomorrow.
             </p>
         </div>
 
         <div class="qc-ecosystem-grid">
             <article class="qc-ecosystem-card">
-                <div class="qc-ecosystem-media qc-ecosystem-media-fill">
-                    <span class="qc-ecosystem-badge">Lifestyle Intelligence</span>
-                    <div class="qc-skyline">
-                        <span class="qc-skyline-bar" style="--i:0"></span>
-                        <span class="qc-skyline-bar" style="--i:1"></span>
-                        <span class="qc-skyline-bar" style="--i:2"></span>
-                        <span class="qc-skyline-bar" style="--i:3"></span>
+                <div class="qc-ecosystem-media">
+                    <span class="qc-ecosystem-badge">Lifestyle Intelligence Platform</span>
+                    <div class="qc-ecosystem-visual">
+                        <span class="qc-ring-ring"></span>
+                        <span class="qc-ring-body"></span>
+                        <span class="qc-ring-sensor"></span>
                     </div>
                 </div>
                 <div class="qc-ecosystem-body">
                     <h3>Quantum Band X1</h3>
-                    <p>
-                        The flagship consumer device. 512Hz ECG, a 3-axis neural mesh, and a
-                        predictive Intelligence Core in a titanium-shell body.
-                    </p>
+                    <p>Continuous monitoring. Extraordinary insight.</p>
                     <a href="#technology" class="ui-btn ui-btn-ghost ui-btn-sm">Explore X1</a>
                 </div>
             </article>
 
             <article class="qc-ecosystem-card">
-                <div class="qc-ecosystem-media qc-ecosystem-media-fill">
-                    <span class="qc-ecosystem-badge">Continuous Neural Monitoring</span>
-                    <div class="qc-skyline">
-                        <span class="qc-skyline-bar" style="--i:0"></span>
-                        <span class="qc-skyline-bar" style="--i:1"></span>
-                        <span class="qc-skyline-bar" style="--i:2"></span>
+                <div class="qc-ecosystem-media">
+                    <span class="qc-ecosystem-badge">Direct Neural Signal Acquisition</span>
+                    <div class="qc-ecosystem-visual">
+                        <span class="qc-patch-ring"></span>
+                        <span class="qc-patch-body"></span>
+                        <span class="qc-patch-lead"></span>
                     </div>
                 </div>
                 <div class="qc-ecosystem-body">
-                    <h3>Neural Patch</h3>
-                    <p>
-                        Direct signal acquisition for clinical-grade data. No wrist pressure,
-                        no gap between sensor and skin. For research and long-term monitoring.
-                    </p>
+                    <h3>Quantum Patch</h3>
+                    <p>Sleek medical-grade sensor patch. Deeper understanding.</p>
                     <a href="#technology" class="ui-btn ui-btn-ghost ui-btn-sm">Explore Patch</a>
                 </div>
             </article>
 
             <article class="qc-ecosystem-card">
-                <div class="qc-ecosystem-media qc-ecosystem-media-fill">
+                <div class="qc-ecosystem-media">
                     <span class="qc-ecosystem-badge">Sensor Mesh Coordinator</span>
-                    <div class="qc-skyline">
-                        <span class="qc-skyline-bar" style="--i:0"></span>
-                        <span class="qc-skyline-bar" style="--i:1"></span>
-                        <span class="qc-skyline-bar" style="--i:2"></span>
+                    <div class="qc-ecosystem-visual">
+                        <span class="qc-gateway-ring"></span>
+                        <span class="qc-gateway-core"></span>
                     </div>
                 </div>
                 <div class="qc-ecosystem-body">
                     <h3>Nexus Gateway</h3>
-                    <p>
-                        The mesh coordinator. Receives sensor data from a fleet of bands,
-                        patches, and clip sensors and routes it into the Quantum Intelligence
-                        Engine for unified analysis.
-                    </p>
-                    <a href="#intelligence" class="ui-btn ui-btn-ghost ui-btn-sm">Explore Gateway</a>
+                    <p>Synchronize. Process. Expand.</p>
+                    <a href="#mesh" class="ui-btn ui-btn-ghost ui-btn-sm">Explore Gateway</a>
                 </div>
             </article>
         </div>
     </div>
 </section>
 
-<!----- EXPLODED DEVICE VIEWER SECTION ----->
+<!----- TECHNOLOGY / EXPLODED DEVICE SECTION ----->
 <section id="technology" class="qc-section qc-section-dark">
     <div class="ui-container">
         <div class="qc-section-head">
-            <span class="qc-section-eyebrow">Exploded Device View</span>
-            <h2 class="qc-section-title">Internal architecture, no casing.</h2>
+            <span class="qc-section-eyebrow">Exploded Device Technology</span>
+            <h2 class="qc-section-title">A new class of wearable intelligence.</h2>
             <p class="qc-section-desc">
-                Hover each component to surface its specification. The Band builds itself from
-                the inside out, in the order your signal actually travels.
+                The first and only band in the industry with a quantum signal processor at its core.
+                Fully proprietary. Layers stay connected.
             </p>
         </div>
 
         <div class="qc-exploded">
             <div class="qc-stack">
-                <div class="qc-stack-layer" data-device="Bio Interface" data-spec="Flexible bio-acoustic array. 512Hz analog sensing, environmental tolerance.">
-                    <div class="qc-layer-head">
-                        <span class="qc-layer-icon">◈</span>
-                        <span class="qc-layer-name">Bio Interface</span>
-                    </div>
-                    <div class="qc-layer-desc">Flexible bio-acoustic array. 512Hz analog sensing, environmental tolerance.</div>
+                <div class="qc-stack-layer layer-shell" data-layer="1" data-spec="Titanium Shell">
+                    <div class="qc-layer-head"><span class="qc-layer-icon">◈</span><span class="qc-layer-name">Titanium Shell</span></div>
+                    <div class="qc-layer-desc">Black titanium. Premium industrial.</div>
                 </div>
-                <div class="qc-stack-layer" data-device="Signal Processor" data-spec="Edge tensor core, 256 GOPS. Compresses raw biosignals to 12-bit before transmission.">
-                    <div class="qc-layer-head">
-                        <span class="qc-layer-icon">◈</span>
-                        <span class="qc-layer-name">Signal Processor</span>
-                    </div>
-                    <div class="qc-layer-desc">Edge tensor core, 256 GOPS. Compresses raw biosignals to 12-bit before transmission.</div>
+                <div class="qc-stack-layer layer-sensor" data-layer="2" data-spec="Sensor Array">
+                    <div class="qc-layer-head"><span class="qc-layer-icon">◈</span><span class="qc-layer-name">Sensor Array</span></div>
+                    <div class="qc-layer-desc">Full-spectrum biosensing.</div>
                 </div>
-                <div class="qc-stack-layer" data-device="Quantum Core" data-spec="TPU-class inferencing on-device. Predictive modeling runs at 8 Hz without cloud round-trip.">
-                    <div class="qc-layer-head">
-                        <span class="qc-layer-icon">◈</span>
-                        <span class="qc-layer-name">Quantum Core</span>
-                    </div>
-                    <div class="qc-layer-desc">TPU-class inferencing on-device. Predictive modeling runs at 8 Hz without cloud round-trip.</div>
+                <div class="qc-stack-layer layer-core" data-layer="3" data-spec="Quantum Core">
+                    <div class="qc-layer-head"><span class="qc-layer-icon">◈</span><span class="qc-layer-name">Quantum Core</span></div>
+                    <div class="qc-layer-desc">Quantum signal processing at its heart.</div>
                 </div>
-                <div class="qc-stack-layer" data-device="Sensor Shield" data-spec="Full-spectrum array: ECG, PPG, Temp, SpO2, IMU, environmental gas + UV.">
-                    <div class="qc-layer-head">
-                        <span class="qc-layer-icon">◈</span>
-                        <span class="qc-layer-name">Sensor Shield</span>
-                    </div>
-                    <div class="qc-layer-desc">Full-spectrum array: ECG, PPG, Temp, SpO2, IMU, environmental gas + UV.</div>
+                <div class="qc-stack-layer layer-processor" data-layer="4" data-spec="Signal Processor">
+                    <div class="qc-layer-head"><span class="qc-layer-icon">◈</span><span class="qc-layer-name">Signal Processor</span></div>
+                    <div class="qc-layer-desc">Edge tensor core.</div>
+                </div>
+                <div class="qc-stack-layer layer-bio" data-layer="5" data-spec="Bio Interface">
+                    <div class="qc-layer-head"><span class="qc-layer-icon">◈</span><span class="qc-layer-name">Bio Interface</span></div>
+                    <div class="qc-layer-desc">Direct skin contact.</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!----- SENSOR NETWORK VISUALIZATION SECTION ----->
-<section class="qc-section qc-section-bright">
+<!----- HUMAN SENSOR MESH SECTION ----->
+<section id="mesh" class="qc-section qc-section-bright">
     <div class="ui-container">
         <div class="qc-section-head">
-            <span class="qc-section-eyebrow">Sensor Network Visualization</span>
-            <h2 class="qc-section-title">Your signal, traced.</h2>
+            <span class="qc-section-eyebrow">Human Sensor Mesh</span>
+            <h2 class="qc-section-title">Your body, live-wired.</h2>
             <p class="qc-section-desc">
-                Every beat, every breath, every stray impulse moves across this mesh in real
-                time. This is the Sensor Network inside the Quantum Band.
+                A glowing holographic figure wired to a central sensor node with gold neural pathways.
             </p>
         </div>
 
-        <div class="qc-sensor-mesh">
-            <div class="qc-node qc-node-center" data-label="You" data-spec="Continuous presence"></div>
-            <div class="qc-node qc-node-edge" data-label="ECG" data-spec="512Hz Precision"></div>
-            <div class="qc-node qc-node-edge" data-label="TEMP" data-spec="±0.1°C"></div>
-            <div class="qc-node qc-node-edge" data-label="SpO2" data-spec="99.99% Capture"></div>
-            <div class="qc-node qc-node-edge" data-label="AI/IMU" data-spec="9-axis + context"></div>
-
-            <div class="qc-link" style="top:50%;left:50%;"></div>
-            <div class="qc-link" style="top:20%;left:45%;"></div>
-            <div class="qc-link" style="top:75%;left:50%;"></div>
-            <div class="qc-link" style="top:50%;left:50%;"></div>
-            <div class="qc-link" style="top:70%;left:48%;"></div>
-        </div>
-
-        <div class="qc-sensor-legend">
-            <div class="qc-legend-row">
-                <span class="qc-legend-dot" style="background:#00b4d8;"></span>
-                <span>Heartbeat — live pulse frequency</span>
+        <div class="qc-mesh-wrap">
+            <div class="qc-mesh-figure">
+                <div class="qc-figure-silhouette"></div>
+                <div class="qc-chest-node">
+                    <div class="qc-node-dot"></div>
+                    <div class="qc-node-light"></div>
+                </div>
             </div>
-            <div class="qc-legend-row">
-                <span class="qc-legend-dot" style="background:#ff9e00;"></span>
-                <span>Thermal drift — real-time</span>
+
+            <div class="qc-mesh-graph">
+                <div class="qc-mesh-node qc-mesh-node-ecg" data-prop="ECG" data-value="512Hz">
+                    <span class="qc-mesh-label">ECG</span>
+                    <span class="qc-mesh-value">Heart Activity</span>
+                    <span class="qc-mesh-line"></span>
+                    <span class="qc-mesh-dot"></span>
+                </div>
+                <div class="qc-mesh-node qc-mesh-node-spo2" data-prop="SpO2" data-value="98%">
+                    <span class="qc-mesh-label">SpO2</span>
+                    <span class="qc-mesh-value">Oxygen Saturation</span>
+                    <span class="qc-mesh-line"></span>
+                    <span class="qc-mesh-dot"></span>
+                </div>
+                <div class="qc-mesh-node qc-mesh-node-temp" data-prop="TEMP" data-value="36.7°C">
+                    <span class="qc-mesh-label">TEMP</span>
+                    <span class="qc-mesh-value">Body Temperature</span>
+                    <span class="qc-mesh-line"></span>
+                    <span class="qc-mesh-dot"></span>
+                </div>
+                <div class="qc-mesh-node qc-mesh-node-motion" data-prop="MOTION" data-value="Calm">
+                    <span class="qc-mesh-label">MOTION</span>
+                    <span class="qc-mesh-value">Movement</span>
+                    <span class="qc-mesh-line"></span>
+                    <span class="qc-mesh-dot"></span>
+                </div>
+                <div class="qc-mesh-node qc-mesh-node-hrv" data-prop="HRV" data-value="Healthy">
+                    <span class="qc-mesh-label">HRV</span>
+                    <span class="qc-mesh-value">Stress Recovery</span>
+                    <span class="qc-mesh-line"></span>
+                    <span class="qc-mesh-dot"></span>
+                </div>
+                <div class="qc-mesh-node qc-mesh-node-respi" data-prop="RESPI" data-value="12bpm">
+                    <span class="qc-mesh-label">RESPI</span>
+                    <span class="qc-mesh-value">Breathing Patterns</span>
+                    <span class="qc-mesh-line"></span>
+                    <span class="qc-mesh-dot"></span>
+                </div>
             </div>
-            <div class="qc-legend-row">
-                <span class="qc-legend-dot" style="background:#7c6ff0;"></span>
-                <span>Neural sync — adaptive</span>
+
+            <div class="qc-mesh-legend">
+                <div class="qc-legend-row"><span class="qc-legend-dot" style="background:#00b4d8;"></span> ECG — Heart Activity</div>
+                <div class="qc-legend-row"><span class="qc-legend-dot" style="background:#ff9e00;"></span> SpO2 — Oxygen Saturation</div>
+                <div class="qc-legend-row"><span class="qc-legend-dot" style="background:#7c6ff0;"></span> TEMP — Body Temperature</div>
+                <div class="qc-legend-row"><span class="qc-legend-dot" style="background:#b07cff;"></span> MOTION — Movement</div>
+                <div class="qc-legend-row"><span class="qc-legend-dot" style="background:#d8b05a;"></span> HRV — Stress Recovery</div>
+                <div class="qc-legend-row"><span class="qc-legend-dot" style="background:#5c6fc0;"></span> RESPI — Breathing Patterns</div>
             </div>
         </div>
     </div>
 </section>
 
-<!----- QUANTUM INTELLIGENCE LAYER SECTION ----->
-<section id="intelligence" class="qc-section">
+<!----- KDCI ECOSYSTEM CONSTELLATION SECTION ----->
+<section id="constellation" class="qc-section">
     <div class="ui-container">
         <div class="qc-section-head">
-            <span class="qc-section-eyebrow">Quantum Intelligence Layer</span>
-            <h2 class="qc-section-title">Your signal is an intelligence pipeline.</h2>
+            <span class="qc-section-eyebrow">King Design Collective Ecosystem</span>
+            <h2 class="qc-section-title">One intelligence network.</h2>
             <p class="qc-section-desc">
-                The Band is one node. The Intelligence Engine is the architecture. King Design
-                Collective owns the stack from sensor to insight.
+                The gold travels between every node. This is the constellation that powers the wearable.
             </p>
         </div>
 
-        <div class="qc-pipeline">
-            <div class="qc-pipeline-node">
-                <div class="qc-pipeline-svg">
-                    <svg viewBox="0 0 200 200" width="120" height="120">
-                        <circle cx="100" cy="180" r="22" fill="#00b4d8" opacity="0.7"/>
-                        <circle cx="100" cy="180" r="22" fill="none" stroke="#00b4d8" stroke-width="3"/>
-                        <circle cx="100" cy="100" r="22" fill="#7c6ff0" opacity="0.7"/>
-                        <circle cx="100" cy="100" r="22" fill="none" stroke="#7c6ff0" stroke-width="3"/>
-                        <circle cx="100" cy="20" r="22" fill="#ff9e00" opacity="0.7"/>
-                        <circle cx="100" cy="20" r="22" fill="none" stroke="#ff9e00" stroke-width="3"/>
-                    </svg>
-                </div>
-                <div class="qc-pipeline-body">
-                    <span class="qc-pipeline-label">Emotion / Intent</span>
-                    <span class="qc-pipeline-target">You</span>
+        <div class="qc-constellation">
+            <div class="qc-constellation-center">
+                <div class="qc-constellation-crown">◆</div>
+                <div class="qc-constellation-ring">
+                    <div class="qc-constellation-node qc-c-node" data-div="quantum-wearables"></div>
+                    <div class="qc-constellation-node qc-c-node" data-div="quantum-systems"></div>
+                    <div class="qc-constellation-node qc-c-node" data-div="quantum-health"></div>
+                    <div class="qc-constellation-node qc-c-node" data-div="quantum-networks"></div>
+                    <div class="qc-constellation-node qc-c-node" data-div="quantum-defense"></div>
+                    <div class="qc-constellation-node qc-c-node" data-div="quantum-analytics"></div>
                 </div>
             </div>
 
-            <div class="qc-pipeline-arrow">▼</div>
-
-            <div class="qc-pipeline-node">
-                <div class="qc-pipeline-svg">
-                    <svg viewBox="0 0 200 200" width="120" height="120">
-                        <circle cx="100" cy="30" r="6" fill="#fff"/>
-                        <circle cx="100" cy="60" r="6" fill="#fff"/>
-                        <circle cx="100" cy="90" r="6" fill="#fff"/>
-                        <circle cx="100" cy="120" r="6" fill="#fff"/>
-                        <circle cx="100" cy="150" r="6" fill="#fff"/>
-                        <circle cx="100" cy="180" r="6" fill="#fff"/>
-                    </svg>
+            <div class="qc-constellation-labels">
+                <div class="qc-constellation-label">
+                    <span class="qc-label-mark">◆</span>
+                    <span>King Design Collective Inc.<span class="qc-label-org">Parent Organization</span></span>
                 </div>
-                <div class="qc-pipeline-body">
-                    <span class="qc-pipeline-label">Quantum Band X1</span>
-                    <span class="qc-pipeline-target">Sensor Mesh</span>
+                <div class="qc-constellation-label">
+                    <span class="qc-label-mark">◆</span>
+                    <span>Quantum Wearables<span class="qc-label-active">Current page</span></span>
                 </div>
-            </div>
-
-            <div class="qc-pipeline-arrow">▼</div>
-
-            <div class="qc-pipeline-node">
-                <div class="qc-pipeline-svg">
-                    <svg viewBox="0 0 200 200" width="120" height="120">
-                        <circle cx="100" cy="30" r="6" fill="#fff"/>
-                        <circle cx="100" cy="60" r="6" fill="#fff"/>
-                        <circle cx="100" cy="90" r="6" fill="#fff"/>
-                        <circle cx="100" cy="120" r="6" fill="#fff"/>
-                        <circle cx="100" cy="150" r="6" fill="#fff"/>
-                        <circle cx="100" cy="180" r="6" fill="#fff"/>
-                    </svg>
+                <div class="qc-constellation-label">
+                    <span class="qc-label-mark">◆</span>
+                    <span>Quantum Systems</span>
                 </div>
-                <div class="qc-pipeline-body">
-                    <span class="qc-pipeline-label">Signal Network</span>
-                    <span class="qc-pipeline-target">Adaptive Sync</span>
+                <div class="qc-constellation-label">
+                    <span class="qc-label-mark">◆</span>
+                    <span>Quantum Health</span>
+                </div>
+                <div class="qc-constellation-label">
+                    <span class="qc-label-mark">◆</span>
+                    <span>Quantum Networks</span>
+                </div>
+                <div class="qc-constellation-label">
+                    <span class="qc-label-mark">◆</span>
+                    <span>Quantum Defense</span>
+                </div>
+                <div class="qc-constellation-label">
+                    <span class="qc-label-mark">◆</span>
+                    <span>Quantum Analytics</span>
                 </div>
             </div>
-
-            <div class="qc-pipeline-arrow">▼</div>
-
-            <div class="qc-pipeline-node">
-                <div class="qc-pipeline-svg">
-                    <svg viewBox="0 0 200 200" width="120" height="120">
-                        <circle cx="100" cy="30" r="6" fill="#fff"/>
-                        <circle cx="100" cy="60" r="6" fill="#fff"/>
-                        <circle cx="100" cy="90" r="6" fill="#fff"/>
-                        <circle cx="100" cy="120" r="6" fill="#fff"/>
-                        <circle cx="100" cy="150" r="6" fill="#fff"/>
-                        <circle cx="100" cy="180" r="6" fill="#fff"/>
-                    </svg>
-                </div>
-                <div class="qc-pipeline-body">
-                    <span class="qc-pipeline-label">Intel Engine</span>
-                    <span class="qc-pipeline-target">Prediction</span>
-                </div>
-            </div>
-
-            <div class="qc-pipeline-arrow">▼</div>
-
-            <div class="qc-pipeline-node">
-                <div class="qc-pipeline-svg">
-                    <svg viewBox="0 0 200 200" width="120" height="120">
-                        <circle cx="100" cy="30" r="6" fill="#fff"/>
-                        <circle cx="100" cy="60" r="6" fill="#fff"/>
-                        <circle cx="100" cy="90" r="6" fill="#fff"/>
-                        <circle cx="100" cy="120" r="6" fill="#fff"/>
-                        <circle cx="100" cy="150" r="6" fill="#fff"/>
-                        <circle cx="100" cy="180" r="6" fill="#fff"/>
-                    </svg>
-                </div>
-                <div class="qc-pipeline-body">
-                    <span class="qc-pipeline-label">Knowledge</span>
-                    <span class="qc-pipeline-target">Actionable</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="qc-pipeline-note">
-            Gold energy continuously moves through the stack. The intelligence layer is
-            not a service you subscribe to. It is the reason your Band exists.
         </div>
     </div>
 </section>
 
-<!----- PRODUCT COMPARISON MATRIX SECTION ----->
-<section class="qc-section qc-section-dark">
-    <div class="ui-container">
-        <div class="qc-section-head">
-            <span class="qc-section-eyebrow">Product Comparison Matrix</span>
-            <h2 class="qc-section-title">Choose the right layer.</h2>
-        </div>
-
-        <div class="qc-table-wrap">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Quantum Band X1</th>
-                        <th>Neural Patch</th>
-                        <th>Nexus Gateway</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="qc-cell-label">Biometrics</td>
-                        <td class="qc-cell-numeric">ECG · Temp · SpO2</td>
-                        <td class="qc-cell-numeric">ECG · Temp · SpO2</td>
-                        <td class="qc-cell-numeric">Ecological / Olfactory</td>
-                    </tr>
-                    <tr>
-                        <td class="qc-cell-label">ECG Precision</td>
-                        <td class="qc-cell-numeric">512Hz</td>
-                        <td class="qc-cell-numeric">1024Hz</td>
-                        <td class="qc-cell-numeric">N/A</td>
-                    </tr>
-                    <tr>
-                        <td class="qc-cell-label">Neural Sync</td>
-                        <td class="qc-cell-numeric">3-axis mesh</td>
-                        <td class="qc-cell-numeric">Direct contact</td>
-                        <td class="qc-cell-numeric">Mesh coordinator</td>
-                    </tr>
-                    <tr>
-                        <td class="qc-cell-label">AI Core</td>
-                        <td class="qc-cell-numeric">Lite</td>
-                        <td class="qc-cell-numeric">Adv</td>
-                        <td class="qc-cell-numeric">Elite</td>
-                    </tr>
-                    <tr>
-                        <td class="qc-cell-label">Power</td>
-                        <td class="qc-cell-numeric">Passive · 0.3W</td>
-                        <td class="qc-cell-numeric">Passive · 0.1W</td>
-                        <td class="qc-cell-numeric">Charging cradle</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
-
-<!----- CONSTELLATION SUBSIDIARY FOOTER ----->
-<section id="constellation" class="qc-footer">
+<!----- FOOTER ----->
+<footer class="qc-footer">
     <div class="ui-container">
         <div class="qc-footer-inner">
             <div class="qc-footer-brand">
-                <span class="qc-footer-brand-mark">K</span>
-                <span class="qc-footer-brand-name">King Design Collective Inc.</span>
+                <span class="qc-footer-crown">◆</span>
+                <span class="qc-footer-name">King Design Collective Inc.</span>
             </div>
-
-            <div class="qc-footer-row">
-                <div class="qc-footer-constellation">
-                    <div class="qc-constellation-ring">
-                        <div class="qc-constellation-node" data-target="quantum-wearables"></div>
-                        <div class="qc-constellation-node" data-target="quantum-systems"></div>
-                        <div class="qc-constellation-node" data-target="quantum-health"></div>
-                        <div class="qc-constellation-node" data-target="quantum-networks"></div>
-                        <div class="qc-constellation-node" data-target="quantum-analytics"></div>
-                    </div>
-                    <p class="qc-footer-arrow">◆ &nbsp;King Design Collective</p>
-                </div>
-
-                <div class="qc-footer-brand-side">
-                    <span class="qc-footer-brand-label">Quantum Wearables Division</span>
-                    <span class="qc-footer-brand-detail">Human Intelligence Amplified</span>
-                </div>
+            <div class="qc-footer-divisions">
+                <span class="qc-footer-div">Quantum Wearables</span>
+                <span class="qc-footer-div">Quantum Systems</span>
+                <span class="qc-footer-div">Quantum Health</span>
+                <span class="qc-footer-div">Quantum Networks</span>
+                <span class="qc-footer-div">Quantum Defense</span>
+                <span class="qc-footer-div">Quantum Analytics</span>
             </div>
-
-            <div class="qc-footer-bottom">
-                <p>&copy; 2026 Quantum Wearables Division &nbsp;&bull;&nbsp; King Design Collective Inc.</p>
-                <p class="qc-footer-note">Parent Organization &nbsp;•&nbsp; Quantum Systems &nbsp;•&nbsp; Quantum Health &nbsp;•&nbsp; Quantum Networks &nbsp;•&nbsp; Quantum Defense &nbsp;•&nbsp; Quantum Analytics</p>
-            </div>
+            <p class="qc-footer-copy">&copy; 2026 Quantum Division. King Design Collective Inc. — A more intelligent you.</p>
         </div>
     </div>
-</section>
-
-<!-- backdrop blur -->
-<div class="qc-backdrop-blur"></div>
+</footer>
 
 <script src="app.js"></script>
-<script src="scripts/KingDesignCollectiveINC-ui.js" defer></script>
 <script src="scripts/KingDesignCollectiveINC-quantum-wearables.js" defer></script>
 </body>
 </html>
