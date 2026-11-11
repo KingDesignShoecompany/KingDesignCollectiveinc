@@ -1,0 +1,1120 @@
+/* ==========================================================================
+   KingDesignCollectiveINC Quantum Wearables — Cinematic Product Experience
+   Gold-on-black flagship design. Three.js 3D hero. No dashboards.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   QUANTUM THEME TOKENS
+   -------------------------------------------------------------------------- */
+.KingDesignCollectiveINC-quantum-wearables {
+  --color-bg: #050505;
+  --color-bg-deep: #020202;
+  --color-bg-elevated: #0a0a0a;
+  --color-surface: #0f0f14;
+  --color-surface-hover: #14141c;
+  --color-border: rgba(255, 255, 255, 0.05);
+  --color-text: #e6e6f2;
+  --color-text-secondary: #9898b8;
+  --color-text-tertiary: #666680;
+  --color-gold: #d8b05a;
+  --color-gold-glow: rgba(216, 176, 90, 0.18);
+  --color-gold-strong: #f0d47a;
+  --color-cyan: #00b4d8;
+  --color-cyan-glow: rgba(0, 180, 216, 0.15);
+  --color-accent: #7c6ff0;
+
+  --hero-device-size: 34vmin;
+  --hero-text-width: 38vw;
+
+  --gold-gradient: linear-gradient(135deg, #d8b05a, #f0d47a, #d8b05a);
+  --gold-gradient-soft: linear-gradient(135deg, rgba(216, 176, 90, 0.12), transparent 60%);
+
+  --ring-min-size: 1600px;
+  --ring-viewport-size: 110vmax;
+  --ring-content-box: calc(var(--ring-viewport-size) * 0.38);
+}
+
+/* --------------------------------------------------------------------------
+   GLOBAL BACKDROP (heavy fog)
+   -------------------------------------------------------------------------- */
+.KingDesignCollectiveINC-quantum-wearables :where(.qc-hero, .qc-section) {
+  background-attachment: fixed;
+}
+
+/* --------------------------------------------------------------------------
+   HEADER
+   -------------------------------------------------------------------------- */
+.qc-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(5, 5, 5, 0.96), rgba(10, 10, 10, 0.98));
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(12px);
+  padding: 0.75rem 0;
+}
+
+.qc-header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.qc-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qc-crown {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-gold);
+  filter: drop-shadow(0 0 6px rgba(216, 176, 90, 0.4));
+}
+
+.qc-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.qc-division {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.qc-org {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.qc-nav {
+  display: flex;
+  gap: 1.1rem;
+  margin-top: 0.6rem;
+}
+
+.qc-nav a {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  transition: color 200ms;
+}
+
+.qc-nav a:hover {
+  color: var(--color-gold);
+}
+
+/* --------------------------------------------------------------------------
+   HERO SECTION
+   -------------------------------------------------------------------------- */
+.qc-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.qc-hero-canvas-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#qc-hero-canvas-container {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 0;
+}
+
+/* Hero content (on top of the 3D canvas) */
+.qc-hero-content {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.qc-hero-bookend {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 0;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(180deg, rgba(5,5,5,0.4), rgba(10,10,10,0.2));
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+}
+
+.qc-hero-bookend-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 0;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(180deg, rgba(5,5,5,0.4), rgba(10,10,10,0.2));
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+}
+
+.qc-bookend-side {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.qc-hero-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.qc-hero-title {
+  font-size: min(3.2rem, 10vw);
+  font-weight: 700;
+  color: var(--color-gold-strong);
+  font-family: var(--font-display);
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 40px rgba(216, 176, 90, 0.30);
+}
+
+.qc-hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  max-width: 480px;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.qc-hero-eyebrow {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.qc-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.1rem;
+}
+
+.qc-hero-cta .ui-btn {
+  gap: 0.5rem;
+}
+
+.qc-spec-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.qc-spec-chip {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+}
+
+/* Scroll hint */
+.qc-hero-scroll-hint {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  z-index: 5;
+  color: var(--color-text-tertiary);
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.qc-scroll-line {
+  width: 1px;
+  height: 2.5rem;
+  background: linear-gradient(180deg, transparent, var(--color-text-tertiary));
+  animation: scroll-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.8; }
+}
+
+@media (max-width: 900px) {
+  .qc-hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .qc-hero-bookend,
+  .qc-hero-bookend-right {
+    display: none;
+  }
+
+  .qc-hero-title {
+    font-size: min(2.6rem, 10vw);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   PRODUCT ECOSYSTEM SECTION
+   -------------------------------------------------------------------------- */
+.qc-section {
+  position: relative;
+  padding: calc(var(--spacing-3xl) + 2rem) 0;
+  overflow: hidden;
+}
+
+.qc-section-dark {
+  background: linear-gradient(180deg, rgba(5,5,5,0.8), rgba(3,3,3,0.95));
+}
+
+.qc-section-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 2rem;
+}
+
+.qc-section-eyebrow {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 0.5rem;
+}
+
+.qc-section-title {
+  font-size: min(2.5rem, 6vw);
+  font-weight: 700;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  line-height: 1.1;
+  margin-bottom: 0.8rem;
+}
+
+.qc-section-desc {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.qc-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.qc-ecosystem-card {
+  position: relative;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(5,5,5,0.5), rgba(10,10,10,0.8));
+  border: 1px solid var(--color-border);
+  transition: transform 300ms ease, border-color 300ms, box-shadow 300ms;
+  cursor: pointer;
+}
+
+.qc-ecosystem-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-gold);
+  box-shadow: 0 16px 48px rgba(216, 176, 90, 0.18);
+}
+
+.qc-ecosystem-media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: calc(var(--border-radius-xl) - 1px);
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(0,180,216,0.06), rgba(216,176,90,0.05), transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qc-ecosystem-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+}
+
+.qc-ecosystem-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.qc-ecosystem-body h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 0.02em;
+}
+
+.qc-ecosystem-body p {
+  font-size: 0.8rem;
+  color: var(--color-text-tertiary);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.qc-ecosystem-visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Brand logos as ecosystem media */
+.qc-ecosystem-logo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qc-ecosystem-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Brand logos */
+.qc-ecosystem-logo-kdc {
+  background: linear-gradient(135deg, rgba(124,111,240,0.10), rgba(0,180,216,0.06), transparent);
+}
+
+.qc-ecosystem-logo-kdc img {
+  max-width: 80%;
+  max-height: 80%;
+  opacity: 0.9;
+}
+
+/* Brand logos alternate */
+.qc-ecosystem-logo-kids {
+  background: linear-gradient(135deg, rgba(216,176,90,0.08), rgba(0,180,216,0.06), transparent);
+}
+
+.qc-ecosystem-logo-kids img {
+  max-width: 80%;
+  max-height: 80%;
+  opacity: 0.8;
+}
+
+/* Brand logos alternate */
+.qc-ecosystem-logo-innovation {
+  background: linear-gradient(135deg, rgba(0,180,216,0.08), rgba(216,176,90,0.06), transparent);
+}
+
+.qc-ecosystem-logo-innovation img {
+  max-width: 80%;
+  max-height: 80%;
+  opacity: 0.8;
+}
+
+/* --------------------------------------------------------------------------
+   EXPLODED DEVICE TECH SECTION
+   -------------------------------------------------------------------------- */
+.qc-exploded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.qc-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 520px;
+}
+
+.qc-stack-layer {
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(180deg, rgba(5,5,5,0.5), rgba(10,10,10,0.8));
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: transform 200ms, border-color 200ms;
+}
+
+.qc-stack-layer:hover {
+  transform: translateX(6px);
+  border-color: var(--color-gold);
+}
+
+.qc-layer-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.qc-layer-icon {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+  color: #050505;
+}
+
+.qc-layer-name {
+  color: var(--color-text);
+}
+
+.qc-layer-desc {
+  font-size: 0.7rem;
+  color: var(--color-text-tertiary);
+  line-height: 1.5;
+}
+
+.qc-stack-layer.layer-shell { border-color: rgba(255,255,255,0.08); }
+.qc-stack-layer.layer-sensor { border-color: var(--color-cyan); }
+.qc-stack-layer.layer-core { border-color: var(--color-gold); }
+.qc-stack-layer.layer-processor { border-color: var(--color-accent); }
+.qc-stack-layer.layer-bio { border-color: rgba(255,255,255,0.10); }
+
+@media (max-width: 600px) {
+  .qc-stack-layer[data-layer="1"] .qc-layer-desc,
+  .qc-stack-layer[data-layer="3"] .qc-layer-desc,
+  .qc-stack-layer[data-layer="5"] .qc-layer-desc {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   HUMAN SENSOR MESH SECTION
+   -------------------------------------------------------------------------- */
+.qc-mesh-wrap {
+  position: relative;
+  border-radius: var(--border-radius-xl);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(180deg, rgba(10,10,10,0.8), rgba(5,5,5,0.95));
+  padding: 2rem 2.5rem 2.5rem;
+}
+
+.qc-mesh-figure {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qc-figure-silhouette {
+  position: absolute;
+  width: 70%;
+  aspect-ratio: 0.6;
+  background: radial-gradient(ellipse 60% 80% at 50% 40%, rgba(255,255,255,0.03), transparent 75%);
+  border-radius: 50%;
+  filter: blur(6px);
+}
+
+.qc-chest-node {
+  position: absolute;
+  width: 16%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(216,176,90,0.6), rgba(216,176,90,0.2));
+  border: 2px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 24px rgba(216,176,90,0.4);
+}
+
+.qc-node-dot {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+  box-shadow: 0 0 12px rgba(255,255,255,0.5);
+}
+
+.qc-node-light {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--color-gold);
+  box-shadow: 0 0 16px rgba(216,176,90,0.3);
+  animation: node-pulse 3s ease-in-out infinite;
+}
+
+@keyframes node-pulse {
+  0%, 100% { box-shadow: 0 0 16px rgba(216,176,90,0.2); }
+  50% { box-shadow: 0 0 24px rgba(216,176,90,0.5); }
+}
+
+/* Mesh graph outer ring */
+.qc-mesh-graph {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.qc-mesh-graph::before,
+.qc-mesh-graph::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius-xl);
+  border: 1px solid var(--color-border);
+}
+
+.qc-mesh-node {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.6rem 1rem;
+  border-radius: var(--border-radius-sm);
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--color-border);
+  min-width: 90px;
+}
+
+.qc-mesh-node::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--border-radius-sm);
+  background: var(--color-cyan-glow);
+  opacity: 0.4;
+}
+
+.qc-mesh-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+.qc-mesh-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text);
+  font-family: var(--font-display);
+}
+
+.qc-mesh-line {
+  position: absolute;
+  bottom: -1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, transparent, rgba(255,255,255,0.12));
+}
+
+.qc-mesh-node.qc-mesh-node-ecg { border-color: var(--color-cyan); }
+.qc-mesh-node.qc-mesh-node-spo2 { border-color: var(--color-gold); }
+.qc-mesh-node.qc-mesh-node-temp { border-color: var(--color-accent); }
+.qc-mesh-node.qc-mesh-node-motion { border-color: rgba(255,255,255,0.2); }
+.qc-mesh-node.qc-mesh-node-hrv { border-color: var(--color-gold); }
+.qc-mesh-node.qc-mesh-node-respi { border-color: var(--color-cyan); }
+
+.qc-mesh-dot {
+  position: absolute;
+  bottom: -1.8rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-cyan);
+  box-shadow: 0 0 8px var(--color-cyan);
+  animation: dot-pulse 2s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+  0%, 100% { opacity: 0.4; transform: translate(-50%, 0); }
+  50% { opacity: 1; transform: translate(-50%, -4px); }
+}
+
+.qc-mesh-legend {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+}
+
+.qc-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.65rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.02em;
+}
+
+.qc-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* --------------------------------------------------------------------------
+   KDCI ECOSYSTEM CONSTELLATION SECTION
+   -------------------------------------------------------------------------- */
+.qc-constellation {
+  position: relative;
+  border-radius: var(--border-radius-xl);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(180deg, rgba(5,5,5,0.8), rgba(3,3,3,0.95));
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qc-constellation-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.qc-constellation-crown {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-gold);
+  filter: drop-shadow(0 0 8px rgba(216,176,90,0.4));
+}
+
+.qc-constellation-ring {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.qc-constellation-ring::before,
+.qc-constellation-ring::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+}
+
+.qc-constellation-ring::after {
+  border: 1px dashed rgba(255,255,255,0.08);
+  transform: scale(1.12);
+}
+
+.qc-constellation-node {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 0 6px rgba(255,255,255,0.15);
+  animation: node-breathe 3s ease-in-out infinite;
+}
+
+.qc-constellation-node.qc-c-node {
+  background: rgba(124,111,240,0.15);
+  box-shadow: 0 0 8px rgba(124,111,240,0.25);
+  border: 1px solid rgba(124,111,240,0.2);
+}
+
+.qc-constellation-node.qc-c-node:hover {
+  background: rgba(216,176,90,0.25);
+  box-shadow: 0 0 16px rgba(216,176,90,0.4);
+}
+
+.qc-constellation-node.active {
+  background: var(--color-gold);
+  box-shadow: 0 0 20px var(--color-gold), 0 0 40px rgba(216,176,90,0.4);
+  border-color: var(--color-gold);
+  animation: node-breathe 1.5s ease-in-out infinite;
+}
+
+.qc-constellation-node.active::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--color-gold);
+  animation: node-breathe 1.5s ease-in-out infinite;
+}
+
+@keyframes node-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+.qc-constellation-labels {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+}
+
+.qc-constellation-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.qc-label-mark {
+  width: 2px;
+  height: 10px;
+  background: var(--color-gold);
+  border-radius: 1px;
+}
+
+.qc-label-org {
+  font-size: 0.55rem;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.04em;
+}
+
+.qc-label-active {
+  color: var(--color-gold) !important;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   FOOTER
+   -------------------------------------------------------------------------- */
+.qc-footer {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(5,5,5,0.95), rgba(3,3,3,0.98));
+  border-top: 1px solid var(--color-border);
+}
+
+.qc-footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.qc-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qc-footer-crown {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-gold);
+  filter: drop-shadow(0 0 6px rgba(216,176,90,0.4));
+}
+
+.qc-footer-name {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 0.08em;
+}
+
+.qc-footer-divisions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+}
+
+.qc-footer-div {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-text-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  transition: color 200ms, border-color 200ms;
+}
+
+.qc-footer-div:hover {
+  color: var(--color-text);
+  border-color: var(--color-border-hover);
+}
+
+.qc-footer-copy {
+  font-size: 0.6rem;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.04em;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .qc-hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .qc-hero-bookend,
+  .qc-hero-bookend-right {
+    display: none;
+  }
+
+  .qc-hero-title {
+    font-size: min(2.6rem, 10vw);
+  }
+
+  .qc-ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qc-mesh-node {
+    min-width: 70px;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .qc-mesh-node .qc-mesh-value {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .qc-hero-title {
+    font-size: min(2rem, 8vw);
+  }
+
+  .qc-hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .qc-hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .qc-hero-cta .ui-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ANIMATION PRIMITIVES
+   -------------------------------------------------------------------------- */
+.qc-hero {
+  scrollbar-gutter: stable;
+}
+
+.qc-backdrop-blur {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   THREE.JS HERO CANVAS CONTAINER
+   -------------------------------------------------------------------------- */
+#qc-hero-canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   HERO ENERGY FIELDS (decorative CSS ring / particle particles)
+   -------------------------------------------------------------------------- */
+.qc-hero-ring {
+  position: absolute;
+  inset: calc(-1 * var(--ring-content-box) / 2);
+  border: 1px solid rgba(216, 176, 90, 0.06);
+  border-radius: 50%;
+  animation: ring-pulse 6s ease-in-out infinite;
+}
+
+@keyframes ring-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.04); }
+}
+
+.qc-hero-ring-gold {
+  position: absolute;
+  inset: calc(-1 * var(--ring-content-box) / 2);
+  border: 1px solid rgba(216, 176, 90, 0.08);
+  border-radius: 50%;
+  animation: ring-pulse 8s ease-in-out infinite;
+}
+
+@keyframes ring-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+.qc-hero-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.qc-hero-particles span {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 6px rgba(216, 176, 90, 0.2);
+  animation: particle-drift 12s linear infinite;
+}
+
+.qc-hero-particles span:nth-child(2n) {
+  background: rgba(216, 176, 90, 0.2);
+  box-shadow: 0 0 6px rgba(216, 176, 90, 0.1);
+  animation-delay: -5s;
+}
+
+@keyframes particle-drift {
+  0% { transform: translateY(100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+/* --------------------------------------------------------------------------
+   BACKDROP BLUR (transparent overlay for hero content)
+   -------------------------------------------------------------------------- */
+.qc-backdrop-blur {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   INTELL STREAM (floating particles in top section)
+   -------------------------------------------------------------------------- */
+.qc-intel-stream {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+  border-radius: var(--border-radius-xl);
+  background: linear-gradient(180deg, rgba(0, 180, 216, 0.04), rgba(124, 111, 240, 0.03));
+  border: 1px solid var(--color-border);
+}
+
+.qc-intel-stream::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 20% 40% at 20% 30%, rgba(0, 180, 216, 0.06), transparent 60%),
+    radial-gradient(ellipse 20% 40% at 80% 70%, rgba(255, 158, 0, 0.05), transparent 60%),
+    radial-gradient(ellipse 15% 30% at 50% 50%, rgba(124, 111, 240, 0.04), transparent 60%);
+  pointer-events: none;
+}
+
+.qc-intel-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.qc-intel-particles span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(0, 180, 216, 0.3);
+  box-shadow: 0 0 6px rgba(0, 180, 216, 0.2);
+  animation: float-up 12s linear infinite;
+}
+
+.qc-intel-particles span:nth-child(2n) {
+  background: rgba(216, 176, 90, 0.25);
+  box-shadow: 0 0 6px rgba(216, 176, 90, 0.15);
+  animation-delay: -3s;
+}
+
+@keyframes float-up {
+  0% { transform: translateY(100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-100vh); opacity: 0; }
+}
