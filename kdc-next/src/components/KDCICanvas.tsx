@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useEffect, useCallback, useRef, useState } from 'react';
 import { useCanvasCamera } from '../hooks/useCanvasCamera';
 import { useGestures } from '../hooks/useGestures';
 import { useNodePhysics } from '../hooks/useNodePhysics';
@@ -79,11 +79,12 @@ export default function KDCICanvas({
   const [pickingSourceNodeId, setPickingSourceNodeId] =
     useState<string | null>(null);
 
-  const { cameraRef, pan, zoomAt, animateTo, reset } = useCanvasCamera(
-    worldRef,
-    { x: 0, y: 0, zoom: 1 },
-    setZoomPct
-  );
+  const { cameraRef, pan, zoomAt, animateTo, clampCamera, fitAll, reset } =
+    useCanvasCamera(
+      worldRef,
+      { x: 0, y: 0, zoom: 1 },
+      setZoomPct
+    );
 
   const syncFrameToDom = useCallback(
     (liveNodes: readonly PhysicsNode[], grabbedId: string | null) => {
@@ -159,6 +160,11 @@ export default function KDCICanvas({
   };
 
   useGestures(containerRef, gestureHandlersRef.current as any);
+
+  // Fit-to-ecosystem on mount (also wired to HUD RESET VIEW and Radial recenter).
+  useEffect(() => {
+    fitAll(nodesRef.current);
+  }, [fitAll]);
 
   const handleContextMenu = (e: React.MouseEvent) => {
     e.preventDefault();
