@@ -139,7 +139,7 @@ export default function KDCICanvas({
       grabNode(nodeId);
     },
     onLongPress: (x, y) => {
-      onContextMenuAt?.(x, y);
+      openRadialAt(x, y);
     },
     onThreeFingerTap: () => {
       onOpenCommandBar?.();
