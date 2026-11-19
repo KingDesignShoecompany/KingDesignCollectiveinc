@@ -69,3 +69,19 @@
   font-size: 9px;
   letter-spacing: 0.05em;
 }
+
+.gold-pulse-dot {
+  fill: #ffd700;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.95));
+  pointer-events: none;
+}
+
+.gold-pulse-dot.pulse-treasury {
+  fill: #22c55e;
+  filter: drop-shadow(0 0 6px rgba(34, 197, 94, 0.9));
+}
+
+.gold-pulse-dot.pulse-data {
+  fill: #38bdf8;
+  filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.9));
+}

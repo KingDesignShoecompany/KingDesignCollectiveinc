@@ -54,6 +54,7 @@ export default function KDCICanvas({
   const worldRef = useRef<HTMLDivElement>(null);
   const nodeDomRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   const lineDomRefs = useRef<Map<number, SVGLineElement>>(new Map());
+  const pulseDomRefs = useRef<Map<number, SVGCircleElement>>(new Map());
 
   const [selectedId, setSelectedId] = useState<string>(
     initialNodes[0]?.id ?? 'kdci-core'
@@ -99,13 +100,24 @@ export default function KDCICanvas({
       }
       edgeLinks.forEach((link, idx) => {
         const lineEl = lineDomRefs.current.get(idx);
+        const pulseEl = pulseDomRefs.current.get(idx);
         const src = nodeMap.get(link.source);
         const tgt = nodeMap.get(link.target);
-        if (lineEl && src && tgt) {
+        if (!src || !tgt) return;
+
+        if (lineEl) {
           lineEl.setAttribute('x1', String(src.x));
           lineEl.setAttribute('y1', String(src.y));
           lineEl.setAttribute('x2', String(tgt.x));
           lineEl.setAttribute('y2', String(tgt.y));
+        }
+
+        if (pulseEl) {
+          const t = (performance.now() * 0.00055 + idx * 0.19) % 1;
+          const px = src.x + (tgt.x - src.x) * t;
+          const py = src.y + (tgt.y - src.y) * t;
+          pulseEl.setAttribute('cx', String(px));
+          pulseEl.setAttribute('cy', String(py));
         }
       });
     },
@@ -318,18 +330,29 @@ export default function KDCICanvas({
             const tgt = nodesRef.current.find((n) => n.id === link.target);
             if (!src || !tgt) return null;
             return (
-              <line
-                key={`${link.source}-${link.target}-${idx}`}
-                ref={(el) => {
-                  if (el) lineDomRefs.current.set(idx, el);
-                  else lineDomRefs.current.delete(idx);
-                }}
-                x1={src.x}
-                y1={src.y}
-                x2={tgt.x}
-                y2={tgt.y}
-                className={`gold-stream-line stream-${link.type}`}
-              />
+              <g key={`${link.source}-${link.target}-${idx}`}>
+                <line
+                  ref={(el) => {
+                    if (el) lineDomRefs.current.set(idx, el);
+                    else lineDomRefs.current.delete(idx);
+                  }}
+                  x1={src.x}
+                  y1={src.y}
+                  x2={tgt.x}
+                  y2={tgt.y}
+                  className={`gold-stream-line stream-${link.type}`}
+                />
+                <circle
+                  ref={(el) => {
+                    if (el) pulseDomRefs.current.set(idx, el);
+                    else pulseDomRefs.current.delete(idx);
+                  }}
+                  cx={src.x}
+                  cy={src.y}
+                  r={3.5}
+                  className={`gold-pulse-dot pulse-${link.type}`}
+                />
+              </g>
             );
           })}
         </svg>
