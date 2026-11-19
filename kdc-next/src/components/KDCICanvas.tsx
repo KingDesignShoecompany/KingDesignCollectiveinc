@@ -5,6 +5,7 @@ import { useCanvasCamera } from '../hooks/useCanvasCamera';
 import { useGestures } from '../hooks/useGestures';
 import { useNodePhysics } from '../hooks/useNodePhysics';
 import { RadialMenu, RadialActionId } from './RadialMenu';
+import { SearchCommandBar } from './SearchCommandBar';
 import '../styles/canvas.css';
 
 export interface PhysicsNode {
@@ -41,6 +42,8 @@ interface Props {
   onNavigate: (route: string) => void;
   onOpenCommandBar?: () => void;
   onContextMenuAt?: (x: number, y: number, nodeId?: string) => void;
+  onFocusNode?: (node: KDCINode) => void;
+  onLaunchRoute?: (route: string) => void;
 }
 
 export default function KDCICanvas({
@@ -49,6 +52,8 @@ export default function KDCICanvas({
   onNavigate,
   onOpenCommandBar,
   onContextMenuAt,
+  onFocusNode,
+  onLaunchRoute,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const worldRef = useRef<HTMLDivElement>(null);
@@ -60,6 +65,14 @@ export default function KDCICanvas({
     initialNodes[0]?.id ?? 'kdci-core'
   );
   const [zoomPct, setZoomPct] = useState<number>(100);
+
+  // Command palette state
+  const [commandOpen, setCommandOpen] = useState(false);
+
+  const toggleCommandBar = useCallback(() => {
+    setCommandOpen((prev) => !prev);
+    onOpenCommandBar?.();
+  }, [onOpenCommandBar]);
 
   const [radialState, setRadialState] = useState<{
     visible: boolean;
@@ -155,11 +168,24 @@ export default function KDCICanvas({
       openRadialAt(x, y);
     },
     onThreeFingerTap: () => {
+      setCommandOpen(true);
       onOpenCommandBar?.();
     },
   };
 
   useGestures(containerRef, gestureHandlersRef.current as any);
+
+  // Global ⌘K / Ctrl+K shortcut
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        toggleCommandBar();
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [toggleCommandBar]);
 
   // Fit-to-ecosystem on mount (also wired to HUD RESET VIEW and Radial recenter).
   useEffect(() => {
@@ -222,7 +248,7 @@ export default function KDCICanvas({
         return;
       }
     },
-    [nodesRef, reset, animateTo, onNavigate, onOpenCommandBar]
+    [nodesRef, reset, animateTo, onNavigate, onOpenCommandBar, onFocusNode]
   );
 
   // --- Relationship Graph edge forging ---
@@ -423,6 +449,19 @@ export default function KDCICanvas({
         }
         onAction={handleRadialAction}
         onClose={() => setRadialState((prev) => ({ ...prev, visible: false }))}
+      />
+
+      <SearchCommandBar
+        open={commandOpen}
+        nodes={nodesRef.current as unknown as readonly KDCINode[]}
+        onClose={() => setCommandOpen(false)}
+        onFocusNode={(node) => {
+          setSelectedId(node.id);
+          animateTo(node.x, node.y, 1.75);
+        }}
+        onLaunchRoute={onLaunchRoute ?? onNavigate}
+        onFitAll={fitAll}
+        onResetView={reset}
       />
     </div>
   );
