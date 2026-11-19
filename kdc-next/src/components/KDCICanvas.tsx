@@ -4,6 +4,7 @@ import React, { useCallback, useRef, useState } from 'react';
 import { useCanvasCamera } from '../hooks/useCanvasCamera';
 import { useGestures } from '../hooks/useGestures';
 import { useNodePhysics } from '../hooks/useNodePhysics';
+import { RadialMenu, RadialActionId } from './RadialMenu';
 import '../styles/canvas.css';
 
 export interface PhysicsNode {
@@ -44,7 +45,7 @@ interface Props {
 
 export default function KDCICanvas({
   initialNodes,
-  links,
+  links: initialLinks,
   onNavigate,
   onOpenCommandBar,
   onContextMenuAt,
@@ -58,6 +59,24 @@ export default function KDCICanvas({
     initialNodes[0]?.id ?? 'kdci-core'
   );
   const [zoomPct, setZoomPct] = useState<number>(100);
+
+  const [radialState, setRadialState] = useState<{
+    visible: boolean;
+    x: number;
+    y: number;
+    nodeId?: string;
+  }>({
+    visible: false,
+    x: 0,
+    y: 0,
+  });
+
+  // Relationship Graph edge state
+  const [edgeLinks, setEdgeLinks] = useState<EcosystemLink[]>(
+    initialLinks.length > 0 ? initialLinks : []
+  );
+  const [pickingSourceNodeId, setPickingSourceNodeId] =
+    useState<string | null>(null);
 
   const { cameraRef, pan, zoomAt, animateTo, reset } = useCanvasCamera(
     worldRef,
@@ -78,7 +97,7 @@ export default function KDCICanvas({
           el.classList.toggle('is-grabbed', grabbedId === node.id);
         }
       }
-      links.forEach((link, idx) => {
+      edgeLinks.forEach((link, idx) => {
         const lineEl = lineDomRefs.current.get(idx);
         const src = nodeMap.get(link.source);
         const tgt = nodeMap.get(link.target);
@@ -90,7 +109,7 @@ export default function KDCICanvas({
         }
       });
     },
-    [links]
+    [edgeLinks]
   );
 
   const { nodesRef, grabNode, dragNode, releaseNode } = useNodePhysics(
@@ -116,8 +135,8 @@ export default function KDCICanvas({
       grabNode(id);
     },
     onNodeDrag: dragNode,
-    onNodeGrabEnd: () => {
-      releaseNode();
+    onNodeGrabEnd: (nodeId) => {
+      grabNode(nodeId);
     },
     onLongPress: (x, y) => {
       onContextMenuAt?.(x, y);
@@ -135,6 +154,136 @@ export default function KDCICanvas({
     const nodeEl = target.closest('[data-node-id]') as HTMLElement | null;
     onContextMenuAt?.(e.clientX, e.clientY, nodeEl?.dataset.nodeId);
   };
+
+  const openRadialAt = useCallback((clientX: number, clientY: number, explicitNodeId?: string) => {
+    let resolvedNodeId = explicitNodeId;
+    if (!resolvedNodeId && typeof document !== 'undefined') {
+      const hit = document.elementFromPoint(clientX, clientY);
+      const nodeEl = hit?.closest('[data-node-id]') as HTMLElement | null;
+      resolvedNodeId = nodeEl?.dataset.nodeId;
+    }
+    if (resolvedNodeId) setSelectedId(resolvedNodeId);
+    setRadialState({
+      visible: true,
+      x: clientX,
+      y: clientY,
+      nodeId: resolvedNodeId,
+    });
+  }, []);
+
+  const handleRadialAction = useCallback(
+    (action: RadialActionId, nodeId?: string) => {
+      const targetNode = nodesRef.current.find((n) => n.id === nodeId) as
+        | KDCINode
+        | undefined;
+
+      if (action === 'reset') {
+        reset();
+        setRadialState((prev) => ({ ...prev, visible: false }));
+        return;
+      }
+      if (action === 'workspace' && targetNode && !targetNode.isDeclaredGap) {
+        animateTo(targetNode.x, targetNode.y, 2.5);
+        setTimeout(() => onNavigate(targetNode.route), 420);
+        setRadialState((prev) => ({ ...prev, visible: false }));
+        return;
+      }
+      if ((action === 'agents' || action === 'analytics') && onOpenCommandBar) {
+        onOpenCommandBar();
+        setRadialState((prev) => ({ ...prev, visible: false }));
+        return;
+      }
+      if (action === 'connections') {
+        if (!targetNode) {
+          setRadialState((prev) => ({ ...prev, visible: false, nodeId: undefined }));
+          return;
+        }
+        setPickingSourceNodeId(targetNode.id);
+        setSelectedId(targetNode.id);
+        setRadialState((prev) => ({ ...prev, visible: false }));
+        return;
+      }
+    },
+    [nodesRef, reset, animateTo, onNavigate, onOpenCommandBar]
+  );
+
+  // --- Relationship Graph edge forging ---
+  const nodeAtWorldPoint = useCallback(
+    (worldX: number, worldY: number): KDCINode | undefined => {
+      let best: KDCINode | undefined;
+      let bestDist = Infinity;
+      for (const n of nodesRef.current) {
+        const d = Math.hypot(n.x - worldX, n.y - worldY);
+        if (d < n.radius && d < bestDist) {
+          bestDist = d;
+          best = n as KDCINode;
+        }
+      }
+      return best;
+    },
+    [nodesRef]
+  );
+
+  const pickTarget = useCallback(
+    (sourceId: string, targetNode: KDCINode) => {
+      if (sourceId === targetNode.id) return;
+      const existing = edgeLinks.find(
+        (l) =>
+          (l.source === sourceId && l.target === targetNode.id) ||
+          (l.source === targetNode.id && l.target === sourceId)
+      );
+      if (existing) {
+        setPickingSourceNodeId(null);
+        return;
+      }
+      const newLink: EcosystemLink = {
+        source: sourceId,
+        target: targetNode.id,
+        type: 'data',
+      };
+      setEdgeLinks((prev) => [...prev, newLink]);
+      setPickingSourceNodeId(null);
+      // Persist to localStorage (seed from key, merge for overrides).
+      try {
+        const seed = window.localStorage.getItem(
+          'kdci-ecosystem-links-seed'
+        );
+        const stored = seed ? (JSON.parse(seed) as EcosystemLink[]) : [];
+        const merged = [
+          ...stored.filter(
+            (l) =>
+              l.source !== sourceId || l.target !== targetNode.id ||
+              l.type !== 'data'
+          ),
+          newLink,
+        ];
+        window.localStorage.setItem(
+          'kdci-ecosystem-links-seed',
+          JSON.stringify(merged)
+        );
+      } catch {
+        // non-fatal
+      }
+    },
+    [edgeLinks]
+  );
+
+  const onNodeGrabEnd = useCallback(
+    (nodeId: string) => {
+      releaseNode();
+      if (pickingSourceNodeId) {
+        const picked = nodeAtWorldPoint(
+          cameraRef.current.x / cameraRef.current.zoom,
+          cameraRef.current.y / cameraRef.current.zoom
+        );
+        if (picked && picked.id !== pickingSourceNodeId) {
+          pickTarget(pickingSourceNodeId, picked as KDCINode);
+        }
+        setPickingSourceNodeId(null);
+      }
+    },
+    [pickingSourceNodeId, releaseNode, cameraRef, nodeAtWorldPoint, pickTarget]
+  );
 
   return (
     <div
@@ -164,7 +313,7 @@ export default function KDCICanvas({
         style={{ transform: 'translate3d(0px, 0px, 0) scale(1)' }}
       >
         <svg className="connection-layer" width="4000" height="4000">
-          {links.map((link, idx) => {
+          {edgeLinks.map((link, idx) => {
             const src = nodesRef.current.find((n) => n.id === link.source);
             const tgt = nodesRef.current.find((n) => n.id === link.target);
             if (!src || !tgt) return null;
@@ -226,6 +375,26 @@ export default function KDCICanvas({
           );
         })}
       </div>
+
+      <RadialMenu
+        state={radialState}
+        nodeTitle={
+          radialState.nodeId
+            ? (nodesRef.current.find((n) => n.id === radialState.nodeId) as
+                | KDCINode
+                | undefined)?.title
+            : undefined
+        }
+        isDeclaredGap={
+          radialState.nodeId
+            ? (nodesRef.current.find((n) => n.id === radialState.nodeId) as
+                | KDCINode
+                | undefined)?.isDeclaredGap
+            : undefined
+        }
+        onAction={handleRadialAction}
+        onClose={() => setRadialState((prev) => ({ ...prev, visible: false }))}
+      />
     </div>
   );
 }
