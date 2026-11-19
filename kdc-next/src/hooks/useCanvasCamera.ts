@@ -27,6 +27,17 @@ export interface CameraState {
 const MIN_ZOOM = 0.25;
 const MAX_ZOOM = 4.5;
 
+/** Soft viewport bounds for clamping. Keeps the ecosystem on-screen and
+ *  prevents empty black-space panning / zooming. Bounds scale with zoom so
+ *  the clamp is proportional and never distorts at high zoom.
+ */
+const WORLD_BOUNDS = {
+  minX: -1800,
+  maxX: 1800,
+  minY: -1400,
+  maxY: 1400,
+};
+
 export function useCanvasCamera(
   worldRef: RefObject<HTMLElement | null>,
   initial: CameraState = { x: 0, y: 0, zoom: 1 },
@@ -68,6 +79,7 @@ export function useCanvasCamera(
       cancelSpring();
       cameraRef.current.x += dx;
       cameraRef.current.y += dy;
+      cameraRef.current = clampCamera(cameraRef.current);
       applyTransform();
     },
     [cancelSpring, applyTransform]
@@ -97,6 +109,7 @@ export function useCanvasCamera(
         x: fx - (fx - prev.x) * ratio,
         y: fy - (fy - prev.y) * ratio,
       };
+      cameraRef.current = clampCamera(cameraRef.current);
       applyTransform();
     },
     [cancelSpring, applyTransform]
@@ -146,6 +159,61 @@ export function useCanvasCamera(
     [cancelSpring, applyTransform]
   );
 
+  /**
+   * Soft viewport bounds clamping. Keeps the ecosystem on-screen and
+   * prevents empty black-space panning / zooming. Bounds scale with zoom.
+   */
+  const clampCamera = useCallback((state: CameraState): CameraState => {
+    const zoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, state.zoom));
+    const x = Math.min(
+      WORLD_BOUNDS.maxX * zoom,
+      Math.max(WORLD_BOUNDS.minX * zoom, state.x)
+    );
+    const y = Math.min(
+      WORLD_BOUNDS.maxY * zoom,
+      Math.max(WORLD_BOUNDS.minY * zoom, state.y)
+    );
+    return { x, y, zoom };
+  }, []);
+
+  /**
+   * Fit-to-ecosystem: computes the bounding box of all active KDCI nodes
+   * and springs the camera to frame the entire ecosystem cleanly. Called
+   * on mount and wired to the HUD RESET VIEW button and Radial recenter.
+   */
+  const fitAll = useCallback(
+    (nodes: readonly { x: number; y: number; radius: number }[]) => {
+      if (!nodes.length) return;
+      let minX = Infinity,
+        maxX = -Infinity,
+        minY = Infinity,
+        maxY = -Infinity;
+
+      for (const n of nodes) {
+        minX = Math.min(minX, n.x - n.radius);
+        maxX = Math.max(maxX, n.x + n.radius);
+        minY = Math.min(minY, n.y - n.radius);
+        maxY = Math.max(maxY, n.y + n.radius);
+      }
+
+      const vw = typeof window !== "undefined" ? window.innerWidth : 1280;
+      const vh = typeof window !== "undefined" ? window.innerHeight : 800;
+      const pad = vw < 768 ? 48 : 120;
+
+      const spanX = Math.max(1, maxX - minX);
+      const spanY = Math.max(1, maxY - minY);
+      const targetZoom = Math.min(
+        1.35,
+        Math.max(MIN_ZOOM, Math.min((vw - pad * 2) / spanX, (vh - pad * 2) / spanY))
+      );
+
+      const centerX = (minX + maxX) / 2;
+      const centerY = (minY + maxY) / 2;
+      animateTo(centerX, centerY, targetZoom);
+    },
+    [animateTo]
+  );
+
   const reset = useCallback(() => {
     animateTo(0, 0, 1);
   }, [animateTo]);
@@ -155,6 +223,8 @@ export function useCanvasCamera(
     pan,
     zoomAt,
     animateTo,
+    clampCamera,
+    fitAll,
     reset,
   };
 }
