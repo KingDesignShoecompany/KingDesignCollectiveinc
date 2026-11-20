@@ -6,6 +6,8 @@ import { useGestures } from '../hooks/useGestures';
 import { useNodePhysics } from '../hooks/useNodePhysics';
 import { RadialMenu, RadialActionId } from './RadialMenu';
 import { SearchCommandBar } from './SearchCommandBar';
+import { getVentureMetadata } from '../data/nodeMetadata';
+import { NodeTelemetryHUD } from './NodeTelemetryHUD';
 import '../styles/canvas.css';
 
 export interface PhysicsNode {
@@ -462,6 +464,27 @@ export default function KDCICanvas({
         onLaunchRoute={onLaunchRoute ?? onNavigate}
         onFitAll={fitAll}
         onResetView={reset}
+      />
+
+      <NodeTelemetryHUD
+        metadata={getVentureMetadata(selectedId)}
+        inboundLinks={
+          edgeLinks.filter((l) => l.target === selectedId).length
+        }
+        outboundLinks={
+          edgeLinks.filter((l) => l.source === selectedId).length
+        }
+        onFocus={() => {
+          const node = nodesRef.current.find((n) => n.id === selectedId);
+          if (node) animateTo(node.x, node.y, 1.75);
+        }}
+        onOpenWorkspace={() => {
+          const node = nodesRef.current.find((n) => n.id === selectedId);
+          if (node && !getVentureMetadata(selectedId)?.isDeclaredGap) {
+            animateTo(node.x, node.y, 2.5);
+            setTimeout(() => onNavigate(getVentureMetadata(selectedId)!.route), 420);
+          }
+        }}
       />
     </div>
   );
