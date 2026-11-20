@@ -12,6 +12,7 @@ interface Props {
   onClose: () => void;
   onLaunchFullRoute: (route: string) => void;
   onFocusLinkedNode: (nodeId: string) => void;
+  onWorkspaceTabChange?: (tabId: WorkspaceTabId) => void;
   onRemoveLink?: (source: string, target: string) => void;
 }
 
@@ -23,6 +24,7 @@ export function WorkspaceDrawer({
   onClose,
   onLaunchFullRoute,
   onFocusLinkedNode,
+  onWorkspaceTabChange,
   onRemoveLink,
 }: Props) {
   const [activeTab, setActiveTab] = useState<WorkspaceTabId>("overview");
@@ -107,7 +109,10 @@ export function WorkspaceDrawer({
             className={`workspace-tab-btn ${
               activeTab === tab.id ? "is-active" : ""
             }`}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => {
+              setActiveTab(tab.id);
+              onWorkspaceTabChange?.(tab.id);
+            }}
           >
             {tab.label}
           </button>
