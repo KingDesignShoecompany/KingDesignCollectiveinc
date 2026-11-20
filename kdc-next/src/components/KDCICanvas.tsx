@@ -9,8 +9,22 @@ import { SearchCommandBar } from './SearchCommandBar';
 import { getVentureMetadata } from '../data/nodeMetadata';
 import { NodeTelemetryHUD } from './NodeTelemetryHUD';
 import { WorkspaceDrawer, WorkspaceTabId } from './WorkspaceDrawer';
+import { MobileRadarView } from './MobileRadarView';
 import { recordWorkspaceOpen, recordWorkspaceTabVisit, recordWorkspaceLaunch, recordSpatialTransition } from '../lib/commandAnalytics';
 import '../styles/canvas.css';
+
+/** True when the viewport is under the mobile radar threshold (768px). */
+export function useMobileRadar(): boolean {
+  const [isMobile, setIsMobile] = useState<boolean>(
+    typeof window !== 'undefined' ? window.innerWidth < 768 : false
+  );
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+  return isMobile;
+}
 
 export interface PhysicsNode {
   id: string;
@@ -83,7 +97,10 @@ export default function KDCICanvas({
   const [pickingSourceNodeId, setPickingSourceNodeId] =
     useState<string | null>(null);
 
-  // Camera hook (declared before functions that use animateTo).
+  // Mobile radar detection
+  const isMobile = useMobileRadar();
+
+  // Camera hook
   const { cameraRef, pan, zoomAt, animateTo, clampCamera, fitAll, reset } =
     useCanvasCamera(worldRef, { x: 0, y: 0, zoom: 1 }, setZoomPct);
 
@@ -162,7 +179,7 @@ export default function KDCICanvas({
   const toggleCommandBar = useCallback(() => {
     setCommandOpen((prev) => !prev);
     onOpenCommandBar?.();
-    recordWorkspaceOpen("command-palette");
+    recordWorkspaceOpen('command-palette');
   }, [onOpenCommandBar, recordWorkspaceOpen]);
 
   const { nodesRef: _nodesRef, grabNode, dragNode, releaseNode } =
@@ -377,172 +394,190 @@ export default function KDCICanvas({
         </div>
       </div>
 
-      <div
-        ref={worldRef}
-        className="world-layer"
-        style={{ transform: 'translate3d(0px, 0px, 0) scale(1)' }}
-      >
-        <svg className="connection-layer" width="4000" height="4000">
-          {edgeLinks.map((link, idx) => {
-            const src = nodesRef.current.find((n) => n.id === link.source);
-            const tgt = nodesRef.current.find((n) => n.id === link.target);
-            if (!src || !tgt) return null;
-            return (
-              <g key={`${link.source}-${link.target}-${idx}`}>
-                <line
+      {/* Mobile Radar Mode: replaces desktop canvas with radar scope on < 768px */}
+      {isMobile ? (
+        <MobileRadarView
+          nodes={nodesRef.current as unknown as readonly KDCINode[]}
+          links={edgeLinks}
+          selectedId={selectedId}
+          onSelectNode={(id) => setSelectedId(id)}
+          onOpenWorkspace={(id) => openNodeWorkspace(id)}
+          onOpenCommandBar={toggleCommandBar}
+          onLongPressNode={(x, y, nodeId) => openRadialAt(x, y, nodeId)}
+        />
+      ) : (
+        <>
+          <div
+            ref={worldRef}
+            className="world-layer"
+            style={{ transform: 'translate3d(0px, 0px, 0) scale(1)' }}
+          >
+            <svg className="connection-layer" width="4000" height="4000">
+              {edgeLinks.map((link, idx) => {
+                const src = nodesRef.current.find((n) => n.id === link.source);
+                const tgt = nodesRef.current.find((n) => n.id === link.target);
+                if (!src || !tgt) return null;
+                return (
+                  <g key={`${link.source}-${link.target}-${idx}`}>
+                    <line
+                      ref={(el) => {
+                        if (el) lineDomRefs.current.set(idx, el);
+                        else lineDomRefs.current.delete(idx);
+                      }}
+                      x1={src.x}
+                      y1={src.y}
+                      x2={tgt.x}
+                      y2={tgt.y}
+                      className={`gold-stream-line stream-${link.type}`}
+                    />
+                    <circle
+                      ref={(el) => {
+                        if (el) pulseDomRefs.current.set(idx, el);
+                        else pulseDomRefs.current.delete(idx);
+                      }}
+                      cx={src.x}
+                      cy={src.y}
+                      r={3.5}
+                      className={`gold-pulse-dot pulse-${link.type}`}
+                    />
+                  </g>
+                );
+              })}
+            </svg>
+
+            {nodesRef.current.map((node: PhysicsNode) => {
+              const kcni = node as KDCINode;
+              return (
+                <div
+                  key={node.id}
                   ref={(el) => {
-                    if (el) lineDomRefs.current.set(idx, el);
-                    else lineDomRefs.current.delete(idx);
+                    if (el) nodeDomRefs.current.set(node.id, el);
+                    else nodeDomRefs.current.delete(node.id);
                   }}
-                  x1={src.x}
-                  y1={src.y}
-                  x2={tgt.x}
-                  y2={tgt.y}
-                  className={`gold-stream-line stream-${link.type}`}
-                />
-                <circle
-                  ref={(el) => {
-                    if (el) pulseDomRefs.current.set(idx, el);
-                    else pulseDomRefs.current.delete(idx);
+                  data-node-id={node.id}
+                  className={`holo-node status-${kcni.status} ${
+                    selectedId === node.id ? 'selected' : ''
+                  }`}
+                  style={{
+                    transform: `translate3d(${node.x - node.radius}px, ${
+                      node.y - node.radius
+                    }px, 0)`,
+                    width: node.radius * 2,
+                    height: node.radius * 2,
                   }}
-                  cx={src.x}
-                  cy={src.y}
-                  r={3.5}
-                  className={`gold-pulse-dot pulse-${link.type}`}
-                />
-              </g>
-            );
-          })}
-        </svg>
-
-        {nodesRef.current.map((node: PhysicsNode) => {
-          const kcni = node as KDCINode;
-          return (
-            <div
-              key={node.id}
-              ref={(el) => {
-                if (el) nodeDomRefs.current.set(node.id, el);
-                else nodeDomRefs.current.delete(node.id);
-              }}
-              data-node-id={node.id}
-              className={`holo-node status-${kcni.status} ${
-                selectedId === node.id ? 'selected' : ''
-              }`}
-              style={{
-                transform: `translate3d(${node.x - node.radius}px, ${
-                  node.y - node.radius
-                }px, 0)`,
-                width: node.radius * 2,
-                height: node.radius * 2,
-              }}
-              onClick={() => setSelectedId(node.id)}
-              onDoubleClick={() => {
-                if (kcni.isDeclaredGap) return;
-                const prevId = selectedId;
-                setSelectedId(node.id);
-                animateTo(node.x, node.y, 2.5);
-                recordSpatialTransition(prevId, node.id, "canvas");
-                setTimeout(() => onNavigate(kcni.route), 420);
-              }}
-            >
-              <div className="orbit-ring" />
-              <div className="node-core">
-                <span className="node-sector">{kcni.sectorTag}</span>
-                <span className="node-title">{kcni.title}</span>
-                <span className="node-meta">
-                  {kcni.isDeclaredGap
-                    ? 'DECLARED GAP (404)'
-                    : `${kcni.projects}P · ${kcni.agents}A`}
-                </span>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      <RadialMenu
-        state={radialState}
-        nodeTitle={
-          radialState.nodeId
-            ? (nodesRef.current.find((n) => n.id === radialState.nodeId) as
-                | KDCINode
-                | undefined)?.title
-            : undefined
-        }
-        isDeclaredGap={
-          radialState.nodeId
-            ? (nodesRef.current.find((n) => n.id === radialState.nodeId) as
-                | KDCINode
-                | undefined)?.isDeclaredGap
-            : undefined
-        }
-        onAction={handleRadialAction}
-        onClose={() => setRadialState((prev) => ({ ...prev, visible: false }))}
-      />
-
-      <SearchCommandBar
-        open={commandOpen}
-        nodes={nodesRef.current as unknown as readonly KDCINode[]}
-        onClose={() => setCommandOpen(false)}
-        onFocusNode={(node) => {
-          setSelectedId(node.id);
-          animateTo(node.x, node.y, 1.75);
-        }}
-        onLaunchRoute={onLaunchRoute ?? onNavigate}
-        onFitAll={fitAll}
-        onResetView={reset}
-        onFocusNodeId={selectedId}
-      />
-
-      <NodeTelemetryHUD
-        metadata={getVentureMetadata(selectedId)}
-        inboundLinks={
-          edgeLinks.filter((l) => l.target === selectedId).length
-        }
-        outboundLinks={
-          edgeLinks.filter((l) => l.source === selectedId).length
-        }
-        onFocus={() => {
-          const node = nodesRef.current.find((n) => n.id === selectedId);
-          if (node) animateTo(node.x, node.y, 1.75);
-        }}
-        onOpenWorkspace={() => {
-          const node = nodesRef.current.find((n) => n.id === selectedId);
-          if (node && !getVentureMetadata(selectedId)?.isDeclaredGap) {
-            animateTo(node.x, node.y, 2.5);
-            setTimeout(() => onNavigate(getVentureMetadata(selectedId)!.route), 420);
-          }
-        }}
-      />
-
-      <WorkspaceDrawer
-        open={workspaceOpen}
-        metadata={getVentureMetadata(selectedId)}
-        links={edgeLinks}
-        nodeTitles={nodeTitles}
-        onClose={() => setWorkspaceOpen(false)}
-        onLaunchFullRoute={onNavigate}
-        onFocusLinkedNode={(linkedId) => openNodeWorkspace(linkedId)}
-        onWorkspaceTabChange={(tabId) => {
-          recordWorkspaceTabVisit(selectedId, tabId);
-        }}
-        onRemoveLink={(source, target) => {
-          setEdgeLinks((prev) => {
-            const next = prev.filter(
-              (l) => !(l.source === source && l.target === target)
-            );
-            try {
-              window.localStorage.setItem(
-                "kdci-ecosystem-links-seed",
-                JSON.stringify(next)
+                  onClick={() => setSelectedId(node.id)}
+                  onDoubleClick={() => {
+                    if (kcni.isDeclaredGap) return;
+                    const prevId = selectedId;
+                    setSelectedId(node.id);
+                    animateTo(node.x, node.y, 2.5);
+                    recordSpatialTransition(prevId, node.id, 'canvas');
+                    setTimeout(() => onNavigate(kcni.route), 420);
+                  }}
+                >
+                  <div className="orbit-ring" />
+                  <div className="node-core">
+                    <span className="node-sector">{kcni.sectorTag}</span>
+                    <span className="node-title">{kcni.title}</span>
+                    <span className="node-meta">
+                      {kcni.isDeclaredGap
+                        ? 'DECLARED GAP (404)'
+                        : `${kcni.projects}P · ${kcni.agents}A`}
+                    </span>
+                  </div>
+                </div>
               );
-            } catch {
-              // Ignore storage errors
+            })}
+          </div>
+
+          <RadialMenu
+            state={radialState}
+            nodeTitle={
+              radialState.nodeId
+                ? (nodesRef.current.find((n) => n.id === radialState.nodeId) as
+                    | KDCINode
+                    | undefined)?.title
+                : undefined
             }
-            return next;
-          });
-        }}
-      />
+            isDeclaredGap={
+              radialState.nodeId
+                ? (nodesRef.current.find((n) => n.id === radialState.nodeId) as
+                    | KDCINode
+                    | undefined)?.isDeclaredGap
+                : undefined
+            }
+            onAction={handleRadialAction}
+            onClose={() => setRadialState((prev) => ({ ...prev, visible: false }))}
+          />
+
+          <SearchCommandBar
+            open={commandOpen}
+            nodes={nodesRef.current as unknown as readonly KDCINode[]}
+            onClose={() => setCommandOpen(false)}
+            onFocusNode={(node) => {
+              setSelectedId(node.id);
+              animateTo(node.x, node.y, 1.75);
+            }}
+            onLaunchRoute={onLaunchRoute ?? onNavigate}
+            onFitAll={fitAll}
+            onResetView={reset}
+            onFocusNodeId={selectedId}
+          />
+
+          <NodeTelemetryHUD
+            metadata={getVentureMetadata(selectedId)}
+            inboundLinks={
+              edgeLinks.filter((l) => l.target === selectedId).length
+            }
+            outboundLinks={
+              edgeLinks.filter((l) => l.source === selectedId).length
+            }
+            onFocus={() => {
+              const node = nodesRef.current.find((n) => n.id === selectedId);
+              if (node) animateTo(node.x, node.y, 1.75);
+            }}
+            onOpenWorkspace={() => {
+              const node = nodesRef.current.find((n) => n.id === selectedId);
+              if (node && !getVentureMetadata(selectedId)?.isDeclaredGap) {
+                animateTo(node.x, node.y, 2.5);
+                setTimeout(
+                  () => onNavigate(getVentureMetadata(selectedId)!.route),
+                  420
+                );
+              }
+            }}
+          />
+
+          <WorkspaceDrawer
+            open={workspaceOpen}
+            metadata={getVentureMetadata(selectedId)}
+            links={edgeLinks}
+            nodeTitles={nodeTitles}
+            onClose={() => setWorkspaceOpen(false)}
+            onLaunchFullRoute={onNavigate}
+            onFocusLinkedNode={(linkedId) => openNodeWorkspace(linkedId)}
+            onWorkspaceTabChange={(tabId) => {
+              recordWorkspaceTabVisit(selectedId, tabId);
+            }}
+            onRemoveLink={(source, target) => {
+              setEdgeLinks((prev) => {
+                const next = prev.filter(
+                  (l) => !(l.source === source && l.target === target)
+                );
+                try {
+                  window.localStorage.setItem(
+                    'kdci-ecosystem-links-seed',
+                    JSON.stringify(next)
+                  );
+                } catch {
+                  // Ignore storage errors
+                }
+                return next;
+              });
+            }}
+          />
+        </>
+      )}
     </div>
   );
 }
