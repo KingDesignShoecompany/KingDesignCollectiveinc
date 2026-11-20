@@ -9,6 +9,12 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/cli": "^8.6.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/ios": "^8.6.2",
+    "@capacitor/status-bar": "^8.0.4",
     "next": "^15.5.27",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

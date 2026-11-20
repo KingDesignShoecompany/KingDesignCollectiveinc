@@ -4,8 +4,14 @@ import AppShell from '../components/AppShell';
 export const metadata = {
   title: 'KingDesign OS',
   description: 'KingDesign Collective — executive OS dashboard in Telegram',
-  themeColor: '#0a0a0b',
-  viewport: 'width=device-width, initial-scale=1.0, viewport-fit=coverage',
+  themeColor: '#050507',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+    viewportFit: 'cover',
+  },
   manifest: '/tma-manifest.json',
 };
 

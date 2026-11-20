@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useMemo } from "react";
 import { KDCINode, EcosystemLink } from "./KDCICanvas";
 import { getVentureMetadata } from "../data/nodeMetadata";
 import { recordSpatialTransition, loadAnalyticsStore } from "../lib/commandAnalytics";
+import { triggerTactilePulse } from "../lib/nativeBridge";
 
 interface Props {
   nodes: readonly KDCINode[];
@@ -89,6 +90,7 @@ export function MobileRadarView({
       recordSpatialTransition(selectedId, targetId, "canvas");
     }
     onSelectNode(targetId);
+    triggerTactilePulse("light");
   };
 
   const inboundCount = selectedNode

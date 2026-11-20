@@ -10,6 +10,7 @@ import { getVentureMetadata } from '../data/nodeMetadata';
 import { NodeTelemetryHUD } from './NodeTelemetryHUD';
 import { WorkspaceDrawer, WorkspaceTabId } from './WorkspaceDrawer';
 import { MobileRadarView } from './MobileRadarView';
+import { initNativeShell, triggerTactilePulse } from '../lib/nativeBridge';
 import { recordWorkspaceOpen, recordWorkspaceTabVisit, recordWorkspaceLaunch, recordSpatialTransition } from '../lib/commandAnalytics';
 import '../styles/canvas.css';
 
@@ -235,6 +236,11 @@ export default function KDCICanvas({
     fitAll(nodesRef.current);
   }, [fitAll]);
 
+  // Initialize native shell (status bar + haptics) on first mount.
+  useEffect(() => {
+    initNativeShell();
+  }, []);
+
   const handleContextMenu = (e: React.MouseEvent) => {
     e.preventDefault();
     const target = e.target as HTMLElement;
@@ -288,6 +294,7 @@ export default function KDCICanvas({
         setPickingSourceNodeId(targetNode.id);
         setSelectedId(targetNode.id);
         setRadialState((prev) => ({ ...prev, visible: false }));
+        triggerTactilePulse("medium");
         return;
       }
     },
