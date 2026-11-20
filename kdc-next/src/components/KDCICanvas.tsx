@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useCallback, useRef, useState } from 'react';
+import React, { useEffect, useCallback, useRef, useState, useMemo } from 'react';
 import { useCanvasCamera } from '../hooks/useCanvasCamera';
 import { useGestures } from '../hooks/useGestures';
 import { useNodePhysics } from '../hooks/useNodePhysics';
@@ -8,6 +8,7 @@ import { RadialMenu, RadialActionId } from './RadialMenu';
 import { SearchCommandBar } from './SearchCommandBar';
 import { getVentureMetadata } from '../data/nodeMetadata';
 import { NodeTelemetryHUD } from './NodeTelemetryHUD';
+import { WorkspaceDrawer, WorkspaceTabId } from './WorkspaceDrawer';
 import '../styles/canvas.css';
 
 export interface PhysicsNode {
@@ -71,21 +72,8 @@ export default function KDCICanvas({
   // Command palette state
   const [commandOpen, setCommandOpen] = useState(false);
 
-  const toggleCommandBar = useCallback(() => {
-    setCommandOpen((prev) => !prev);
-    onOpenCommandBar?.();
-  }, [onOpenCommandBar]);
-
-  const [radialState, setRadialState] = useState<{
-    visible: boolean;
-    x: number;
-    y: number;
-    nodeId?: string;
-  }>({
-    visible: false,
-    x: 0,
-    y: 0,
-  });
+  // Workspace panel state
+  const [workspaceOpen, setWorkspaceOpen] = useState(false);
 
   // Relationship Graph edge state
   const [edgeLinks, setEdgeLinks] = useState<EcosystemLink[]>(
@@ -94,13 +82,7 @@ export default function KDCICanvas({
   const [pickingSourceNodeId, setPickingSourceNodeId] =
     useState<string | null>(null);
 
-  const { cameraRef, pan, zoomAt, animateTo, clampCamera, fitAll, reset } =
-    useCanvasCamera(
-      worldRef,
-      { x: 0, y: 0, zoom: 1 },
-      setZoomPct
-    );
-
+  // Sync frame-to-DOM (declared before useNodePhysics).
   const syncFrameToDom = useCallback(
     (liveNodes: readonly PhysicsNode[], grabbedId: string | null) => {
       const nodeMap = new Map<string, PhysicsNode>();
@@ -140,10 +122,48 @@ export default function KDCICanvas({
     [edgeLinks]
   );
 
-  const { nodesRef, grabNode, dragNode, releaseNode } = useNodePhysics(
-    initialNodes,
-    syncFrameToDom
+  // Camera hook (declared before functions that use animateTo).
+  const { cameraRef, pan, zoomAt, animateTo, clampCamera, fitAll, reset } =
+    useCanvasCamera(worldRef, { x: 0, y: 0, zoom: 1 }, setZoomPct);
+
+  // Node physics hook provides nodesRef.
+  const { nodesRef } = useNodePhysics(initialNodes, syncFrameToDom);
+
+  const openNodeWorkspace = useCallback(
+    (nodeId: string) => {
+      const node = nodesRef.current.find((n) => n.id === nodeId);
+      if (!node) return;
+      setSelectedId(node.id);
+      animateTo(node.x, node.y, 2.2);
+      setWorkspaceOpen(true);
+    },
+    [nodesRef, animateTo]
   );
+
+  const nodeTitles = useMemo(() => {
+    const map: Record<string, string> = {};
+    for (const n of nodesRef.current) map[n.id] = (n as KDCINode).title;
+    return map;
+  }, [nodesRef]);
+
+  const [radialState, setRadialState] = useState<{
+    visible: boolean;
+    x: number;
+    y: number;
+    nodeId?: string;
+  }>({
+    visible: false,
+    x: 0,
+    y: 0,
+  });
+
+  const toggleCommandBar = useCallback(() => {
+    setCommandOpen((prev) => !prev);
+    onOpenCommandBar?.();
+  }, [onOpenCommandBar]);
+
+  const { nodesRef: _nodesRef, grabNode, dragNode, releaseNode } =
+    useNodePhysics(initialNodes, syncFrameToDom);
 
   const gestureHandlersRef = useRef<{
     onPan: (dx: number, dy: number) => void;
@@ -182,12 +202,13 @@ export default function KDCICanvas({
     const onKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
-        toggleCommandBar();
+        setCommandOpen((prev) => !prev);
+        onOpenCommandBar?.();
       }
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [toggleCommandBar]);
+  }, [onOpenCommandBar]);
 
   // Fit-to-ecosystem on mount (also wired to HUD RESET VIEW and Radial recenter).
   useEffect(() => {
@@ -484,6 +505,32 @@ export default function KDCICanvas({
             animateTo(node.x, node.y, 2.5);
             setTimeout(() => onNavigate(getVentureMetadata(selectedId)!.route), 420);
           }
+        }}
+      />
+
+      <WorkspaceDrawer
+        open={workspaceOpen}
+        metadata={getVentureMetadata(selectedId)}
+        links={edgeLinks}
+        nodeTitles={nodeTitles}
+        onClose={() => setWorkspaceOpen(false)}
+        onLaunchFullRoute={onNavigate}
+        onFocusLinkedNode={(linkedId) => openNodeWorkspace(linkedId)}
+        onRemoveLink={(source, target) => {
+          setEdgeLinks((prev) => {
+            const next = prev.filter(
+              (l) => !(l.source === source && l.target === target)
+            );
+            try {
+              window.localStorage.setItem(
+                "kdci-ecosystem-links-seed",
+                JSON.stringify(next)
+              );
+            } catch {
+              // Ignore storage errors
+            }
+            return next;
+          });
         }}
       />
     </div>
