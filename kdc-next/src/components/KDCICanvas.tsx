@@ -9,6 +9,7 @@ import { SearchCommandBar } from './SearchCommandBar';
 import { getVentureMetadata } from '../data/nodeMetadata';
 import { NodeTelemetryHUD } from './NodeTelemetryHUD';
 import { WorkspaceDrawer, WorkspaceTabId } from './WorkspaceDrawer';
+import { recordWorkspaceOpen, recordWorkspaceTabVisit, recordWorkspaceLaunch, recordSpatialTransition } from '../lib/commandAnalytics';
 import '../styles/canvas.css';
 
 export interface PhysicsNode {
@@ -82,6 +83,10 @@ export default function KDCICanvas({
   const [pickingSourceNodeId, setPickingSourceNodeId] =
     useState<string | null>(null);
 
+  // Camera hook (declared before functions that use animateTo).
+  const { cameraRef, pan, zoomAt, animateTo, clampCamera, fitAll, reset } =
+    useCanvasCamera(worldRef, { x: 0, y: 0, zoom: 1 }, setZoomPct);
+
   // Sync frame-to-DOM (declared before useNodePhysics).
   const syncFrameToDom = useCallback(
     (liveNodes: readonly PhysicsNode[], grabbedId: string | null) => {
@@ -122,10 +127,6 @@ export default function KDCICanvas({
     [edgeLinks]
   );
 
-  // Camera hook (declared before functions that use animateTo).
-  const { cameraRef, pan, zoomAt, animateTo, clampCamera, fitAll, reset } =
-    useCanvasCamera(worldRef, { x: 0, y: 0, zoom: 1 }, setZoomPct);
-
   // Node physics hook provides nodesRef.
   const { nodesRef } = useNodePhysics(initialNodes, syncFrameToDom);
 
@@ -134,10 +135,11 @@ export default function KDCICanvas({
       const node = nodesRef.current.find((n) => n.id === nodeId);
       if (!node) return;
       setSelectedId(node.id);
+      recordWorkspaceOpen(node.id);
       animateTo(node.x, node.y, 2.2);
       setWorkspaceOpen(true);
     },
-    [nodesRef, animateTo]
+    [nodesRef, animateTo, recordWorkspaceOpen]
   );
 
   const nodeTitles = useMemo(() => {
@@ -160,7 +162,8 @@ export default function KDCICanvas({
   const toggleCommandBar = useCallback(() => {
     setCommandOpen((prev) => !prev);
     onOpenCommandBar?.();
-  }, [onOpenCommandBar]);
+    recordWorkspaceOpen("command-palette");
+  }, [onOpenCommandBar, recordWorkspaceOpen]);
 
   const { nodesRef: _nodesRef, grabNode, dragNode, releaseNode } =
     useNodePhysics(initialNodes, syncFrameToDom);
@@ -435,7 +438,10 @@ export default function KDCICanvas({
               onClick={() => setSelectedId(node.id)}
               onDoubleClick={() => {
                 if (kcni.isDeclaredGap) return;
+                const prevId = selectedId;
+                setSelectedId(node.id);
                 animateTo(node.x, node.y, 2.5);
+                recordSpatialTransition(prevId, node.id, "canvas");
                 setTimeout(() => onNavigate(kcni.route), 420);
               }}
             >
@@ -485,6 +491,7 @@ export default function KDCICanvas({
         onLaunchRoute={onLaunchRoute ?? onNavigate}
         onFitAll={fitAll}
         onResetView={reset}
+        onFocusNodeId={selectedId}
       />
 
       <NodeTelemetryHUD
@@ -516,6 +523,9 @@ export default function KDCICanvas({
         onClose={() => setWorkspaceOpen(false)}
         onLaunchFullRoute={onNavigate}
         onFocusLinkedNode={(linkedId) => openNodeWorkspace(linkedId)}
+        onWorkspaceTabChange={(tabId) => {
+          recordWorkspaceTabVisit(selectedId, tabId);
+        }}
         onRemoveLink={(source, target) => {
           setEdgeLinks((prev) => {
             const next = prev.filter(

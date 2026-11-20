@@ -10,6 +10,13 @@ import {
   rankCommands,
   RankedCommand,
 } from "../lib/commandRegistry";
+import {
+  recordWorkspaceOpen,
+  recordWorkspaceTabVisit,
+  recordWorkspaceLaunch,
+  recordSpatialTransition,
+  recordCommandExecution,
+} from "../lib/commandAnalytics";
 
 interface Props {
   open: boolean;
@@ -19,6 +26,7 @@ interface Props {
   onLaunchRoute: (route: string) => void;
   onFitAll: (nodes: readonly { x: number; y: number; radius: number }[]) => void;
   onResetView: () => void;
+  onFocusNodeId: string;
 }
 
 export function SearchCommandBar({
@@ -29,6 +37,7 @@ export function SearchCommandBar({
   onLaunchRoute,
   onFitAll,
   onResetView,
+  onFocusNodeId,
 }: Props) {
   const [query, setQuery] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -60,6 +69,7 @@ export function SearchCommandBar({
 
   const executeEntry = (entry: RankedCommand, launchWorkspace = false) => {
     setRecentIds(recordCommandHistory(entry.id));
+    recordCommandExecution(entry.id);
 
     if (entry.kind === "system") {
       if (entry.actionId === "fit_all") onFitAll(nodes);
@@ -72,6 +82,7 @@ export function SearchCommandBar({
     if (!targetNode) return;
 
     onFocusNode(targetNode);
+    recordSpatialTransition(onFocusNodeId, targetNode.id, "command");
     if (launchWorkspace && !targetNode.isDeclaredGap) {
       setTimeout(() => onLaunchRoute(targetNode.route), 420);
     }
