@@ -12,6 +12,6 @@ export default defineConfig({
   retries: 0,
   workers: 1,
   timeout: 30000,
-  testDir: "./tests",
-  testMatch: /.*\.spec\.ts/,
+  testDir: "./",
+  testMatch: /.*\.(spec|audit)\.(mjs|ts)/,
 });
