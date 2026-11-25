@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">KDCI OS</string>
+    <string name="title_activity_main">KDCI OS</string>
+    <string name="package_name">inc.kingdesigncollective.kdcios</string>
+    <string name="custom_url_scheme">inc.kingdesigncollective.kdcios</string>
+</resources>

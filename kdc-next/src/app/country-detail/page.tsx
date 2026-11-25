@@ -30,7 +30,7 @@ function CountryDetailInner() {
 
   useEffect(() => {
     let cancelled = false;
-    fetch('/KingDesignCollectiveinc/data/countries.json')
+    fetch('/data/countries.json')
       .then((r) => r.json())
       .then((d: { items: Array<{ name: string; capital?: string | null }> }) => {
         if (cancelled) return;
